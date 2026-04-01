@@ -67,13 +67,13 @@ body {
 /* ================= SEARCH BOX ================= */
 .search-box {
   position: relative;
-  width: 90%;
+  width: 95%;
   margin: 0 100px;
 }
 
 .search-box input {
-  width: 100%;
-  padding: 20px 45px 10px 15px;
+  width: 102%;
+  padding: 15px 45px 10px 15px;
   border: 1px solid #ccc;
   border-radius: 25px;
   outline: none;

@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from './components/Header';
 import VideoSlider from './components/VideoSlider';
@@ -40,6 +40,7 @@ import NewZealand from "./Pages/NewZealand";
 import NewZealandLanding from "./Pages/NewZealandLanding";
 import Thailand from "./Pages/Thailand";
 import Singapore from "./Pages/Singapore";
+
 
 function App() {
   return (

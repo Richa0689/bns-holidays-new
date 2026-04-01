@@ -90,6 +90,7 @@ const Footer = () => {
       </div>
 
     </footer>
+  
   );
 };
 

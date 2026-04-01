@@ -24,6 +24,7 @@ const VideoSlider = () => {
         onClick={handleClick}
       />
     </div>
+    
   );
 };
 
