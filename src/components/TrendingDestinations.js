@@ -19,24 +19,21 @@ const TrendingDestinations = () => {
   // AUTO SCROLL 
   useEffect(() => {
   const container = scrollRef.current;
-
   let animationFrame;
+
+  // ── Stop auto-scroll on mobile ──
+  if (window.innerWidth <= 768) return;
 
   const scroll = () => {
     if (!container) return;
-
-    container.scrollLeft += 1.5; // speed
-
-    // reset exactly at half 
+    container.scrollLeft += 1.5;
     if (container.scrollLeft >= container.scrollWidth / 2) {
       container.scrollLeft -= container.scrollWidth / 2;
     }
-
     animationFrame = requestAnimationFrame(scroll);
   };
 
   scroll();
-
   return () => cancelAnimationFrame(animationFrame);
 }, []);
 

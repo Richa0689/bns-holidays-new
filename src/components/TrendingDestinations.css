@@ -78,3 +78,58 @@
 .img-box:hover img {
   transform: scale(1.1);
 }
+/* ============================================
+   TRENDING DESTINATIONS MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .trending-section {
+    padding: 16px 12px;
+    margin: 16px 0;       /* remove side margin — fixes overflow */
+    width: 100%;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+
+  .trending-section h2 {
+    font-size: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    padding-bottom: 8px;
+  }
+
+  .card {
+    min-width: 200px;         /* shows ~1.5 cards — hints there's more */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .img-box img,
+  .card img {
+    height: 120px;
+  }
+
+  .card p {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .card {
+    min-width: 160px;
+  }
+
+  .img-box img,
+  .card img {
+    height: 105px;
+  }
+}

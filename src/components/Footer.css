@@ -107,3 +107,66 @@
 .icon:hover {
   transform: scale(1.1);
 }
+/* ============================================
+   FOOTER MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Stack left + right sections vertically */
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  /* Left section: full width instead of fixed 250px */
+  .footer-left {
+    width: 100%;
+  }
+
+  /* Right columns: wrap into 2x2 grid */
+  .footer-columns {
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+  }
+
+  /* Each column: take half the row */
+  .footer-col {
+    min-width: calc(50% - 12px);
+    flex: 1 1 calc(50% - 12px);
+  }
+
+  /* Social icons: slightly smaller */
+  .icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 28px 16px 16px;
+  }
+
+  /* Each column: full width on small phones */
+  .footer-col {
+    min-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .bns {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

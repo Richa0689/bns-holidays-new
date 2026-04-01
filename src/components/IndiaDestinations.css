@@ -133,3 +133,72 @@
     font-size: 12px;
   }
 }
+
+/* ============================================
+   INDIA DESTINATIONS MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .india-section {
+    width: 100%;
+    border-radius: 0;
+    padding: 16px 12px;
+  }
+
+  /* Stop the auto animation on mobile — let user swipe instead */
+  .card-container {
+    animation: none;
+    transform: none !important;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+  /* Hide scrollbar but keep scrolling */
+  .card-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 140px;             /* comfortable card size */
+    scroll-snap-align: start; /* snaps cleanly when swiping */
+    margin-right: 0;
+  }
+
+  .img-box img {
+    height: 110px;
+  }
+
+  /* Make sure label always shows fully */
+  .card p {
+    font-size: 13px;
+    padding: 8px 6px;
+    white-space: normal;      /* don't cut off text */
+  }
+
+  /* Show only real items — hide duplicates on mobile */
+  .card:nth-child(n+7) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 130px;
+  }
+
+  .img-box img {
+    height: 100px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+}

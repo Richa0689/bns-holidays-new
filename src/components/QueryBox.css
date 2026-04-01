@@ -34,3 +34,38 @@
 .query-form button:hover {
   background: #0056b3;
 }
+/* ============================================
+   QUERY BOX MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .query-section {
+    padding: 24px 16px;   /* reduce side padding */
+  }
+
+  .query-form {
+    max-width: 100%;      /* full width on mobile instead of fixed 400px */
+    width: 100%;
+  }
+
+  .query-form input,
+  .query-form textarea {
+    font-size: 16px;      /* prevents iOS auto-zoom on focus */
+    padding: 12px;        /* larger touch target */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .query-form textarea {
+    min-height: 120px;    /* comfortable typing area */
+    resize: vertical;     /* allow user to resize vertically only */
+  }
+
+  .query-form button {
+    padding: 14px;        /* bigger tap area */
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

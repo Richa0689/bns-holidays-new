@@ -2,7 +2,7 @@
   "name": "bns_holidays",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://richa0689.github.io/bns-holidays-new/",
+  "homepage": "https://richa0689.github.io/bns-holidays-new",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-brands-svg-icons": "^7.2.0",

@@ -12,3 +12,22 @@
   object-fit: cover;      /* fills container completely */
   object-position: bottom; /* crop happens at top, bottom stays visible */
 }
+/* ============================================
+   VIDEO SLIDER MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+  .video-slider {
+    height: 380px;           /* tablet — less tall */
+  }
+
+  .video {
+    object-position: center; /* re-center crop on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-slider {
+    height: 260px;           /* phone — compact height */
+  }
+}

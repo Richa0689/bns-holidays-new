@@ -93,3 +93,67 @@
 .right {
   right: -10px;
 }
+/* ============================================
+   ADVENTURES MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .adventure-section {
+    padding: 16px 12px;
+    margin: 16px 0;       /* remove side margin — was pushing off screen */
+    width: 100%;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+
+  .adventure-section h2 {
+    font-size: 20px;
+  }
+
+  /* Stop JS auto-scroll on mobile — let user swipe */
+  .card-container {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    padding-bottom: 8px;
+  }
+
+  .card {
+    min-width: 150px;         /* comfortable swipe size */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .img-box img {
+    height: 120px;
+  }
+
+  .card p {
+    font-size: 13px;
+    padding: 8px;
+    font-weight: bold;
+  }
+
+  /* Hide arrow buttons on mobile — swipe handles it */
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .card {
+    min-width: 130px;
+  }
+
+  .img-box img {
+    height: 105px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+}
