@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bns-holidays-new/static/css/main.43602de1.css",
-    "main.js": "/bns-holidays-new/static/js/main.8dda8c94.js",
-    "static/js/453.d3bf8fcd.chunk.js": "/bns-holidays-new/static/js/453.d3bf8fcd.chunk.js",
-    "static/media/video.mp4": "/bns-holidays-new/static/media/video.3444d23d59896fb5cb1b.mp4",
-    "static/media/logo.png": "/bns-holidays-new/static/media/logo.d6dda63caf49d927525b.png",
-    "index.html": "/bns-holidays-new/index.html",
-    "main.43602de1.css.map": "/bns-holidays-new/static/css/main.43602de1.css.map",
-    "main.8dda8c94.js.map": "/bns-holidays-new/static/js/main.8dda8c94.js.map",
-    "453.d3bf8fcd.chunk.js.map": "/bns-holidays-new/static/js/453.d3bf8fcd.chunk.js.map"
+    "main.css": "/static/css/main.43602de1.css",
+    "main.js": "/static/js/main.dfe7efd5.js",
+    "static/js/453.d3bf8fcd.chunk.js": "/static/js/453.d3bf8fcd.chunk.js",
+    "static/media/video.mp4": "/static/media/video.3444d23d59896fb5cb1b.mp4",
+    "static/media/logo.png": "/static/media/logo.d6dda63caf49d927525b.png",
+    "index.html": "/index.html",
+    "main.43602de1.css.map": "/static/css/main.43602de1.css.map",
+    "main.dfe7efd5.js.map": "/static/js/main.dfe7efd5.js.map",
+    "453.d3bf8fcd.chunk.js.map": "/static/js/453.d3bf8fcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43602de1.css",
-    "static/js/main.8dda8c94.js"
+    "static/js/main.dfe7efd5.js"
   ]
 }
