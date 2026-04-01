@@ -73,3 +73,54 @@
 .villa-content button:hover {
   background: #e14b4f;
 }
+/* ============================================
+   VILLA PAGE MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .villa-container {
+    padding: 24px 16px;   /* 100px was causing horizontal overflow */
+  }
+
+  .villa-title {
+    font-size: 24px;
+  }
+
+  .villa-subtitle {
+    font-size: 14px;
+  }
+
+  /* 2 columns on tablet */
+  .villa-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;            /* 50px gap was too large */
+  }
+
+  /* Remove fixed width — let grid control sizing */
+  .villa-card {
+    width: 100%;
+  }
+
+  .villa-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* 1 column on phone */
+  .villa-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .villa-card img {
+    height: 180px;        /* taller looks better in single column */
+  }
+
+  .villa-content button {
+    width: 100%;          /* full width tap target */
+    padding: 10px;
+  }
+}

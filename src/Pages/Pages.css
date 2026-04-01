@@ -337,3 +337,148 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
+/* ============================================
+   PAGES (TOUR CARDS) MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .tour-container {
+    padding: 16px 12px;
+    max-width: 100%;
+  }
+
+  /* Stack card vertically: image → info → price */
+  .tour-card {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  /* Image: full width */
+  .tour-image img {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Price box: full width */
+  .tour-price {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Buttons: already 100% width — just fix font */
+  .book-btn,
+  .whatsapp-btn,
+  .details-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* Modal: full screen on mobile */
+  .modal-box {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .icons-row span {
+    font-size: 22px;
+  }
+
+  .icons-row p {
+    font-size: 11px;
+  }
+
+  /* Hero section */
+  .hero-section {
+    height: 50vh;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content {
+    left: 5%;
+  }
+
+  /* Highlights */
+  .highlights {
+    padding: 24px 12px;
+  }
+
+  .highlight-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-card img {
+    width: 100%;
+    height: 180px;
+  }
+
+  /* Why section */
+  .why-section {
+    padding: 24px 12px;
+  }
+
+  .why-grid {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: 24px 12px;
+  }
+
+  .book-now-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  /* Itinerary */
+  .itinerary-section {
+    padding: 24px 12px;
+  }
+
+  .day-card img {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .tour-info h2 {
+    font-size: 16px;
+  }
+
+  .tour-price h2 {
+    font-size: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-section {
+    height: 40vh;
+  }
+
+  .modal-box {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .icons-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .icons-row div {
+    flex: 0 0 30%;   /* 3 icons per row instead of 6 in one line */
+  }
+}

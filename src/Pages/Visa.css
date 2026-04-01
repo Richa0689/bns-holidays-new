@@ -70,3 +70,48 @@
 .visa-content button:hover {
   background: #005edb;
 }
+/* ============================================
+   VISA PAGE MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .visa-container {
+    padding: 24px 16px;   /* 90px was pushing content off screen */
+  }
+
+  .visa-title {
+    font-size: 24px;
+  }
+
+  .visa-subtitle {
+    font-size: 14px;
+  }
+
+  /* 2 columns on tablet */
+  .visa-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .visa-card img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* 1 column on phone */
+  .visa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-card img {
+    height: 160px;        /* taller image looks better in single column */
+  }
+
+  .visa-content button {
+    width: 100%;          /* full width button on small screens */
+    padding: 10px;
+  }
+}
