@@ -20,6 +20,8 @@ const VideoSlider = () => {
         muted={isMuted}
         loop
         playsInline
+        preload="metadata"
+        poster="/preview.jpg"
         className="video"
         onClick={handleClick}
       />
