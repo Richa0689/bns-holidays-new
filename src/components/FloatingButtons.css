@@ -39,3 +39,36 @@
 .btn:hover {
   transform: scale(1.1);
 }
+/* ============================================
+   FLOATING BUTTONS MOBILE FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .floating-buttons {
+    right: 12px;        /* closer to edge on small screens */
+    bottom: 70px;       /* above phone's bottom nav bar */
+    gap: 12px;          /* tighter spacing */
+  }
+
+  .btn {
+    width: 46px;        /* slightly smaller so it doesn't block content */
+    height: 46px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .floating-buttons {
+    right: 10px;
+    bottom: 80px;       /* more space for Android nav gestures */
+    gap: 10px;
+  }
+
+  .btn {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}

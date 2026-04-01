@@ -31,3 +31,27 @@
     height: 260px;           /* phone — compact height */
   }
 }
+/* ============================================
+   VIDEO SLIDER — SHOW LEFT SIDE ON MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .video-slider {
+    height: 380px;
+  }
+
+  .video {
+    object-fit: cover;
+    object-position: left center;  /* show left side of video */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-slider {
+    height: 260px;
+  }
+
+  .video {
+    object-position: left center;  /* keep left side visible on phones too */
+  }
+}
