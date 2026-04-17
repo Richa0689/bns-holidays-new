@@ -13,11 +13,17 @@ const QueryBox = () => {
   };
 
   const handleSend = () => {
-    const subject = `Query from ${form.name}`;
-    const body = `Name: ${form.name}%0AEmail: ${form.email}%0A%0AMessage: ${form.message}`;
+  const phoneNumber = "917066620673"; 
 
-    // window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
-  };
+  const message = `Hello, I have a query:%0A
+Name: ${form.name}%0A
+Email: ${form.email}%0A
+Message: ${form.message}`;
+
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+  window.open(whatsappURL, "_blank");
+};
 
   return (
     <div className="query-section">

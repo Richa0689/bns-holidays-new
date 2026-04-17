@@ -118,7 +118,7 @@ const USA = () => {
         </div>
       ))}
 
-      {/* ✅ Modal (same for all) */}
+      {/*  Modal */}
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-box">

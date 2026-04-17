@@ -40,8 +40,151 @@ import NewZealand from "./Pages/NewZealand";
 import NewZealandLanding from "./Pages/NewZealandLanding";
 import Thailand from "./Pages/Thailand";
 import Singapore from "./Pages/Singapore";
-
-
+import ThailandLanding from "./Pages/ThailandLanding";
+import BangkokPattayaLanding from "./Pages/BangkokPattayaLanding";
+import PhuketKrabiLanding from "./Pages/PhuketKrabiLanding";
+import ThailandLuxuryLanding from "./Pages/ThailandLuxuryLanding";
+import BestofSingapore from "./Pages/BestofSingapore";
+import SingaporeSentosa from "./Pages/SingaporeSentosa";
+import UniversalSingapore from "./Pages/UniversalStudiosTour";
+import LuxurySingapore from "./Pages/LuxurySingaporeTour";
+import Malaysia from "./Pages/Malaysia";
+import MalaysiaLanding from "./Pages/MalaysiaLanding";
+import KLGenting from "./Pages/KLGenting";
+import Langkawi from "./Pages/Langkawi";
+import Penang from "./Pages/Penang";
+import LuxuryMalaysia from "./Pages/LuxuryMalaysia";
+import Bali from "./Pages/Bali";
+import BaliLanding from "./Pages/BaliLanding";
+import UbudKutaLanding from './Pages/UbudKutaLanding';
+import BaliBeachLanding from './Pages/BaliBeachLanding';
+import BaliAdventureLanding from './Pages/BaliAdventureLanding';
+import LuxuryBaliLanding from './Pages/LuxuryBaliLanding';
+import Dubai from './Pages/Dubai';
+import DubaiLanding from './Pages/DubaiLanding';
+import DubaiAbuLanding from './Pages/DubaiAbuLanding';
+import DesertSafariLanding from './Pages/DesertSafariLanding';
+import LuxuryDubaiLanding from './Pages/LuxuryDubaiLanding';
+import AbuDhabi from './Pages/AbuDhabi';
+import AbuLanding from "./Pages/AbuLanding";
+import AbuCityLanding from "./Pages/AbuCityLanding";
+import AbuCultureLanding from "./Pages/AbuCultureLanding";
+import AbuFerrariLanding from "./Pages/AbuFerrariLanding";
+import AbuLuxuryLanding from "./Pages/AbuLuxuryLanding";
+import France from "./Pages/France";
+import FranceLanding from "./Pages/FranceLanding";
+import ParisNiceLanding from "./Pages/ParisNiceLanding";
+import FrenchRivieraLanding from './Pages/FrenchRivieraLanding';
+import LuxuryFranceLanding from './Pages/LuxuryFranceLanding';
+import Germany from './Pages/Germany';
+import GermanyLanding from './Pages/GermanyLanding';
+import BerlinMunichLanding from './Pages/BerlinMunichLanding';
+import RhineTourLanding from "./Pages/RhineTourLanding";
+import BavarianAlpsLanding from "./Pages/BavarianAlpsLanding";
+import LuxuryGermanyLanding from "./Pages/LuxuryGermanyLanding";
+import Italy from "./Pages/Italy";
+import Italypage from "./Pages/Italypage";
+import RomeVeniceLanding from "./Pages/RomeVeniceLanding";
+import FlorenceTourLanding from "./Pages/FlorenceTourLanding";
+import AmalfiCoastLanding from "./Pages/AmalfiCoastLanding";
+import LuxuryItalyLanding from "./Pages/LuxuryItalyLanding";
+import Switzerland from "./Pages/Switzerland";
+import SwitzerlandLanding from "./Pages/SwitzerlandLanding";
+import ZurichLucerneLanding from './Pages/ZurichLucerneLanding';
+import InterlakenLanding from "./Pages/InterlakenLanding";
+import SwissAlpsLanding from './Pages/SwissAlpsLanding';
+import LuxurySwitzerland from "./Pages/LuxurySwitzerland";
+import Hungary from "./Pages/Hungary";
+import HungaryLanding from "./Pages/HungaryLanding";
+import BudapestLanding from './Pages/BudapestLanding';
+import DanubeCruiseLanding from './Pages/DanubeCruiseLanding';
+import LuxuryHungaryLanding from './Pages/LuxuryHungaryLanding';
+import Poland from './Pages/Poland';
+import PolandLanding from './Pages/PolandLanding';
+import Manali from './Pages/Manali';
+import ManaliLanding from './Pages/ManaliLanding';
+import RohtangLanding from './Pages/RohtangLanding';
+import AdventureManaliLanding from './Pages/AdventureManaliLanding';
+import LuxuryManaliLanding from './Pages/LuxuryManaliLanding';
+import Shimla from './Pages/Shimla';
+import ShimlaLanding from './Pages/ShimlaLanding';
+import ShimlaKufriLanding from './Pages/ShimlaKufriLanding';
+import ShimlaAdventureLanding from './Pages/ShimlaAdventureLanding';
+import LuxuryShimlaLanding from './Pages/LuxuryShimlaLanding';
+import Spiti from './Pages/Spiti';
+import SpitiLanding from './Pages/SpitiLanding';
+import SpitiAdventureLanding from './Pages/SpitiAdventureLanding';
+import ChandratalLanding from './Pages/ChandratalLanding';
+import LuxurySpitiLanding from './Pages/LuxurySpitiLanding';
+import Srinagar from './Pages/Srinagar';
+import SrinagarLanding from './Pages/SrinagarLanding';
+import GulmargLanding from './Pages/GulmargLanding';
+import HouseboatSrinagarLanding from './Pages/HouseboatSrinagarLanding';
+import LuxuryKashmirLanding from './Pages/LuxuryKashmirLanding';
+import Gulmarg from './Pages/Gulmarg';
+import GulmargSnowAdventureLanding from './Pages/GulmargSnowAdventureLanding';
+import GulmargSkiExperienceLanding from './Pages/GulmargSkiExperienceLanding';
+import LuxuryGulmargTourLanding from './Pages/LuxuryGulmargTourLanding';
+import Pahalgam from './Pages/Pahalgam';
+import PahalgamLanding from './Pages/PahalgamLanding';
+import PahalgamValleyLanding from './Pages/PahalgamValleyLanding';
+import PahalgamAdventureLanding from './Pages/PahalgamAdventureLanding';
+import LuxuryPahalgamLanding from './Pages/LuxuryPahalgamLanding';
+import Munnar from './Pages/Munnar';
+import MunnarLanding from './Pages/MunnarLanding';
+import MunnarAlleppeyLanding from './Pages/MunnarAlleppeyLanding';
+import MunnarAdventureLanding from './Pages/MunnarAdventureLanding';
+import LuxuryMunnarLanding from './Pages/LuxuryMunnarLanding';
+import Alleppey from './Pages/Alleppey';
+import AlleppeyLanding from './Pages/AlleppeyLanding';
+import HouseboatAlleppeyLanding from './Pages/HouseboatAlleppeyLanding';
+import AlleppeyKumarakomLanding from './Pages/AlleppeyKumarakomLanding';
+import LuxuryAlleppeyLanding from './Pages/LuxuryAlleppeyLanding';
+import Kochi from './Pages/Kochi';
+import KochiLanding from './Pages/KochiLanding';
+import KochiMunnarLanding from './Pages/KochiMunnarLanding';
+import KochiCulturalLanding from './Pages/KochiCulturalLanding';
+import LuxuryKochiLanding from './Pages/LuxuryKochiLanding';
+import Ooty from './Pages/Ooty';
+import OotyLanding from './Pages/OotyLanding';
+import OotyCoonoorLanding from './Pages/OotyCoonoorLanding';
+import OotyAdventureLanding from './Pages/OotyAdventureLanding';
+import LuxuryOotyLanding from './Pages/LuxuryOotyLanding';
+import Chennai from './Pages/Chennai';
+import ChennaiLanding from './Pages/ChennaiLanding';
+import ChennaiMahabalipuramLanding from './Pages/ChennaiMahabalipuramLanding';
+import ChennaiCulturalLanding from './Pages/ChennaiCulturalLanding';
+import LuxuryChennaiLanding from './Pages/LuxuryChennaiLanding';
+import Gangtok from './Pages/Gangtok';
+import GangtokLanding from './Pages/GangtokLanding';
+import GangtokNathulaLanding from './Pages/GangtokNathulaLanding';
+import GangtokAdventureLanding from './Pages/GangtokAdventureLanding';
+import LuxuryGangtokLanding from './Pages/LuxuryGangtokLanding';
+import Guwahati from './Pages/Guwahati';
+import GuwahatiLanding from './Pages/GuwahatiLanding';
+import GuwahatiShillongLanding from './Pages/GuwahatiShillongLanding';
+import GuwahatiAdventureLanding from './Pages/GuwahatiAdventureLanding';
+import LuxuryGuwahatiLanding from './Pages/LuxuryGuwahatiLanding';
+import Jaipur from './Pages/Jaipur';
+import JaipurLanding from './Pages/JaipurLanding';
+import JaipurUdaipurLanding from './Pages/JaipurUdaipurLanding';
+import JaipurAdventureLanding from './Pages/JaipurAdventureLanding';
+import LuxuryJaipurLanding from './Pages/LuxuryJaipurLanding';
+import Udaipur from './Pages/Udaipur';
+import UdaipurLanding from './Pages/UdaipurLanding';
+import UdaipurMountAbuLanding from './Pages/UdaipurMountAbuLanding';
+import UdaipurAdventureLanding from './Pages/UdaipurAdventureLanding';
+import LuxuryUdaipurLanding from './Pages/LuxuryUdaipurLanding';
+import NorthGoa from './Pages/NorthGoa';
+import NorthGoaLanding from './Pages/NorthGoaLanding';
+import NorthGoaPartyLanding from './Pages/NorthGoaPartyLanding';
+import NorthGoaAdventureLanding from './Pages/NorthGoaAdventureLanding';
+import LuxuryNorthGoaLanding from './Pages/LuxuryNorthGoaLanding';
+import SouthGoa from './Pages/SouthGoa';
+import SouthGoaLanding from './Pages/SouthGoaLanding';
+import SouthGoaEscapeLanding from './Pages/SouthGoaEscapeLanding';
+import SouthGoaAdventureLanding from './Pages/SouthGoaAdventureLanding';
+import LuxurySouthGoaLanding from './Pages/LuxurySouthGoaLanding';
 function App() {
   return (
     <Router>
@@ -95,7 +238,151 @@ function App() {
 <Route path="/nz-landing" element={<NewZealandLanding />} />
 <Route path="/Pages/Thailand" element={<Thailand />} />
 <Route path="/Pages/Singapore" element={<Singapore />} />
-
+<Route path="/thailand-landing" element={<ThailandLanding />} />
+<Route path="/bangkok-pattaya" element={<BangkokPattayaLanding />} />
+<Route path="/phuket-krabi" element={<PhuketKrabiLanding />} />
+<Route path="/thailand-luxury" element={<ThailandLuxuryLanding />} />
+<Route path="/best-of-singapore" element={<BestofSingapore />} />
+<Route path="/singapore-sentosa" element={<SingaporeSentosa />} />
+<Route path="/universal-singapore" element={<UniversalSingapore />} />
+<Route path="/luxury-singapore" element={<LuxurySingapore />} />
+<Route path="/Pages/malaysia" element={<Malaysia />} />
+<Route path="/malaysia-landing" element={<MalaysiaLanding />} />
+<Route path="/kl-genting" element={<KLGenting />} />
+<Route path="/langkawi" element={<Langkawi />} />
+<Route path="/penang" element={<Penang />} />
+<Route path="/luxury-malaysia" element={<LuxuryMalaysia />} />
+<Route path="/Pages/bali" element={<Bali />} />
+<Route path="/bali-landing" element={<BaliLanding />} />
+<Route path="/ubud-kuta" element={<UbudKutaLanding />} />
+<Route path="/bali-beach" element={<BaliBeachLanding />} />
+<Route path="/bali-adventure" element={<BaliAdventureLanding />} />
+<Route path="/luxury-bali" element={<LuxuryBaliLanding />} />
+<Route path="/Pages/dubai" element={<Dubai />} />
+<Route path="/dubai-landing" element={<DubaiLanding />} />
+<Route path="/dubai-abu" element={<DubaiAbuLanding />} />
+<Route path="/desert-safari" element={<DesertSafariLanding />} />
+<Route path="/luxury-dubai" element={<LuxuryDubaiLanding />} />
+<Route path="/Pages/abu-dhabi" element={<AbuDhabi />} />
+<Route path="/abu-landing" element={<AbuLanding />} />
+<Route path="/abu-city" element={<AbuCityLanding />} />
+<Route path="/abu-culture" element={<AbuCultureLanding />} />
+<Route path="/abu-ferrari" element={<AbuFerrariLanding />} />
+<Route path="/abu-luxury" element={<AbuLuxuryLanding />} />
+<Route path="/Pages/france" element={<France />} />
+<Route path="/france-landing" element={<FranceLanding />} />
+<Route path="/paris-nice" element={<ParisNiceLanding />} />
+<Route path="/french-riviera" element={<FrenchRivieraLanding />} />
+<Route path="/luxury-france" element={<LuxuryFranceLanding />} />
+<Route path="/Pages/germany" element={<Germany />} />
+<Route path="/germany-landing" element={<GermanyLanding />} />
+<Route path="/berlin-munich" element={<BerlinMunichLanding />} />
+<Route path="/rhine-tour" element={<RhineTourLanding />} />
+<Route path="/bavarian-alps" element={<BavarianAlpsLanding />} />
+<Route path="/luxury-germany" element={<LuxuryGermanyLanding />} />
+<Route path="/Pages/italy" element={<Italy />} />
+<Route path="/italy-landing" element={<Italypage />} />
+<Route path="/rome-venice" element={<RomeVeniceLanding />} />
+<Route path="/florence-tour" element={<FlorenceTourLanding />} />
+<Route path="/amalfi-coast" element={<AmalfiCoastLanding />} />
+<Route path="/luxury-italy" element={<LuxuryItalyLanding />} />
+<Route path="/Pages/switzerland" element={<Switzerland />} />
+<Route path="/switzerland-landing" element={<SwitzerlandLanding />} />
+<Route path="/zurich-lucerne" element={<ZurichLucerneLanding />} />
+<Route path="/interlaken" element={<InterlakenLanding />} />
+<Route path="/swiss-alps" element={<SwissAlpsLanding />} />
+<Route path="/luxury-switzerland" element={<LuxurySwitzerland />} />
+<Route path="/Pages/hungary" element={<Hungary />} />
+<Route path="/hungary-landing" element={<HungaryLanding />} />
+<Route path="/budapest-landing" element={<BudapestLanding />} />
+<Route path="/danube-cruise" element={<DanubeCruiseLanding />} />
+<Route path='/luxury-hungary' element={<LuxuryHungaryLanding/>} />
+<Route path="/Pages/poland" element={<Poland />} />
+<Route path="/poland-landing" element={<PolandLanding />} />
+<Route path="/Pages/manali" element={<Manali />} />
+<Route path="/manali-landing" element={<ManaliLanding />} />
+<Route path="/rohtang-landing" element={<RohtangLanding />} />
+<Route path="/manali-adventure" element={<AdventureManaliLanding />} />
+<Route path="/luxury-manali" element={<LuxuryManaliLanding />} />
+<Route path="/Pages/shimla" element={<Shimla />} />
+<Route path="/shimla-landing" element={<ShimlaLanding />} />
+<Route path="/shimla-kufri" element={<ShimlaKufriLanding />} />
+<Route path="/shimla-adventure" element={<ShimlaAdventureLanding />} />
+<Route path="/luxury-shimla" element={<LuxuryShimlaLanding />} />
+<Route path="/Pages/spiti" element={<Spiti />} />
+<Route path="/spiti-landing" element={<SpitiLanding />} />
+<Route path="/spiti-adventure" element={<SpitiAdventureLanding />} />
+<Route path="/chandratal" element={<ChandratalLanding />} />
+<Route path="/luxury-spiti" element={<LuxurySpitiLanding />} />
+<Route path="/Pages/srinagar" element={<Srinagar />} />
+<Route path="/srinagar-landing" element={<SrinagarLanding />} />
+<Route path="/gulmarg" element={<GulmargLanding />} />
+<Route path="/houseboat" element={<HouseboatSrinagarLanding />} />
+<Route path="/luxury-kashmir" element={<LuxuryKashmirLanding />} />
+<Route path="/Pages/gulmarg" element={<Gulmarg />} />
+<Route path="/gulmarg-snow-adventure" element={<GulmargSnowAdventureLanding />} />
+<Route path="/gulmarg-ski-experience" element={<GulmargSkiExperienceLanding />} />
+<Route path="/luxury-gulmarg" element={<LuxuryGulmargTourLanding />} />
+<Route path="/Pages/pahalgam" element={<Pahalgam />} />
+<Route path="/pahalgam-landing" element={<PahalgamLanding/>} />
+<Route path="/pahalgam-valley" element={<PahalgamValleyLanding/>} />
+<Route path="/pahalgam-adventure" element={<PahalgamAdventureLanding/>} />
+<Route path="/luxury-pahalgam" element={<LuxuryPahalgamLanding/>} />
+<Route path="/Pages/munnar" element={<Munnar />} />
+<Route path="/munnar-landing" element={<MunnarLanding/>}/>
+<Route path="/munnar-alleppey" element={<MunnarAlleppeyLanding/>}/>
+<Route path="/munnar-adventure" element={<MunnarAdventureLanding/>}/>
+<Route path="/luxury-munnar" element={<LuxuryMunnarLanding/>}/>
+<Route path="/Pages/alleppey" element={<Alleppey/>}/>
+<Route path="/alleppey-landing" element={<AlleppeyLanding />} />
+<Route path="/houseboat-alleppey" element={<HouseboatAlleppeyLanding />} />
+<Route path="/alleppey-kumarakom" element={<AlleppeyKumarakomLanding />} />
+<Route path="/luxury-alleppey" element={<LuxuryAlleppeyLanding />} />
+<Route path="/Pages/kochi" element={<Kochi/>}/>
+<Route path="/kochi-landing" element={<KochiLanding />} />
+<Route path="/kochi-munnar" element={<KochiMunnarLanding />} />
+<Route path="/kochi-cultural" element={<KochiCulturalLanding />} />
+<Route path="/luxury-kochi" element={<LuxuryKochiLanding />} />
+<Route path="/Pages/ooty" element={<Ooty />} />
+<Route path="/ooty-landing" element={<OotyLanding />} />
+<Route path="/ooty-coonoor" element={<OotyCoonoorLanding />} />
+<Route path="/ooty-adventure" element={<OotyAdventureLanding />} />
+<Route path="/luxury-ooty" element={<LuxuryOotyLanding />} />
+<Route path="/Pages/chennai" element={<Chennai />} />
+<Route path="/chennai-landing" element={<ChennaiLanding />} />
+<Route path="/chennai-mahabalipuram" element={<ChennaiMahabalipuramLanding />} />
+<Route path="/chennai-cultural" element={<ChennaiCulturalLanding />} />
+<Route path="/luxury-chennai" element={<LuxuryChennaiLanding />} />
+<Route path="/Pages/gangtok" element={<Gangtok />} />
+<Route path="/gangtok-landing" element={<GangtokLanding />} />
+<Route path="/gangtok-nathula" element={<GangtokNathulaLanding />} />
+<Route path="/gangtok-adventure" element={<GangtokAdventureLanding />} />
+<Route path="/luxury-gangtok" element={<LuxuryGangtokLanding />} />
+<Route path="/Pages/guwahati" element={<Guwahati />} />
+<Route path="/guwahati-landing" element={<GuwahatiLanding />} />
+<Route path="/guwahati-shillong" element={<GuwahatiShillongLanding />} />
+<Route path="/guwahati-adventure" element={<GuwahatiAdventureLanding />} />
+<Route path="/luxury-guwahati" element={<LuxuryGuwahatiLanding />} />
+<Route path="/Pages/jaipur" element={<Jaipur />} />
+<Route path="/jaipur-landing" element={<JaipurLanding />} />
+<Route path="/jaipur-udaipur" element={<JaipurUdaipurLanding />} />
+<Route path="/jaipur-adventure" element={<JaipurAdventureLanding />} />
+<Route path="/luxury-jaipur" element={<LuxuryJaipurLanding />} />
+<Route path="/Pages/udaipur" element={<Udaipur />} />
+<Route path="/udaipur-landing" element={<UdaipurLanding />} />
+<Route path="/udaipur-mountabu" element={<UdaipurMountAbuLanding />} />
+<Route path="/udaipur-adventure" element={<UdaipurAdventureLanding />} />
+<Route path="/luxury-udaipur" element={<LuxuryUdaipurLanding />} />
+<Route path="/Pages/northgoa" element={<NorthGoa />} />
+<Route path="/northgoa-landing" element={<NorthGoaLanding />} />
+<Route path="/northgoa-party" element={<NorthGoaPartyLanding />} />
+<Route path="/northgoa-adventure" element={<NorthGoaAdventureLanding />} />
+<Route path="/luxury-northgoa" element={<LuxuryNorthGoaLanding />} />
+<Route path="/Pages/southgoa" element={<SouthGoa />} />
+<Route path="/southgoa-landing" element={<SouthGoaLanding />} />
+<Route path="/southgoa-escape" element={<SouthGoaEscapeLanding />} />
+<Route path="/southgoa-adventure" element={<SouthGoaAdventureLanding />} />
+<Route path="/luxury-southgoa" element={<LuxurySouthGoaLanding />} />
 
       </Routes>
 

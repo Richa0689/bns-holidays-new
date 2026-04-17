@@ -68,9 +68,15 @@ const Thailand = () => {
                 <Link to="/thailand-landing" className="title-link">
                   {tour.title}
                 </Link>
-              ) : (
-                tour.title
-              )}
+                ) : tour.title === "Bangkok & Pattaya" ? (
+                    <Link to="/bangkok-pattaya" className="title-link">{tour.title}</Link>
+                ) : tour.title === "Phuket & Krabi" ? (
+                    <Link to="/phuket-krabi" className="title-link">{tour.title}</Link>
+                ) : tour.title === "Thailand Luxury Tour" ? (
+                    <Link to="/thailand-luxury" className="title-link">{tour.title}</Link>
+                ) : (
+                    tour.title
+                )}
             </h2>
 
             <div className="rating">
