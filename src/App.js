@@ -79,7 +79,6 @@ import LuxuryFranceLanding from './Pages/LuxuryFranceLanding';
 import Germany from './Pages/Germany';
 import GermanyLanding from './Pages/GermanyLanding';
 import BerlinMunichLanding from './Pages/BerlinMunichLanding';
-import RhineTourLanding from "./Pages/RhineTourLanding";
 import BavarianAlpsLanding from "./Pages/BavarianAlpsLanding";
 import LuxuryGermanyLanding from "./Pages/LuxuryGermanyLanding";
 import Italy from "./Pages/Italy";
@@ -185,6 +184,16 @@ import SouthGoaLanding from './Pages/SouthGoaLanding';
 import SouthGoaEscapeLanding from './Pages/SouthGoaEscapeLanding';
 import SouthGoaAdventureLanding from './Pages/SouthGoaAdventureLanding';
 import LuxurySouthGoaLanding from './Pages/LuxurySouthGoaLanding';
+import KarnatakaTours from "./Pages/KarnatakaTours";
+import BangaloreLanding from "./Pages/BangaloreLanding";
+import MysoreLanding from "./Pages/MysoreLanding";
+import CoorgLanding from "./Pages/CoorgLanding";
+import HampiLanding from "./Pages/HampiLanding";
+
+
+
+
+
 function App() {
   return (
     <Router>
@@ -277,7 +286,6 @@ function App() {
 <Route path="/Pages/germany" element={<Germany />} />
 <Route path="/germany-landing" element={<GermanyLanding />} />
 <Route path="/berlin-munich" element={<BerlinMunichLanding />} />
-<Route path="/rhine-tour" element={<RhineTourLanding />} />
 <Route path="/bavarian-alps" element={<BavarianAlpsLanding />} />
 <Route path="/luxury-germany" element={<LuxuryGermanyLanding />} />
 <Route path="/Pages/italy" element={<Italy />} />
@@ -383,7 +391,11 @@ function App() {
 <Route path="/southgoa-escape" element={<SouthGoaEscapeLanding />} />
 <Route path="/southgoa-adventure" element={<SouthGoaAdventureLanding />} />
 <Route path="/luxury-southgoa" element={<LuxurySouthGoaLanding />} />
-
+<Route path="/karnataka-tours" element={<KarnatakaTours />} />
+<Route path="/bangalore-landing" element={<BangaloreLanding />} />
+<Route path="/mysore-landing" element={<MysoreLanding />} />
+<Route path="/coorg-landing" element={<CoorgLanding />} />
+<Route path="/hampi-landing" element={<HampiLanding />} />
       </Routes>
 
     </Router>

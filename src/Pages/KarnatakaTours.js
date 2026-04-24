@@ -4,69 +4,68 @@ import { Link } from "react-router-dom";
 
 const tours = [
   {
-    title: "Best of Germany",
-    path: "/germany-landing",
-    days: "7 Days",
-    countries: "1 Country",
-    cities: "3 Cities",
+    title: "Bangalore",
+    path: "/bangalore-landing",
+    days: "4 Days",
+    countries: "India",
+    cities: "Bangalore, Lalbagh",
     dates: "10 Dates",
-    price: "₹1,60,000",
-    emi: "₹7,000/mo",
-    image: "https://www.trafalgar.com/media/bf4ly2mp/best-germany-guided-tour-1.jpg"
+    price: "₹12,000",
+    emi: "₹600/mo",
+    image: "https://www.holidify.com/images/bgImages/BANGALORE.jpg"
   },
   {
-    title: "Berlin & Munich",
-    path: "/berlin-munich",
-    days: "6 Days",
-    countries: "1 Country",
-    cities: "2 Cities",
+    title: "Mysore ",
+    path: "/mysore-landing",
+    days: "4 Days",
+    countries: "India",
+    cities: "Mysore, Palace",
     dates: "8 Dates",
-    price: "₹1,45,000",
-    emi: "₹6,500/mo",
-    image: "https://cdn.kimkim.com/files/a/images/83e21b71cad48cd7a72f7f6ae8ed2d1912dfee00/original-2787002f697517df1c1dd3ec68c5a1d7.jpg"
+    price: "₹15,000",
+    emi: "₹750/mo",
+    image: "https://www.holidify.com/images/bgImages/MYSORE.jpg"
   },
-  
   {
-    title: "Bavarian Alps Escape",
-    path: "/bavarian-alps",
-    days: "5 Days",
-    countries: "1 Country",
-    cities: "2 Cities",
+    title: "Coorg ",
+    path: "/coorg-landing",
+    days: "4 Days",
+    countries: "India",
+    cities: "Coorg, Coffee Estates",
     dates: "6 Dates",
-    price: "₹1,50,000",
-    emi: "₹6,800/mo",
-    image: "https://i.natgeofe.com/n/c5177c9b-a1b8-42a7-8988-9a0dd2985f0e/Germany_GBY5PM_HR.jpg"
+    price: "₹18,000",
+    emi: "₹900/mo",
+    image: "https://www.holidify.com/images/bgImages/COORG.jpg"
   },
   {
-    title: "Luxury Germany Tour",
-    path: "/luxury-germany",
-    days: "9 Days",
-    countries: "1 Country",
-    cities: "4 Cities",
-    dates: "4 Dates",
-    price: "₹2,20,000",
-    emi: "₹9,500/mo",
-    image: "https://www.zicasso.com/static/7486d78c49a2bd7d8d575ac5f23ac9b1/d6a2b/7486d78c49a2bd7d8d575ac5f23ac9b1.jpg"
+    title: "Hampi ",
+    path: "/hampi-landing",
+    days: "4 Days",
+    countries: "India",
+    cities: "Hampi, Ruins",
+    dates: "5 Dates",
+    price: "₹20,000",
+    emi: "₹1,000/mo",
+    image: "https://www.holidify.com/images/bgImages/HAMPI.jpg"
   }
 ];
 
-const Germany = () => {
+const KarnatakaTours = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="tour-container">
-      <h1>Germany Tour Packages</h1>
+      <h1>Karnataka Tour Packages</h1>
 
       {tours.map((tour, index) => (
         <div className="tour-card" key={index}>
 
-          {/* Image */}
+          {/* IMAGE */}
           <div className="tour-image">
             <span className="badge">Popular Today</span>
             <img src={tour.image} alt={tour.title} />
           </div>
 
-          {/* Info */}
+          {/* INFO */}
           <div className="tour-info">
             <h2>
               <Link to={tour.path} className="title-link">
@@ -75,11 +74,11 @@ const Germany = () => {
             </h2>
 
             <div className="rating">
-              ⭐⭐⭐⭐⭐ <span>105 Reviews</span>
+              ⭐⭐⭐⭐⭐ <span>120 Reviews</span>
             </div>
 
             <p 
-              className="inclusive"
+              className="inclusive" 
               onClick={() => setShowModal(true)}
             >
               ∞ All Inclusive
@@ -92,7 +91,7 @@ const Germany = () => {
             <p className="dates">Dates Filling Fast</p>
           </div>
 
-          {/* Price */}
+          {/* PRICE */}
           <div className="tour-price">
             <p className="start">Starts from</p>
             <h2>{tour.price}</h2>
@@ -106,7 +105,7 @@ const Germany = () => {
         </div>
       ))}
 
-      {/* Modal */}
+      {/* MODAL */}
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-box">
@@ -121,10 +120,10 @@ const Germany = () => {
             <div className="icons-row">
               <div><span>🏨</span><p>Hotel</p></div>
               <div><span>🍽️</span><p>Meals</p></div>
-              <div><span>✈️</span><p>Flight</p></div>
+              <div><span>🚗</span><p>Transport</p></div>
               <div><span>📷</span><p>Sightseeing</p></div>
-              <div><span>🚌</span><p>Transport</p></div>
-              <div><span>📄</span><p>Visa</p></div>
+              <div><span>🏞️</span><p>Nature</p></div>
+              <div><span>📄</span><p>Guide</p></div>
             </div>
 
             <div className="modal-content">
@@ -133,7 +132,7 @@ const Germany = () => {
               </p>
 
               <p className="note">
-                *Except for joining/leaving. To & fro economy class airfare is included.
+                *Hotel, meals & sightseeing included.
                 <br />
                 *Taxes Extra.
               </p>
@@ -147,4 +146,4 @@ const Germany = () => {
   );
 };
 
-export default Germany;
+export default KarnatakaTours;

@@ -9,7 +9,7 @@ const BaliLanding = () => {
       {/* Hero Section */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+          src="https://etimg.etb2bimg.com/photo/115997634.cms"
           alt="Bali"
         />
         <div className="hero-content">

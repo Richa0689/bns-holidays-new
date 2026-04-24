@@ -130,7 +130,7 @@ const LuxuryMunnarLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://www.ewsholidays.com/wp-content/uploads/2018/10/Tea-Garden-Munnar-Kerala-101.jpg" alt="" />
+            <img src="https://www.ewsholidays.com/wp-content/uploads/2018/10/Tea-Garden-Munnar-Kerala-101.jpg " alt="" />
             <div className="day-content">
               <h3>Day 7</h3>
               <p>Departure</p>

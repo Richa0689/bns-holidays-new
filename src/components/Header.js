@@ -66,7 +66,8 @@ const Header = () => {
     ],
     south: [
       { title: "Kerala", items: [{ name: "Munnar", path: "/Pages/munnar" }, { name: "Alleppey", path: "/Pages/alleppey" }, { name: "Kochi", path: "/Pages/kochi" }] },
-      { title: "Tamil Nadu", items: [{ name: "Ooty", path: "/Pages/ooty" }, { name: "Chennai", path: "/Pages/chennai" }] }
+      { title: "Tamil Nadu", items: [{ name: "Ooty", path: "/Pages/ooty" }, { name: "Chennai", path: "/Pages/chennai" }] },
+      { title: "Karnataka", path: "/karnataka-tours", items: [{ name: "Bangalore", path: "/bangalore-landing" },  { name: "Mysore", path: "/mysore-landing" }, { name: "Coorg", path: "/coorg-landing" },{ name: "Hampi", path: "/hampi-landing" }] }
     ],
     east: [
       { title: "Sikkim", items: [{ name: "Gangtok", path: "/Pages/gangtok" }] },
@@ -219,7 +220,13 @@ const Header = () => {
                 <div className="mega-right">
                   {indiaData[activeCategory].map((section, i) => (
                     <div className="mega-column" key={i}>
-                      <h4>{section.title}</h4>
+                      <h4>
+  {section.path ? (
+    <Link to={section.path}>{section.title}</Link>
+  ) : (
+    section.title
+  )}
+</h4>
                       {section.items.map((item, j) => (
                         <p key={j}>
                           {typeof item === "string" ? (
@@ -323,7 +330,15 @@ const Header = () => {
                       </p>
                       {sections.map((section, i) => (
                         <div key={i}>
-                          <p className="mobile-section-title">{section.title}</p>
+                         <p className="mobile-section-title">
+  {section.path ? (
+    <Link to={section.path} onClick={closeMenu}>
+      {section.title}
+    </Link>
+  ) : (
+    section.title
+  )}
+</p>
                           {section.items.map((item, j) => (
                             <p key={j} className="mobile-item">
                               {typeof item === "string" ? (
