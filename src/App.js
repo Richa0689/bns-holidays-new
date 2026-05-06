@@ -1,5 +1,7 @@
 import './App.css';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async"; // ✅ ADD THIS
+import SEO from "./components/SEO";
 
 import Header from './components/Header';
 import VideoSlider from './components/VideoSlider';
@@ -196,8 +198,9 @@ import HampiLanding from "./Pages/HampiLanding";
 
 function App() {
   return (
+    <HelmetProvider> 
     <Router>
-
+      <SEO />
       {/* HEADER */}
       <Header />
 
@@ -396,9 +399,9 @@ function App() {
 <Route path="/mysore-landing" element={<MysoreLanding />} />
 <Route path="/coorg-landing" element={<CoorgLanding />} />
 <Route path="/hampi-landing" element={<HampiLanding />} />
-      </Routes>
-
+      </Routes> 
     </Router>
+    </HelmetProvider>
   );
 }
 
