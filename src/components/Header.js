@@ -50,6 +50,14 @@ const Header = () => {
     { name: "Dubai", path: "/Pages/Dubai" },
     { name: "Abu Dhabi", path: "/Pages/abu-dhabi" },
     { name: "New Zealand", path: "/Pages/NewZealand" },
+    { name: "Rameswaram & Madurai", path: "/rameswaram-madurai" },
+    { name: "Temple Tours", path: "/temple-landing" },
+    { name: "Bangalore", path: "/bangalore-landing" },
+    { name: "Mysore", path: "/mysore-landing" },
+    { name: "Coorg", path: "/coorg-landing" },
+    { name: "Hampi", path: "/hampi-landing" },
+    {name: "Tamil Nadu Tours", path: "/tamilnadu-tours" },
+    {name: "Karnataka Tours", path: "/karnataka-tours"},
   ];
 
   const fixedDestinations = [
@@ -66,7 +74,7 @@ const Header = () => {
     ],
     south: [
       { title: "Kerala", items: [{ name: "Munnar", path: "/Pages/munnar" }, { name: "Alleppey", path: "/Pages/alleppey" }, { name: "Kochi", path: "/Pages/kochi" }] },
-      { title: "Tamil Nadu", items: [{ name: "Ooty", path: "/Pages/ooty" }, { name: "Chennai", path: "/Pages/chennai" }] },
+      { title: "Tamil Nadu", path:"/tamilnadu-tours", items: [{ name: "Chennai", path: "/chennai-landing" },{name:"Rameswaram & Madurai",path:"/rameswaram-madurai"},{name:"Temple Tours",path: "/temple-landing",}] },
       { title: "Karnataka", path: "/karnataka-tours", items: [{ name: "Bangalore", path: "/bangalore-landing" },  { name: "Mysore", path: "/mysore-landing" }, { name: "Coorg", path: "/coorg-landing" },{ name: "Hampi", path: "/hampi-landing" }] }
     ],
     east: [

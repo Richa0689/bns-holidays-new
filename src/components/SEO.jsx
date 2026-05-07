@@ -1,4 +1,4 @@
-// src/components/SEO.jsx
+
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
@@ -143,11 +143,6 @@ const seoData = {
   "/ooty-coonoor": { title: "Ooty & Coonoor Tour | BNS Holidays", description: "Ooty and Coonoor tour packages." },
   "/ooty-adventure": { title: "Ooty Adventure Tour | BNS Holidays", description: "Ooty adventure tour packages." },
   "/luxury-ooty": { title: "Luxury Ooty Tour | BNS Holidays", description: "Premium luxury Ooty tour packages." },
-  "/Pages/chennai": { title: "Chennai Tour Packages | BNS Holidays", description: "Best Chennai tour packages." },
-  "/chennai-landing": { title: "Best Chennai Tours | BNS Holidays", description: "Book Chennai tour packages." },
-  "/chennai-mahabalipuram": { title: "Chennai & Mahabalipuram Tour | BNS Holidays", description: "Chennai and Mahabalipuram tour packages." },
-  "/chennai-cultural": { title: "Chennai Cultural Tour | BNS Holidays", description: "Chennai cultural tour packages." },
-  "/luxury-chennai": { title: "Luxury Chennai Tour | BNS Holidays", description: "Premium luxury Chennai tour packages." },
   "/Pages/gangtok": { title: "Gangtok Tour Packages | BNS Holidays", description: "Best Gangtok tour packages. Nathula Pass, adventure and more." },
   "/gangtok-landing": { title: "Best Gangtok Tours | BNS Holidays", description: "Book Gangtok tour packages." },
   "/gangtok-nathula": { title: "Gangtok & Nathula Tour | BNS Holidays", description: "Gangtok and Nathula Pass tour packages." },
@@ -183,10 +178,27 @@ const seoData = {
   "/mysore-landing": { title: "Mysore Tour Package | BNS Holidays", description: "Best Mysore tour packages starting from ₹15,000." },
   "/coorg-landing": { title: "Coorg Tour Package | BNS Holidays", description: "Best Coorg tour packages starting from ₹18,000." },
   "/hampi-landing": { title: "Hampi Tour Package | BNS Holidays", description: "Best Hampi tour packages starting from ₹20,000." },
+  // TAMIL NADU
+"/tamilnadu-tours": {
+  title: "Tamil Nadu Tour Packages | BNS Holidays",
+  description: "Best Tamil Nadu tour packages. Chennai, Rameswaram, Madurai, temples and more. Book with BNS Holidays!"
+},
+"/chennai-landing": {
+  title: "Chennai Tour Package | BNS Holidays",
+  description: "Best Chennai tour packages. Mahabalipuram, cultural tours included. Starting from great prices. Book now!"
+},
+"/rameswaram-madurai": {
+  title: "Rameswaram & Madurai Tour | BNS Holidays",
+  description: "Rameswaram and Madurai tour packages. Temple tours, pilgrimage packages included. Book with BNS Holidays!"
+},
+"/temple-landing": {
+  title: "Tamil Nadu Temple Tour | BNS Holidays",
+  description: "Tamil Nadu temple tour packages. Visit famous temples across Tamil Nadu. Book with BNS Holidays!"
+},
 };
 
 function SEO() {
-  // ✅ useLocation works correctly with HashRouter
+ 
   const { pathname } = useLocation();
 
   const seo = seoData[pathname] || {

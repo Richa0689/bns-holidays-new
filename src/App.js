@@ -151,11 +151,6 @@ import OotyLanding from './Pages/OotyLanding';
 import OotyCoonoorLanding from './Pages/OotyCoonoorLanding';
 import OotyAdventureLanding from './Pages/OotyAdventureLanding';
 import LuxuryOotyLanding from './Pages/LuxuryOotyLanding';
-import Chennai from './Pages/Chennai';
-import ChennaiLanding from './Pages/ChennaiLanding';
-import ChennaiMahabalipuramLanding from './Pages/ChennaiMahabalipuramLanding';
-import ChennaiCulturalLanding from './Pages/ChennaiCulturalLanding';
-import LuxuryChennaiLanding from './Pages/LuxuryChennaiLanding';
 import Gangtok from './Pages/Gangtok';
 import GangtokLanding from './Pages/GangtokLanding';
 import GangtokNathulaLanding from './Pages/GangtokNathulaLanding';
@@ -191,6 +186,10 @@ import BangaloreLanding from "./Pages/BangaloreLanding";
 import MysoreLanding from "./Pages/MysoreLanding";
 import CoorgLanding from "./Pages/CoorgLanding";
 import HampiLanding from "./Pages/HampiLanding";
+import TamilNaduTours from './Pages/TamilNaduTours';
+import ChennaiLanding from "./Pages/ChennaiLanding";
+import RameswaramMaduraiLanding from "./Pages/RameswaramMaduraiLanding";
+import TempleLanding from "./Pages/TempleLanding";
 
 
 
@@ -359,11 +358,6 @@ function App() {
 <Route path="/ooty-coonoor" element={<OotyCoonoorLanding />} />
 <Route path="/ooty-adventure" element={<OotyAdventureLanding />} />
 <Route path="/luxury-ooty" element={<LuxuryOotyLanding />} />
-<Route path="/Pages/chennai" element={<Chennai />} />
-<Route path="/chennai-landing" element={<ChennaiLanding />} />
-<Route path="/chennai-mahabalipuram" element={<ChennaiMahabalipuramLanding />} />
-<Route path="/chennai-cultural" element={<ChennaiCulturalLanding />} />
-<Route path="/luxury-chennai" element={<LuxuryChennaiLanding />} />
 <Route path="/Pages/gangtok" element={<Gangtok />} />
 <Route path="/gangtok-landing" element={<GangtokLanding />} />
 <Route path="/gangtok-nathula" element={<GangtokNathulaLanding />} />
@@ -399,6 +393,10 @@ function App() {
 <Route path="/mysore-landing" element={<MysoreLanding />} />
 <Route path="/coorg-landing" element={<CoorgLanding />} />
 <Route path="/hampi-landing" element={<HampiLanding />} />
+<Route path="/tamilnadu-tours" element={<TamilNaduTours />} />
+<Route path="/chennai-landing" element={<ChennaiLanding />} />
+<Route path="/rameswaram-madurai" element={<RameswaramMaduraiLanding />} />
+<Route path="/temple-landing" element={<TempleLanding />} />
       </Routes> 
     </Router>
     </HelmetProvider>

@@ -3,58 +3,59 @@ import "./Pages.css";
 import { Link } from "react-router-dom";
 
 const tours = [
+  // {
+  //   title: "Ooty",
+  //   path: "/ooty-landing",
+  //   days: "4 Days",
+  //   countries: "India",
+  //   cities: "Ooty, Nilgiri Hills",
+  //   dates: "8 Dates",
+  //   price: "₹14,000",
+  //   emi: "₹700/mo",
+  //   image: "https://www.holidify.com/images/bgImages/OOTY.jpg"
+  // },
   {
-    title: "Best of Chennai",
+    title: "Chennai",
     path: "/chennai-landing",
-    days: "4 Days",
-    countries: "India",
-    cities: "Chennai, Marina Beach",
-    dates: "10 Dates",
-    price: "₹18,000",
-    emi: "₹900/mo",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/58/01/46/caption.jpg?w=300&h=300&s=1"
-  },
-  {
-    title: "Chennai & Mahabalipuram",
-    path: "/chennai-mahabalipuram",
     days: "5 Days",
     countries: "India",
-    cities: "Chennai, Mahabalipuram",
-    dates: "8 Dates",
-    price: "₹22,000",
-    emi: "₹1,100/mo",
-    image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/36/89/a9.jpg"
+    cities: "Chennai, Pondicherry,Mahabalipuram ",
+    dates: "10 Dates",
+    price: "₹12,000",
+    emi: "₹600/mo",
+    image: "https://www.holidify.com/images/bgImages/CHENNAI.jpg"
+  },
+  
+  {
+    title: "Rameswaram & Madurai",
+    path: "/rameswaram-madurai",
+    days: "4 Days",
+    countries: "India",
+    cities: "Rameswaram, Madurai, Temple",
+    dates: "5 Dates",
+    price: "₹18,000",
+    emi: "₹900/mo",
+    image: "https://www.holidify.com/images/bgImages/RAMESWARAM.jpg"
   },
   {
-    title: "Chennai Cultural Tour",
-    path: "/chennai-cultural",
-    days: "3 Days",
+    title: "Temple Tour",
+    path: "/temple-landing",
+    days: "11 Days",
     countries: "India",
-    cities: "Chennai",
+    cities: "Chennai  Tirupati , Vellore , Kanchipuram , Mahabalipuram , Kumbakonam , Tanjore , Rameswaram , Madurai",
     dates: "6 Dates",
     price: "₹15,000",
-    emi: "₹700/mo",
-    image: "https://sc0.blr1.digitaloceanspaces.com/facebook/804709-facebook-qkbkdrnrpn-1457282502.jpeg"
+    emi: "₹750/mo",
+    image: "https://www.holidify.com/images/bgImages/MADURAI.jpg"
   },
-  {
-    title: "Luxury Chennai Tour",
-    path: "/luxury-chennai",
-    days: "6 Days",
-    countries: "India",
-    cities: "Chennai, Pondicherry",
-    dates: "5 Dates",
-    price: "₹35,000",
-    emi: "₹1,800/mo",
-    image: "https://media-cdn.tripadvisor.com/media/photo-s/2b/ff/23/7d/hotel-entrance.jpg"
-  }
 ];
 
-const Chennai = () => {
+const TamilNaduTours = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="tour-container">
-      <h1>Chennai Tour Packages</h1>
+      <h1>Tamil Nadu Tour Packages</h1>
 
       {tours.map((tour, index) => (
         <div className="tour-card" key={index}>
@@ -122,8 +123,8 @@ const Chennai = () => {
               <div><span>🍽️</span><p>Meals</p></div>
               <div><span>🚗</span><p>Transport</p></div>
               <div><span>📷</span><p>Sightseeing</p></div>
-              <div><span>🎭</span><p>Experiences</p></div>
-              <div><span>📄</span><p>Permit</p></div>
+              <div><span>🛕</span><p>Temple</p></div>
+              <div><span>📄</span><p>Guide</p></div>
             </div>
 
             <div className="modal-content">
@@ -132,7 +133,7 @@ const Chennai = () => {
               </p>
 
               <p className="note">
-                *Hotel, transport & sightseeing included.
+                *Hotel, meals & sightseeing included.
                 <br />
                 *Taxes Extra.
               </p>
@@ -146,4 +147,4 @@ const Chennai = () => {
   );
 };
 
-export default Chennai;
+export default TamilNaduTours;
