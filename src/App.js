@@ -1,6 +1,6 @@
 import './App.css';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async"; // ✅ ADD THIS
+import { HelmetProvider } from "react-helmet-async"; 
 import SEO from "./components/SEO";
 
 import Header from './components/Header';

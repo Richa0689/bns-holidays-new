@@ -1,57 +1,98 @@
 .video-slider {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 130px;
+  transform: scaleY(0.7) scaleX(1.0);
+  transform-origin: top center;
+  margin-bottom: -150px;
+}
+
+.youtube-container {
   position: relative;
   width: 100%;
-  height: 600px;       /* container height */
-  overflow: hidden;    /* hide anything outside container */
-  background: black;   /* fallback for letterboxing */
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 
-.video {
+.youtube-container iframe {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 100px);
+  border: none;
+}
+
+.overlay {
+  position: absolute;
+  top: -50px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 100px);
+  z-index: 10;
+  cursor: none;
+  background: transparent;
+}
+
+.youtube-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* fills container completely */
-  object-position: bottom; /* crop happens at top, bottom stays visible */
+  background: #fefdfd;
+  z-index: 5;
+  animation: hideLoader 3s forwards;
 }
-/* ============================================
-   VIDEO SLIDER MOBILE FIX
-   ============================================ */
 
+@keyframes hideLoader {
+  0%   { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; pointer-events: none; }
+}
+
+/* ── Tablet (≤768px) ── */
 @media (max-width: 768px) {
   .video-slider {
-    height: 380px;           /* tablet — less tall */
+    margin-top: 50px;
+    transform: scaleY(0.85) scaleX(1.0);
+    margin-bottom: -80px;
   }
 
-  .video {
-    object-position: center; /* re-center crop on tablet */
+  .youtube-container iframe {
+    top: -30px;
+    height: calc(100% + 60px);
+  }
+
+  .overlay {
+    top: -30px;
+    height: calc(100% + 60px);
   }
 }
-
+/* ── Mobile (≤480px) ── */
 @media (max-width: 480px) {
   .video-slider {
-    height: 260px;           /* phone — compact height */
-  }
-}
-/* ============================================
-   VIDEO SLIDER — SHOW LEFT SIDE ON MOBILE
-   ============================================ */
-
-@media (max-width: 768px) {
-  .video-slider {
-    height: 380px;
+    margin-top:0;
+    transform: scaleY(0.82) scaleX(1.0);  /* crop top & bottom */
+    transform-origin: top center;
+    margin-bottom: -60px;
   }
 
-  .video {
-    object-fit: cover;
-    object-position: left center;  /* show left side of video */
-  }
-}
-
-@media (max-width: 480px) {
-  .video-slider {
-    height: 260px;
+  .youtube-container iframe {
+    top: -70px;                      /* ⬆ increased from -45px */
+    height: calc(100% + 140px);      /* ⬆ increased to match */
   }
 
-  .video {
-    object-position: left center;  /* keep left side visible on phones too */
+  .overlay {
+    top: -45px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 110px);
+    z-index: 10;
+    cursor: none;
+    background: transparent;
   }
 }

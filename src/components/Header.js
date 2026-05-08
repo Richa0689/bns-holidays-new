@@ -3,7 +3,7 @@ import "./Header.css";
 import logo from "./images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faBars, faXmark, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faBars, faXmark, faChevronDown,faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -193,6 +193,14 @@ const Header = () => {
             </ul>
           )}
         </div>
+         {/* CONTACT BUTTON */}
+        <a href="tel:+917066620673" className="contact-btn">
+          <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+          <div className="contact-text">
+            <span className="contact-label">Contact Us</span>
+            <span className="contact-number">+91 70666 20673</span>
+          </div>
+        </a>
 
         {/* HAMBURGER */}
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
