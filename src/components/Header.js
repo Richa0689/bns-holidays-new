@@ -4,6 +4,7 @@ import logo from "./images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars, faXmark, faChevronDown,faPhone } from "@fortawesome/free-solid-svg-icons";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -73,7 +74,7 @@ const Header = () => {
       { title: "Kashmir", items: [{ name: "Srinagar", path: "/Pages/srinagar" }, { name: "Gulmarg", path: "/Pages/gulmarg" }, { name: "Pahalgam", path: "/Pages/pahalgam" }] }
     ],
     south: [
-      { title: "Kerala", items: [{ name: "Munnar", path: "/Pages/munnar" }, { name: "Alleppey", path: "/Pages/alleppey" }, { name: "Kochi", path: "/Pages/kochi" }] },
+      { title: "Kerala", path: "/kerala-tours", items: [{ name: "Kerala Tour Munnar", path: "/munnar-landing" }, { name: "Alleppey", path: "/Pages/alleppey" }, { name: "Kochi", path: "/Pages/kochi" }] },
       { title: "Tamil Nadu", path:"/tamilnadu-tours", items: [{ name: "Chennai", path: "/chennai-landing" },{name:"Rameswaram & Madurai",path:"/rameswaram-madurai"},{name:"Temple Tours",path: "/temple-landing",}] },
       { title: "Karnataka", path: "/karnataka-tours", items: [{ name: "Bangalore", path: "/bangalore-landing" },  { name: "Mysore", path: "/mysore-landing" }, { name: "Coorg", path: "/coorg-landing" },{ name: "Hampi", path: "/hampi-landing" }] }
     ],
@@ -218,8 +219,9 @@ const Header = () => {
             className="nav-item"
             onMouseEnter={() => setOpenDropdown("india")}
             onMouseLeave={closeDropdown}
+            style={{}}
           >
-            India ▾
+             <span className="nav-label">India ▾</span>
             {openDropdown === "india" && (
               <div className="mega-menu">
                 <div className="mega-left">
@@ -260,12 +262,13 @@ const Header = () => {
           </li>
 
           {/* International Dropdown */}
+          
           <li
             className="nav-item"
             onMouseEnter={() => setOpenDropdown("international")}
             onMouseLeave={closeDropdown}
           >
-            International ▾
+             <span className="nav-label" >International ▾</span>
             {openDropdown === "international" && (
               <div className="mega-menu">
                 <div className="mega-left">

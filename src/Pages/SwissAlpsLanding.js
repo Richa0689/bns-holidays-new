@@ -11,7 +11,7 @@ const SwissAlpsLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+          src="https://s1.it.atcdn.net/wp-content/uploads/2015/11/shutterstock_279572969.jpg"
           alt="Swiss Alps"
         />
         <div className="hero-content">
@@ -30,7 +30,7 @@ const SwissAlpsLanding = () => {
 
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1500048993959-d23a436266cf" alt="" />
+            <img src="https://media1.thrillophilia.com/filestore/ttfv7t4cadn0epu95ukaxmrmnata_jungfrau-railway-switzerland.jpeg?w=753&h=450&dpr=2.0" alt="" />
             <p>Interlaken Views</p>
           </div>
 
@@ -40,12 +40,12 @@ const SwissAlpsLanding = () => {
           </div>
 
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2" alt="" />
+            <img src="https://images.unsplash.com/photo-15212951217-8a321d551ad2" alt="" />
             <p>Lucerne City</p>
           </div>
 
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="" />
+            <img src="https://images.unsplash.com/photo-15075254280-b723cf961d3e" alt="" />
             <p>Swiss Alps Snow</p>
           </div>
         </div>
@@ -79,7 +79,7 @@ const SwissAlpsLanding = () => {
         <div className="itinerary-list">
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" />
+            <img src="https://images.unsplash.com/photo-15057616735-60b3a7427bad" />
             <div className="day-content">
               <h3>Day 1</h3>
               <p>Arrival in Zurich</p>
@@ -87,7 +87,7 @@ const SwissAlpsLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2" />
+            <img src="https://images.unsplash.com/photo-152129512178a321d551ad2" />
             <div className="day-content">
               <h3>Day 2</h3>
               <p>Transfer to Interlaken</p>
@@ -95,7 +95,7 @@ const SwissAlpsLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1500048993959-d23a436266cf" />
+            <img src="https://images.unsplash.com/photo-15000489939-d23a436266cf" />
             <div className="day-content">
               <h3>Day 3</h3>
               <p>Adventure Activities</p>
@@ -103,7 +103,7 @@ const SwissAlpsLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" />
+            <img src="https://images.unsplash.com/photo-150178588-af3ef285b470" />
             <div className="day-content">
               <h3>Day 4</h3>
               <p>Jungfraujoch Tour</p>
@@ -111,7 +111,7 @@ const SwissAlpsLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" />
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf9e" />
             <div className="day-content">
               <h3>Day 5</h3>
               <p>Departure</p>

@@ -1,71 +1,178 @@
 .query-section {
-  padding: 40px;
+  padding: 60px 24px;
+  background: #f6f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.query-badge {
+  display: inline-block;
+  background: #e0f0ff;
+  color: #1a6fb5;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.query-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px;
   text-align: center;
 }
 
-.query-section h2 {
-  margin-bottom: 20px;
+.query-subheading {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.query-card {
+  background: rgb(198, 225, 236);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
 }
 
 .query-form {
-  max-width: 400px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
-.query-form input,
-.query-form textarea {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+.query-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
-.query-form button {
-  padding: 10px;
-  background: #007bff;
-  color: white;
+.field-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.field-wrap-full {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.field-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.query-input,
+.query-textarea {
+  padding: 11px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #e2e8f0;
+  font-size: 14px;
+  color: #0f172a;
+  background: #f8fafc;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s;
+  font-family: inherit;
+}
+
+.query-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.query-input.input-focused,
+.query-textarea.input-focused {
+  border: 1.5px solid #3b82f6;
+}
+
+.query-divider {
+  height: 1px;
+  background: #f1f5f9;
+  margin: 4px 0;
+}
+
+.query-btn {
+  width: 100%;
+  padding: 13px;
+  background: #25d366;
+  color: #fff;
   border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0.3px;
+  transition: opacity 0.2s, transform 0.1s;
 }
 
-.query-form button:hover {
-  background: #0056b3;
+.query-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
 }
-/* ============================================
-   QUERY BOX MOBILE FIX
-   ============================================ */
 
-@media (max-width: 768px) {
+.query-btn:active {
+  transform: scale(0.98);
+}
 
-  .query-section {
-    padding: 24px 16px;   /* reduce side padding */
+.query-btn--sent {
+  background: #25d366;
+}
+
+.query-note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* ── Mobile ── */
+@media (max-width: 520px) {
+  .query-card {
+    padding: 24px 18px;
   }
 
-  .query-form {
-    max-width: 100%;      /* full width on mobile instead of fixed 400px */
+  .query-heading {
+    font-size: 22px;
+  }
+
+  .query-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .field-wrap {
+    min-width: unset;
     width: 100%;
   }
 
-  .query-form input,
-  .query-form textarea {
-    font-size: 16px;      /* prevents iOS auto-zoom on focus */
-    padding: 12px;        /* larger touch target */
-    width: 100%;
-    box-sizing: border-box;
+  .query-input,
+  .query-textarea {
+    font-size: 16px; /* prevents iOS zoom */
   }
 
-  .query-form textarea {
-    min-height: 120px;    /* comfortable typing area */
-    resize: vertical;     /* allow user to resize vertically only */
-  }
-
-  .query-form button {
-    padding: 14px;        /* bigger tap area */
+  .query-btn {
     font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 14px;
   }
 }

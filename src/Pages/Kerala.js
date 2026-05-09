@@ -4,57 +4,46 @@ import { Link } from "react-router-dom";
 
 const tours = [
   {
-    title: "Best of Munnar",
+    title: "Kerala Tour Munnar",
     path: "/munnar-landing",
-    days: "5 Days",
-    countries: "India",
-    cities: "Munnar, Tea Gardens",
-    dates: "10 Dates",
-    price: "₹22,000",
-    emi: "₹1,000/mo",
-    image: "https://www.thewindmunnar.com/images/monsoon-Munnar.jpg"
-  },
-  {
-    title: "Munnar & Alleppey",
-    path: "/munnar-alleppey",
     days: "6 Days",
     countries: "India",
-    cities: "Munnar, Alleppey",
+    cities: "Munnar,Thekkady,Kumarakom,Cochin",
     dates: "8 Dates",
-    price: "₹28,000",
-    emi: "₹1,300/mo",
-    image: "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-aby-zachariah-rRnnyVD224U-unsplash.webp&w=1920&q=75"
+    price: "₹14,000",
+    emi: "₹700/mo",
+    image: "https://www.holidify.com/images/bgImages/MUNNAR.jpg"
   },
   {
-    title: "Adventure Munnar Trip",
-    path: "/munnar-adventure",
-    days: "4 Days",
-    countries: "India",
-    cities: "Munnar Hills",
-    dates: "6 Dates",
-    price: "₹18,000",
-    emi: "₹900/mo",
-    image: "https://www.munnar.holiday/munnartourism/wp-content/uploads/2019/04/fun-forest-munnar04.jpg"
-  },
-  {
-    title: "Luxury Munnar Tour",
-    path: "/luxury-munnar",
+    title: "Kerala Tour Cochin",
+    path: "/cochin-landing",
     days: "7 Days",
     countries: "India",
-    cities: "Munnar, Kochi",
-    dates: "5 Dates",
-    price: "₹40,000",
-    emi: "₹1,800/mo",
-    image: "https://etripto.in/uploads/0000/1/2025/05/26/munnar-tour-package.jpg"
+    cities: "Cochin,Thekkady,Kumarakom,Kovalam",
+    dates: "10 Dates",
+    price: "₹12,000",
+    emi: "₹600/mo",
+    image: "https://www.holidify.com/images/bgImages/ALLEPPEY.jpg"
+  },
+  {
+    title: "Kerala Tour Alleppey",
+    path: "/alleppey-landing",
+    days: "8 Days",
+    countries: "India",
+    cities: "Thekkady,Alleppey,Kovalam,Trivandrum",
+    dates: "6 Dates",
+    price: "₹15,000",
+    emi: "₹750/mo",
+    image: "https://www.holidify.com/images/bgImages/KOCHI.jpg"
   }
 ];
 
-const Munnar = () => {
+const KeralaTours = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="tour-container">
-      <h1>Munnar Tour Packages</h1>
+      <h1>Kerala Tour Packages</h1>
 
       {tours.map((tour, index) => (
         <div className="tour-card" key={index}>
@@ -67,8 +56,6 @@ const Munnar = () => {
 
           {/* INFO */}
           <div className="tour-info">
-
-            
             <h2>
               <Link to={tour.path} className="title-link">
                 {tour.title}
@@ -124,8 +111,8 @@ const Munnar = () => {
               <div><span>🍽️</span><p>Meals</p></div>
               <div><span>🚗</span><p>Transport</p></div>
               <div><span>📷</span><p>Sightseeing</p></div>
-              <div><span>🎿</span><p>Activities</p></div>
-              <div><span>📄</span><p>Permit</p></div>
+              <div><span>🌴</span><p>Backwaters</p></div>
+              <div><span>📄</span><p>Guide</p></div>
             </div>
 
             <div className="modal-content">
@@ -134,7 +121,7 @@ const Munnar = () => {
               </p>
 
               <p className="note">
-                *Transport & hotel included.
+                *Hotel, meals & sightseeing included.
                 <br />
                 *Taxes Extra.
               </p>
@@ -148,4 +135,4 @@ const Munnar = () => {
   );
 };
 
-export default Munnar;
+export default KeralaTours;

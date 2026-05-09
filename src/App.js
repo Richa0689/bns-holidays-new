@@ -8,6 +8,7 @@ import VideoSlider from './components/VideoSlider';
 import TrendingDestinations from './components/TrendingDestinations';
 import IndiaDestinations from './components/IndiaDestinations';
 import Adventures from './components/Adventures';
+import Reviews from './components/Reviews';
 import QueryBox from './components/QueryBox';
 import FloatingButtons from './components/FloatingButtons';
 import Footer from './components/Footer';
@@ -131,21 +132,6 @@ import PahalgamLanding from './Pages/PahalgamLanding';
 import PahalgamValleyLanding from './Pages/PahalgamValleyLanding';
 import PahalgamAdventureLanding from './Pages/PahalgamAdventureLanding';
 import LuxuryPahalgamLanding from './Pages/LuxuryPahalgamLanding';
-import Munnar from './Pages/Munnar';
-import MunnarLanding from './Pages/MunnarLanding';
-import MunnarAlleppeyLanding from './Pages/MunnarAlleppeyLanding';
-import MunnarAdventureLanding from './Pages/MunnarAdventureLanding';
-import LuxuryMunnarLanding from './Pages/LuxuryMunnarLanding';
-import Alleppey from './Pages/Alleppey';
-import AlleppeyLanding from './Pages/AlleppeyLanding';
-import HouseboatAlleppeyLanding from './Pages/HouseboatAlleppeyLanding';
-import AlleppeyKumarakomLanding from './Pages/AlleppeyKumarakomLanding';
-import LuxuryAlleppeyLanding from './Pages/LuxuryAlleppeyLanding';
-import Kochi from './Pages/Kochi';
-import KochiLanding from './Pages/KochiLanding';
-import KochiMunnarLanding from './Pages/KochiMunnarLanding';
-import KochiCulturalLanding from './Pages/KochiCulturalLanding';
-import LuxuryKochiLanding from './Pages/LuxuryKochiLanding';
 import Ooty from './Pages/Ooty';
 import OotyLanding from './Pages/OotyLanding';
 import OotyCoonoorLanding from './Pages/OotyCoonoorLanding';
@@ -190,10 +176,8 @@ import TamilNaduTours from './Pages/TamilNaduTours';
 import ChennaiLanding from "./Pages/ChennaiLanding";
 import RameswaramMaduraiLanding from "./Pages/RameswaramMaduraiLanding";
 import TempleLanding from "./Pages/TempleLanding";
-
-
-
-
+import Kerala from "./Pages/Kerala";
+import KeralaTourMunnar from "./Pages/KeralaTourMunnar";
 
 function App() {
   return (
@@ -213,6 +197,7 @@ function App() {
               <TrendingDestinations />
               <IndiaDestinations />
               <Adventures />
+              <Reviews />
               <QueryBox />
               <FloatingButtons />
               <Footer />
@@ -338,21 +323,6 @@ function App() {
 <Route path="/pahalgam-valley" element={<PahalgamValleyLanding/>} />
 <Route path="/pahalgam-adventure" element={<PahalgamAdventureLanding/>} />
 <Route path="/luxury-pahalgam" element={<LuxuryPahalgamLanding/>} />
-<Route path="/Pages/munnar" element={<Munnar />} />
-<Route path="/munnar-landing" element={<MunnarLanding/>}/>
-<Route path="/munnar-alleppey" element={<MunnarAlleppeyLanding/>}/>
-<Route path="/munnar-adventure" element={<MunnarAdventureLanding/>}/>
-<Route path="/luxury-munnar" element={<LuxuryMunnarLanding/>}/>
-<Route path="/Pages/alleppey" element={<Alleppey/>}/>
-<Route path="/alleppey-landing" element={<AlleppeyLanding />} />
-<Route path="/houseboat-alleppey" element={<HouseboatAlleppeyLanding />} />
-<Route path="/alleppey-kumarakom" element={<AlleppeyKumarakomLanding />} />
-<Route path="/luxury-alleppey" element={<LuxuryAlleppeyLanding />} />
-<Route path="/Pages/kochi" element={<Kochi/>}/>
-<Route path="/kochi-landing" element={<KochiLanding />} />
-<Route path="/kochi-munnar" element={<KochiMunnarLanding />} />
-<Route path="/kochi-cultural" element={<KochiCulturalLanding />} />
-<Route path="/luxury-kochi" element={<LuxuryKochiLanding />} />
 <Route path="/Pages/ooty" element={<Ooty />} />
 <Route path="/ooty-landing" element={<OotyLanding />} />
 <Route path="/ooty-coonoor" element={<OotyCoonoorLanding />} />
@@ -397,6 +367,8 @@ function App() {
 <Route path="/chennai-landing" element={<ChennaiLanding />} />
 <Route path="/rameswaram-madurai" element={<RameswaramMaduraiLanding />} />
 <Route path="/temple-landing" element={<TempleLanding />} />
+<Route path="/kerala-tours" element={<Kerala />} />
+<Route path="/munnar-landing" element={<KeralaTourMunnar />} />
       </Routes> 
     </Router>
     </HelmetProvider>

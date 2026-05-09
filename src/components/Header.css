@@ -22,8 +22,10 @@ body {
 
 /* ================= TOP NAVBAR ================= */
 .top-navbar {
-  background: rgb(13, 13, 53);
+  background: rgb(191, 227, 240);
   padding: 10px 40px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .top-navbar ul {
@@ -31,19 +33,25 @@ body {
   justify-content: center;
   gap: 100px;
   list-style: none;
-  color: white;
+  color: black;
+   align-items: center;
+   font-size: 14px;
 }
 
 .top-navbar ul li {
   position: relative;
   cursor: pointer;
+  padding: 6px 10px; 
+  font-size: 14px; 
 }
 
 .top-navbar a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
-
+.nav-item:hover .nav-label {
+  color: #ff5a5f;           
+}
 .top-navbar a:hover {
   color: #ff5a5f;
 }
@@ -78,7 +86,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 25px;
   outline: none;
-  background: rgb(250, 143, 55);
+  background: rgb(244, 174, 124);
 }
 
 /* Search Button */
@@ -87,7 +95,7 @@ body {
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  background: rgb(243, 194, 102);
+  /* background: rgb(247, 200, 113); */
   border: none;
   color: gray;
   height: 0;
@@ -144,176 +152,186 @@ body {
   background: #f5f5f5;
 }
 
-/* ================= MEGA MENU ================= */
-.mega-menu {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  width: 900px;
-  display: flex;
-  background: #f5f7fa;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  z-index: 999;
-}
 
-/* Left Sidebar */
-.mega-left {
-  width: 250px;
-  background: #eaeaea;
-  padding: 20px;
-}
-
-.mega-left p {
-  margin: 15px 0;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.mega-left p:hover {
-  color: #605c5c;
-}
 /* MEGA MENU */
+/* ================= MEGA MENU ================= */
 .mega-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 1100px;
+  width: 900px;
   display: flex;
-  background: #949699;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   z-index: 999;
-  border-radius: 6px;
+  border-radius: 0 0 12px 12px;
   overflow: hidden;
+  border-top: 3px solid #ff5a5f;
 }
 
 /* LEFT PANEL */
 .mega-left {
-  width: 260px;
-  background: #9e9d9d;
-  padding: 20px;
+  width: 200px;
+  background: #f8f9fa;
+  padding: 16px 12px;
+  border-right: 1px solid #eee;
+  flex-shrink: 0;
 }
 
 .mega-left p {
-  padding: 12px;
-  margin-bottom: 5px;
+  padding: 10px 14px;
+  margin-bottom: 4px;
   cursor: pointer;
   font-weight: 500;
+  font-size: 15px;
+  color: #444;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .mega-left p.active,
 .mega-left p:hover {
-  background: rgb(156, 154, 154);
-  border-radius: 4px;
+  background: #ff5a5f;
+  color: #ffffff;
+  border-radius: 6px;
 }
 
 /* RIGHT SIDE */
 .mega-right {
   display: flex;
-  gap: 50px;
-  padding: 25px;
+  gap: 32px;
+  padding: 20px 24px;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 /* COLUMN */
 .mega-column {
-  min-width: 230px;
-}
-
-/* HEADINGS */
-.mega-column h4 {
-  font-size: 15px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-}
-
-.mega-column h5 {
-  margin-top: 15px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-/* LINKS */
-.mega-column p {
-  margin: 6px 0;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-/* HOVER EFFECT */
-.mega-column p:hover {
-  color: #d3abad;
-}
-
-/* NEW TAG */
-.new {
-  background: red;
-  color: white;
-  font-size: 10px;
-  padding: 2px 6px;
-  border-radius: 10px;
-  margin-left: 6px;
-}
-
-/* Right Section */
-.mega-right {
-  display: flex;
-  gap: 40px;
-  padding: 20px;
-  flex: 1;
-}
-
-/* Columns */
-.mega-column {
-  min-width: 200px;
+  min-width: 160px;
 }
 
 .mega-column h4 {
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
   margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.mega-column h5 {
-  margin-top: 15px;
-  font-size: 14px;
-  font-weight: bold;
+.mega-column h4 a {
+  text-decoration: none;
+  color: #111;
+}
+
+.mega-column h4 a:hover {
+  color: #ff5a5f;
 }
 
 .mega-column p {
-  margin: 6px 0;
-  font-size: 14px;
+  margin: 5px 0;
+  font-size: 13px;
   cursor: pointer;
+  color: #555;
 }
 
-.mega-column p:hover {
-  color: #655959;
+.mega-column p a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.15s;
 }
+
+.mega-column p a:hover {
+  color: #ff5a5f;
+  padding-left: 4px;
+  transition: padding 0.15s, color 0.15s;
+}
+
+/* ================= FIXED DROPDOWN ================= */
 .fixed-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 250px;             
-  background-color: #4e4b4b; 
-  border: 1px solid #ddd;  
-  border-radius: 6px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-  padding: 10px 0;
+  width: 200px;
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
   z-index: 1000;
+  border-top: 3px solid #ff5a5f;
 }
 
 .fixed-dropdown p {
-  padding: 12px 20px;
+  padding: 10px 18px;
   margin: 0;
   cursor: pointer;
-  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+  transition: background 0.15s, color 0.15s;
+}
+
+.fixed-dropdown p a {
+  text-decoration: none;
   color: #333;
 }
 
 .fixed-dropdown p:hover {
-  background-color: #f5f5f5;
+  background: #fff5f5;
   color: #ff5a5f;
-  border-radius: 4px;
+}
+
+.fixed-dropdown p:hover a {
+  color: #ff5a5f;
+}
+
+/* ================= NAV LABEL HOVER ================= */
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-label {
+  padding: 0; 
+  border-radius: 6px;
+  display: inline-block;
+  transition: color 0.2s, background 0.2s;
+  font-size: 15px;
+}
+
+.nav-item:hover .nav-label {
+  color: #ff5a5f;
+  background: rgba(255, 90, 95, 0.08);
+}
+
+/* ================= INTERNATIONAL MAP BG ================= */
+.mega-menu--international {
+  position: relative;
+  overflow: hidden;
+}
+
+.mega-menu--international::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1280px-World_map_-_low_resolution.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mega-menu--international .mega-left,
+.mega-menu--international .mega-right {
+  position: relative;
+  z-index: 1;
 }
 .contact-btn {
   display: flex;
@@ -440,7 +458,7 @@ body {
     transform: translateY(-50%);
     width: 32px;                    /* give it actual size */
     height: 31px;
-    background:rgb(250, 143, 55);
+   background-color: rgb(244, 174, 124);
     border: none;
     border-radius: 50%;
     display: flex;
