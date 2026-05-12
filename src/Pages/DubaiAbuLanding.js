@@ -9,7 +9,7 @@ const DubaiAbuLanding = () => {
       {/* Hero Section */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1518684079-3c830dcef090"
+          src="https://images.unsplash.com/photo-18684079-3c830dcef090"
           alt="Dubai Abu Dhabi"
         />
         <div className="hero-content">
@@ -27,22 +27,22 @@ const DubaiAbuLanding = () => {
 
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1504274066651-8d31a536b11a" alt="" />
+            <img src="https://images.unsplash.com/photo-150427406665-8d31a536b11a" alt="" />
             <p>Burj Khalifa</p>
           </div>
 
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1526481280691-9065fbc7c9c3" alt="" />
+            <img src="https://images.unsplash.com/photo-152648128069-9065fbc7c9c3" alt="" />
             <p>Desert Safari</p>
           </div>
 
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090" alt="" />
+            <img src="https://images.unsplash.com/photo-1518684079-3c30dcef090" alt="" />
             <p>Dubai Marina</p>
           </div>
 
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3" alt="" />
+            <img src="https://images.unsplash.com/photo-1589308078059-e1415eab4c3" alt="" />
             <p>Abu Dhabi Mosque</p>
           </div>
         </div>
@@ -76,7 +76,7 @@ const DubaiAbuLanding = () => {
         <div className="itinerary-list">
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="" />
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea26f8880c" alt="" />
             <div className="day-content">
               <h3>Day 1</h3>
               <p>Arrival & Dubai Marina Walk</p>
@@ -84,7 +84,7 @@ const DubaiAbuLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1504274066651-8d31a536b11a" alt="" />
+            <img src="https://images.unsplash.com/photo-1504274066651-8d31a36b11a" alt="" />
             <div className="day-content">
               <h3>Day 2</h3>
               <p>Burj Khalifa & Dubai Mall</p>
@@ -92,7 +92,7 @@ const DubaiAbuLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1526481280691-9065fbc7c9c3" alt="" />
+            <img src="https://images.unsplash.com/photo-1526481280691-9065fb7c9c3" alt="" />
             <div className="day-content">
               <h3>Day 3</h3>
               <p>Desert Safari & BBQ Dinner</p>
@@ -100,7 +100,7 @@ const DubaiAbuLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3" alt="" />
+            <img src="https://images.unsplash.com/photo-1589308078059-be1415eb4c3" alt="" />
             <div className="day-content">
               <h3>Day 4</h3>
               <p>Abu Dhabi City Tour & Grand Mosque</p>
@@ -108,7 +108,7 @@ const DubaiAbuLanding = () => {
           </div>
 
           <div className="day-card">
-            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764b6a" alt="" />
+            <img src="https://images.unsplash.com/photo-1502920917128-1aa50064b6a" alt="" />
             <div className="day-content">
               <h3>Day 5</h3>
               <p>Shopping & Departure</p>

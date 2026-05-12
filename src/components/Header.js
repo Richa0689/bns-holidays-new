@@ -74,7 +74,7 @@ const Header = () => {
       { title: "Kashmir", items: [{ name: "Srinagar", path: "/Pages/srinagar" }, { name: "Gulmarg", path: "/Pages/gulmarg" }, { name: "Pahalgam", path: "/Pages/pahalgam" }] }
     ],
     south: [
-      { title: "Kerala", path: "/kerala-tours", items: [{ name: "Kerala Tour Munnar", path: "/munnar-landing" }, { name: "Alleppey", path: "/Pages/alleppey" }, { name: "Kochi", path: "/Pages/kochi" }] },
+      { title: "Kerala", path: "/kerala-tours", items: [{ name: "Munnar", path: "/munnar-landing" }, { name: "Alleppey", path: "/Pages/alleppey" }, { name: "Kochi", path: "/Pages/kochi" }] },
       { title: "Tamil Nadu", path:"/tamilnadu-tours", items: [{ name: "Chennai", path: "/chennai-landing" },{name:"Rameswaram & Madurai",path:"/rameswaram-madurai"},{name:"Temple Tours",path: "/temple-landing",}] },
       { title: "Karnataka", path: "/karnataka-tours", items: [{ name: "Bangalore", path: "/bangalore-landing" },  { name: "Mysore", path: "/mysore-landing" }, { name: "Coorg", path: "/coorg-landing" },{ name: "Hampi", path: "/hampi-landing" }] }
     ],

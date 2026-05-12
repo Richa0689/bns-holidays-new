@@ -12,7 +12,7 @@ const tours = [
     dates: "8 Dates",
     price: "₹14,000",
     emi: "₹700/mo",
-    image: "https://www.holidify.com/images/bgImages/MUNNAR.jpg"
+    image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/19/ba.jpg"
   },
   {
     title: "Kerala Tour Cochin",
@@ -23,7 +23,7 @@ const tours = [
     dates: "10 Dates",
     price: "₹12,000",
     emi: "₹600/mo",
-    image: "https://www.holidify.com/images/bgImages/ALLEPPEY.jpg"
+    image: "https://www.peakadventuretour.com/assets/imgs/kerala-tourism-04.webp"
   },
   {
     title: "Kerala Tour Alleppey",
@@ -34,7 +34,7 @@ const tours = [
     dates: "6 Dates",
     price: "₹15,000",
     emi: "₹750/mo",
-    image: "https://www.holidify.com/images/bgImages/KOCHI.jpg"
+    image: "https://www.tripsavvy.com/thmb/Vxu3wFbVQniH3pK36PhE2QdrHOc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/varkala-beach--kerala--india-1141255604-286cdef65e9045d6a1625bc72f679969.jpg"
   }
 ];
 

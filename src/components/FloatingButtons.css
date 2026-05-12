@@ -1,74 +1,227 @@
 .floating-buttons {
   position: fixed;
-  right: 20px;
+  right: 16px;
   bottom: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: flex-end;
+  gap: 10px;
   z-index: 999;
 }
 
-/* COMMON BUTTON STYLE */
-.btn {
-  width: 55px;
-  height: 55px;
+/* Base icon button */
+.floating-buttons .btn {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: #fff;
 }
-
-/* WHATSAPP */
-.whatsapp {
-  background: #25D366;
-}
-
-/* CALL */
-.call {
-  background: #007bff;
-}
-.email{
-  background: rgb(146, 90, 90);
-}
-
-/* HOVER EFFECT */
-.btn:hover {
+.floating-buttons .btn:hover {
   transform: scale(1.1);
 }
-/* ============================================
-   FLOATING BUTTONS MOBILE FIX
-   ============================================ */
 
-@media (max-width: 768px) {
+.floating-buttons .whatsapp { background: #25D366; }
+.floating-buttons .call     { background: #185FA5; }
+.floating-buttons .email    { background: #EA4335; }
 
-  .floating-buttons {
-    right: 12px;        /* closer to edge on small screens */
-    bottom: 70px;       /* above phone's bottom nav bar */
-    gap: 12px;          /* tighter spacing */
-  }
-
-  .btn {
-    width: 46px;        /* slightly smaller so it doesn't block content */
-    height: 46px;
-    font-size: 18px;
-  }
+/* Quick Enquiry pill button */
+.floating-buttons .enquiry {
+  width: auto;
+  border-radius: 24px;
+  padding: 0 16px;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  height: 40px;
+  background: #F5C842;
+  color: #1a1a1a;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.floating-buttons .enquiry:hover {
+  background: #e6b800;
+  transform: scale(1.04);
 }
 
-@media (max-width: 480px) {
+/* Overlay */
+.eq-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
 
-  .floating-buttons {
-    right: 10px;
-    bottom: 80px;       /* more space for Android nav gestures */
-    gap: 10px;
-  }
+/* Modal */
+.eq-modal {
+  background: #fff;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 380px;
+  padding: 24px 20px 20px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
 
-  .btn {
-    width: 42px;
-    height: 42px;
-    font-size: 16px;
-  }
+.eq-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  transition: background 0.2s;
+}
+.eq-close:hover { background: #e5e7eb; }
+
+.eq-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 18px;
+  letter-spacing: 0.04em;
+}
+
+.eq-error {
+  font-size: 12px;
+  color: #dc2626;
+  margin: -8px 0 10px;
+}
+
+.eq-field {
+  margin-bottom: 12px;
+}
+.eq-field input,
+.eq-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #111;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+.eq-field input:focus,
+.eq-field textarea:focus {
+  border-color: #185FA5;
+}
+.eq-field textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.eq-phone-row {
+  display: flex;
+  gap: 8px;
+}
+.eq-flag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #333;
+  background: #fff;
+  white-space: nowrap;
+  height: 40px;
+  flex-shrink: 0;
+}
+.eq-phone-row input { flex: 1; }
+
+.eq-helper {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+.eq-helper em {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.eq-toggle {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.eq-extra { margin-bottom: 4px; }
+
+.eq-submit {
+  width: 100%;
+  background: #F5C842;
+  color: #555;
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.eq-submit:hover {
+  background: #e6b800;
+  color: #111;
+}
+
+/* Success state */
+.eq-success {
+  text-align: center;
+  padding: 28px 0 16px;
+}
+.eq-success-icon {
+  width: 52px;
+  height: 52px;
+  background: #e1f5ee;
+  color: #0f6e56;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+.eq-success p {
+  font-size: 14px;
+  color: #0f6e56;
+  font-weight: 500;
+  margin: 0;
 }
