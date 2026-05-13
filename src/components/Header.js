@@ -57,8 +57,10 @@ const Header = () => {
     { name: "Mysore", path: "/mysore-landing" },
     { name: "Coorg", path: "/coorg-landing" },
     { name: "Hampi", path: "/hampi-landing" },
-    {name: "Tamil Nadu Tours", path: "/tamilnadu-tours" },
-    {name: "Karnataka Tours", path: "/karnataka-tours"},
+    { name: "Tamil Nadu Tours", path: "/tamilnadu-tours" },
+    { name: "Karnataka Tours", path: "/karnataka-tours"},
+    { name: "Kerala Tours", path: "/kerala-tours"},
+    { name: "Kenya", path: "/kenya"}
   ];
 
   const fixedDestinations = [
@@ -102,6 +104,9 @@ const Header = () => {
     ],
     oceania: [
       { title: "Australia & NZ", items: [{ name: "Australia", path: "/Pages/Australia" }, { name: "New Zealand", path: "/Pages/NewZealand" }] }
+    ],
+    africa: [
+      { title: "East Africa", items: [{ name: "Kenya", path: "/kenya" }] }
     ]
   };
 
@@ -272,7 +277,7 @@ const Header = () => {
             {openDropdown === "international" && (
               <div className="mega-menu">
                 <div className="mega-left">
-                  {["europe", "asia", "americas", "oceania"].map((region) => (
+                  {["europe", "asia", "americas", "oceania","africa"].map((region) => (
                     <p
                       key={region}
                       className={activeInternational === region ? "active" : ""}

@@ -327,8 +327,8 @@
 }
 
 .day-card:hover {
-  background: #ff5a5f;
-  color: white;
+  background: #f3999c;
+  /* color: white; */
 }
 .day-card img {
   width: 20%;

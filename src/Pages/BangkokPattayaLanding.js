@@ -71,7 +71,7 @@ const BangkokPattayaLanding = () => {
 
       {/* Itinerary */}
       <div className="itinerary-section">
-        <h2>5 Days Itinerary</h2>
+        <h2>7 Days Itinerary</h2>
 
         <div className="itinerary-list">
 
@@ -79,39 +79,64 @@ const BangkokPattayaLanding = () => {
             <img src="https://liveandletsfly.com/wp-content/uploads/2021/12/Bangkok-BKK-Arrival-2021-4.jpeg" />
             <div className="day-content">
               <h3>Day 1</h3>
-              <p>Arrival in Bangkok</p>
+              <p style={{color: "blue"}}>Warm Airport Pick-Up with a private transfer to Pattaya hotel on PVT basis </p>
+              <p> <span style={{fontWeight:"bold"}}>Evening Alcazar Show on Sharing basis</span> <br />
+                Enjoy the World’s famous dance show by transgenders with music,  and dance performances with colorful costumes, high-tech lighting, sound stage effects and creative choreography. </p>
             </div>
           </div>
 
           <div className="day-card">
-            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/5f/9e/bb.jpg" />
+            <img src="https://plus.unsplash.com/premium_photo-1661962432490-6188a6420a81?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29yYWwlMjBpc2xhbmQlMjB0aGFpbGFuZHxlbnwwfHwwfHx8MA%3D%3D" />
             <div className="day-content">
               <h3>Day 2</h3>
-              <p>Temple Tour & City Sightseeing</p>
+              <p style={{color: "blue"}}>After breakfast at the hotel get ready for the full the activities Coral Island Tour by Speedboat with Indian Lunch On Private Transfer </p>
+              <p>Coral Island (Koh Lan) is the largest of the "near islands", off south Pattaya. It is at the southeast end of the Bay of Bangkok, on the eastside of the Gulf of Siam. Administratively Ko Lan belongs to the Amphoe Bang Lamung, Chonburi. Most of Ko Lan's beaches are on its west side. Most visited is Tawaen Beach, where there is a small harbour. You will enjoy the sea, suns and the length of the beach is lined with small tourist shops. </p>
             </div>
           </div>
 
           <div className="day-card">
-            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/16/bb/76.jpg" />
+            <img src="https://ik.imagekit.io/travalot/development/resources/attachments/2025/6/15/80fb0d70-612b-11f0-bc72-a71998e2455a.jpg?tr=w-1600,h-1067,c-at_max:f-webp:q-85" />
             <div className="day-content">
               <h3>Day 3</h3>
-              <p>Transfer to Pattaya</p>
+              <p style={{color: "blue"}}>After Breakfast at the hotel get ready for the Tiger Park Play 3 (Big + Smallest + Medium or Small) on Private transfer </p>
+              <p>Don't miss this once in the lifetime activity, where you can take a selfie inside cage with unchained tigers at Tiger Park Pattaya. You can give them a hug, kiss, play and take a photo with tigers. All tigers were born and raised with love by professional staff and the environment which best for tigers to enjoy their life with human  .  <br />
+               <span style={{fontWeight:"bold"}}>Evening Sanctuary of Truth on Private transfer </span><br />The Sanctuary of Truth is a world famous architectural masterpiece. It is an all wooden temple built entirely from teak and other hardwoods, without using a single nail.  </p>
             </div>
           </div>
 
           <div className="day-card">
-            <img src="https://res.klook.com/images/w_1200,h_630,c_fill,q_65/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/net4xhzgfs66pnzagjro/KohLan(CoralIsland)SnorkelingTourinPattaya,Thailand-KlookIndia.jpg" />
+            <img src="https://tourxsell-blob-one.azureedge.net/storage/activities/33/b1140483-d600-471a-bcbf-ad5e3594df78.jpg" />
             <div className="day-content">
               <h3>Day 4</h3>
-              <p>Coral Island Tour & Beach Activities</p>
+              <p style={{color: "blue"}}>Morning after breakfast check out from the hotel proceed for Pattaya to Bangkok Enroute Bangkok Temple Guided Tour Golden and Marble Buddha with Gems Gallery and King Power on Private transfer </p>
+              <p>After enjoying your time in Pattaya, it is time to travel to Bangkok to explore the vibrant night life and shopping experiences of Bangkok.  <br /> Transfer from Pattaya Hotel to Bangkok Hotel, Stop at Gems Gallery and King Power en route Bangkok Two Temple ·<br />  The guests will be transferred to Wat Traimit, the temple of the Golden Buddha with 5.5 Tonnes of solid gold, sculptured in Sukho thai style  ·  <br />   Visit the Marble Temple, a mixture of Thai and European architecture that houses a unique collection of rare Buddha Images Golden Buddha - The Golden Buddha, officially titled Phra Phuttha Maha Suwana Patimakon, is a gold Maravijaya Attitude seated Buddha rupastatue,with a weight of 5.5 tonnes. It is located in the temple of Wat Traimit, Bangkok, Thailand. 
+              Marble Buddha-Wat Benchamabophit Dusitvanaramisa Buddhist temple in the Dusit district of Bangkok, Thailand. Also known as the marble temple, it is one of Bangkok's best-known temples and a major tourist attraction. It typifies Bangkok's ornate style of high gables, stepped-out roofs and elaborate finials. <br /> <span style={{fontWeight:"bold"}}>Drop off at Bangkok hotel after the tour. </span><br />
+              <span style={{fontWeight:"bold"}}>Evening Chaophraya Princess Dinner Cruise International Buffet On sharing transfer </span><br />Embark on a memorable night of dining and ambience on one ofBangkok's most popular restaurant boats. Relax in modern comfort and dine like King Rama V on a variety of scrumptious dishes. Feel welcomed by Thai hospitality as your hostesses greet you in traditional costume with a welcome drink. Feast on a variety of authentic Thai dishes and observe the lifestyles of Thai locals as you spend a memorable evening cruising past some of the best sights of Bangkok. View the historical landmarks on a river cruise along the Chao Phraya River and experience the beautiful night sceneries with a romantic atmosphere on our dinner cruise in the middle of Bangkok. After your gastronomic exploration, sway with the rhythm of music and dance as performers entertain you with the musical flavours of Thailand. End your tour feeling satisfied as you depart back to your hotel. </p>
             </div>
           </div>
 
+          <div className="day-card">
+            <img src="https://www.trawell.in/admin/images/upload/161646644Safari_World.jpg" />
+            <div className="day-content">
+              <h3>Day 5</h3>
+              <p style={{color:"blue"}}>After Breakfast at the hotel get ready for the Safari World Tour on Private transfer </p>
+              <p>Safari World is one of Thailand’s most popular wildlife attractions, offering a fun and educational experience for all ages. There are two main parks i.e Safari Park and Marine Park.</p>
+            </div>
+          </div>
+           <div className="day-card">
+            <img src="https://media.tacdn.com/media/photo-m/1280/28/cf/e1/1b/caption.jpg" />
+            <div className="day-content">
+              <h3>Day 6</h3>
+              <p style={{color:"blue"}}>After Breakfast at the hotel get ready for the Mahanakhon Skywalk Tour on sharing transfer  </p>
+              <p>The Mahanakhon Skywalk is Thailand’s highest observation deck experience, located atop the striking King Power Mahanakhon skyscraper in Bangkok’s central business district. Its multi-level attraction combines breathtaking panoramic views, thrilling moments and immersive features that make it a standard tour stop in the city. <br />
+              Evening Free for shopping at Ikonsiam Mall & Meena Baazar, Nana Plaza.  </p>
+            </div>
+          </div>
           <div className="day-card">
             <img src="https://thumbs.dreamstime.com/b/shopping-departure-halls-suvarnabhumi-international-airport-bangkok-capital-thailand-th-october-stock-image-as-jpg-341434718.jpg" />
             <div className="day-content">
-              <h3>Day 5</h3>
-              <p>Shopping & Departure</p>
+              <h3>Day 7</h3>
+              <p style={{color:"blue"}}>After Breakfast complete the checkout procedure & proceed towards Bangkok Airport on private transfer.  </p>
             </div>
           </div>
 

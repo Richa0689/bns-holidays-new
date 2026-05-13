@@ -88,7 +88,9 @@ const KeralaTours = () => {
 
             <button className="book-btn">Book Online</button>
             <button className="whatsapp-btn">Share on WhatsApp</button>
-            <button className="details-btn">View Tour Details</button>
+             <Link to={tour.path} className="details-link">
+              <button className="details-btn">View Tour Details</button>
+            </Link>
           </div>
 
         </div>

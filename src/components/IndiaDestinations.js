@@ -13,7 +13,7 @@ const destinations = [
 
 const IndiaDestinations = () => {
   const navigate = useNavigate();
-  const scrollItems = [...destinations, ...destinations]; // duplicate for slider
+  const scrollItems = [...destinations, ...destinations]; 
 
   return (
     <div className="india-section">

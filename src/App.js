@@ -178,6 +178,14 @@ import RameswaramMaduraiLanding from "./Pages/RameswaramMaduraiLanding";
 import TempleLanding from "./Pages/TempleLanding";
 import Kerala from "./Pages/Kerala";
 import KeralaTourMunnar from "./Pages/KeralaTourMunnar";
+import KenyaTours from './Pages/Kenya';
+import KenyaUltimateSafariCircuit from './Pages/KenyaUltimateSafariCircuit';
+import KenyaWildEscapade from './Pages/KenyaWildEscapade';
+import KenyaWildSerenade from "./Pages/KenyaWildSerenade";
+import KenyaEchoesOfTheWild from './Pages/KenyaEchoesOfTheWild';
+import KenyaAmboseliWildTrails from "./Pages/KenyaAmboseliWildTrails";
+import KenyaPredatorsAndPinkFeathers from "./Pages/KenyaPredatorsAndPinkFeathers";
+import KenyaIntoTheHeartOfTheWild from "./Pages/KenyaIntoTheHeartOfTheWild";
 
 function App() {
   return (
@@ -369,6 +377,14 @@ function App() {
 <Route path="/temple-landing" element={<TempleLanding />} />
 <Route path="/kerala-tours" element={<Kerala />} />
 <Route path="/munnar-landing" element={<KeralaTourMunnar />} />
+<Route path="/kenya" element={<KenyaTours />} />
+<Route path="/kenya-UltimateSafariCircuit" element={<KenyaUltimateSafariCircuit />} />
+<Route path="/kenya-WildEscapade" element={<KenyaWildEscapade/>} />
+<Route path="/kenya-WildSerenade" element={<KenyaWildSerenade />} />
+<Route path="/kenya-EchoesOfTheWild" element={<KenyaEchoesOfTheWild />} />
+<Route path="/kenya-AmboseliWildTrails" element={<KenyaAmboseliWildTrails />} />
+<Route path="/kenya-PredatorsAndPinkFeathers" element={<KenyaPredatorsAndPinkFeathers />} />
+<Route path="/kenya-IntoTheHeartOfTheWild" element={<KenyaIntoTheHeartOfTheWild />} />
       </Routes> 
     </Router>
     </HelmetProvider>
