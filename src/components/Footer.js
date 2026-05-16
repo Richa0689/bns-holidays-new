@@ -3,6 +3,8 @@ import "./Footer.css";
 import logo from "./images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faWhatsapp, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -28,8 +30,8 @@ const Footer = () => {
               <li>India Tour</li>
               <li>International Tour</li>
               <li>Fixed Departure</li>
-              <li>Villa</li>
-              <li>Visa</li>
+              <Link to="/villa" style={{ color: "inherit", textDecoration: "none" }}>Villa</Link>
+               <li><Link to="/visa"  style={{ color: "inherit", textDecoration: "none" }}>Visa</Link></li>
             </ul>
           </div>
 

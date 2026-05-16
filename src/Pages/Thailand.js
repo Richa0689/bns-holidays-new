@@ -49,94 +49,102 @@ const Thailand = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="tour-container">
-      <h1>Thailand Tour Packages</h1>
+    <>
+      {/* ── VIDEO HERO — outside tour-container so nothing clips it ── */}
+      <div className="video-hero">
+        <div className="video-hero__inner">
+          <iframe
+            src="https://www.youtube.com/embed/SadzfrxVuF0?si=OnMpYt8JR0Xufymr&autoplay=1&mute=1&loop=1&playlist=SadzfrxVuF0&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&playsinline=1"
+            title="Thailand Tour"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <div className="video-hero__shield" />
+      </div>
+      {/* ── END VIDEO HERO ── */}
 
-      {tours.map((tour, index) => (
-        <div className="tour-card" key={index}>
+      <div className="tour-container">
+        <h1>Thailand Tour Packages</h1>
 
-          {/* IMAGE */}
-          <div className="tour-image">
-            <span className="badge">Popular Today</span>
-            <img src={tour.image} alt={tour.title} />
-          </div>
+        {tours.map((tour, index) => (
+          <div className="tour-card" key={index}>
 
-          {/* CONTENT */}
-          <div className="tour-info">
-            <h2>
-              {tour.title === "Best of Thailand" ? (
-                <Link to="/thailand-landing" className="title-link">
-                  {tour.title}
-                </Link>
-                ) : tour.title === "Bangkok & Pattaya" ? (
-                    <Link to="/bangkok-pattaya" className="title-link">{tour.title}</Link>
-                ) : tour.title === "Phuket & Krabi" ? (
-                    <Link to="/phuket-krabi" className="title-link">{tour.title}</Link>
-                ) : tour.title === "Thailand Luxury Tour" ? (
-                    <Link to="/thailand-luxury" className="title-link">{tour.title}</Link>
-                ) : (
-                    tour.title
-                )}
-            </h2>
-
-            <div className="rating">
-              ⭐⭐⭐⭐⭐ <span>120 Reviews</span>
+            {/* IMAGE */}
+            <div className="tour-image">
+              <span className="badge">Popular Today</span>
+              <img src={tour.image} alt={tour.title} />
             </div>
 
-            {showModal && (
-              <div className="modal-overlay">
-                <div className="modal-box">
+            {/* CONTENT */}
+            <div className="tour-info">
+              <h2>
+                {tour.title === "Best of Thailand" ? (
+                  <Link to="/thailand-landing" className="title-link">
+                    {tour.title}
+                  </Link>
+                ) : tour.title === "Bangkok & Pattaya" ? (
+                  <Link to="/bangkok-pattaya" className="title-link">{tour.title}</Link>
+                ) : tour.title === "Phuket & Krabi" ? (
+                  <Link to="/phuket-krabi" className="title-link">{tour.title}</Link>
+                ) : tour.title === "Thailand Luxury Tour" ? (
+                  <Link to="/thailand-luxury" className="title-link">{tour.title}</Link>
+                ) : (
+                  tour.title
+                )}
+              </h2>
 
-                  <div className="modal-header">
-                    <h2>Tour Includes</h2>
-                    <span className="close-btn" onClick={() => setShowModal(false)}>✕</span>
+              {showModal && (
+                <div className="modal-overlay">
+                  <div className="modal-box">
+
+                    <div className="modal-header">
+                      <h2>Tour Includes</h2>
+                      <span className="close-btn" onClick={() => setShowModal(false)}>✕</span>
+                    </div>
+
+                    <div className="icons-row">
+                      <div><span>🏨</span><p>Hotel</p></div>
+                      <div><span>🍽️</span><p>Meals</p></div>
+                      <div><span>✈️</span><p>Flight</p></div>
+                      <div><span>📷</span><p>Sightseeing</p></div>
+                      <div><span>🚌</span><p>Transport</p></div>
+                      <div><span>📄</span><p>Visa</p></div>
+                    </div>
+
+                    <div className="modal-content">
+                      <p>👨‍✈️ Tour includes services of <b>BNS Holidays</b>.</p>
+                      <p className="note">
+                        *Airfare included. Taxes extra.
+                      </p>
+                    </div>
+
                   </div>
-
-                  <div className="icons-row">
-                    <div><span>🏨</span><p>Hotel</p></div>
-                    <div><span>🍽️</span><p>Meals</p></div>
-                    <div><span>✈️</span><p>Flight</p></div>
-                    <div><span>📷</span><p>Sightseeing</p></div>
-                    <div><span>🚌</span><p>Transport</p></div>
-                    <div><span>📄</span><p>Visa</p></div>
-                  </div>
-
-                  <div className="modal-content">
-                    <p>👨‍✈️ Tour includes services of <b>BNS Holidays</b>.</p>
-                    <p className="note">
-                      *Airfare included. Taxes extra.
-                    </p>
-                  </div>
-
                 </div>
-              </div>
-            )}
+              )}
 
-            <p className="inclusive" onClick={() => setShowModal(true)}>
-              ∞ All Inclusive
-            </p>
+              <p className="details">
+                {tour.days} • {tour.countries} • {tour.cities}, {tour.dates}
+              </p>
 
-            <p className="details">
-              {tour.days} • {tour.countries} • {tour.cities}, {tour.dates}
-            </p>
+            </div>
 
-            <p className="dates">Dates Filling Fast</p>
+            {/* PRICE */}
+            <div className="tour-price">
+              <p className="start">Starts from</p>
+              <h2>{tour.price}</h2>
+              <p className="emi">EMI from {tour.emi}</p>
+
+              <button className="book-btn">Book Online</button>
+              <button className="whatsapp-btn">Share on WhatsApp</button>
+              <button className="details-btn">View Tour Details</button>
+            </div>
+
           </div>
-
-          {/* PRICE */}
-          <div className="tour-price">
-            <p className="start">Starts from</p>
-            <h2>{tour.price}</h2>
-            <p className="emi">EMI from {tour.emi}</p>
-
-            <button className="book-btn">Book Online</button>
-            <button className="whatsapp-btn">Share on WhatsApp</button>
-            <button className="details-btn">View Tour Details</button>
-          </div>
-
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 

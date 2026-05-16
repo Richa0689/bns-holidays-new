@@ -107,7 +107,7 @@ const QueryModal = ({ day, onClose }) => {
         ) : (
           <>
             <h2 className="eq-title">QUICK ENQUIRY</h2>
-            <p className="eq-day-label">For: <strong>{day}</strong></p>
+           
 
             {error && <p className="eq-error">{error}</p>}
 
@@ -303,15 +303,19 @@ const KenyaAmboseliWildTrails = () => {
                 <h3>{item.day}</h3>
                 <p style={{ color: "blue" }}>{item.title}</p>
                 <p>{item.desc}</p>
-                <button
-                  className="send-query-btn"
-                  onClick={() => setActiveModal(`${item.day} – ${item.title}`)}
-                >
-                  Send Query
-                </button>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Single Send Query button below all itinerary cards */}
+        <div style={{ textAlign: "center", marginTop: "36px" }}>
+          <button
+            className="send-query-btn"
+            onClick={() => setActiveModal("4 Days Amboseli Wild Trails")}
+          >
+            Send Query
+          </button>
         </div>
       </div>
 

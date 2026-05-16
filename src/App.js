@@ -8,6 +8,7 @@ import VideoSlider from './components/VideoSlider';
 import TrendingDestinations from './components/TrendingDestinations';
 import IndiaDestinations from './components/IndiaDestinations';
 import Adventures from './components/Adventures';
+import Fixeddepartures from './components/Fixeddepartures';
 import Reviews from './components/Reviews';
 import QueryBox from './components/QueryBox';
 import FloatingButtons from './components/FloatingButtons';
@@ -187,6 +188,7 @@ import KenyaAmboseliWildTrails from "./Pages/KenyaAmboseliWildTrails";
 import KenyaPredatorsAndPinkFeathers from "./Pages/KenyaPredatorsAndPinkFeathers";
 import KenyaIntoTheHeartOfTheWild from "./Pages/KenyaIntoTheHeartOfTheWild";
 
+
 function App() {
   return (
     <HelmetProvider> 
@@ -203,8 +205,9 @@ function App() {
             <>
               <VideoSlider />
               <TrendingDestinations />
-              <IndiaDestinations />
+              <IndiaDestinations/>
               <Adventures />
+              <Fixeddepartures />
               <Reviews />
               <QueryBox />
               <FloatingButtons />
@@ -214,6 +217,7 @@ function App() {
         />
         <Route path="/villa" element={<Villa />} />
         <Route path="/visa" element={<Visa />} />
+        
   <Route path="/Pages/europe" element={<Europe />} />
 <Route path="/Pages/australia" element={<Australia />} />
 <Route path="/Pages/canada" element={<Canada />} />

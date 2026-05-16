@@ -149,7 +149,7 @@ function StarRating({ rating }) {
   return (
     <div style={{ display: "flex", gap: 2 }} aria-label={`${rating} out of 5 stars`} role="img">
       {[1, 2, 3, 4, 5].map((i) => (
-        <span key={i} aria-hidden="true" style={{ fontSize: 15, color: i <= rating ? "gold" : "#e0e0e0" }}>★</span>
+        <span key={i} aria-hidden="true" style={{ fontSize: 16, color: i <= rating ? "gold" : "#e0e0e0" }}>★</span>
       ))}
     </div>
   );
@@ -166,7 +166,7 @@ function ReviewCard({ review, isMobile, onImageClick }) {
       itemScope
       itemType="https://schema.org/Review"
       style={{
-        background: "rgb(239, 173, 73)",
+        background: "#f7bc09",
         borderRadius: 12,
         padding: "1.1rem 1.2rem 1rem",
         width: isMobile ? "calc(85vw - 2rem)" : 300,
@@ -198,7 +198,7 @@ function ReviewCard({ review, isMobile, onImageClick }) {
         <div style={{ flex: 1, minWidth: 0 }}>
           <div itemProp="author" itemScope itemType="https://schema.org/Person">
             <span itemProp="name" style={{
-              fontWeight: 600, fontSize: 13.5, color: "#ffffff",
+              fontWeight: 600, fontSize: 13.5, color: "#ffffff", fontWeight: "bold",
               display: "block", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
             }}>
               {review.name}
@@ -213,7 +213,7 @@ function ReviewCard({ review, isMobile, onImageClick }) {
 
       {/* Stars */}
       <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating"
-        style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 10, flexShrink: 0 }}>
+        style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 10, flexShrink: 0 , fontWeight:"blod"}}>
         <meta itemProp="ratingValue" content={String(review.rating)} />
         <meta itemProp="bestRating" content="5" />
         <StarRating rating={review.rating} />
@@ -222,7 +222,7 @@ function ReviewCard({ review, isMobile, onImageClick }) {
       {/* Review text — scrollable if overflow */}
       <div style={{ flex: 1, overflow: "hidden" }}>
         <p itemProp="reviewBody" style={{
-          fontSize: 13.5, color: "white", lineHeight: 1.6, margin: 0,fontWeight: "bold",
+          fontSize: 15.5, color: "#0000ff", lineHeight: 1.6, margin: 0, fontFamily: "Poppins, regular ",
         }}>
           {displayText}
         </p>
@@ -429,16 +429,16 @@ export default function GoogleReviews() {
 
       {/* Heading */}
       <div style={{ textAlign: "center", marginBottom: "1.75rem", padding: "0 1rem" }}>
-        <h2
+        <h1
           id="reviews-heading"
           style={{
-            fontSize: "clamp(20px, 5vw, 28px)", fontWeight: 700,
-            color: "#111827", margin: "0 0 6px", lineHeight: 1.35,
-            fontFamily: "Georgia",
+            fontSize: "40px", fontWeight: "bold",
+            color: "#0000ff", margin: "0 0 6px", lineHeight: 1.35,
+            fontFamily: "Poppins, extra-bold, ",
           }}
         >
           What our clients say about us
-        </h2>
+        </h1>
         <p style={{ fontSize: "clamp(12px, 3.5vw, 14px)", color: "#6b7280", margin: "0 0 14px" }}>
           Stories straight from the hearts of our happy travellers
         </p>

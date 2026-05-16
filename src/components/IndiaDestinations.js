@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./IndiaDestinations.css";
 
@@ -13,14 +13,35 @@ const destinations = [
 
 const IndiaDestinations = () => {
   const navigate = useNavigate();
-  const scrollItems = [...destinations, ...destinations]; 
+  const scrollRef = useRef();
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    let animationFrame;
+
+    // Stop auto-scroll on mobile
+    if (window.innerWidth <= 768) return;
+
+    const scroll = () => {
+      if (!container) return;
+      container.scrollLeft += 1.5;
+      if (container.scrollLeft >= container.scrollWidth / 2) {
+        container.scrollLeft -= container.scrollWidth / 2;
+      }
+      animationFrame = requestAnimationFrame(scroll);
+    };
+
+    scroll();
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
 
   return (
     <div className="india-section">
       <h2>India Destinations</h2>
+
       <div className="slider-wrapper">
-        <div className="card-container">
-          {scrollItems.map((item, index) => (
+        <div className="card-container" ref={scrollRef}>
+          {[...destinations, ...destinations].map((item, index) => (
             <div
               className="card"
               key={index}
@@ -29,8 +50,8 @@ const IndiaDestinations = () => {
             >
               <div className="img-box">
                 <img src={item.img} alt={item.name} loading="lazy" />
-                <p>{item.name}</p>
               </div>
+              <p>{item.name}</p>
             </div>
           ))}
         </div>

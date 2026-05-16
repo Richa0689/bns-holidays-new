@@ -1,15 +1,19 @@
 .adventure-section {
-  padding: 40px;
+  padding: 30px;
   margin: 30px;
   width: 95%;
   border-radius: 10px;
-  background-color:  rgb(240, 238, 238);
+  background-color: rgb(240, 238, 238);
 }
 
 .adventure-section h2 {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
 }
 
 /* BLUE LINE */
@@ -20,88 +24,67 @@
   bottom: -8px;
   width: 60px;
   height: 3px;
-  background: #007bff;
+  background-color: #007bff;
+  border-radius: 2px;
 }
 
-/* SLIDER */
-.slider-wrapper {
-  position: relative;
-}
-
-.card-container {
+/* SLIDER CONTAINER */
+.adventure-section .card-container {
   display: flex;
   gap: 20px;
   overflow-x: auto;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
-/* HIDE SCROLL */
-.card-container::-webkit-scrollbar {
+/* Hide scrollbar */
+.adventure-section .card-container::-webkit-scrollbar {
   display: none;
 }
-.card-container {
+.adventure-section .card-container {
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 /* CARD */
-.card {
-  min-width: 200px;
+.adventure-section .card {
+  min-width: 320px;
   border-radius: 10px;
   overflow: hidden;
-  background: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: #e7e5e5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-/* IMAGE ZOOM */
-.img-box {
-  overflow: hidden;
+.adventure-section .card p {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1.05rem;
 }
 
-.img-box img {
+.adventure-section .img-box {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* IMAGE */
+.adventure-section .img-box img {
   width: 100%;
-  height: 150px;
+  height: 220px;
   object-fit: cover;
   transition: transform 0.4s ease;
+  cursor: pointer;
 }
 
-.img-box:hover img {
+/* ZOOM EFFECT */
+.adventure-section .img-box:hover img {
   transform: scale(1.1);
 }
 
-.card p {
-  padding: 10px;
-}
-
-/* ARROWS */
-.arrow {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  background: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.left {
-  left: -10px;
-}
-
-.right {
-  right: -10px;
-}
-/* ============================================
-   ADVENTURES MOBILE FIX
-   ============================================ */
-
+/* ── MOBILE ── */
 @media (max-width: 768px) {
-
   .adventure-section {
     padding: 16px 12px;
-    margin: 16px 0;       /* remove side margin — was pushing off screen */
+    margin: 16px 0;
     width: 100%;
     border-radius: 0;
     box-sizing: border-box;
@@ -111,8 +94,7 @@
     font-size: 20px;
   }
 
-  /* Stop JS auto-scroll on mobile — let user swipe */
-  .card-container {
+  .adventure-section .card-container {
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -121,39 +103,28 @@
     padding-bottom: 8px;
   }
 
-  .card {
-    min-width: 150px;         /* comfortable swipe size */
+  .adventure-section .card {
+    min-width: 200px;
     flex-shrink: 0;
     scroll-snap-align: start;
   }
 
-  .img-box img {
+  .adventure-section .img-box img {
     height: 120px;
   }
 
-  .card p {
+  .adventure-section .card p {
     font-size: 13px;
     padding: 8px;
-    font-weight: bold;
-  }
-
-  /* Hide arrow buttons on mobile — swipe handles it */
-  .arrow {
-    display: none;
   }
 }
 
 @media (max-width: 480px) {
-
-  .card {
-    min-width: 130px;
+  .adventure-section .card {
+    min-width: 160px;
   }
 
-  .img-box img {
+  .adventure-section .img-box img {
     height: 105px;
-  }
-
-  .card p {
-    font-size: 12px;
   }
 }

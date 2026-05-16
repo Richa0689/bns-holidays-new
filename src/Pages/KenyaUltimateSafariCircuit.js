@@ -107,7 +107,7 @@ const QueryModal = ({ day, onClose }) => {
         ) : (
           <>
             <h2 className="eq-title">QUICK ENQUIRY</h2>
-            <p className="eq-day-label">For: <strong>{day}</strong></p>
+            
 
             {error && <p className="eq-error">{error}</p>}
 
@@ -266,7 +266,7 @@ const KenyaUltimateSafariCircuit = () => {
         <div className="hero-content">
           <h1>Kenya's Ultimate Safari Circuit</h1>
           <p>Wildlife. Nature. African Adventure.</p>
-          <Link to="/kenya-tours">
+          <Link to="/kenya">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -339,15 +339,19 @@ const KenyaUltimateSafariCircuit = () => {
                 <h3>{item.day}</h3>
                 <p style={{ color: "blue" }}>{item.title}</p>
                 <p>{item.desc}</p>
-                <button
-                  className="send-query-btn"
-                  onClick={() => setActiveModal(`${item.day} – ${item.title}`)}
-                >
-                  Send Query
-                </button>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Single Send Query button below all itinerary cards */}
+        <div style={{ textAlign: "center", marginTop: "36px" }}>
+          <button
+            className="send-query-btn"
+            onClick={() => setActiveModal("8 Days Kenya Ultimate Safari Circuit")}
+          >
+            Send Query
+          </button>
         </div>
       </div>
 

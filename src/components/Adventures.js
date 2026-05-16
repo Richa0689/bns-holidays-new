@@ -16,25 +16,23 @@ const adventures = [
 const Adventures = () => {
   const scrollRef = useRef();
 
-  // 
   useEffect(() => {
     const container = scrollRef.current;
     let animationFrame;
 
+    // Stop auto-scroll on mobile
+    if (window.innerWidth <= 768) return;
+
     const scroll = () => {
       if (!container) return;
-
-      container.scrollLeft += 1.5; // speed 
-
+      container.scrollLeft += 1.5;
       if (container.scrollLeft >= container.scrollWidth / 2) {
         container.scrollLeft -= container.scrollWidth / 2;
       }
-
       animationFrame = requestAnimationFrame(scroll);
     };
 
     scroll();
-
     return () => cancelAnimationFrame(animationFrame);
   }, []);
 
@@ -44,21 +42,17 @@ const Adventures = () => {
 
       <div className="slider-wrapper">
         <div className="card-container" ref={scrollRef}>
-
-         
           {[...adventures, ...adventures].map((item, index) => (
             <div className="card" key={index}>
               <div className="img-box">
-                <img src={item.img} alt={item.name} loading="lazy"/>
+                <img src={item.img} alt={item.name} loading="lazy" />
               </div>
               <p>{item.name}</p>
             </div>
           ))}
-
         </div>
       </div>
     </div>
-    
   );
 };
 

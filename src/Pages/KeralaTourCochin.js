@@ -201,13 +201,9 @@ const CochinLanding = () => {
             <div className="day-content">
               <h3>Day 5</h3>
 
-              <p style={{ color: "blue" }}>
-                
-              </p>
+              <p style={{ color: "blue" }}></p>
 
-              <p>
-                
-              </p>
+              <p></p>
             </div>
           </div>
 
@@ -224,9 +220,7 @@ const CochinLanding = () => {
 
               <p style={{ color: "blue" }}>
                
-              </p>
-
-              <p>
+              </p><p>
                 
               </p>
             </div>
@@ -245,9 +239,7 @@ const CochinLanding = () => {
 
               <p style={{ color: "blue" }}>
                
-              </p>
-
-              <p>
+              </p> <p>
                 
               </p>
             </div>

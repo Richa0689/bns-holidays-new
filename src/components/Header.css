@@ -17,7 +17,7 @@ header {
 
 /* Prevent content overlap */
 body {
-  margin-top: 120px; /* adjust based on header height */
+  margin-top: 120px;
 }
 
 /* ================= TOP NAVBAR ================= */
@@ -25,97 +25,74 @@ body {
   background: rgb(191, 227, 240);
   padding: 10px 40px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .top-navbar ul {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
   list-style: none;
-  color: black;
-   align-items: center;
-   font-size: 14px;
+  align-items: center;
+  font-size: 14px;
 }
 
 .top-navbar ul li {
   position: relative;
   cursor: pointer;
-  padding: 6px 10px; 
-  font-size: 14px; 
+  padding: 0;
 }
 
-.top-navbar a {
-  text-decoration: none;
-  color: black;
-}
-.nav-item:hover .nav-label {
-  color: #ff5a5f;           
-}
-.top-navbar a:hover {
-  color: #ff5a5f;
-}
-
-/* ================= MAIN HEADER ================= */
-.main-header {
+/* ================= NAV LINKS — NO BOX BY DEFAULT ================= */
+.top-navbar ul li > a,
+.nav-label {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 15px 40px;
-  background: white;
-}
-
-/* ================= LOGO ================= */
-.logo img {
-  height: 70px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* ================= SEARCH BOX ================= */
-.search-box {
-  position: relative;
-  width: 50%;
- margin: 0 auto;
-}
-
-.search-box input {
-  width: 102%;
-  padding: 15px 45px 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  outline: none;
-  background: rgb(244, 174, 124);
-}
-
-/* Search Button */
-.search-btn {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  /* background: rgb(247, 200, 113); */
-  border: none;
-  color: gray;
-  height: 0;
-  width: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 6px;
+  padding: 9px 20px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #1a3c5e;
+  background: transparent;
+  border: 1.5px solid transparent;
+  border-radius: 6px;
   cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: none;
+  transition: all 0.15s ease;
+  position: relative;
+  top: 0;
+  letter-spacing: 0.01em;
+  user-select: none;
 }
 
-.search-btn:hover {
-  background: #d1cfcf;
+/* ================= 3D BOX — HOVER ONLY ================= */
+.top-navbar ul li > a:hover,
+.nav-item:hover .nav-label {
+  background: linear-gradient(to bottom, #ffffff 0%, #dff0f8 100%);
+  color: #0f2a40;
+  border: 1.5px solid #90bcd4;
+  border-bottom: 3px solid #5a9ab5;
+  box-shadow: 0 4px 0 #5a9ab5, 0 5px 6px rgba(0, 0, 0, 0.18);
 }
 
+/* ================= ACTIVE / CLICK STATE ================= */
+.top-navbar ul li > a:active,
+.nav-label:active {
+  top: 4px;
+  background: linear-gradient(to bottom, #eaf6fd 0%, #c5e4f3 100%);
+  border: 1.5px solid #90bcd4;
+  border-bottom: 1.5px solid #5a9ab5;
+  box-shadow: 0 0 0 #5a9ab5, 0 1px 3px rgba(0, 0, 0, 0.15);
+}
 
 /* ================= NAV ITEM ================= */
 .nav-item {
   position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 /* ================= SIMPLE DROPDOWN ================= */
@@ -124,20 +101,20 @@ body {
   top: 120%;
   left: 0;
   width: 500px;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-
   padding: 20px;
   background: white;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  font-family: "georgia";
 }
 
 .dropdown li {
   list-style: none;
+  font-family: "georgia";
 }
 
 .dropdown li a {
@@ -146,14 +123,19 @@ body {
   text-decoration: none;
   color: black;
   border-radius: 4px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13.5px;
+  font-weight: 400;
+  top: 0;
 }
 
 .dropdown li a:hover {
   background: #f5f5f5;
+  color: #ff5a5f;
 }
 
-
-/* MEGA MENU */
 /* ================= MEGA MENU ================= */
 .mega-menu {
   position: absolute;
@@ -167,6 +149,7 @@ body {
   border-radius: 0 0 12px 12px;
   overflow: hidden;
   border-top: 3px solid #ff5a5f;
+  font-family: "georgia";
 }
 
 /* LEFT PANEL */
@@ -176,17 +159,23 @@ body {
   padding: 16px 12px;
   border-right: 1px solid #eee;
   flex-shrink: 0;
+  font-family: "georgia";
 }
 
 .mega-left p {
   padding: 10px 14px;
   margin-bottom: 4px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 15px;
   color: #444;
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
+  font-family: "georgia";
+  background: none;
+  border: none;
+  box-shadow: none;
+  top: 0;
 }
 
 .mega-left p.active,
@@ -194,20 +183,42 @@ body {
   background: #ff5a5f;
   color: #ffffff;
   border-radius: 6px;
+  box-shadow: none;
+  border: none;
 }
 
-/* RIGHT SIDE */
+/* ================= MEGA RIGHT WITH MAP BACKGROUND ================= */
 .mega-right {
   display: flex;
-  gap: 32px;
+  gap: 30px 20px;
   padding: 20px 24px;
   flex: 1;
   flex-wrap: wrap;
+
+  /* Map background settings */
+  position: relative;
+background-size: cover;              /* Fill entire background */
+background-position: center center;  /* Center the image */
+background-repeat: no-repeat;
+transition: background-image 0.25s ease;
+min-height: 200px;
 }
 
-/* COLUMN */
+/* Semi-transparent white overlay — keeps text readable over the map */
+.mega-right::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.60); /* Adjust opacity: lower = more visible map */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ================= MEGA COLUMN (must sit above overlay) ================= */
 .mega-column {
-  min-width: 160px;
+  position: relative;
+  z-index: 1;          /* Above the ::before overlay */
+  width: 200px;
 }
 
 .mega-column h4 {
@@ -221,32 +232,73 @@ body {
   letter-spacing: 0.04em;
 }
 
+
 .mega-column h4 a {
   text-decoration: none;
   color: #111;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  top: 0 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  display: inline;
 }
 
 .mega-column h4 a:hover {
-  color: #ff5a5f;
+  color: #ff5a5f !important;
+  background: none !important;
 }
 
 .mega-column p {
-  margin: 5px 0;
-  font-size: 13px;
+  margin: 13px 0;
+  font-size: 14px;
   cursor: pointer;
   color: #555;
 }
 
+/* NO BOX on mega menu item links */
 .mega-column p a {
   text-decoration: none;
   color: #555;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  top: 0 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  display: inline;
   transition: color 0.15s;
 }
 
 .mega-column p a:hover {
-  color: #ff5a5f;
-  padding-left: 4px;
-  transition: padding 0.15s, color 0.15s;
+  color: #ff5a5f !important;
+  padding-left: 4px !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* ================= MAP BADGE (region label shown on map area) ================= */
+.map-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  z-index: 2;
+  background: rgba(255, 90, 95, 0.12);
+  border: 1px solid rgba(255, 90, 95, 0.35);
+  color: #cc2a2a;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  pointer-events: none;
+  font-family: "georgia";
 }
 
 /* ================= FIXED DROPDOWN ================= */
@@ -273,9 +325,19 @@ body {
   transition: background 0.15s, color 0.15s;
 }
 
+/* NO BOX on fixed dropdown links */
 .fixed-dropdown p a {
   text-decoration: none;
   color: #333;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  top: 0 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  display: inline;
 }
 
 .fixed-dropdown p:hover {
@@ -284,72 +346,28 @@ body {
 }
 
 .fixed-dropdown p:hover a {
-  color: #ff5a5f;
+  color: #ff5a5f !important;
+  background: none !important;
 }
 
-/* ================= NAV LABEL HOVER ================= */
-.nav-item {
-  position: relative;
-  cursor: pointer;
-}
-
-.nav-label {
-  padding: 0; 
-  border-radius: 6px;
-  display: inline-block;
-  transition: color 0.2s, background 0.2s;
-  font-size: 15px;
-}
-
-.nav-item:hover .nav-label {
-  color: #ff5a5f;
-  background: rgba(255, 90, 95, 0.08);
-}
-
-/* ================= INTERNATIONAL MAP BG ================= */
-.mega-menu--international {
-  position: relative;
-  overflow: hidden;
-}
-
-.mega-menu--international::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55%;
-  height: 100%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1280px-World_map_-_low_resolution.svg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.mega-menu--international .mega-left,
-.mega-menu--international .mega-right {
-  position: relative;
-  z-index: 1;
-}
+/* ================= CONTACT BUTTON ================= */
 .contact-btn {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(135deg, #11998e, #38ef7d);
-  color: white;
+  background: linear-gradient(135deg,#f5c400,#FFB800);
   text-decoration: none;
+  color: white;
   padding: 10px 18px;
   border-radius: 25px;
   flex-shrink: 0;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 12px rgba(17,153,142,0.3);
+  box-shadow: 0 4px 12px rgba(17, 153, 142, 0.3);
 }
 
 .contact-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(17,153,142,0.45);
+  box-shadow: 0 6px 16px rgba(17, 153, 142, 0.45);
   color: white;
 }
 
@@ -386,55 +404,91 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
-/* ============================================
-   HEADER MOBILE FIX
-   ============================================ */
 
-/* Hide hamburger on desktop */
+/* ================= MAIN HEADER ================= */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 40px;
+  background: white;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  margin-left: auto;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ================= SEARCH BOX ================= */
+.search-box {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.search-box input {
+  width: 102%;
+  padding: 15px 45px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  background: rgb(244, 174, 124);
+}
+
+.search-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  color: gray;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: #d1cfcf;
+}
+
+/* ================= HAMBURGER ================= */
 .hamburger {
   display: none;
 }
 
-/* Hide mobile menu on desktop */
+/* ================= MOBILE MENU ================= */
 .mobile-menu {
   display: none;
 }
 
+/* ============================================
+   MOBILE STYLES
+   ============================================ */
 @media (max-width: 768px) {
-
-  /* Reduce body top margin to match smaller header */
   body {
     margin-top: 80px;
   }
 
-  /* ── MAIN HEADER ── */
   .main-header {
     padding: 10px 16px;
     gap: 10px;
   }
 
-  /* Logo smaller */
   .logo img {
     height: 50px;
   }
 
-  /* Search box: fill space between logo and hamburger */
-  .search-box {
-    flex: 1;
-    margin: 0 10px;
-    width: auto;
-  }
-
-  .search-box input {
-    width: 100%;
-    padding: 10px 40px 10px 12px;
-    font-size: 13px;
-  }
-  @media (max-width: 768px) {
-
-
-
-  /* ── SEARCH BOX FIX ── */
   .search-box {
     flex: 1;
     margin: 0 8px;
@@ -444,21 +498,20 @@ body {
 
   .search-box input {
     width: 100%;
-    padding: 10px 44px 10px 12px;  
-    font-size: 10px;                
+    padding: 10px 44px 10px 12px;
+    font-size: 10px;
     border-radius: 25px;
     box-sizing: border-box;
   }
 
-  /* ── SEARCH BUTTON FIX ── */
   .search-btn {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 32px;                    /* give it actual size */
+    width: 32px;
     height: 31px;
-   background-color: rgb(244, 174, 124);
+    background-color: rgb(244, 174, 124);
     border: none;
     border-radius: 50%;
     display: flex;
@@ -472,9 +525,7 @@ body {
   .search-btn:hover {
     background: rgb(250, 143, 55);
   }
-}
 
-  /* Show hamburger */
   .hamburger {
     display: flex;
     align-items: center;
@@ -490,12 +541,10 @@ body {
     flex-shrink: 0;
   }
 
-  /* Hide desktop navbar */
   .desktop-nav {
     display: none;
   }
 
-  /* ── MOBILE MENU ── */
   .mobile-menu {
     display: block;
     background: rgb(62, 62, 96);
@@ -512,22 +561,30 @@ body {
   }
 
   .mobile-menu ul li {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .mobile-menu ul li a {
+  /* Reset 3D on mobile links */
+  .mobile-menu ul li a,
+  .mobile-menu ul li > a {
     display: block;
     padding: 14px 20px;
-    color: white;
+    color: white !important;
     text-decoration: none;
     font-size: 15px;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    top: 0 !important;
+    font-weight: 400;
   }
 
   .mobile-menu ul li a:hover {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: white !important;
   }
 
-  /* Dropdown row with chevron */
   .mobile-nav-title {
     display: flex;
     justify-content: space-between;
@@ -539,10 +596,9 @@ body {
   }
 
   .mobile-nav-title:hover {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
   }
 
-  /* Chevron rotation when open */
   .chevron {
     font-size: 12px;
     transition: transform 0.25s ease;
@@ -552,9 +608,8 @@ body {
     transform: rotate(180deg);
   }
 
-  /* Submenu panel */
   .mobile-submenu {
-    background: rgba(0,0,0,0.25);
+    background: rgba(0, 0, 0, 0.25);
     padding: 10px 20px 14px;
   }
 
@@ -583,24 +638,34 @@ body {
   }
 
   .mobile-item a {
-    color: #bbb;
+    color: #bbb !important;
     text-decoration: none;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    font-size: 13px !important;
   }
 
   .mobile-item:hover,
   .mobile-item a:hover {
-    color: white;
+    color: white !important;
   }
-  /* Contact button — compact icon-only on mobile */
-.contact-btn {
-  padding: 8px 10px;
-}
 
-.contact-text {
-  display: none;
-}
+  .contact-btn {
+    padding: 8px 10px;
+  }
 
-.contact-icon {
-  font-size: 20px;
-}
+  .contact-text {
+    display: none;
+  }
+
+  .contact-icon {
+    font-size: 20px;
+  }
+
+  /* Hide map badge on mobile */
+  .map-badge {
+    display: none;
+  }
 }
