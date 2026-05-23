@@ -9,8 +9,8 @@ const tours = [
     countries: "1 Country",
     cities: "2 Cities",
     dates: "10 Dates",
-    price: "₹75,000",
-    emi: "₹3,500/mo",
+    price: "₹30,000",
+    emi: "₹1,500/mo",
     image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/a4/4a/26/langkawi-from-above.jpg?w=1200&h=700&s=1"
   },
   {
@@ -19,8 +19,8 @@ const tours = [
     countries: "1 Country",
     cities: "Kuala Lumpur",
     dates: "8 Dates",
-    price: "₹65,000",
-    emi: "₹3,000/mo",
+    price: "₹35,000",
+    emi: "₹1,500/mo",
     image: "https://travelxploria.com/_next/image?url=https%3A%2F%2Ftravelxploria.com%2Fuploads_media%2Fblog%2F1750246793100-AdobeStock_500048544-min.jpeg&w=3840&q=75"
   },
   {
@@ -29,8 +29,8 @@ const tours = [
     countries: "1 Country",
     cities: "Langkawi",
     dates: "6 Dates",
-    price: "₹70,000",
-    emi: "₹3,200/mo",
+    price: "₹28,000",
+    emi: "₹1,500/mo",
     image: "https://houseoftravel-prod-a8a4d6a8eqgvdscd.z02.azurefd.net/media/wyxfqg5p/malaysia-mountains-ocean-water-asia-malaysia-bohey-dulang-island-getty-826412034-nora-carol-photographyjpg.jpg?width=1920&height=1080&v=1db4b42581f4290"
   },
   {
@@ -39,8 +39,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "7 Dates",
-    price: "₹68,000",
-    emi: "₹3,100/mo",
+    price: "₹32,000",
+    emi: "₹1,100/mo",
     image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/d7/cb/7a.jpg"
   },
   {
@@ -49,8 +49,8 @@ const tours = [
     countries: "1 Country",
     cities: "3 Cities",
     dates: "4 Dates",
-    price: "₹1,20,000",
-    emi: "₹5,500/mo",
+    price: "₹45,000",
+    emi: "₹2,500/mo",
     image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0f/3f/68/5f.jpg"
   }
 ];

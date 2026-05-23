@@ -258,6 +258,8 @@ const Header = () => {
 
     // Africa
     Kenya:        "https://c8.alamy.com/comp/E5K8MG/kenya-political-map-with-capital-nairobi-national-borders-most-important-E5K8MG.jpg",
+
+      
   };
 
   /**

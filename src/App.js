@@ -36,7 +36,7 @@ import VancouverVictoriaLanding from './Pages/VancouverVictoriaLanding';
 import RockyTourLanding from './Pages/RockyTourLanding';
 import LuxuryCanadaLanding from './Pages/LuxuryCanadaLanding';
 import EuropeLanding from "./Pages/EuropeLanding";
-import FranceSwissLanding from "./Pages/FranceSwissLanding";
+import FranceSwissLanding from "./Pages/EuropeBelgium";
 import ItalyLanding from "./Pages/ItalyLanding";
 import EasternEuropeLanding from "./Pages/EasternEuropeLanding";
 import LuxuryEuropeLanding from "./Pages/LuxuryEuropeLanding";
@@ -187,7 +187,53 @@ import KenyaEchoesOfTheWild from './Pages/KenyaEchoesOfTheWild';
 import KenyaAmboseliWildTrails from "./Pages/KenyaAmboseliWildTrails";
 import KenyaPredatorsAndPinkFeathers from "./Pages/KenyaPredatorsAndPinkFeathers";
 import KenyaIntoTheHeartOfTheWild from "./Pages/KenyaIntoTheHeartOfTheWild";
-
+import AustriaLanding from "./Pages/Austrialanding";
+import AustriaLanding2 from "./Pages/Austrialanding-2";
+import AustriaLanding3 from "./Pages/Austrialanding-3";
+import AustriaLanding4 from "./Pages/Austrialanding-4";
+import AustriaLanding5 from "./Pages/Austrialanding-5";
+import AustriaLanding6 from "./Pages/Austrialanding-6";
+import AustriaLanding7 from "./Pages/Austrialanding-7";
+import AustriaLanding8 from "./Pages/Austrialanding-8";
+import AustriaLanding9 from "./Pages/Austrialanding-9";
+import AustriaLanding10 from "./Pages/Austrialanding-10";
+import BelgiumLanding from "./Pages/EuropeBelgium";
+import Belgium1 from "./Pages/Belgium-1";
+import Belgium2 from "./Pages/Belgium-2";
+import Belgium3 from "./Pages/Belgium-3";
+import CroatiaLanding from "./Pages/EuropeCroatia";
+import Croatia1 from "./Pages/Croatia-1";
+import Croatia2 from "./Pages/Croatia-2";
+import Croatia3 from "./Pages/Croatia-3";
+import Croatia4 from "./Pages/Croatia-4";
+import Croatia5 from "./Pages/Croatia-5";
+import EuropePortugal from "./Pages/EuropePortugal";
+import Portugal1 from "./Pages/Portugal-1";
+import Portugal2 from "./Pages/Portugal-2";
+import EuropeItaly from "./Pages/EuropeItaly";
+import Italy1 from "./Pages/Italy-1";
+import Italy2 from "./Pages/Italy-2";
+import Italy3 from "./Pages/Italy-3";
+import Italy4 from "./Pages/Italy-4";
+import EuropePoland from './Pages/EuropePoland';
+import Poland1 from './Pages/Poland-1';
+import Poland2 from './Pages/Poland-2';
+import EuropeHungary from './Pages/EuropeHungary';
+import Hungary1 from './Pages/Hungary-1';
+import Hungary2 from './Pages/Hungary-2';
+import Hungary3 from './Pages/Hungary-3';
+import Hungary4 from './Pages/Hungary-4';
+import Hungary5 from './Pages/Hungary-5';
+import EuropeDenmark from './Pages/EuropeDenmark';
+import Denmark1 from './Pages/Denmark-1';
+import Denmark2 from './Pages/Denmark-2';
+import Denmark3 from './Pages/Denmark-3';
+import Denmark4 from './Pages/Denmark-4';
+import Denmark5 from './Pages/Denmark-5';
+import EuropeGermany from './Pages/EuropeGermany';
+import Germany1 from './Pages/Germany-1';
+import Germany2 from './Pages/Germany-2';
+import Germany3 from './Pages/Germany-3';
 
 function App() {
   return (
@@ -389,6 +435,53 @@ function App() {
 <Route path="/kenya-AmboseliWildTrails" element={<KenyaAmboseliWildTrails />} />
 <Route path="/kenya-PredatorsAndPinkFeathers" element={<KenyaPredatorsAndPinkFeathers />} />
 <Route path="/kenya-IntoTheHeartOfTheWild" element={<KenyaIntoTheHeartOfTheWild />} />
+<Route path="/austria-landing" element={<AustriaLanding />} />
+<Route path='/austria-landing-2' element={<AustriaLanding2 />} />
+<Route path='/austria-landing-3' element={<AustriaLanding3 />} />
+<Route path='/austria-landing-4' element={<AustriaLanding4 />} />
+<Route path='/austria-landing-5' element={<AustriaLanding5 />} />
+<Route path='/austria-landing-6' element={<AustriaLanding6 />} />
+<Route path="/austria-landing-7" element={<AustriaLanding7 />} /> 
+<Route path="/austria-landing-8" element={<AustriaLanding8 />} />
+<Route path="/austria-landing-9" element={<AustriaLanding9 />} />
+<Route path='/austria-landing-10' element={<AustriaLanding10 />} />
+<Route path="/belgium-landing" element={<BelgiumLanding />} />
+<Route path="/belgium-landing-1" element={<Belgium1 />} />
+<Route path='/belgium-landing-2' element={<Belgium2 />} />
+<Route path='/belgium-landing-3' element={<Belgium3 />} />
+<Route path="/croatia-landing" element={<CroatiaLanding />} />
+<Route path='/croatia-landing-1' element={<Croatia1 />} />
+<Route path='/croatia-landing-2' element={<Croatia2 />} />
+<Route path='/croatia-landing-3' element={<Croatia3 />} />
+<Route path='/croatia-landing-4' element={<Croatia4 />} />
+<Route path='/croatia-landing-5' element={<Croatia5 />} />
+<Route path='/portugal-landing' element={<EuropePortugal />} />
+<Route path='/portugal-landing-1' element={<Portugal1 />} />
+<Route path='/portugal-landing-2' element={<Portugal2 />} />
+<Route path='/italy-landing1' element={<EuropeItaly />} />
+<Route path='/italy-landing2' element={<Italy1 />} />
+<Route path='/italy-landing3' element={<Italy2 />} />
+<Route path='/italy-landing4' element={<Italy3 />} />
+<Route path='/italy-landing5' element={<Italy4 />} />
+<Route path='/poland-landing1' element={<EuropePoland />} />
+<Route path='/poland-landing2' element={<Poland1 />} />
+<Route path='/poland-landing3' element={<Poland2 />} />
+<Route path='/hungary-landing1' element={<EuropeHungary />} />
+<Route path='/hungary-landing2' element={<Hungary1 />} />
+<Route path='/hungary-landing3' element={<Hungary2 />} />
+<Route path='/hungary-landing4' element={<Hungary3 />} />
+<Route path='/hungary-landing5' element={<Hungary4 />} />
+<Route path='/hungary-landing6' element={<Hungary5 />} />
+<Route path='/denmark-landing1' element={<EuropeDenmark />} />
+<Route path='/denmark-landing2' element={<Denmark1 />} />
+<Route path='/denmark-landing3' element={<Denmark2 />} />
+<Route path='/denmark-landing4' element={<Denmark3 />} />
+<Route path='/denmark-landing5' element={<Denmark4 />} />
+<Route path='/denmark-landing6' element={<Denmark5 />} />
+<Route path='/germany-landing1' element={<EuropeGermany />} />
+<Route path='/germany-landing2' element={<Germany1 />} />
+<Route path='/germany-landing3' element={<Germany2 />} />
+<Route path='/germany-landing4' element={<Germany3 />} />
       </Routes> 
     </Router>
     </HelmetProvider>

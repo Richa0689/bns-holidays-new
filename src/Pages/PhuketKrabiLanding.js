@@ -63,7 +63,7 @@ const PhuketKrabiLanding = () => {
       {/* CTA */}
       <div className="cta-section">
         <h2>Book Phuket & Krabi Tour</h2>
-        <p>Starting at ₹90,000 | EMI ₹4,200/month</p><br />
+        
         <Link to="/thailand">
           <button className="book-now-btn">Book Now</button>
         </Link>
@@ -79,7 +79,8 @@ const PhuketKrabiLanding = () => {
             <img src="https://i.ytimg.com/vi/LuzS5z3T6yE/maxresdefault.jpg" />
             <div className="day-content">
               <h3>Day 1</h3>
-              <p>Arrival in Phuket</p>
+              <p> Arrival in Phuket and Phuket Fantasea Show </p>
+              <p></p>
             </div>
           </div>
 

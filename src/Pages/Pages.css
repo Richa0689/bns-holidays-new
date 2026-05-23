@@ -573,3 +573,34 @@
     flex: 0 0 30%;
   }
 }
+
+.page-subtitle {
+  font-size: 15px;
+  color: #666;
+  margin: -8px 0 24px;
+}
+
+.tour-highlight {
+  margin-top: 8px;
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.tour-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.tour-tag {
+  background: #f0f4ff;
+  color: #3a5bd9;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}

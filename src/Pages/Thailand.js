@@ -9,28 +9,28 @@ const tours = [
     countries: "1 Country",
     cities: "2 Cities",
     dates: "10 Dates",
-    price: "₹85,000",
-    emi: "₹4,000/mo",
+    price: "₹30,000",
+    emi: "₹1,000/mo",
     image: "https://www.hostelworld.com/blog/wp-content/uploads/2019/12/Best-places-to-visit-in-Thailand-@cadop.jpg"
   },
   {
     title: "Bangkok & Pattaya",
-    days: "5 Days",
+    days: "7 Days",
     countries: "1 Country",
     cities: "2 Cities",
     dates: "8 Dates",
-    price: "₹75,000",
-    emi: "₹3,500/mo",
+    price: "₹28,000",
+    emi: "₹1,000/mo",
     image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/b3/6f/2b.jpg"
   },
   {
     title: "Phuket & Krabi",
-    days: "6 Days",
+    days: "8 Days",
     countries: "1 Country",
     cities: "2 Cities",
     dates: "7 Dates",
-    price: "₹90,000",
-    emi: "₹4,200/mo",
+    price: "₹35,000",
+    emi: "₹1,200/mo",
     image: "https://www.onthegotours.com/repository/Railay-Beach-in-Krabi-Thailand-663831538129694.jpg"
   },
   {
@@ -39,8 +39,8 @@ const tours = [
     countries: "1 Country",
     cities: "3 Cities",
     dates: "5 Dates",
-    price: "₹1,20,000",
-    emi: "₹5,500/mo",
+    price: "₹45,000",
+    emi: "₹2,000/mo",
     image: "https://cdn.forevervacation.com/uploads/destination/bangkok.jpeg"
   }
 ];

@@ -1,162 +1,219 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Pages.css";
 import { Link } from "react-router-dom";
 
+const austriaTours = [
+  {
+    title: "Scenic Europe Escape: Ljubljana, Salzburg & Munich",
+    days: "7 Days",
+    countries: "SLOVENIA + AUSTRIA + GERMANY",
+    cities: "Ljubljana, Salzburg & Munich",
+    dates: "12 Dates",
+    price: "₹2,50,000",
+    emi: "₹11,500/mo",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/26/c1/cc/caption.jpg?w=1200&h=-1&s=1&cx=1920&cy=1080&chk=v1_4ffab338edf9ee7e4c5d"
+  },
+  {
+    title: "Budapest + Vienna + Prague || 06 Nights/07 Days",
+    days: "7 Days",
+    countries: "HUNGARY + AUSTRIA + CZECH REPUBLIC",
+    cities: "Budapest, Vienna & Prague",
+    dates: "8 Dates",
+    price: "₹3,10,000",
+    emi: "₹14,200/mo",
+    image: "https://vlt.tours/wp-content/uploads/2025/11/upload-1200.webp"
+  },
+  {
+    title: "Budapest + Vienna + Prague 08 Nights/09 Days",
+    days: "9 Days",
+    countries: "HUNGARY + AUSTRIA + CZECH REPUBLIC",
+    cities: "Budapest, Vienna & Prague",
+    dates: "6 Dates",
+    price: "₹2,75,000",
+    emi: "₹12,700/mo",
+    image: "https://www.catsninelives.com/wp-content/uploads/2023/04/Cats-Nine-Lives-Prague-54.jpg"
+  },
+   {
+    title: "Munich + Innsbruck + Salzburg + Vienna||08 Nights/09 Days",
+    days: "9 Days",
+    countries: "GERMANY + AUSTRIA",
+    cities: "Vienna, Munich & Zurich",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://www.railbookers.com/sites/railbookers/files/styles/hero/public/images/Innsbruck-Mountains-River.jpg?h=6e972868&itok=j9rFCOgT"
+  },
+  {
+    title: "Best of Vienna/Munich/Zurich || 06 Nights/07 Days",
+    days: "7 Days",
+    countries: "GERMANY + SWITZERLAND + AUSTRIA",
+    cities: "Vienna, Munich & Zurich",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://res-2.cloudinary.com/gorealtravel/image/upload/f_auto,q_auto,q_50/v1733565690/production/marketing/itinerary/67541b35e8c263000bb727b9/marketing_picture/67541cfae8c263000bb72826/file/prague-river-and-castle-view-small.webp"
+  },
+  {
+    title: "Best of Vienna/Munich/Zurich || 07 Nights/08 Days",
+    days: "8 Days",
+    countries: "GERMANY + SWITZERLAND + AUSTRIA",
+    cities: "Vienna, Munich & Zurich",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://res-2.cloudinary.com/gorealtravel/image/upload/f_auto,q_auto,q_50/v1713362978/production/marketing/itinerary/661fd80e0273341195707608/marketing_picture/661fd81a02733411957076d0/file/2.webp"
+  },
+  {
+    title: "Zurich + Innsbruck + Salzburg || 06 Nights/07 Days",
+    days: "7 Days",
+    countries: "SWITZERLAND + AUSTRIA + GERMANY",
+    cities: "Vienna, Munich & Zurich",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://pictures.tripmasters.com/images/apkg/1730/innsbruck_-_aerial_view-1030503-500.jpg"
+  },
+  {
+    title: "Vienna + Budapest + Prague || 06 Nights/07 Days",
+    days: "7 Days",
+    countries: "AUSTRIA + HUNGARY + CZECH REPUBLIC",
+    cities: "Vienna, Budapest & Prague",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://vlt.tours/wp-content/uploads/2025/11/upload-1200.webp"
+  },
+  {
+    title: "Munich + Innsbruck + Salzburg + Vienna||08 Nights/09 Days",
+    days: "9 Days",
+    countries: "GERMANY + AUSTRIA",
+    cities: "munich, Innsbruck, Salzburg & Vienna",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://tripophia.net/media/catalog/product/1/_/1_32__2_30.jpg"
+  },
+  {
+    title: "From Munich’s Majesty to Innsbruck’s Alps|| 6N/7D",
+    days: "7 Days",
+    countries: "AUSTRIA",
+    cities: "Munich, Innsbruck & Salzburg",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://images.daytrip.com/Innsbruck4as.jpeg?w=2048&q=30"
+  },
+  {
+    title: "From Medieval Streets to Imperial Palaces|| 9N/10D",
+    days: "10 Days",
+    countries: "CZECH REPUBLIC + AUSTRIA + HUNGARY",
+    cities: "Prague, Vienna & Budapest",
+    dates: "10 Dates",
+    price: "₹1,85,000",
+    emi: "₹8,500/mo",
+    image: "https://images.greeka.com/resized/user_images/WinfriedRusch/580/php2p1zDu.jpg"
+  }
+];
+
 const EuropeLanding = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className="usa-landing">
+    <div className="tour-container">
 
-      {/* Hero Section */}
-      <div className="hero-section">
-        <img
-          src="https://images.indianexpress.com/2024/07/Recognised-for-its-exceptional-beauty-and-cultural-significance-the-Taj-Mahal-a-UNESCO-World-Heritage-Site-in-Agra-India-has-also-been-featured-in-the-list-in-the-22nd-position.-Here-are-th.jpg"
-          alt="Europe"
-        />
-        <div className="hero-content">
-          <h1>Best of Europe</h1>
-          <p>10 Days • 5 Countries • 8 Cities</p>
-          <Link to="/europe">
-            <button className="explore-btn">View Tours</button>
-          </Link>
-        </div>
-      </div>
+      <h1>Austria Tour Packages</h1>
 
-      {/* Highlights Section */}
-      <div className="highlights">
-        <h2>Top Destinations</h2>
+      {austriaTours.map((tour, index) => (
+        <div className="tour-card" key={index}>
 
-        <div className="highlight-grid">
-          <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="" />
-            <p>Paris</p>
+          <div className="tour-image">
+            <span className="badge">Popular Today</span>
+            <img src={tour.image} alt={tour.title} />
           </div>
 
-          <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" alt="" />
-            <p>Switzerland</p>
+          <div className="tour-info">
+            <div className="tour-info">
+  <h2>
+    {tour.title === "Scenic Europe Escape: Ljubljana, Salzburg & Munich" ? (
+      <Link to="/austria-landing" className="title-link">{tour.title}</Link>
+    ) : tour.title === "Budapest + Vienna + Prague || 06 Nights/07 Days" ? (
+      <Link to="/austria-landing-2" className="title-link">{tour.title}</Link>
+    ) : tour.title === "Budapest + Vienna + Prague 08 Nights/09 Days" ? (
+      <Link to="/austria-landing-3" className="title-link">{tour.title}</Link>
+    ) : tour.title === "Best of Vienna/Munich/Zurich || 06 Nights/07 Days" ? (
+      <Link to="/austria-landing-4" className="title-link">{tour.title}</Link>
+    ) : (
+      tour.title === "Munich + Innsbruck + Salzburg + Vienna||08 Nights/09 Days" ? (
+        <Link to="/austria-landing-5" className="title-link">{tour.title}</Link>
+      ) : (
+        tour.title === "Best of Vienna/Munich/Zurich || 07 Nights/08 Days" ? (
+          <Link to="/austria-landing-6" className="title-link">{tour.title}</Link>
+        ) : (
+          tour.title === "Zurich + Innsbruck + Salzburg || 06 Nights/07 Days" ? (
+            <Link to="/austria-landing-7" className="title-link">{tour.title}</Link>
+          ) : (
+            tour.title === "Vienna + Budapest + Prague || 06 Nights/07 Days" ? (
+              <Link to="/austria-landing-8" className="title-link">{tour.title}</Link>
+            ) : (
+              tour.title === "From Munich’s Majesty to Innsbruck’s Alps|| 6N/7D" ? (
+                <Link to="/austria-landing-9" className="title-link">{tour.title}</Link>
+              ) : (
+                tour.title === "From Medieval Streets to Imperial Palaces|| 9N/10D" ? (
+                  <Link to="/austria-landing-10" className="title-link">{tour.title}</Link>
+                ) : (
+                  tour.title
+                )
+              )
+            )
+          )
+        )
+      )
+    )}
+  </h2>
+
+  <p className="details">
+    {tour.days} • {tour.countries} • {tour.cities}, {tour.dates}
+  </p>
+</div>
           </div>
 
-          <div className="highlight-card">
-            <img src="https://www.emperortraveline.com/wp-content/uploads/2022/09/Italy.jpg" alt="" />
-            <p>Italy</p>
-          </div>
-
-          <div className="highlight-card">
-            <img src="https://www.holland.com/upload_mm/c/b/7/80160_fullimage_rondvaartboot%20vaart%20onder%20brug%20door%20met%20mooie%20wolkenlucht%20%C2%A9%20illusion-x%20via%20pixabay_560x560_438x353.jpg" alt="" />
-            <p>Amsterdam</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Why Choose Section */}
-      <div className="why-section">
-        <h2>Why Choose Europe Tours?</h2>
-
-        <div className="why-grid">
-          <div>🏰 Historic Landmarks</div>
-          <div>🌍 Multi-Country Experience</div>
-          <div>🍝 Food & Culture</div>
-          <div>🚆 Scenic Travel</div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="cta-section">
-        <h2>Plan Your Dream Europe Trip</h2>
-        <p>Starting from ₹2,50,000</p><br />
-        <Link to="/europe">
-          <button className="book-now-btn">Book Now</button>
-        </Link>
-      </div>
-
-      {/* Itinerary Section */}
-      <div className="itinerary-section">
-        <h2>10 Days Europe Itinerary</h2>
-
-        <div className="itinerary-list">
-
-          <div className="day-card">
-            <img src="https://img.freepik.com/premium-photo/plane-landing-paris-airport_1276941-27702.jpg?w=360" alt="" />
-            <div className="day-content">
-              <h3>Day 1</h3>
-              <p>Arrival in Paris</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://thumbs.dreamstime.com/b/people-walking-park-around-eiffel-tower-france-people-walking-park-around-eiffel-tower-france-paris-104501921.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 2</h3>
-              <p>Paris City Tour & Eiffel Tower</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://res.klook.com/image/upload/q_85/c_fill,w_750/v1663298566/blog/pdft6kvmqwdxk0witkcd.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 3</h3>
-              <p>Travel to Switzerland</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/d6/c6/f7.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 4</h3>
-              <p>Mount Titlis Visit</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://mrhudsonexplores.com/wp-content/uploads/2020/01/Photo-Dan-Novac.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 5</h3>
-              <p>Travel to Italy</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://www.vaticantour.com/assets/frontend/images/banner-1.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 6</h3>
-              <p>Rome & Vatican Tour</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/001/980/original/6dd853366a0748fe3097e8c60d12b34b/netherlands-country-canal-amsterdam.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 7</h3>
-              <p>Travel to Netherlands</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://thingstodoinamsterdam.com/wp-content/uploads/2024/06/Canal-Cruise-Amsterdam.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 8</h3>
-              <p>Amsterdam Canal Tour</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://media.licdn.com/dms/image/v2/C4D12AQGuom_9W_KcQw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1599893291314?e=2147483647&v=beta&t=D1lH9V3VZ_z5BB-BpFFoH4YnJg_3ew49_Aec4XZXVIg" alt="" />
-            <div className="day-content">
-              <h3>Day 9</h3>
-              <p>Shopping & Leisure</p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img src="https://thumbs.dreamstime.com/b/passenger-waiting-flight-airport-departure-terminal-happy-traveler-waiting-flight-airport-departure-terminal-113664679.jpg" alt="" />
-            <div className="day-content">
-              <h3>Day 10</h3>
-              <p>Departure</p>
-            </div>
+          <div className="tour-price">
+            <p className="start">Starts from</p>
+            <h2>{tour.price}</h2>
+            <p className="emi">EMI from {tour.emi}</p>
+            <button className="book-btn">Book Online</button>
+            <button className="whatsapp-btn">Share on WhatsApp</button>
+            <button className="details-btn">View Tour Details</button>
           </div>
 
         </div>
-      </div>
+      ))}
+
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-box">
+            <div className="modal-header">
+              <h2>Tour Includes</h2>
+              <span className="close-btn" onClick={() => setShowModal(false)}>✕</span>
+            </div>
+            <div className="icons-row">
+              <div><span>🏨</span><p>Hotel</p></div>
+              <div><span>🍽️</span><p>Meals</p></div>
+              <div><span>✈️</span><p>Flight</p></div>
+              <div><span>📷</span><p>Sightseeing</p></div>
+              <div><span>🚌</span><p>Transport</p></div>
+              <div><span>📄</span><p>Visa</p></div>
+            </div>
+            <div className="modal-content">
+              <p>👨‍✈️ Tour includes the services of <b>BNS Holidays</b>.</p>
+              <p className="note">
+                *Except for joining/leaving. To & fro economy class airfare is included.
+                <br />*Taxes Extra.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );

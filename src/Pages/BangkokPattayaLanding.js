@@ -63,7 +63,7 @@ const BangkokPattayaLanding = () => {
       {/* CTA */}
       <div className="cta-section">
         <h2>Book Bangkok & Pattaya Tour</h2>
-        <p>Starting at ₹75,000 | EMI ₹3,500/month</p><br />
+        
         <Link to="/thailand">
           <button className="book-now-btn">Book Now</button>
         </Link>
