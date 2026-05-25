@@ -9,7 +9,7 @@ const PortugalLanding2 = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://modularassets.cdn.ignitetravel.com/modular_multisite/wp-content/uploads/sites/2/2024/12/16130036/Budapest-Hungary-2.jpg"
+          src="https://www.nationalgeographic.com/content/dam/expeditions/destinations/europe/journeys/Iconic-portugal-and-spain/hero-portugal-and-spain.jpg"
           alt="Spain Portugal Tour"
         />
 
@@ -36,7 +36,7 @@ const PortugalLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1513735492246-483525079686?w=600"
+              src="https://www.tripsavvy.com/thmb/Tn_RCN18WpsYQOKFieLWxCFa63k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/thingstodoinmadridskyline-d05bf06ef9144f04973d5bfc50fbcee6.jpg"
               alt=""
             />
             <p>Madrid</p>
@@ -52,7 +52,7 @@ const PortugalLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=600"
+              src="https://res.klook.com/image/upload/fl_lossy.progressive,q_60/Mobile/City/k6sfiwgjyq1tqxe1f5i3.jpg"
               alt=""
             />
             <p>Sintra</p>
@@ -60,7 +60,7 @@ const PortugalLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600"
+              src="https://portugalonline.com/wp-content/uploads/2017/01/3.jpg"
               alt=""
             />
             <p>Algarve Coast</p>
@@ -106,7 +106,7 @@ const PortugalLanding2 = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1513735492246-483525079686?w=600"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13zVRTztfzN9Z0i45XdOnv5Q3jVOynCBlAw&s"
               alt=""
             />
 
@@ -125,7 +125,7 @@ Overnight Stay in Madrid
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1525874684015-58379d421a52?w=600"
+              src="https://cdn-imgix.headout.com/media/images/532a90deedb4a7452343bc8cb510a1b1-32573-madrid-city-sightseeing--madrid-panoramic-bus-tour-01.jpg"
               alt=""
             />
 
@@ -145,7 +145,7 @@ Overnight Stay in Madrid</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1513735492246-483525079686?w=600"
+              src="https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/vaus7julek2le4hlp9s2.jpg"
               alt=""
             />
 
@@ -166,7 +166,7 @@ Overnight Stay in Madrid</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600"
+              src="https://t4.ftcdn.net/jpg/01/38/70/25/360_F_138702507_ird4Xbcz8WtEdprIK6QpSvEEaQ2uRmT0.jpg"
               alt=""
             />
 
@@ -186,7 +186,7 @@ Overnight Stay in Lisbon.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=600"
+              src="https://cdn.nattivus.com/img/actividades/Portugal/Lisboa/410_Lisbon_City_Tour/lisbon-city-tour-A.jpg"
               alt=""
             />
 
@@ -207,7 +207,7 @@ Overnight Stay in Lisbon.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600"
+              src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/28/66/08.jpg"
               alt=""
             />
 
@@ -229,7 +229,7 @@ Overnight Stay in Lisbon.
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600"
+              src="https://www.ahstatic.com/photos/1593_ho_00_p_1024x768.jpg"
               alt=""
             />
 
@@ -247,7 +247,7 @@ Overnight Stay in Faro.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1513735492246-483525079686?w=600"
+              src="https://st3.idealista.pt/news/arquivos/styles/detail_sm/public/2024-10/images/777-s-nlen7w0r55o-unsplash.jpg?VersionId=8YxKadUEbjrh.6hxDK8vQipybVl5zDTy&itok=AIjsFdQe"
               alt=""
             />
 
@@ -266,7 +266,7 @@ Overnight Stay in Faro.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1513735492246-483525079686?w=600"
+              src="https://d34-a.sdn.cz/d_34/c_img_m3_A/nPt0vAiT3tBIuqIh8B0LgRN/9b9e.jpeg?fl=res,400,225,3"
               alt=""
             />
 

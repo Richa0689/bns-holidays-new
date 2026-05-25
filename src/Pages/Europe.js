@@ -157,19 +157,19 @@ const Europe = () => {
     <>
       {/* ── SEO HEAD ── */}
       <Helmet>
-        <title>Europe Tour Packages from India 2025 | BNS Holidays</title>
+        <title>Europe Tour Packages from India 2026 | BNS Holidays</title>
         <meta
           name="description"
           content="Book the best Europe tour packages from India starting at ₹1,95,000. Explore Austria, Belgium, Croatia, Eastern Europe & Luxury Europe tours with flights, hotels & visa included. EMI available."
         />
         <meta
           name="keywords"
-          content="Europe tour packages from India, Europe holiday packages, Austria tour, Belgium tour, Croatia tour, Eastern Europe tour, Luxury Europe tour, Europe trip 2025"
+          content="Europe tour packages from India, Europe holiday packages, Austria tour, Belgium tour, Croatia tour, Eastern Europe tour, Luxury Europe tour, Europe trip 2026"
         />
         <link rel="canonical" href="https://www.bnsholidays.com/europe-tours" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Europe Tour Packages from India 2025 | BNS Holidays" />
+        <meta property="og:title" content="Europe Tour Packages from India 2026 | BNS Holidays" />
         <meta property="og:description" content="Explore top Europe tour packages from India starting at ₹1,95,000. Flights, hotels, visa & sightseeing included. Easy EMI options available." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bnsholidays.com/europe-tours" />

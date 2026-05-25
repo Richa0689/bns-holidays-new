@@ -9,7 +9,7 @@ const ItalyLanding2 = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+          src="https://www.discoveryguidedtours.com/wp-content/uploads/2022/10/op23-8Q1vzwcNx1o-unsplash.jpg"
           alt="Italy Tour"
         />
 
@@ -36,7 +36,7 @@ const ItalyLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600"
+              src="https://visit-rome-in-italy.global.ssl.fastly.net/pics/ancient-rome/colosseum/colosseum-arena-rome-italy-16.jpg"
               alt=""
             />
             <p>Rome Colosseum</p>
@@ -44,7 +44,7 @@ const ItalyLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1543429257-3eb0b65d0ec8?w=600"
+              src="https://cdn.britannica.com/86/138686-050-E582758A/Basilica-Santa-Croce-Florence-Italy-Arnolfo-di.jpg"
               alt=""
             />
             <p>Florence Cathedral</p>
@@ -52,7 +52,7 @@ const ItalyLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1525874684015-58379d421a52?w=600"
+              src="https://images.unsplash.com/photo-1543429776-2782fc8e1acd?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGlzYSUyMHRvd2VyfGVufDB8fDB8fHww"
               alt=""
             />
             <p>Leaning Tower of Pisa</p>
@@ -60,7 +60,7 @@ const ItalyLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600"
+              src="https://ciaoandiamo.com/wp-content/uploads/2016/02/Venice-Canals-HD-scaled.jpg"
               alt=""
             />
             <p>Venice Canals</p>
@@ -106,7 +106,7 @@ const ItalyLanding2 = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600"
+              src="https://thetuscanmom.com/wp-content/uploads/2023/09/check-in-desks-florence-italy-airport-scaled.jpg"
               alt=""
             />
 
@@ -127,7 +127,7 @@ Overnight Stay in Florence</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600"
+              src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/5e/9d/12.jpg"
               alt=""
             />
 
@@ -148,7 +148,7 @@ Overnight Stay in Florence</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543429257-3eb0b65d0ec8?w=600"
+              src="https://www.royalcaribbean.com/media-assets/pmc/content/dam/excalibur/digital-destinations/port-destinations/ports-of-call/florence-pisa-livorno-flr/stock-photo-the-leaning-tower-in-a-sunny-day-in-pisa-italy-745306897.jpg?w=1440"
               alt=""
             />
 
@@ -170,7 +170,7 @@ Overnight Stay in Pisa</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543429257-3eb0b65d0ec8?w=600"
+              src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1200,h_630,g_auto/dpr_auto/f_auto/q_auto:eco/v1/this-day-in-history-12-15-2001-leaning-tower-of-pisa-open"
               alt=""
             />
 
@@ -193,7 +193,7 @@ Overnight Stay in Pisa</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1525874684015-58379d421a52?w=600"
+              src="https://i0.wp.com/www.touristitaly.com/wp-content/uploads/2023/03/Trevi-Fountain-rome-2-scaled.jpg?fit=4272%2C2848&ssl=1"
               alt=""
             />
 
@@ -214,7 +214,7 @@ Overnight Stay in Rome</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600"
+              src="https://media.tacdn.com/media/attractions-splice-spp-674x446/13/16/8a/a7.jpg"
               alt=""
             />
 
@@ -242,7 +242,7 @@ Overnight Stay in Rome </p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600"
+              src="https://images.onthegotours.com/AmalfiBeach-838231712836471.jpg"
               alt=""
             />
 
@@ -267,7 +267,7 @@ Overnight Stay in Rome</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600"
+              src="https://media.istockphoto.com/id/1988158636/photo/modern-interior-of-rome-fiumicino-international-airport-leonardo-da-vinci-rome-italy.jpg?s=612x612&w=0&k=20&c=re9OgAoMc9_XE6cSLhv8aRDThLzoE1e6b3eR-x37y2A="
               alt=""
             />
 

@@ -11,7 +11,7 @@ const CroatiaLanding4 = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://cdn.kimkim.com/files/a/images/c4b08e2d82a827182b8d140723539baff070c41c/big-c7991fc83155098557c887e72b30093f.jpg"
+          src="https://slovenia4seasons.com/wp-content/uploads/2023/11/split-2-copy.jpg"
           alt="Croatia Slovenia Tour"
         />
 
@@ -35,7 +35,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-16483638261-f4dbaf036963?w=600"
+              src="https://cdn.audleytravel.com/1050/750/79/8009368-ban-josip-jelai-square-zagreb.webp"
               alt="Zagreb"
             />
             <p>Zagreb City Tour</p>
@@ -43,7 +43,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-10080875515-8a3a8dc5735e?w=600"
+              src="https://www.visitljubljana.com/assets/Aktivnosti/Ljubljana-Town-Hall-photo__FocusFillWyIwLjAwIiwiMC4wMCIsMTkyMCwxMDQwXQ.D.Wedam.jpg"
               alt="Ljubljana"
             />
             <p>Ljubljana Old Town</p>
@@ -51,7 +51,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-21295121783-8a321d551ad2?w=600"
+              src="https://www.invaluable.com/blog/wp-content/uploads/sites/77/2018/07/Invaluable-France2-Edited-670x450.jpg"
               alt="Architecture"
             />
             <p>European Architecture</p>
@@ -59,7 +59,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-05764706515-aa95265c5abc?w=600"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/c8/fe/51/caption.jpg?w=500&h=400&s=1"
               alt="Lake"
             />
             <p>Lake Bled Excursion</p>
@@ -105,7 +105,7 @@ const CroatiaLanding4 = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/ph1516483638261-f4dbaf036963?w=600"
+              src="https://www.zagreb-airport.hr/UserDocsImages//kategorije/meet-and-greet.jpg"
               alt=""
             />
             <div className="day-content">
@@ -123,7 +123,7 @@ Overnight Stay in Zagreb</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/p-1521295121783-8a321d551ad2?w=600"
+              src="https://www.croatiaweek.com/wp-content/uploads/2021/04/Underground-Tunnels-in-Croatia-Zagreb-and-Pula-9-715x429.jpg"
               alt=""
             />
             <div className="day-content">
@@ -141,7 +141,7 @@ Overnight Stay in Zagreb</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/po-1590080875515-8a3a8dc5735e?w=600"
+              src="https://res.cloudinary.com/enchanting/image/upload/v1/artemis-mdm/4410fdff-e0f7-406e-8faf-ed7b351bfbc2.jpg"
               alt=""
             />
             <div className="day-content">
@@ -161,7 +161,7 @@ Overnight Stay in Ljubljana.
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/pto-1505764706515-aa95265c5abc?w=600"
+              src="https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/qovv94saqzeaa7oxydrn.jpg"
               alt=""
             />
             <div className="day-content">
@@ -183,7 +183,7 @@ Overnight Stay in Ljubljana.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.comhoto-1590080875515-8a3a8dc5735e?w=600"
+              src="https://thumbs.dreamstime.com/b/ljubljana-airport-passenger-terminal-entrance-exterior-slovenia-april-view-showing-main-travelers-walking-out-454567619.jpg"
               alt=""
             />
             <div className="day-content">

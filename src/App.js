@@ -234,6 +234,8 @@ import EuropeGermany from './Pages/EuropeGermany';
 import Germany1 from './Pages/Germany-1';
 import Germany2 from './Pages/Germany-2';
 import Germany3 from './Pages/Germany-3';
+import Germany4 from './Pages/Germany-4';
+import Germany5 from './Pages/Germany-5';
 
 function App() {
   return (
@@ -482,6 +484,8 @@ function App() {
 <Route path='/germany-landing2' element={<Germany1 />} />
 <Route path='/germany-landing3' element={<Germany2 />} />
 <Route path='/germany-landing4' element={<Germany3 />} />
+<Route path='/germany-landing5' element={<Germany4 />} />
+<Route path='/germany-landing6' element={<Germany5 />} />
       </Routes> 
     </Router>
     </HelmetProvider>

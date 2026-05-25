@@ -13,7 +13,7 @@ const italyTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://clickstay.s3-eu-west-1.amazonaws.com/images/blog/post/Cinqueterra.jpg"
   },
    {
     title: "Experience the Essence of Italy 09 Nights 10 Days",
@@ -25,7 +25,7 @@ const italyTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://images.onthegotours.com/Best-places-to-visit-in-Italy--page-menu-image--On-The-Go-Tours-352471500906850.jpg"
   },
   {
     title: "From the French Riviera to Milan’s Elegance || 6N/7D",
@@ -37,7 +37,7 @@ const italyTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://static.wixstatic.com/media/e41b5c_163dbea574a142e0a3863bd38f340366~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_90/portofino-italy.jpg"
   },
   {
     title: "Explore Florence + Pisa + Rome || 06 Nights / 07 Days",
@@ -49,7 +49,7 @@ const italyTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://www.emperortraveline.com/wp-content/uploads/2022/09/Italy.jpg"
   }
   
 ];

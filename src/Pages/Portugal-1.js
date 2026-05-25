@@ -9,7 +9,7 @@ const PortugalLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://modularassets.cdn.ignitetravel.com/modular_multisite/wp-content/uploads/sites/2/2024/12/16130036/Budapest-Hungary-2.jpg"
+          src="https://cdn.inovtravel.com/deals/us-lisbon-evora-sevilha-algarve/fs-df4f34-seville-spain-canal-promenade-around-famous-land-2023-11-27-05-15-46-utc.jpg"
           alt="Portugal Tour"
         />
 
@@ -36,7 +36,7 @@ const PortugalLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1515963665762-77ef90e624fa?w=600"
+              src="https://data.agatetravel.com/images/album/images/19416/2501141130052031.jpg"
               alt="Seville"
             />
             <p>Seville Old Town</p>
@@ -44,7 +44,7 @@ const PortugalLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1513735492246-483525079686?w=600"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/13/cb/a1/citysightseeing-portugal.jpg?w=1200&h=1200&s=1"
               alt="Lisbon"
             />
             <p>Lisbon City Tour</p>
@@ -52,7 +52,7 @@ const PortugalLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600"
+              src="https://t3.ftcdn.net/jpg/19/67/51/98/360_F_1967519831_k9I5nzjR07V1lWAeIyOfWdcIUIKN5Mhc.jpg"
               alt="Porto"
             />
             <p>Porto Riverside</p>
@@ -60,7 +60,7 @@ const PortugalLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=600"
+              src="https://www.airpano.ru/files/pena-palace-portugal/images/image2.jpg"
               alt="Sintra"
             />
             <p>Sintra Palace</p>
@@ -106,7 +106,7 @@ const PortugalLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1515963665762-77ef90e624fa?w=600"
+              src="https://b772872.smushcdn.com/772872/wp-content/uploads/2024/06/seville-airport-terminal.jpg?lossy=1&strip=1&webp=1"
               alt=""
             />
 
@@ -124,7 +124,7 @@ Overnight stay in Seville.
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1515963665762-77ef90e624fa?w=600"
+              src="https://res.klook.com/image/upload/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/h0weoil3sqhinhxnpzql.webp"
               alt=""
             />
 
@@ -145,7 +145,7 @@ Overnight stay in Seville.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1513735492246-483525079686?w=600"
+              src="https://img.rezdy.com/PRODUCT_IMAGE/164461/1c44191aa4d54a7a925d004bf3ba468atourImage_lg.jpg"
               alt=""
             />
 
@@ -167,7 +167,7 @@ Overnight stay in Lisbon.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=600"
+              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/18b36c0b-%E9%87%8C%E6%96%AF%E6%9C%ACBig-Bus%E5%9F%8E%E5%B8%82%E8%A7%82%E5%85%89%E5%B7%B4%E5%A3%AB-KLOOK%E5%AE%A2%E8%B7%AF/LisbonCitySightseeingBusPass.jpg"
               alt=""
             />
 
@@ -187,7 +187,7 @@ Overnight stay in Lisbon.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600"
+              src="https://i.natgeofe.com/n/a418b667-c00b-417d-9ee5-32dfec838a8f/coverstory_portugal_GettyImages-533960357_HR.jpg"
               alt=""
             />
 
@@ -209,7 +209,7 @@ Overnight stay in Porto.</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600"
+              src="https://www.vinci-airports.com/wp-content/uploads/2024/08/VINCIAIRPORT_PORTO_PORTUGAL_26012017_PGUIMARAES_CAPA_HD_119-scaled.jpg"
               alt=""
             />
 
