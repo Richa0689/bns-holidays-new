@@ -147,6 +147,24 @@ const tours = [
     tags: ["Berlin", "Munich", "Frankfurt", "Bavarian Alps", "Cultural Tour"],
     image: "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg",
     imageAlt: "Germany tour package"
+},
+{
+  id: "FRANCE",
+  title: "France Tour Package",
+  slug: "/france-landing1",
+  days: "7 Days",
+  countries: "FRANCE",
+  cities: "4 Cities",
+  dates: "5 Dates",
+  price: "₹3,60,000",
+  priceValue: 360000,
+  emi: "₹16,500/mo",
+  highlight:
+    "Experience the elegance and romance of France with visits to Paris's iconic landmarks, Nice's stunning coastline, Lyon's rich culinary heritage, and the picturesque beauty of the French countryside on this unforgettable Europe tour package.",
+  tags: ["Paris", "Nice", "Lyon", "French Riviera", "Cultural Tour"],
+  image:
+    "https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1920",
+  imageAlt: "France tour package"
 }
 ];
 

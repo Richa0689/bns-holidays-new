@@ -9,7 +9,7 @@ const HungaryLanding2 = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+          src="https://img.nh-hotels.net/zZj6g/DX39o1/original/Budapest.jpg?output-quality=70&resize=*:*&background-color=white"
           alt="Central Europe Escape"
         />
 
@@ -38,7 +38,7 @@ const HungaryLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?w=600"
+              src="https://budapest.com/storage/722/DJI_20250301150641_0111_D.jpg"
               alt=""
             />
             <p>Budapest Parliament</p>
@@ -46,7 +46,7 @@ const HungaryLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?w=600"
+              src="https://media.istockphoto.com/id/500593684/photo/old-tkalciceva-street-in-zagreb.jpg?s=612x612&w=0&k=20&c=ffIWEOSacFny7kkkSmpId6oM_-M8ez4XzguxP09gGCY="
               alt=""
             />
             <p>Zagreb City Streets</p>
@@ -54,7 +54,7 @@ const HungaryLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1577083552431-6e5fd75fcfbf?w=600"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/97/8a/1b/caption.jpg?w=1200&h=-1&s=1"
               alt=""
             />
             <p>Ljubljana Castle</p>
@@ -62,7 +62,7 @@ const HungaryLanding2 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=600"
+              src="https://cdn.content.tuigroup.com/adamtui/2024_11/18_15/b1da515c-984d-44b3-8f5e-b22c00ff9bf7/HUN_BAL_F0013_ENT_EXTENDED_BLOG_HERO.jpg"
               alt=""
             />
             <p>Lake Balaton</p>
@@ -108,7 +108,7 @@ const HungaryLanding2 = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?w=600"
+              src="https://media.istockphoto.com/id/508662108/photo/parliament-building-in-budapest-hungary.jpg?s=612x612&w=0&k=20&c=lIotnezW_Q_m8aKeJFVjEm58comkdlMWmLZDbI25Ivs="
               alt=""
             />
 
@@ -126,7 +126,7 @@ Overnight Stay in Budapest</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?w=600"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/56/1d/c8/vista-dall-alto-del-bagno.jpg?w=1200&h=1200&s=1"
               alt=""
             />
 
@@ -148,7 +148,7 @@ Overnight Stay in Budapest</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=600"
+              src="https://media.timeout.com/images/106149503/750/562/image.jpg"
               alt=""
             />
 
@@ -167,7 +167,7 @@ Overnight Stay in Budapest</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?w=600"
+              src="https://www.lot.com/content/dam/lot/lot-com/destination-photos/blog-freelancer-do-not-use-only-blog/zagrzeb/Zagreb-MG_3439-2.coreimg.jpg/1723624962792/Zagreb-MG_3439-2.jpg"
               alt=""
             />
 
@@ -183,7 +183,7 @@ Overnight Stay in Zagreb </p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?w=600"
+              src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/e3/87/29.jpg"
               alt=""
             />
 
@@ -201,7 +201,7 @@ Overnight Stay in Zagreb</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1577083552431-6e5fd75fcfbf?w=600"
+              src="https://media.istockphoto.com/id/494314515/photo/panorama-of-ljubljana-slovenia-europe.jpg?s=612x612&w=0&k=20&c=1SbeSdqwM0JSxIDcACk-9zzo3yX8f3rsTG9pJUi3M8A="
               alt=""
             />
 
@@ -218,7 +218,7 @@ Overnight Stay in Ljubljana</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1577083552431-6e5fd75fcfbf?w=600"
+              src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/e5/b9/27.jpg"
               alt=""
             />
 
@@ -237,7 +237,7 @@ Overnight Stay in Ljubljana</p>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?w=600"
+              src="https://www.fraport-slovenija.si/content/dam/fraport-company-slovenija/images/fotke-novice/Check%20in.jpg/_jcr_content/renditions/original./Check%20in.jpg"
               alt=""
             />
 

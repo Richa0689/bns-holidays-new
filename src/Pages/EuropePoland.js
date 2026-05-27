@@ -13,7 +13,7 @@ const polandTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://cdn.britannica.com/26/115026-050-58B62437/Gdansk-Poland.jpg"
   },
    {
     title: "Classic Europe Escape: Warsaw & Prague Highlights",
@@ -25,7 +25,7 @@ const polandTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://hoppingfeet.com/wp-content/uploads/2024/02/IMG_5949-scaled.jpg"
   }
 ];
 

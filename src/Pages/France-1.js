@@ -12,34 +12,34 @@ const initialForm = {
 
 const faqs = [
   {
-    question: "What is the best time to visit Munich, Stuttgart, and Frankfurt?",
+    question: "What is the best time to visit Amsterdam and Paris?",
     answer:
-      "Germany is a great year-round destination. Summer (June–August) offers warm weather, outdoor festivals, and the famous beer gardens. Winter (November–February) brings magical Christmas markets across all three cities. Spring and autumn are ideal for sightseeing with pleasant temperatures and fewer tourists.",
+      "Both Amsterdam and Paris are wonderful year-round destinations. Spring (April–May) is arguably the finest time to visit — Amsterdam's tulip fields and Keukenhof Gardens are in full bloom, while Paris glows with mild weather and outdoor café culture. Summer (June–August) brings long days and a buzzing atmosphere, though crowds peak at major attractions. Autumn (September–October) offers golden light, fewer tourists, and vibrant cultural events. Winter (December) is magical with Christmas markets lining Amsterdam's canals and Paris's Champs-Élysées illuminated in festive lights.",
   },
   {
-    question: "What is included in the 7-day Germany tour package?",
+    question: "What is included in the 6-night/7-day tour package?",
     answer:
-      "The package includes 6 nights of hotel accommodation, daily breakfast, all private airport and station transfers, intercity train travel, the Neuschwanstein & Linderhof Castle full-day trip, Stuttgart's 24-hour Hop-On Hop-Off bus ticket, Frankfurt's River Main sightseeing cruise, and the Frankfurt Hop-On Hop-Off bus ticket. International flights and personal expenses are not included.",
+      "The package includes accommodation for 6 nights, daily breakfast, airport transfers, guided sightseeing tours as per the itinerary, and intercity travel between Amsterdam and Paris. International flights and personal expenses are not included unless specified.",
   },
   {
-    question: "Do I need a visa to travel to Germany?",
+    question: "Do I need a visa to travel to the Netherlands and France?",
     answer:
-      "Indian passport holders require a Schengen visa to enter Germany. We recommend applying at least 4–6 weeks before your travel date. Our team can assist you with the complete documentation process to ensure a smooth application.",
+      "Indian passport holders require a Schengen visa to visit both the Netherlands and France, as both are Schengen Area countries. A single Schengen visa covers the entire trip. We recommend applying at least 4–6 weeks in advance. Our team can guide you through the complete documentation process.",
   },
   {
-    question: "What are the must-see attractions on this tour?",
+    question: "Is this tour suitable for first-time Europe travellers?",
     answer:
-      "Top highlights include the fairy-tale Neuschwanstein Castle, Munich's lively Marienplatz, the world-renowned Mercedes-Benz Museum in Stuttgart, Frankfurt's historic Römerberg Square, and a scenic cruise along the River Main. This tour blends Bavaria's royal heritage with Germany's modern industrial and financial heartlands.",
+      "Absolutely! This itinerary is perfectly crafted for first-timers exploring Western Europe. It covers iconic highlights — Amsterdam's canal rings and Van Gogh Museum, the scenic tulip countryside, and Paris's Eiffel Tower, Louvre, and Montmartre — at a comfortable pace that lets you soak in both Dutch and French culture without feeling rushed.",
   },
   {
-    question: "What currency is used in Germany?",
+    question: "What currency is used in the Netherlands and France?",
     answer:
-      "Germany uses the Euro (€). Cards are widely accepted across hotels, restaurants, and major attractions. It is advisable to carry a small amount of cash for local markets, tips, and smaller establishments.",
+      "Both the Netherlands and France use the Euro (€). It is advisable to carry some cash for smaller purchases, canal-side markets, and tips, though credit and debit cards are widely accepted at hotels, restaurants, and major attractions across Amsterdam and Paris.",
   },
   {
-    question: "Can I customise this 7-day Germany itinerary?",
+    question: "Can I customise the Amsterdam & Paris itinerary?",
     answer:
-      "Absolutely! Every itinerary can be fully tailored to your interests, travel dates, and budget. Whether you'd like to add a Rhine Valley excursion, a visit to the Porsche Museum, or extend your stay in Frankfurt, our team will design the perfect personalised journey for you.",
+      "Yes! Every itinerary is fully customisable based on your interests, travel dates, and budget. Whether you'd like to add a day trip to the Keukenhof Tulip Gardens, a Seine River cruise at sunset, a visit to the Palace of Versailles, or a chocolate and cheese tasting experience in Amsterdam, our team will craft the perfect personalised journey for you.",
   },
 ];
 
@@ -198,9 +198,134 @@ const QueryModal = ({ day, onClose }) => {
 };
 
 /* ── Main page ───────────────────────────────────────────────── */
-const GermanyLanding4 = () => {
+const WindmillsToEiffelTour = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
+
+  const itinerary = [
+    {
+      day: "Day 1",
+      title: (
+        <>
+         Amsterdam<br/>
+Arrival in Amsterdam: I Amsterdam
+        </>
+      ),
+      img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&q=80",
+      desc: (
+        <>
+          Welcome to Amsterdam, Amsterdam is the Netherlands’ capital, known for its artistic heritage,
+elaborate canal system and narrow houses with gabled facades, legacies of the city’s 17th-century
+Golden Age. Its Museum District houses the Van Gogh Museum, works by Rembrandt and Vermeer
+at the Rijksmuseum, and modern art at the Stedelijk. Cycling is key to the city’s character, and there
+are numerous bike paths.<br/>
+Overnight Stay in Amsterdam 
+        </>
+      ),
+    },
+    {
+      day: "Day 2",
+      title: "Amsterdam - Amsterdam One Day Hop on Hop off",
+      img: "https://images.unsplash.com/photo-1576924542622-772f3e7e9b5e?w=800&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.
+Welcome to Amsterdam. Amsterdam is the capital city of the Netherlands, known for its artistic
+heritage, elaborate canal system, and narrow houses with gabled facades that date back to the
+17th-century Golden Age. The Museum District houses the Van Gogh Museum, the Rijksmuseum
+with works by Rembrandt and Vermeer, and the Stedelijk Museum for modern art. Cycling is an
+essential part of Amsterdam’s culture, and the city offers numerous scenic bike paths.<br/>
+Overnight Stay in Amsterdam
+        </>
+      ),
+    },
+    {
+      day: "Day 3",
+      title: "Amsterdam – Zaanse Schans, Edam, Volendam & Marken Bus Tour",
+      img: "https://images.unsplash.com/photo-1490750967868-88df5691cc41?w=800&q=80",
+      desc: (
+        <>
+         Breakfast at Hotel.<br/>
+After breakfast, check out and proceed with a This popular day tour takes you from Amsterdam into
+the Dutch countryside to experience traditional villages, iconic windmills, and classic Dutch culture—
+all in one trip. Zaanse Schans: Explore historic windmills, wooden houses, and artisan workshops, with
+demonstrations of clog-making and cheese production. Edam: Visit the charming town famous for its
+world-renowned Edam cheese, with a short walk through its picturesque streets and canals.<br/>
+Volendam: Enjoy a lively fishing village on the Ijsselmeer, known for its colorful harbor, seafood, and
+traditional Dutch atmosphere. Marken: Discover a former island with distinctive wooden houses,
+narrow lanes, and strong local traditions.<br/>
+Overnight Stay in Amsterdam.
+        </>
+      ),
+    },
+    {
+      day: "Day 4",
+      title: "Amsterdam – Paris",
+      img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+      desc: (
+        <>
+         Breakfast at hotel.<br/>
+After breakfast, proceed with a private transfer from your Amsterdam hotel to the train station.
+Board the train to Paris. Upon arrival in Paris, meet your chauffeur for a private transfer from the
+station to your hotel.<br/>
+Paris, the City of Lights, is world-famous for its iconic landmarks, rich artistic and cultural heritage,
+romantic charm, haute fashion, exquisite cuisine, and historic architecture. From elegant boulevards
+and charming cafés to renowned museums and timeless monuments, Paris offers an unforgettable
+experience for every traveller.<br/>
+Overnight stay in Paris.
+        </>
+      ),
+    },
+    {
+      day: "Day 5",
+      title: "Paris – Paris Hop on Hop off + Eiffel Tower Summit Entrance Ticket + Seine River Cruise Ticket",
+      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+      desc: (
+        <>
+         Breakfast at Hotel.<br/>
+After breakfast, proceed for the Paris One Day Hop on Hop off Tour, which covers the main
+attractions of Paris including the Louvre Museum, Notre Dame, Champs-Élysées, Arc de Triomphe,
+and more.<br/>
+Continue to the Eiffel Tower with Summit Level Entrance Ticket, offering breathtaking views over
+Paris from the highest accessible point.<br/>
+Later, enjoy the Seine River Cruise Entrance Ticket, offering a peaceful journey along the river with
+views of Paris’s most iconic monuments.<br/>
+Overnight Stay in Paris
+        </>
+      ),
+    },
+    {
+      day: "Day 6",
+      title: "Paris – Montmartre Walking Tour with a Local Guide",
+      img: "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=800&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+After breakfast, proceed for a guided walking tour of Montmartre with a local expert. Explore one of
+Paris’s most charming and historic neighborhoods, known for its artistic heritage, cobbled streets,
+and bohemian atmosphere.<br/>
+Visit iconic sites such as the Sacré-Cœur Basilica, Place du Tertre with its lively artists’ square, and
+hidden corners once frequented by famous painters and writers. Learn fascinating stories about
+Montmartre’s past, its role in shaping Parisian art and culture, and enjoy panoramic views of the
+city.<br/>
+This walking tour offers an authentic glimpse into the soul of Paris, blending history, culture, and
+local life.<br/>
+Overnight Stay in Paris
+        </>
+      ),
+    },
+    {
+      day: "Day 7",
+      title: "Paris – Departure",
+      img: "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=800&q=80",
+      desc: (
+        <>
+         Breakfast at Hotel.<br/>
+After breakfast, proceed to Paris Airport with a private transfer for your onwards flight
+        </>
+      ),
+    },
+  ];
 
   return (
     <div className="usa-landing">
@@ -208,271 +333,83 @@ const GermanyLanding4 = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
-          alt="Germany Tour"
+          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+          alt="Amsterdam Paris Tour"
         />
-
         <div className="hero-content">
-          <h1>Germany</h1>
-
-          <p>
-            Munich • Stuttgart • Frankfurt
-          </p>
-
-          <Link to="/germany">
-            <button className="explore-btn">
-              Explore Tour
-            </button>
+          <h1>From Windmills to the Eiffel</h1>
+          <p>Amsterdam's Canal Charm. Paris's Timeless Elegance.</p>
+          <Link to="/france-landing2">
+            <button className="explore-btn">View Tours</button>
           </Link>
         </div>
       </div>
 
       {/* HIGHLIGHTS */}
       <div className="highlights">
-        <h2>Tour Highlights</h2>
-
+        <h2>Major Destinations</h2>
         <div className="highlight-grid">
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15212121783-8a321d551ad2?w=600"
-              alt="Munich"
-            />
-            <p>Munich City</p>
+            <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80" alt="" />
+            <p>Amsterdam, Netherlands</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15124539797-5ea266f8880c?w=600"
-              alt="Stuttgart"
-            />
-            <p>Stuttgart Streets</p>
+            <img src="https://images.unsplash.com/photo-1490750967868-88df5691cc41?w=600&q=80" alt="" />
+            <p>Keukenhof & Windmills</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657e91760cbb34?w=600"
-              alt="Frankfurt"
-            />
-            <p>Frankfurt Skyline</p>
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="" />
+            <p>Paris, France</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b6d89ba3ee?w=600"
-              alt="Castle"
-            />
-            <p>Historic Architecture</p>
+            <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=600&q=80" alt="" />
+            <p>Palace of Versailles</p>
           </div>
-
         </div>
       </div>
 
       {/* WHY VISIT */}
       <div className="why-section">
-        <h2>Why Choose This Tour?</h2>
-
+        <h2>Why Choose This Journey?</h2>
         <div className="why-grid">
-          <div>🏰 Explore Historic German Cities</div>
-          <div>🚗 Experience Germany's Automobile Heritage</div>
-          <div>🌆 Enjoy Modern & Traditional Germany</div>
-          <div>📸 Perfect Europe Photography Tour</div>
+          <div>🌷 Amsterdam's Tulip Fields & Canals</div>
+          <div>🏰 Palace of Versailles Day Trip</div>
+          <div>🗼 Eiffel Tower & Louvre Museum</div>
+          <div>🚂 Scenic High-Speed Train to Paris</div>
         </div>
       </div>
 
       {/* CTA */}
       <div className="cta-section">
-        <h2>Discover Germany in 7 Days</h2>
-
-        <p>
-          Explore vibrant cities, rich culture and modern architecture
-        </p>
-
+        <h2>Explore the Very Best of Amsterdam & Paris</h2>
+        <p>Book your European adventure today — 06 Nights / 07 Days from ₹3,60,000</p>
         <br />
-
-        <Link to="/germany">
-          <button className="book-now-btn">
-            Book Now
-          </button>
+        <Link to="/france-landing2">
+          <button className="book-now-btn">Book Now</button>
         </Link>
       </div>
 
       {/* ITINERARY */}
       <div className="itinerary-section">
-        <h2>07 Days Itinerary</h2>
-
+        <h2>7 Days Tour Itinerary</h2>
         <div className="itinerary-list">
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1521295121783-821d551ad2?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 1</h3>
-
-              <p style={{ color: "blue" }}>
-                 Munich <br/>Welcome to Germany –
-              </p>
-
-              <p>
-                Welcome to Munich! Upon arrival at Munich Airport, enjoy a private transfer to your hotel. Check in,
-relax, and spend the evening exploring Marienplatz, the Old Town streets, or Munich's lively beer
-gardens at your leisure.<br/>
-Overnight Stay in Munich
-              </p>
+          {itinerary.map((item, idx) => (
+            <div className="day-card" key={idx}>
+              <img src={item.img} alt="" />
+              <div className="day-content">
+                <h3>{item.day}</h3>
+                <p style={{ color: "blue" }}>{item.title}</p>
+                <p>{item.desc}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1491553895911-0055a6402d?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 2</h3>
-
-              <p style={{ color: "blue" }}>
-                Munich
-              </p>
-
-              <p>
-               Breakfast at Hotel.<br/>
-After breakfast, proceed for your Neuschwanstein & Linderhof Castle Full-Day Trip (included). Visit
-two of Bavaria's most iconic royal castles, surrounded by dramatic Alpine landscapes. Explore the
-fairy-tale Neuschwanstein Castle and the elegant Linderhof Palace, while learning about King Ludwig
-II's fascinating history.<br/>
-Overnight Stay in Munich
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea268880c?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 3</h3>
-
-              <p style={{ color: "blue" }}>
-               Munich - Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Munich Hotel to Train Station. Board your train from Munich to Stuttgart.
-Upon arrival at Stuttgart Station, enjoy a private transfer to your hotel. Check in and explore
-Stuttgart's modern city center,Königstrasse shopping street, or the Palace Square area..<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586ba3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 4</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, begin your Stuttgart 24-Hour Hop-On Hop-Off Sightseeing Bus Tour (ticket
-included). Explore major attractions such as the Mercedes-Benz Museum, Television Tower,
-Schlossplatz, vineyards, and art museums at your own pace. Enjoy informative commentary as you
-discover the cultural and architectural highlights of Stuttgart.<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657-3e917cbb34?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 5</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart - Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Stuttgart Hotel to Station. Board your train from Stuttgart to Frankfurt. Upon
-arrival at Frankfurt Station, enjoy a private transfer to your hotel. Check in and explore the modern
-skyline, Römerberg Square, or the riverside promenade..<br/>
-Overnight Stay in Frankfurt
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1516550893923-42d28e57af?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 6</h3>
-
-              <p style={{ color: "blue" }}>
-                Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, enjoy your River Main Sightseeing Cruise with Commentary (included). Sail past
-Frankfurt's striking skyline, historic bridges, museums, and riverside landmarks while learning about
-the city's history and culture.<br/>
-Later, explore Frankfurt using your Hop-On, Hop-Off Grand or Express Bus Ticket (included). Visit key
-attractions such as Römer, Palm Garden, old opera house, museums along the River Main, and
-modern business districts.<br/>
-Overnight Stay in Frankfurt
-
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d8a3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 7</h3>
-
-              <p style={{ color: "blue" }}>
-               Frankfurt 
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward flight.
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
 
-        {/* Send Query button */}
+        {/* Single Send Query button below all itinerary cards */}
         <div style={{ textAlign: "center", marginTop: "36px" }}>
           <button
             className="send-query-btn"
-            onClick={() => setActiveModal("7 Days Munich + Stuttgart + Frankfurt Tour")}
+            onClick={() => setActiveModal("7 Days From Windmills to the Eiffel — Amsterdam & Paris Tour")}
           >
             Send Query
           </button>
@@ -482,7 +419,7 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
       {/* FAQ */}
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <p className="faq-subtitle">Everything you need to know before your Germany journey</p>
+        <p className="faq-subtitle">Everything you need to know before your Amsterdam & Paris journey</p>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
             <div key={idx} className={`faq-item ${openFaq === idx ? "faq-open" : ""}`}>
@@ -532,6 +469,12 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
           transform: translateY(-2px);
           box-shadow: 0 6px 18px rgba(200,134,10,0.45);
         }
+        .eq-day-label {
+          font-size: 0.83rem;
+          color: #777;
+          margin: -10px 0 14px;
+        }
+        .eq-day-label strong { color: #c8860a; }
 
         .faq-section {
           padding: 60px 24px;
@@ -598,4 +541,4 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
   );
 };
 
-export default GermanyLanding4;
+export default WindmillsToEiffelTour;

@@ -236,6 +236,17 @@ import Germany2 from './Pages/Germany-2';
 import Germany3 from './Pages/Germany-3';
 import Germany4 from './Pages/Germany-4';
 import Germany5 from './Pages/Germany-5';
+import Germany6 from './Pages/Germany-6';
+import Germany7 from './Pages/Germany-7';
+import Germany8 from './Pages/Germany-8';
+import Germany9 from './Pages/Germany-9';
+import Germany10 from './Pages/Germany-10';
+import EuropeFrance from './Pages/EuropeFrance';
+import France1 from './Pages/France-1';
+import France2 from './Pages/France-2';
+import France3 from './Pages/France-3';
+import France4 from './Pages/France-4';
+import France5 from './Pages/France-5';
 
 function App() {
   return (
@@ -486,6 +497,20 @@ function App() {
 <Route path='/germany-landing4' element={<Germany3 />} />
 <Route path='/germany-landing5' element={<Germany4 />} />
 <Route path='/germany-landing6' element={<Germany5 />} />
+<Route path='/germany-landing7' element={<Germany6 /> } />
+<Route path='/germany-landing8' element={<Germany7 />} />
+<Route path='/germany-landing9' element={<Germany8 />} />
+<Route path='/germany-landing10' element={<Germany9 />} />
+<Route path='/germany-landing11' element={<Germany10 />} />
+<Route path='/france-landing1' element={<EuropeFrance />} />
+<Route path='/france-landing2' element={<France1 />} />
+<Route path='/france-landing3' element={<France2 />} />
+<Route path='/france-landing4' element={<France3 />} />
+<Route path='/france-landing5' element={<France4 />} />
+<Route path='/france-landing6' element={<France5 />} />
+
+
+
       </Routes> 
     </Router>
     </HelmetProvider>

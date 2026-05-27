@@ -12,34 +12,34 @@ const initialForm = {
 
 const faqs = [
   {
-    question: "What is the best time to visit Munich, Stuttgart, and Frankfurt?",
+    question: "What is the best time to visit Barcelona and Nice?",
     answer:
-      "Germany is a great year-round destination. Summer (June–August) offers warm weather, outdoor festivals, and the famous beer gardens. Winter (November–February) brings magical Christmas markets across all three cities. Spring and autumn are ideal for sightseeing with pleasant temperatures and fewer tourists.",
+      "Both Barcelona and Nice enjoy a wonderful Mediterranean climate making them fantastic year-round destinations. Spring (April–May) is ideal — Barcelona's streets bloom with colour during the Sant Jordi festival, and Nice's famous Promenade des Anglais is pleasantly warm with fewer summer crowds. Summer (June–August) is the peak season — both cities are at their most vibrant with beach culture, open-air dining, and endless sunshine along the Riviera. Autumn (September–October) offers golden warmth, thinner crowds, and a more relaxed pace along the coast. Winter (December–February) is mild compared to northern Europe, with Nice particularly pleasant for sightseeing and Barcelona buzzing with Christmas markets and festive lights.",
   },
   {
-    question: "What is included in the 7-day Germany tour package?",
+    question: "What is included in the 6-night/7-day tour package?",
     answer:
-      "The package includes 6 nights of hotel accommodation, daily breakfast, all private airport and station transfers, intercity train travel, the Neuschwanstein & Linderhof Castle full-day trip, Stuttgart's 24-hour Hop-On Hop-Off bus ticket, Frankfurt's River Main sightseeing cruise, and the Frankfurt Hop-On Hop-Off bus ticket. International flights and personal expenses are not included.",
+      "The package includes accommodation for 6 nights, daily breakfast, airport transfers, guided sightseeing tours as per the itinerary, and intercity travel between Barcelona and Nice. International flights and personal expenses are not included unless specified.",
   },
   {
-    question: "Do I need a visa to travel to Germany?",
+    question: "Do I need a visa to travel to Spain and France?",
     answer:
-      "Indian passport holders require a Schengen visa to enter Germany. We recommend applying at least 4–6 weeks before your travel date. Our team can assist you with the complete documentation process to ensure a smooth application.",
+      "Indian passport holders require a Schengen visa to visit both Spain and France, as both countries are part of the Schengen Area. A single Schengen visa covers the entire trip. We recommend applying at least 4–6 weeks in advance. Our team can guide you through the complete documentation process to ensure a smooth and hassle-free application.",
   },
   {
-    question: "What are the must-see attractions on this tour?",
+    question: "Is this tour suitable for first-time Europe travellers?",
     answer:
-      "Top highlights include the fairy-tale Neuschwanstein Castle, Munich's lively Marienplatz, the world-renowned Mercedes-Benz Museum in Stuttgart, Frankfurt's historic Römerberg Square, and a scenic cruise along the River Main. This tour blends Bavaria's royal heritage with Germany's modern industrial and financial heartlands.",
+      "Absolutely! This itinerary is perfectly crafted for first-timers exploring Southern Europe. It covers iconic highlights — Barcelona's Sagrada Família, Park Güell, and vibrant Las Ramblas, and Nice's stunning Promenade des Anglais, Vieux-Nice Old Town, and the glamorous French Riviera coastline — at a comfortable pace that lets you absorb the best of Spanish and French Mediterranean culture without feeling rushed.",
   },
   {
-    question: "What currency is used in Germany?",
+    question: "What currency is used in Spain and France?",
     answer:
-      "Germany uses the Euro (€). Cards are widely accepted across hotels, restaurants, and major attractions. It is advisable to carry a small amount of cash for local markets, tips, and smaller establishments.",
+      "Both Spain and France use the Euro (€), making this one of the most convenient two-country itineraries in Europe. You only need one currency for the entire trip. Credit and debit cards are widely accepted at hotels, restaurants, and major attractions, though it is advisable to carry some cash for smaller purchases, local markets, tapas bars, and tips along the way.",
   },
   {
-    question: "Can I customise this 7-day Germany itinerary?",
+    question: "Can I customise the Barcelona & Nice itinerary?",
     answer:
-      "Absolutely! Every itinerary can be fully tailored to your interests, travel dates, and budget. Whether you'd like to add a Rhine Valley excursion, a visit to the Porsche Museum, or extend your stay in Frankfurt, our team will design the perfect personalised journey for you.",
+      "Yes! Every itinerary is fully customisable based on your interests, travel dates, and budget. Whether you'd like to add a day trip to Montserrat Monastery from Barcelona, a visit to Monaco and Monte Carlo from Nice, a coastal drive along the French Riviera through Cannes and Antibes, a flamenco dinner show in Barcelona, or extra nights in either city, our team will craft the perfect personalised Mediterranean escape for you.",
   },
 ];
 
@@ -198,9 +198,130 @@ const QueryModal = ({ day, onClose }) => {
 };
 
 /* ── Main page ───────────────────────────────────────────────── */
-const GermanyLanding4 = () => {
+const SpanishFrenchRivieraTour = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
+
+  const itinerary = [
+    {
+      day: "Day 1",
+      title: (
+        <>
+          Barcelona<br/>
+Arrival in Barcelona: A Perfect Beginning to Your European Holiday
+        </>
+      ),
+      img: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80",
+      desc: (
+        <>
+          Welcome to Barcelona, a vibrant city known for its artistic heritage, stunning architecture, sun-kissed
+beaches, and lively Mediterranean ambience. Upon your arrival at Barcelona Airport, you will enjoy a
+smooth and comfortable private transfer to your hotel.<br/>
+Your first evening in Barcelona offers the perfect introduction to the city’s unique charm. Whether
+you're admiring the illuminated streets, strolling along La Rambla, or soaking in the energy of Plaça
+Catalunya, Barcelona promises an unforgettable start to your journey.<br/>
+Overnight Stay in Barcelona
+        </>
+      ),
+    },
+    {
+      day: "Day 2",
+      title: " Highlight of the Day: Sagrada Familia Entry Ticket & Barcelona Hop-on Hop-off Tour",
+      img: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+After breakfast, proceed for your full-day experience of Barcelona with the 01-Day Hop on Hop off
+bus tour, offering the perfect way to explore the city’s major highlights at your own pace.
+Your visit includes the Sagrada Familia Entry Ticket, allowing you to witness Antoni Gaudí’s
+masterpiece up close. The intricate architecture, stunning interiors, and spiritual atmosphere make
+this an essential Barcelona experience.<br/>
+Overnight Stay in Barcelona
+        </>
+      ),
+    },
+    {
+      day: "Day 3",
+      title: "Barcelona – Montserrat Tour",
+      img: "https://images.unsplash.com/photo-1525220964581-831e70d9d48a?w=800&q=80",
+      desc: (
+        <>
+        Breakfast at Hotel.<br/>
+After breakfast, proceed for the Montserrat Tour with Cogwheel & Black Madonna on SIC basis.
+This journey takes you to Catalonia’s most famous mountain sanctuary, offering panoramic views,
+ancient Benedictine traditions, and the revered statue of the Black Madonna.<br/>
+The scenic cog-wheel train ride enhances the experience with breathtaking landscapes and peaceful
+surroundings.<br/>
+Overnight Stay in Barcelona
+        </>
+      ),
+    },
+    {
+      day: "Day 4",
+      title: "Barcelona – Nice",
+      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+After breakfast, enjoy a private transfer from your Barcelona hotel to Barcelona Airport for your
+flight to Nice.<br/>
+Upon arrival in Nice, a private transfer will take you to your hotel. Nice, the jewel of the French
+Riviera, offers the perfect blend of Mediterranean elegance, charming promenades, and vibrant
+cultural heritage. The serene coastline and old-town charm make it a delightful destination.<br/>
+Overnight Stay in Nice
+        </>
+      ),
+    },
+    {
+      day: "Day 5",
+      title: "Nice – Hop on Hop off Tour",
+      img: "https://images.unsplash.com/photo-1491166617655-0723a4680b51?w=800&q=80",
+      desc: (
+        <>
+         Breakfast at Hotel.<br/>
+After breakfast, proceed for your Nice 01-Day Hop on Hop off Bus Tour. This flexible sightseeing
+experience allows you to explore Nice's iconic landmarks including the Promenade des Anglais, Castle
+Hill, Old Town, and more, all while enjoying stunning coastal views along the way.<br/>
+Overnight Stay in Nice
+
+        </>
+      ),
+    },
+    {
+      day: "Day 6",
+      title: "Nice – French Riviera Day Tour",
+      img: "https://images.unsplash.com/photo-1555993539-1732b0258235?w=800&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+Today, proceed for the French Riviera Day Tour on SIC basis. This full-day excursion takes you along
+one of Europe’s most glamorous coastlines, featuring charming seaside towns, luxurious marinas,
+scenic views, and the timeless elegance of the Côte d’Azur.<br/>
+Take a unique trip and visit the medieval village of Èze. Your next stop is the Principality of Monaco,
+where you have time to discover the old town, the cathedral, the palace and the ceremony of the
+changing of the guard. Next, continue along the Formula 1 circuit to Monte Carlo with its casino and
+upscale shops.<br/>
+Head to your next stop, Saint-Paul-De-Vence. Marvel at the "jewel of Provence", where many
+painters and artists have resided. As you walk the streets of this medieval fortified village, you can
+taste centuries of history and artistic creativity.<br/>
+For your last destination, make way to the famous city of stars—Cannes. Explore the Beverly Hills of
+France, and take a stroll on the famous Croisette, enjoy luxury hotels, restaurants and shops.<br/>
+Overnight Stay in Nice
+        </>
+      ),
+    },
+    {
+      day: "Day 7",
+      title: "Nice – Departure",
+      img: "https://images.unsplash.com/photo-1520491260-01f2c7b1f4f2?w=800&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+After breakfast, proceed to Nice Airport with a private transfer for your onward flight to India.
+        </>
+      ),
+    },
+  ];
 
   return (
     <div className="usa-landing">
@@ -208,271 +329,83 @@ const GermanyLanding4 = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
-          alt="Germany Tour"
+          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+          alt="Spanish French Riviera Delight Tour"
         />
-
         <div className="hero-content">
-          <h1>Germany</h1>
-
-          <p>
-            Munich • Stuttgart • Frankfurt
-          </p>
-
-          <Link to="/germany">
-            <button className="explore-btn">
-              Explore Tour
-            </button>
+          <h1>Spanish–French Riviera Delight</h1>
+          <p>Barcelona's Gaudí Magic. Nice's Azure Coastline. Monaco's Glamour.</p>
+          <Link to="/france-landing6">
+            <button className="explore-btn">View Tours</button>
           </Link>
         </div>
       </div>
 
       {/* HIGHLIGHTS */}
       <div className="highlights">
-        <h2>Tour Highlights</h2>
-
+        <h2>Major Destinations</h2>
         <div className="highlight-grid">
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15212121783-8a321d551ad2?w=600"
-              alt="Munich"
-            />
-            <p>Munich City</p>
+            <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&q=80" alt="" />
+            <p>Sagrada Família, Barcelona</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15124539797-5ea266f8880c?w=600"
-              alt="Stuttgart"
-            />
-            <p>Stuttgart Streets</p>
+            <img src="https://images.unsplash.com/photo-1525220964581-831e70d9d48a?w=600&q=80" alt="" />
+            <p>Las Ramblas, Barcelona</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657e91760cbb34?w=600"
-              alt="Frankfurt"
-            />
-            <p>Frankfurt Skyline</p>
+            <img src="https://images.unsplash.com/photo-1491166617655-0723a4680b51?w=600&q=80" alt="" />
+            <p>Promenade des Anglais, Nice</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b6d89ba3ee?w=600"
-              alt="Castle"
-            />
-            <p>Historic Architecture</p>
+            <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="" />
+            <p>Monaco & Monte Carlo</p>
           </div>
-
         </div>
       </div>
 
       {/* WHY VISIT */}
       <div className="why-section">
-        <h2>Why Choose This Tour?</h2>
-
+        <h2>Why Choose This Journey?</h2>
         <div className="why-grid">
-          <div>🏰 Explore Historic German Cities</div>
-          <div>🚗 Experience Germany's Automobile Heritage</div>
-          <div>🌆 Enjoy Modern & Traditional Germany</div>
-          <div>📸 Perfect Europe Photography Tour</div>
+          <div>🏛️ Gaudí's Sagrada Família & Park Güell</div>
+          <div>🌊 French Riviera & Promenade des Anglais</div>
+          <div>🎰 Monaco & Monte Carlo Day Trip</div>
+          <div>🍷 Mediterranean Food, Wine & Beach Life</div>
         </div>
       </div>
 
       {/* CTA */}
       <div className="cta-section">
-        <h2>Discover Germany in 7 Days</h2>
-
-        <p>
-          Explore vibrant cities, rich culture and modern architecture
-        </p>
-
+        <h2>Experience Barcelona & the French Riviera</h2>
+        <p>Book your Mediterranean escape today — 06 Nights / 07 Days from ₹3,40,000</p>
         <br />
-
-        <Link to="/germany">
-          <button className="book-now-btn">
-            Book Now
-          </button>
+        <Link to="/france-landing6">
+          <button className="book-now-btn">Book Now</button>
         </Link>
       </div>
 
       {/* ITINERARY */}
       <div className="itinerary-section">
-        <h2>07 Days Itinerary</h2>
-
+        <h2>7 Days Tour Itinerary</h2>
         <div className="itinerary-list">
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1521295121783-821d551ad2?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 1</h3>
-
-              <p style={{ color: "blue" }}>
-                 Munich <br/>Welcome to Germany –
-              </p>
-
-              <p>
-                Welcome to Munich! Upon arrival at Munich Airport, enjoy a private transfer to your hotel. Check in,
-relax, and spend the evening exploring Marienplatz, the Old Town streets, or Munich's lively beer
-gardens at your leisure.<br/>
-Overnight Stay in Munich
-              </p>
+          {itinerary.map((item, idx) => (
+            <div className="day-card" key={idx}>
+              <img src={item.img} alt="" />
+              <div className="day-content">
+                <h3>{item.day}</h3>
+                <p style={{ color: "blue" }}>{item.title}</p>
+                <p>{item.desc}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1491553895911-0055a6402d?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 2</h3>
-
-              <p style={{ color: "blue" }}>
-                Munich
-              </p>
-
-              <p>
-               Breakfast at Hotel.<br/>
-After breakfast, proceed for your Neuschwanstein & Linderhof Castle Full-Day Trip (included). Visit
-two of Bavaria's most iconic royal castles, surrounded by dramatic Alpine landscapes. Explore the
-fairy-tale Neuschwanstein Castle and the elegant Linderhof Palace, while learning about King Ludwig
-II's fascinating history.<br/>
-Overnight Stay in Munich
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea268880c?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 3</h3>
-
-              <p style={{ color: "blue" }}>
-               Munich - Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Munich Hotel to Train Station. Board your train from Munich to Stuttgart.
-Upon arrival at Stuttgart Station, enjoy a private transfer to your hotel. Check in and explore
-Stuttgart's modern city center,Königstrasse shopping street, or the Palace Square area..<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586ba3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 4</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, begin your Stuttgart 24-Hour Hop-On Hop-Off Sightseeing Bus Tour (ticket
-included). Explore major attractions such as the Mercedes-Benz Museum, Television Tower,
-Schlossplatz, vineyards, and art museums at your own pace. Enjoy informative commentary as you
-discover the cultural and architectural highlights of Stuttgart.<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657-3e917cbb34?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 5</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart - Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Stuttgart Hotel to Station. Board your train from Stuttgart to Frankfurt. Upon
-arrival at Frankfurt Station, enjoy a private transfer to your hotel. Check in and explore the modern
-skyline, Römerberg Square, or the riverside promenade..<br/>
-Overnight Stay in Frankfurt
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1516550893923-42d28e57af?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 6</h3>
-
-              <p style={{ color: "blue" }}>
-                Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, enjoy your River Main Sightseeing Cruise with Commentary (included). Sail past
-Frankfurt's striking skyline, historic bridges, museums, and riverside landmarks while learning about
-the city's history and culture.<br/>
-Later, explore Frankfurt using your Hop-On, Hop-Off Grand or Express Bus Ticket (included). Visit key
-attractions such as Römer, Palm Garden, old opera house, museums along the River Main, and
-modern business districts.<br/>
-Overnight Stay in Frankfurt
-
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d8a3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 7</h3>
-
-              <p style={{ color: "blue" }}>
-               Frankfurt 
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward flight.
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
 
-        {/* Send Query button */}
+        {/* Send Query Button */}
         <div style={{ textAlign: "center", marginTop: "36px" }}>
           <button
             className="send-query-btn"
-            onClick={() => setActiveModal("7 Days Munich + Stuttgart + Frankfurt Tour")}
+            onClick={() => setActiveModal("7 Days Spanish–French Riviera Delight — Barcelona & Nice Tour")}
           >
             Send Query
           </button>
@@ -482,7 +415,7 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
       {/* FAQ */}
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <p className="faq-subtitle">Everything you need to know before your Germany journey</p>
+        <p className="faq-subtitle">Everything you need to know before your Barcelona & Nice journey</p>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
             <div key={idx} className={`faq-item ${openFaq === idx ? "faq-open" : ""}`}>
@@ -532,6 +465,12 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
           transform: translateY(-2px);
           box-shadow: 0 6px 18px rgba(200,134,10,0.45);
         }
+        .eq-day-label {
+          font-size: 0.83rem;
+          color: #777;
+          margin: -10px 0 14px;
+        }
+        .eq-day-label strong { color: #c8860a; }
 
         .faq-section {
           padding: 60px 24px;
@@ -598,4 +537,4 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
   );
 };
 
-export default GermanyLanding4;
+export default SpanishFrenchRivieraTour;

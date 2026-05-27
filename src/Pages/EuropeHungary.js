@@ -13,7 +13,7 @@ const hungaryTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://media2.thrillophilia.com/images/photos/000/179/082/original/1573797301_shutterstock_1075765313.jpg?width=975&height=600"
   },
   {
     title: "Budapest + Vienna + Prague || 06 Nights/07 Days",
@@ -25,7 +25,7 @@ const hungaryTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://blogassets.airtel.in/wp-content/uploads/2024/11/hungary.jpg"
   },
   {
     title: "Budapest + Vienna + Prague 08 Nights/09 Days",
@@ -37,7 +37,7 @@ const hungaryTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://images.pexels.com/photos/34430993/pexels-photo-34430993.jpeg?cs=srgb&dl=pexels-kelly-34430993.jpg&fm=jpg"
   },
   {
     title: "Vienna + Budapest + Prague || 06 Nights/07 Days",
@@ -49,7 +49,7 @@ const hungaryTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://www.eurochange.co.uk/media/ivja0oqw/adobestock_277061588-min.jpeg?width=504&height=575&v=1dc021a11a47cb0"
   },
   {
     title: "From Medieval Streets to Imperial Palaces || 9N/10D",
@@ -61,7 +61,7 @@ const hungaryTours = [
     price: "₹3,20,000",
     emi: "₹14,500/mo",
     image:
-      "https://www.luxurygold.com/media/epsotnsb/czech-republic-luxury-tours-travel-guide.jpeg?center=0.4923572164072419%2C0.500010000200004&format=webp&mode=crop&width=900&height=600&quality=80"
+      "https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/belq7ojsvqj9fjbb1sjp.jpg"
   }
 ];
 

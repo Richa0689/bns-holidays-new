@@ -12,34 +12,34 @@ const initialForm = {
 
 const faqs = [
   {
-    question: "What is the best time to visit Munich, Stuttgart, and Frankfurt?",
+    question: "What is the best time to visit Amsterdam, Cologne, and Frankfurt?",
     answer:
-      "Germany is a great year-round destination. Summer (June–August) offers warm weather, outdoor festivals, and the famous beer gardens. Winter (November–February) brings magical Christmas markets across all three cities. Spring and autumn are ideal for sightseeing with pleasant temperatures and fewer tourists.",
+      "Each season offers something special. Spring (April–May) is magical in Amsterdam when the tulip fields are in full bloom. Summer (June–August) brings long days, outdoor festivals, and vibrant city life across all three cities. Autumn (September–October) offers warm colours and fewer tourists. December is perfect for Christmas markets in Cologne and Frankfurt, which are among the most famous in Europe.",
   },
   {
-    question: "What is included in the 7-day Germany tour package?",
+    question: "What is included in the 6-night/7-day tour package?",
     answer:
-      "The package includes 6 nights of hotel accommodation, daily breakfast, all private airport and station transfers, intercity train travel, the Neuschwanstein & Linderhof Castle full-day trip, Stuttgart's 24-hour Hop-On Hop-Off bus ticket, Frankfurt's River Main sightseeing cruise, and the Frankfurt Hop-On Hop-Off bus ticket. International flights and personal expenses are not included.",
+      "The package includes accommodation for 6 nights, daily breakfast, airport transfers, guided sightseeing tours as per the itinerary, and intercity travel between Amsterdam, Cologne, and Frankfurt. International flights and personal expenses are not included.",
   },
   {
-    question: "Do I need a visa to travel to Germany?",
+    question: "Do I need a visa to travel to the Netherlands and Germany?",
     answer:
-      "Indian passport holders require a Schengen visa to enter Germany. We recommend applying at least 4–6 weeks before your travel date. Our team can assist you with the complete documentation process to ensure a smooth application.",
+      "Indian passport holders require a Schengen visa to visit the Netherlands and Germany. Both countries are part of the Schengen Area, so one Schengen visa covers your entire trip. We recommend applying at least 4–6 weeks in advance. Our team can guide you with the documentation process.",
   },
   {
-    question: "What are the must-see attractions on this tour?",
+    question: "Is this tour suitable for first-time Europe travellers?",
     answer:
-      "Top highlights include the fairy-tale Neuschwanstein Castle, Munich's lively Marienplatz, the world-renowned Mercedes-Benz Museum in Stuttgart, Frankfurt's historic Römerberg Square, and a scenic cruise along the River Main. This tour blends Bavaria's royal heritage with Germany's modern industrial and financial heartlands.",
+      "Absolutely! This itinerary is thoughtfully designed for first-timers. It covers iconic highlights — Amsterdam's canal rings, Cologne's magnificent Cathedral, and Frankfurt's modern skyline and Römerberg old town — with a comfortable pace that allows you to absorb each city without feeling rushed.",
   },
   {
-    question: "What currency is used in Germany?",
+    question: "What is the currency used in these countries?",
     answer:
-      "Germany uses the Euro (€). Cards are widely accepted across hotels, restaurants, and major attractions. It is advisable to carry a small amount of cash for local markets, tips, and smaller establishments.",
+      "Both the Netherlands and Germany use the Euro (€). It is advisable to carry some local currency for small purchases, though credit and debit cards are widely accepted across hotels, restaurants, and attractions.",
   },
   {
-    question: "Can I customise this 7-day Germany itinerary?",
+    question: "Can I customise the Amsterdam–Cologne–Frankfurt itinerary?",
     answer:
-      "Absolutely! Every itinerary can be fully tailored to your interests, travel dates, and budget. Whether you'd like to add a Rhine Valley excursion, a visit to the Porsche Museum, or extend your stay in Frankfurt, our team will design the perfect personalised journey for you.",
+      "Yes! Every itinerary is fully customisable based on your interests, travel dates, and budget. Whether you'd like to add a Keukenhof Gardens visit, a Rhine Valley cruise, or a day trip to Heidelberg, our team will craft the perfect personalised journey for you.",
   },
 ];
 
@@ -198,9 +198,136 @@ const QueryModal = ({ day, onClose }) => {
 };
 
 /* ── Main page ───────────────────────────────────────────────── */
-const GermanyLanding4 = () => {
+const AmsterdamCologneFrankfurtTour = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
+
+  const itinerary = [
+    {
+      day: "Day 1",
+      title: (
+        <>
+           Amsterdam<br/>
+Arrival in Amsterdam: A Magical Start to Your Netherland
+        </>
+      ),
+      img: "https://images.unsplash.com/phot666-13e3e96b5017?w=800&q=80",
+      desc: (
+        <>
+          Welcome to Amsterdam, the Eternal City! Upon arriving at Amsterdam Airport (Amsterdam Airport
+Schiphol), One of Europe’s most modern and efficient airports, marks the beginning of an
+unforgettable journey. After landing, you’ll enjoy a smooth and seamless private transfer to your
+hotel, allowing you to relax and settle in without any stress.<br/>
+Your first evening in Amsterdam will set the tone for the incredible experiences ahead. From the
+glittering canals to the charming cobblestone streets, the city’s timeless beauty and warm atmosphere
+will captivate you from the moment you step outside. Whether you’re strolling along the illuminated
+waterfront, admiring the elegant bridges, or savoring a delightful Dutch meal, your Amsterdam
+adventure begins in one of Europe’s most enchanting and iconic destinations.<br/>
+Overnight Stay in Amsterdam
+
+        </>
+      ),
+    },
+    {
+      day: "Day 2",
+      title: "Amsterdam - Amsterdam hop on hop off bus tour - 24 Hours",
+      img: "https://images.unsplash.com/p76924542622-772281b13aa8?w=800&q=80",
+      desc: (
+        <>
+          After breakfast, embark on your Amsterdam Hop-On Hop-Off Bus Tour on a shared basis. If you
+want to explore Amsterdam’s top highlights at your own pace, this 24-hour flexible sightseeing
+experience is the perfect choice. The tour takes you through the city’s most iconic landmarks,
+charming neighborhoods, and cultural hotspots—including the Royal Palace, Rijksmuseum, Anne
+Frank House, and picturesque canal districts.<br/>
+Amsterdam - Amsterdam Canal Cruise Ticket<br/>
+Amsterdam Canal Cruise on a shared basis. If you’re short on time but want to experience the most
+picturesque highlights of Amsterdam, this classic canal cruise is the perfect way to explore the city
+from a unique perspective. During this relaxing journey, you’ll glide through Amsterdam’s iconic
+canals, passing historic bridges, Golden Age merchant houses, charming houseboats, and famous
+landmarks<br/>
+Overnight Stay in Amsterdam
+        </>
+      ),
+    },
+    {
+      day: "Day 3",
+      title: "Amsterdam - Cologne",
+      img: "https://images.unsplash.com/pho7521464027-f127ff144326?w=800&q=80",
+      desc: (
+        <>
+         After breakfast, catch a direct train from Amsterdam to Cologne. If you’re looking for a quick,
+comfortable way to travel between two of Western Europe’s vibrant cities, this train journey is ideal.
+On a high-speed train (such as ICE), the trip usually takes about 2 hours 37 minutes to 2 hours 40
+minutes. You’ll depart from Amsterdam’s central station and arrive right at Cologne’s main station.<br/>
+Overnight Stay in Cologne
+        </>
+      ),
+    },
+    {
+      day: "Day 4",
+      title: "Cologne – Cologne hop on hop off bus tour - 24 Hours",
+      img: "https://images.unsplash.com/pho9946347371-68eb71b16afc?w=800&q=80",
+      desc: (
+        <>
+         After breakfast, proceed for your Cologne Hop-On Hop-Off Bus Tour on a shared basis. If you’re
+short on time but want to experience the highlights of Cologne, this flexible 24-hour sightseeing tour
+is the perfect way to explore the city’s most iconic landmarks. The tour takes you past major
+attractions such as Cologne Cathedral, the Rhine River promenade, the Old Town, Museum Ludwig,
+and the historic Roman-Germanic Museum, all while providing engaging commentary that brings
+the city’s rich heritage to life. With the freedom to hop on and off at multiple stops, you can
+discover Cologne’s culture, architecture, and vibrant neighborhoods at your own pace.<br/>
+Overnight Stay in Cologne
+
+        </>
+      ),
+    },
+    {
+      day: "Day 5",
+      title: "Cologne – Frankfurt",
+      img: "https://images.unsplash.com/ph467269204594-9661b134dd2b?w=800&q=80",
+      desc: (
+        <>
+         After breakfast, board your train from Cologne heading to Frankfurt am Main. If you're looking for a
+fast and efficient way to travel between these two major German cities, this train journey is an
+excellent choice. The trip covers approximately 152 km (about 94 miles). On a high-speed train
+(such as those operated by Deutsche Bahn — ICE or IC/InterCity), the journey typically takes around
+1 hour 16 minutes on average, and on the fastest services, as little as 1 hour 3 minutes. You’ll
+depart from Cologne’s main station (Köln Hbf) and arrive in Frankfurt’s central station (Frankfurt
+(Main) Hbf) — making for a smooth, direct connection with no need to change trains.<br />
+Overnight Stay in Frankfurt
+
+        </>
+      ),
+    },
+    {
+      day: "Day 6",
+      title: "Frankfurt - Frankfurt hop on hop off bus tour - 24 hours",
+      img: "https://images.unsplash.com/pho527864550417-7fd91fc51a46?w=800&q=80",
+      desc: (
+        <>
+          After breakfast, proceed for your Frankfurt Hop-On Hop-Off Bus Tour on a shared basis. If you’re
+short on time but want to experience the highlights of Frankfurt, this flexible 24-hour sightseeing
+tour is an excellent way to discover the city’s modern skyline, historic quarters, and cultural
+landmarks. The tour takes you past iconic attractions such as Römerberg Square, the Frankfurt
+Cathedral, St. Paul’s Church, the Main Tower, and the scenic riverbank of the Main. Along the route,
+you’ll enjoy insightful audio commentary that sheds light on Frankfurt’s unique blend of tradition and innovation. With the freedom to hop on and off at designated stops, you can explore the city’s
+museums, shopping districts, and historical sites at your own pace.<br/>Overnight Stay in Frankfurt
+        </>
+      ),
+    },
+    {
+      day: "Day 7",
+      title: "Frankfurt",
+      img: "https://images.unsplash.com/pho-1600618538034-fc86e9a6b9b4?w=800&q=80",
+      desc: (
+        <>
+         Breakfast at Hotel.<br/>
+After breakfast and proceed to Frankfurt airport with private transfer.
+
+        </>
+      ),
+    },
+  ];
 
   return (
     <div className="usa-landing">
@@ -209,270 +336,82 @@ const GermanyLanding4 = () => {
       <div className="hero-section">
         <img
           src="https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
-          alt="Germany Tour"
+          alt="Amsterdam Cologne Frankfurt Tour"
         />
-
         <div className="hero-content">
-          <h1>Germany</h1>
-
-          <p>
-            Munich • Stuttgart • Frankfurt
-          </p>
-
-          <Link to="/germany">
-            <button className="explore-btn">
-              Explore Tour
-            </button>
+          <h1>Amsterdam + Cologne + Frankfurt</h1>
+          <p>Canal Cities. Gothic Grandeur. Modern European Heartland.</p>
+          <Link to="/germany-landing8">
+            <button className="explore-btn">View Tours</button>
           </Link>
         </div>
       </div>
 
       {/* HIGHLIGHTS */}
       <div className="highlights">
-        <h2>Tour Highlights</h2>
-
+        <h2>Major Destinations</h2>
         <div className="highlight-grid">
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15212121783-8a321d551ad2?w=600"
-              alt="Munich"
-            />
-            <p>Munich City</p>
+            <img src="https://images.unsplash.com/photo-1534350666-13e3e96b5017?w=600&q=80" alt="" />
+            <p>Amsterdam, Netherlands</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15124539797-5ea266f8880c?w=600"
-              alt="Stuttgart"
-            />
-            <p>Stuttgart Streets</p>
+            <img src="https://images.unsplash.com/photo-15675217-f127ff144326?w=600&q=80" alt="" />
+            <p>Zaanse Schans, Netherlands</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657e91760cbb34?w=600"
-              alt="Frankfurt"
-            />
-            <p>Frankfurt Skyline</p>
+            <img src="https://images.unsplash.com/photo-159971-68eb71b16afc?w=600&q=80" alt="" />
+            <p>Cologne, Germany</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b6d89ba3ee?w=600"
-              alt="Castle"
-            />
-            <p>Historic Architecture</p>
+            <img src="https://images.unsplash.com/photo-15278647-7fd91fc51a46?w=600&q=80" alt="" />
+            <p>Frankfurt, Germany</p>
           </div>
-
         </div>
       </div>
 
       {/* WHY VISIT */}
       <div className="why-section">
-        <h2>Why Choose This Tour?</h2>
-
+        <h2>Why Choose This Western Europe Journey?</h2>
         <div className="why-grid">
-          <div>🏰 Explore Historic German Cities</div>
-          <div>🚗 Experience Germany's Automobile Heritage</div>
-          <div>🌆 Enjoy Modern & Traditional Germany</div>
-          <div>📸 Perfect Europe Photography Tour</div>
+          <div>🚤 Iconic Amsterdam Canals</div>
+          <div>⛪ Cologne's Gothic Cathedral</div>
+          <div>🏰 Rhine Valley Castles</div>
+          <div>🏙️ Frankfurt's Stunning Skyline</div>
         </div>
       </div>
 
       {/* CTA */}
       <div className="cta-section">
-        <h2>Discover Germany in 7 Days</h2>
-
-        <p>
-          Explore vibrant cities, rich culture and modern architecture
-        </p>
-
+        <h2>Explore the Netherlands & Germany's Best</h2>
+        <p>Book your Western Europe adventure today — 06 Nights / 07 Days from ₹4,70,000</p>
         <br />
-
-        <Link to="/germany">
-          <button className="book-now-btn">
-            Book Now
-          </button>
+        <Link to="/germany-landing8">
+          <button className="book-now-btn">Book Now</button>
         </Link>
       </div>
 
       {/* ITINERARY */}
       <div className="itinerary-section">
-        <h2>07 Days Itinerary</h2>
-
+        <h2>7 Days Tour Itinerary</h2>
         <div className="itinerary-list">
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1521295121783-821d551ad2?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 1</h3>
-
-              <p style={{ color: "blue" }}>
-                 Munich <br/>Welcome to Germany –
-              </p>
-
-              <p>
-                Welcome to Munich! Upon arrival at Munich Airport, enjoy a private transfer to your hotel. Check in,
-relax, and spend the evening exploring Marienplatz, the Old Town streets, or Munich's lively beer
-gardens at your leisure.<br/>
-Overnight Stay in Munich
-              </p>
+          {itinerary.map((item, idx) => (
+            <div className="day-card" key={idx}>
+              <img src={item.img} alt="" />
+              <div className="day-content">
+                <h3>{item.day}</h3>
+                <p style={{ color: "blue" }}>{item.title}</p>
+                <p>{item.desc}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1491553895911-0055a6402d?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 2</h3>
-
-              <p style={{ color: "blue" }}>
-                Munich
-              </p>
-
-              <p>
-               Breakfast at Hotel.<br/>
-After breakfast, proceed for your Neuschwanstein & Linderhof Castle Full-Day Trip (included). Visit
-two of Bavaria's most iconic royal castles, surrounded by dramatic Alpine landscapes. Explore the
-fairy-tale Neuschwanstein Castle and the elegant Linderhof Palace, while learning about King Ludwig
-II's fascinating history.<br/>
-Overnight Stay in Munich
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea268880c?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 3</h3>
-
-              <p style={{ color: "blue" }}>
-               Munich - Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Munich Hotel to Train Station. Board your train from Munich to Stuttgart.
-Upon arrival at Stuttgart Station, enjoy a private transfer to your hotel. Check in and explore
-Stuttgart's modern city center,Königstrasse shopping street, or the Palace Square area..<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586ba3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 4</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, begin your Stuttgart 24-Hour Hop-On Hop-Off Sightseeing Bus Tour (ticket
-included). Explore major attractions such as the Mercedes-Benz Museum, Television Tower,
-Schlossplatz, vineyards, and art museums at your own pace. Enjoy informative commentary as you
-discover the cultural and architectural highlights of Stuttgart.<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657-3e917cbb34?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 5</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart - Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Stuttgart Hotel to Station. Board your train from Stuttgart to Frankfurt. Upon
-arrival at Frankfurt Station, enjoy a private transfer to your hotel. Check in and explore the modern
-skyline, Römerberg Square, or the riverside promenade..<br/>
-Overnight Stay in Frankfurt
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1516550893923-42d28e57af?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 6</h3>
-
-              <p style={{ color: "blue" }}>
-                Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, enjoy your River Main Sightseeing Cruise with Commentary (included). Sail past
-Frankfurt's striking skyline, historic bridges, museums, and riverside landmarks while learning about
-the city's history and culture.<br/>
-Later, explore Frankfurt using your Hop-On, Hop-Off Grand or Express Bus Ticket (included). Visit key
-attractions such as Römer, Palm Garden, old opera house, museums along the River Main, and
-modern business districts.<br/>
-Overnight Stay in Frankfurt
-
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d8a3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 7</h3>
-
-              <p style={{ color: "blue" }}>
-               Frankfurt 
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward flight.
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
 
-        {/* Send Query button */}
+        {/* Single Send Query button below all itinerary cards */}
         <div style={{ textAlign: "center", marginTop: "36px" }}>
           <button
             className="send-query-btn"
-            onClick={() => setActiveModal("7 Days Munich + Stuttgart + Frankfurt Tour")}
+            onClick={() => setActiveModal("7 Days Amsterdam + Cologne + Frankfurt Tour")}
           >
             Send Query
           </button>
@@ -482,7 +421,7 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
       {/* FAQ */}
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <p className="faq-subtitle">Everything you need to know before your Germany journey</p>
+        <p className="faq-subtitle">Everything you need to know before your Western Europe journey</p>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
             <div key={idx} className={`faq-item ${openFaq === idx ? "faq-open" : ""}`}>
@@ -532,6 +471,12 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
           transform: translateY(-2px);
           box-shadow: 0 6px 18px rgba(200,134,10,0.45);
         }
+        .eq-day-label {
+          font-size: 0.83rem;
+          color: #777;
+          margin: -10px 0 14px;
+        }
+        .eq-day-label strong { color: #c8860a; }
 
         .faq-section {
           padding: 60px 24px;
@@ -598,4 +543,4 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
   );
 };
 
-export default GermanyLanding4;
+export default AmsterdamCologneFrankfurtTour;

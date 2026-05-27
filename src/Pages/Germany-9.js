@@ -12,34 +12,34 @@ const initialForm = {
 
 const faqs = [
   {
-    question: "What is the best time to visit Munich, Stuttgart, and Frankfurt?",
+    question: "What is the best time to visit Denmark, Sweden, and Germany?",
     answer:
-      "Germany is a great year-round destination. Summer (June–August) offers warm weather, outdoor festivals, and the famous beer gardens. Winter (November–February) brings magical Christmas markets across all three cities. Spring and autumn are ideal for sightseeing with pleasant temperatures and fewer tourists.",
+      "This Scandinavian and Central European route is stunning across seasons. Summer (June–August) is the most popular time — long daylight hours, warm weather, and vibrant outdoor festivals make Copenhagen, Stockholm, and Hamburg come alive. Spring (April–May) offers blooming landscapes and fewer crowds. Autumn (September–October) brings warm colours and the famous Hamburg Fish Market energy. December is magical with world-class Christmas markets in Hamburg and Lübeck.",
   },
   {
-    question: "What is included in the 7-day Germany tour package?",
+    question: "What is included in the 7-night/8-day tour package?",
     answer:
-      "The package includes 6 nights of hotel accommodation, daily breakfast, all private airport and station transfers, intercity train travel, the Neuschwanstein & Linderhof Castle full-day trip, Stuttgart's 24-hour Hop-On Hop-Off bus ticket, Frankfurt's River Main sightseeing cruise, and the Frankfurt Hop-On Hop-Off bus ticket. International flights and personal expenses are not included.",
+      "The package includes accommodation for 7 nights, daily breakfast, airport transfers, guided sightseeing tours as per the itinerary, and intercity travel between Copenhagen, Malmö, Stockholm, and Hamburg. International flights and personal expenses are not included.",
   },
   {
-    question: "Do I need a visa to travel to Germany?",
+    question: "Do I need a visa to travel to Denmark, Sweden, and Germany?",
     answer:
-      "Indian passport holders require a Schengen visa to enter Germany. We recommend applying at least 4–6 weeks before your travel date. Our team can assist you with the complete documentation process to ensure a smooth application.",
+      "Indian passport holders require a Schengen visa to visit Denmark, Sweden, and Germany. All three countries are part of the Schengen Area, so one Schengen visa covers your entire trip. We recommend applying at least 4–6 weeks in advance. Our team can guide you with the documentation process.",
   },
   {
-    question: "What are the must-see attractions on this tour?",
+    question: "Is this tour suitable for first-time Europe travellers?",
     answer:
-      "Top highlights include the fairy-tale Neuschwanstein Castle, Munich's lively Marienplatz, the world-renowned Mercedes-Benz Museum in Stuttgart, Frankfurt's historic Römerberg Square, and a scenic cruise along the River Main. This tour blends Bavaria's royal heritage with Germany's modern industrial and financial heartlands.",
+      "Absolutely! This itinerary is thoughtfully designed for first-timers. It covers iconic highlights — Copenhagen's Nyhavn, Stockholm's Gamla Stan old town, and Hamburg's spectacular Speicherstadt warehouse district — with a comfortable pace that allows you to experience three distinct Scandinavian and Northern European cultures without feeling rushed.",
   },
   {
-    question: "What currency is used in Germany?",
+    question: "What currencies are used across Denmark, Sweden, and Germany?",
     answer:
-      "Germany uses the Euro (€). Cards are widely accepted across hotels, restaurants, and major attractions. It is advisable to carry a small amount of cash for local markets, tips, and smaller establishments.",
+      "Each country uses a different currency. Denmark uses the Danish Krone (DKK), Sweden uses the Swedish Krona (SEK), and Germany uses the Euro (€). It is advisable to carry some local currency for small purchases in each country, though credit and debit cards are widely accepted at hotels, restaurants, and attractions throughout the region.",
   },
   {
-    question: "Can I customise this 7-day Germany itinerary?",
+    question: "Can I customise the Denmark, Sweden & Germany itinerary?",
     answer:
-      "Absolutely! Every itinerary can be fully tailored to your interests, travel dates, and budget. Whether you'd like to add a Rhine Valley excursion, a visit to the Porsche Museum, or extend your stay in Frankfurt, our team will design the perfect personalised journey for you.",
+      "Yes! Every itinerary is fully customisable based on your interests, travel dates, and budget. Whether you'd like to add a visit to Kronborg Castle (Hamlet's castle) near Copenhagen, a Stockholm Archipelago boat trip, or a day excursion to Lübeck's UNESCO old town from Hamburg, our team will craft the perfect personalised journey for you.",
   },
 ];
 
@@ -198,9 +198,136 @@ const QueryModal = ({ day, onClose }) => {
 };
 
 /* ── Main page ───────────────────────────────────────────────── */
-const GermanyLanding4 = () => {
+const DenmarkSwedenGermanyTour = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
+
+  const itinerary = [
+    {
+      day: "Day 1",
+      title: (
+        <>
+           Copenhagen<br/>
+Welcome to Copenhagen
+        </>
+      ),
+      img: "https://images.unsplash.com/photo-10&q=80",
+      desc: (
+        <>
+         Welcome to Copenhagen! Upon arrival, you will enjoy a private transfer from the airport to your hotel.
+Settle in, relax and enjoy your first evening in this vibrant Scandinavian capital — maybe explore local
+streets.<br/>
+Overnight Stay in Copenhagen
+        </>
+      ),
+    },
+    {
+      day: "Day 2",
+      title: "Copenhagen – Group Walking Tour on Shared Basis & Copenhagen Canal Cruise Ticket",
+      img: "https://images.unsplash.com/photo-152q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+After breakfast proceed to Copenhagen Group Walking tour on Shared basis. explore central
+Copenhagen highlights (historic centre, main streets, landmarks, city vibe). Our Politically Incorrect
+guides blend humour with history, creating a tour for those who are tired of traditional sightseeing
+and excited by the idea of being pleasantly offended. Our guides will try to make you laugh (even
+when you -probably- shouldn't) as we uncover the stories hidden in Copenhagen’s historic streets.<br/>
+After lunch (on your own), take the Copenhagen Canal Cruise (ticket included) — a nice way to see
+the city from the water, see historic buildings, harbour area, waterways. Experience Copenhagen
+from the water on a canal cruise and see how the past and present merge as you travel along idyllic
+canals, passing many of the city’s most famous landmarks, old and new.<br/>
+Overnight Stay in Copenhagen
+        </>
+      ),
+    },
+    {
+      day: "Day 3",
+      title: "Copenhagen – The Forest Tower & Forgotten Giants Trolls Trip from Copenhagen on SIC basis(Forest Tower Entrance Not Included)",
+      img: "https://images.unsplash.com/photo-1509356843151-3e=80",
+      desc: (
+        <>
+         Breakfast at Hotel.
+After breakfast proceed to Forest Tower & Forgotten Giants Trolls Trip from Copenhagen on SIC
+basis. Guest need to each the meeting Point on their own. Explore Denmark’s Forest Tower without
+the hassle of arranging your own round-trip transportation. Ideal for architecture and nature lovers
+alike, climb to the observation deck 140 meters above sea level and walk along wooden walkways
+while enjoying the surrounding scenery.<br/>Overnight Stay in Copenhagen.
+        </>
+      ),
+    },
+    {
+      day: "Day 4",
+      title: "Copenhagen – Stockholm",
+      img: "https://images.unsplash.com/photo-15276687529&q=80",
+      desc: (
+        <>
+         After breakfast you check out and take the private transfer to Copenhagen Airport for your flight to
+Stockholm. On arrival in Stockholm, you take private transfer from airport to hotel. Once checked in,
+you have leisure time to recover from travel or take an evening walk around the city to soak in
+Stockholm’s atmosphere<br/>
+Overnight Stay in Stockholm.
+        </>
+      ),
+    },
+    {
+      day: "Day 5",
+      title: "Stockholm – Stockholm Old Town Walking Tour on Shared Basis",
+      img: "https://images.unsplash.com/photo-146726920459400&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+Following breakfast at hotel, you join a shared-basis walking tour through Stockholm’s Old Town
+(historic centre). You explore narrow medieval streets, visit vintage buildings, soak in the old-town
+ambience that reflects centuries of history, and get a feel for Stockholm’s unique character. After
+the walking tour, the rest of the day and evening is at your leisure — you may wander seaside
+streets, enjoy local cafés or restaurants, or plan your own sightseeing.<br/>
+Overnight Stay in Stockholm
+        </>
+      ),
+    },
+    {
+      day: "Day 6",
+      title: "Stockholm – Hamburg",
+      img: "https://images.unsplash.com/photo-15819529761400&q=80",
+      desc: (
+        <>
+         After breakfast you check out and take private transfer from hotel to airport (or transport hub), then
+travel to Hamburg. On arrival, you take the included private transfer from Hamburg airport to your
+hotel. Once checked in you have the evening at leisure — perhaps a gentle walk around Hamburg’s
+central or old-town area, to get a first impression of the city.<br/>
+Overnight Stay in Hamburg.
+
+        </>
+      ),
+    },
+    {
+      day: "Day 7",
+      title: "Hamburg - Hamburg Old Town guided Walking tour on Shared Basis",
+      img: "https://images.unsplash.com/photo-15999463473=800&q=80",
+      desc: (
+        <>
+          Breakfast at Hotel.<br/>
+Breakfast at hotel starts the day, followed by a shared-basis guided walking tour of Hamburg’s Old
+Town. You explore historic architecture, city-centre landmarks and learn about the city’s past and
+present. After the tour, you have free time — you may choose to walk around, visit local sights, sample
+local food or shop.<br/>
+Overnight Stay in Hamburg.
+        </>
+      ),
+    },
+    {
+      day: "Day 8",
+      title: "Hamburg",
+      img: "https://images.unsplash.com/photo-1600618538?w=800&q=80",
+      desc: (
+        <>
+         Breakfast at Hotel. Check out from the Hotel.<br/>
+Private transfer from Hamburg Hotel to Hamburg Airport.
+        </>
+      ),
+    },
+  ];
 
   return (
     <div className="usa-landing">
@@ -209,270 +336,82 @@ const GermanyLanding4 = () => {
       <div className="hero-section">
         <img
           src="https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
-          alt="Germany Tour"
+          alt="Glimpses of Denmark Sweden and Germany Tour"
         />
-
         <div className="hero-content">
-          <h1>Germany</h1>
-
-          <p>
-            Munich • Stuttgart • Frankfurt
-          </p>
-
-          <Link to="/germany">
-            <button className="explore-btn">
-              Explore Tour
-            </button>
+          <h1>Denmark + Sweden + Germany</h1>
+          <p>Scandinavian Elegance. Nordic Culture. Hanseatic Grandeur.</p>
+          <Link to="/germany-landing10">
+            <button className="explore-btn">View Tours</button>
           </Link>
         </div>
       </div>
 
       {/* HIGHLIGHTS */}
       <div className="highlights">
-        <h2>Tour Highlights</h2>
-
+        <h2>Major Destinations</h2>
         <div className="highlight-grid">
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15212121783-8a321d551ad2?w=600"
-              alt="Munich"
-            />
-            <p>Munich City</p>
+            <img src="https://images.unsplash.com/pc3c8a854bc?w=600&q=80" alt="" />
+            <p>Copenhagen, Denmark</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-15124539797-5ea266f8880c?w=600"
-              alt="Stuttgart"
-            />
-            <p>Stuttgart Streets</p>
+            <img src="https://images.unsplash.com/photodc70a27c95?w=600&q=80" alt="" />
+            <p>Stockholm, Sweden</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657e91760cbb34?w=600"
-              alt="Frankfurt"
-            />
-            <p>Frankfurt Skyline</p>
+            <img src="https://images.unsplash.com/photo-1582d15560349?w=600&q=80" alt="" />
+            <p>Hamburg, Germany</p>
           </div>
-
           <div className="highlight-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b6d89ba3ee?w=600"
-              alt="Castle"
-            />
-            <p>Historic Architecture</p>
+            <img src="https://images.unsplash.com/pho68eb71b16afc?w=600&q=80" alt="" />
+            <p>Lübeck, Germany</p>
           </div>
-
         </div>
       </div>
 
       {/* WHY VISIT */}
       <div className="why-section">
-        <h2>Why Choose This Tour?</h2>
-
+        <h2>Why Choose This Scandinavian & Northern Europe Journey?</h2>
         <div className="why-grid">
-          <div>🏰 Explore Historic German Cities</div>
-          <div>🚗 Experience Germany's Automobile Heritage</div>
-          <div>🌆 Enjoy Modern & Traditional Germany</div>
-          <div>📸 Perfect Europe Photography Tour</div>
+          <div>🌉 Iconic Øresund Bridge Crossing</div>
+          <div>⚓ Stockholm's Vasa Museum</div>
+          <div>🏛️ Hamburg's UNESCO Speicherstadt</div>
+          <div>🍬 Lübeck's Famous Marzipan Heritage</div>
         </div>
       </div>
 
       {/* CTA */}
       <div className="cta-section">
-        <h2>Discover Germany in 7 Days</h2>
-
-        <p>
-          Explore vibrant cities, rich culture and modern architecture
-        </p>
-
+        <h2>Explore the Best of Denmark, Sweden & Germany</h2>
+        <p>Book your Scandinavian adventure today — 07 Nights / 08 Days from ₹4,70,000</p>
         <br />
-
-        <Link to="/germany">
-          <button className="book-now-btn">
-            Book Now
-          </button>
+        <Link to="/germany-landing10">
+          <button className="book-now-btn">Book Now</button>
         </Link>
       </div>
 
       {/* ITINERARY */}
       <div className="itinerary-section">
-        <h2>07 Days Itinerary</h2>
-
+        <h2>8 Days Tour Itinerary</h2>
         <div className="itinerary-list">
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1521295121783-821d551ad2?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 1</h3>
-
-              <p style={{ color: "blue" }}>
-                 Munich <br/>Welcome to Germany –
-              </p>
-
-              <p>
-                Welcome to Munich! Upon arrival at Munich Airport, enjoy a private transfer to your hotel. Check in,
-relax, and spend the evening exploring Marienplatz, the Old Town streets, or Munich's lively beer
-gardens at your leisure.<br/>
-Overnight Stay in Munich
-              </p>
+          {itinerary.map((item, idx) => (
+            <div className="day-card" key={idx}>
+              <img src={item.img} alt="" />
+              <div className="day-content">
+                <h3>{item.day}</h3>
+                <p style={{ color: "blue" }}>{item.title}</p>
+                <p>{item.desc}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1491553895911-0055a6402d?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 2</h3>
-
-              <p style={{ color: "blue" }}>
-                Munich
-              </p>
-
-              <p>
-               Breakfast at Hotel.<br/>
-After breakfast, proceed for your Neuschwanstein & Linderhof Castle Full-Day Trip (included). Visit
-two of Bavaria's most iconic royal castles, surrounded by dramatic Alpine landscapes. Explore the
-fairy-tale Neuschwanstein Castle and the elegant Linderhof Palace, while learning about King Ludwig
-II's fascinating history.<br/>
-Overnight Stay in Munich
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea268880c?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 3</h3>
-
-              <p style={{ color: "blue" }}>
-               Munich - Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Munich Hotel to Train Station. Board your train from Munich to Stuttgart.
-Upon arrival at Stuttgart Station, enjoy a private transfer to your hotel. Check in and explore
-Stuttgart's modern city center,Königstrasse shopping street, or the Palace Square area..<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586ba3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 4</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, begin your Stuttgart 24-Hour Hop-On Hop-Off Sightseeing Bus Tour (ticket
-included). Explore major attractions such as the Mercedes-Benz Museum, Television Tower,
-Schlossplatz, vineyards, and art museums at your own pace. Enjoy informative commentary as you
-discover the cultural and architectural highlights of Stuttgart.<br/>
-Overnight Stay in Stuttgart
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657-3e917cbb34?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 5</h3>
-
-              <p style={{ color: "blue" }}>
-                Stuttgart - Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Stuttgart Hotel to Station. Board your train from Stuttgart to Frankfurt. Upon
-arrival at Frankfurt Station, enjoy a private transfer to your hotel. Check in and explore the modern
-skyline, Römerberg Square, or the riverside promenade..<br/>
-Overnight Stay in Frankfurt
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1516550893923-42d28e57af?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 6</h3>
-
-              <p style={{ color: "blue" }}>
-                Frankfurt
-              </p>
-
-              <p>
-                Breakfast at Hotel.<br/>
-After breakfast, enjoy your River Main Sightseeing Cruise with Commentary (included). Sail past
-Frankfurt's striking skyline, historic bridges, museums, and riverside landmarks while learning about
-the city's history and culture.<br/>
-Later, explore Frankfurt using your Hop-On, Hop-Off Grand or Express Bus Ticket (included). Visit key
-attractions such as Römer, Palm Garden, old opera house, museums along the River Main, and
-modern business districts.<br/>
-Overnight Stay in Frankfurt
-
-              </p>
-            </div>
-          </div>
-
-          <div className="day-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d8a3ee?w=600"
-              alt=""
-            />
-
-            <div className="day-content">
-              <h3>Day 7</h3>
-
-              <p style={{ color: "blue" }}>
-               Frankfurt 
-              </p>
-
-              <p>
-                Breakfast at Hotel. Check out from the Hotel.<br/>
-Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward flight.
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
 
-        {/* Send Query button */}
+        {/* Single Send Query button below all itinerary cards */}
         <div style={{ textAlign: "center", marginTop: "36px" }}>
           <button
             className="send-query-btn"
-            onClick={() => setActiveModal("7 Days Munich + Stuttgart + Frankfurt Tour")}
+            onClick={() => setActiveModal("8 Days Glimpses of Denmark, Sweden & Germany Tour")}
           >
             Send Query
           </button>
@@ -482,7 +421,7 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
       {/* FAQ */}
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <p className="faq-subtitle">Everything you need to know before your Germany journey</p>
+        <p className="faq-subtitle">Everything you need to know before your Denmark, Sweden & Germany journey</p>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
             <div key={idx} className={`faq-item ${openFaq === idx ? "faq-open" : ""}`}>
@@ -532,6 +471,12 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
           transform: translateY(-2px);
           box-shadow: 0 6px 18px rgba(200,134,10,0.45);
         }
+        .eq-day-label {
+          font-size: 0.83rem;
+          color: #777;
+          margin: -10px 0 14px;
+        }
+        .eq-day-label strong { color: #c8860a; }
 
         .faq-section {
           padding: 60px 24px;
@@ -598,4 +543,4 @@ Private transfer from Frankfurt Hotel to Frankfurt Airport for your onward fligh
   );
 };
 
-export default GermanyLanding4;
+export default DenmarkSwedenGermanyTour;
