@@ -103,7 +103,7 @@ const Croatia = () => {
             <h2>{tour.price}</h2>
             <p className="emi">EMI from {tour.emi}</p>
 
-            <button className="book-btn">Book Online</button>
+            <button className="book-btn">Send Query</button>
             <button className="whatsapp-btn">Share on WhatsApp</button>
             <button className="details-btn">View Tour Details</button>
           </div>

@@ -13,7 +13,7 @@ const germanyTours = [
     price: "₹3,40,000",
     emi: "₹15,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://media.istockphoto.com/id/503874284/photo/berlin-skyline-with-spree-river-at-sunset-germany.jpg?s=612x612&w=0&k=20&c=gnrw-SQQq9Niao93SU4djAgGXi-5LRBNkSRiwwX96Tk="
   },
   {
     title: "Munich + Innsbruck + Salzburg + Vienna||08 Nights/09 Days",
@@ -37,7 +37,7 @@ const germanyTours = [
     price: "₹4,10,000",
     emi: "₹18,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://images.ctfassets.net/wv75stsetqy3/5SLxbxZ11GmYsjFHSL5kWC/42cee1a3d15cfb3851f20e2e057583bf/Germany_Country_Guide.jpg?q=60&fit=fill&fm=webp"
   },
   {
     title: "Best of Vienna/Munich/Zurich || 06 Nights/07 Days",
@@ -49,7 +49,7 @@ const germanyTours = [
     price: "₹4,50,000",
     emi: "₹20,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/031/401/original/578155ed0242d97af7ff9c8e1d9423fd/article-germany-rhine-bacharach-evening.jpg"
   },
   {
     title: "Best of Vienna/Munich/Zurich || 07 Nights/08 Days",
@@ -61,7 +61,7 @@ const germanyTours = [
     price: "₹4,70,000",
     emi: "₹21,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://wanderon-images.gumlet.io/gallery/new/2026/03/16/1773645892362-hamburg-germany.webp?auto=compress%2Cformat&w=768"
   },
   {
     title: "Zurich + Innsbruck + Salzburg || 06 Nights/07 Days",
@@ -73,7 +73,7 @@ const germanyTours = [
     price: "₹4,70,000",
     emi: "₹21,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://content.skyscnr.com/m/0436240d3172566d/original/Neuschwanstein-Castle.jpg?resize=1224%3Aauto"
   },
   {
     title: "Amsterdam + Cologne + Frankfurt || 06 Nights / 07 Days",
@@ -85,7 +85,7 @@ const germanyTours = [
     price: "₹4,70,000",
     emi: "₹21,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://intwp.insurte.com/wp-content/uploads/2025/02/bacharach-germany.webp"
   },
   {
     title: "Best of Denmark and Germany 07 Nights/08 Days",
@@ -97,7 +97,7 @@ const germanyTours = [
     price: "₹4,70,000",
     emi: "₹21,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://www.trafalgar.com/real-word/wp-content/uploads//2018/02/Berlin-www.istockphoto.com_gb_photo_berlin-brandenburg-gate-at-night-gm494161874-77297715-TomasSereda.jpg"
   },
   {
     title: "Glimpses of Denmark, Sweden & Germany 07 Nights/08 Days",
@@ -109,7 +109,7 @@ const germanyTours = [
     price: "₹4,70,000",
     emi: "₹21,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://media.bookmundi.com/aggregate-hero-images/germany/cropped-mobile.jpg?format=auto&quality=60&width=960"
   },
   {
     title: "Explore Frankfurt, Heidelberg & Munich || 06 Nights / 07 Days",
@@ -121,7 +121,7 @@ const germanyTours = [
     price: "₹4,70,000",
     emi: "₹21,500/mo",
     image:
-      "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+      "https://media.istockphoto.com/id/1411868672/photo/r%C3%B6merberg-square-frankfurt-germany.jpg?s=612x612&w=0&k=20&c=t8EbLSzaXoRKn_6EzR11gyIWPyf7l5w21syFAYU_2Gc="
   }
 ];
 
@@ -169,7 +169,7 @@ const GermanyLanding = () => {
             </p>
 
             <button className="book-btn">
-              Book Online
+              Send Query
             </button>
 
             <button className="whatsapp-btn">

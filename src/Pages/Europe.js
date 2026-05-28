@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import "./Pages.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
+/* ── Constants ─────────────────────────────────────────────────── */
+const WHATSAPP_NUMBER = "917066620673";
+
+const initialForm = {
+  name: "", mobile: "", email: "", desc: "",
+  destination: "", adults: "", children: "", date: "", budget: "",
+};
+
+/* ── Tour Data ─────────────────────────────────────────────────── */
 const tours = [
   {
     id: "austria",
@@ -18,7 +27,7 @@ const tours = [
     highlight: "Explore the Austrian Alps, Vienna's imperial palaces, and the scenic lakeside town of Hallstatt on this unforgettable Europe tour package from India.",
     tags: ["Alps", "Vienna", "Hallstatt", "Family Tour"],
     image: "https://cdn.tourradar.com/s3/serp/original/735_U33n5NCA.jpg",
-    imageAlt: "Austria tour package - Vienna palace and Alpine scenery"
+    imageAlt: "Austria tour package - Vienna palace and Alpine scenery",
   },
   {
     id: "belgium",
@@ -34,7 +43,7 @@ const tours = [
     highlight: "Discover medieval Bruges, the Grand Place in Brussels, and world-famous Belgian chocolate on our affordable Belgium Europe holiday package.",
     tags: ["Bruges", "Brussels", "Chocolate Tour", "Couple Friendly"],
     image: "https://media.istockphoto.com/id/476653220/photo/ghent.jpg?s=612x612&w=0&k=20&c=a2Adwd1lH4Vd27MB82cMHzb59gBNxQtccX8aFtTdoNg=",
-    imageAlt: "Belgium tour package - Bruges canal and Brussels Grand Place"
+    imageAlt: "Belgium tour package - Bruges canal and Brussels Grand Place",
   },
   {
     id: "croatia",
@@ -50,10 +59,10 @@ const tours = [
     highlight: "Sail the stunning Adriatic coastline, walk Dubrovnik's ancient walls, and explore Croatia's hidden islands on this best-value Europe tour package.",
     tags: ["Dubrovnik", "Adriatic Coast", "Island Hopping", "Beach Holiday"],
     image: "https://media.istockphoto.com/id/882881582/photo/adriatic-sea-dubrovnik-landscape.jpg?s=612x612&w=0&k=20&c=cU1nrDFSFTtw-RlKctLBNL9xIcHs_htf4G5Zq1sF7s0=",
-    imageAlt: "Croatia tour package - Dubrovnik old city walls and Adriatic Sea"
+    imageAlt: "Croatia tour package - Dubrovnik old city walls and Adriatic Sea",
   },
   {
-    id: "PORTUGAL",
+    id: "portugal",
     title: "Portugal Tour Package",
     slug: "/portugal-landing",
     days: "8 Days",
@@ -66,10 +75,10 @@ const tours = [
     highlight: "Discover the vibrant culture, historic architecture, and beautiful landscapes of Portugal on this captivating tour package.",
     tags: ["Lisbon", "Porto", "Sintra", "Coastal Tour"],
     image: "https://media.istockphoto.com/id/2159796175/photo/beautiful-view-of-the-city-of-porto-on-a-beautiful-summer-day-porto-portugal.jpg?s=612x612&w=0&k=20&c=nHvExt7N3aD_yRdztA8ncHVQ9HAQaxJ7DCf3s1TUIjg=",
-    imageAlt: "Portugal tour - Lisbon Alfama District, Porto Ribeira, Sintra Palácio"
+    imageAlt: "Portugal tour - Lisbon Alfama District, Porto Ribeira, Sintra Palácio",
   },
   {
-    id: "ITALY",
+    id: "italy",
     title: "Italy Tour Package",
     slug: "/italy-landing1",
     days: "10 Days",
@@ -79,13 +88,13 @@ const tours = [
     price: "₹3,20,000",
     priceValue: 320000,
     emi: "₹14,500/mo",
-    highlight: "Experience the timeless allure of Italy with visits to Rome's ancient wonders, Florence's Renaissance art, Venice's romantic canals, and the breathtaking Amalfi Coast on this unforgettable Europe tour package.",
+    highlight: "Experience the timeless allure of Italy with visits to Rome's ancient wonders, Florence's Renaissance art, Venice's romantic canals, and the breathtaking Amalfi Coast.",
     tags: ["Rome", "Florence", "Venice", "Amalfi Coast", "Cultural Tour"],
     image: "https://thumbs.dreamstime.com/b/canal-grande-venice-italy-24625738.jpg",
-    imageAlt: "Italy tour package - Rome Colosseum, Florence Duomo, Venice canals, Amalfi Coast"
+    imageAlt: "Italy tour package - Rome Colosseum, Florence Duomo, Venice canals, Amalfi Coast",
   },
   {
-    id: "POLAND",
+    id: "poland",
     title: "Poland Tour Package",
     slug: "/poland-landing1",
     days: "7 Days",
@@ -95,81 +104,242 @@ const tours = [
     price: "₹3,20,000",
     priceValue: 320000,
     emi: "₹14,500/mo",
-    highlight: "Experience the timeless allure of Poland with visits to Warsaw's historic center, Krakow's medieval streets, Gdansk's beautiful waterfront, and the stunning Białowieża Forest on this unforgettable Europe tour package.",
+    highlight: "Experience the timeless allure of Poland with visits to Warsaw's historic center, Krakow's medieval streets, Gdansk's beautiful waterfront, and the stunning Białowieża Forest.",
     tags: ["Warsaw", "Krakow", "Gdansk", "Białowieża Forest", "Cultural Tour"],
     image: "https://www.studyinpoland.pl/en/images/articles/why-poland-new.jpg",
-    imageAlt: "Poland tour package - Warsaw Old Town, Krakow Main Square, Gdansk Long Market, Białowieża Forest"
+    imageAlt: "Poland tour package",
   },
   {
-    id: "HUNGARY",
+    id: "hungary",
     title: "Hungary Tour Package",
     slug: "/hungary-landing1",
     days: "7 Days",
-    countries: "HUNGARY",
+    countries: "Hungary",
     cities: "4 Cities",
     dates: "5 Dates",
     price: "₹3,20,000",
     priceValue: 320000,
     emi: "₹14,500/mo",
-    highlight: "Experience the timeless allure of Hungary with visits to Budapest's historic center, Prague's medieval streets, Vienna's beautiful architecture, and the stunning Lake Balaton on this unforgettable Europe tour package.",
+    highlight: "Experience the timeless allure of Hungary with visits to Budapest's historic center, Prague's medieval streets, Vienna's beautiful architecture, and the stunning Lake Balaton.",
     tags: ["Budapest", "Prague", "Vienna", "Lake Balaton", "Cultural Tour"],
     image: "https://thumbs.dreamstime.com/b/budapest-hungary-aerial-panoramic-skyline-view-buda-castle-royal-palace-szechenyi-chain-bridge-budapest-hungary-aerial-115122754.jpg",
-    imageAlt: "Hungary tour package - Budapest Parliament, Prague Castle, Vienna Hofburg, Lake Balaton"
+    imageAlt: "Hungary tour package",
   },
   {
-    id: "DENMARK",
+    id: "denmark",
     title: "Denmark Tour Package",
     slug: "/denmark-landing1",
     days: "7 Days",
-    countries: "DENMARK",
+    countries: "Denmark",
     cities: "4 Cities",
     dates: "5 Dates",
     price: "₹3,20,000",
     priceValue: 320000,
     emi: "₹14,500/mo",
-    highlight: "Experience the timeless allure of Denmark with visits to Copenhagen's historic center, Ålborg's medieval streets, Aarhus's beautiful architecture, and the stunning fjords on this unforgettable Europe tour package.",
+    highlight: "Experience the timeless allure of Denmark with visits to Copenhagen's historic center, Ålborg's medieval streets, Aarhus's beautiful architecture, and the stunning fjords.",
     tags: ["Copenhagen", "Ålborg", "Aarhus", "Fjords", "Cultural Tour"],
     image: "https://thumbs.dreamstime.com/b/copenhagen-denmark-aerial-panoramic-skyline-view-royal-palace-115122754.jpg",
-    imageAlt: "Denmark tour package - Copenhagen Royal Palace, Ålborg Medieval Streets, Aarhus Beautiful Architecture, Fjords"
+    imageAlt: "Denmark tour package",
   },
   {
-    id: "GERMANY",
+    id: "germany",
     title: "Germany Tour Package",
     slug: "/germany-landing1",
     days: "7 Days",
-    countries: "GERMANY",
+    countries: "Germany",
     cities: "4 Cities",
     dates: "5 Dates",
     price: "₹3,40,000",
     priceValue: 340000,
     emi: "₹15,500/mo",
-    highlight: "Discover the rich heritage and modern charm of Germany with visits to Berlin's historic landmarks, Munich's vibrant culture, Frankfurt's stunning skyline, and the breathtaking beauty of the Bavarian Alps on this unforgettable Europe tour package.",
+    highlight: "Discover the rich heritage and modern charm of Germany with visits to Berlin's historic landmarks, Munich's vibrant culture, Frankfurt's stunning skyline, and the Bavarian Alps.",
     tags: ["Berlin", "Munich", "Frankfurt", "Bavarian Alps", "Cultural Tour"],
     image: "https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg",
-    imageAlt: "Germany tour package"
-},
-{
-  id: "FRANCE",
-  title: "France Tour Package",
-  slug: "/france-landing1",
-  days: "7 Days",
-  countries: "FRANCE",
-  cities: "4 Cities",
-  dates: "5 Dates",
-  price: "₹3,60,000",
-  priceValue: 360000,
-  emi: "₹16,500/mo",
-  highlight:
-    "Experience the elegance and romance of France with visits to Paris's iconic landmarks, Nice's stunning coastline, Lyon's rich culinary heritage, and the picturesque beauty of the French countryside on this unforgettable Europe tour package.",
-  tags: ["Paris", "Nice", "Lyon", "French Riviera", "Cultural Tour"],
-  image:
-    "https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1920",
-  imageAlt: "France tour package"
-}
+    imageAlt: "Germany tour package",
+  },
+  {
+    id: "france",
+    title: "France Tour Package",
+    slug: "/france-landing1",
+    days: "7 Days",
+    countries: "France",
+    cities: "4 Cities",
+    dates: "5 Dates",
+    price: "₹3,60,000",
+    priceValue: 360000,
+    emi: "₹16,500/mo",
+    highlight: "Experience the elegance and romance of France with visits to Paris's iconic landmarks, Nice's stunning coastline, Lyon's rich culinary heritage, and the picturesque French countryside.",
+    tags: ["Paris", "Nice", "Lyon", "French Riviera", "Cultural Tour"],
+    image: "https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1920",
+    imageAlt: "France tour package",
+  },
 ];
 
+/* ── QueryModal ─────────────────────────────────────────────────── */
+const QueryModal = ({ tourTitle, onClose }) => {
+  const [form, setForm] = useState({ ...initialForm, destination: tourTitle });
+  const [showExtra, setShowExtra] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e) =>
+    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+
+  const handleSubmit = () => {
+    if (!form.name.trim() || !form.mobile.trim() || !form.email.trim()) {
+      setError("Please fill in Name, Mobile and Email.");
+      return;
+    }
+    setError("");
+
+    const message =
+      `*New Enquiry from BNS Holidays*\n` +
+      `*Tour:* ${tourTitle}\n` +
+      `*Name:* ${form.name}\n` +
+      `*Mobile:* +91 ${form.mobile}\n` +
+      `*Email:* ${form.email}\n` +
+      `*Description:* ${form.desc || "N/A"}` +
+      (showExtra
+        ? `\n*Destination:* ${form.destination || "N/A"}\n` +
+          `*Adults:* ${form.adults || "N/A"}\n` +
+          `*Children:* ${form.children || "N/A"}\n` +
+          `*Travel Date:* ${form.date || "N/A"}\n` +
+          `*Budget:* ${form.budget || "N/A"}`
+        : "");
+
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+
+    setSubmitted(true);
+    setTimeout(() => {
+      onClose();
+      setSubmitted(false);
+    }, 2500);
+  };
+
+  return (
+    <div
+      className="eq-overlay"
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div className="eq-modal" role="dialog" aria-modal="true" aria-label="Quick Enquiry form">
+        <button className="eq-close" onClick={onClose} aria-label="Close">✕</button>
+
+        {submitted ? (
+          <div className="eq-success">
+            <div className="eq-success-icon">✓</div>
+            <p>Thank you! We'll get back to you shortly.</p>
+          </div>
+        ) : (
+          <>
+            <h2 className="eq-title">QUICK ENQUIRY</h2>
+            <p className="eq-day-label">
+              Enquiry for: <strong>{tourTitle}</strong>
+            </p>
+
+            {error && <p className="eq-error">{error}</p>}
+
+            <div className="eq-field">
+              <input
+                type="text" name="name" placeholder="Full Name*"
+                value={form.name} onChange={handleChange}
+              />
+            </div>
+
+            <div className="eq-field eq-phone-row">
+              <div className="eq-flag">🇮🇳 +91</div>
+              <input
+                type="tel" name="mobile" placeholder="Mobile No.*"
+                value={form.mobile} onChange={handleChange}
+              />
+            </div>
+
+            <div className="eq-field">
+              <input
+                type="email" name="email" placeholder="Email ID*"
+                value={form.email} onChange={handleChange}
+              />
+            </div>
+
+            <div className="eq-field">
+              <textarea
+                name="desc" placeholder="Drop us a small description"
+                value={form.desc} onChange={handleChange}
+                rows={3}
+              />
+            </div>
+
+            <p className="eq-helper">
+              Would you like to share more info? It will help us curate the best tours for you.{" "}
+              <em>(Optional)</em>
+            </p>
+
+            <button className="eq-toggle" onClick={() => setShowExtra((v) => !v)}>
+              Additional Details {showExtra ? "▴" : "▾"}
+            </button>
+
+            {showExtra && (
+              <div className="eq-extra">
+                <div className="eq-field">
+                  <input
+                    type="text" name="destination" placeholder="Destination in mind"
+                    value={form.destination} onChange={handleChange}
+                  />
+                </div>
+                <div className="eq-field eq-phone-row">
+                  <input
+                    type="number" name="adults" placeholder="No. of adults"
+                    value={form.adults} onChange={handleChange}
+                    style={{ flex: 1 }}
+                  />
+                  <input
+                    type="number" name="children" placeholder="No. of children"
+                    value={form.children} onChange={handleChange}
+                    style={{ flex: 1 }}
+                  />
+                </div>
+                <div className="eq-field">
+                  <input type="date" name="date" value={form.date} onChange={handleChange} />
+                </div>
+                <div className="eq-field">
+                  <input
+                    type="text" name="budget" placeholder="Budget (approx)"
+                    value={form.budget} onChange={handleChange}
+                  />
+                </div>
+              </div>
+            )}
+
+            <button className="eq-submit" onClick={handleSubmit}>
+              Submit Enquiry
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+/* ── Main Component ─────────────────────────────────────────────── */
 const Europe = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [activeModal, setActiveModal] = useState(null); // stores tour title when open
+  const navigate = useNavigate();
+
+  const handleWhatsApp = (tour) => {
+    const message =
+      `*Tour Enquiry — BNS Holidays*\n` +
+      `*Tour:* ${tour.title}\n` +
+      `*Duration:* ${tour.days}\n` +
+      `*Price:* ${tour.price}\n` +
+      `*Countries:* ${tour.countries}\n\n` +
+      `Hi, I'm interested in this tour. Please share more details.`;
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  };
 
   return (
     <>
@@ -185,15 +355,11 @@ const Europe = () => {
           content="Europe tour packages from India, Europe holiday packages, Austria tour, Belgium tour, Croatia tour, Eastern Europe tour, Luxury Europe tour, Europe trip 2026"
         />
         <link rel="canonical" href="https://www.bnsholidays.com/europe-tours" />
-
-        {/* Open Graph */}
         <meta property="og:title" content="Europe Tour Packages from India 2026 | BNS Holidays" />
         <meta property="og:description" content="Explore top Europe tour packages from India starting at ₹1,95,000. Flights, hotels, visa & sightseeing included. Easy EMI options available." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bnsholidays.com/europe-tours" />
         <meta property="og:image" content="https://blog.dookinternational.com/images/post-media/Z4G0Z1682335149.jpg" />
-
-        {/* Structured Data — ItemList */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -211,14 +377,15 @@ const Europe = () => {
                   "@type": "Offer",
                   "price": tour.priceValue,
                   "priceCurrency": "INR",
-                  "availability": "https://schema.org/InStock"
-                }
-              }
-            }))
+                  "availability": "https://schema.org/InStock",
+                },
+              },
+            })),
           })}
         </script>
       </Helmet>
-       {/* ── VIDEO HERO ── */}
+
+      {/* ── VIDEO HERO ── */}
       <div className="video-hero">
         <div className="video-hero__inner">
           <iframe
@@ -234,7 +401,7 @@ const Europe = () => {
 
       {/* ── PAGE ── */}
       <main className="tour-container">
-        <h1>Europe Tour Packages </h1>
+        <h1>Europe Tour Packages</h1>
 
         <section aria-label="Europe tour package listings">
           {tours.map((tour) => (
@@ -270,10 +437,8 @@ const Europe = () => {
                   <span>{tour.dates}</span>
                 </p>
 
-                {/* HIGHLIGHT / TAGLINE */}
                 <p className="tour-highlight">{tour.highlight}</p>
 
-                {/* TAGS */}
                 <ul className="tour-tags" aria-label="Tour highlights">
                   {tour.tags.map((tag) => (
                     <li key={tag} className="tour-tag">{tag}</li>
@@ -281,7 +446,7 @@ const Europe = () => {
                 </ul>
               </div>
 
-              {/* PRICE */}
+              {/* PRICE + BUTTONS */}
               <div className="tour-price">
                 <p className="start">Starts from</p>
                 <h2>
@@ -291,13 +456,30 @@ const Europe = () => {
                 </h2>
                 <p className="emi">EMI from {tour.emi}</p>
 
-                <button className="book-btn" aria-label={`Book ${tour.title} online`}>
+                {/* Send Query → opens modal */}
+                <button
+                  className="book-btn"
+                  aria-label={`Send query for ${tour.title}`}
+                  onClick={() => setActiveModal(tour.title)}
+                >
                   Send Query
                 </button>
-                <button className="whatsapp-btn" aria-label={`Share ${tour.title} on WhatsApp`}>
+
+                {/* Share on WhatsApp → tour-specific message */}
+                <button
+                  className="whatsapp-btn"
+                  aria-label={`Share ${tour.title} on WhatsApp`}
+                  onClick={() => handleWhatsApp(tour)}
+                >
                   Share on WhatsApp
                 </button>
-                <button className="details-btn" aria-label={`View details of ${tour.title}`}>
+
+                {/* View Tour Details → navigates to tour's slug */}
+                <button
+                  className="details-btn"
+                  aria-label={`View details of ${tour.title}`}
+                  onClick={() => navigate(tour.slug)}
+                >
                   View Tour Details
                 </button>
               </div>
@@ -305,34 +487,25 @@ const Europe = () => {
             </article>
           ))}
         </section>
-
-        {/* MODAL */}
-        {showModal && (
-          <div className="modal-overlay" role="dialog" aria-modal="true" aria-label="Tour inclusions">
-            <div className="modal-box">
-              <div className="modal-header">
-                <h2>Tour Includes</h2>
-                <span className="close-btn" onClick={() => setShowModal(false)} aria-label="Close modal">✕</span>
-              </div>
-              <div className="icons-row">
-                <div><span role="img" aria-label="Hotel">🏨</span><p>Hotel</p></div>
-                <div><span role="img" aria-label="Meals">🍽️</span><p>Meals</p></div>
-                <div><span role="img" aria-label="Flight">✈️</span><p>Flight</p></div>
-                <div><span role="img" aria-label="Sightseeing">📷</span><p>Sightseeing</p></div>
-                <div><span role="img" aria-label="Transport">🚌</span><p>Transport</p></div>
-                <div><span role="img" aria-label="Visa">📄</span><p>Visa</p></div>
-              </div>
-              <div className="modal-content">
-                <p>👨‍✈️ Tour includes the services of <strong>BNS Holidays</strong>.</p>
-                <p className="note">
-                  *Except for joining/leaving. To &amp; fro economy class airfare is included.<br />
-                  *Taxes Extra.
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
       </main>
+
+      {/* ── QUERY MODAL ── */}
+      {activeModal && (
+        <QueryModal
+          tourTitle={activeModal}
+          onClose={() => setActiveModal(null)}
+        />
+      )}
+
+      {/* ── Scoped styles for modal & label ── */}
+      <style>{`
+        .eq-day-label {
+          font-size: 0.83rem;
+          color: #777;
+          margin: -10px 0 14px;
+        }
+        .eq-day-label strong { color: #c8860a; }
+      `}</style>
     </>
   );
 };

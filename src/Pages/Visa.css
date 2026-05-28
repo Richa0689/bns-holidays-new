@@ -1,117 +1,577 @@
+/* ============================================
+   IMPORTS — Playfair Display + DM Sans
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ============================================
+   ROOT VARIABLES
+   ============================================ */
+:root {
+  --primary: #c8973a;
+  --primary-dark: #a57828;
+  --primary-glow: rgba(200, 151, 58, 0.15);
+  --accent: #1a1a2e;
+  --card-bg: #ffffff;
+  --card-border: rgba(200, 151, 58, 0.25);
+  --text-main: #1a1a2e;
+  --text-muted: #7a7a8c;
+  --surface: #f9f6f0;
+  --shadow: 0 8px 32px rgba(26, 26, 46, 0.10);
+  --shadow-hover: 0 20px 50px rgba(26, 26, 46, 0.18);
+}
+
+/* ============================================
+   PAGE CONTAINER
+   ============================================ */
 .visa-container {
-  padding: 90px;
-  min-height: 80vh;
+  padding: 80px 60px;
+  min-height: 100vh;
+  background: var(--surface);
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background circle */
+.visa-container::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(155, 111, 30, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.visa-container::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 151, 58, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ============================================
+   HERO HEADER
+   ============================================ */
+.visa-header {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+.visa-eyebrow {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: var(--primary-glow);
+  border: 1px solid rgba(200, 151, 58, 0.30);
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 18px;
 }
 
 .visa-title {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.1;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.visa-title span {
+  color: var(--primary);
+  font-style: italic;
 }
 
 .visa-subtitle {
-  color: gray;
+  font-size: 18px;
+  color: var(--text-muted);
+  font-weight: 500;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
   margin-bottom: 30px;
 }
 
-/* GRID */
+/* ============================================
+   GRID
+   ============================================ */
 .visa-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 1;
 }
 
-/* CARD */
+/* ============================================
+   CARD
+   ============================================ */
 .visa-card {
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: 0.3s;
-  background: #fff;
+  box-shadow: var(--shadow);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  text-align: left;
+  position: relative;
 }
 
 .visa-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(200, 151, 58, 0.5);
 }
 
-/* IMAGE */
+/* Gold top accent bar */
+.visa-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 2;
+}
+
+.visa-card:hover::before {
+  opacity: 1;
+}
+
+/* ============================================
+   CARD IMAGE
+   ============================================ */
 .visa-card img {
   width: 100%;
-  height: 180px;
+  height: 175px;
   object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* CONTENT */
+.visa-card:hover img {
+  transform: scale(1.04);
+}
+
+/* ============================================
+   CARD CONTENT
+   ============================================ */
 .visa-content {
-  padding: 15px;
-  text-align: left;
+  padding: 20px 20px 22px;
 }
 
 .visa-content h3 {
-  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
 }
 
 .visa-content p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 15px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  line-height: 1.65;
+  font-weight: 400;
 }
 
-/* BUTTON */
-.visa-content button {
-  padding: 8px 15px;
-  border: none;
-  background: #0077ff;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.visa-content button:hover {
-  background: #005edb;
-}
 /* ============================================
-   VISA PAGE MOBILE FIX
+   BUTTON GROUP
+   ============================================ */
+.visa-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.btn-apply {
+  padding: 10px 16px;
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.3px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-apply:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.btn-docs {
+  padding: 10px 16px;
+  border: 1.5px solid var(--card-border);
+  background: transparent;
+  color: var(--primary-dark);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-docs:hover {
+  background: var(--primary-glow);
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   MODAL OVERLAY
+   ============================================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 25, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: overlayIn 0.25s ease;
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ============================================
+   MODAL BOX
+   ============================================ */
+.modal-box {
+  background: #16162a !important;
+  color: #fff !important;
+  border-radius: 22px;
+  padding: 40px 36px 36px;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  border: 1px solid rgba(200, 151, 58, 0.22);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55),
+              inset 0 1px 0 rgba(255,255,255,0.05);
+  animation: modalIn 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ============================================
+   MODAL CLOSE BUTTON
+   ============================================ */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.6);
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modal-close:hover {
+  background: rgba(200, 151, 58, 0.2);
+  color: var(--primary);
+  border-color: rgba(200, 151, 58, 0.4);
+}
+
+/* ============================================
+   MODAL HEADER
    ============================================ */
 
-@media (max-width: 768px) {
+/* Gold decorative line above title */
+.modal-box::before {
+  content: '';
+  display: block;
+  width: 42px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  border-radius: 2px;
+  margin: 0 auto 18px;
+}
 
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  color: #f3efef;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.modal-subtitle {
+  font-size: 12px;
+  color: rgba(200, 151, 58, 0.85);
+  text-align: center;
+  margin-bottom: 26px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ============================================
+   MODAL DOCUMENT LIST
+   ============================================ */
+.modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-item {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: background 0.2s;
+}
+
+.modal-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.modal-item:last-child {
+  border-bottom: none;
+}
+
+.modal-item:hover {
+  background: rgba(17, 16, 15, 0.05);
+  border-radius: 8px;
+}
+
+.modal-item-text {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #fcfcfa;
+}
+
+.modal-item-sub {
+  font-size: 12px;
+  color: rgba(200, 151, 58, 0.75);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ============================================
+   MOBILE — TABLET (max 768px)
+   ============================================ */
+@media (max-width: 768px) {
   .visa-container {
-    padding: 24px 16px;   /* 90px was pushing content off screen */
+    padding: 48px 20px 40px;
   }
 
   .visa-title {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .visa-subtitle {
     font-size: 14px;
   }
 
-  /* 2 columns on tablet */
   .visa-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 16px;
   }
 
   .visa-card img {
     height: 140px;
   }
+
+  .modal-box {
+    padding: 32px 24px 28px;
+  }
 }
 
+/* ============================================
+   MOBILE — PHONE (max 480px)
+   ============================================ */
 @media (max-width: 480px) {
+  .visa-title {
+    font-size: 28px;
+  }
 
-  /* 1 column on phone */
   .visa-grid {
     grid-template-columns: 1fr;
   }
 
   .visa-card img {
-    height: 160px;        /* taller image looks better in single column */
+    height: 165px;
   }
 
-  .visa-content button {
-    width: 100%;          /* full width button on small screens */
-    padding: 10px;
+  .btn-apply,
+  .btn-docs {
+    width: 100%;
+    padding: 11px;
+  }
+
+  .modal-box {
+    padding: 28px 18px 22px;
+    border-radius: 16px;
+  }
+}
+
+/* SEARCH */
+.visa-search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.visa-search {
+  width: 100%;
+  max-width: 420px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(18, 17, 17, 0.25);
+  background: #f7f3f3;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.visa-search:focus {
+  border-color: #c8973a;
+  box-shadow: 0 0 0 4px rgba(200, 151, 58, 0.1);
+}
+
+/* FILTERS */
+.visa-filters {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+  color: #1010a9;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.active-filter {
+  background: linear-gradient(135deg, #c8973a, #a57828);
+  color: #fff;
+}
+
+/* CATEGORY BADGE */
+.visa-category {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  border-radius: 40px;
+  background: rgba(200, 151, 58, 0.12);
+  color: #a57828;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* FORM */
+.visa-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.visa-form input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.visa-form input::placeholder {
+  color: rgba(255,255,255,0.55);
+}
+
+.submit-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #c8973a, #a57828);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .visa-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .visa-grid {
+    grid-template-columns: 1fr;
   }
 }

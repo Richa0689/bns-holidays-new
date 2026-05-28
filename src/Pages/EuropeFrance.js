@@ -157,7 +157,7 @@ const FranceLanding = () => {
             </p>
 
             <button className="book-btn">
-              Book Online
+             Send Query
             </button>
 
             <button className="whatsapp-btn">
