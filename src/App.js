@@ -80,11 +80,6 @@ import FranceLanding from "./Pages/FranceLanding";
 import ParisNiceLanding from "./Pages/ParisNiceLanding";
 import FrenchRivieraLanding from './Pages/FrenchRivieraLanding';
 import LuxuryFranceLanding from './Pages/LuxuryFranceLanding';
-import Germany from './Pages/Germany';
-import GermanyLanding from './Pages/GermanyLanding';
-import BerlinMunichLanding from './Pages/BerlinMunichLanding';
-import BavarianAlpsLanding from "./Pages/BavarianAlpsLanding";
-import LuxuryGermanyLanding from "./Pages/LuxuryGermanyLanding";
 import Italy from "./Pages/Italy";
 import Italypage from "./Pages/Italypage";
 import RomeVeniceLanding from "./Pages/RomeVeniceLanding";
@@ -341,11 +336,6 @@ function App() {
 <Route path="/paris-nice" element={<ParisNiceLanding />} />
 <Route path="/french-riviera" element={<FrenchRivieraLanding />} />
 <Route path="/luxury-france" element={<LuxuryFranceLanding />} />
-<Route path="/Pages/germany" element={<Germany />} />
-<Route path="/germany-landing" element={<GermanyLanding />} />
-<Route path="/berlin-munich" element={<BerlinMunichLanding />} />
-<Route path="/bavarian-alps" element={<BavarianAlpsLanding />} />
-<Route path="/luxury-germany" element={<LuxuryGermanyLanding />} />
 <Route path="/Pages/italy" element={<Italy />} />
 <Route path="/italy-landing" element={<Italypage />} />
 <Route path="/rome-venice" element={<RomeVeniceLanding />} />

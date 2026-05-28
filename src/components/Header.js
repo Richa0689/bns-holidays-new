@@ -153,7 +153,7 @@ const Header = () => {
         title: "Western Europe",
         items: [
           { name: "France", path: "/Pages/france" },
-          { name: "Germany", path: "/Pages/germany" },
+          { name: "Germany", path: "/germany-landing1" },
           { name: "Italy", path: "/Pages/italy" },
           { name: "Switzerland", path: "/Pages/switzerland" },
         ],
