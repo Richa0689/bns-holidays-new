@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../components/Footer";
 import "./Visa.css";
 
 const visas = [
@@ -261,123 +262,127 @@ const Visa = () => {
   });
 
   return (
-    <div className="visa-container">
-      <h1 className="visa-title">Visa Services</h1>
+    <>
+      <div className="visa-container">
+        <h1 className="visa-title">Visa Services</h1>
 
-      <p className="visa-subtitle">
-        Get visa assistance for all countries with quick and easy processing.
-      </p>
+        <p className="visa-subtitle">
+          Get visa assistance for all countries with quick and easy processing.
+        </p>
 
-      {/* SEARCH */}
-      <div className="visa-search-wrapper">
-        <input
-          type="text"
-          placeholder="Search Visa Country..."
-          className="visa-search"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+        {/* SEARCH */}
+        <div className="visa-search-wrapper">
+          <input
+            type="text"
+            placeholder="Search Visa Country..."
+            className="visa-search"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
 
-      {/* FILTERS */}
-      <div className="visa-filters">
-        {["All", "Tourist", "Business", "Student"].map((filter) => (
-          <button
-            key={filter}
-            className={`filter-btn ${
-              activeFilter === filter ? "active-filter" : ""
-            }`}
-            onClick={() => setActiveFilter(filter)}
-          >
-            {filter}
-          </button>
-        ))}
-      </div>
+        {/* FILTERS */}
+        <div className="visa-filters">
+          {["All", "Tourist", "Business", "Student"].map((filter) => (
+            <button
+              key={filter}
+              className={`filter-btn ${
+                activeFilter === filter ? "active-filter" : ""
+              }`}
+              onClick={() => setActiveFilter(filter)}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
 
-      {/* GRID */}
-      <div className="visa-grid">
-        {filteredVisas.map((visa, index) => (
-          <div className="visa-card" key={index}>
-            <img src={visa.img} alt={visa.country} />
+        {/* GRID */}
+        <div className="visa-grid">
+          {filteredVisas.map((visa, index) => (
+            <div className="visa-card" key={index}>
+              <img src={visa.img} alt={visa.country} />
 
-            <div className="visa-content">
-              <h3>{visa.country}</h3>
+              <div className="visa-content">
+                <h3>{visa.country}</h3>
 
-              <p>{visa.desc}</p>
+                <p>{visa.desc}</p>
 
-              <div className="visa-category">
-                {visa.category} Tourist
-              </div>
+                <div className="visa-category">
+                  {visa.category} Tourist
+                </div>
 
-              <div className="visa-btn-group">
-                <button
-                  className="btn-apply"
-                  onClick={() => openApplyForm(visa.country)}
-                >
-                  Apply Now
-                </button>
+                <div className="visa-btn-group">
+                  <button
+                    className="btn-apply"
+                    onClick={() => openApplyForm(visa.country)}
+                  >
+                    Apply Now
+                  </button>
 
-                <button
-                  className="btn-docs"
-                  onClick={() => handleOpenPdf(visa.pdfLink)}
-                >
-                  Required Documents
-                </button>
+                  <button
+                    className="btn-docs"
+                    onClick={() => handleOpenPdf(visa.pdfLink)}
+                  >
+                    Required Documents
+                  </button>
+                </div>
               </div>
             </div>
+          ))}
+        </div>
+
+        {/* APPLY FORM MODAL */}
+        {showForm && (
+          <div className="modal-overlay" onClick={() => setShowForm(false)}>
+            <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+              <button
+                className="modal-close"
+                onClick={() => setShowForm(false)}
+              >
+                &times;
+              </button>
+
+              <h2 className="modal-title">Apply for {selectedCountry}</h2>
+
+              <form className="visa-form" onSubmit={sendToWhatsApp}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                  value={formData.name}
+                  onChange={handleInputChange}
+                />
+
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
+
+                <button type="submit" className="submit-btn">
+                  Submit on WhatsApp
+                </button>
+              </form>
+            </div>
           </div>
-        ))}
+        )}
       </div>
 
-      {/* APPLY FORM MODAL */}
-      {showForm && (
-        <div className="modal-overlay" onClick={() => setShowForm(false)}>
-          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="modal-close"
-              onClick={() => setShowForm(false)}
-            >
-              &times;
-            </button>
-
-            <h2 className="modal-title">Apply for {selectedCountry}</h2>
-
-            <form className="visa-form" onSubmit={sendToWhatsApp}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                required
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                required
-                value={formData.phone}
-                onChange={handleInputChange}
-              />
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-
-              <button type="submit" className="submit-btn">
-                Submit on WhatsApp
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
-    </div>
+      <Footer />
+    </>
   );
 };
 

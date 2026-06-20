@@ -170,3 +170,17 @@
     font-size: 12px;
   }
 }
+.footer .footer-col ul li a.footer-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: inherit !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
+}
+ 
+.footer .footer-col ul li a.footer-link:hover {
+  color: inherit !important;
+  /* text-decoration: underline !important; */
+}
+ 

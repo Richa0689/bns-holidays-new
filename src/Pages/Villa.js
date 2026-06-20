@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import Footer from "../components/Footer";
 import "./Villa.css";
 
 const villas = [
@@ -161,7 +162,7 @@ const villas = [
     id: 23,
     title: "The Haven - Grandeur",
     images: [
-      "https://img.vistarooms.com/gallery/the-haven-grandeur-4-bhk-villa-in-coorg-with-spacious-rooms-b3f081.jpg",
+      "https://www.thehavengrandeur.com/main-img/homepage/herosection/hero-2.jpeg",
       "https://img.vistarooms.com/gallery/the-haven-grandeur-4-bhk-villa-in-coorg-with-spacious-rooms-8d5023.jpg",
       "https://img.vistarooms.com/gallery/the-haven-grandeur-4-bhk-villa-in-coorg-with-spacious-rooms-307755.jpg",
       "https://img.vistarooms.com/gallery/the-haven-grandeur-4-bhk-villa-in-coorg-with-spacious-rooms-fc2bf6.jpg",
@@ -711,13 +712,13 @@ const villas = [
     id: 47,
     title: "The Tavern At Canary Farms",
     images: [
-      "https://img.vistarooms.com/gallery/villa-123-at-canary-farms-4-bhk-villa-in-lonavala-with-private-pool-and-spacious-rooms-629a9c.jpg",
-      "https://img.vistarooms.com/gallery/villa-123-at-canary-farms-4-bhk-villa-in-lonavala-with-private-pool-and-spacious-rooms-2e8a41.jpg",
-      "https://img.vistarooms.com/gallery/villa-123-at-canary-farms-4-bhk-villa-with-private-pool-7922dc.JPG",
-      "https://img.vistarooms.com/gallery/villa-123-at-canary-farms-4-bhk-villa-with-private-pool-e6d6e9.JPG",
-      "https://img.vistarooms.com/gallery/villa-123-at-canary-farms-4-bhk-villa-with-private-pool-4ed505.jpg",
-      "https://img.vistarooms.com/gallery/villa-123-at-canary-farms-4-bhk-villa-with-private-pool-a1c676.jpg",
-      "https://img.vistarooms.com/gallery/villa-123-at-canary-farms-4-bhk-villa-with-private-pool-a4c1ea.JPG",
+      "https://pix10.agoda.net/hotelImages/28187563/0/9d39f50c8333a36991c5162a5767d3b8.jpg?ca=24&ce=0&s=1024x768",
+      "https://th.bing.com/th/id/OLC.684yFYUlxUSQLw480x360?&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://th.bing.com/th/id/OLC.UsmGFyD3R45cEQ480x360?&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://pix10.agoda.net/hotelImages/28187563/0/a1b71742a63575404c911adc9c323142.jpg?ca=24&ce=0&s=1024x768",
+      "https://th.bing.com/th/id/OLC.xzpkTXN2Ca9mnQ480x360?&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://th.bing.com/th?id=OLC.duvC/l3V/YMAkw480x360&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://pix10.agoda.net/hotelImages/28187563/0/455ece540f987d9be4f9ed40804f54eb.jpg?ca=24&ce=0&s=1024x768",
     ],
      
     location: "Lonavala, India", priceNum: 64265, price: "₹64,265",
@@ -986,34 +987,9 @@ const Villa = () => {
             </div>
           </div>
         </div>
+        
       )}
-
-      {/* ── AREA FOOTER ── */}
-      <footer className="villa-area-footer">
-        <div className="villa-area-inner">
-          <div className="villa-area-header">
-            <h2 className="villa-area-title">Explore Villas by Area</h2>
-            <p className="villa-area-sub">Find your perfect stay across our curated destinations</p>
-          </div>
-          <div className="villa-area-grid">
-            {Object.entries(areaGroups).map(([location, titles]) => (
-              <div key={location} className="villa-area-card">
-                <div className="villa-area-card-top">
-                  <IconPin size={13} />
-                  <h4>{location}</h4>
-                </div>
-                <ul>
-                  {titles.map(t => <li key={t}>{t}</li>)}
-                </ul>
-                <span className="villa-area-count">
-                  {titles.length} villa{titles.length > 1 ? "s" : ""}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </footer>
-
+         <Footer />
     </div>
   );
 };

@@ -26,12 +26,12 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Explore</h4>
             <ul>
-              <li>Home</li>
+              <li><Link to="/" className="footer-link">Home</Link></li>
               <li>India Tour</li>
               <li>International Tour</li>
               <li>Fixed Departure</li>
-              <Link to="/villa" style={{ color: "inherit", textDecoration: "none" }}>Villa</Link>
-               <li><Link to="/visa"  style={{ color: "inherit", textDecoration: "none" }}>Visa</Link></li>
+              <li><Link to="/villa" className="footer-link">Villa</Link></li>
+              <li><Link to="/visa" className="footer-link">Visa</Link></li>
             </ul>
           </div>
 
