@@ -68,7 +68,8 @@
 }
 
 .footer-logo {
-  width: 130px;
+  height: auto;
+  width: 110px;
   display: block;
 }
 
@@ -101,9 +102,9 @@
   position: relative;
   z-index: 1;
   display: flex;
-  gap: 50px;
+  gap: 30px;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .footer-col {
@@ -172,17 +173,22 @@
   display: inline-block;
 }
 
+.footer-map-col {
+  flex: 0 0 240px;
+  min-width: 240px;
+  margin-left: auto;
+}
+ 
 .footer-map {
-  margin-top: 14px;
-  margin-bottom: 4px;
+  margin-top: 0;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--line);
 }
-
+ 
 .footer-map iframe {
   width: 100%;
-  height: 140px;
+  height: 260px;
   border: 0;
   display: block;
 }
@@ -240,38 +246,50 @@
 /* ============================================
    FOOTER MOBILE
    ============================================ */
-
+   
 @media (max-width: 768px) {
-
+ 
   .footer {
     padding: 48px 24px 0;
   }
-
+ 
   /* Stack left + right sections vertically */
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
   }
-
+ 
   /* Left section: full width instead of fixed 270px */
   .footer-left {
     width: 100%;
   }
-
+ 
   /* Right columns: wrap into 2x2 grid */
   .footer-columns {
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 28px 20px;
     width: 100%;
   }
-
+ 
   /* Each column: take half the row */
   .footer-col {
-    min-width: calc(50% - 14px);
-    flex: 1 1 calc(50% - 14px);
+    flex: 1 1 calc(50% - 10px);
+    min-width: calc(50% - 10px);
   }
-
+ 
+  /* Map: always its own full-width row, sitting cleanly under the grid */
+  .footer-map-col {
+    flex: 1 1 100%;
+    min-width: 100%;
+    margin-left: 0;
+    margin-top: 4px;
+  }
+ 
+  .footer-map iframe {
+    height: 210px;
+  }
+ 
   /* Social icons: slightly smaller */
   .icon {
     width: 38px;
@@ -279,33 +297,42 @@
     font-size: 14px;
   }
 }
-
+ 
+/* ---------- SMALL PHONE (≤480px): everything single-column ---------- */
 @media (max-width: 480px) {
-
+ 
   .footer {
     padding: 40px 18px 0;
   }
-
+ 
+  .footer-columns {
+    gap: 24px;
+  }
+ 
   /* Each column: full width on small phones */
   .footer-col {
-    min-width: 100%;
     flex: 1 1 100%;
+    min-width: 100%;
   }
-
+ 
   .footer-logo {
     width: 96px;
   }
-
+ 
   .bns {
     font-size: 13px;
   }
-
+ 
+  .footer-map iframe {
+    height: 190px;
+  }
+ 
   .footer-bottom {
     font-size: 12px;
     margin-top: 36px;
   }
 }
-
+ 
 @media (prefers-reduced-motion: reduce) {
   .footer,
   .footer * {

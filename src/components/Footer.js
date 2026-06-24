@@ -84,6 +84,11 @@ const Footer = () => {
               <li><FontAwesomeIcon icon={faEnvelope} className="contact-icon-inline" /><span>bnsholidays@bnsholidays.co.in</span></li>
               <li><FontAwesomeIcon icon={faLocationDot} className="contact-icon-inline" /><span>BNS Holidays, Office no A403, A Wing, Gera's imperium Gateway, Opp. Bhosari Metro Station, Pune, India</span></li>
             </ul>
+          </div>
+
+          {/* COLUMN 5 - MAP (new, last column, right corner) */}
+          <div className="footer-col footer-map-col">
+            <h4>Find Us</h4>
             <div className="footer-map">
               <iframe
                 src="https://www.google.com/maps?q=BNS+Holidays&ftid=0x3bc2b92d91d5ee87:0x9208c0c307eeaf87&output=embed"
