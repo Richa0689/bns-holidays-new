@@ -233,9 +233,9 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(135deg, var(--gold-500), var(--gold-400));
+  background: #f7bc09;
   text-decoration: none;
-  color: var(--navy-950);
+  color: var(--navy-850);
   padding: 9px 22px 9px 9px;
   border-radius: 999px;
   flex-shrink: 0;
@@ -246,7 +246,7 @@ body {
 
 .contact-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(184, 144, 47, 0.42);
+  /* box-shadow: 0 14px 30px rgba(184, 144, 47, 0.42); */
   color: var(--navy-950);
 }
 
