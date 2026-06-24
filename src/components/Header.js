@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "./images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,7 +14,16 @@ const Header = () => {
   const [results, setResults] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
+
+  // ── Compact header on scroll (premium sticky behaviour) ──
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 12);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const destinations = [
     { name: "USA", path: "/Pages/USA" },
@@ -153,7 +162,7 @@ const Header = () => {
         title: "Western Europe",
         items: [
           { name: "France", path: "/Pages/france" },
-          { name: "Germany", path: "/germany-landing1" },
+          { name: "Germany", path: "/Pages/germany" },
           { name: "Italy", path: "/Pages/italy" },
           { name: "Switzerland", path: "/Pages/switzerland" },
         ],
@@ -308,11 +317,13 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className={`site-header ${isScrolled ? "is-scrolled" : ""}`}>
       {/* ── MAIN HEADER ── */}
       <div className="main-header">
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <Link to="/" aria-label="BNS Holidays — Home">
+            <img src={logo} alt="BNS Holidays" />
+          </Link>
         </div>
 
         {/* SEARCH BOX */}
@@ -327,42 +338,12 @@ const Header = () => {
             <FontAwesomeIcon icon={faSearch} />
           </button>
           {results.length > 0 && (
-            <ul
-              className="search-results"
-              style={{
-                position: "absolute",
-                top: "100%",
-                left: 0,
-                right: 0,
-                backgroundColor: "#fff",
-                border: "1px solid #ddd",
-                borderRadius: "4px",
-                listStyle: "none",
-                padding: "0",
-                margin: "4px 0 0 0",
-                zIndex: 9999,
-                maxHeight: "250px",
-                overflowY: "auto",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-              }}
-            >
+            <ul className="search-results">
               {results.map((item, index) => (
                 <li
                   key={index}
+                  className="search-result-item"
                   onClick={() => handleSelect(item.path)}
-                  style={{
-                    padding: "10px 14px",
-                    cursor: "pointer",
-                    borderBottom: "1px solid #f0f0f0",
-                    color: "#333",
-                    fontSize: "14px",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#f5f5f5")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#fff")
-                  }
                 >
                   {item.name}
                 </li>
@@ -373,7 +354,10 @@ const Header = () => {
 
         {/* CONTACT BUTTON */}
         <a href="tel:+917066620673" className="contact-btn">
-          <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+          <span className="contact-shine" aria-hidden="true"></span>
+          <span className="contact-icon-wrap">
+            <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+          </span>
           <div className="contact-text">
             <span className="contact-label">Contact Us</span>
             <span className="contact-number">+91 70666 20673</span>
@@ -381,10 +365,17 @@ const Header = () => {
         </a>
 
         {/* HAMBURGER */}
-        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className={`hamburger ${menuOpen ? "is-active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+        >
           <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
         </button>
       </div>
+
+      <div className="header-divider" />
 
       {/* ── DESKTOP NAVBAR ── */}
       <div className="top-navbar desktop-nav">
@@ -399,7 +390,13 @@ const Header = () => {
             onMouseEnter={() => setOpenDropdown("india")}
             onMouseLeave={closeDropdown}
           >
-            <span className="nav-label">India ▾</span>
+            <span className="nav-label">
+              India
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                className={`nav-chevron ${openDropdown === "india" ? "open" : ""}`}
+              />
+            </span>
 
             {openDropdown === "india" && (
               <div className="mega-menu">
@@ -456,7 +453,13 @@ const Header = () => {
               closeDropdown();
             }}
           >
-            <span className="nav-label">International ▾</span>
+            <span className="nav-label">
+              International
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                className={`nav-chevron ${openDropdown === "international" ? "open" : ""}`}
+              />
+            </span>
 
             {openDropdown === "international" && (
               <div className="mega-menu">
@@ -517,7 +520,13 @@ const Header = () => {
             onMouseEnter={() => setOpenDropdown("fixed")}
             onMouseLeave={closeDropdown}
           >
-            <span className="nav-label">Fixed Departure ▾</span>
+            <span className="nav-label">
+              Fixed Departure
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                className={`nav-chevron ${openDropdown === "fixed" ? "open" : ""}`}
+              />
+            </span>
             {openDropdown === "fixed" && (
               <div className="fixed-dropdown" >
                 {fixedDestinations.map((dest, i) => (

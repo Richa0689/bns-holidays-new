@@ -1,101 +1,402 @@
-/* ================= RESET ================= */
-* {
+/* =====================================================================
+   BNS HOLIDAYS — PREMIUM HEADER
+   Palette: deep navy + muted gold on ivory, soft glass shadows.
+   Typography scoped to the header only, so the rest of the site is untouched.
+   ===================================================================== */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"); */
+
+/* ================= RESET (header-scoped) ================= */
+.site-header * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================= FIXED HEADER ================= */
-header {
+.site-header {
+  --navy-950: #205282;
+  --navy-900: #1f5180;
+  --navy-800: #0f2f4a;
+  --navy-700: #163d5c;
+  --gold-700: #9c7a1f;
+  --gold-600: #b8902f;
+  --gold-500: #c9a227;
+  --gold-400: #dab94f;
+  --gold-100: #f6efd8;
+  --ivory: #fbfaf6;
+  --white: #ffffff;
+  --ink: #29313a;
+  --muted: #5e6c7a;
+  --line: rgba(10, 34, 56, 0.08);
+  --shadow-sm: 0 2px 10px rgba(8, 24, 38, 0.07);
+  --shadow-md: 0 12px 30px rgba(8, 24, 38, 0.10);
+  --shadow-lg: 0 24px 60px rgba(8, 24, 38, 0.16);
+  --font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* font-family: var(--font); */
+}
+
+/* ================= FIXED HEADER SHELL ================= */
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgb(254, 254, 254);
+  background: var(--ivory);
+  transition: box-shadow 0.4s ease;
 }
 
-/* Prevent content overlap */
+/* slim brand accent line — purely decorative, zero layout impact */
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 2;
+  background: linear-gradient(90deg, var(--navy-900) 0%, var(--gold-500) 50%, var(--navy-900) 100%);
+}
+
+.site-header.is-scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+/* Prevent content overlap — matches total header height below */
 body {
-  margin-top: 120px;
+  margin-top: 186px;
+}
+
+/* ================= MAIN HEADER ================= */
+.main-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 26px;
+  padding: 17px 48px 15px;
+  background: var(--ivory);
+  transition: padding 0.4s ease;
+}
+
+.site-header.is-scrolled .main-header {
+  padding: 10px 48px;
+}
+
+.header-divider {
+  height: 1px;
+  background:rgb(79, 78, 78); 
+  opacity: 0.40;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 35px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 84px;
+  width: auto;
+  object-fit: contain;
+  transition: height 0.4s ease, transform 0.35s ease;
+}
+
+.logo a:hover img {
+  transform: scale(1.035);
+}
+
+.site-header.is-scrolled .logo img {
+  height: 58px;
+}
+
+/* ================= SEARCH BOX ================= */
+.search-box {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 13px 52px 13px 22px;
+  margin-left: 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(10, 34, 56, 0.21); 
+  background: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  outline: none;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-box input::placeholder {
+  color: #8c9aa8;
+  font-weight: 400;
+}
+
+.search-box input:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.search-box input:focus {
+  border-color: rgba(201, 162, 39, 0.45);
+  box-shadow: var(--shadow-md), 0 0 0 4px rgba(201, 162, 39, 0.14);
+}
+
+.search-btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: var(--navy-900);
+  color: var(--gold-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(10, 34, 56, 0.28);
+  transition: transform 0.28s ease, background 0.28s ease, box-shadow 0.28s ease;
+  margin-right: -32px;
+}
+
+.search-btn:hover {
+  transform: translateY(-50%) scale(1.07);
+  background: var(--navy-800);
+  box-shadow: 0 10px 22px rgba(10, 34, 56, 0.36);
+}
+
+.search-btn svg {
+  font-size: 14px;
+  transition: transform 0.25s ease;
+   
+}
+
+.search-btn:hover svg {
+  transform: scale(1.1);
+}
+
+/* SEARCH RESULTS */
+.search-results {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 9999;
+  box-shadow: var(--shadow-lg);
+  animation: headerFadeDown 0.22s ease;
+}
+
+.search-result-item {
+  padding: 11px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: background 0.18s ease, color 0.18s ease, padding-left 0.18s ease;
+}
+
+.search-result-item:hover {
+  background: var(--gold-100);
+  color: var(--navy-950);
+  padding-left: 18px;
+}
+
+/* ================= CONTACT BUTTON (primary CTA) ================= */
+.contact-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--gold-500), var(--gold-400));
+  text-decoration: none;
+  color: var(--navy-950);
+  padding: 9px 22px 9px 9px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  overflow: hidden;
+  /* box-shadow: 0 10px 24px rgba(184, 144, 47, 0.32); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(184, 144, 47, 0.42);
+  color: var(--navy-950);
+}
+
+/* shine sweep micro-interaction */
+.contact-shine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translateX(-130%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.contact-btn:hover .contact-shine {
+  transform: translateX(130%);
+}
+
+.contact-icon-wrap {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--navy-950);
+  color: var(--gold-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.contact-icon {
+  font-size: 15px;
+  animation: gentleRing 3.2s ease-in-out infinite;
+}
+
+@keyframes gentleRing {
+  0%, 70%, 100% { transform: rotate(0deg); }
+  74% { transform: rotate(14deg); }
+  78% { transform: rotate(-12deg); }
+  82% { transform: rotate(8deg); }
+  86% { transform: rotate(0deg); }
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  opacity: 0.75;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.contact-number {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+  display: none;
 }
 
 /* ================= TOP NAVBAR ================= */
 .top-navbar {
-  background: rgb(191, 227, 240);
-  padding: 10px 40px;
-  font-weight: bold;
-  font-size: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(251, 250, 246, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  /* border-bottom: 1px solid var(--line); */
 }
 
 .top-navbar ul {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  list-style: none;
   align-items: center;
-  font-size: 14px;
+  gap: 4px;
+  list-style: none;
+  padding: 7px 16px;
 }
 
 .top-navbar ul li {
   position: relative;
-  cursor: pointer;
-  padding: 0;
 }
 
-/* ================= NAV LINKS — NO BOX BY DEFAULT ================= */
 .top-navbar ul li > a,
 .nav-label {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 9px 20px;
-  font-size: 13.5px;
-  font-weight: 500;
-  color: #1a3c5e;
-  background: transparent;
-  border: 1.5px solid transparent;
-  border-radius: 6px;
-  cursor: pointer;
-  white-space: nowrap;
+  padding: 13px 19px;
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  color: var(--navy-800);
   text-decoration: none;
-  box-shadow: none;
-  transition: all 0.15s ease;
-  position: relative;
-  top: 0;
-  letter-spacing: 0.01em;
-  user-select: none;
+  white-space: nowrap;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
-/* ================= 3D BOX — HOVER ONLY ================= */
 .top-navbar ul li > a:hover,
 .nav-item:hover .nav-label {
-  background: linear-gradient(to bottom, #ffffff 0%, #dff0f8 100%);
-  color: #0f2a40;
-  border: 1.5px solid #90bcd4;
-  border-bottom: 3px solid #5a9ab5;
-  box-shadow: 0 4px 0 #5a9ab5, 0 5px 6px rgba(0, 0, 0, 0.18);
+  color: var(--navy-950);
+  background: var(--gold-100);
+  transform: translateY(-1px);
 }
 
-/* ================= ACTIVE / CLICK STATE ================= */
 .top-navbar ul li > a:active,
 .nav-label:active {
-  top: 4px;
-  background: linear-gradient(to bottom, #eaf6fd 0%, #c5e4f3 100%);
-  border: 1.5px solid #90bcd4;
-  border-bottom: 1.5px solid #5a9ab5;
-  box-shadow: 0 0 0 #5a9ab5, 0 1px 3px rgba(0, 0, 0, 0.15);
+  transform: translateY(0) scale(0.97);
 }
 
-/* ================= NAV ITEM ================= */
-.nav-item {
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+.nav-chevron {
+  font-size: 9px;
+  opacity: 0.55;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* ================= SIMPLE DROPDOWN ================= */
+.nav-item:hover .nav-chevron,
+.nav-chevron.open {
+  opacity: 1;
+}
+
+.nav-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* ================= MOBILE NAV WRAPPER VISIBILITY ================= */
+.desktop-nav {
+  display: block;
+}
+
+/* ================= LEGACY SIMPLE DROPDOWN (kept for compatibility) ================= */
 .dropdown {
   position: absolute;
   top: 120%;
@@ -105,35 +406,32 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 20px;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lg);
   z-index: 1000;
-  font-family: "georgia";
 }
 
 .dropdown li {
   list-style: none;
-  font-family: "georgia";
 }
 
 .dropdown li a {
   display: block;
   padding: 8px;
   text-decoration: none;
-  color: black;
-  border-radius: 4px;
+  color: var(--ink);
+  border-radius: 8px;
   background: none;
   border: none;
   box-shadow: none;
   font-size: 13.5px;
-  font-weight: 400;
-  top: 0;
+  font-weight: 500;
 }
 
 .dropdown li a:hover {
-  background: #f5f5f5;
-  color: #ff5a5f;
+  background: var(--gold-100);
+  color: var(--navy-950);
 }
 
 /* ================= MEGA MENU ================= */
@@ -141,156 +439,141 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 900px;
+  margin-top: 0;
+  width: 880px;
+  max-width: 92vw;
   display: flex;
-  background: #ffffff;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
   z-index: 999;
-  border-radius: 0 0 12px 12px;
+  border-radius: 18px;
   overflow: hidden;
-  border-top: 3px solid #ff5a5f;
-  font-family: "georgia";
+  border-top: 3px solid var(--gold-500);
+  animation: headerFadeDown 0.26s ease;
 }
 
 /* LEFT PANEL */
 .mega-left {
-  width: 200px;
-  background: #f8f9fa;
-  padding: 16px 12px;
-  border-right: 1px solid #eee;
+  width: 210px;
+  background: #f6f7f9;
+  padding: 20px 14px;
+  border-right: 1px solid var(--line);
   flex-shrink: 0;
-  font-family: "georgia";
 }
 
 .mega-left p {
-  padding: 10px 14px;
-  margin-bottom: 4px;
+  padding: 12px 16px;
+  margin-bottom: 5px;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 15px;
-  color: #444;
-  border-radius: 6px;
-  transition: background 0.2s, color 0.2s;
-  font-family: "georgia";
-  background: none;
-  border: none;
-  box-shadow: none;
-  top: 0;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--ink);
+  border-radius: 10px;
+  transition: background 0.22s ease, color 0.22s ease, transform 0.22s ease;
 }
 
 .mega-left p.active,
 .mega-left p:hover {
-  background: #ff5a5f;
-  color: #ffffff;
-  border-radius: 6px;
-  box-shadow: none;
-  border: none;
+  background: var(--navy-900);
+  color: var(--white);
+  transform: translateX(4px);
 }
 
 /* ================= MEGA RIGHT WITH MAP BACKGROUND ================= */
 .mega-right {
   display: flex;
-  gap: 30px 20px;
-  padding: 20px 24px;
+  gap: 30px 22px;
+  padding: 22px 28px;
   flex: 1;
   flex-wrap: wrap;
-
-  /* Map background settings */
   position: relative;
-background-size: cover;              /* Fill entire background */
-background-position: center center;  /* Center the image */
-background-repeat: no-repeat;
-transition: background-image 0.25s ease;
-min-height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+  min-height: 210px;
 }
 
-/* Semi-transparent white overlay — keeps text readable over the map */
+/* Soft ivory overlay keeps text crisp and premium over the map art */
 .mega-right::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.60); /* Adjust opacity: lower = more visible map */
+  background: rgba(251, 250, 246, 0.45);
   z-index: 0;
   pointer-events: none;
 }
 
-/* ================= MEGA COLUMN (must sit above overlay) ================= */
+/* ================= MEGA COLUMN ================= */
 .mega-column {
   position: relative;
-  z-index: 1;          /* Above the ::before overlay */
-  width: 200px;
+  z-index: 1;
+  width: 195px;
 }
 
 .mega-column h4 {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 700;
-  color: #111;
-  margin-bottom: 10px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #eee;
+  color: var(--navy-1000);
+  margin-bottom: 11px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
-
 
 .mega-column h4 a {
   text-decoration: none;
-  color: #111;
+  color: var(--navy-1000);
   background: none !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 0 !important;
-  top: 0 !important;
-  font-size: 13px !important;
+  font-size: 12.5px !important;
   font-weight: 700 !important;
   display: inline;
 }
 
 .mega-column h4 a:hover {
-  color: #ff5a5f !important;
-  background: none !important;
+  color: var(--gold-600) !important;
 }
 
 .mega-column p {
-  margin: 13px 0;
+  margin: 12px 0;
   font-size: 14px;
   cursor: pointer;
-  color: #555;
+  color: var(--ink);
 }
 
-/* NO BOX on mega menu item links */
 .mega-column p a {
   text-decoration: none;
-  color: #555;
+  color: var(--ink);
   background: none !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 0 !important;
-  top: 0 !important;
   font-size: 14px !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   display: inline;
-  transition: color 0.15s;
+  transition: color 0.18s ease, padding-left 0.18s ease;
 }
 
 .mega-column p a:hover {
-  color: #ff5a5f !important;
+  color: var(--gold-600) !important;
   padding-left: 4px !important;
-  background: none !important;
-  box-shadow: none !important;
 }
 
-/* ================= MAP BADGE (region label shown on map area) ================= */
+/* ================= MAP BADGE ================= */
 .map-badge {
   position: absolute;
   bottom: 12px;
   right: 16px;
   z-index: 2;
-  background: rgba(255, 90, 95, 0.12);
-  border: 1px solid rgba(255, 90, 95, 0.35);
-  color: #cc2a2a;
+  background: rgba(201, 162, 39, 0.12);
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  color: var(--gold-700);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -298,7 +581,6 @@ min-height: 200px;
   padding: 4px 10px;
   border-radius: 20px;
   pointer-events: none;
-  font-family: "georgia";
 }
 
 /* ================= FIXED DROPDOWN ================= */
@@ -306,165 +588,46 @@ min-height: 200px;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 200px;
-  background: #ffffff;
-  border: 1px solid #eee;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  padding: 8px 0;
+  margin-top: 0;
+  width: 220px;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  padding: 10px;
   z-index: 1000;
-  border-top: 3px solid #ff5a5f;
+  border-top: 3px solid var(--gold-500);
+  animation: headerFadeDown 0.24s ease;
 }
 
 .fixed-dropdown p {
-  padding: 10px 18px;
+  padding: 11px 16px;
   margin: 0;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 15px;
-  color: #333;
-  transition: background 0.15s, color 0.15s;
+  font-size: 14.5px;
+  color: var(--ink);
+  transition: background 0.18s ease, color 0.18s ease;
 }
 
-/* NO BOX on fixed dropdown links */
 .fixed-dropdown p a {
   text-decoration: none;
-  color: #333;
+  color: var(--ink);
   background: none !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 0 !important;
-  top: 0 !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
   display: inline;
 }
 
 .fixed-dropdown p:hover {
-  background: #fff5f5;
-  color: #ff5a5f;
+  background: var(--gold-100);
 }
 
 .fixed-dropdown p:hover a {
-  color: #ff5a5f !important;
-  background: none !important;
-}
-
-/* ================= CONTACT BUTTON ================= */
-.contact-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: linear-gradient(135deg,#f5c400,#FFB800);
-  text-decoration: none;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 25px;
-  flex-shrink: 0;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 12px rgba(17, 153, 142, 0.3);
-}
-
-.contact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(17, 153, 142, 0.45);
-  color: white;
-}
-
-.contact-icon {
-  font-size: 18px;
-  animation: ring 2s infinite;
-}
-
-@keyframes ring {
-  0%   { transform: rotate(0deg); }
-  10%  { transform: rotate(15deg); }
-  20%  { transform: rotate(-15deg); }
-  30%  { transform: rotate(10deg); }
-  40%  { transform: rotate(-10deg); }
-  50%  { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.contact-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.contact-label {
-  font-size: 11px;
-  font-weight: 500;
-  opacity: 0.9;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.contact-number {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-/* ================= MAIN HEADER ================= */
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 15px 40px;
-  background: white;
-}
-
-/* ================= LOGO ================= */
-.logo {
-  margin-left: auto;
-}
-
-.logo img {
-  height: 70px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* ================= SEARCH BOX ================= */
-.search-box {
-  position: relative;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.search-box input {
-  width: 102%;
-  padding: 15px 45px 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  outline: none;
-  background: rgb(244, 174, 124);
-}
-
-.search-btn {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  color: gray;
-  height: 0;
-  width: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.search-btn:hover {
-  background: #d1cfcf;
-}
-
-/* ================= HAMBURGER ================= */
-.hamburger {
-  display: none;
+  color: var(--gold-700) !important;
 }
 
 /* ================= MOBILE MENU ================= */
@@ -475,133 +638,164 @@ min-height: 200px;
 /* ============================================
    MOBILE STYLES
    ============================================ */
+@media (max-width: 992px) {
+  .main-header {
+    padding: 13px 20px;
+  }
+
+  .top-navbar ul {
+    gap: 8px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .top-navbar ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .top-navbar ul li > a,
+  .nav-label {
+    padding: 11px 16px;
+    font-size: 13.5px;
+  }
+}
+
 @media (max-width: 768px) {
   body {
-    margin-top: 80px;
+    margin-top: 82px;
+  }
+
+  .site-header::before {
+    height: 2px;
   }
 
   .main-header {
-    padding: 10px 16px;
+    grid-template-columns: auto 1fr auto auto;
+    padding: 11px 14px;
     gap: 10px;
   }
 
   .logo img {
-    height: 50px;
+    height: 48px;
   }
 
   .search-box {
-    flex: 1;
-    margin: 0 8px;
-    width: auto;
-    position: relative;
+    max-width: none;
   }
 
   .search-box input {
     width: 100%;
-    padding: 10px 44px 10px 12px;
-    font-size: 10px;
-    border-radius: 25px;
-    box-sizing: border-box;
+    padding: 10px 42px 10px 14px;
+    font-size: 12px;
   }
 
   .search-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
     width: 32px;
-    height: 31px;
-    background-color: rgb(244, 174, 124);
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 14px;
-    color: gray;
-  }
-
-  .search-btn:hover {
-    background: rgb(250, 143, 55);
-  }
-
-  .hamburger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(62, 62, 96);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    cursor: pointer;
-    flex-shrink: 0;
+    height: 32px;
+    right: 4px;
   }
 
   .desktop-nav {
     display: none;
   }
 
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy-900);
+    color: var(--gold-400);
+    border: none;
+    border-radius: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.25s ease, background 0.25s ease;
+    margin-left: 30px;
+  }
+
+  .hamburger:hover {
+    background: var(--navy-800);
+  }
+
+  .hamburger.is-active {
+    transform: rotate(90deg);
+  }
+
+/* hide the contact CTA on small screens — search bar gets the room instead */
+  .contact-btn {
+    display: none;
+  }
+
+  .map-badge {
+    display: none;
+  }
+
+  /* ── Mobile dropdown menu ── */
   .mobile-menu {
     display: block;
-    background: rgb(62, 62, 96);
+    position: relative;
+    background: var(--navy-950);
     width: 100%;
-    max-height: 70vh;
+    max-height: calc(100vh - 82px);
     overflow-y: auto;
     z-index: 999;
+    animation: headerFadeDown 0.3s ease;
+    box-shadow: var(--shadow-lg);
   }
 
   .mobile-menu ul {
     list-style: none;
-    padding: 0;
+    padding: 6px 0 14px;
     margin: 0;
   }
 
   .mobile-menu ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   }
 
-  /* Reset 3D on mobile links */
   .mobile-menu ul li a,
   .mobile-menu ul li > a {
     display: block;
-    padding: 14px 20px;
-    color: white !important;
+    padding: 15px 22px;
+    color: var(--white) !important;
     text-decoration: none;
     font-size: 15px;
+    font-weight: 600;
     background: none !important;
     border: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
-    top: 0 !important;
-    font-weight: 400;
   }
 
   .mobile-menu ul li a:hover {
-    background: rgba(255, 255, 255, 0.08) !important;
-    color: white !important;
+    background: rgba(201, 162, 39, 0.12) !important;
+    color: var(--gold-400) !important;
   }
 
   .mobile-nav-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 20px;
-    color: white;
+    padding: 15px 22px;
+    color: var(--white);
     font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background 0.2s ease;
   }
 
   .mobile-nav-title:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.06);
   }
 
   .chevron {
     font-size: 12px;
-    transition: transform 0.25s ease;
+    color: var(--gold-400);
+    transition: transform 0.3s ease;
   }
 
   .chevron.open {
@@ -609,63 +803,74 @@ min-height: 200px;
   }
 
   .mobile-submenu {
-    background: rgba(0, 0, 0, 0.25);
-    padding: 10px 20px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 8px 22px 16px;
+    animation: headerFadeIn 0.25s ease;
   }
 
   .mobile-region-title {
-    color: #f0c040;
-    font-size: 13px;
-    font-weight: 600;
-    margin: 12px 0 4px;
+    color: var(--gold-400);
+    font-size: 12.5px;
+    font-weight: 700;
+    margin: 14px 0 5px;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
   }
 
   .mobile-section-title {
-    color: #ddd;
-    font-size: 13px;
-    font-weight: 500;
-    margin: 8px 0 2px;
+    color: #dfe6ec;
+    font-size: 13.5px;
+    font-weight: 600;
+    margin: 9px 0 3px;
   }
 
   .mobile-item {
-    color: #bbb;
-    font-size: 13px;
-    padding: 4px 0 4px 10px;
+    color: #aeb9c4;
+    font-size: 13.5px;
+    padding: 5px 0 5px 12px;
     margin: 0;
     cursor: pointer;
   }
 
   .mobile-item a {
-    color: #bbb !important;
+    color: #aeb9c4 !important;
     text-decoration: none;
     background: none !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
-    font-size: 13px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    transition: color 0.18s ease;
   }
 
   .mobile-item:hover,
   .mobile-item a:hover {
-    color: white !important;
+    color: var(--white) !important;
   }
+}
 
-  .contact-btn {
-    padding: 8px 10px;
+/* ================= SHARED ANIMATIONS ================= */
+@keyframes headerFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-
-  .contact-text {
-    display: none;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  .contact-icon {
-    font-size: 20px;
-  }
+@keyframes headerFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-  /* Hide map badge on mobile */
-  .map-badge {
-    display: none;
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .site-header * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
   }
 }
