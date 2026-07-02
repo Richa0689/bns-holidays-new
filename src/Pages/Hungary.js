@@ -41,7 +41,7 @@ const tours = [
     dates: "5 Dates",
     price: "₹1,80,000",
     emi: "₹8,000/mo",
-    image: "https://i.ytimg.com/vi/CVHHKQW1v-g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDpHhuBTFGrVR4wXqQpgEDG9n7a7A"
+    image: "https://www.holidify.com/images/compressed/dest_pixa_18263.jpg"
   },
 ];
 

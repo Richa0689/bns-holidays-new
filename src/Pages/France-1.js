@@ -211,7 +211,7 @@ const WindmillsToEiffelTour = () => {
 Arrival in Amsterdam: I Amsterdam
         </>
       ),
-      img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&q=80",
+      img: "https://wallpapers.com/images/hd/red-sunset-at-amsterdam-canal-7d1zbmffikkvlhmi.jpg",
       desc: (
         <>
           Welcome to Amsterdam, Amsterdam is the Netherlands’ capital, known for its artistic heritage,
@@ -226,7 +226,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 2",
       title: "Amsterdam - Amsterdam One Day Hop on Hop off",
-      img: "https://images.unsplash.com/photo-1576924542622-772f3e7e9b5e?w=800&q=80",
+      img: "https://cdn-imgix.headout.com/media/images/0f0884b427944038f9bf861ffeb58c3c-20003-amsterdam-amsterdam-hop-on-hop-off-tour-01.jpg?auto=format&w=1216.3200000000002&h=760.2&q=210&crop=faces&fit=crop",
       desc: (
         <>
           Breakfast at Hotel.
@@ -242,7 +242,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 3",
       title: "Amsterdam – Zaanse Schans, Edam, Volendam & Marken Bus Tour",
-      img: "https://images.unsplash.com/photo-1490750967868-88df5691cc41?w=800&q=80",
+      img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/de/1a.jpg",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -261,7 +261,7 @@ Overnight Stay in Amsterdam.
     {
       day: "Day 4",
       title: "Amsterdam – Paris",
-      img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+      img: "https://res-5.cloudinary.com/gorealtravel/image/upload/f_auto,q_auto/v1713887876/production/marketing/component/6627da814cfa29000a3c3f2b/wizard_image/amsterdam_highlights_wizz.webp",
       desc: (
         <>
          Breakfast at hotel.<br/>
@@ -279,7 +279,7 @@ Overnight stay in Paris.
     {
       day: "Day 5",
       title: "Paris – Paris Hop on Hop off + Eiffel Tower Summit Entrance Ticket + Seine River Cruise Ticket",
-      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+      img: "https://media.istockphoto.com/id/876071250/photo/eiffel-tower-and-the-seine-river-in-paris-france.jpg?s=170667a&w=0&k=20&c=Body1wPckW9jMVUL-kS0KbkJEVF9PuZ33ub2ZhkQj-M=",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -297,7 +297,7 @@ Overnight Stay in Paris
     {
       day: "Day 6",
       title: "Paris – Montmartre Walking Tour with a Local Guide",
-      img: "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=800&q=80",
+      img: "https://cdn.getyourguide.com/image/format=auto,fit=contain,gravity=auto,quality=60,width=1440,height=650,dpr=1/tour_img/a5fc36f8fc0742994ad1f04c3c8784b86762cadb3aabf1f9b13b8a46d4ea6f59.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -317,7 +317,7 @@ Overnight Stay in Paris
     {
       day: "Day 7",
       title: "Paris – Departure",
-      img: "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=800&q=80",
+      img: "https://media.sciencephoto.com/image/c0013085/800wm/C0013085-Airport_departure_gates,_Paris.jpg",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -333,7 +333,7 @@ After breakfast, proceed to Paris Airport with a private transfer for your onwar
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+          src="https://wallpapers.com/images/hd/best-4k-uhd-eiffel-tower-x6b9o4zf0oi3dg4s.jpg"
           alt="Amsterdam Paris Tour"
         />
         <div className="hero-content">
@@ -350,19 +350,19 @@ After breakfast, proceed to Paris Airport with a private transfer for your onwar
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/2827349.jpg" alt="" />
             <p>Amsterdam, Netherlands</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1490750967868-88df5691cc41?w=600&q=80" alt="" />
+            <img src="https://i.dailymail.co.uk/1s/2020/04/30/17/27832488-8272887-The_famous_Keukenhof_windmill_in_an_image_taken_by_Albert_Dros_w-a-140_1588262447385.jpg" alt="" />
             <p>Keukenhof & Windmills</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="" />
+            <img src="https://a-static.besthdwallpaper.com/france-paris-eiffel-tower-city-night-view-wallpaper-3840x2400-110960_9.jpg" alt="" />
             <p>Paris, France</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/1804418.jpg" alt="" />
             <p>Palace of Versailles</p>
           </div>
         </div>

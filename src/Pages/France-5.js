@@ -211,7 +211,7 @@ const SpanishFrenchRivieraTour = () => {
 Arrival in Barcelona: A Perfect Beginning to Your European Holiday
         </>
       ),
-      img: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80",
+      img: "https://barcelona-insider.com/wp-content/uploads/2025/07/Is-Barcelona-a-Walkable-City-Header-1024x576.jpg",
       desc: (
         <>
           Welcome to Barcelona, a vibrant city known for its artistic heritage, stunning architecture, sun-kissed
@@ -227,7 +227,7 @@ Overnight Stay in Barcelona
     {
       day: "Day 2",
       title: " Highlight of the Day: Sagrada Familia Entry Ticket & Barcelona Hop-on Hop-off Tour",
-      img: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80",
+      img: "https://sagrada-familia-tickets.net/wp-content/uploads/screenshot_3.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -243,7 +243,7 @@ Overnight Stay in Barcelona
     {
       day: "Day 3",
       title: "Barcelona – Montserrat Tour",
-      img: "https://images.unsplash.com/photo-1525220964581-831e70d9d48a?w=800&q=80",
+      img: "https://mediaim.expedia.com/localexpert/48554727/9fcc84e1-1a57-423f-ad60-6d45f4a46f76.jpg",
       desc: (
         <>
         Breakfast at Hotel.<br/>
@@ -259,7 +259,7 @@ Overnight Stay in Barcelona
     {
       day: "Day 4",
       title: "Barcelona – Nice",
-      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+      img: "https://www.roadaffair.com/wp-content/uploads/2021/10/la-sagrada-familia-barcelona-spain-shutterstock_1994690510.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -275,7 +275,7 @@ Overnight Stay in Nice
     {
       day: "Day 5",
       title: "Nice – Hop on Hop off Tour",
-      img: "https://images.unsplash.com/photo-1491166617655-0723a4680b51?w=800&q=80",
+      img: "https://framerusercontent.com/images/JAu9vHS6y3TVLoIJNzVUDbC5BU8.png",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -290,7 +290,7 @@ Overnight Stay in Nice
     {
       day: "Day 6",
       title: "Nice – French Riviera Day Tour",
-      img: "https://images.unsplash.com/photo-1555993539-1732b0258235?w=800&q=80",
+      img: "https://tse1.mm.bing.net/th/id/OIP.CKQ3L7CqdXTF5_ZqiR7-lQHaEJ?r=0&cb=thfc1falcon4&rs=1&pid=ImgDetMain&o=7&rm=3",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -313,7 +313,7 @@ Overnight Stay in Nice
     {
       day: "Day 7",
       title: "Nice – Departure",
-      img: "https://images.unsplash.com/photo-1520491260-01f2c7b1f4f2?w=800&q=80",
+      img: "https://img.freepik.com/premium-photo/nice-cote-dazur-airport-departure-area_917664-3885.jpg?w=1800",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -329,7 +329,7 @@ After breakfast, proceed to Nice Airport with a private transfer for your onward
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+          src="https://wallpaperaccess.com/full/3509702.jpg"
           alt="Spanish French Riviera Delight Tour"
         />
         <div className="hero-content">
@@ -346,19 +346,19 @@ After breakfast, proceed to Nice Airport with a private transfer for your onward
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&q=80" alt="" />
+            <img src="https://media.istockphoto.com/id/471946319/photo/airport-lounge.jpg?s=170667a&w=0&k=20&c=XDJRlyeaqIB1ePEgWL0hknSF5xl94Pq-FwZ_1tObkhg=" alt="" />
             <p>Sagrada Família, Barcelona</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1525220964581-831e70d9d48a?w=600&q=80" alt="" />
+            <img src="https://blog.guruwalk.com/wp-content/uploads/2025/08/las-ramblas-barcelona.webp" alt="" />
             <p>Las Ramblas, Barcelona</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1491166617655-0723a4680b51?w=600&q=80" alt="" />
+            <img src="https://a.cdn-hotels.com/gdcs/production67/d1598/ef47e715-d543-4f3e-b13e-4f3e65fd9722.jpg" alt="" />
             <p>Promenade des Anglais, Nice</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="" />
+            <img src="https://wallpapercave.com/wp/wp7868594.jpg" alt="" />
             <p>Monaco & Monte Carlo</p>
           </div>
         </div>

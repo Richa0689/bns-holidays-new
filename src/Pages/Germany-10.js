@@ -212,7 +212,7 @@ Arrival in Frankfurt: A Magical Start to Your Germany
 
         </>
       ),
-      img: "https://images.unsplash.com/phow=800&q=80",
+      img: "https://www.tripsavvy.com/thmb/W89qe2xNn1W4H17jtdJ-GPV3jms=/2121x1414/filters:fill(auto,1)/GettyImages-521897359-9fc9f89a17324745b14ce93e0a857054.jpg",
       desc: (
         <>
           Welcome to Frankfurt, the vibrant gateway to Germany! Upon arriving at Frankfurt Airport (Flughafen
@@ -229,7 +229,7 @@ Overnight Stay in Frankfurt
     {
       day: "Day 2",
       title: "Frankfurt - Frankfurt hop on hop off bus tour - 24 Hours",
-      img: "https://images.unsplash.com/photo-169b4?w=800&q=80",
+      img: "https://cdn-imgix.headout.com/media/images/46b09f29eceee08e590f0b7ddca9de1e-15988-frankfurt-24-hour-hop-on-hop-off-skyline---express-tour-of-frankfurt-03.jpg",
       desc: (
         <>
          After breakfast, embark on your Frankfurt Hop-On Hop-Off Bus Tour on a shared basis. If you’re
@@ -246,7 +246,7 @@ Overnight Stay in Frankfurt
     {
       day: "Day 3",
       title: "Frankfurt - Heidelberg",
-      img: "https://images.unsplash.com/photo-14dd2b?w=800&q=80",
+      img: "https://images.musement.com/cover/0001/100/thumb_99355_cover_header.jpeg",
       desc: (
         <>
           After breakfast, catch a direct train from Frankfurt to Heidelberg. If you’re looking for a quick,
@@ -262,7 +262,7 @@ Overnight Stay in Heidelberg
     {
       day: "Day 4",
       title: "Heidelberg – Heidelberg old town walking tour",
-      img: "https://images.unsplash.com/phd630?w=800&q=80",
+      img: "https://cdn.travelersuniverse.com/media/heidelberg-experience-our-history-1-5h-walking-tour-through-the-old-town-t797854-1.jpg",
       desc: (
         <>
           After breakfast, embark on your Heidelberg Old Town Walking Tour on a shared basis. If you want to
@@ -278,7 +278,7 @@ Overnight Stay in Heidelberg
     {
       day: "Day 5",
       title: "Heidelberg – Munich",
-      img: "https://images.unsplash.com/photo-154bc?w=800&q=80",
+      img: "https://res.cloudinary.com/gorealtravel/image/upload/f_auto,q_auto/f_auto,fl_lossy,q_auto,w_1200,h_600/v1718195517/production/marketing/itinerary/6669632f346cdb4ff2ca48c6/marketing_picture/6669953d031291000a929554/file/heidelberg-castle-overlook-small.webp",
       desc: (
         <>
           After breakfast, catch a direct train from Heidelberg to Munich. If you’re looking for a quick and
@@ -294,7 +294,7 @@ Overnight Stay in Munich
     {
       day: "Day 6",
       title: "Munich - Munich hop on hop off bus tour - 24 hours",
-      img: "https://images.unsplash.com/photo-156097?w=800&q=80",
+      img: "https://cdn-imgix.headout.com/media/images/91f66e7ea566e6ee682b9247883ba6b5-25616--citysightseeing-munich--24-48-hr-hop-on-hop-off---round-trip-munich-04.jpg?auto=format&w=702.4499999999999&h=401.4&q=90&fit=crop&ar=7:4&crop=faces",
       desc: (
         <>
           After breakfast, embark on your Munich Hop-On Hop-Off Bus Tour on a shared basis. If you want to
@@ -309,7 +309,7 @@ Overnight Stay in Munich
     {
       day: "Day 7",
       title: "Munich",
-      img: "https://images.unsplash.com/photo-156735b04d6?w=800&q=80",
+      img: "https://wallpaperaccess.com/full/1095192.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -325,7 +325,7 @@ After breakfast and proceed to Munich airport with private transfer.
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+          src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1280,h_852/w_79,x_14,y_14,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/qijkza7tzxbi0pj8uzko/TourprivadodeFrankfurtaHeidelberg:Castillo,cascoantiguoyvistaalr%C3%ADo.jpg"
           alt="Frankfurt Heidelberg Munich Tour"
         />
         <div className="hero-content">
@@ -342,19 +342,19 @@ After breakfast and proceed to Munich airport with private transfer.
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/p17-7fd91fc51a46?w=600&q=80" alt="" />
+            <img src="https://www.deutschland.de/sites/default/files/media/image/TdT_05032020_Frankfurt_Skyline.jpg" alt="" />
             <p>Frankfurt, Germany</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/ph94-9661b134dd2b?w=600&q=80" alt="" />
+            <img src="https://www.mayflowercruisesandtours.com/wp-content/uploads/2025/05/Heidelberg-Castle.jpg" alt="" />
             <p>Heidelberg, Germany</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/82-083862f3d630?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/5643847.jpg" alt="" />
             <p>Munich, Germany</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com10fe8719e047?w=600&q=80" alt="" />
+            <img src="https://foundtheworld.com/wp-content/uploads/2016/08/Neuschwanstein-Castle-7.jpg" alt="" />
             <p>Neuschwanstein Castle, Bavaria</p>
           </div>
         </div>

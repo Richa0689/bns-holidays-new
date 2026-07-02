@@ -211,7 +211,7 @@ const DenmarkGermanyTour = () => {
 Welcome to Copenhagen
         </>
       ),
-      img: "https://images.unsplash.com/photo-1513622470522-26c3cbc?w=800&q=80",
+      img: "https://editorial01.shutterstock.com/preview-440/13087689a/9d070b8f/Shutterstock_13087689a.jpg",
       desc: (
         <>
          Welcome to Copenhagen! Upon arrival, you will enjoy a private transfer from the airport to your hotel.
@@ -225,7 +225,7 @@ Overnight Stay in Copenhagen
     {
       day: "Day 2",
       title: "Copenhagen – Group Walking Tour on Shared Basis & Copenhagen Canal Cruise Ticket",
-      img: "https://images.unsplash.com/photo-1529896839903-d894c971?w=800&q=80",
+      img: "https://www.routesnorth.com/wp-content/uploads/2018/10/copenhagen-boat-tours.jpg",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -245,7 +245,7 @@ Overnight Stay in Copenhagen
     {
       day: "Day 3",
       title: "Copenhagen – The Forest Tower & Forgotten Giants Trolls Trip from Copenhagen on SIC basis(Forest Tower Entrance Not Included)",
-      img: "https://images.unsplash.com/photo-1527864550417-7fd1a46?w=800&q=80",
+      img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/15/6e/96/b9.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -261,7 +261,7 @@ Overnight Stay in Copenhagen.
     {
       day: "Day 4",
       title: "Copenhagen – Hamburg",
-      img: "https://images.unsplash.com/photo-1600618538034-fc8b9b4?w=800&q=80",
+      img: "https://cdn-goeuro.com/static_content/web/content/view/main-train-stations-hamburg.jpg",
       desc: (
         <>
           Breakfast at Hotel. Check out from the Hotel.<br/>
@@ -277,7 +277,7 @@ Overnight Stay in Hamburg
     {
       day: "Day 5",
       title: "Hamburg – Hamburg Old Town guided Walking tour on Shared Basis",
-      img: "https://images.unsplash.com/photo-1467269204594-9134dd2b?w=800&q=80",
+      img: "https://i.world-tourism.org/m/hamburg-old-town-highlights-private-walking-tour-t490094-1.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -294,7 +294,7 @@ Overnight Stay in Hamburg
     {
       day: "Day 6",
       title: "Hamburg – Berlin",
-      img: "https://images.unsplash.com/photo-1595867818082-2f3d630?w=800&q=80",
+      img: "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=1920,dpr=1/tour_img/749cc0f82311899ff0825cee69ae05a52a66df52163e8d3a184e15e772d08607.jpg",
       desc: (
         <>
           Breakfast at Hotel. Check out from the Hotel.<br/>
@@ -310,7 +310,7 @@ Overnight Stay in Berlin
     {
       day: "Day 7",
       title: "Berlin - Berlin 01 Day Hop on Hop Off Bus Tour with Berlin TV Tower Ticket",
-      img: "https://images.unsplash.com/photo-1513622470522-26854bc?w=800&q=80",
+      img: "https://cdn-imgix.headout.com/media/images/b07a04fb3f5431e364823f2dadba2f13-CitySightseeing-24-48-HrHop-OnHop-OffBerlinTour.jpg?auto=format&w=1599.9999999999998&h=900&q=90&fit=crop&ar=16:9&crop=faces",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -329,7 +329,7 @@ Overnight Stay in Berlin
     {
       day: "Day 8",
       title: "Berlin",
-      img: "https://images.unsplash.com/photo-1567359781514-32b04d6?w=800&q=80",
+      img: "https://thumbs.dreamstime.com/b/berlin-brandenburg-airport-ber-as-seen-plane-tarmac-germany-april-374745113.jpg",
       desc: (
         <>
           Breakfast at Hotel. Check out from the Hotel.<br/>
@@ -362,19 +362,19 @@ Private transfer from Berlin Hotel to Berlin Airport.
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/ph1513622470522-26c3c8a854bc?w=600&q=80" alt="" />
+            <img src="https://www.tripsavvy.com/thmb/q7jygtkgX7w-3LIQACCRqChuBEw=/5700x3800/filters:no_upscale():max_bytes(150000):strip_icc()/facade-of-a-museum--ny-carlsberg-glyptotek--copenhagen--denmark-74065481-2f67f89e83a848898cc2c8011627cf04.jpg" alt="" />
             <p>Copenhagen, Denmark</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-864550417-7fd91fc51a46?w=600&q=80" alt="" />
+            <img src="https://www.tripsavvy.com/thmb/nyWRusyTwpbep7GyLvwRYga3dRM=/2118x1416/filters:fill(auto,1)/frankfurt-am-main-skyline-at-dusk-1039299324-93e0654e89c24a25b7e267d5496c848b.jpg" alt="" />
             <p>Frankfurt, Germany</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-14672594-9661b134dd2b?w=600&q=80" alt="" />
+            <img src="https://cdn.britannica.com/53/99653-050-FBD40F73/Heidelberg-Castle-foreground-Old-Bridge-Ger.jpg" alt="" />
             <p>Heidelberg, Germany</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-15958082-083862f3d630?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/1095183.jpg" alt="" />
             <p>Munich, Germany</p>
           </div>
         </div>

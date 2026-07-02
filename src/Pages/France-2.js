@@ -211,7 +211,7 @@ const BestOfSwissFranceTour = () => {
 Welcome to Paris – The City of Lights!
         </>
       ),
-      img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+      img: "https://tse1.mm.bing.net/th/id/OIP.hYjX5M39By3SSbccbGntPwHaEK?r=0&cb=thfc1falcon4&rs=1&pid=ImgDetMain&o=7&rm=3",
       desc: (
         <>
          Arrive at Paris Airport and meet your driver for a smooth private transfer to your hotel. After checkin, relax or explore the charming streets, cafés, and landmarks nearby.<br/>
@@ -222,7 +222,7 @@ Overnight Stay in Paris
     {
       day: "Day 2",
       title: "Paris Hop-on Hop-off Tour + Eiffel Tower (2nd Level)",
-      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+      img: "https://worldinparis.com/wp-content/uploads/2022/06/Batobus-Hop-On-Hop-Off-Paris.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -245,7 +245,7 @@ Overnight Stay in Paris
     {
       day: "Day 3",
       title: " Paris → Geneva",
-      img: "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=800&q=80",
+      img: "https://wallpaperbat.com/img/1944650-fond-decran-magnifique-day-trip-from-paris-lake-geneva-beautiful-lakes.jpg",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -261,7 +261,7 @@ Overnight Stay in Geneva
     {
       day: "Day 4",
       title: " Excursion to Glacier 3000",
-      img: "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?w=800&q=80",
+      img: "https://tse1.mm.bing.net/th/id/OIP.uVhdxevmkx4tAVYbiFqLIQHaE8?r=0&cb=thfc1falcon4&rs=1&pid=ImgDetMain&o=7&rm=3",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -276,7 +276,7 @@ Overnight Stay in Geneva
     {
       day: "Day 5",
       title: "Geneva → Zurich",
-      img: "https://images.unsplash.com/photo-1573108724029-4c46571d6490?w=800&q=80",
+      img: "https://wallpaperaccess.com/full/8466177.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -291,7 +291,7 @@ Overnight Stay in Zurich
     {
       day: "Day 6",
       title: "Lindt Chocolate Factory Visit",
-      img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      img: "https://i.ytimg.com/vi/-L8kzBe0IWA/maxresdefault.jpg",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -306,7 +306,7 @@ Overnight Stay in Zurich
     {
       day: "Day 7",
       title: "Excursion to Mt. Titlis with Ice Flyer",
-      img: "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=800&q=80",
+      img: "https://live.staticflickr.com/2488/4108113332_94c87a7184_b.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -324,7 +324,7 @@ Overnight Stay in Zurich
     {
       day: "Day 8",
       title: "Zurich – Departure",
-      img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80",
+      img: "https://cdn.pixabay.com/photo/2014/05/01/16/59/airport-335589_1280.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -341,7 +341,7 @@ Your memorable France & Switzerland journey comes to an end with beautiful Alpin
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+          src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/11/29111159/lauterbrunnen.jpeg"
           alt="Best of Swiss & France Tour"
         />
         <div className="hero-content">
@@ -358,19 +358,19 @@ Your memorable France & Switzerland journey comes to an end with beautiful Alpin
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="" />
+            <img src="https://tse3.mm.bing.net/th/id/OIP.h8_khAzOayGbgKBRsPVZZAHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" />
             <p>Paris, France</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/1192125.jpg" alt="" />
             <p>Palace of Versailles</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1573108724029-4c46571d6490?w=600&q=80" alt="" />
+            <img src="https://images.wallpapersden.com/image/download/geneva-switzerland-capital_Zmtua2WUmZqaraWkpJRnbGdrrWZqaG4.jpg" alt="" />
             <p>Geneva, Switzerland</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=600&q=80" alt="" />
+            <img src="https://wallpaperbat.com/img/1944658-photo-switzerland-geneva-lake-geneva-ferris-wheel-motorboat-cities.jpg" alt="" />
             <p>Zurich, Switzerland</p>
           </div>
         </div>

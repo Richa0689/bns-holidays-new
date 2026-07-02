@@ -211,7 +211,7 @@ const AmsterdamCologneFrankfurtTour = () => {
 Arrival in Amsterdam: A Magical Start to Your Netherland
         </>
       ),
-      img: "https://images.unsplash.com/phot666-13e3e96b5017?w=800&q=80",
+      img: "https://tse2.mm.bing.net/th/id/OIP.ttFhvjczG_iOIbU3dftzFAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
       desc: (
         <>
           Welcome to Amsterdam, the Eternal City! Upon arriving at Amsterdam Airport (Amsterdam Airport
@@ -231,7 +231,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 2",
       title: "Amsterdam - Amsterdam hop on hop off bus tour - 24 Hours",
-      img: "https://images.unsplash.com/p76924542622-772281b13aa8?w=800&q=80",
+      img: "https://cdn-imgix.headout.com/media/images/652de72c7c379eb3f5b3a0a7f23a4bf3-amsterdam-07.jpg?auto=format&q=90&fit=crop&crop=faces",
       desc: (
         <>
           After breakfast, embark on your Amsterdam Hop-On Hop-Off Bus Tour on a shared basis. If you
@@ -252,7 +252,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 3",
       title: "Amsterdam - Cologne",
-      img: "https://images.unsplash.com/pho7521464027-f127ff144326?w=800&q=80",
+      img: "https://wallpapercrafter.com/desktop/153121-Amsterdam-Netherlands-cityscape-long-exposure-flowers-plants.jpg",
       desc: (
         <>
          After breakfast, catch a direct train from Amsterdam to Cologne. If you’re looking for a quick,
@@ -266,7 +266,7 @@ Overnight Stay in Cologne
     {
       day: "Day 4",
       title: "Cologne – Cologne hop on hop off bus tour - 24 Hours",
-      img: "https://images.unsplash.com/pho9946347371-68eb71b16afc?w=800&q=80",
+      img: "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=450,height=450,dpr=2/tour_img/637765eba085b.jpeg",
       desc: (
         <>
          After breakfast, proceed for your Cologne Hop-On Hop-Off Bus Tour on a shared basis. If you’re
@@ -284,7 +284,7 @@ Overnight Stay in Cologne
     {
       day: "Day 5",
       title: "Cologne – Frankfurt",
-      img: "https://images.unsplash.com/ph467269204594-9661b134dd2b?w=800&q=80",
+      img: "https://i.pinimg.com/originals/f9/e4/e2/f9e4e2d58792d1f4e032fb2d5a491e6a.jpg",
       desc: (
         <>
          After breakfast, board your train from Cologne heading to Frankfurt am Main. If you're looking for a
@@ -302,7 +302,7 @@ Overnight Stay in Frankfurt
     {
       day: "Day 6",
       title: "Frankfurt - Frankfurt hop on hop off bus tour - 24 hours",
-      img: "https://images.unsplash.com/pho527864550417-7fd91fc51a46?w=800&q=80",
+      img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/08/4a/71/6d.jpg",
       desc: (
         <>
           After breakfast, proceed for your Frankfurt Hop-On Hop-Off Bus Tour on a shared basis. If you’re
@@ -318,7 +318,7 @@ museums, shopping districts, and historical sites at your own pace.<br/>Overnigh
     {
       day: "Day 7",
       title: "Frankfurt",
-      img: "https://images.unsplash.com/pho-1600618538034-fc86e9a6b9b4?w=800&q=80",
+      img: "https://assets.hrewards.com/assets/jpg.xxlarge_SHR_Frankfurt_Airport_exterior_facade_evening_mood_neu_e2f7ff8071.jpg?optimize",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -335,7 +335,7 @@ After breakfast and proceed to Frankfurt airport with private transfer.
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+          src="https://rare-gallery.com/uploads/posts/837084-Bridges-Rivers-Houses-Germany-Frankfurt-Evening.jpg"
           alt="Amsterdam Cologne Frankfurt Tour"
         />
         <div className="hero-content">
@@ -352,19 +352,19 @@ After breakfast and proceed to Frankfurt airport with private transfer.
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1534350666-13e3e96b5017?w=600&q=80" alt="" />
+            <img src="https://canalsofamsterdam.com/wp-content/uploads/2022/07/Canal-cruises-Amsterdam-scaled.jpg" alt="" />
             <p>Amsterdam, Netherlands</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-15675217-f127ff144326?w=600&q=80" alt="" />
+            <img src="https://windows10spotlight.com/wp-content/uploads/2025/11/f5f9b398be2e44a111bf503136804231.jpg" alt="" />
             <p>Zaanse Schans, Netherlands</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-159971-68eb71b16afc?w=600&q=80" alt="" />
+            <img src="https://th.bing.com/th/id/R.f0cf4c50184776a46d0aac1e3ea62bf9?rik=Y%2bqWslGN%2bEKSMw&riu=http%3a%2f%2fwww.citypictures.org%2fdata%2fmedia%2f217%2fCologne_Cathedral_and_Hohenzollern_Bridge_Cologne_Germany.jpg&ehk=p4vP7m%2bNFMlbjw8vtaYSYwrxX%2bdmV0HMziDiGo0ZuvY%3d&risl=&pid=ImgRaw&r=0" alt="" />
             <p>Cologne, Germany</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-15278647-7fd91fc51a46?w=600&q=80" alt="" />
+            <img src="https://www.frasersproperty.com/content/dam/frasers-hospitality/english/properties/germany/frankfurt/capri-by-fraser-frankfurt/images/news/christmas-market-frankfurt-banner.jpg" alt="" />
             <p>Frankfurt, Germany</p>
           </div>
         </div>

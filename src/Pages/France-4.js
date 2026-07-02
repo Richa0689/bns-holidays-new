@@ -211,7 +211,7 @@ const AmsterdamToParisEscapeTour = () => {
 Arrival in Amsterdam: A Charming Beginning to Your European Holiday
         </>
       ),
-      img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&q=80",
+      img: "https://amsterdambooking.com/wp-content/uploads/2025/07/What-to-see-in-Amsterdam-in-11-days-1024x585.jpg",
       desc: (
         <>
           Welcome to Amsterdam, a city known for its artistic heritage, scenic canals, and vibrant culture. Upon
@@ -226,7 +226,7 @@ Overnight Stay in Amsterdam.
     {
       day: "Day 2",
       title: "Highlight of the Day: Amsterdam Hop-on Hop-off Tour & Canal Cruise Ticket.",
-      img: "https://images.unsplash.com/photo-1576924542622-772f3e7e9b5e?w=800&q=80",
+      img: "https://da28ojrjakn6f.cloudfront.net/tickets/2001/NEW/img_1666170873_1666170936__am2.jpg?v=1.1.0",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -242,7 +242,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 3",
       title: "Zaanse Schans, Edam, Volendam & Marken Bus Tour from Amsterdam on SIC basis.",
-      img: "https://images.unsplash.com/photo-1490750967868-88df5691cc41?w=800&q=80",
+      img: "https://admin.freetour.com/images/tours/33535/tour-to-zaanse-schans-edam-volendam-and-marken-05.jpg",
       desc: (
         <>
          Admire the famous windmills of Zaanse Schans, attend a clog-making demonstration, and sample
@@ -262,7 +262,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 4",
       title: "Amsterdam – Brussels",
-      img: "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=800&q=80",
+      img: "https://wallpapercave.com/wp/wp2209219.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -278,7 +278,7 @@ Overnight Stay in Brussels.
     {
       day: "Day 5",
       title: "Brussels – Guided Walking Tour",
-      img: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800&q=80",
+      img: "https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_1600,h_840/https://travelonquest.com/wp-content/uploads/2025/01/Top-Self-Walking-Tours-in-Brussels-1.png",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -299,7 +299,7 @@ Overnight Stay in Brussels.
     {
       day: "Day 6",
       title: "Brussels – Paris.",
-      img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+      img: "https://images8.alphacoders.com/690/thumb-1920-690373.jpg",
       desc: (
         <>
           Breakfast at Hotel.
@@ -316,7 +316,7 @@ charm.
     {
       day: "Day 7",
       title: "Paris – Hop on Hop off, Eiffel Tower & Seine Cruise.",
-      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+      img: "https://www.travelersuniverse.com/wp-content/uploads/2025/07/1_paris-eiffel-tower-hop-on-hop-off-bus-seine-river-cruise-800x533.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -334,7 +334,7 @@ Overnight Stay in Paris.
     {
       day: "Day 8",
       title: "Paris – Disneyland (01 Park)",
-      img: "https://images.unsplash.com/photo-1431274172761-fca41d930114?w=800&q=80",
+      img: "https://thf.bing.com/th/id/R.027ac80fc14dcc21e736b690af09f055?rik=eY%2bdPDB6rjRqpw&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f3%2f96%2fdxIOKQ.jpg&ehk=qLeEL5MhzVWF9L4bW2wWxMuo8h%2bmqUbu3laLyO8iDP4%3d&risl=&pid=ImgRaw&r=0",
       desc: (
         <>
           Highlight of the Day: Disneyland 01-Day 01 Park Ticket with Shuttle Transfer
@@ -350,7 +350,7 @@ Overnight Stay in Paris
     {
       day: "Day 9",
       title: "Paris – Departure",
-      img: "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=800&q=80",
+      img: "https://thumbs.dreamstime.com/b/departure-gates-charles-de-gaulle-airport-paris-france-cdg-december-352373451.jpg?w=992",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -367,7 +367,7 @@ journey to India.
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+          src="https://images.stockcake.com/public/8/e/5/8e5b80ba-7d6c-424a-8c3e-ae7a4a7a2c18_large/paris-meets-amsterdam-stockcake.jpg"
           alt="Amsterdam to Paris Escape Tour"
         />
         <div className="hero-content">
@@ -384,19 +384,19 @@ journey to India.
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80" alt="" />
+            <img src="https://wallpaperbat.com/img/623678-amsterdam-netherlands-hd-wallpaper-1-desktop-background.jpg" alt="" />
             <p>Amsterdam, Netherlands</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1490750967868-88df5691cc41?w=600&q=80" alt="" />
+            <img src="https://thumbs.dreamstime.com/b/traditional-dutch-windmills-along-canal-pink-tulip-flowers-foreground-netherlands-217497622.jpg" alt="" />
             <p>Dutch Windmills & Tulips</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1559113202-c916b8e44373?w=600&q=80" alt="" />
+            <img src="https://wallpaperbat.com/img/428474-royal-palace-of-brussels-wallpaper-grand-place-hd.jpg" alt="" />
             <p>Grand Place, Brussels</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/296566.jpg" alt="" />
             <p>Paris, France</p>
           </div>
         </div>

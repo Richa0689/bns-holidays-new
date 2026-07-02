@@ -211,7 +211,7 @@ const DenmarkSwedenGermanyTour = () => {
 Welcome to Copenhagen
         </>
       ),
-      img: "https://images.unsplash.com/photo-10&q=80",
+      img: "https://djx5h8pabpett.cloudfront.net/wp-content/uploads/sites/4/2024/08/Screenshot-2024-08-15-114717-1024x571.png",
       desc: (
         <>
          Welcome to Copenhagen! Upon arrival, you will enjoy a private transfer from the airport to your hotel.
@@ -224,7 +224,7 @@ Overnight Stay in Copenhagen
     {
       day: "Day 2",
       title: "Copenhagen – Group Walking Tour on Shared Basis & Copenhagen Canal Cruise Ticket",
-      img: "https://images.unsplash.com/photo-152q=80",
+      img: "https://cdn-imgix.headout.com/media/images/aa3903ca4bedbe3b08f24a9fca5e66c6-13602-copenhagen-1-hour-copenhagen-canal-tour-06.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -244,7 +244,7 @@ Overnight Stay in Copenhagen
     {
       day: "Day 3",
       title: "Copenhagen – The Forest Tower & Forgotten Giants Trolls Trip from Copenhagen on SIC basis(Forest Tower Entrance Not Included)",
-      img: "https://images.unsplash.com/photo-1509356843151-3e=80",
+      img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/2b/65/c1.jpg",
       desc: (
         <>
          Breakfast at Hotel.
@@ -259,7 +259,7 @@ while enjoying the surrounding scenery.<br/>Overnight Stay in Copenhagen.
     {
       day: "Day 4",
       title: "Copenhagen – Stockholm",
-      img: "https://images.unsplash.com/photo-15276687529&q=80",
+      img: "https://www.campervansweden.com/assets/img/blog/626/stockholm-vs-copenhagen-trip.jpg",
       desc: (
         <>
          After breakfast you check out and take the private transfer to Copenhagen Airport for your flight to
@@ -273,7 +273,7 @@ Overnight Stay in Stockholm.
     {
       day: "Day 5",
       title: "Stockholm – Stockholm Old Town Walking Tour on Shared Basis",
-      img: "https://images.unsplash.com/photo-146726920459400&q=80",
+      img: "https://www.gpsmycity.com/img/gd_cover/6537.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -289,7 +289,7 @@ Overnight Stay in Stockholm
     {
       day: "Day 6",
       title: "Stockholm – Hamburg",
-      img: "https://images.unsplash.com/photo-15819529761400&q=80",
+      img: "https://s-media-cache-ak0.pinimg.com/736x/a1/68/9f/a1689f9b1dca9c8b6313eddad8e84fa2.jpg",
       desc: (
         <>
          After breakfast you check out and take private transfer from hotel to airport (or transport hub), then
@@ -304,7 +304,7 @@ Overnight Stay in Hamburg.
     {
       day: "Day 7",
       title: "Hamburg - Hamburg Old Town guided Walking tour on Shared Basis",
-      img: "https://images.unsplash.com/photo-15999463473=800&q=80",
+      img: "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=1920,dpr=1/tour_img/64b8f99984340.jpeg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -319,7 +319,7 @@ Overnight Stay in Hamburg.
     {
       day: "Day 8",
       title: "Hamburg",
-      img: "https://images.unsplash.com/photo-1600618538?w=800&q=80",
+      img: "https://cdn.pixabay.com/photo/2018/11/13/17/53/hamburg-3813578_640.jpg",
       desc: (
         <>
          Breakfast at Hotel. Check out from the Hotel.<br/>
@@ -352,19 +352,19 @@ Private transfer from Hamburg Hotel to Hamburg Airport.
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/pc3c8a854bc?w=600&q=80" alt="" />
+            <img src="https://cdn.pixabay.com/photo/2019/01/31/07/16/copenhagen-3966077_1280.jpg" alt="" />
             <p>Copenhagen, Denmark</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photodc70a27c95?w=600&q=80" alt="" />
+            <img src="https://i.pinimg.com/originals/df/3a/2a/df3a2a66989c47b6b8786062eb8a61a9.jpg" alt="" />
             <p>Stockholm, Sweden</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1582d15560349?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/3906716.jpg" alt="" />
             <p>Hamburg, Germany</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/pho68eb71b16afc?w=600&q=80" alt="" />
+            <img src="https://a.cdn-hotels.com/gdcs/production136/d151/1cb9df1d-d589-4863-9d7b-9449bb0daa8f.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" alt="" />
             <p>Lübeck, Germany</p>
           </div>
         </div>

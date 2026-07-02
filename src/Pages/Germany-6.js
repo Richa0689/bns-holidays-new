@@ -211,7 +211,7 @@ const ZurichInnsbruckSalzburgTour = () => {
     Welcome to Switzerland –
   </>
 ),
-      img: "https://cdn.kimkim.com/files/a/images/e28c94ae4c7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg",
+      img: "https://wallpaperaccess.com/full/7227721.jpg",
       desc: (
         <>
         Welcome to Switzerland! Upon arrival at Zurich Airport, enjoy a private transfer to your hotel. Check
@@ -224,7 +224,7 @@ Overnight Stay in Zurich
     {
       day: "Day 2",
       title: "Zurich",
-      img: "https://images.unsplash.com/photo-15154887646-beab7607c1e6?w=800&q=80",
+      img: "https://wallpaperbat.com/img/859157-hd-beautiful-zurichthe-largest-city-in-switzerland-the-capital-of-the-canton-of-zurich-and-the-worlds-largest-financial-centres-despite-having-a-relatively-low-population-19201080-r-wallpaper.jpg",
       desc: (
         <>
         Breakfast at Hotel.<br/>
@@ -241,7 +241,7 @@ Overnight Stay in Zurich
     {
       day: "Day 3",
       title: "Zurich – Innsbruck",
-      img: "https://images.unsplash.com/photo-09710228159-0fa9bd7c0827?w=800&q=80",
+      img: "https://cdn.wallpapersafari.com/5/48/yGfBhP.jpg",
       desc: (
         <>
         Breakfast at Hotel. Check out from the Hotel.<br/>
@@ -256,7 +256,7 @@ Overnight Stay in Innsbruck
     {
       day: "Day 4",
       title: "Innsbruck – Swarovski Crystal Worlds Entrance Ticket",
-      img: "https://images.unsplash.com/photo-1580655653885-65763b2597d0?w=800&q=80",
+      img: "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/pk13x0ykqxrp8ogbx4a0/Swarovski%20Crystal%20Worlds%20Admission%20in%20Innsbruck%20(Direct%20Entry).jpg",
       desc: (
         <>
         Breakfast at Hotel.<br/>
@@ -272,7 +272,7 @@ Overnight Stay in Innsbruck
     {
       day: "Day 5",
       title: "Innsbruck - Salzburg",
-      img: "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=800&q=80",
+      img: "https://images.musement.com/cover/0002/99/salzburg-xxl-jpg_header-198542.jpeg?w=1200&h=630&q=95&fit=crop",
       desc: (
         <>
         Breakfast at Hotel. Check out from the Hotel.<br/>
@@ -286,7 +286,7 @@ Overnight Stay in Salzburg
     {
       day: "Day 6",
       title: "Salzburg – Half Day Original Sound of Music Tour on Shared Basis",
-      img: "https://images.unsplash.com/photo-1610809027249-86c649feacd5?w=800&q=80",
+      img: "https://images.musement.com/cover/0007/97/original-sound-of-music-tour4-jpeg_header-696542.jpeg?q=50&fit=crop&auto=format&w=1024&h=400",
       desc: (
         <>
         Breakfast at Hotel.<br/>
@@ -303,7 +303,7 @@ Overnight Stay in Berlin
     {
       day: "Day 7",
       title: "Salzburg",
-      img: "https://images.unsplash.com/photo-1536768139911-e290a59011e4?w=800&q=80",
+      img: "https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1359660.jpg",
       desc: (
         <>
         Breakfast at Hotel. Check out from the Hotel.<br/>
@@ -319,7 +319,7 @@ Private transfer from Salzburg Hotel to Salzburg Airport for your onward flight.
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://cdn.kimkim.com/files/a/images/e28c94ae4c1bb7b133f6039ab141910c3581949d/original-d8146eba4d5c03ddb9a619c95108daf4.jpg"
+          src="https://blackplatinumgold.com/wp-content/uploads/2025/07/2-10.jpg"
           alt="Zurich Innsbruck Salzburg Tour"
         />
         <div className="hero-content">

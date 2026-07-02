@@ -211,7 +211,7 @@ const WindmillsToEiffelBelgiumTour = () => {
 Arrival in Amsterdam: I Amsterdam
         </>
       ),
-      img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&q=80",
+      img: "https://backpacker-weltreise.de/wp-content/uploads/2025/08/2-Amsterdam-Schiphol-Arrival-1024x559.jpg",
       desc: (
         <>
          Welcome to Amsterdam, Amsterdam is the Netherlands’ capital, known for its artistic heritage,
@@ -226,7 +226,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 2",
       title: "Amsterdam - Amsterdam One Day Hop on Hop off",
-      img: "https://images.unsplash.com/photo-1576924542622-772f3e7e9b5e?w=800&q=80",
+      img: "https://www.amsterdam.info/sitemedia/photos-800/amsterdam-canal-cruise-hop-on-hop-off-central-staion-boat-800x450.jpg",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -242,7 +242,7 @@ Overnight Stay in Amsterdam
     {
       day: "Day 3",
       title: "Amsterdam – Brussels",
-      img: "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=800&q=80",
+      img: "https://www.traveller.ee/blog/wp-content/uploads/2018/10/evening-light-view-over-a-canal-at-traditional-amsterdam-buildings.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -259,7 +259,7 @@ Overnight Stay in Brussels.
     {
       day: "Day 4",
       title: "Brussels – Atomium Entrance Ticket + Brussels Hop on Hop off",
-      img: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800&q=80",
+      img: "https://www.brussels.info/img/attractions/atomium/atomium-brussels-600x433.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -275,7 +275,7 @@ Overnight Stay in Brussels.
     {
       day: "Day 5",
       title: "Brussels – Paris",
-      img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+      img: "https://findloveandtravel.com/wp-content/uploads/2023/11/brussels-belgium-paris-day-trip.jpg",
       desc: (
         <>
          Breakfast at Hotel.<br/>
@@ -292,7 +292,7 @@ Overnight Stay in Paris
     {
       day: "Day 6",
       title: "Paris – Paris Hop on Hop off + Eiffel Tower Summit Entrance Ticket + Seine River Cruise Ticket",
-      img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+      img: "https://cdn.getyourguide.com/img/tour/a301e86a2f5d305c.jpeg/140.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -310,7 +310,7 @@ Overnight Stay in Paris
     {
       day: "Day 7",
       title: "Paris – Departure",
-      img: "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=800&q=80",
+      img: "https://thumbs.dreamstime.com/b/paris-charles-de-gaulle-international-airport-departure-area-paris-france-november-paris-charles-de-gaulle-international-132765268.jpg",
       desc: (
         <>
           Breakfast at Hotel.<br/>
@@ -326,7 +326,7 @@ After breakfast, proceed to Paris Airport with a private transfer for your onwar
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+          src="https://img.freepik.com/premium-photo/beautiful-shot-wind-turbines-cloudy-sky-eiffel-region-germany_941466-6648.jpg"
           alt="Amsterdam Brussels Paris Tour"
         />
         <div className="hero-content">
@@ -343,19 +343,19 @@ After breakfast, proceed to Paris Airport with a private transfer for your onwar
         <h2>Major Destinations</h2>
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-4351590666-13e3e96b5017?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/1088103.jpg" alt="" />
             <p>Amsterdam, Netherlands</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-13202-c916b8e44373?w=600&q=80" alt="" />
+            <img src="https://wallpaperbat.com/img/428474-royal-palace-of-brussels-wallpaper-grand-place-hd.jpg" alt="" />
             <p>Grand Place, Brussels</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-1491555352-5929e343eb89?w=600&q=80" alt="" />
+            <img src="https://atomium.be/Content/Images/Atomium_Style.html.jpg" alt="" />
             <p>Atomium, Belgium</p>
           </div>
           <div className="highlight-card">
-            <img src="https://images.unsplash.com/photo-149981958-5b9627545d1a?w=600&q=80" alt="" />
+            <img src="https://wallpaperaccess.com/full/1093839.jpg" alt="" />
             <p>Paris, France</p>
           </div>
         </div>
