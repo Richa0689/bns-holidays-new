@@ -4,63 +4,138 @@ import { Link } from "react-router-dom";
 
 const tours = [
   {
-    title: "Best of Switzerland",
-    path: "/switzerland-landing",
-    days: "7 Days",
-    countries: "1 Country",
-    cities: "3 Cities",
+    title: "Best of Swiss & France",
+    days: "8 Days",
+    countries: "FRANCE + SWITZERLAND",
+    cities: "2N Paris + 2N Geneva + 3N Zurich",
     dates: "10 Dates",
+    // price: "₹2,10,000",
+    emi: "₹9,500/mo",
+    image: "https://media1.thrillophilia.com/filestore/lkfeq29j545x49q7b31uz28cp35s_shutterstock_1926669674.jpg?w=580&dpr=2",
+    link: "/Swiss-France"
+  },
+  {
+    title: "Best of Vienna/Munich/Zurich",
+    days: "7 Days ",
+    countries: "GERMANY + SWITZERLAND + AUSTRIA",
+    cities: "2N Vienna + 2N Munich + 2N Zurich",
     price: "₹1,80,000",
-    emi: "₹7,500/mo",
-    image: "https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FCountry%2Fswitzerland-best-time-to-visit.jpg&w=1080&q=75"
+    emi: "₹8,200/mo",
+    image: "https://www.iberia.com/content/dam/iberia-cheap-flights-landings/images/destinations/cities/eu/de/muc/MUC-info.jpg",
+    link: "/Munich-Zurich"
   },
   {
-    title: "Zurich & Lucerne",
-    path: "/zurich-lucerne",
-    days: "5 Days",
-    countries: "1 Country",
-    cities: "2 Cities",
-    dates: "8 Dates",
+    title: "Best of Vienna/Munich/Zurich",
+    days: "8 Days ",
+    countries: "GERMANY + SWITZERLAND + AUSTRIA",
+    cities: "3N Vienna + 2N Munich + 2N Zurich",
+    price: "₹1,95,000",
+    emi: "₹8,800/mo",
+    image: "https://wallpaperaccess.com/full/156797.jpg",
+    link: "/Best-Vienna"
+  },
+  {
+    title: "GOLDEN WEST COAST 2026 | 6 Nights / 7 Days",
+    days: "7 Days",
+    countries: "SWITZERLAND + AUSTRIA + GERMANY",
+    cities: "Las Vegas • Los Angeles • Fresno •  San Francisco",
     price: "₹1,60,000",
-    emi: "₹6,800/mo",
-    image: "https://cdn.enjoytravel.com/img/Big7Enjoy/en/travel-news/places-to-visit/zurich-lucerne-how-to-choose/zurich-lucerne-how-to-choose-things-to-do.webp"
+    emi: "₹7,500/mo",
+    image: "https://tse3.mm.bing.net/th/id/OIP.FFOaBbccF8rrCWzLTdiBxAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    link: "/vegas-grand-canyon"
   },
   {
-    title: "Interlaken Adventure",
-    path: "/interlaken",
-    days: "6 Days",
-    countries: "1 Country",
-    cities: "2 Cities",
-    dates: "7 Dates",
-    price: "₹1,70,000",
-    emi: "₹7,200/mo",
-    image: "https://res.klook.com/image/upload/q_85/c_fill,w_1360/v1718104142/tjyst99c8xrqf1kimvsf.webp"
+    title: "Zurich + Bern + Geneva",
+    days: "8 Days",
+    countries: "SWITZERLAND",
+    // cities: "5 Cities",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://cdn.wallpapersafari.com/50/75/3FnJQI.jpg",
+    link: "/Zurich-Bern"
   },
   {
-    title: "Swiss Alps Tour",
-    path: "/swiss-alps",
-    days: "5 Days",
-    countries: "1 Country",
-    cities: "2 Cities",
-    dates: "6 Dates",
-    price: "₹1,65,000",
-    emi: "₹7,000/mo",
-    image: "https://s1.it.atcdn.net/wp-content/uploads/2015/11/shutterstock_279572969.jpg"
+    title: "Explore Geneva + Montreux + Zermatt",
+    days: "7 Days",
+    countries: "SWITZERLAND",
+    cities: "Geneva 2N + Montreux 2N + Zermatt 2N",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://wallpaperaccess.com/full/7946470.jpg",
+    link: "/Explore-Geneva"
   },
   {
-    title: "Luxury Switzerland Tour",
-    path: "/luxury-switzerland",
-    days: "9 Days",
-    countries: "1 Country",
-    cities: "4 Cities",
-    dates: "4 Dates",
-    price: "₹2,50,000",
-    emi: "₹10,500/mo",
-    image: "https://www.komfytrip.com/_next/image?url=https%3A%2F%2Fcomfy-blogs.s3.ap-south-1.amazonaws.com%2FSwitzerland-Oberhofen-Castle-e1432297557565.jpg_1752324756&w=3840&q=75"
-  }
+    title: "Glimpses of Switzerland ",
+    days: "7 Days",
+    countries: "SWITZERLAND",
+    cities: "2N LUCERNE, 2N INTERLAKEN & 2N GENEVA",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://wallpaperaccess.com/full/1455073.jpg",
+    link: "/Glimpses-Switzerland "
+  },
+  {
+    title: "From Rhine fall to Glacier 3000   ",
+    days: "8 Days",
+    countries: "SWITZERLAND",
+    cities: "3N Lucerne, 2N Interlaken, 2N Montreux",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/11/29111159/lauterbrunnen.jpeg",
+    link: "/Rhine-fall"
+  },
+  {
+    title: "Scenic Switzerland Discovery ",
+    days: "10 Days",
+    countries: "SWITZERLAND",
+    cities: "3N Lucerne, 2N Interlaken, 2N Zermatt, 2N Montreux",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://wallpapers.com/images/hd/switzerland-1920-x-1080-background-pj9eqf8k6li4z88u.jpg",
+    link: "/Scenic-Switzerland Discovery"
+  },
+  {
+    title: " Swiss Panorama Experience: Montreux, Lausanne & Geneva",
+    days: "7 Days",
+    countries: "SWITZERLAND",
+    cities: "02N Montreux, 02n Lausanne, 02N Geneva",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://wallpaperaccess.com/full/844198.jpg",
+    link: "/Swiss-Panorama"
+  },
+  {
+    title: "Best of Engelberg + Grindelwald + Zurich",
+    days: "7 Days",
+    countries: "SWITZERLAND",
+    cities: "N 02 Engelberg+02 N Grindelwald+02 Zurich",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://wallpapercave.com/wp/wp13056227.jpg",
+    link: "/Best-Engelberg" 
+  },
+  {
+    title: "From Zurich’s Charm to Mont Blanc Views",
+    days: "7 Days",
+    countries: "SWITZERLAND",
+    cities: "2N Zurich + 2N Bern + 2N Geneva",
+    // dates: "4 Dates",
+    price: "₹2,80,000",
+    emi: "₹12,500/mo",
+    image: "https://wallpaperaccess.com/full/8466037.jpg",
+    link: "/Zurich’s-Charm "
+  },
+  
 ];
 
-const Switzerland = () => {
+const USA = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -70,39 +145,28 @@ const Switzerland = () => {
       {tours.map((tour, index) => (
         <div className="tour-card" key={index}>
 
-          {/* Image */}
           <div className="tour-image">
             <span className="badge">Popular Today</span>
             <img src={tour.image} alt={tour.title} />
           </div>
 
-          {/* Info */}
           <div className="tour-info">
             <h2>
-              <Link to={tour.path} className="title-link">
-                {tour.title}
-              </Link>
+              {tour.link ? (
+                <Link to={tour.link} className="title-link">{tour.title}</Link>
+              ) : (
+                tour.title
+              )}
             </h2>
 
-            <div className="rating">
-              ⭐⭐⭐⭐⭐ <span>110 Reviews</span>
-            </div>
-
-            <p 
-              className="inclusive"
-              onClick={() => setShowModal(true)}
-            >
-              ∞ All Inclusive
-            </p>
-
+            
             <p className="details">
               {tour.days} • {tour.countries} • {tour.cities}, {tour.dates}
             </p>
 
-            <p className="dates">Dates Filling Fast</p>
+           
           </div>
 
-          {/* Price */}
           <div className="tour-price">
             <p className="start">Starts from</p>
             <h2>{tour.price}</h2>
@@ -116,7 +180,7 @@ const Switzerland = () => {
         </div>
       ))}
 
-      {/* Modal */}
+      {/*  Modal */}
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-box">
@@ -157,4 +221,4 @@ const Switzerland = () => {
   );
 };
 
-export default Switzerland;
+export default USA;

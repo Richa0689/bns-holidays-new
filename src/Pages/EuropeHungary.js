@@ -10,8 +10,8 @@ const hungaryTours = [
     countries: "HUNGARY + CROATIA + SLOVENIA",
     cities: "Budapest, Zagreb, Ljubljana & Lake Balaton",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹95,000",
+    emi: "₹8,300/mo",
     image:
       "https://media2.thrillophilia.com/images/photos/000/179/082/original/1573797301_shutterstock_1075765313.jpg?width=975&height=600"
   },
@@ -22,8 +22,8 @@ const hungaryTours = [
     countries: "HUNGARY + AUSTRIA + CZECH REPUBLIC",
     cities: "Budapest, Prague, Vienna & Lake Balaton",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,30,000",
+    emi: "₹11,400/mo",
     image:
       "https://blogassets.airtel.in/wp-content/uploads/2024/11/hungary.jpg"
   },
@@ -34,8 +34,8 @@ const hungaryTours = [
     countries: "HUNGARY + AUSTRIA + CZECH REPUBLIC",
     cities: " Budapest, Prague, Vienna",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,60,000",
+    emi: "₹14,000/mo",
     image:
       "https://images.pexels.com/photos/34430993/pexels-photo-34430993.jpeg?cs=srgb&dl=pexels-kelly-34430993.jpg&fm=jpg"
   },
@@ -46,8 +46,8 @@ const hungaryTours = [
     countries: "AUSTRIA + HUNGARY + CZECH REPUBLIC",
     cities: "Budapest, Prague, Vienna",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,25,000",
+    emi: "₹11,000/mo",
     image:
       "https://www.eurochange.co.uk/media/ivja0oqw/adobestock_277061588-min.jpeg?width=504&height=575&v=1dc021a11a47cb0"
   },
@@ -58,8 +58,8 @@ const hungaryTours = [
     countries: "CZECH REPUBLIC + AUSTRIA + HUNGARY",
     cities: "Budapest, Prague, Vienna & Lake Balaton",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,90,000",
+    emi: "₹16,700/mo",
     image:
       "https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/belq7ojsvqj9fjbb1sjp.jpg"
   }

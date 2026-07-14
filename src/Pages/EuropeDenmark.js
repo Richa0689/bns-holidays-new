@@ -10,8 +10,8 @@ const denmarkTours = [
     countries: "DENMARK + SWEDEN",
     cities: "Copenhagen, Aarhus, Aalborg & Odense",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,25,000",
+    emi: "₹11,000/mo",
     image:
       "https://thumbs.dreamstime.com/b/copenhagen-denmark-aerial-panoramic-skyline-view-royal-palace-115122754.jpg"
   },
@@ -22,8 +22,8 @@ const denmarkTours = [
     countries: "DENMARK + SWEDEN",
     cities: "Copenhagen, Malmö, Gothenburg & Aarhus",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,20,000",
+    emi: "₹10,500/mo",
     image:
       "https://thumbs.dreamstime.com/b/copenhagen-denmark-aerial-panoramic-skyline-view-royal-palace-115122754.jpg"
   },
@@ -34,8 +34,8 @@ const denmarkTours = [
     countries: "DENMARK + GERMANY",
     cities: "Copenhagen, Oslo & Aarhus",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,80,000",
+    emi: "₹15,800/mo",
     image:
       "https://thumbs.dreamstime.com/b/copenhagen-denmark-aerial-panoramic-skyline-view-royal-palace-115122754.jpg"
   },
@@ -46,8 +46,8 @@ const denmarkTours = [
     countries: "DENMARK + SWEDEN + GERMANY",
     cities: "Copenhagen, Oslo & Aarhus",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,85,000",
+    emi: "₹16,200/mo",
     image:
       "https://thumbs.dreamstime.com/b/copenhagen-denmark-aerial-panoramic-skyline-view-royal-palace-115122754.jpg"
   },
@@ -58,8 +58,8 @@ const denmarkTours = [
     countries: "DENMARK + SWEDEN + NORWAY",
     cities: "Copenhagen, Oslo & Aarhus",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹2,20,000",
+    emi: "₹19,300/mo",
     image:
       "https://thumbs.dreamstime.com/b/copenhagen-denmark-aerial-panoramic-skyline-view-royal-palace-115122754.jpg"
   }

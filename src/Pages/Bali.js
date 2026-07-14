@@ -9,7 +9,7 @@ const tours = [
     countries: "1 Country",
     cities: "2 Cities",
     dates: "10 Dates",
-    price: "₹60,000",
+    price: "₹31,000",
     emi: "₹2,800/mo",
     image: "https://www.goatsontheroad.com/wp-content/uploads/2019/08/hindu-temple-where-to-go-in-bali.jpg"
   },
@@ -19,8 +19,8 @@ const tours = [
     countries: "1 Country",
     cities: "2 Cities",
     dates: "8 Dates",
-    price: "₹55,000",
-    emi: "₹2,500/mo",
+    price: "₹32,000",
+    emi: "₹2,900/mo",
     image: "https://www.xplorejourney.com/wp-content/uploads/2026/02/unnamed-1.jpg"
   },
   {
@@ -29,8 +29,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "6 Dates",
-    price: "₹50,000",
-    emi: "₹2,300/mo",
+    price: "₹35,000",
+    emi: "₹3,100/mo",
     image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/35/e8/66/bali-garden-beach-resort.jpg?w=900&h=500&s=1"
   },
   {
@@ -39,8 +39,8 @@ const tours = [
     countries: "1 Country",
     cities: "2 Cities",
     dates: "7 Dates",
-    price: "₹58,000",
-    emi: "₹2,600/mo",
+    price: "₹37,000",
+    emi: "₹3,300/mo",
     image: "https://i0.wp.com/inclusivebalitour.com/wp-content/uploads/2019/07/ATV-Ride-Adventure.jpg?resize=474%2C284&ssl=1"
   },
   {
@@ -49,8 +49,8 @@ const tours = [
     countries: "1 Country",
     cities: "3 Cities",
     dates: "4 Dates",
-    price: "₹95,000",
-    emi: "₹4,500/mo",
+    price: "₹43,000",
+    emi: "₹3,800/mo",
     image: "https://www.viceroybali.com/wp-content/uploads/2024/10/Luxury-Bali-Itinerary-1.png"
   }
 ];

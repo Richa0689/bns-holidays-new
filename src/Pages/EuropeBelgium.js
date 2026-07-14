@@ -10,8 +10,8 @@ const belgiumTours = [
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam, Brussels & Paris",
     dates: "10 Dates",
-    price: "₹1,95,000",
-    emi: "₹8,900/mo",
+    price: "₹1,25,000",
+    emi: "₹11,000/mo",
     image: "https://www.shutterstock.com/image-photo/ghent-belgium-old-town-cityscape-600nw-2514665601.jpg"
   },
   {
@@ -21,8 +21,8 @@ const belgiumTours = [
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam, Brussels, Ghent & Bruges",
     dates: "8 Dates",
-    price: "₹2,25,000",
-    emi: "₹10,500/mo",
+    price: "₹1,75,000",
+    emi: "₹15,500/mo",
     image: "https://img.freepik.com/premium-photo/eiffel-tower-aerial-view-paris_78361-12651.jpg?semt=ais_hybrid&w=740&q=80"
   },
   {
@@ -32,8 +32,8 @@ const belgiumTours = [
     countries: "BELGIUM + NETHERLANDS",
     cities: "Brussels, Antwerp & Rotterdam",
     dates: "12 Dates",
-    price: "₹2,40,000",
-    emi: "₹11,000/mo",
+    price: "₹1,20,000",
+    emi: "₹10,500/mo",
     image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/87/2f/aa.jpg"
   }
 ];

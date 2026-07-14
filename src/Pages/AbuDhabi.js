@@ -10,8 +10,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "8 Dates",
-    price: "₹70,000",
-    emi: "₹3,200/mo",
+    price: "₹48,000",
+    emi: "₹4,300/mo",
     image: "https://morafiq.ae/wp-content/uploads/2024/11/Qasr-Al-Watan.png"
   },
   {
@@ -21,8 +21,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "6 Dates",
-    price: "₹60,000",
-    emi: "₹2,800/mo",
+    price: "₹50,000",
+    emi: "₹4,500/mo",
     image: "https://the7tours.com/wp-content/uploads/2026/02/Abu-Dhabi-skyline-with-Sheikh-Zayed-Grand-Mosque-tourists-exploring-city-attractions.jpeg"
   },
   {
@@ -32,8 +32,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "7 Dates",
-    price: "₹68,000",
-    emi: "₹3,000/mo",
+    price: "₹52,000",
+    emi: "₹4,700/mo",
     image: "https://namayratourism.com/public/data/product/abu-dhabi-cultural-heritag-tour.jpg"
   },
   {
@@ -43,8 +43,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "6 Dates",
-    price: "₹75,000",
-    emi: "₹3,500/mo",
+    price: "₹56,000",
+    emi: "₹5,000/mo",
     image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/de/9e/95.jpg"
   },
   {
@@ -54,8 +54,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "4 Dates",
-    price: "₹1,10,000",
-    emi: "₹5,000/mo",
+    price: "₹62,000",
+    emi: "₹5,500/mo",
     image: "https://res.klook.com/images/w_1200,h_630,c_fill,q_65/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/se5zfkqttefeg2jx7wii/Luxury%20Abu%20Dhabi%20City%20Tour%20from%20Dubai.jpg"
   }
 ];

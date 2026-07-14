@@ -10,8 +10,8 @@ const tours = [
     countries: "Kenya",
     cities: " Amboseli National Park",
     dates: "8 Dates",
-    price: "₹85,000",
-    emi: "₹4,200/mo",
+    price: "₹1,85,000",
+    emi: "₹16,200/mo",
     image:
       "https://cheetah.org/canada/wp-content/uploads/sites/5/2025/10/Family-2-copy.jpg"
   },
@@ -22,8 +22,8 @@ const tours = [
     countries: "Kenya",
     cities: "Ol Pejeta Conservancy",
     dates: "10 Dates",
-    price: "₹92,000",
-    emi: "₹4,600/mo",
+    price: "₹1,60,000",
+    emi: "₹14,000/mo",
     image:
       "https://media.licdn.com/dms/image/v2/D4E12AQEINK_OsQHrEA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1712825950898?e=2147483647&v=beta&t=XgqNNNdD7YB1sBmoVoZyj7EuVB5SDaIY0Eou1-dl38A"
   },
@@ -34,8 +34,8 @@ const tours = [
     countries: "Kenya",
     cities: "Lake Elementaita",
     dates: "6 Dates",
-    price: "₹98,000",
-    emi: "₹4,900/mo",
+    price: "₹1,80,000",
+    emi: "₹15,800/mo",
     image:
       "https://travelofiesta.com/public/images/featured-images/1708517616.webp"
   },
@@ -46,8 +46,8 @@ const tours = [
     countries: "Kenya",
     cities: "Echoes Of The Wild ",
     dates: "6 Dates",
-    price: "₹98,000",
-    emi: "₹4,900/mo",
+    price: "₹2,10,000",
+    emi: "₹18,400/mo",
     image:
       "https://wildlifesafari.co.ke/wp-content/uploads/2022/01/Shutterstock_Wildlife_BlackRhinoAndCalf.jpg"
   },
@@ -58,8 +58,8 @@ const tours = [
     countries: "Kenya",
     cities: "Amboseli Wild Trails ",
     dates: "6 Dates",
-    price: "₹99,000",
-    emi: "₹4,900/mo",
+    price: "₹1,55,000",
+    emi: "₹13,600/mo",
     image:
       "https://media.assettype.com/outlooktraveller/2025-03-08/9c9glnfz/Amboseli-National-Park?w=1200&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0"
   },
@@ -70,8 +70,8 @@ const tours = [
     countries: "Kenya",
     cities: "Predators & Pink Feathers ",
     dates: "6 Dates",
-    price: "₹1,50,000",
-    emi: "₹4,900/mo",
+    price: "₹1,95,000",
+    emi: "₹17,200/mo",
     image:
       "https://www.airpano.com/files/flamingo_01_big.jpg"
   },
@@ -82,8 +82,8 @@ const tours = [
     countries: "Kenya",
     cities: "Into The Heart Of The Wild ",
     dates: "6 Dates",
-    price: "₹1,00,000",
-    emi: "₹4,900/mo",
+    price: "₹2,20,000",
+    emi: "₹19,300/mo",
     image:
       "https://feelthedifferenceadventures.com/wp-content/uploads/2023/12/maasai-mara8.jpg"
   },

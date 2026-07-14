@@ -10,8 +10,8 @@ const franceTours = [
     countries: "NETHERLANDS + FRANCE",
     cities: " Amsterdam, Paris",
     dates: "5 Dates",
-    price: "₹3,60,000",
-    emi: "₹16,500/mo",
+    price: "₹1,60,000",
+    emi: "₹14,000/mo",
     image:
       "https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1920"
   },
@@ -22,8 +22,8 @@ const franceTours = [
     countries: "FRANCE + SWITZERLAND",
     cities: "Paris,Geneva,Zurich",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹16,500/mo",
+    price: "₹1,85,000",
+    emi: "₹16,200/mo",
     image:
       "https://www.onthegotours.com/repository/atv1-Gruyeres-20221115231723.jpg"
   },
@@ -34,8 +34,8 @@ const franceTours = [
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam , Brussels ,Paris ",
     dates: "5 Dates",
-    price: "₹3,50,000",
-    emi: "₹16,500/mo",
+    price: "₹1,60,000",
+    emi: "₹14,000/mo",
     image:
       "https://thumbs.dreamstime.com/b/floral-windmill-steam-engine-train-eiffel-tower-beautiful-colorful-flowers-inside-famous-miracle-garden-dubai-372471009.jpg"
   },
@@ -46,8 +46,8 @@ const franceTours = [
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam , Brussels ,Paris",
     dates: "5 Dates",
-    price: "₹3,70,000",
-    emi: "₹16,500/mo",
+    price: "₹1,95,000",
+    emi: "₹17,200/mo",
     image:
       "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/Mobile/City/swox6wjsl5ndvkv5jvum.jpg"
   },
@@ -58,8 +58,8 @@ const franceTours = [
     countries: "SPAIN + FRANCE",
     cities: "Barcelona, Nice",
     dates: "5 Dates",
-    price: "₹3,40,000",
-    emi: "₹16,500/mo",
+    price: "₹1,55,000",
+    emi: "₹13,600/mo",
     image:
       "https://images.squarespace-cdn.com/content/v1/5dc482398b0f251be08da4f3/1598555562284-DJF2IN5C177CIBKQSS83/FrenchRiviera-Hero.jpg?format=2500w"
   },
@@ -70,8 +70,8 @@ const franceTours = [
     countries: "FRANCE",
     cities: "Paris, Lyon , Marseille ",
     dates: "5 Dates",
-    price: "₹3,60,000",
-    emi: "₹16,500/mo",
+    price: "₹1,45,000",
+    emi: "₹12,700/mo",
     image:
       "https://media.istockphoto.com/id/1351435368/photo/lyon-france-panoramic-view-in-summer.jpg?s=612x612&w=0&k=20&c=kiQoCIdkg1Dyr2p7GaObjmk2EcYnvIN9sWiF5Qe2lwk="
   },
@@ -82,8 +82,8 @@ const franceTours = [
     countries: "FRANCE",
     cities: "Paris,  Marseille,  Nice",
     dates: "5 Dates",
-    price: "₹3,50,000",
-    emi: "₹16,500/mo",
+    price: "₹2,10,000",
+    emi: "₹18,400/mo",
     image:
       "https://ultra1911.com/cdn/shop/articles/sea-coast-lighthouse-town-river-cityscape-562439-pxhere.com.jpg?v=1666713203"
   },
@@ -94,8 +94,8 @@ const franceTours = [
     countries: "FRANCE",
     cities: "Paris, Nice ",
     dates: "5 Dates",
-    price: "₹3,30,000",
-    emi: "₹16,500/mo",
+    price: "₹1,30,000",
+    emi: "₹11,400/mo",
     image:
       "https://www.longtermrentalsinfrance.com/images/1320/bordeaux-city-france.jpg"
   },
@@ -106,8 +106,8 @@ const franceTours = [
     countries: "FRANCE + ITALY",
     cities: "Nice, Monaco ,Milan",
     dates: "5 Dates",
-    price: "₹3,60,000",
-    emi: "₹16,500/mo",
+    price: "₹1,25,000",
+    emi: "₹11,000/mo",
     image:
       "https://www.tripsavvy.com/thmb/YJBDYtqVoIgImpcJJvLuTqtBovs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Nice-bf62cc29a2af4e799b519bf2a0b0a71f.jpg"
   }

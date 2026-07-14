@@ -9,8 +9,8 @@ const tours = [
     countries: "1 Country",
     cities: "3 Cities",
     dates: "10 Dates",
-    price: "₹2,10,000",
-    emi: "₹9,500/mo",
+    price: "₹1,40,000",
+    emi: "₹12,000/mo",
     image: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad"
   },
   {
@@ -49,8 +49,8 @@ const tours = [
     countries: "1 Country",
     cities: "4 Cities",
     dates: "5 Dates",
-    price: "₹2,75,000",
-    emi: "₹12,500/mo",
+    price: "₹2,80,000",
+    emi: "₹25,000/mo",
     image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e"
   }
 ];

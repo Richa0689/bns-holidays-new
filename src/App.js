@@ -20,7 +20,9 @@ import Australia from "./Pages/Australia";
 import Canada from "./Pages/Canada";
 import USA from "./Pages/USA";
 import Europe from './Pages/Europe';
-import USALanding from "./Pages/USALanding";
+import USA1 from "./Pages/USA-1";
+import USA2 from "./Pages/USA-2";
+import USA3 from "./Pages/USA-3";
 import NYWashingtonLanding from "./Pages/NYWashingtonLanding";
 import CaliforniaLanding from "./Pages/CaliforniaLanding";
 import VegasGrandLanding from "./Pages/VegasGrandLanding";
@@ -86,7 +88,7 @@ import RomeVeniceLanding from "./Pages/RomeVeniceLanding";
 import FlorenceTourLanding from "./Pages/FlorenceTourLanding";
 import AmalfiCoastLanding from "./Pages/AmalfiCoastLanding";
 import LuxuryItalyLanding from "./Pages/LuxuryItalyLanding";
-import Switzerland from "./Pages/Switzerland";
+// import Switzerland from "./Pages/switzerland";
 import SwitzerlandLanding from "./Pages/SwitzerlandLanding";
 import ZurichLucerneLanding from './Pages/ZurichLucerneLanding';
 import InterlakenLanding from "./Pages/InterlakenLanding";
@@ -242,6 +244,48 @@ import France2 from './Pages/France-2';
 import France3 from './Pages/France-3';
 import France4 from './Pages/France-4';
 import France5 from './Pages/France-5';
+import Vietnam from './Pages/Vietnam';
+import Vietnam1 from './Pages/Vietnam-1';
+import Vietnam2 from './Pages/Vietnam-2';
+import Vietnam3 from './Pages/Vietnam-3';
+import Vietnam4 from './Pages/Vietnam-4';
+import Vietnam5 from './Pages/Vietnam-5';
+import Vietnam6 from './Pages/Vietnam-6';
+import Vietnam7 from './Pages/Vietnam-7';
+import Vietnam8 from './Pages/Vietnam-8';
+import Vietnam9 from './Pages/Vietnam-9';
+import Vietnam10 from './Pages/Vietnam-10';
+import Vietnam11 from './Pages/Vietnam-11';
+import Vietnam12 from './Pages/Vietnam-12';
+import Vietnam13 from './Pages/Vietnam-13';
+import Vietnam14 from './Pages/Vietnam-14';
+import Vietnam15 from './Pages/Vietnam-15';
+import Switzerland from "./Pages/Switzerland"; 
+import Switzerland1 from './Pages/Switzerland-1';
+import Switzerland2 from './Pages/Switzerland-2';
+import Switzerland3 from './Pages/Switzerland-3';
+import Switzerland4 from './Pages/Switzerland-4';
+import Switzerland5 from './Pages/Switzerland-5';
+import Switzerland6 from './Pages/Switzerland-6';
+import Switzerland7 from './Pages/Switzerland-7';
+import Switzerland8 from "./Pages/Switzerland-8";
+import Switzerland9 from './Pages/Switzerland-9';
+import Switzerland10 from './Pages/Switzerland-10';
+import Switzerland11 from './Pages/Switzerland-11';
+import Switzerland12 from './Pages/Switzerland-12';
+import England from './Pages/England';
+import England1 from './Pages/England-1';
+import England2 from './Pages/England-2';
+import England3 from './Pages/England-3';
+import England4 from './Pages/England-4';
+import England5 from './Pages/England-5';
+import England6 from './Pages/England-6';
+import England7 from './Pages/England-7';
+import England8 from './Pages/England-8';
+import England9 from './Pages/England-9';
+import England10 from './Pages/England-10';
+
+
 
 function App() {
   return (
@@ -276,7 +320,9 @@ function App() {
 <Route path="/Pages/australia" element={<Australia />} />
 <Route path="/Pages/canada" element={<Canada />} />
 <Route path="/Pages/usa" element={<USA />} />
- <Route path="/usa-landing" element={<USALanding />} />
+ <Route path="/usa-panorama" element={<USA1 />} />
+<Route path="/golden-west-coast" element={<USA2 />} />
+<Route path="/california" element={<USA3 />} />
  <Route path="/ny-washington" element={<NYWashingtonLanding />} />
  <Route path="/california" element={<CaliforniaLanding />} />
  <Route path="/vegas-grand" element={<VegasGrandLanding />} />
@@ -498,6 +544,46 @@ function App() {
 <Route path='/france-landing4' element={<France3 />} />
 <Route path='/france-landing5' element={<France4 />} />
 <Route path='/france-landing6' element={<France5 />} />
+<Route path='/Pages/vietnam' element={<Vietnam />} />
+<Route path="/vietnam-Tour" element={<Vietnam1 />} />
+<Route path="/Northen-vietnam" element={<Vietnam2 />} />
+<Route path="/northen-vietnam" element={<Vietnam3 />} />
+<Route path="/Southern-Vietnam" element={<Vietnam4 />} />
+<Route path="/southern-vietnam" element={<Vietnam5 />} />
+<Route path="/Taste of-vietnam" element={<Vietnam6/>} />
+<Route path="/Vietnam-Cambodia" element={<Vietnam7/>} />
+<Route path="/Vietnam-Glances" element={<Vietnam8 />} />
+<Route path="/Amazing-Vietnam" element={<Vietnam9 />} />
+<Route path="/Cambodia- Explore Siam Reap" element={<Vietnam10 />} />
+<Route path="/Central Vietnam" element={<Vietnam11 />} />
+<Route path="/Vietnam-Central" element={<Vietnam12 />} />
+<Route path="/Essence-Vietnam" element={<Vietnam13 />} />
+<Route path="/Highlights-Vietnam" element={<Vietnam14 />} />
+<Route path="/Laos-Escape" element={<Vietnam15 />} />
+<Route path="/Switzerland-landing1" element={<Switzerland/>} />
+<Route path="/Swiss-France" element={<Switzerland1 />} />
+<Route path="/Munich-Zurich" element={<Switzerland2 />} />
+<Route path="/Best-Vienna" element={<Switzerland3 />} />
+<Route path="/vegas-grand-canyon" element={<Switzerland4 />} />
+<Route path="/Zurich-Bern" element={<Switzerland5/>} />
+<Route path="/Explore-Genevaam" element={<Switzerland6/>} />
+<Route path="/Glimpses-Switzerland" element={<Switzerland7/>} />
+<Route path="/Rhine-fall" element={<Switzerland8 />} />
+<Route path="/Scenic-Switzerland Discovery" element={<Switzerland9/>} />
+<Route path="/Swiss-Panorama" element={<Switzerland10 />} />
+<Route path="/Best-Engelberg" element={<Switzerland11 />} />
+<Route path="/Zurich’s-Charm" element={<Switzerland12 />} />
+<Route path="/England-landing1" element={<England />} />
+<Route path="/UK-Escape" element={<England1 />} />
+<Route path="/Cardiff-Manchester" element={<England2 />} />
+<Route path="/London-Newport" element={<England3 />} />
+<Route path="/Grand-Britain" element={<England4 />} />
+<Route path="/Classic-UK" element={<England5 />} />
+<Route path="/Classic-Europe" element={<England6 />} />
+<Route path="/classic-uK" element={<England7 />} />
+<Route path="/Grand-Britain" element={<England8 />} />
+<Route path="/London-Ireland " element={<England9 />} />
+<Route path="/Grand-Discovery" element={<England10 />} />
 
 
 

@@ -183,6 +183,9 @@ const Header = () => {
           { name: "Singapore", path: "/Pages/Singapore" },
           { name: "Malaysia", path: "/Pages/Malaysia" },
           { name: "Bali", path: "/Pages/Bali" },
+          { name: "Vietnam", path: "/Pages/Vietnam" },
+
+
         ],
       },
       {

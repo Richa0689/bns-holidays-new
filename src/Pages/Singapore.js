@@ -9,8 +9,8 @@ const tours = [
     countries: "1 Country",
     cities: "Singapore",
     dates: "10 Dates",
-    price: "₹28,000",
-    emi: "₹1,000/mo",
+    price: "₹30,000",
+    emi: "₹2,400/mo",
     image: "https://www.sharpholidays.in/blog/wp-content/uploads/2018/05/Singapore-1280x540.jpg"
   },
   {
@@ -20,7 +20,7 @@ const tours = [
     cities: "1 City",
     dates: "8 Dates",
     price: "₹35,000",
-    emi: "₹1,000/mo",
+    emi: "₹2,900/mo",
     image: "https://cdn-imgix.headout.com/media/images/db6db2b3c8ff8558c2f86919cfea4405-7359-singapore-sentosa-fun-pass-03.jpg?auto=format&w=900&h=562.5&q=90&ar=16%3A10&fit=crop"
   },
   {
@@ -29,8 +29,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "6 Dates",
-    price: "₹30,000",
-    emi: "₹1,000/mo",
+    price: "₹40,000",
+    emi: "₹3,300/mo",
     image: "https://jnptravelvn.com/wp-content/uploads/2022/12/universal-studios-singapore-kids-family-guide-honeykids-asia.jpg"
   },
   {
@@ -39,8 +39,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "5 Dates",
-    price: "₹40,000",
-    emi: "₹2,000/mo",
+    price: "₹50,000",
+    emi: "₹4,100/mo",
     image: "https://d3lf10b5gahyby.cloudfront.net/web_app/packages-page/singapore.jpg"
   }
 ];

@@ -10,8 +10,8 @@ const croatiaTours = [
     countries: "HUNGARY + CROATIA + SLOVENIA",
     cities: "budapest, zagreb & ljubljana",
     dates: "8 Dates",
-    price: "₹1,95,000",
-    emi: "₹9,000/mo",
+    price: "₹95,000",
+    emi: "₹8,300/mo",
     image:
       "https://www.luxurylifestylemag.co.uk/wp-content/uploads/2021/11/bigstock-Historical-And-Ordinary-Views-411644287.jpg"
   },
@@ -22,8 +22,8 @@ const croatiaTours = [
     countries: "CROATIA",
     cities: "Dubrovnik, Split, Zagreb & Zadar",
     dates: "8 Dates",
-    price: "₹1,95,000",
-    emi: "₹9,000/mo",
+    price: "₹1,05,000",
+    emi: "₹9,200/mo",
     image:
       "https://media.istockphoto.com/id/907591300/photo/beautiful-beach-mediterranean-sea-makarska-riviera-croatia.jpg?s=612x612&w=0&k=20&c=g5x7p4G2d615F9ZZTn57nGtuo_0-UJhgmfsx5aBzobw="
   },
@@ -34,8 +34,8 @@ const croatiaTours = [
     countries: "CROATIA",
     cities: "Dubrovnik & Split",
     dates: "8 Dates",
-    price: "₹1,95,000",
-    emi: "₹9,000/mo",
+    price: "₹90,000",
+    emi: "₹7,500/mo",
     image:
       "https://cdn.kimkim.com/files/a/images/f44cb4223e79e47e17b9c56c74023335661f25dc/original-7488d48f57a047ff6cd9cc35ed19c509.jpg"
   },
@@ -46,8 +46,8 @@ const croatiaTours = [
     countries: "CROATIA + SLOVENIA",
     cities: " Zagreb & Ljubljana",
     dates: "8 Dates",
-    price: "₹1,95,000",
-    emi: "₹9,000/mo",
+    price: "₹85,000",
+    emi: "₹7,500/mo",
     image:
       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/e5/b9/27.jpg"
   },
@@ -58,8 +58,8 @@ const croatiaTours = [
     countries: "CROATIA + SLOVENIA",
     cities: " Zagreb, Plitvice Lakes, Zadar, Split, Hvar & Dubrovnik",
     dates: "8 Dates",
-    price: "₹1,95,000",
-    emi: "₹9,000/mo",
+    price: "₹1,35,000",
+    emi: "₹11,900/mo",
     image:
       "https://cdn.kimkim.com/files/a/images/7ebcf5705583404cb8ef05a7456219aae9e768bc/big-2b917b744003d5e42b28e1a8a894983d.jpg"
   }

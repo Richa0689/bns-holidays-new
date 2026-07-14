@@ -10,8 +10,8 @@ const italyTours = [
     countries: "ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,40,000",
+    emi: "₹12,300/mo",
     image:
       "https://clickstay.s3-eu-west-1.amazonaws.com/images/blog/post/Cinqueterra.jpg"
   },
@@ -22,8 +22,8 @@ const italyTours = [
     countries: "ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,80,000",
+    emi: "₹15,800/mo",
     image:
       "https://images.onthegotours.com/Best-places-to-visit-in-Italy--page-menu-image--On-The-Go-Tours-352471500906850.jpg"
   },
@@ -34,8 +34,8 @@ const italyTours = [
     countries: "FRANCE + ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,25,000",
+    emi: "₹11,000/mo",
     image:
       "https://static.wixstatic.com/media/e41b5c_163dbea574a142e0a3863bd38f340366~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_90/portofino-italy.jpg"
   },
@@ -46,8 +46,8 @@ const italyTours = [
     countries: "ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,25,000",
+    emi: "₹11,000/mo",
     image:
       "https://www.emperortraveline.com/wp-content/uploads/2022/09/Italy.jpg"
   }

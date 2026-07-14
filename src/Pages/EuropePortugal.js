@@ -10,8 +10,8 @@ const portugalTours = [
     countries: "SPAIN + PORTUGAL",
     cities: "Lisbon, Porto, Sintra & Algarve",
     dates: "6 Dates",
-    price: "₹1,20,000",
-    emi: "₹5,600/mo",
+    price: "₹1,10,000",
+    emi: "₹9,700/mo",
     image:
       "https://cdn.kimkim.com/files/a/images/e3ccf2d1cd9dcfd11413aa769d8a6a8d6ea037f8/big-7990be2ee3e1abedd7fb479d906f99a0.jpg"
   },
@@ -22,8 +22,8 @@ const portugalTours = [
     countries: "SPAIN + PORTUGAL",
     cities: "Lisbon, Porto, Sintra & Algarve",
     dates: "6 Dates",
-    price: "₹1,20,000",
-    emi: "₹5,600/mo",
+    price: "₹1,75,000",
+    emi: "₹15,400/mo",
     image:
       "https://arzotravels.com/wp-content/uploads/2017/11/Camara-de-Lobos-Madeira-island-Portugal.jpg"
   }

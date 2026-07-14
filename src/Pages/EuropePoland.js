@@ -10,8 +10,8 @@ const polandTours = [
     countries: "POLAND",
     cities: "Warsaw, Krakow",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,10,000",
+    emi: "₹9,700/mo",
     image:
       "https://cdn.britannica.com/26/115026-050-58B62437/Gdansk-Poland.jpg"
   },
@@ -22,8 +22,8 @@ const polandTours = [
     countries: "POLAND + CZECH REPUBLIC",
     cities: "Warsaw, Prague",
     dates: "5 Dates",
-    price: "₹3,20,000",
-    emi: "₹14,500/mo",
+    price: "₹1,25,000",
+    emi: "₹11,000/mo",
     image:
       "https://hoppingfeet.com/wp-content/uploads/2024/02/IMG_5949-scaled.jpg"
   }

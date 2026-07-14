@@ -4,34 +4,35 @@ import { Link } from "react-router-dom";
 
 const tours = [
   {
-    title: "Best of USA",
-    days: "9 Days",
-    countries: "1 Country",
-    cities: "4 Cities",
+    title: "	USA Panorama East and West Luxury Coach Tour Itinerary",
+    days: "13 Days",
+    countries: "USA",
+    cities: "New York • Philadelphia • Washington, D.C. • Harrisburg • Niagara Falls • Las Vegas • Los Angeles • Fresno •  Francisco",
     dates: "10 Dates",
     price: "₹2,10,000",
     emi: "₹9,500/mo",
-    image: "https://k1047.com/uploads/2022/04/statue-of-liberty-992552_1920.jpg?format=webp&optimize=high&precrop=16%3A9%2Csmart"
+    image: "https://k1047.com/uploads/2022/04/statue-of-liberty-992552_1920.jpg?format=webp&optimize=high&precrop=16%3A9%2Csmart",
+    link: "/usa-panorama"
   },
   {
-    title: "New York & Washington",
-    days: "6 Days",
-    countries: "1 Country",
-    cities: "2 Cities",
-    dates: "8 Dates",
+    title: "	USA Panorama East and West Luxury Coach Tour Itinerary",
+    days: "13 Days ",
+    countries: "USA",
+    cities: "New York • Philadelphia • Washington, D.C. • Harrisburg • Niagara Falls • Las Vegas • Los Angeles • Fresno •  San Francisco",
     price: "₹1,80,000",
     emi: "₹8,200/mo",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJzlPYkFjzky1uQxRGpM_KcMZ1rqe7z6Otcw&s"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJzlPYkFjzky1uQxRGpM_KcMZ1rqe7z6Otcw&s",
+    link: "/golden-west-coast"
   },
   {
-    title: "California Dream Tour",
-    days: "7 Days",
-    countries: "1 Country",
-    cities: "3 Cities",
-    dates: "6 Dates",
+    title: "USA GALA East Coast Luxury Coach Tour Itinerary",
+    days: "7 Days ",
+    countries: "USA",
+    cities: "New York • Philadelphia • Washington, D.C. • Harrisburg • Niagara Falls",
     price: "₹1,95,000",
     emi: "₹8,800/mo",
-    image: "https://cdn.shortpixel.ai/spai/q_+w_973+to_webp+ret_img/www.california-tour.com/wp-content/uploads/thumbnails/california.jpg"
+    image: "https://cdn.shortpixel.ai/spai/q_+w_973+to_webp+ret_img/www.california-tour.com/wp-content/uploads/thumbnails/california.jpg",
+    link: "/california"
   },
   {
     title: "Las Vegas & Grand Canyon",
@@ -41,7 +42,8 @@ const tours = [
     dates: "7 Dates",
     price: "₹1,60,000",
     emi: "₹7,500/mo",
-    image: "https://localadventurer.com/wp-content/uploads/2020/09/grand-canyon-glass-bridge.jpg"
+    image: "https://localadventurer.com/wp-content/uploads/2020/09/grand-canyon-glass-bridge.jpg",
+    link: "/vegas-grand-canyon"
   },
   {
     title: "Luxury USA Tour",
@@ -51,7 +53,8 @@ const tours = [
     dates: "4 Dates",
     price: "₹2,80,000",
     emi: "₹12,500/mo",
-    image: "https://b2bzend.s3.ap-south-1.amazonaws.com/img/162492/package/images/usa-panorama-east-west-luxury-coach-tour_1762948249"
+    image: "https://b2bzend.s3.ap-south-1.amazonaws.com/img/162492/package/images/usa-panorama-east-west-luxury-coach-tour_1762948249",
+    link: "/luxury-usa"
   }
 ];
 
@@ -71,38 +74,20 @@ const USA = () => {
           </div>
 
           <div className="tour-info">
- <h2>
-  {tour.title === "Best of USA" ? (
-    <Link to="/usa-landing" className="title-link">{tour.title}</Link>
-  ) : tour.title === "New York & Washington" ? (
-    <Link to="/ny-washington" className="title-link">{tour.title}</Link>
-  ) : tour.title === "California Dream Tour" ? (
-    <Link to="/california" className="title-link">{tour.title}</Link>
-  ) : tour.title === "Las Vegas & Grand Canyon" ? (
-    <Link to="/vegas-grand" className="title-link">{tour.title}</Link>
-  ) : tour.title === "Luxury USA Tour" ? (
-    <Link to="/luxury-usa" className="title-link">{tour.title}</Link>
-  ) : (
-    tour.title
-  )}
-</h2>
+            <h2>
+              {tour.link ? (
+                <Link to={tour.link} className="title-link">{tour.title}</Link>
+              ) : (
+                tour.title
+              )}
+            </h2>
 
-            <div className="rating">
-              ⭐⭐⭐⭐⭐ <span>120 Reviews</span>
-            </div>
-
-            <p 
-              className="inclusive" 
-              onClick={() => setShowModal(true)}
-            >
-              ∞ All Inclusive
-            </p>
-
+            
             <p className="details">
               {tour.days} • {tour.countries} • {tour.cities}, {tour.dates}
             </p>
 
-            <p className="dates">Dates Filling Fast</p>
+           
           </div>
 
           <div className="tour-price">

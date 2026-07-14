@@ -10,8 +10,8 @@ const tours = [
     countries: "1 Country",
     cities: "2 Cities",
     dates: "10 Dates",
-    price: "₹85,000",
-    emi: "₹4,000/mo",
+    price: "₹50,000",
+    emi: "₹4,500/mo",
     image: "https://www.telegraph.co.uk/content/dam/Travel/Destinations/Middle%20East/Dubai/an-insiders-guide-to-dubai-lead-image-skyline.jpg?imwidth=640"
   },
   {
@@ -21,8 +21,8 @@ const tours = [
     countries: "1 Country",
     cities: "2 Cities",
     dates: "8 Dates",
-    price: "₹75,000",
-    emi: "₹3,500/mo",
+    price: "₹52,000",
+    emi: "₹4,700/mo",
     image: "https://www.sportsnepaltour.com/img/package/1366030822_1668323427dubai-abu-dhabi-tour.jpg"
   },
   {
@@ -32,8 +32,8 @@ const tours = [
     countries: "1 Country",
     cities: "1 City",
     dates: "7 Dates",
-    price: "₹65,000",
-    emi: "₹3,000/mo",
+    price: "₹55,000",
+    emi: "₹5,000/mo",
     image: "https://www.dsktravelsdubai.com/wp-content/uploads/2024/12/desert-safari.jpg"
   },
   {
@@ -43,8 +43,8 @@ const tours = [
     countries: "1 Country",
     cities: "3 Cities",
     dates: "4 Dates",
-    price: "₹1,50,000",
-    emi: "₹6,500/mo",
+    price: "₹60,000",
+    emi: "₹5,400/mo",
     image: "https://imgcdn.flamingotravels.co.in/Images/Menu/Theme/Dubai%20Luxury%20Tours%20(1).jpg"
   }
 ];
