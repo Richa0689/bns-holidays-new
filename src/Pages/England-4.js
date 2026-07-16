@@ -208,7 +208,7 @@ const GrandBritainLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200&auto=format&fit=crop"
+          src="https://cdn.kimkim.com/files/a/images/c4a560db5351e7378387e6a59651faf9416a205b/original-9be30c54a39a77057ddbe1ffa7648aba.jpg"
           alt="Grand Britain Tour"
         />
 
@@ -235,7 +235,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse2.mm.bing.net/th/id/OIP.smW049S1USxBS7ItWG0QyAHaEe?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="London"
             />
             <p>London Skyline</p>
@@ -243,7 +243,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1543832923-44667a44c804?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse4.mm.bing.net/th/id/OIP.lOXRteKx-smX_DLWpR8f1AHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Windsor Castle"
             />
             <p>Windsor Castle</p>
@@ -251,7 +251,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1592482393411-d17b6c46cca1?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpapercat.com/w/full/a/2/f/679332-2048x1326-desktop-hd-edinburgh-castle-background-photo.jpg"
               alt="Edinburgh Castle"
             />
             <p>Edinburgh Castle</p>
@@ -259,7 +259,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1506466010722-395aa2bef877?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.2EcxkXqb1Gkyz7avHyb-XAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Scottish Highlands"
             />
             <p>Scottish Highlands</p>
@@ -305,7 +305,7 @@ const GrandBritainLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse4.mm.bing.net/th/id/OIP.Y3t0AZ4_DMDTjAxpXbAxdwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -322,7 +322,7 @@ const GrandBritainLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.-5sfDfe1tIocDA-4dMsQ-gHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -353,7 +353,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.4w7QL0BAQ3-prnUM3gJtBAHaEl?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -381,7 +381,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520440229-6469a96ac586?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.k8xiqKq4VeHC_8xoj7V5jgHaEo?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -410,7 +410,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?q=80&w=1200&auto=format&fit=crop"
+              src="https://images6.alphacoders.com/369/thumb-1920-369780.jpg"
               alt=""
             />
             <div className="day-content">
@@ -433,7 +433,7 @@ Overnight Stay in Edinburgh.
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1571847140471-1d7766e825ea?q=80&w=1200&auto=format&fit=crop"
+              src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/6f/50/ac.jpg"
               alt=""
             />
             <div className="day-content">
@@ -457,7 +457,7 @@ Overnight Stay in Edinburgh
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse3.mm.bing.net/th/id/OIP.mUbi3tfw0P_S2tnYGNR6mgHaE9?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -474,7 +474,7 @@ Overnight Stay in Glasgow
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperaccess.com/full/6628346.jpg"
               alt=""
             />
             <div className="day-content">

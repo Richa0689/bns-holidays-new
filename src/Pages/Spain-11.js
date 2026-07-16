@@ -12,34 +12,34 @@ const initialForm = {
 
 const faqs = [
   {
-    question: "What is the best time to visit London and Dublin for this tour?",
+    question: "What is the best time to visit Barcelona and Nice for this tour?",
     answer:
-      "Late Spring to early Autumn (May–September) offers the mildest weather and longest daylight hours, perfect for sightseeing in London and exploring Dublin's streets and countryside. December also has festive charm with Christmas markets, though days are shorter.",
+      "April to October is ideal, with May–June and September offering pleasant weather along the Riviera and fewer crowds. Summer (July–August) is peak season with warm beach weather in Nice, while spring and early autumn bring comfortable temperatures for sightseeing in Barcelona.",
   },
   {
-    question: "What is included in the 7-day London + Ireland package?",
+    question: "What is included in the 7-day Spanish–French Riviera Delight package?",
     answer:
-      "The package includes hotel accommodation for 6 nights (3 nights in London, 3 nights in Dublin), daily breakfast, flight/transfer between London and Dublin, guided city tours in both cities, and sightseeing including Windsor, London Eye, River Thames cruise and the Wicklow countryside. International flights to/from India and personal expenses are not included.",
+      "The package includes 6 nights accommodation (3 nights Barcelona, 3 nights Nice), daily breakfast, comfortable transfers between cities, guided city tours in Barcelona and Nice, and sightseeing at iconic landmarks along the way. International flights, visa fees and personal expenses are not included.",
   },
   {
-    question: "Do I need a visa to travel to the UK and Ireland?",
+    question: "Do I need a visa to travel to Spain and France?",
     answer:
-      "Indian passport holders require a UK Standard Visitor visa and a separate Irish visa (Ireland is not part of the Schengen Area). We recommend applying at least 6–8 weeks before your travel date. Our team can assist you with documentation and appointment scheduling.",
+      "Indian passport holders require a Schengen visa, which covers travel across both Spain and France on this itinerary. We recommend applying at least 6–8 weeks before your travel date. Our team can assist you with documentation and appointment scheduling.",
   },
   {
     question: "What are the must-see attractions on this tour?",
     answer:
-      "Highlights include Big Ben, the Tower of London and Buckingham Palace in London, plus a River Thames cruise, followed by Dublin Castle, Trinity College, Temple Bar and the stunning Wicklow Mountains or Cliffs of Moher countryside in Ireland.",
+      "Highlights include Gaudí's Sagrada Família and Park Güell in Barcelona, the Promenade des Anglais and Old Town in Nice, and optional excursions to the mountain monastery of Montserrat and the glamorous principality of Monaco.",
   },
   {
-    question: "What currencies are used across London and Dublin?",
+    question: "What currency is used across Spain and France?",
     answer:
-      "London uses the Pound Sterling (GBP) while Dublin uses the Euro (EUR). Cards are widely accepted in both cities, though it's handy to carry some local cash for small purchases. We recommend informing your bank before travelling to avoid transaction issues.",
+      "Both Spain and France use the Euro (EUR). Cards are widely accepted in cities, but it's useful to carry some local cash for tapas bars, markets and small purchases. We recommend informing your bank before travelling to avoid transaction issues.",
   },
   {
     question: "Can I customise this itinerary?",
     answer:
-      "Absolutely! This itinerary can be fully tailored to your preferences, travel dates, and budget. Whether you'd like extra nights in London, a Cliffs of Moher day trip from Dublin, or upgraded hotels, our team will curate the perfect personalised experience for you.",
+      "Absolutely! This itinerary can be fully tailored to your preferences, travel dates, and budget. Whether you'd like to add a Monaco or Èze excursion, extra nights in Nice, or upgrade your hotels, our team will curate the perfect personalised experience for you.",
   },
 ];
 
@@ -198,7 +198,7 @@ const QueryModal = ({ day, onClose }) => {
 };
 
 /* ── Main page ───────────────────────────────────────────────── */
-const LondonIrelandLanding = () => {
+const RivieraDelightLanding = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -208,18 +208,18 @@ const LondonIrelandLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://wallpaperaccess.com/full/117446.jpg"
-          alt="London Ireland Tour"
+          src="https://tse1.mm.bing.net/th/id/OIP.0ES-kQrTzSFw--o9YQHmPwHaDX?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Spanish-French Riviera Tour"
         />
 
         <div className="hero-content">
-          <h1>London + Ireland</h1>
+          <h1>Spanish–French Riviera Delight</h1>
 
           <p>
-            London • Dublin
+            Barcelona • Nice
           </p>
 
-          <Link to="/London-Ireland">
+          <Link to="/Riviera-Delight">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -235,34 +235,34 @@ const LondonIrelandLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://wallpaperaccess.com/full/419755.jpg"
-              alt="London"
+              src="https://wallpaperbat.com/img/336475-download-wallpaper-sagrada-familia-basilica-of-the-holy-family.jpg"
+              alt="Sagrada Familia Barcelona"
             />
-            <p>London Skyline</p>
+            <p>Sagrada Família, Barcelona</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://tse4.mm.bing.net/th/id/OIP.K0L2FiF-wzOD8DLeOusm4gHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Dublin Castle"
+              src="https://th.bing.com/th/id/OIP.w65Pab28ueG80ObVGY8-ZgHaEO?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Promenade des Anglais Nice"
             />
-            <p>Dublin Castle</p>
+            <p>Promenade des Anglais, Nice</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://th.bing.com/th/id/OIP.n-f5D9p16_qDpt556HfeQgHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Temple Bar Dublin"
+              src="https://tse4.mm.bing.net/th/id/OIP.6TDC5MapfudvmKvvaj6ziQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Monaco"
             />
-            <p>Temple Bar, Dublin</p>
+            <p>Monte Carlo, Monaco</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://tse1.mm.bing.net/th/id/OIP.aVwPONvUnHPbFLv99DU8qwHaEc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Wicklow Mountains"
+              src="https://gotravelyourself.com/wp-content/uploads/2023/04/Barcelona-Gothic-Quarter-jpg.webp"
+              alt="Gothic Quarter Barcelona"
             />
-            <p>Wicklow Countryside</p>
+            <p>Gothic Quarter, Barcelona</p>
           </div>
 
         </div>
@@ -273,24 +273,24 @@ const LondonIrelandLanding = () => {
         <h2>Why Choose This Tour?</h2>
 
         <div className="why-grid">
-          <div>🏰 Iconic British Landmarks</div>
-          <div>🍀 The Charm of Dublin</div>
-          <div>🎡 London Eye & Thames Cruise</div>
-          <div>📸 Two Capitals, One Trip</div>
+          <div>🏛️ Iconic Gaudí Architecture</div>
+          <div>🌊 Glamorous French Riviera</div>
+          <div>🎰 Glitz of Monte Carlo, Monaco</div>
+          <div>🥐 Charming Coastal Villages</div>
         </div>
       </div>
 
       {/* CTA */}
       <div className="cta-section">
-        <h2>Experience London & Ireland in 7 Days</h2>
+        <h2>Experience the Best of the Spanish & French Riviera in 7 Days</h2>
 
         <p>
-          From royal palaces to lively Irish pubs, from the Thames to the Liffey — the ultimate Isles escape
+          From the artistry of Barcelona to the glamour of the French Riviera — a journey along the Mediterranean's finest coastline
         </p>
 
         <br />
 
-        <Link to="/London-Ireland">
+        <Link to="/Riviera-Delight">
           <button className="book-now-btn">
             Book Now
           </button>
@@ -305,155 +305,140 @@ const LondonIrelandLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://wallpapercrafter.com/desktop1/551782-City-Hall-Tower-Bridge-sunset-London-urban-building.jpg"
+              src="https://www.baltana.com/files/wallpapers-1/Barcelona-HD-Images-03374.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 1</h3>
-              <p style={{ color: "blue" }}> India → London</p>
+              <p style={{ color: "blue" }}>India → Barcelona</p>
               <p>
-             Arrival in London: Begin Your English Journey<br/> 
- 
-London Eye Entry Ticket, Thames River Cruise Ticket, and London Hop On Hop Off Tour (as per next 
-day’s program, subject to availability) <br/>
- 
-Welcome to London, the timeless and vibrant capital of the United Kingdom. Upon arrival at London 
-Heathrow Airport, you will be greeted and transferred privately to your hotel, ensuring a smooth and 
-comfortable start to your holiday.<br/> 
-London’s charm is felt instantly, with its iconic landmarks, classic architecture, cosmopolitan 
-atmosphere, and rich blend of history and culture. Spend your first evening discovering the lively 
-streets, traditional pubs, charming cafés, or simply relaxing after your journey. <br/>
- Overnight Stay in London
+          Arrival in Barcelona: A Perfect Beginning to Your European Holiday 
+ Welcome to Barcelona, a vibrant city known for its artistic heritage, stunning architecture, sun-kissed 
+beaches, and lively Mediterranean ambience. Upon your arrival at Barcelona Airport, you will enjoy a 
+smooth and comfortable private transfer to your hotel. <br/> 
+Your first evening in Barcelona offers the perfect introduction to the city’s unique charm. Whether 
+you're admiring the illuminated streets, strolling along La Rambla, or soaking in the energy of Plaça 
+Catalunya, Barcelona promises an unforgettable start to your journey. <br/> 
+ Overnight Stay in Barcelona 
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,dpr=1/tour_img/b977aa6d5872eab66d7edf64b44856e5d3727854d05f51bfe27a2f244e218099.jpg"
+              src="https://cdn-imgix.headout.com/media/images/59344e606a5fc5a14b875835f901fe4b-Sagrada-Familia---Banner-02.jpg?auto=compress%2Cformat&w=705.6&h=360&q=90&crop=faces&fit=crop"
               alt=""
             />
             <div className="day-content">
               <h3>Day 2</h3>
-              <p style={{ color: "blue" }}>London – London Hop on Hop Off Tour and London Eye Visit </p>
+              <p style={{ color: "blue" }}>Highlight of the Day: Sagrada Familia Entry Ticket & Barcelona Hop-on Hop-off Tour</p>
               <p>
-                Breakfast at Hotel.<br/> 
-London Eye Entry Ticket, Thames River Cruise Ticket, and London Hop on Hop Off Tour 
- After breakfast, proceed for your one-day London Hop on Hop Off city tour on SIC basis. This tour 
-offers a perfect introduction to the city as you explore major attractions at your own pace. 
-You will also enjoy your visit to the renowned London Eye, one of the world’s tallest observation 
-wheels, offering panoramic views of the River Thames, Big Ben, Houses of Parliament, and the city 
-skyline.<br/> 
-Later, enjoy your Thames River Cruise, gliding through the heart of London and witnessing historic 
-landmarks from a unique and scenic perspective. <br/>
- Overnight Stay in London
+             Breakfast at Hotel. <br/> 
+After breakfast, proceed for your full-day experience of Barcelona with the 01-Day Hop on Hop off 
+bus tour, offering the perfect way to explore the city’s major highlights at your own pace. <br/> 
+Your visit includes the Sagrada Familia Entry Ticket, allowing you to witness Antoni Gaudí’s 
+masterpiece up close. The intricate architecture, stunning interiors, and spiritual atmosphere make 
+this an essential Barcelona experience.<br/>  
+Overnight Stay in Barcelona 
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse1.mm.bing.net/th/id/OIP.2ux8rjfmMTiQd0NOqCHdYAHaDg?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://thebettervacation.com/wp-content/uploads/Park-Guell.webp"
               alt=""
             />
             <div className="day-content">
               <h3>Day 3</h3>
-              <p style={{ color: "blue" }}>London – Windsor Castle, Bath and Stonehenge Tour </p>
+              <p style={{ color: "blue" }}>Park Güell & Montserrat Excursion</p>
               <p>
-            Breakfast at Hotel. <br/>
-Windsor Castle, Bath and Stonehenge Tour with All Tickets Included 
-After breakfast, prepare for a full-day tour on SIC basis to three of England’s most iconic heritage 
-sites. Your journey begins at Windsor Castle, the oldest and largest occupied castle in the world,
-where you will explore the State Apartments and St. George’s Chapel.<br/> 
-Continue to the UNESCO-listed city of Bath, admired for its Georgian architecture and Roman Baths.<br/> 
-Your final stop is Stonehenge, one of the world’s most mysterious prehistoric monuments. Learn 
-about its ancient origins and significance while soaking in the dramatic views of Salisbury Plain. <br/>
- 
-Overnight Stay in London
+                Breakfast at Hotel. <br/> 
+After breakfast, proceed for the Montserrat Tour with Cogwheel & Black Madonna on SIC basis. 
+This journey takes you to Catalonia’s most famous mountain sanctuary, offering panoramic views, 
+ancient Benedictine traditions, and the revered statue of the Black Madonna. <br/> 
+The scenic cog-wheel train ride enhances the experience with breathtaking landscapes and peaceful 
+surroundings. <br/> 
+Overnight Stay in Barcelona
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse2.mm.bing.net/th/id/OIP.GkK22Zy9oJUGuKr4pcAwrAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://wallpaperaccess.com/full/2605065.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 4</h3>
-              <p style={{ color: "blue" }}>London → Dublin </p>
+              <p style={{ color: "blue" }}> Barcelona – Nice</p>
               <p>
-             Breakfast at Hotel.<br/> 
-After breakfast, a private transfer will take you from your London hotel to London Heathrow Airport 
-for your onward flight to Dublin.<br/> 
-Upon arrival at Dublin Airport, a private transfer will take you to your hotel. 
-Dublin, Ireland’s charming and lively capital, offers a warm welcome with its historic streets, literary 
-legacy, friendly pubs, and vibrant cultural atmosphere. Spend your evening exploring the city’s inviting 
-neighbourhoods and riverside walks.<br/> 
- Overnight Stay in Dublin 
+           Breakfast at Hotel. <br/> 
+ After breakfast, enjoy a private transfer from your Barcelona hotel to Barcelona Airport for your 
+flight to Nice. <br/> 
+Upon arrival in Nice, a private transfer will take you to your hotel. Nice, the jewel of the French 
+Riviera, offers the perfect blend of Mediterranean elegance, charming promenades, and vibrant 
+cultural heritage. The serene coastline and old-town charm make it a delightful destination<br/> . 
+Overnight Stay in Nice 
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://cdn-imgix.headout.com/media/images/ccb2e8811ada97917bd47cef65d85401-33540-dublin-cliffs-of-moher--burren-and-galway-tour-from-dublin-04.jpg?auto=format&w=1058.3999999999999&h=540&q=90&crop=faces&fit=crop"
+              src="https://photos.smugmug.com/Provence-Lovers/Nice/n-wSXLpq/Ville/i-fhLJZgk/0/57d3d4c8/L/Nice-hop-on-hop-off-bus-L.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 5</h3>
-              <p style={{ color: "blue" }}>Dublin – Cliffs of Moher, Burren and Galway City Tour </p>
+              <p style={{ color: "blue" }}>Nice – Hop on Hop off Tour</p>
               <p>
-             Breakfast at Hotel.<br/> 
-Cliffs of Moher, Burren and Galway City Day Tour<br/> 
- After breakfast, proceed for a full-day tour on SIC basis to some of Ireland’s most breathtaking natural 
-and cultural wonders. <br/>
-Your journey begins with the spectacular Cliffs of Moher, offering dramatic views over the Atlantic 
-Ocean. <br/>
-Continue through the otherworldly landscapes of the Burren, known for its limestone formations and 
-rare flora. <br/>
-The tour concludes with a visit to the vibrant city of Galway, famous for its lively streets, arts scene, 
-and colourful harbourfront. This experience provides a perfect blend of Ireland’s natural beauty and 
-cultural charm.<br/> 
- Overnight Stay in Dublin
+                Breakfast at Hotel.<br/>  
+ After breakfast, proceed for your Nice 01-Day Hop on Hop off Bus Tour. This flexible sightseeing 
+experience allows you to explore Nice's iconic landmarks including the Promenade des Anglais, Castle 
+Hill, Old Town, and more, all while enjoying stunning coastal views along the way.<br/>  
+Overnight Stay in Nice
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse2.mm.bing.net/th/id/OIP.cuqaFczCvzfVpnljPK7YIQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://tse3.mm.bing.net/th/id/OIP.iOZIaJLVcp5fRL-nhWHMEAHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
               <h3>Day 6</h3>
-              <p style={{ color: "blue" }}> Dublin – Dublin Hop On Hop Off Tour</p>
+              <p style={{ color: "blue" }}>Nice – French Riviera Day Tour</p>
               <p>
-              Breakfast at Hotel.<br/>  
-Dublin Hop On Hop Off Tour <br/> 
- After breakfast, enjoy your one-day Dublin Hop On Hop Off tour on SIC basis, which offers a 
-wonderful overview of the city’s most significant attractions. <br/> 
-Explore landmarks such as Trinity College, St. Patrick’s Cathedral, Dublin Castle, Temple Bar, and 
-more, all at your own pace. The informative commentary enhances your understanding of Dublin’s 
-rich history, literature, and warm Irish spirit.<br/>  
- Overnight Stay in Dublin 
-
+                Breakfast at Hotel. <br/> 
+ Today, proceed for the French Riviera Day Tour on SIC basis. This full-day excursion takes you along 
+one of Europe’s most glamorous coastlines, featuring charming seaside towns, luxurious marinas, 
+scenic views, and the timeless elegance of the Côte d’Azur. <br/> 
+Take a unique trip and visit the medieval village of Èze. Your next stop is the Principality of Monaco, 
+where you have time to discover the old town, the cathedral, the palace and the ceremony of the 
+changing of the guard. Next, continue along the Formula 1 circuit to Monte Carlo with its casino and 
+upscale shops. <br/>  
+Head to your next stop, Saint-Paul-De-Vence. Marvel at the "jewel of Provence", where many 
+painters and artists have resided. As you walk the streets of this medieval fortified village, you can 
+taste centuries of history and artistic creativity.<br/>  
+For your last destination, make way to the famous city of stars—Cannes. Explore the Beverly Hills of 
+France, and take a stroll on the famous Croisette, enjoy luxury hotels, restaurants and shops.<br/> 
+ Overnight Stay in Nice
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse4.mm.bing.net/th/id/OIP.X-Ru9RysdgJMPngOJEPanAHaEu?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/travel_inspiration/breakfast_with_a_view/breakfast_with_a_view_bangkok.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 7</h3>
-              <p style={{ color: "blue" }}>   Dublin → India </p>
+              <p style={{ color: "blue" }}>Breakfast at Hotel</p>
               <p>
-             Breakfast at Hotel.<br/>  
-After breakfast, proceed with a private transfer to Dublin Airport for your return journey, marking 
-the end of your memorable London and Ireland holiday.
+             After breakfast, proceed to Nice Airport with a private transfer for your onward flight to India.
                 ________________________________________
               </p>
             </div>
@@ -465,7 +450,7 @@ the end of your memorable London and Ireland holiday.
         <div style={{ textAlign: "center", marginTop: "36px" }}>
           <button
             className="send-query-btn"
-            onClick={() => setActiveModal("Explore London + Ireland Combination")}
+            onClick={() => setActiveModal("7 Days Spanish–French Riviera Delight Tour")}
           >
             Send Query
           </button>
@@ -475,7 +460,7 @@ the end of your memorable London and Ireland holiday.
       {/* FAQ */}
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <p className="faq-subtitle">Everything you need to know before your London & Ireland journey</p>
+        <p className="faq-subtitle">Everything you need to know before your Riviera journey</p>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
             <div key={idx} className={`faq-item ${openFaq === idx ? "faq-open" : ""}`}>
@@ -591,4 +576,4 @@ the end of your memorable London and Ireland holiday.
   );
 };
 
-export default LondonIrelandLanding;
+export default RivieraDelightLanding;

@@ -208,7 +208,7 @@ const GrandBritainLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://res.cloudinary.com/djcyhbk2e/image/upload/f_auto,q_35,w_1200/v1/gvv/prod/london-tower-bridge"
+          src="https://tse3.mm.bing.net/th/id/OIP.puRJwluFPRhuvf1ud_ixRAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
           alt="Grand Britain Tour"
         />
 
@@ -235,7 +235,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperaccess.com/full/6778499.jpg"
               alt="London"
             />
             <p>London Skyline</p>
@@ -243,7 +243,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperbat.com/img/271253-edinburgh-castle-hd-wallpaper.jpg"
               alt="Edinburgh Castle"
             />
             <p>Edinburgh Castle</p>
@@ -251,7 +251,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1601999209039-e5ac0aa6c6e1?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse2.mm.bing.net/th/id/OIP.7iWsgM-0Z4vraM6z-7EOowHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Glasgow Cathedral"
             />
             <p>Glasgow Cathedral</p>
@@ -259,7 +259,7 @@ const GrandBritainLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpapercat.com/w/middle-retina/d/5/2/1617996-2048x1365-desktop-hd-glasgow-scotland-background-image.jpg"
               alt="Scottish Highlands"
             />
             <p>Scottish Highlands</p>
@@ -305,7 +305,7 @@ const GrandBritainLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperaccess.com/full/32511.jpg"
               alt=""
             />
             <div className="day-content">
@@ -322,7 +322,7 @@ will take you directly to your hotel for a smooth and comfortable start to your 
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse3.mm.bing.net/th/id/OIP.4m4u4IW25RgVhWvXMx-7EwAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -352,7 +352,7 @@ A relaxing and scenic journey through the heart of the city <br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543832923-44667a44c804?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse3.mm.bing.net/th/id/OIP.Mc8ozUJli-dPLEFRrxsgzgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -379,7 +379,7 @@ Thames and the city skyline. Learn about the bridge’s fascinating engineering 
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200&auto=format&fit=crop"
+              src="https://i.pinimg.com/originals/f0/53/31/f053312501da8df5ac58ecace259559c.jpg"
               alt=""
             />
             <div className="day-content">
@@ -400,7 +400,7 @@ culture.<br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1555990538-1e6d0bf5c7c1?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse4.mm.bing.net/th/id/OIP.8ZvUeMV8sYyQ-iMjq62tPQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -423,7 +423,7 @@ panoramic views of the city. <br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1601999209039-e5ac0aa6c6e1?q=80&w=1200&auto=format&fit=crop"
+              src="https://images5.alphacoders.com/458/thumb-1920-458232.jpg"
               alt=""
             />
             <div className="day-content">
@@ -442,7 +442,7 @@ architecture, and warm hospitality.<br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.QPeXr4NTLrGZ3GshQApxwAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -467,7 +467,7 @@ quaint houses, cafes, and stunning views across the loch’s western shoreline.<
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop"
+              src="https://rare-gallery.com/uploads/posts/806729-Glasgow-United-Kingdom-Houses-Rivers-Bridges-Night.jpg"
               alt=""
             />
             <div className="day-content">

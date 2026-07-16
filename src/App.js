@@ -284,6 +284,18 @@ import England7 from './Pages/England-7';
 import England8 from './Pages/England-8';
 import England9 from './Pages/England-9';
 import England10 from './Pages/England-10';
+import Spain from './Pages/Spain';
+import Spain1 from './Pages/Spain-1';
+import Spain2 from './Pages/Spain-2';
+import Spain3 from './Pages/Spain-3';
+import Spain4 from './Pages/Spain-4';
+import Spain5 from './Pages/Spain-5';
+import Spain6 from './Pages/Spain-6';
+import Spain7 from './Pages/Spain-7';
+import Spain8 from './Pages/Spain-8';
+import Spain9 from './Pages/Spain-9';
+import Spain10 from './Pages/Spain-10';
+import Spain11 from './Pages/Spain-11';
 
 
 
@@ -582,8 +594,21 @@ function App() {
 <Route path="/Classic-Europe" element={<England6 />} />
 <Route path="/classic-uK" element={<England7 />} />
 <Route path="/Grand-Britain" element={<England8 />} />
-<Route path="/London-Ireland " element={<England9 />} />
+<Route path="/London-Ireland" element={<England9 />} />
 <Route path="/Grand-Discovery" element={<England10 />} />
+<Route path="/Spain-landing1" element={<Spain />} />
+<Route path="/Madrid-Ibiza" element={<Spain1 />} />
+<Route path="/Best-Barcelona" element={<Spain2 />} />
+<Route path="/Seville-Madrid" element={<Spain3 />} />
+<Route path="/Ibiza-Madrid" element={<Spain4 />} />
+<Route path="/Barcelona-Madrid" element={<Spain5 />} />
+<Route path="/Malaga-Seville" element={<Spain6 />} />
+<Route path="/Seville-Madrid" element={<Spain7 />} />
+<Route path="/Barcelona-Andalusian" element={<Spain8 />} />
+<Route path="/Lisbon-Porto" element={<Spain9 />} />
+<Route path="/Cities-Portugal’s" element={<Spain10 />} />
+<Route path="/Riviera-Delight" element={<Spain11 />} />
+
 
 
 

@@ -208,7 +208,7 @@ const UKLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://www.campingandcaravanningclub.co.uk/-/media/Images/Regions/wye-valley.jpg?rev=07749abff54340d0b1ded5367f6b95e1&w=1920&h=940"
+          src="https://www.londonbusinessmag.co.uk/wp-content/uploads/2023/01/Wye-Valley-England-and-Wales.jpg"
           alt="UK Tour"
         />
 
@@ -235,7 +235,7 @@ const UKLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://wallpaperaccess.com/full/500961.jpg"
+              src="https://images4.alphacoders.com/795/795081.jpg"
               alt="London"
             />
             <p>London Skyline</p>
@@ -251,7 +251,7 @@ const UKLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.squarespace-cdn.com/content/v1/5448f34be4b078c86b41ae3a/1526046987760-JQLEL3AYN3SJKGUT7QRY/shutterstock_155822744-Wye-Valley-from-Symonda-Yat-summer-small.jpg"
+              src="https://eu-assets.simpleview-europe.com/visitmonmouthshire/imageresizer/?image=%2Fdbimgs%2FAutumn%20Eagles%20Nest%201920x1080.jpg&action=FeaturedItemsGalleryProElite3x2"
               alt="Wye Valley"
             />
             <p>Wye Valley</p>
@@ -259,7 +259,7 @@ const UKLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpapercat.com/w/full/1/6/6/679458-2740x1532-desktop-hd-edinburgh-castle-background-image.jpg"
               alt="Edinburgh Castle"
             />
             <p>Edinburgh Castle</p>
@@ -305,7 +305,7 @@ const UKLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.explicit.bing.net/th/id/OIP.3FA2Xgo0gtsJPlAQoGkEjAHaEV?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -323,7 +323,7 @@ const UKLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.upuGtbhXwJoIoT1CbolE3QHaEy?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -352,7 +352,7 @@ const UKLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpapercrafter.com/desktop1/551782-City-Hall-Tower-Bridge-sunset-London-urban-building.jpg"
               alt=""
             />
             <div className="day-content">
@@ -371,7 +371,7 @@ const UKLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1591101025664-45c48c4ba38c?q=80&w=1200&auto=format&fit=crop"
+              src="https://sail-newport.com/wp-content/uploads/2024/11/Newport_Lighthouse-Coastal-Tour_Slider-3.jpg"
               alt=""
             />
             <div className="day-content">
@@ -392,7 +392,7 @@ const UKLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpapercave.com/wp/wp2107105.jpg"
               alt=""
             />
             <div className="day-content">
@@ -411,7 +411,7 @@ const UKLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543832923-44667a44c804?q=80&w=1200&auto=format&fit=crop"
+              src="https://rare-gallery.com/uploads/posts/4551009-castle-edinburgh.jpg"
               alt=""
             />
             <div className="day-content">
@@ -434,17 +434,17 @@ const UKLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1580060839134-75a50fb63c4f?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse4.mm.bing.net/th/id/OIP.woPU4xfrEh5VDjjKY5ZYtwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
               <h3>Day 7</h3>
               <p style={{ color: "blue" }}> Edinburgh → India </p>
               <p>
-              Breakfast at the hotel <br />
+               Breakfast at the hotel <br />
                 Private transfer to the airport for your return journey <br />
  
-              Depart with unforgettable UK memories    
+               Depart with unforgettable UK memories    
                 ________________________________________
               </p>
             </div>

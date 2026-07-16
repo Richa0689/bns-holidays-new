@@ -208,7 +208,7 @@ const ClassicUKExplorer = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://res.cloudinary.com/djcyhbk2e/image/upload/f_auto,q_35,w_1200/v1/gvv/prod/london-tower-bridge"
+          src="https://media.architecturaldigest.com/photos/5ad7b1be64b2307d11eae7d7/16:9/w_2560%2Cc_limit/GettyImages-561318245.jpg"
           alt="Classic UK Explorer Tour"
         />
 
@@ -235,7 +235,7 @@ const ClassicUKExplorer = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperaccess.com/full/2465100.jpg"
               alt="London"
             />
             <p>London Skyline</p>
@@ -243,7 +243,7 @@ const ClassicUKExplorer = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1594643060732-e9d0b4a49dd6?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.xuE94QS-kT2Sz27LBSxX0gHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Windsor Castle"
             />
             <p>Windsor Castle</p>
@@ -251,7 +251,7 @@ const ClassicUKExplorer = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1601987175812-8f0a5c0c8f9d?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.ENgfMatmgkpkCsAOI0E6WwAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Old Trafford Manchester"
             />
             <p>Old Trafford, Manchester</p>
@@ -259,7 +259,7 @@ const ClassicUKExplorer = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1571168507184-8b8a9b6dfa5c?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperaccess.com/full/4546119.jpg"
               alt="Manchester Skyline"
             />
             <p>Manchester Skyline</p>
@@ -305,7 +305,7 @@ const ClassicUKExplorer = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.ZoHG7J2Hr00aA4lGuLmQsQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -327,7 +327,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://img.freepik.com/premium-photo/luxury-hotel-five-star-room-service-various-food-platters-bread-coffee-as-inroom-breakfast-travel-hospitality_360074-52793.jpg?w=2000"
               alt=""
             />
             <div className="day-content">
@@ -351,7 +351,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1596395463539-c5f9f5c9b3f5?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.3W7AX0cT7Zya9SEWFsWppQHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -383,7 +383,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543839137-9f827553ba22?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse4.mm.bing.net/th/id/OIP.vW8xe27kFKE-a7uuk1ACnwHaD2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -408,7 +408,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop"
+              src="hhttps://tse3.mm.bing.net/th/id/OIP.tOM6MzU6MQvMqjd6ekeLMwHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -426,7 +426,7 @@ Overnight Stay in Manchester
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1601987175812-8f0a5c0c8f9d?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/R.db45d21605ff4be495c8f69adfb5430f?rik=pt7wPvlh84x25w&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f2%2f6%2fc%2f1009233-download-old-trafford-wallpaper-1920x1200.jpg&ehk=6vMNC%2fk%2b3DODf8hRUSZqX2pkAgz0OMAMGZjBAeQxvCc%3d&risl=&pid=ImgRaw&r=0"
               alt=""
             />
             <div className="day-content">
@@ -450,7 +450,7 @@ Overnight Stay in Manchester.
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperaccess.com/full/3056517.jpg"
               alt=""
             />
             <div className="day-content">

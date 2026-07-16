@@ -208,7 +208,7 @@ const UKExplorerLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://res.cloudinary.com/djcyhbk2e/image/upload/f_auto,q_35,w_1200/v1/gvv/prod/london-tower-bridge"
+          src="https://static.vecteezy.com/system/resources/thumbnails/005/134/590/small_2x/aerial-view-of-manchester-city-in-uk-photo.jpg"
           alt="UK Tour"
         />
 
@@ -235,7 +235,7 @@ const UKExplorerLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpaperaccess.com/full/2465100.jpg"
               alt="London"
             />
             <p>London Skyline</p>
@@ -243,7 +243,7 @@ const UKExplorerLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1567958451986-2de427a4a0be?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.dDDPa4NnEcOOwX7NpJ4NaQHaEo?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Birmingham Canals"
             />
             <p>Birmingham Canals</p>
@@ -251,7 +251,7 @@ const UKExplorerLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1200&auto=format&fit=crop"
+              src="https://topsoftwarecompanies.co/front_assets/img/category/manchester.jpg"
               alt="Manchester Skyline"
             />
             <p>Manchester Skyline</p>
@@ -259,7 +259,7 @@ const UKExplorerLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse3.mm.bing.net/th/id/OIP.s1zYLUUmkkVCzrW0FqTp2gHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="English Countryside"
             />
             <p>English Countryside</p>
@@ -305,7 +305,7 @@ const UKExplorerLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpapercat.com/w/full/a/7/9/292567-3840x2160-desktop-4k-london-background-image.jpg"
               alt=""
             />
             <div className="day-content">
@@ -327,7 +327,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://img.freepik.com/premium-photo/luxury-tourist-resort-breakfast-hotel-room-with-stunning-ocean-view_1061358-177983.jpg"
               alt=""
             />
             <div className="day-content">
@@ -351,7 +351,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543832923-44667a44c804?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.pyH76lwLHrI2URr_U6DqeQHaEo?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -381,7 +381,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse2.mm.bing.net/th/id/OIP.lfrRvO1h2An-ZDFSwH5zTwHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -400,12 +400,12 @@ Birmingham is a lively city known for its canals, cultural attractions, and vibr
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1567958451986-2de427a4a0be?q=80&w=1200&auto=format&fit=crop"
+              src="https://media.tacdn.com/media/photo-m/1280/2b/b7/e4/ca/caption.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 5</h3>
-              <p style={{ color: "blue" }}> Birmingham – Guided Walking Tour </p>
+              <p style={{ color: "blue" }}>Birmingham – Guided Walking Tour</p>
               <p>
 Breakfast at Hotel.<br/> 
  This morning, enjoy a guided walking tour on a shared basis. Gain authentic insights into modern life 
@@ -424,7 +424,7 @@ Council House. Finish your tour at the 19th-century Ikon Gallery.<br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop"
+              src="https://images8.alphacoders.com/976/thumb-1920-976200.jpg"
               alt=""
             />
             <div className="day-content">
@@ -442,7 +442,7 @@ its rich industrial heritage, iconic music culture, and world-famous football le
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse2.mm.bing.net/th/id/OIP.3WoSP34XJ7LhangwMSr8MQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -464,7 +464,7 @@ player's shirt and walk down the tunnel to the sound of the Etihad Stadium crowd
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop"
+              src="https://static.toiimg.com/thumb/msid-125480297,imgsize-1184221,width-400,resizemode-4/ahmedabad.jpg"
               alt=""
             />
             <div className="day-content">

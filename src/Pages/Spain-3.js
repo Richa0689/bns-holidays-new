@@ -12,34 +12,34 @@ const initialForm = {
 
 const faqs = [
   {
-    question: "What is the best time to visit London and Dublin for this tour?",
+    question: "What is the best time to visit Spain for this tour?",
     answer:
-      "Late Spring to early Autumn (May–September) offers the mildest weather and longest daylight hours, perfect for sightseeing in London and exploring Dublin's streets and countryside. December also has festive charm with Christmas markets, though days are shorter.",
+      "March to June and September to November are ideal, offering pleasant temperatures across Barcelona, Valencia, Seville and Madrid. Summer (July–August) can be quite hot, especially in Seville, while spring and autumn bring comfortable weather and fewer crowds for sightseeing.",
   },
   {
-    question: "What is included in the 7-day London + Ireland package?",
+    question: "What is included in the 9-day Best of Spain package?",
     answer:
-      "The package includes hotel accommodation for 6 nights (3 nights in London, 3 nights in Dublin), daily breakfast, flight/transfer between London and Dublin, guided city tours in both cities, and sightseeing including Windsor, London Eye, River Thames cruise and the Wicklow countryside. International flights to/from India and personal expenses are not included.",
+      "The package includes 8 nights accommodation (2 nights Barcelona, 2 nights Valencia, 2 nights Seville, 2 nights Madrid), daily breakfast, comfortable transfers between cities, guided city tours in Barcelona, Valencia, Seville and Madrid, and sightseeing at iconic landmarks along the way. International flights, visa fees and personal expenses are not included.",
   },
   {
-    question: "Do I need a visa to travel to the UK and Ireland?",
+    question: "Do I need a visa to travel to Spain?",
     answer:
-      "Indian passport holders require a UK Standard Visitor visa and a separate Irish visa (Ireland is not part of the Schengen Area). We recommend applying at least 6–8 weeks before your travel date. Our team can assist you with documentation and appointment scheduling.",
+      "Indian passport holders require a Schengen visa, which covers travel across Spain on this itinerary. We recommend applying at least 6–8 weeks before your travel date. Our team can assist you with documentation and appointment scheduling.",
   },
   {
     question: "What are the must-see attractions on this tour?",
     answer:
-      "Highlights include Big Ben, the Tower of London and Buckingham Palace in London, plus a River Thames cruise, followed by Dublin Castle, Trinity College, Temple Bar and the stunning Wicklow Mountains or Cliffs of Moher countryside in Ireland.",
+      "Highlights include the Sagrada Familia and Park Güell in Barcelona, the City of Arts and Sciences in Valencia, the Alcázar and Plaza de España in Seville, and the Royal Palace and Retiro Park in Madrid.",
   },
   {
-    question: "What currencies are used across London and Dublin?",
+    question: "What currency is used in Spain?",
     answer:
-      "London uses the Pound Sterling (GBP) while Dublin uses the Euro (EUR). Cards are widely accepted in both cities, though it's handy to carry some local cash for small purchases. We recommend informing your bank before travelling to avoid transaction issues.",
+      "Spain uses the Euro (EUR). Cards are widely accepted across all four cities, but it's useful to carry some local cash for small purchases and transit. We recommend informing your bank before travelling to avoid transaction issues.",
   },
   {
     question: "Can I customise this itinerary?",
     answer:
-      "Absolutely! This itinerary can be fully tailored to your preferences, travel dates, and budget. Whether you'd like extra nights in London, a Cliffs of Moher day trip from Dublin, or upgraded hotels, our team will curate the perfect personalised experience for you.",
+      "Absolutely! This itinerary can be fully tailored to your preferences, travel dates, and budget. Whether you'd like to add a Toledo day trip, extra nights in Barcelona, or upgrade your hotels, our team will curate the perfect personalised experience for you.",
   },
 ];
 
@@ -198,7 +198,7 @@ const QueryModal = ({ day, onClose }) => {
 };
 
 /* ── Main page ───────────────────────────────────────────────── */
-const LondonIrelandLanding = () => {
+const SpainLanding = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -208,18 +208,18 @@ const LondonIrelandLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://wallpaperaccess.com/full/117446.jpg"
-          alt="London Ireland Tour"
+          src="https://www.outofoffice.com/wp-content/uploads/bs-webp/uploads/Hero-Pics-2026-02-24T172157.950.png.webp"
+          alt="Spain Tour"
         />
 
         <div className="hero-content">
-          <h1>London + Ireland</h1>
+          <h1>Best of Spain</h1>
 
           <p>
-            London • Dublin
+            Barcelona • Valencia • Seville • Madrid
           </p>
 
-          <Link to="/London-Ireland">
+          <Link to="/Seville-Madrid">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -235,34 +235,34 @@ const LondonIrelandLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://wallpaperaccess.com/full/419755.jpg"
-              alt="London"
+              src="https://wallpaperbat.com/img/188382-this-is-what-barcelona-looks-like-through-an-architects-eyes.jpg"
+              alt="Sagrada Familia Barcelona"
             />
-            <p>London Skyline</p>
+            <p>Sagrada Familia, Barcelona</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://tse4.mm.bing.net/th/id/OIP.K0L2FiF-wzOD8DLeOusm4gHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Dublin Castle"
+              src="https://c1.staticflickr.com/5/4114/4849320790_43c8f292f0_b.jpg"
+              alt="City of Arts and Sciences Valencia"
             />
-            <p>Dublin Castle</p>
+            <p>City of Arts &amp; Sciences, Valencia</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://th.bing.com/th/id/OIP.n-f5D9p16_qDpt556HfeQgHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Temple Bar Dublin"
+              src="https://images5.alphacoders.com/540/540259.jpg"
+              alt="Plaza de Espana Seville"
             />
-            <p>Temple Bar, Dublin</p>
+            <p>Plaza de España, Seville</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://tse1.mm.bing.net/th/id/OIP.aVwPONvUnHPbFLv99DU8qwHaEc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Wicklow Mountains"
+              src="https://wallpapercave.com/wp/wp4197032.jpg"
+              alt="Royal Palace Madrid"
             />
-            <p>Wicklow Countryside</p>
+            <p>Royal Palace, Madrid</p>
           </div>
 
         </div>
@@ -273,24 +273,24 @@ const LondonIrelandLanding = () => {
         <h2>Why Choose This Tour?</h2>
 
         <div className="why-grid">
-          <div>🏰 Iconic British Landmarks</div>
-          <div>🍀 The Charm of Dublin</div>
-          <div>🎡 London Eye & Thames Cruise</div>
-          <div>📸 Two Capitals, One Trip</div>
+          <div>🏛️ Iconic Barcelona Landmarks</div>
+          <div>🌊 Futuristic Valencia Architecture</div>
+          <div>💃 Andalusian Charm in Seville</div>
+          <div>👑 Royal Madrid Heritage</div>
         </div>
       </div>
 
       {/* CTA */}
       <div className="cta-section">
-        <h2>Experience London & Ireland in 7 Days</h2>
+        <h2>Experience the Best of Spain in 9 Days</h2>
 
         <p>
-          From royal palaces to lively Irish pubs, from the Thames to the Liffey — the ultimate Isles escape
+          From Gaudí's Barcelona to Royal Madrid — a journey through Spain's finest cities
         </p>
 
         <br />
 
-        <Link to="/London-Ireland">
+        <Link to="/Seville-Madrid">
           <button className="book-now-btn">
             Book Now
           </button>
@@ -299,144 +299,140 @@ const LondonIrelandLanding = () => {
 
       {/* ITINERARY */}
       <div className="itinerary-section">
-        <h2>7 Days Itinerary</h2>
+        <h2>9 Days Itinerary</h2>
 
         <div className="itinerary-list">
 
           <div className="day-card">
             <img
-              src="https://wallpapercrafter.com/desktop1/551782-City-Hall-Tower-Bridge-sunset-London-urban-building.jpg"
+              src="https://4kwallpapers.com/images/wallpapers/fc-barcelona-camp-3840x2160-19432.jpeg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 1</h3>
-              <p style={{ color: "blue" }}> India → London</p>
+              <p style={{ color: "blue" }}>Barcelona – Arrival</p>
               <p>
-             Arrival in London: Begin Your English Journey<br/> 
- 
-London Eye Entry Ticket, Thames River Cruise Ticket, and London Hop On Hop Off Tour (as per next 
-day’s program, subject to availability) <br/>
- 
-Welcome to London, the timeless and vibrant capital of the United Kingdom. Upon arrival at London 
-Heathrow Airport, you will be greeted and transferred privately to your hotel, ensuring a smooth and 
-comfortable start to your holiday.<br/> 
-London’s charm is felt instantly, with its iconic landmarks, classic architecture, cosmopolitan 
-atmosphere, and rich blend of history and culture. Spend your first evening discovering the lively 
-streets, traditional pubs, charming cafés, or simply relaxing after your journey. <br/>
- Overnight Stay in London
+            Welcome to Barcelona – The City of Gaudí<br/>
+Your adventure begins with a smooth transfer from the airport to your hotel, where you’ll be ready 
+to immerse yourself in the magic of Barcelona. Whether you're here for the art, the culture, the 
+fashion, or the food, Barcelona offers an abundance of experiences waiting to be explored.<br/> 
+ Overnight Stay in Barcelona. 
+
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,dpr=1/tour_img/b977aa6d5872eab66d7edf64b44856e5d3727854d05f51bfe27a2f244e218099.jpg"
+              src="https://cdn-imgix.headout.com/media/images/d6e05e1535d69243bf9661f9f6d5572a-Barclona%20Hop%20on%20hop%20off%20near%20Sagrada%20Familia.jpg?auto=format&w=1058.3999999999999&h=540&q=90&fit=crop&crop=faces"
               alt=""
             />
             <div className="day-content">
               <h3>Day 2</h3>
-              <p style={{ color: "blue" }}>London – London Hop on Hop Off Tour and London Eye Visit </p>
+              <p style={{ color: "blue" }}>Barcelona hop-on hop-off tours</p>
               <p>
-                Breakfast at Hotel.<br/> 
-London Eye Entry Ticket, Thames River Cruise Ticket, and London Hop on Hop Off Tour 
- After breakfast, proceed for your one-day London Hop on Hop Off city tour on SIC basis. This tour 
-offers a perfect introduction to the city as you explore major attractions at your own pace. 
-You will also enjoy your visit to the renowned London Eye, one of the world’s tallest observation 
-wheels, offering panoramic views of the River Thames, Big Ben, Houses of Parliament, and the city 
-skyline.<br/> 
-Later, enjoy your Thames River Cruise, gliding through the heart of London and witnessing historic 
-landmarks from a unique and scenic perspective. <br/>
- Overnight Stay in London
+               Breakfast at Hotel.<br/> 
+After breakfast proceed to Barcelona hop-on hop-off tours are a convenient way to see the city's 
+main attractions using a double-decker bus that runs on two different routes. You can purchase 24- 
+or 48-hour passes that allow unlimited stops at key landmarks like the Sagrada Familia and Park 
+Güell, with the buses providing audio commentary and free Wi-Fi.<br/>  
+Overnight stay at Barcelona. 
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse1.mm.bing.net/th/id/OIP.2ux8rjfmMTiQd0NOqCHdYAHaDg?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://tse2.mm.bing.net/th/id/OIP.LYH7E4u5XO3iYEktN_voJAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
               <h3>Day 3</h3>
-              <p style={{ color: "blue" }}>London – Windsor Castle, Bath and Stonehenge Tour </p>
+              <p style={{ color: "blue" }}>Barcelona - Valencia</p>
               <p>
-            Breakfast at Hotel. <br/>
-Windsor Castle, Bath and Stonehenge Tour with All Tickets Included 
-After breakfast, prepare for a full-day tour on SIC basis to three of England’s most iconic heritage 
-sites. Your journey begins at Windsor Castle, the oldest and largest occupied castle in the world,
-where you will explore the State Apartments and St. George’s Chapel.<br/> 
-Continue to the UNESCO-listed city of Bath, admired for its Georgian architecture and Roman Baths.<br/> 
-Your final stop is Stonehenge, one of the world’s most mysterious prehistoric monuments. Learn 
-about its ancient origins and significance while soaking in the dramatic views of Salisbury Plain. <br/>
- 
-Overnight Stay in London
+                After Breakfast Check - out from Barcelona Hotel.<br/>  
+Train from Barcelona to Valencia. Travelling by train from Barcelona to Valencia You can take the 
+AVE high-speed train, which takes around 3-3.5 hours, or the Euromed train, which takes around 3-4 
+hours. Both trains offer comfortable seating, Wi-Fi, and scenic views of the Mediterranean coast.<br/> 
+Some popular trains include: - AVE: High-speed train (around 3 hours) - Euromed: High-speed train (around 3-4 hours) - Iryo: Modern, high-speed train (around 3 hours)  
+ Welcome to Valencia! Valencia, the City of Arts and Sciences, is a vibrant and stunning destination on 
+Spain's eastern coast. Known for its beautiful beaches, futuristic architecture, and rich cultural 
+heritage, Valencia is a must-visit! <br/>
+Enjoy the city's delicious cuisine, including paella, and explore the historic center, filled with charming 
+streets and tapas bars!<br/> 
+ Overnight stay at Valencia.
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse2.mm.bing.net/th/id/OIP.GkK22Zy9oJUGuKr4pcAwrAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://valencia-pass.com/static/8271ad0062acd53f858aeb6685cc8b3f/b72c0/hop-on-hop-off-activities-experiences-tickets-valencia-spain-valencia-pass.webp"
               alt=""
             />
             <div className="day-content">
               <h3>Day 4</h3>
-              <p style={{ color: "blue" }}>London → Dublin </p>
+              <p style={{ color: "blue" }}> Valencia - Valencia 01 Day Hop on Hop off bus tour</p>
               <p>
-             Breakfast at Hotel.<br/> 
-After breakfast, a private transfer will take you from your London hotel to London Heathrow Airport 
-for your onward flight to Dublin.<br/> 
-Upon arrival at Dublin Airport, a private transfer will take you to your hotel. 
-Dublin, Ireland’s charming and lively capital, offers a warm welcome with its historic streets, literary 
-legacy, friendly pubs, and vibrant cultural atmosphere. Spend your evening exploring the city’s inviting 
-neighbourhoods and riverside walks.<br/> 
- Overnight Stay in Dublin 
+               Breakfast at Hotel. <br/> 
+After breakfast proceed to Valencia Hop-On Hop-Off Bus Tour – Hop on board the iconic sightseeing 
+bus to discover the highlights of Valencia at your own pace. Explore this vibrant Mediterranean city 
+where history meets modern architecture. With 17 convenient stops across the city, you can admire 
+iconic landmarks ranging from historic monuments and lively plazas to contemporary masterpieces 
+such as the City of Arts and Sciences and the Oceanogràfic.<br/>  
+ Relax and enjoy panoramic views from the open-top bus as you hop on and off whenever you wish. 
+Enhance your experience with the real-time multilingual audio guide, available in English, French, 
+German, Spanish, Italian, Chinese, Portuguese, Japanese, Valencian, and Russian, offering fascinating 
+insights into Valencia’s culture, history, and traditions. The flexible ticket options allow you to explore 
+the city comfortably while taking in Valencia’s unique blend of old-world charm and modern flair.<br/>  
+ Overnight stay at Valencia. 
+
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://cdn-imgix.headout.com/media/images/ccb2e8811ada97917bd47cef65d85401-33540-dublin-cliffs-of-moher--burren-and-galway-tour-from-dublin-04.jpg?auto=format&w=1058.3999999999999&h=540&q=90&crop=faces&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.rfiLgtnMfKG8ReV7g-FFyQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
               <h3>Day 5</h3>
-              <p style={{ color: "blue" }}>Dublin – Cliffs of Moher, Burren and Galway City Tour </p>
+              <p style={{ color: "blue" }}>Valencia – Seville</p>
               <p>
-             Breakfast at Hotel.<br/> 
-Cliffs of Moher, Burren and Galway City Day Tour<br/> 
- After breakfast, proceed for a full-day tour on SIC basis to some of Ireland’s most breathtaking natural 
-and cultural wonders. <br/>
-Your journey begins with the spectacular Cliffs of Moher, offering dramatic views over the Atlantic 
-Ocean. <br/>
-Continue through the otherworldly landscapes of the Burren, known for its limestone formations and 
-rare flora. <br/>
-The tour concludes with a visit to the vibrant city of Galway, famous for its lively streets, arts scene, 
-and colourful harbourfront. This experience provides a perfect blend of Ireland’s natural beauty and 
-cultural charm.<br/> 
- Overnight Stay in Dublin
+                After Breakfast Check - out from Valencia Hotel.<br/>  
+Train from Valencia to Seville. Travelling by train from Valencia to Seville Travelling by train from 
+Valencia to Seville is a great way to see Spain's diverse landscapes! <br/> 
+ The journey takes around 6-8 hours, depending on the train and route. You can take the AVE high
+speed train with a change in Madrid, or opt for a more scenic route with Renfe's Intercity trains.<br/>  
+ Some popular trains include: - AVE: High-speed train with a change in Madrid (around 6 hours) - Renfe Intercity: Scenic route with multiple changes (around 8 hours)  
+ Welcome to Seville! Seville, Seville, the Pearl of Andalusia, is a city of passion, history, and beauty! 
+Known for its stunning architecture, rich culture, and vibrant flamenco music, Seville is a must-visit 
+destination. <br/> 
+ Overnight stay at Seville. 
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse2.mm.bing.net/th/id/OIP.cuqaFczCvzfVpnljPK7YIQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://m.jtgtravel.com/img/seville-hop-on-hop-off-bus-tour-for-48-hours-d556-5819P129-2.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 6</h3>
-              <p style={{ color: "blue" }}> Dublin – Dublin Hop On Hop Off Tour</p>
+              <p style={{ color: "blue" }}>Seville 01 Day Hop on Hop off bus tour</p>
               <p>
-              Breakfast at Hotel.<br/>  
-Dublin Hop On Hop Off Tour <br/> 
- After breakfast, enjoy your one-day Dublin Hop On Hop Off tour on SIC basis, which offers a 
-wonderful overview of the city’s most significant attractions. <br/> 
-Explore landmarks such as Trinity College, St. Patrick’s Cathedral, Dublin Castle, Temple Bar, and 
-more, all at your own pace. The informative commentary enhances your understanding of Dublin’s 
-rich history, literature, and warm Irish spirit.<br/>  
- Overnight Stay in Dublin 
+              Breakfast at Hotel<br/> . 
+After breakfast proceed to Seville Hop on Hop off Bus Tour - Hop on board one of bright red buses 
+to see the best of Seville - the artistic, cultural, and financial capital of southern Spain. You will not 
+be short of things to do in this beautiful city! With 14 bus stops around this historical masterpiece of 
+a city, you will see so much from prestigious Islamic monuments, to gardens and Flamenco festivals.<br/>  
+Sit back and enjoy the panoramic view from the open top bus and hop on and off at your
+convenience! Join the free walking tours to find out even more about Seville: discover Plaza de 
+España and Maria Luisa Park, the Jewish quarter, Santa Cruz, with the buses providing audio 
+commentary and free Wi-Fi.<br/>
+Overnight Stay in Seville.   
 
               </p>
             </div>
@@ -444,16 +440,59 @@ rich history, literature, and warm Irish spirit.<br/>
 
           <div className="day-card">
             <img
-              src="https://tse4.mm.bing.net/th/id/OIP.X-Ru9RysdgJMPngOJEPanAHaEu?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://www.tripsavvy.com/thmb/0647ka-RF3Ut9aEVHdgIkP8va8U=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/seville-plaza-de-espana-540742335-58f5664b3df78ca15909e0a3.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 7</h3>
-              <p style={{ color: "blue" }}>   Dublin → India </p>
+              <p style={{ color: "blue" }}>Seville → Madrid</p>
               <p>
-             Breakfast at Hotel.<br/>  
-After breakfast, proceed with a private transfer to Dublin Airport for your return journey, marking 
-the end of your memorable London and Ireland holiday.
+          After Breakfast Check - out from Seville Hotel. <br/>
+ Travelling by train from Seville to Madrid is an amazing experience! The AVE high-speed trains are 
+super comfortable, and you can enjoy the beautiful Spanish countryside rolling by. It's a great way to 
+relax and take in the views, hassle-free. Plus, you'll arrive in Madrid feeling refreshed and ready to 
+explore!<br/> 
+ The journey takes around 2.5-4 hours, depending on the train and class.<br/> 
+ Welcome Madrid! The vibrant capital of Spain, Madrid is a city of art, culture, and passion! Known for 
+its stunning architecture, world-class museums, and lively nightlife, Madrid is a must-visit destination. 
+ Overnight Stay in Madrid. 
+
+              </p>
+            </div>
+          </div>
+
+          <div className="day-card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.hTaJCJ7LZktavmUHet3YhQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt=""
+            />
+            <div className="day-content">
+              <h3>Day 8</h3>
+              <p style={{ color: "blue" }}>Madrid –Madrid City Tour (SIC Basis – 1.5 hrs approx.)</p>
+              <p>
+                After breakfast, enjoy the Madrid City Tour on SIC Basis, covering key highlights of Madrid including 
+historical monuments, iconic squares, and architectural landmarks. Afternoon and evening at 
+leisure. <br/>
+ Experience the best of Madrid on a Big Bus open-top sightseeing tour! Sit back and soak up the city's 
+vibrant energy as your live guide shares the stories behind iconic landmarks like the Royal Palace, 
+Prado Museum, and Puerta de Alcalá. Cruise through lush parks like El Retiro and the Royal Botanic 
+Gardens, and marvel at stunning architecture like Cibeles Palace and Almudena Cathedral. <br/>
+ Overnight stay at Madrid. 
+              </p>
+            </div>
+          </div>
+
+          <div className="day-card">
+            <img
+              src="https://i.pinimg.com/originals/59/ad/2a/59ad2a19960213a7381b59ace6d2526d.jpg"
+              alt=""
+            />
+            <div className="day-content">
+              <h3>Day 9</h3>
+              <p style={{ color: "blue" }}>Madrid – Departure</p>
+              <p>
+               After Breakfast Check - out from Madrid Hotel.<br/> 
+After breakfast proceed to airport with private transfer
                 ________________________________________
               </p>
             </div>
@@ -465,7 +504,7 @@ the end of your memorable London and Ireland holiday.
         <div style={{ textAlign: "center", marginTop: "36px" }}>
           <button
             className="send-query-btn"
-            onClick={() => setActiveModal("Explore London + Ireland Combination")}
+            onClick={() => setActiveModal("9 Days Best of Spain Tour")}
           >
             Send Query
           </button>
@@ -475,7 +514,7 @@ the end of your memorable London and Ireland holiday.
       {/* FAQ */}
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <p className="faq-subtitle">Everything you need to know before your London & Ireland journey</p>
+        <p className="faq-subtitle">Everything you need to know before your Spanish journey</p>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
             <div key={idx} className={`faq-item ${openFaq === idx ? "faq-open" : ""}`}>
@@ -591,4 +630,4 @@ the end of your memorable London and Ireland holiday.
   );
 };
 
-export default LondonIrelandLanding;
+export default SpainLanding;

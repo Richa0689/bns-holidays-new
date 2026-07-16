@@ -12,34 +12,34 @@ const initialForm = {
 
 const faqs = [
   {
-    question: "What is the best time to visit London and Dublin for this tour?",
+    question: "What is the best time to visit Barcelona, Madrid and Ibiza for this tour?",
     answer:
-      "Late Spring to early Autumn (May–September) offers the mildest weather and longest daylight hours, perfect for sightseeing in London and exploring Dublin's streets and countryside. December also has festive charm with Christmas markets, though days are shorter.",
+      "May to September is ideal, with June and September offering warm weather, sunny beaches and lively city life. Summer (July–August) is peak season for Ibiza's beach and party scene, while May, June and September bring slightly cooler temperatures and fewer crowds, perfect for sightseeing in Barcelona and Madrid.",
   },
   {
-    question: "What is included in the 7-day London + Ireland package?",
+    question: "What is included in the 7-day Best of Barcelona, Madrid & Ibiza package?",
     answer:
-      "The package includes hotel accommodation for 6 nights (3 nights in London, 3 nights in Dublin), daily breakfast, flight/transfer between London and Dublin, guided city tours in both cities, and sightseeing including Windsor, London Eye, River Thames cruise and the Wicklow countryside. International flights to/from India and personal expenses are not included.",
+      "The package includes 6 nights accommodation (2 nights Barcelona, 2 nights Madrid, 2 nights Ibiza), daily breakfast, comfortable transfers between cities, guided city tours in Barcelona and Madrid, and sightseeing at iconic landmarks along the way. International flights, visa fees and personal expenses are not included.",
   },
   {
-    question: "Do I need a visa to travel to the UK and Ireland?",
+    question: "Do I need a visa to travel to Spain?",
     answer:
-      "Indian passport holders require a UK Standard Visitor visa and a separate Irish visa (Ireland is not part of the Schengen Area). We recommend applying at least 6–8 weeks before your travel date. Our team can assist you with documentation and appointment scheduling.",
+      "Indian passport holders require a Schengen visa, which covers travel across Barcelona, Madrid and Ibiza on this itinerary. We recommend applying at least 6–8 weeks before your travel date. Our team can assist you with documentation and appointment scheduling.",
   },
   {
     question: "What are the must-see attractions on this tour?",
     answer:
-      "Highlights include Big Ben, the Tower of London and Buckingham Palace in London, plus a River Thames cruise, followed by Dublin Castle, Trinity College, Temple Bar and the stunning Wicklow Mountains or Cliffs of Moher countryside in Ireland.",
+      "Highlights include the Sagrada Familia and Park Güell in Barcelona, the Royal Palace and Prado Museum in Madrid, and the stunning beaches and sunset views of Ibiza.",
   },
   {
-    question: "What currencies are used across London and Dublin?",
+    question: "What currency is used across Spain?",
     answer:
-      "London uses the Pound Sterling (GBP) while Dublin uses the Euro (EUR). Cards are widely accepted in both cities, though it's handy to carry some local cash for small purchases. We recommend informing your bank before travelling to avoid transaction issues.",
+      "Spain uses the Euro (EUR) across Barcelona, Madrid and Ibiza. Cards are widely accepted everywhere, but it's useful to carry some local cash for small purchases and transit. We recommend informing your bank before travelling to avoid transaction issues.",
   },
   {
     question: "Can I customise this itinerary?",
     answer:
-      "Absolutely! This itinerary can be fully tailored to your preferences, travel dates, and budget. Whether you'd like extra nights in London, a Cliffs of Moher day trip from Dublin, or upgraded hotels, our team will curate the perfect personalised experience for you.",
+      "Absolutely! This itinerary can be fully tailored to your preferences, travel dates, and budget. Whether you'd like to add a Toledo day trip, extra nights in Ibiza, or upgrade your hotels, our team will curate the perfect personalised experience for you.",
   },
 ];
 
@@ -198,7 +198,7 @@ const QueryModal = ({ day, onClose }) => {
 };
 
 /* ── Main page ───────────────────────────────────────────────── */
-const LondonIrelandLanding = () => {
+const BestBarcelonaLanding = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -208,18 +208,18 @@ const LondonIrelandLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://wallpaperaccess.com/full/117446.jpg"
-          alt="London Ireland Tour"
+          src="https://gogetatrip.com/assets/images/european/main_banner/madrid_ibiza_barcelona_mainbanner.webp"
+          alt="Barcelona, Madrid & Ibiza Tour"
         />
 
         <div className="hero-content">
-          <h1>London + Ireland</h1>
+          <h1>Best of Barcelona, Madrid & Ibiza</h1>
 
           <p>
-            London • Dublin
+            Barcelona • Madrid • Ibiza
           </p>
 
-          <Link to="/London-Ireland">
+          <Link to="/Best-Barcelona">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -235,34 +235,34 @@ const LondonIrelandLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://wallpaperaccess.com/full/419755.jpg"
-              alt="London"
+              src="https://tse3.mm.bing.net/th/id/OIP.KwoYsNz9OWU5j3dIuZbcLQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Sagrada Familia Barcelona"
             />
-            <p>London Skyline</p>
+            <p>Sagrada Familia, Barcelona</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://tse4.mm.bing.net/th/id/OIP.K0L2FiF-wzOD8DLeOusm4gHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Dublin Castle"
+              src="https://cdn-imgix.headout.com/tour/22227/TOUR-IMAGE/34d5b5ec-8904-45a9-9429-d7b6252965bb-11711-madrid-fast-track-tickets-royal-palace-s---royal-kitchen-01.jpg?fm=pjpg&auto=compress"
+              alt="Royal Palace Madrid"
             />
-            <p>Dublin Castle</p>
+            <p>Royal Palace, Madrid</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://th.bing.com/th/id/OIP.n-f5D9p16_qDpt556HfeQgHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Temple Bar Dublin"
+              src="https://media.istockphoto.com/photos/beautiful-sunset-beach-at-cala-dhort-on-ibiza-picture-id473082556?b=1&k=20&m=473082556&s=170667a&w=0&h=99w8m3gapWnR42oid0dLurqGeMacHPjkB2iEjmcmd2M="
+              alt="Ibiza beaches"
             />
-            <p>Temple Bar, Dublin</p>
+            <p>Ibiza Beaches</p>
           </div>
 
           <div className="highlight-card">
             <img
-              src="https://tse1.mm.bing.net/th/id/OIP.aVwPONvUnHPbFLv99DU8qwHaEc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              alt="Wicklow Mountains"
+              src="https://tse4.mm.bing.net/th/id/OIP.L8xyBnIbWXa77ABjEVizbwHaFr?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Ibiza sunset"
             />
-            <p>Wicklow Countryside</p>
+            <p>Ibiza Sunset Views</p>
           </div>
 
         </div>
@@ -273,24 +273,24 @@ const LondonIrelandLanding = () => {
         <h2>Why Choose This Tour?</h2>
 
         <div className="why-grid">
-          <div>🏰 Iconic British Landmarks</div>
-          <div>🍀 The Charm of Dublin</div>
-          <div>🎡 London Eye & Thames Cruise</div>
-          <div>📸 Two Capitals, One Trip</div>
+          <div>🏛️ Iconic Gaudí Architecture</div>
+          <div>🎨 World-Class Madrid Museums</div>
+          <div>🏖️ Sun-Soaked Ibiza Beaches</div>
+          <div>🌅 Unforgettable Island Sunsets</div>
         </div>
       </div>
 
       {/* CTA */}
       <div className="cta-section">
-        <h2>Experience London & Ireland in 7 Days</h2>
+        <h2>Experience the Best of Spain in 7 Days</h2>
 
         <p>
-          From royal palaces to lively Irish pubs, from the Thames to the Liffey — the ultimate Isles escape
+          From the artistry of Barcelona to the royal charm of Madrid and the island vibes of Ibiza — a journey through Spain's finest
         </p>
 
         <br />
 
-        <Link to="/London-Ireland">
+        <Link to="/Best-Barcelona">
           <button className="book-now-btn">
             Book Now
           </button>
@@ -305,159 +305,172 @@ const LondonIrelandLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://wallpapercrafter.com/desktop1/551782-City-Hall-Tower-Bridge-sunset-London-urban-building.jpg"
+              src="https://images.wallpapersden.com/image/wl-barcelona-4k-spain_86353.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 1</h3>
-              <p style={{ color: "blue" }}> India → London</p>
+              <p style={{ color: "blue" }}>India – Barcelona</p>
               <p>
-             Arrival in London: Begin Your English Journey<br/> 
- 
-London Eye Entry Ticket, Thames River Cruise Ticket, and London Hop On Hop Off Tour (as per next 
-day’s program, subject to availability) <br/>
- 
-Welcome to London, the timeless and vibrant capital of the United Kingdom. Upon arrival at London 
-Heathrow Airport, you will be greeted and transferred privately to your hotel, ensuring a smooth and 
-comfortable start to your holiday.<br/> 
-London’s charm is felt instantly, with its iconic landmarks, classic architecture, cosmopolitan 
-atmosphere, and rich blend of history and culture. Spend your first evening discovering the lively 
-streets, traditional pubs, charming cafés, or simply relaxing after your journey. <br/>
- Overnight Stay in London
+             Arrival at Barcelona Airport.  <br/>
+Meet & greet and enjoy a private transfer to your hotel.  <br/>
+Check-in and rest of the day at leisure.  <br/>
+You may explore nearby areas or relax after your journey. <br/> 
+ Dernight Stay in Barcelona
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,dpr=1/tour_img/b977aa6d5872eab66d7edf64b44856e5d3727854d05f51bfe27a2f244e218099.jpg"
+              src="https://tse1.mm.bing.net/th/id/OIP.r7N6Tv847n_vGjio-bGTfgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
               <h3>Day 2</h3>
-              <p style={{ color: "blue" }}>London – London Hop on Hop Off Tour and London Eye Visit </p>
+              <p style={{ color: "blue" }}> Barcelona – Hop On Hop Off City Tour</p>
               <p>
-                Breakfast at Hotel.<br/> 
-London Eye Entry Ticket, Thames River Cruise Ticket, and London Hop on Hop Off Tour 
- After breakfast, proceed for your one-day London Hop on Hop Off city tour on SIC basis. This tour 
-offers a perfect introduction to the city as you explore major attractions at your own pace. 
-You will also enjoy your visit to the renowned London Eye, one of the world’s tallest observation 
-wheels, offering panoramic views of the River Thames, Big Ben, Houses of Parliament, and the city 
-skyline.<br/> 
-Later, enjoy your Thames River Cruise, gliding through the heart of London and witnessing historic 
-landmarks from a unique and scenic perspective. <br/>
- Overnight Stay in London
+              Breakfast at the hotel. <br/> 
+After breakfast, proceed for 01 Day Hop-On Hop-Off City Tour, covering major attractions such as:<br/>  
+Plaça de Catalunya <br/> 
+Gothic Quarter<br/>  
+La Rambla <br/> 
+Olympic Port <br/> 
+Montjuïc Hill<br/>  
+Later, visit Sagrada Familia with entry ticket only. <br/> 
+Evening free for leisure or shopping. <br/> 
+Overnight Stay in Barcelona . 
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse1.mm.bing.net/th/id/OIP.2ux8rjfmMTiQd0NOqCHdYAHaDg?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://tse1.mm.bing.net/th/id/OIP.nUtCKTZR91FvHHlfkx7IDQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
               <h3>Day 3</h3>
-              <p style={{ color: "blue" }}>London – Windsor Castle, Bath and Stonehenge Tour </p>
+              <p style={{ color: "blue" }}></p>
               <p>
-            Breakfast at Hotel. <br/>
-Windsor Castle, Bath and Stonehenge Tour with All Tickets Included 
-After breakfast, prepare for a full-day tour on SIC basis to three of England’s most iconic heritage 
-sites. Your journey begins at Windsor Castle, the oldest and largest occupied castle in the world,
-where you will explore the State Apartments and St. George’s Chapel.<br/> 
-Continue to the UNESCO-listed city of Bath, admired for its Georgian architecture and Roman Baths.<br/> 
-Your final stop is Stonehenge, one of the world’s most mysterious prehistoric monuments. Learn 
-about its ancient origins and significance while soaking in the dramatic views of Salisbury Plain. <br/>
+             Morning 
+Guests will be picked up from a designated meeting point in Barcelona on a shared coach. 
+Proceed towards Montserrat, a breathtaking mountain range and spiritual site. <br/>
  
-Overnight Stay in London
+En-route / Arrival at Montserrat <br/>
+Upon arrival, travel up the mountain by cog-wheel train or cable car (subject to availability). 
+Meet the local guide for an orientation tour. <br/>
+ 
+Montserrat Monastery Visit <br/>
+Visit the famous Santa Maria de Montserrat Abbey. <br/>
+Access to see the revered Black Madonna (La Moreneta) is included. 
+Learn about the history, culture, and religious significance of Montserrat. 
+Guests will have free time to explore the basilica, enjoy panoramic views, visit local souvenir 
+shops, or taste local products.<br/> 
+ Return to Barcelona
+ After the visit, regroup and return to Barcelona by shared coach. <br/>
+Drop-off at the original meeting point. 
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse2.mm.bing.net/th/id/OIP.GkK22Zy9oJUGuKr4pcAwrAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://tse4.mm.bing.net/th/id/OIP.U2QOc38zp-H9zShEfDj8OwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
               <h3>Day 4</h3>
-              <p style={{ color: "blue" }}>London → Dublin </p>
+              <p style={{ color: "blue" }}>Barcelona → Madrid</p>
               <p>
-             Breakfast at Hotel.<br/> 
-After breakfast, a private transfer will take you from your London hotel to London Heathrow Airport 
-for your onward flight to Dublin.<br/> 
-Upon arrival at Dublin Airport, a private transfer will take you to your hotel. 
-Dublin, Ireland’s charming and lively capital, offers a warm welcome with its historic streets, literary 
-legacy, friendly pubs, and vibrant cultural atmosphere. Spend your evening exploring the city’s inviting 
-neighbourhoods and riverside walks.<br/> 
- Overnight Stay in Dublin 
+             Breakfast at the hotel.<br/> 
+After check-out, enjoy a private transfer from Barcelona Hotel to Barcelona Station to board your 
+onwards journey to Madrid (train ticket not included).<br/> 
+Upon arrival at Madrid Station, enjoy a private transfer to your hotel. <br/>
+Rest of the day at leisure<br/>. 
+Overnight Stay in Madrid
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://cdn-imgix.headout.com/media/images/ccb2e8811ada97917bd47cef65d85401-33540-dublin-cliffs-of-moher--burren-and-galway-tour-from-dublin-04.jpg?auto=format&w=1058.3999999999999&h=540&q=90&crop=faces&fit=crop"
+              src="https://media.istockphoto.com/id/1451492161/photo/breakfast-at-the-hotel-by-the-beach.jpg?s=612x612&w=0&k=20&c=Gs2zavnS7HmrJ4NEElwO1Cx_NRwPBauppND7CU1Z6yU="
               alt=""
             />
             <div className="day-content">
               <h3>Day 5</h3>
-              <p style={{ color: "blue" }}>Dublin – Cliffs of Moher, Burren and Galway City Tour </p>
+              <p style={{ color: "blue" }}></p>
               <p>
-             Breakfast at Hotel.<br/> 
-Cliffs of Moher, Burren and Galway City Day Tour<br/> 
- After breakfast, proceed for a full-day tour on SIC basis to some of Ireland’s most breathtaking natural 
-and cultural wonders. <br/>
-Your journey begins with the spectacular Cliffs of Moher, offering dramatic views over the Atlantic 
-Ocean. <br/>
-Continue through the otherworldly landscapes of the Burren, known for its limestone formations and 
-rare flora. <br/>
-The tour concludes with a visit to the vibrant city of Galway, famous for its lively streets, arts scene, 
-and colourful harbourfront. This experience provides a perfect blend of Ireland’s natural beauty and 
-cultural charm.<br/> 
- Overnight Stay in Dublin
+                Breakfast at the hotel<br/>. 
+Proceed for 01 Day Hop-On Hop-Off City Tour of Madrid, covering:<br/> 
+Royal Palace <br/>
+Plaza Mayor<br/> 
+Gran Via <br/>
+Puerta del Sol <br/>
+Later, enjoy the Prado Museum Guided Tour with Skip-the-Line Ticket. <br/>
+Evening free at leisure.<br/> 
+Overnight Stay in Madrid
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse2.mm.bing.net/th/id/OIP.cuqaFczCvzfVpnljPK7YIQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://wallpapercat.com/w/middle-retina/8/9/d/32559-2048x1172-desktop-hd-ibiza-background-image.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 6</h3>
-              <p style={{ color: "blue" }}> Dublin – Dublin Hop On Hop Off Tour</p>
+              <p style={{ color: "blue" }}>Madrid → Ibiza</p>
               <p>
-              Breakfast at Hotel.<br/>  
-Dublin Hop On Hop Off Tour <br/> 
- After breakfast, enjoy your one-day Dublin Hop On Hop Off tour on SIC basis, which offers a 
-wonderful overview of the city’s most significant attractions. <br/> 
-Explore landmarks such as Trinity College, St. Patrick’s Cathedral, Dublin Castle, Temple Bar, and 
-more, all at your own pace. The informative commentary enhances your understanding of Dublin’s 
-rich history, literature, and warm Irish spirit.<br/>  
- Overnight Stay in Dublin 
-
+              Breakfast at the hotel.<br/> 
+Check-out and enjoy a private transfer from Madrid Hotel to Madrid Airport for your flight to Ibiza 
+(flight not included).<br/> 
+Upon arrival at Ibiza Airport, enjoy a private transfer to your hotel.<br/> 
+Rest of the day free to relax or explore Ibiza town.
               </p>
             </div>
           </div>
 
           <div className="day-card">
             <img
-              src="https://tse4.mm.bing.net/th/id/OIP.X-Ru9RysdgJMPngOJEPanAHaEu?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              src="https://da28ojrjakn6f.cloudfront.net/tickets/57157/NEW/img_1767423808_f6.jpg?v=1.1.0"
               alt=""
             />
             <div className="day-content">
               <h3>Day 7</h3>
-              <p style={{ color: "blue" }}>   Dublin → India </p>
+              <p style={{ color: "blue" }}> Ibiza – Formentera Cruise</p>
               <p>
-             Breakfast at Hotel.<br/>  
-After breakfast, proceed with a private transfer to Dublin Airport for your return journey, marking 
-the end of your memorable London and Ireland holiday.
+             Breakfast at the hotel.<br/>  
+Proceed for a Formentera Cruise on a shared basis, including: <br/> 
+Paddle activities <br/> 
+Snorkeling experience<br/>  
+Scenic coastal views <br/> 
+Return to Ibiza and enjoy the evening at leisure. <br/> 
+Overnight Stay in Ibiza
                 ________________________________________
               </p>
             </div>
           </div>
+          <div className="day-card">
+            <img
+              src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1200"
+              alt=""
+            />
+            <div className="day-content">
+              <h3>Day 8</h3>
+              <p style={{ color: "blue" }}> </p>
+              <p>
+             Departure from Ibiza <br/> 
+Breakfast at the hotel. <br/> 
+Check-out and enjoy a private transfer from Ibiza Hotel to Ibiza Airport for your onwards journey.<br/>  
+        End of Tour with Wonderful Memories
+                ________________________________________
+              </p>
+            </div>
+          </div>
+
 
         </div>
 
@@ -465,7 +478,7 @@ the end of your memorable London and Ireland holiday.
         <div style={{ textAlign: "center", marginTop: "36px" }}>
           <button
             className="send-query-btn"
-            onClick={() => setActiveModal("Explore London + Ireland Combination")}
+            onClick={() => setActiveModal("7 Days Best of Barcelona, Madrid & Ibiza Tour")}
           >
             Send Query
           </button>
@@ -475,7 +488,7 @@ the end of your memorable London and Ireland holiday.
       {/* FAQ */}
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
-        <p className="faq-subtitle">Everything you need to know before your London & Ireland journey</p>
+        <p className="faq-subtitle">Everything you need to know before your Spanish journey</p>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
             <div key={idx} className={`faq-item ${openFaq === idx ? "faq-open" : ""}`}>
@@ -591,4 +604,4 @@ the end of your memorable London and Ireland holiday.
   );
 };
 
-export default LondonIrelandLanding;
+export default BestBarcelonaLanding;

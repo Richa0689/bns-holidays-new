@@ -206,6 +206,22 @@ tags: ["London", "Windsor", "Bath", "Cotswolds", "Manchester", "Cultural Tour"],
     image: "https://media1.thrillophilia.com/filestore/hesbwx95pcgh8b5caic3stlf4r6b_shutterstock_178245392.jpg",
     imageAlt: "England tour package",
   },
+   {
+    id: "Spain",
+    title: "Spain Tour Package",
+    slug: "/Spain-landing1",
+    // days: "7 Days",
+    countries: "Spain",
+    // cities: "4 Cities",
+    // dates: "5 Dates",
+    price: "₹3,60,000",
+    priceValue: 360000,
+    emi: "₹16,500/mo",
+   highlight: "Discover the vibrant beauty of Spain with visits to Madrid's royal landmarks, Barcelona's stunning architecture, Seville's rich Andalusian culture, Valencia's coastal charm, and Granada's historic Alhambra.",
+tags: ["Madrid", "Barcelona", "Seville", "Valencia", "Granada", "Cultural Tour"],
+    image: "https://media1.thrillophilia.com/filestore/hesbwx95pcgh8b5caic3stlf4r6b_shutterstock_178245392.jpg",
+    imageAlt: "England tour package",
+  },
   
 
 ];

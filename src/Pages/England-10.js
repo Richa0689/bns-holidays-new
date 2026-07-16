@@ -208,7 +208,7 @@ const GrandDiscoveryLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://res.cloudinary.com/djcyhbk2e/image/upload/f_auto,q_35,w_1200/v1/gvv/prod/london-tower-bridge"
+          src="https://tse3.mm.bing.net/th/id/OIP.I05I_qVSM-D3lPn3V3Q9FwHaHa?r=0&w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3"
           alt="British Isles Grand Discovery Tour"
         />
 
@@ -243,7 +243,7 @@ const GrandDiscoveryLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse2.mm.bing.net/th/id/OIP.iYAOWLI2b8n1hFQUr5gI-wHaE7?r=0&w=4696&h=3127&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Dublin Castle"
             />
             <p>Dublin Castle</p>
@@ -251,7 +251,7 @@ const GrandDiscoveryLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1590059390047-6e1b7f37bfb6?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.vq26USV22JEFL8dBZFpsXAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Titanic Belfast"
             />
             <p>Titanic Belfast</p>
@@ -259,7 +259,7 @@ const GrandDiscoveryLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1571406252267-1d2a7ed4e8f7?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.pAKoZvyWGxCyPqbfWdBVbgHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Giant's Causeway"
             />
             <p>Giant's Causeway</p>
@@ -305,7 +305,7 @@ const GrandDiscoveryLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop"
+              src="https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2022/11/07191216/01-1-1568x766.jpg"
               alt=""
             />
             <div className="day-content">
@@ -322,7 +322,7 @@ will take you directly to your hotel for a smooth and comfortable start to your 
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse2.mm.bing.net/th/id/OIP.TLzc1VDHbUg7Hm83r7H49AHaFz?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -352,7 +352,7 @@ A relaxing and scenic journey through the heart of the city <br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543525238-a04e0c96c9e5?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.explicit.bing.net/th/id/OIP.JR4f5YegZw14onhif9_S_QHaD8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -379,7 +379,7 @@ Thames and the city skyline. Learn about the bridge’s fascinating engineering 
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?q=80&w=1200&auto=format&fit=crop"
+              src="https://res.cloudinary.com/djcyhbk2e/image/upload/f_auto,q_35,w_1200/v1/gvv/prod/jpzloiihpqk7jrnqal6s"
               alt=""
             />
             <div className="day-content">
@@ -398,7 +398,7 @@ streets, and lively culture.  <br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1549918864-48ac978761a4?q=80&w=1200&auto=format&fit=crop"
+              src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit1600900gsm/eventThirdParty/2024/10/11/4ee9b4b9-3f5c-473e-a61c-84410b700efb-1728585064455-609b7b978d1af7ab14703824f4a08f14.jpg"
               alt=""
             />
             <div className="day-content">
@@ -417,7 +417,7 @@ arts, music, and coastal charm.<br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1590418606746-018840f9cd0f?q=80&w=1200&auto=format&fit=crop"
+              src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,height=540,dpr=2/tour_img/628617cf284ed.jpeg"
               alt=""
             />
             <div className="day-content">
@@ -439,7 +439,7 @@ Martello Tower, and stroll past the medieval ruins of St. Mary’s Abbey. <br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1590059390047-6e1b7f37bfb6?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse4.mm.bing.net/th/id/OIP.lkv64yBSz6B9BBqGepfI9AHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -458,7 +458,7 @@ Titanic.<br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse4.mm.bing.net/th/id/OIP.YUH9nMgTKQwWIg8HRdJJ1QHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -481,7 +481,7 @@ and the harbor. <br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1571406252267-1d2a7ed4e8f7?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.njiDMVbbuD_azjFoqrUtIQHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -499,7 +499,7 @@ stories that shaped the city during the period known as The Troubles.<br/>
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop"
+              src="https://photos.smugmug.com/Europe/Northern-Ireland/i-hG75KBt/0/fba5e67e/XL/IMG_8191-XL.jpg"
               alt=""
             />
             <div className="day-content">

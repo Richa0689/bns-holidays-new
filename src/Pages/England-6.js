@@ -208,7 +208,7 @@ const EuropeLanding = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://res.cloudinary.com/djcyhbk2e/image/upload/f_auto,q_35,w_1200/v1/gvv/prod/london-tower-bridge"
+          src="https://wallpapercrafter.com/desktop1/552900-waterway-canal-reflection-amsterdam-netherlands.jpg"
           alt="Europe Tour"
         />
 
@@ -235,7 +235,7 @@ const EuropeLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200&auto=format&fit=crop"
+              src="https://images7.alphacoders.com/961/961343.jpg"
               alt="London"
             />
             <p>London Skyline</p>
@@ -243,7 +243,7 @@ const EuropeLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1584003564911-a5c0b4b4a1a5?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse1.mm.bing.net/th/id/OIP.0IikTjmtj8bcRs8jF4io4wHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Amsterdam Canals"
             />
             <p>Amsterdam Canals</p>
@@ -251,7 +251,7 @@ const EuropeLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?q=80&w=1200&auto=format&fit=crop"
+              src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/11/Tulip-and-windmills-in-the-Netherlands.jpg"
               alt="Amsterdam Windmills"
             />
             <p>Dutch Windmills</p>
@@ -259,7 +259,7 @@ const EuropeLanding = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1541849546-216549ae216d?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/OIP.M9XvPl_lBIOirEpfnvZirgHaE6?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Amsterdam Tulips"
             />
             <p>Tulip Fields</p>
@@ -305,7 +305,7 @@ const EuropeLanding = () => {
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop"
+              src="https://th.bing.com/th/id/R.b513bff997ef0d0a3ada76b08fa9186f?rik=egkqCzI3ggxoFQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2f9%2f7%2f1126654-hd-wallpaper-of-india-1920x1080-for-lockscreen.jpg&ehk=0ULT5iHF0ELOtj1kwV1vqtpDUSPhkCP1PYBEwwB2MpQ%3d&risl=&pid=ImgRaw&r=0"
               alt=""
             />
             <div className="day-content">
@@ -322,7 +322,7 @@ will take you directly to your hotel for a smooth and comfortable start to your 
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse3.mm.bing.net/th/id/OIP.mqsfufflFdqnpRjo63eJ0QHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -353,7 +353,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1543832923-44667a44c804?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse2.mm.bing.net/th/id/OIP.O5kBDEr5UMvIDYIUAafPLAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -381,7 +381,7 @@ Overnight Stay in London
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1558102822-f7dd3f8c8ee8?q=80&w=1200&auto=format&fit=crop"
+              src="https://tse3.mm.bing.net/th/id/OIP.3LbbkxlkJsUcLI-ZPExvjAHaD5?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -402,7 +402,7 @@ Overnight Stay in Amsterdam
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?q=80&w=1200&auto=format&fit=crop"
+              src="https://media.tacdn.com/media/attractions-splice-spp-674x446/11/45/ca/65.jpg"
               alt=""
             />
             <div className="day-content">
@@ -426,7 +426,7 @@ Overnight Stay in Amsterdam
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1541849546-216549ae216d?q=80&w=1200&auto=format&fit=crop"
+              src="https://media.tacdn.com/media/attractions-splice-spp-360x240/09/a9/1e/a4.jpg"
               alt=""
             />
             <div className="day-content">
@@ -446,7 +446,7 @@ Overnight Stay in Amsterdam
 
           <div className="day-card">
             <img
-              src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop"
+              src="https://wallpapers.com/images/hd/red-sunset-at-amsterdam-canal-7d1zbmffikkvlhmi.jpg"
               alt=""
             />
             <div className="day-content">

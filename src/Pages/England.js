@@ -32,7 +32,7 @@ const tours = [
     price: "₹1,95,000",
     emi: "₹8,800/mo",
     image: "https://tse3.mm.bing.net/th/id/OIP.vWjtn34PXpvp7bX3kKn6uAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/ London-Newport"
+    link: "/London-Newport"
   },
   {
     title: "Grand Britain Experience: England & Scotland Highlights",
@@ -98,7 +98,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://tse1.mm.bing.net/th/id/OIP.NBdvC2RUFFwxPpxiF0W_ZQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/London-Ireland "
+    link: "/London-Ireland"
   },
   {
     title: "British Isles Grand Discovery: London, Dublin & Belfast",
