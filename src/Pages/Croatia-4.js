@@ -11,7 +11,7 @@ const CroatiaLanding4 = () => {
       {/* HERO SECTION */}
       <div className="hero-section">
         <img
-          src="https://slovenia4seasons.com/wp-content/uploads/2023/11/split-2-copy.jpg"
+          src="https://www.croatiatimestravel.co.nz/library/trips/tours/signature-tours/delights-of-croatia-slovenia-sg-tour-ctt-zs-2025/delights-of-croatia-slovenia-sg-tour-ctt-zs-2025-banner.jpg"
           alt="Croatia Slovenia Tour"
         />
 
@@ -35,7 +35,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://cdn.audleytravel.com/1050/750/79/8009368-ban-josip-jelai-square-zagreb.webp"
+              src="https://tse2.mm.bing.net/th/id/OIP.zinISmdhavE4HnuAkDW9KwHaFe?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Zagreb"
             />
             <p>Zagreb City Tour</p>
@@ -43,7 +43,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://www.visitljubljana.com/assets/Aktivnosti/Ljubljana-Town-Hall-photo__FocusFillWyIwLjAwIiwiMC4wMCIsMTkyMCwxMDQwXQ.D.Wedam.jpg"
+              src="https://travel.usnews.com/images/ljubljana_old_town_staro_mesto_tfJIbN9.jpg"
               alt="Ljubljana"
             />
             <p>Ljubljana Old Town</p>
@@ -51,7 +51,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://www.invaluable.com/blog/wp-content/uploads/sites/77/2018/07/Invaluable-France2-Edited-670x450.jpg"
+              src="https://tse1.mm.bing.net/th/id/OIP.SIfui7Xuy4Zj-fJYt99hWQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Architecture"
             />
             <p>European Architecture</p>
@@ -59,7 +59,7 @@ const CroatiaLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/c8/fe/51/caption.jpg?w=500&h=400&s=1"
+              src="https://tse1.mm.bing.net/th/id/OIP.ukM8ahostltGFKe6aroDnQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Lake"
             />
             <p>Lake Bled Excursion</p>
@@ -105,13 +105,14 @@ const CroatiaLanding4 = () => {
 
           <div className="day-card">
             <img
-              src="https://www.zagreb-airport.hr/UserDocsImages//kategorije/meet-and-greet.jpg"
+              src="https://www.travellingking.com/wp-content/uploads/2023/04/Zagreb-Zagreb-city-downtown.jpg"
               alt=""
             />
             <div className="day-content">
               <h3>Day 1</h3>
-              <p style={{color:"blue"}}> Zagreb <br/>Arrival in Zagreb: Close to the city, Close to the heart</p>
-              <p>Welcome to Zagreb, Croatia’s vibrant capital city, where historic architecture, charming streets, and
+              <p style={{color:"blue"}}>Zagreb <br/>Arrival in Zagreb: Close to the city, Close to the heart</p>
+              <p>
+                Welcome to Zagreb, Croatia’s vibrant capital city, where historic architecture, charming streets, and
 lively squares set the stage for your Central European adventure. Upon arrival at Zagreb Airport, a
 private transfer will meet you and escort you seamlessly to your hotel in the city.
 Spend the remainder of the day at leisure, soaking in Zagreb’s unique blend of culture, art, and café
@@ -123,7 +124,7 @@ Overnight Stay in Zagreb</p>
 
           <div className="day-card">
             <img
-              src="https://www.croatiaweek.com/wp-content/uploads/2021/04/Underground-Tunnels-in-Croatia-Zagreb-and-Pula-9-715x429.jpg"
+              src="https://travel-buddies.com/wp-content/uploads/2024/10/2_zagreb-walking-tour-of-city-center-funicular-ww2-tunnels.jpg"
               alt=""
             />
             <div className="day-content">
@@ -141,7 +142,7 @@ Overnight Stay in Zagreb</p>
 
           <div className="day-card">
             <img
-              src="https://res.cloudinary.com/enchanting/image/upload/v1/artemis-mdm/4410fdff-e0f7-406e-8faf-ed7b351bfbc2.jpg"
+              src="https://wallpapercave.com/wp/wp4289264.jpg"
               alt=""
             />
             <div className="day-content">
@@ -161,7 +162,7 @@ Overnight Stay in Ljubljana.
 
           <div className="day-card">
             <img
-              src="https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/qovv94saqzeaa7oxydrn.jpg"
+              src="https://tse1.mm.bing.net/th/id/OIP.Ltlfeu3I2zRqTs2kVVYVwAHaEf?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <div className="day-content">
@@ -183,7 +184,7 @@ Overnight Stay in Ljubljana.</p>
 
           <div className="day-card">
             <img
-              src="https://thumbs.dreamstime.com/b/ljubljana-airport-passenger-terminal-entrance-exterior-slovenia-april-view-showing-main-travelers-walking-out-454567619.jpg"
+              src="https://png.pngtree.com/thumb_back/fh260/background/20221210/pngtree-sunset-above-ljubljana-aerial-view-cityscape-scene-cathedral-photo-image_23352356.jpg"
               alt=""
             />
             <div className="day-content">

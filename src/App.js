@@ -296,6 +296,32 @@ import Spain8 from './Pages/Spain-8';
 import Spain9 from './Pages/Spain-9';
 import Spain10 from './Pages/Spain-10';
 import Spain11 from './Pages/Spain-11';
+import Scotland from './Pages/Scotland';
+import Scotland1 from './Pages/Scotland-1';
+import Scotland2 from './Pages/Scotland-2';
+import Scotland3 from './Pages/Scotland-3';
+import Scotland4 from './Pages/Scotland-4';
+import Scotland5 from './Pages/Scotland-5';
+import Scotland6 from './Pages/Scotland-6';
+import CzechRepublic from './Pages/CzechRepublic';
+import CzechRepublic1 from './Pages/CzechRepublic-1';
+import CzechRepublic2 from './Pages/CzechRepublic-2';
+import CzechRepublic3 from './Pages/CzechRepublic-3';
+import CzechRepublic4 from './Pages/CzechRepublic-4';
+import CzechRepublic5 from './Pages/CzechRepublic-5';
+import Finland from './Pages/Finland';
+import Finland1 from './Pages/Finland-1';
+import Finland2 from './Pages/Finland-2';
+import Finland3 from './Pages/Finland-3';
+import Finland4 from './Pages/Finland-4';
+import Greece from './Pages/Greece';
+import Greece1 from './Pages/Greece-1';
+import Greece2 from './Pages/Greece-2';
+import Greece3 from './Pages/Greece-3';
+import Greece4 from './Pages/Greece-4';
+import Greece5 from './Pages/Greece-5';
+import Greece6 from './Pages/Greece-6';
+import Greece7 from './Pages/Greece-7';
 
 
 
@@ -608,11 +634,28 @@ function App() {
 <Route path="/Lisbon-Porto" element={<Spain9 />} />
 <Route path="/Cities-Portugal’s" element={<Spain10 />} />
 <Route path="/Riviera-Delight" element={<Spain11 />} />
+<Route path="/Scotland-landing1" element={<Scotland />} />
+<Route path="/UK-Escape" element={<Scotland1 />} />
+<Route path="/Edinburgh-Glasgow" element={<Scotland2 />} />
+<Route path="/England-Scotland" element={<Scotland3 />} />
+<Route path="/Grand-Britain" element={<Scotland4 />} />
+<Route path="/Glasgow-Inverness" element={<Scotland5 />} />
+<Route path="/Edinburgh-Glasgow" element={<Scotland6 />} />
+<Route path="/Finland-landing1" element={<Finland />} />
+<Route path="Finland-Sweden" element={<Finland1 />} />
+<Route path="/Capitals-Express" element={<Finland2 />} />
+<Route path="/Getaway-Plus" element={<Finland3 />} />
+<Route path="/Mesmerizing-Finland" element={<Finland4 />} />
+<Route path="/Greece-landing1" element={<Greece />} />
+<Route path="/Athens-Greece" element={<Greece1 />} />
+<Route path="/Athens-Mykonos" element={<Greece2 />} />
+<Route path="Glimpses-Greece" element={<Greece3 />} />
+<Route path="/Best-Barcelona" element={<Greece4 />} />
+<Route path="/Barcelona-Madridd" element={<Greece5 />} />
+<Route path="/Valencia-Malaga" element={<Greece6 />} />
+<Route path="/Seville-Madrid" element={<Greece7 />} />
 
-
-
-
-      </Routes> 
+    </Routes> 
     </Router>
     </HelmetProvider>
   );

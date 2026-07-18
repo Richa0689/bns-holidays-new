@@ -61,7 +61,7 @@ const DenmarkLanding4 = () => {
 
           <div className="highlight-card">
             <img
-              src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600"
+              src="https://tse1.mm.bing.net/th/id/OIP.R-yrO9xJKVvUtqSAa2aB1wHaEc?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt=""
             />
             <p>European Cultural Experience</p>
