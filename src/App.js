@@ -322,6 +322,9 @@ import Greece4 from './Pages/Greece-4';
 import Greece5 from './Pages/Greece-5';
 import Greece6 from './Pages/Greece-6';
 import Greece7 from './Pages/Greece-7';
+import Iceland from './Pages/Iceland';
+import Iceland1 from './Pages/Iceland-1';
+import Iceland2 from './Pages/Iceland-2';
 
 
 
@@ -654,6 +657,9 @@ function App() {
 <Route path="/Barcelona-Madridd" element={<Greece5 />} />
 <Route path="/Valencia-Malaga" element={<Greece6 />} />
 <Route path="/Seville-Madrid" element={<Greece7 />} />
+<Route path="/Iceland-landing1" element={<Iceland />} />
+<Route path="/Best-ICELAND" element={<Iceland1/>} />
+<Route path="/Iceland-Akureyri" element={<Iceland2/>} />
 
     </Routes> 
     </Router>

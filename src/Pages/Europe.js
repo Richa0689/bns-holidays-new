@@ -298,6 +298,22 @@ tags: ["Athens", "Santorini", "Mykonos", "Delphi", "Meteora", "Crete"],
     image: "https://tse4.mm.bing.net/th/id/OIP.W_H8dToOczW8sFjIiaBnGgHaD8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     imageAlt: "Greece tour package",
   },
+   {
+    id: "Iceland",
+    title: "Iceland Tour Package",
+    slug: "/Iceland-landing1",
+    // days: "7 Days",
+    countries: "Iceland",
+    // cities: "4 Cities",
+    // dates: "5 Dates",
+    price: "₹3,60,000",
+    priceValue: 360000,
+    emi: "₹16,500/mo",
+ highlight: "Discover the breathtaking beauty of Iceland with visits to Reykjavik's vibrant streets, the spectacular Blue Lagoon, the powerful Gullfoss waterfall, the stunning Geysir geothermal area, the dramatic black sand beaches of Vik, and the magical Northern Lights, offering a perfect blend of natural wonders, adventure, and unforgettable Arctic experiences.",
+tags: ["Reykjavik", "Blue Lagoon", "Gullfoss", "Geysir", "Vik", "Northern Lights"],
+    image: "https://tse4.mm.bing.net/th/id/OIP.W_H8dToOczW8sFjIiaBnGgHaD8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    imageAlt: "Iceland tour package",
+  },
 ];
 
 /* ── QueryModal ─────────────────────────────────────────────────── */
