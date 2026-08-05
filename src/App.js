@@ -2,7 +2,7 @@ import './App.css';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async"; 
 import SEO from "./components/SEO";
-import PublishedItineraries from './components/PublishedItineraries';
+
 import Header from './components/Header';
 import VideoSlider from './components/VideoSlider';
 import TrendingDestinations from './components/TrendingDestinations';
@@ -346,7 +346,6 @@ function App() {
               <TrendingDestinations />
               <IndiaDestinations/>
               <Adventures />
-              <PublishedItineraries />
               <Fixeddepartures />
               <Reviews />
               <QueryBox />
