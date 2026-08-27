@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 
 import Villa from "./Pages/Villa";
 import Visa from "./Pages/Visa";
+import Packages from "./Pages/Packages";
 import Australia from "./Pages/Australia";
 import Canada from "./Pages/Canada";
 import USA from "./Pages/USA";
@@ -356,6 +357,7 @@ function App() {
         />
         <Route path="/villa" element={<Villa />} />
         <Route path="/visa" element={<Visa />} />
+        <Route path="/packages" element={<Packages />} />
         
   <Route path="/Pages/europe" element={<Europe />} />
 <Route path="/Pages/australia" element={<Australia />} />
