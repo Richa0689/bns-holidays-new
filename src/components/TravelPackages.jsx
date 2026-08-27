@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const WIDGET_SRC = "https://api.travelcrm.net/widget.js"; // confirm this matches where widget.js is actually served
+const WIDGET_SRC = "https://api.travelcrm.net/static/widget.js"; // confirm this matches where widget.js is actually served
 
 export default function TravelPackages({ agencySlug }) {
   const containerRef = useRef(null);
