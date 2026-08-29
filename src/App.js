@@ -13,7 +13,7 @@ import Reviews from './components/Reviews';
 import QueryBox from './components/QueryBox';
 import FloatingButtons from './components/FloatingButtons';
 import Footer from './components/Footer';
-
+import PublishedItinerary from "./Pages/PublishedItinerary";
 import Villa from "./Pages/Villa";
 import Visa from "./Pages/Visa";
 import Packages from "./Pages/Packages";
@@ -340,9 +340,13 @@ function App() {
       {/* ROUTES */}
       <Routes>
         <Route 
-          path="/" 
-          element={
-            <>
+          path="/packages/:slug" 
+          element={<PublishedItinerary />}
+            />
+              <Route
+  path="/"
+  element={
+    <>
               <VideoSlider />
               <TrendingDestinations />
               <IndiaDestinations/>
