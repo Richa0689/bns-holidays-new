@@ -540,7 +540,9 @@ const Header = () => {
               </div>
             )}
           </li>
-
+<li>
+  <Link to="/packages">Packages</Link>
+</li>
           <li>
             <Link to="/packages">Packages</Link>
           </li>
@@ -686,6 +688,10 @@ const Header = () => {
                 </div>
               )}
             </li>
+
+                            <li>
+<Link to="/packages" onClick={closeMenu}>Packages</Link>
+                            </li>
 
             <li>
               <Link to="/packages" onClick={closeMenu}>
