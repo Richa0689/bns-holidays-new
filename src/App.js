@@ -17,6 +17,10 @@ import Footer from './components/Footer';
 import Villa from "./Pages/Villa";
 import Visa from "./Pages/Visa";
 import Packages from "./Pages/Packages";
+import Hotels from "./Pages/Hotels";
+import HotelResultsPage from "./Pages/HotelResultsPage";
+import Flights from "./Pages/Flights";
+import FlightResultsPage from "./Pages/FlightResultsPage";
 import Australia from "./Pages/Australia";
 import Canada from "./Pages/Canada";
 import USA from "./Pages/USA";
@@ -358,6 +362,10 @@ function App() {
         <Route path="/villa" element={<Villa />} />
         <Route path="/visa" element={<Visa />} />
         <Route path="/packages" element={<Packages />} />
+        <Route path="/hotels" element={<Hotels />} />
+<Route path="/hotels/results" element={<HotelResultsPage />} />
+<Route path="/flights" element={<Flights />} />
+<Route path="/flights/results" element={<FlightResultsPage />} />
         
   <Route path="/Pages/europe" element={<Europe />} />
 <Route path="/Pages/australia" element={<Australia />} />

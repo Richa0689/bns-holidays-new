@@ -1,0 +1,80 @@
+.hotel-search-page { width: 100%; }
+.hotel-hero {
+  position: relative;
+  display: flex;
+  min-height: 470px;
+  align-items: center;
+  padding: 48px 24px 38px;
+  overflow: visible;
+  background-image:
+    linear-gradient(90deg, rgba(5, 34, 58, .48) 0%, rgba(5, 34, 58, .16) 54%, rgba(5, 34, 58, .05) 100%),
+    linear-gradient(0deg, rgba(4, 34, 56, .46) 0%, rgba(4, 34, 56, .02) 75%),
+    url("https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=2000&q=85");
+  background-position: center 54%;
+  background-size: cover;
+}
+.hotel-hero-video { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 54%; }
+.hotel-hero::before { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(5, 34, 58, .48) 0%, rgba(5, 34, 58, .16) 54%, rgba(5, 34, 58, .05) 100%), linear-gradient(0deg, rgba(4, 34, 56, .46) 0%, rgba(4, 34, 56, .02) 75%); content: ""; pointer-events: none; }
+.hotel-hero-inner { position: relative; z-index: 2; width: 100%; max-width: 1120px; margin: 0 auto; }
+.hotel-hero-copy { max-width: 540px; margin: 0 0 25px 5px; color: #fff; text-shadow: 0 2px 16px rgba(0, 26, 48, .3); }
+.hotel-hero-eyebrow { display: flex; align-items: center; gap: 9px; margin-bottom: 13px; color: rgba(255,255,255,.9); font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.hotel-hero-eyebrow span { width: 22px; height: 2px; background: #ffd21a; }
+.hotel-hero-copy h1 { margin: 0; color: #fff; font: 700 clamp(34px, 4.2vw, 48px)/1.08 Arial, sans-serif; letter-spacing: -.035em; }
+.hotel-hero-copy h1 strong { color: #ffd21a; font-weight: 800; }
+.hotel-hero-copy p { max-width: 430px; margin: 12px 0 0; color: rgba(255,255,255,.94); font-size: 14px; line-height: 1.55; text-shadow: 0 1px 8px rgba(0, 26, 48, .4); }
+.hotel-hero .hotel-search-card { padding: 13px; border: 1px solid rgba(224, 234, 245, .9); border-radius: 13px; background: rgba(255,255,255,.97); box-shadow: 0 14px 38px rgba(0, 28, 54, .24); }
+.hotel-hero .hotel-search-tab { display: none; }
+.hotel-hero .hotel-search-row { grid-template-columns: 1.3fr 1fr 1fr 1.05fr auto; gap: 8px; }
+.hotel-hero .hotel-control { height: 58px; border: 1px solid #e2eaf3; border-radius: 8px; box-shadow: 0 2px 5px rgba(18, 62, 105, .035); }
+.hotel-hero .hotel-control:hover { border-color: #c7d8e9; }
+.hotel-hero .hotel-control:focus-within { border-color: #1570c2; box-shadow: 0 0 0 3px rgba(21, 112, 194, .12); }
+.hotel-hero .hotel-control label { color: #6a819c; }
+.hotel-hero .hotel-control input, .hotel-hero .hotel-guest-trigger { color: #174a7b; }
+.hotel-hero .hotel-date-trigger { color: #174a7b; }
+.hotel-hero .hotel-search-submit { min-width: 112px; border-radius: 8px; color: #064b91; background: #ffd21a; box-shadow: 0 4px 12px rgba(206, 158, 0, .2); font-size: 12px; text-transform: none; }
+.hotel-hero .hotel-search-submit:hover { background: #f4c400; }
+.hotel-hero .hotel-country-row { padding-top: 8px; }
+.hotel-hero .hotel-country-input { width: 184px; height: 38px; border-color: #e2eaf3; border-radius: 8px; }
+.hotel-hero .hotel-country-input:focus-within { border-color: #1570c2; box-shadow: 0 0 0 3px rgba(21, 112, 194, .12); }
+.hotel-hero .hotel-country-row > span { color: #6a819c; }
+.hotel-hero .hotel-date-calendar { box-sizing: border-box; width: min(318px, calc(100vw - 36px)); padding: 14px; border-color: #d7e2ed; border-radius: 12px; box-shadow: 0 18px 42px rgba(8, 48, 88, .22); }
+.hotel-hero .hotel-calendar-header { margin-bottom: 12px; }
+.hotel-hero .hotel-calendar-header strong { color: #123f70; font-size: 14px; font-weight: 800; }
+.hotel-hero .hotel-calendar-header button { width: 30px; height: 30px; border-color: #e2eaf3; border-radius: 50%; font-size: 22px; }
+.hotel-hero .hotel-calendar-weekdays { margin-bottom: 6px; color: #8392a3; font-size: 10px; letter-spacing: .04em; }
+.hotel-hero .hotel-calendar-days { gap: 2px 0; }
+.hotel-hero .hotel-calendar-days button { width: 34px; height: 34px; border-radius: 50%; color: #274765; font-size: 12px; transition: color .12s ease, background .12s ease, box-shadow .12s ease; }
+.hotel-hero .hotel-calendar-days button.outside-month { color: #b5c0cb; }
+.hotel-hero .hotel-calendar-days button:disabled { color: #d0d7df; }
+.hotel-hero .hotel-calendar-days button.today:not(.selected) { box-shadow: inset 0 0 0 1px #e6b900; color: #755d08; }
+.hotel-hero .hotel-calendar-days button.selected { color: #fff; background: #07509a; box-shadow: 0 3px 8px rgba(7, 80, 154, .24); }
+.hotel-hero .hotel-calendar-footer { margin-top: 10px; padding-top: 10px; }
+.hotel-hero .hotel-calendar-footer button { padding: 7px 11px; border-radius: 6px; }
+.hotel-hero .hotel-calendar-footer button:last-child:not(:disabled) { color: #07509a; background: #edf5fc; }
+.hotel-hero .hotel-calendar-footer button:last-child:not(:disabled):hover { background: #e1effb; }
+
+@media (max-width: 760px) {
+  .hotel-hero { min-height: 0; padding: 52px 18px 32px; background-position: 58% center; }
+  .hotel-hero-copy { margin: 0 0 22px; }
+  .hotel-hero-copy h1 { font-size: clamp(32px, 7vw, 42px); }
+  .hotel-hero-copy p { max-width: 380px; font-size: 13px; }
+  .hotel-hero .hotel-search-row { grid-template-columns: 1fr 1fr; gap: 7px; }
+  .hotel-hero .hotel-control { height: 58px; }
+  .hotel-hero .hotel-search-submit { min-height: 48px; }
+}
+
+@media (max-width: 560px) {
+  .hotel-hero { padding: 42px 14px 24px; background-position: 60% center; }
+  .hotel-hero-copy { margin-bottom: 18px; }
+  .hotel-hero-copy h1 { font-size: clamp(29px, 8vw, 36px); }
+  .hotel-hero-copy p { max-width: 310px; font-size: 12px; }
+  .hotel-hero .hotel-search-card { padding: 10px; border-radius: 10px; }
+  .hotel-hero .hotel-search-row { grid-template-columns: minmax(0, 1fr); gap: 7px; }
+  .hotel-hero .hotel-control { height: 54px; }
+  .hotel-hero .hotel-search-submit { min-height: 46px; }
+  .hotel-hero .hotel-country-input { width: 100%; max-width: 190px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hotel-hero-video { display: none; }
+}
