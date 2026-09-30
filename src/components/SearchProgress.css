@@ -1,0 +1,78 @@
+.tui-search-progress-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 52vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: #173c61;
+}
+
+.tui-search-progress-box {
+  box-sizing: border-box;
+  width: min(100%, 440px);
+  padding: 32px;
+  border: 1px solid #e3eaf0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 36px rgba(12, 42, 73, .08);
+  text-align: center;
+}
+
+.tui-sp-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  color: #1769aa;
+}
+
+.tui-sp-icon svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  stroke: currentColor;
+}
+
+.tui-sp-title {
+  margin: 0 0 8px;
+  color: #163550;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.tui-sp-subtitle {
+  margin: 0 0 22px;
+  color: #687b8c;
+  font-size: 14px;
+}
+
+.tui-sp-bar-container {
+  width: 100%;
+  height: 9px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7eef4;
+}
+
+.tui-sp-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1769aa, #46a6d9);
+  transition: width .2s ease;
+}
+
+.tui-sp-count {
+  margin-top: 10px;
+  color: #1769aa;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .tui-search-progress-box { padding: 26px 20px; }
+  .tui-sp-title { font-size: 18px; }
+}

@@ -432,3 +432,10 @@
   }
 }
 
+
+/* Keep the hotel and flight summary inside the viewport. */
+.tui-flight-search-summary { box-sizing: border-box; width: 100%; flex-wrap: wrap; }
+.tui-flight-search-summary > div { min-width: 0; }
+.tui-flight-search-summary strong { overflow-wrap: anywhere; }
+@media (min-width: 769px) { .tui-flight-search-summary > div { flex: 0 1 auto; } }
+
