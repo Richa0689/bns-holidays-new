@@ -9,8 +9,27 @@ const DESTINATIONS = [
   ["Bangkok", "Thailand"], ["London", "United Kingdom"], ["Paris", "France"],
 ];
 const COUNTRY_CODES = {
-  India: "in", Peru: "pe", Mexico: "mx", Chile: "cl", Philippines: "ph",
-  "United Arab Emirates": "ae", Singapore: "sg", Thailand: "th", "United Kingdom": "gb", France: "fr",
+  Afghanistan: "af", Albania: "al", Algeria: "dz", Argentina: "ar", Australia: "au",
+  Austria: "at", Azerbaijan: "az", Bahrain: "bh", Bangladesh: "bd", Belgium: "be",
+  Bhutan: "bt", Brazil: "br", Bulgaria: "bg", Cambodia: "kh", Canada: "ca",
+  Chile: "cl", China: "cn", Colombia: "co", Croatia: "hr", Cuba: "cu",
+  Cyprus: "cy", "Czech Republic": "cz", Denmark: "dk", Ecuador: "ec", Egypt: "eg",
+  Estonia: "ee", Ethiopia: "et", Finland: "fi", France: "fr", Georgia: "ge",
+  Germany: "de", Ghana: "gh", Greece: "gr", Hungary: "hu", Iceland: "is",
+  India: "in", Indonesia: "id", Iran: "ir", Iraq: "iq", Ireland: "ie",
+  Israel: "il", Italy: "it", Japan: "jp", Jordan: "jo", Kazakhstan: "kz",
+  Kenya: "ke", Kuwait: "kw", Laos: "la", Latvia: "lv", Lebanon: "lb",
+  Lithuania: "lt", Luxembourg: "lu", Malaysia: "my", Maldives: "mv", Malta: "mt",
+  Mexico: "mx", Moldova: "md", Mongolia: "mn", Morocco: "ma", Myanmar: "mm",
+  Nepal: "np", Netherlands: "nl", "New Zealand": "nz", Nigeria: "ng", Norway: "no",
+  Oman: "om", Pakistan: "pk", Peru: "pe", Philippines: "ph", Poland: "pl",
+  Portugal: "pt", Qatar: "qa", Romania: "ro", Russia: "ru", "Saudi Arabia": "sa",
+  Serbia: "rs", Singapore: "sg", Slovakia: "sk", Slovenia: "si", "South Africa": "za",
+  "South Korea": "kr", Spain: "es", "Sri Lanka": "lk", Sweden: "se", Switzerland: "ch",
+  Syria: "sy", Taiwan: "tw", Tanzania: "tz", Thailand: "th", Tunisia: "tn",
+  Turkey: "tr", "United Arab Emirates": "ae", Uganda: "ug", Ukraine: "ua",
+  "United Kingdom": "gb", "United States": "us", Uruguay: "uy", Uzbekistan: "uz",
+  Venezuela: "ve", Vietnam: "vn", Yemen: "ye", Zambia: "zm", Zimbabwe: "zw",
 };
 
 function CountryFlag({ code }) {
@@ -141,6 +160,8 @@ export default function HotelSearchForm({ onSearch }) {
   const [suggestionsPosition, setSuggestionsPosition] = useState(null);
   const destinationRef = useRef(null);
   const guestRef = useRef(null);
+  const countryRef = useRef(null);
+  const [countrySuggestionsOpen, setCountrySuggestionsOpen] = useState(false);
   const localSuggestions = DESTINATIONS.filter(([city, nation]) =>
     `${city} ${nation}`.toLowerCase().includes(destination.trim().toLowerCase())
   ).slice(0, 8);
@@ -221,6 +242,7 @@ export default function HotelSearchForm({ onSearch }) {
       if (destinationRef.current && !destinationRef.current.contains(event.target)) setSuggestionsOpen(false);
       if (guestRef.current && !guestRef.current.contains(event.target)) setGuestsOpen(false);
       if (formRef.current && !formRef.current.contains(event.target)) setOpenCalendar(null);
+      if (countryRef.current && !countryRef.current.contains(event.target)) setCountrySuggestionsOpen(false);
     };
     document.addEventListener("mousedown", close);
     return () => document.removeEventListener("mousedown", close);
@@ -300,13 +322,38 @@ export default function HotelSearchForm({ onSearch }) {
             </div>
             <button type="submit" className="hotel-search-submit">Search</button>
           </div>
-          <label className="hotel-country-row" htmlFor="hotel-country">
-            <span>Country</span>
-            <div className="hotel-country-input">
+          <div className="hotel-country-row" ref={countryRef}>
+            <span>COUNTRY</span>
+            <div className="hotel-country-input" style={{ position: "relative", cursor: "pointer" }} onClick={() => setCountrySuggestionsOpen((o) => !o)}>
               <CountryFlag code={countryCode} />
-              <input id="hotel-country" value={country || "India"} onChange={(event) => setCountry(event.target.value || "India")} placeholder="Country" />
+              <input
+                value={country || "India"}
+                onChange={(event) => { setCountry(event.target.value || "India"); setCountrySuggestionsOpen(true); }}
+                placeholder="Country"
+                autoComplete="off"
+                style={{ background: "transparent", border: "none", outline: "none", flex: 1, cursor: "pointer", color: "inherit", fontSize: "inherit" }}
+              />
+              <span style={{ fontSize: "10px", color: "#526c88", pointerEvents: "none", marginLeft: "4px" }}>▼</span>
+              {countrySuggestionsOpen && (
+                <div className="hotel-suggestions" role="listbox" style={{ bottom: "calc(100% + 5px)", top: "auto", right: 0, left: "auto", width: "200px" }}>
+                  {Object.keys(COUNTRY_CODES)
+                    .filter((c) => c.toLowerCase().includes(country.toLowerCase()))
+                    .sort()
+                    .map((nation) => (
+                      <button
+                        type="button"
+                        role="option"
+                        key={nation}
+                        onClick={(e) => { e.stopPropagation(); setCountry(nation); setCountryCode(COUNTRY_CODES[nation]); setCountrySuggestionsOpen(false); }}
+                      >
+                        <CountryFlag code={COUNTRY_CODES[nation]} />
+                        <strong>{nation}</strong>
+                      </button>
+                    ))}
+                </div>
+              )}
             </div>
-          </label>
+          </div>
         </form>
       </div>
     </div>

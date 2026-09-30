@@ -121,7 +121,7 @@
 .hotel-destination-attribution { position: sticky; bottom: -5px; z-index: 1; margin: 4px -5px -5px; padding: 7px 9px 5px; border-top: 1px solid #edf0f2; background: #fff; color: #8a95a2; font-size: 9px; text-align: left; }
 .hotel-destination-attribution a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .hotel-guest-control { border-right: 1px solid #d7e0e9; }
-.hotel-guest-popover { position: absolute; z-index: 21; top: calc(100% + 5px); right: 0; width: 230px; padding: 12px; background: #fff; border: 1px solid #d7e0e9; border-radius: 9px; box-shadow: 0 10px 24px rgba(11, 55, 101, .16); }
+.hotel-guest-popover { position: absolute; z-index: 21; bottom: calc(100% + 5px); top: auto; right: 0; width: 230px; padding: 12px; background: #fff; border: 1px solid #d7e0e9; border-radius: 9px; box-shadow: 0 -10px 24px rgba(11, 55, 101, .16); }
 .hotel-guest-row { display: grid; grid-template-columns: 1fr 25px 22px 25px; align-items: center; gap: 5px; padding: 7px 0; border-bottom: 1px solid #edf0f2; color: #173b64; }
 .hotel-guest-row span { display: block; font-size: 11px; font-weight: 700; }
 .hotel-guest-row small { display: block; margin-top: 2px; color: #8791a0; font-size: 9px; }
@@ -374,3 +374,61 @@
 }
 .tui-nav-link:hover { background: var(--sand); }
 .tui-nav-link.active { background: var(--pill-active); }
+
+
+/* --- Recreated Flight/Hotel Header Summary --- */
+.tui-flight-search-summary { 
+  min-height: 72px; 
+  padding: 12px 5vw; 
+  display: flex; 
+  align-items: center; 
+  gap: 36px; 
+  background: #0c2a49; /* Dark blue from screenshot */
+  color: #fff; 
+  box-shadow: 0 2px 8px #102c4426; 
+}
+.tui-flight-search-summary > div { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 5px; 
+}
+.tui-flight-search-summary span { 
+  color: #c5e3f8; 
+  text-transform: uppercase; 
+  font-size: 11px; 
+  font-weight: 700; 
+  letter-spacing: .06em; 
+}
+.tui-flight-search-summary strong { 
+  font-size: 14px; 
+}
+.tui-flight-search-summary button { 
+  margin-left: auto; 
+  border: 1px solid #ffffff80; 
+  border-radius: 7px; 
+  background: transparent; 
+  color: #fff; 
+  padding: 8px 20px; 
+  cursor: pointer; 
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.tui-flight-search-summary button:hover {
+  background: #ffffff12;
+}
+
+@media (max-width: 768px) {
+  .tui-flight-search-summary {
+    padding: 12px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .tui-flight-search-summary > div {
+    min-width: calc(50% - 12px);
+  }
+  .tui-flight-search-summary button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+

@@ -32,19 +32,25 @@ export default function FlightResultsPage() {
       .finally(() => setLoading(false));
   }, [from, to, date, adults, children, infants, cabinClass]);
 
-  return (
-    <div style={{ maxWidth: 1080, margin: "0 auto", padding: "24px" }}>
-      <button
-        onClick={() => navigate("/flights")}
-        style={{ background: "none", border: "none", color: "var(--mist)", fontSize: 14, cursor: "pointer", marginBottom: 12 }}
-      >
-        ← New search
-      </button>
+  const cabinLabel = cabinClass === "PREMIUM_ECONOMY" ? "PREMIUM ECONOMY" : (cabinClass || "ECONOMY").replace("_", " ");
+  const paxLabel = `${adults} Adult${Number(adults) > 1 ? "s" : ""}${Number(children) ? `, ${children} Child${Number(children) > 1 ? "ren" : ""}` : ""}${Number(infants) ? `, ${infants} Infant${Number(infants) > 1 ? "s" : ""}` : ""}`;
+  let readableDate = "";
+  try {
+    if (date) readableDate = new Intl.DateTimeFormat("en", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`));
+  } catch (e) {
+    readableDate = date;
+  }
 
-      <div className="tui-results-head">
-        <h2 className="serif">Flights, {from} → {to}</h2>
-        <span className="tui-results-count">{flights.length} flights found</span>
-      </div>
+  return (
+    <div className="tui-flight-results-page" style={{ background: "#f8f9fa", minHeight: "100vh", paddingBottom: "40px" }}>
+      <header className="tui-flight-search-summary">
+        <div><span>Route</span><strong>{from} → {to}</strong></div>
+        <div><span>Departure date</span><strong>{readableDate}</strong></div>
+        <div><span>Passengers &amp; class</span><strong>{paxLabel} | {cabinLabel}</strong></div>
+        <button type="button" onClick={() => navigate("/flights")}>New search</button>
+      </header>
+
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 16px" }}>
 
       <FlightResults
         flights={flights}
@@ -56,6 +62,7 @@ export default function FlightResultsPage() {
       {selected && (
         <BookingRequestModal item={selected} type="flight" onClose={() => setSelected(null)} />
       )}
+      </div>
     </div>
   );
 }

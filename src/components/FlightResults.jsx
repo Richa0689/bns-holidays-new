@@ -1,3 +1,5 @@
+import SearchProgress from "./SearchProgress";
+
 /**
  * ⚠️ The exact field names in `flights` depend on TripJack's real response
  * shape, which we haven't seen yet. This component reads a few likely
@@ -14,7 +16,7 @@ function pick(obj, paths, fallback = "") {
 }
 
 export default function FlightResults({ flights, loading, error, onBookClick }) {
-  if (loading) return <p className="tui-loading">Searching live flights…</p>;
+  if (loading) return <SearchProgress type="flight" />;
   if (error) return <p className="tui-error">{error}</p>;
   if (!flights.length) return <p className="tui-empty">No flights found. Try different dates.</p>;
 

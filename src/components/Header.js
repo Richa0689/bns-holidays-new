@@ -387,6 +387,13 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
 
+          <li>
+            <Link to="/hotels">Hotel</Link>
+          </li>
+          <li>
+            <Link to="/flights">Flight</Link>
+          </li>
+
           {/* ── India Dropdown ── */}
           <li
             className="nav-item"
@@ -548,14 +555,6 @@ const Header = () => {
           </li>
 
           <li>
-  <Link to="/hotels">Hotel</Link>
-</li>
-<li>
-  <Link to="/flights">Flight</Link>
-</li>
-
-
-          <li>
             <Link to="/villa">Villa</Link>
           </li>
           <li>
@@ -572,6 +571,12 @@ const Header = () => {
               <Link to="/" onClick={closeMenu}>
                 Home
               </Link>
+            </li>
+            <li>
+              <Link to="/hotels" onClick={closeMenu}>Hotel</Link>
+            </li>
+            <li>
+              <Link to="/flights" onClick={closeMenu}>Flight</Link>
             </li>
 
             {/* India Mobile */}
@@ -696,16 +701,6 @@ const Header = () => {
             <li>
               <Link to="/packages" onClick={closeMenu}>
                 Packages
-              </Link>
-            </li>
-            <li>
-              <Link to="/hotels" onClick={closeMenu}>
-                 Hotel
-              </Link>
-            </li>
-            <li>
-              <Link to="/flights" onClick={closeMenu}>
-                 Flight
               </Link>
             </li>
 
