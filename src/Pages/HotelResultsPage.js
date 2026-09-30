@@ -59,7 +59,7 @@ export default function HotelResultsPage() {
       </header>
 
       {/* Main content wrapper */}
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 16px" }}>
+      <div style={{ maxWidth: "100%", margin: 0, padding: "24px 5vw" }}>
 
       <HotelResults
         hotels={hotels}

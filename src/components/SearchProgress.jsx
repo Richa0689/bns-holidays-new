@@ -2,42 +2,73 @@ import { useEffect, useState } from "react";
 import "./SearchProgress.css";
 
 export default function SearchProgress({ type }) {
-  const [progress, setProgress] = useState(0);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((p) => {
-        if (p >= 99) {
-          clearInterval(timer);
-          return 99;
-        }
-        const inc = p < 30 ? 6 : p < 70 ? 3 : p < 90 ? 1 : 0.5;
-        return Math.min(99, p + inc);
-      });
-    }, 100);
-    return () => clearInterval(timer);
+    // Count 1→100 naturally:
+    // 1-50: every 60ms  (~3s)
+    // 51-80: every 100ms (~3s)
+    // 81-99: every 200ms (~3.8s)  — slows near the end to feel like real searching
+    let current = 1;
+
+    const tick = () => {
+      current += 1;
+      if (current > 99) {
+        setCount(99);
+        return;
+      }
+      setCount(current);
+      const delay = current <= 50 ? 60 : current <= 80 ? 100 : 200;
+      setTimeout(tick, delay);
+    };
+
+    const first = setTimeout(tick, 60);
+    return () => clearTimeout(first);
   }, []);
+
+  const isHotel = type === "hotel";
+  const radius = 54;
+  const circumference = 2 * Math.PI * radius;
+  const strokeDashoffset = circumference - (count / 100) * circumference;
 
   return (
     <div className="tui-search-progress-wrapper">
       <div className="tui-search-progress-box">
-        <div className="tui-sp-icon">
-          {type === 'hotel' ? (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/><path d="M9 7h6"/><path d="M9 11h6"/><path d="M9 15h6"/></svg>
-          ) : (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="m2 22 20-20"/><path d="M12 2v4"/><path d="M22 12h-4"/></svg>
-          )}
+
+        {/* Circular progress ring */}
+        <div className="tui-sp-ring-wrap">
+          <svg className="tui-sp-ring" viewBox="0 0 120 120">
+            <defs>
+              <linearGradient id="sp-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#1a66ad" />
+                <stop offset="100%" stopColor="#0093e9" />
+              </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r={radius} className="tui-sp-ring-bg" />
+            <circle
+              cx="60" cy="60" r={radius}
+              className="tui-sp-ring-fill"
+              strokeDasharray={circumference}
+              strokeDashoffset={strokeDashoffset}
+            />
+          </svg>
+          <div className="tui-sp-ring-inner">
+            <div className="tui-sp-ring-num">{count}</div>
+            <div className="tui-sp-ring-label">/ 100</div>
+          </div>
         </div>
+
         <h2 className="tui-sp-title">
-          Searching for the best {type === 'hotel' ? 'hotels' : 'flights'}...
+          {isHotel ? "Searching for the best hotels..." : "Searching for the best flights..."}
         </h2>
-        <p className="tui-sp-subtitle">Comparing hundreds of options in real-time</p>
-        
+        <p className="tui-sp-subtitle">
+          Comparing hundreds of options in real-time
+        </p>
+
+        {/* Linear bar below */}
         <div className="tui-sp-bar-container">
-          <div className="tui-sp-bar-fill" style={{ width: `${progress}%` }}></div>
+          <div className="tui-sp-bar-fill" style={{ width: count + "%" }}></div>
         </div>
-        
-        <div className="tui-sp-count">{Math.floor(progress)}%</div>
       </div>
     </div>
   );

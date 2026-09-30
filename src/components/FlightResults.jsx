@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import SearchProgress from "./SearchProgress";
 
 const TIME_BUCKETS = [["00–06", 0, 6], ["06–12", 6, 12], ["12–18", 12, 18], ["18–24", 18, 24]];
 
@@ -108,7 +109,7 @@ export default function FlightResults({ flights, loading, error, onBookClick, fr
   const paxLabel = `${adults || 1} Adult${Number(adults) === 1 ? "" : "s"}${Number(children) ? `, ${children} Child${Number(children) === 1 ? "" : "ren"}` : ""}${Number(infants) ? `, ${infants} Infant${Number(infants) === 1 ? "" : "s"}` : ""}`;
   const readableDate = date ? new Intl.DateTimeFormat("en", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`)) : "";
 
-  if (loading) return <p className="tui-loading">Searching live flights…</p>;
+  if (loading) return <SearchProgress type="flight" />;
   if (error) return <p className="tui-error">{error}</p>;
 
   return <div className="tui-flight-results-page">
@@ -135,18 +136,18 @@ export default function FlightResults({ flights, loading, error, onBookClick, fr
       <section className="tui-flight-results-main">
         <div className="tui-flight-results-toolbar"><strong>Found {visibleFlights.length} Flights from {from} to {to}</strong><div className="tui-flight-sort" aria-label="Sort flights">{[["price", "Price"], ["duration", "Duration"], ["departure", "Departure"], ["arrival", "Arrival"]].map(([value, label]) => <button type="button" key={value} className={sortBy === value ? "selected" : ""} onClick={() => setSortBy(value)}>Sort: {label}</button>)}</div></div>
         <div className="tui-flight-list">
-          {visibleFlights.map((flight) => <article className="tui-flight-card tui-flight-result-card" key={flight.id}>
+          {visibleFlights.map((flight) => <article className="tui-flight-result-card" key={flight.id}>
             <div className="tui-flight-airline"><div className={`tui-flight-logo airline-${flight.code.toLowerCase()}`}><img src={flight.logoUrl} alt={`${flight.airline} logo`} loading="lazy" onError={(event) => { event.currentTarget.style.display = "none"; }} /><span>{flight.code.slice(0, 2)}</span></div><strong>{flight.airline}</strong><span>{flight.flightNo}</span></div>
             <div className="tui-flight-itinerary">
               <div className="tui-flight-timepoint"><strong>{flight.departure}</strong><span>{flight.fromCode}{flight.fromTerminal ? ` · Terminal ${flight.fromTerminal}` : ""}</span></div>
               <div className="tui-flight-timeline"><span>{typeof flight.duration === "number" ? `${Math.floor(flight.duration / 60)}h ${flight.duration % 60}m` : flight.duration || "Duration unavailable"}</span><div><i /><b>✈</b><i /></div><em className={flight.stopCount ? "stops" : "nonstop"}>{stopLabel(flight.stopCount)}</em></div>
               <div className="tui-flight-timepoint"><strong>{flight.arrival}</strong><span>{flight.toCode}{flight.toTerminal ? ` · Terminal ${flight.toTerminal}` : ""}</span></div>
             </div>
-            <div className="tui-flight-fare-summary"><span>Starting from</span><strong>₹{flight.price.toLocaleString("en-IN")}</strong><button type="button" aria-expanded={openFare === flight.id} onClick={() => setOpenFare((id) => id === flight.id ? null : flight.id)}>View {flight.fares.length || 1} {flight.fares.length === 1 ? "Fare" : "Fares"} <span>{openFare === flight.id ? "⌃" : "⌄"}</span></button></div>
+            <div className="tui-flight-fare-summary"><span>Starting from</span><strong>₹{Math.round(flight.price).toLocaleString("en-IN")}</strong><button type="button" aria-expanded={openFare === flight.id} onClick={() => setOpenFare((id) => id === flight.id ? null : flight.id)}>View {flight.fares.length || 1} {flight.fares.length === 1 ? "Fare" : "Fares"} <span>{openFare === flight.id ? "⌃" : "⌄"}</span></button></div>
             {openFare === flight.id && <div className="tui-flight-fare-options">{(flight.fares.length ? flight.fares : [{ price: flight.price }]).map((fare, index) => {
               const price = farePrice(fare) || flight.price;
               const label = fare.fareIdentifier || fare.fareType || fare.fareName || `Fare ${index + 1}`;
-              return <div className="tui-flight-fare-option" key={`${label}-${index}`}><div><strong>{label}</strong><span>{fare.cabinClass || cabinLabel} · {fare.refundable ? "Refundable" : "Fare rules apply"}</span></div><strong>₹{price.toLocaleString("en-IN")}</strong><button type="button" onClick={() => onBookClick({ ...flight.raw, selectedFare: fare })}>Select fare</button></div>;
+              return <div className="tui-flight-fare-option" key={`${label}-${index}`}><div><strong>{label}</strong><span>{fare.cabinClass || cabinLabel} · {fare.refundable ? "Refundable" : "Fare rules apply"}</span></div><strong>₹{Math.round(price).toLocaleString("en-IN")}</strong><button type="button" onClick={() => onBookClick({ ...flight.raw, selectedFare: fare })}>Select fare</button></div>;
             })}</div>}
           </article>)}
         </div>

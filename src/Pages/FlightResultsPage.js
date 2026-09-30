@@ -27,42 +27,40 @@ export default function FlightResultsPage() {
     setLoading(true);
     setError(null);
     searchFlights({ from, to, date, adults: Number(adults), children: Number(children), infants: Number(infants), cabinClass })
-      .then((data) => setFlights(data.flights || data.results || []))
+      .then((data) => {
+        console.log("Flight API Response:", data);
+        let flightList = [];
+        if (Array.isArray(data)) flightList = data;
+        else if (data.flights) flightList = data.flights;
+        else if (data.results) flightList = data.results;
+        else if (data.searchResult?.tripInfos?.ONWARD) flightList = data.searchResult.tripInfos.ONWARD;
+        else if (data.data?.searchResult?.tripInfos?.ONWARD) flightList = data.data.searchResult.tripInfos.ONWARD;
+        
+        setFlights(flightList || []);
+      })
       .catch((err) => setError(err.message || "Something went wrong."))
       .finally(() => setLoading(false));
   }, [from, to, date, adults, children, infants, cabinClass]);
 
-  const cabinLabel = cabinClass === "PREMIUM_ECONOMY" ? "PREMIUM ECONOMY" : (cabinClass || "ECONOMY").replace("_", " ");
-  const paxLabel = `${adults} Adult${Number(adults) > 1 ? "s" : ""}${Number(children) ? `, ${children} Child${Number(children) > 1 ? "ren" : ""}` : ""}${Number(infants) ? `, ${infants} Infant${Number(infants) > 1 ? "s" : ""}` : ""}`;
-  let readableDate = "";
-  try {
-    if (date) readableDate = new Intl.DateTimeFormat("en", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`));
-  } catch (e) {
-    readableDate = date;
-  }
-
   return (
-    <div className="tui-flight-results-page" style={{ background: "#f8f9fa", minHeight: "100vh", paddingBottom: "40px" }}>
-      <header className="tui-flight-search-summary">
-        <div><span>Route</span><strong>{from} → {to}</strong></div>
-        <div><span>Departure date</span><strong>{readableDate}</strong></div>
-        <div><span>Passengers &amp; class</span><strong>{paxLabel} | {cabinLabel}</strong></div>
-        <button type="button" onClick={() => navigate("/flights")}>New search</button>
-      </header>
-
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 16px" }}>
-
+    <>
       <FlightResults
         flights={flights}
         loading={loading}
         error={error}
+        from={from}
+        to={to}
+        date={date}
+        adults={adults}
+        children={children}
+        infants={infants}
+        cabinClass={cabinClass}
         onBookClick={(flight) => setSelected(flight)}
+        onNewSearch={() => navigate("/flights")}
       />
-
       {selected && (
         <BookingRequestModal item={selected} type="flight" onClose={() => setSelected(null)} />
       )}
-      </div>
-    </div>
+    </>
   );
 }

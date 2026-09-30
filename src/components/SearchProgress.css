@@ -1,78 +1,118 @@
 .tui-search-progress-wrapper {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 52vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
-  color: #173c61;
+  padding: 60px 20px;
+  width: 100%;
+  min-height: 50vh;
 }
 
 .tui-search-progress-box {
-  box-sizing: border-box;
-  width: min(100%, 440px);
-  padding: 32px;
-  border: 1px solid #e3eaf0;
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 12px 36px rgba(12, 42, 73, .08);
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 48px rgba(12, 42, 73, 0.10);
+  padding: 44px 40px 36px;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
+  border: 1px solid #edf0f2;
 }
 
-.tui-sp-icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 18px;
-  display: grid;
-  place-items: center;
-  color: #1769aa;
+/* ---- Circular ring ---- */
+.tui-sp-ring-wrap {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 28px;
 }
 
-.tui-sp-icon svg {
-  display: block;
-  width: 40px;
-  height: 40px;
-  max-width: 100%;
-  stroke: currentColor;
+.tui-sp-ring {
+  width: 130px;
+  height: 130px;
+  transform: rotate(-90deg);
 }
 
+.tui-sp-ring-bg {
+  fill: none;
+  stroke: #e8eef4;
+  stroke-width: 8;
+}
+
+.tui-sp-ring-fill {
+  fill: none;
+  stroke: url(#sp-gradient);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.12s ease-out;
+}
+
+/* SVG gradient defined via CSS filter trick — use inline defs */
+.tui-sp-ring-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tui-sp-ring-num {
+  font-size: 30px;
+  font-weight: 900;
+  color: #0c2a49;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  min-width: 2.2ch;
+}
+
+.tui-sp-ring-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a95a2;
+  margin-top: 2px;
+}
+
+/* ---- Text ---- */
 .tui-sp-title {
-  margin: 0 0 8px;
-  color: #163550;
-  font-size: 21px;
-  line-height: 1.3;
+  color: #0c2a49;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 6px;
 }
 
 .tui-sp-subtitle {
-  margin: 0 0 22px;
-  color: #687b8c;
-  font-size: 14px;
+  color: #64748b;
+  font-size: 13px;
+  margin: 0 0 24px;
 }
 
+/* ---- Linear bar ---- */
 .tui-sp-bar-container {
   width: 100%;
-  height: 9px;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 6px;
   overflow: hidden;
-  border-radius: 999px;
-  background: #e7eef4;
 }
 
 .tui-sp-bar-fill {
   height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #1769aa, #46a6d9);
-  transition: width .2s ease;
+  background: linear-gradient(90deg, #1a66ad, #0093e9);
+  border-radius: 6px;
+  transition: width 0.12s ease-out;
+  position: relative;
 }
 
-.tui-sp-count {
-  margin-top: 10px;
-  color: #1769aa;
-  font-size: 13px;
-  font-weight: 700;
+.tui-sp-bar-fill::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+  animation: shimmer 1.4s infinite;
 }
 
-@media (max-width: 480px) {
-  .tui-search-progress-box { padding: 26px 20px; }
-  .tui-sp-title { font-size: 18px; }
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
+

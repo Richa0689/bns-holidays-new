@@ -439,3 +439,1136 @@
 .tui-flight-search-summary strong { overflow-wrap: anywhere; }
 @media (min-width: 769px) { .tui-flight-search-summary > div { flex: 0 1 auto; } }
 
+
+/* ===== HOTEL RESULTS LAYOUT ===== */
+.tui-hotel-results-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .tui-hotel-results-layout { grid-template-columns: 1fr; }
+}
+
+/* --- Filters sidebar --- */
+.tui-hotel-filters {
+  background: #fff;
+  border: 1px solid #e7e0d0;
+  border-radius: 14px;
+  padding: 20px;
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d7e0e9 transparent;
+  align-self: start;
+}
+.tui-hotel-filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.tui-hotel-filter-heading h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0c2a49;
+  margin: 0;
+}
+.tui-mobile-filter-toggle {
+  display: none;
+  border: none;
+  background: none;
+  color: #1a66ad;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .tui-mobile-filter-toggle { display: block; }
+  .tui-hotel-filter-content { display: none; }
+  .tui-hotel-filters.is-open .tui-hotel-filter-content { display: block; }
+}
+
+.tui-hotel-filter-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0ede7;
+}
+.tui-hotel-filter-section:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.tui-hotel-filter-section h4 {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7789;
+  margin: 0 0 10px;
+}
+.tui-hotel-filter-section input[type="range"] {
+  width: 100%;
+  accent-color: #1a66ad;
+}
+.tui-filter-range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #0c2a49;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Star rating filter */
+.tui-star-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tui-star-filter-list button {
+  padding: 5px 12px;
+  border: 1px solid #d7e0e9;
+  border-radius: 999px;
+  background: #fff;
+  color: #0c2a49;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tui-star-filter-list button.selected,
+.tui-star-filter-list button[aria-pressed="true"] {
+  background: #0c2a49;
+  color: #fff;
+  border-color: #0c2a49;
+}
+
+/* Amenity checkboxes */
+.tui-amenity-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tui-amenity-filters label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #253348;
+  cursor: pointer;
+}
+.tui-amenity-filters label input[type="checkbox"] {
+  accent-color: #1a66ad;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+.tui-amenity-filters label span { flex: 1; }
+.tui-amenity-filters label small {
+  font-size: 11px;
+  color: #8a95a2;
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+
+/* Clear filters */
+.tui-filter-clear {
+  width: 100%;
+  margin-top: 14px;
+  padding: 9px;
+  border: 1px solid #d7e0e9;
+  border-radius: 7px;
+  background: #fff;
+  color: #1a66ad;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tui-filter-clear:hover { background: #f1f5f9; }
+
+/* --- Results main area --- */
+.tui-hotel-results-main { min-width: 0; }
+
+.tui-hotel-results-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tui-hotel-results-toolbar strong {
+  font-size: 15px;
+  color: #0c2a49;
+}
+.tui-hotel-sort {
+  display: flex;
+  gap: 6px;
+}
+.tui-hotel-sort button {
+  padding: 6px 14px;
+  border: 1px solid #d7e0e9;
+  border-radius: 999px;
+  background: #fff;
+  color: #0c2a49;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tui-hotel-sort button.selected { background: #0c2a49; color: #fff; border-color: #0c2a49; }
+
+/* --- Hotel card overrides for results page --- */
+.tui-hotel-list { display: flex; flex-direction: column; gap: 16px; }
+
+.tui-hotel-card {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  background: #fff;
+  border: 1px solid #e7e0d0;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.tui-hotel-card:hover { box-shadow: 0 8px 32px rgba(12,42,73,0.10); }
+@media (max-width: 720px) {
+  .tui-hotel-card { grid-template-columns: 1fr; }
+}
+
+.tui-hotel-art {
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  background-size: cover;
+  background-position: center;
+}
+.tui-hotel-art::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.38) 100%);
+}
+.tui-hotel-art .tui-art-label {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.tui-hotel-body {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.tui-hotel-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.tui-hotel-name {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0c2a49;
+  line-height: 1.3;
+}
+.tui-stars { color: #D6930A; font-size: 12px; letter-spacing: 1px; white-space: nowrap; }
+.tui-hotel-address { font-size: 12.5px; color: #6b7789; line-height: 1.4; }
+.tui-amenity-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 2px; }
+.tui-amenity-chip {
+  font-size: 11px;
+  color: #0c2a49;
+  background: #f7f2e7;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.tui-cancel-badge { font-size: 11.5px; color: #1E7A46; font-weight: 700; }
+
+/* View rooms button */
+.tui-room-categories-btn {
+  margin-top: 6px;
+  align-self: flex-start;
+  padding: 6px 14px;
+  border: 1px solid #1a66ad;
+  border-radius: 7px;
+  background: transparent;
+  color: #1a66ad;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tui-room-categories-btn:hover { background: #e8f3ff; }
+
+/* Hotel price column */
+.tui-hotel-price-col {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-left: 1px solid #e7e0d0;
+  min-width: 155px;
+  gap: 12px;
+}
+@media (max-width: 720px) {
+  .tui-hotel-price-col {
+    border-left: none;
+    border-top: 1px solid #e7e0d0;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 0;
+  }
+}
+.tui-price-label { font-size: 11px; color: #6b7789; text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; }
+.tui-price-value { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: #0c2a49; }
+.tui-price-note { font-size: 11px; color: #6b7789; margin-top: 2px; }
+
+.tui-hotel-actions { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+@media (max-width: 720px) { .tui-hotel-actions { align-items: flex-start; } }
+
+.tui-hotel-details-btn {
+  padding: 7px 14px;
+  border: 1px solid #0c2a49;
+  border-radius: 7px;
+  background: transparent;
+  color: #0c2a49;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.tui-hotel-details-btn:hover { background: #f7f2e7; }
+
+.tui-book-btn {
+  padding: 9px 16px;
+  background: #1A9E7A;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.tui-book-btn:hover { background: #158567; }
+
+/* ===== HOTEL ROOM CATEGORIES MODAL ===== */
+.tui-room-modal {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 720px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 30px 60px -20px rgba(12,42,73,0.4);
+  display: flex;
+  flex-direction: column;
+}
+.tui-room-modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 24px 0;
+}
+.tui-room-modal-head span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a66ad;
+}
+.tui-room-modal-head h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  color: #0c2a49;
+  margin: 4px 0 2px;
+}
+.tui-room-modal-head p { font-size: 12.5px; color: #6b7789; margin: 0; }
+.tui-room-modal-head > button {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e7e0d0;
+  border-radius: 50%;
+  background: #fff;
+  color: #6b7789;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+.tui-hotel-detail-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 16px 24px 0;
+  border-bottom: 1px solid #e7e0d0;
+}
+.tui-hotel-detail-tabs button {
+  padding: 10px 18px;
+  border: none;
+  background: none;
+  color: #6b7789;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all 0.15s;
+}
+.tui-hotel-detail-tabs button.selected { color: #0c2a49; border-bottom-color: #0c2a49; }
+.tui-hotel-detail-overview { padding: 20px 24px; display: flex; flex-direction: column; gap: 16px; }
+.tui-hotel-detail-gallery { position: relative; }
+.tui-hotel-detail-main-image { position: relative; border-radius: 10px; overflow: hidden; }
+.tui-hotel-detail-main-image img { width: 100%; max-height: 320px; object-fit: cover; display: block; }
+.tui-detail-gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tui-detail-gallery-arrow.previous { left: 8px; }
+.tui-detail-gallery-arrow.next { right: 8px; }
+.tui-detail-gallery-count {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.tui-detail-gallery-thumbnails { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.tui-detail-gallery-thumbnails button {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  width: 60px;
+  height: 44px;
+  background: none;
+}
+.tui-detail-gallery-thumbnails button img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tui-detail-gallery-thumbnails button.selected { border-color: #1a66ad; }
+.tui-hotel-detail-overview h3 { font-family: 'Fraunces', serif; font-size: 16px; color: #0c2a49; margin: 0 0 8px; }
+.tui-hotel-detail-overview p { font-size: 13.5px; color: #4a5568; line-height: 1.6; margin: 0; }
+.tui-detail-amenities { display: flex; flex-wrap: wrap; gap: 6px; }
+.tui-detail-amenities span { font-size: 12px; background: #f7f2e7; color: #0c2a49; padding: 4px 10px; border-radius: 999px; font-weight: 600; }
+.tui-room-primary-action {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background: #1a66ad;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.tui-room-options { display: flex; flex-direction: column; gap: 12px; padding: 20px 24px; }
+.tui-room-option {
+  background: #f8f9fa;
+  border: 1px solid #e7e0d0;
+  border-radius: 10px;
+  padding: 16px;
+}
+.tui-room-option-name { font-weight: 700; color: #0c2a49; font-size: 14px; margin-bottom: 6px; }
+.tui-room-option-meal { font-size: 12.5px; color: #4a5568; margin-bottom: 4px; }
+.tui-room-option-cancel { font-size: 12px; color: #6b7789; margin-bottom: 8px; }
+.tui-room-option-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px solid #e7e0d0;
+}
+.tui-room-option-footer strong { font-family: 'Fraunces', serif; font-size: 18px; color: #0c2a49; }
+.tui-room-option-footer span { color: #6b7789; font-size: 13px; }
+.tui-room-empty { padding: 20px 24px; text-align: center; color: #6b7789; }
+
+/* ===== FLIGHT RESULTS (upgraded) ===== */
+.tui-flight-results-page { background: #f8f9fa; min-height: 100vh; }
+.tui-flight-results-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  max-width: 100%;
+  margin: 0;
+  padding: 24px 5vw;
+  align-items: start;
+}
+@media (max-width: 860px) { .tui-flight-results-layout { grid-template-columns: 1fr; } }
+
+.tui-flight-filters {
+  background: #fff;
+  border: 1px solid #e7e0d0;
+  border-radius: 14px;
+  padding: 18px;
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d7e0e9 transparent;
+  align-self: start;
+}
+.tui-flight-filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.tui-flight-filter-heading h3 { font-size: 15px; font-weight: 800; color: #0c2a49; margin: 0; }
+.tui-flight-mobile-toggle {
+  display: none;
+  border: none;
+  background: none;
+  color: #1a66ad;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (max-width: 860px) {
+  .tui-flight-mobile-toggle { display: block; }
+  .tui-flight-filter-content { display: none; }
+  .tui-flight-filters.is-open .tui-flight-filter-content { display: block; }
+}
+.tui-flight-filter-section { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #f0ede7; }
+.tui-flight-filter-section:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.tui-flight-filter-section h4 { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #6b7789; margin: 0 0 8px; }
+.tui-flight-filter-section input[type="range"] { width: 100%; accent-color: #1a66ad; }
+.tui-flight-price-labels { display: flex; justify-content: space-between; font-size: 11px; color: #0c2a49; font-weight: 600; margin-top: 4px; }
+.tui-flight-chip-options { display: flex; flex-wrap: wrap; gap: 5px; }
+.tui-flight-chip-options button {
+  padding: 4px 11px;
+  border: 1px solid #d7e0e9;
+  border-radius: 999px;
+  background: #fff;
+  color: #0c2a49;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.tui-flight-chip-options button.selected,
+.tui-flight-chip-options button[aria-pressed="true"] { background: #0c2a49; color: #fff; border-color: #0c2a49; }
+.tui-flight-airline-options { display: flex; flex-direction: column; gap: 7px; max-height: 180px; overflow-y: auto; }
+.tui-flight-airline-options label { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #253348; cursor: pointer; }
+.tui-flight-airline-options label input { accent-color: #1a66ad; }
+.tui-flight-clear-filters {
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px;
+  border: 1px solid #d7e0e9;
+  border-radius: 7px;
+  background: #fff;
+  color: #1a66ad;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tui-flight-results-main { min-width: 0; }
+.tui-flight-results-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tui-flight-results-toolbar strong { font-size: 14px; color: #0c2a49; }
+.tui-flight-sort { display: flex; gap: 5px; flex-wrap: wrap; }
+.tui-flight-sort button {
+  padding: 5px 12px;
+  border: 1px solid #d7e0e9;
+  border-radius: 999px;
+  background: #fff;
+  color: #0c2a49;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tui-flight-sort button.selected { background: #0c2a49; color: #fff; border-color: #0c2a49; }
+
+/* Flight card (upgraded) */
+.tui-flight-result-card {
+  background: #fff;
+  border: 1px solid #e7e0d0;
+  border-radius: 14px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s;
+}
+.tui-flight-result-card:hover { box-shadow: 0 6px 24px rgba(12,42,73,0.09); }
+.tui-flight-result-card > * { padding: 18px 20px; }
+.tui-flight-airline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 0 !important;
+}
+.tui-flight-airline strong { font-size: 13px; font-weight: 700; color: #0c2a49; }
+.tui-flight-airline span { font-size: 11px; color: #8a95a2; }
+.tui-flight-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f7f2e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tui-flight-logo img { width: 100%; height: 100%; object-fit: contain; }
+.tui-flight-logo span { font-size: 11px; font-weight: 800; color: #0c2a49; display: none; }
+.tui-flight-logo img[style*="none"] + span, .tui-flight-logo:not(:has(img)) span { display: block; }
+.tui-flight-itinerary {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.tui-flight-timepoint { text-align: center; min-width: 72px; }
+.tui-flight-timepoint strong { display: block; font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; color: #0c2a49; }
+.tui-flight-timepoint span { font-size: 11.5px; color: #6b7789; }
+.tui-flight-timeline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+.tui-flight-timeline span { font-size: 11.5px; color: #6b7789; margin-bottom: 4px; }
+.tui-flight-timeline > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.tui-flight-timeline i {
+  flex: 1;
+  height: 1px;
+  background: #e7e0d0;
+  display: block;
+}
+.tui-flight-timeline b { font-size: 14px; padding: 0 6px; color: #D6930A; }
+.tui-flight-timeline em {
+  margin-top: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  font-style: normal;
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+.tui-flight-timeline em.nonstop { color: #1E7A46; background: #e6f7ef; }
+.tui-flight-timeline em.stops { color: #b45309; background: #fef3c7; }
+.tui-flight-fare-summary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  border-top: 1px solid #f0ede7;
+}
+.tui-flight-fare-summary span { font-size: 11px; color: #6b7789; }
+.tui-flight-fare-summary strong { font-family: 'Fraunces', serif; font-size: 20px; color: #0c2a49; }
+.tui-flight-fare-summary button {
+  padding: 9px 16px;
+  background: #1a66ad;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tui-flight-fare-summary button span { font-size: 11px; color: rgba(255,255,255,0.7); }
+.tui-flight-fare-options {
+  background: #f8f9fa;
+  border-top: 1px solid #e7e0d0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.tui-flight-fare-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  background: #fff;
+}
+.tui-flight-fare-option div { display: flex; flex-direction: column; gap: 3px; }
+.tui-flight-fare-option strong { font-size: 13px; font-weight: 700; color: #0c2a49; }
+.tui-flight-fare-option span { font-size: 11.5px; color: #6b7789; }
+.tui-flight-fare-option > strong { font-family: 'Fraunces', serif; font-size: 17px; color: #0c2a49; }
+.tui-flight-fare-option button {
+  padding: 8px 16px;
+  background: #1A9E7A;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ===== HOTEL ROOM CATEGORIES / VIEW DETAILS MODAL ===== */
+.hrc-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 42, 73, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  backdrop-filter: blur(2px);
+}
+
+.hrc-modal {
+  background: #fff;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 780px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 32px 80px rgba(12, 42, 73, 0.28);
+  overflow: hidden;
+}
+
+/* Header */
+.hrc-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 24px 0;
+  flex-shrink: 0;
+}
+.hrc-eyebrow {
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1a66ad;
+  margin-bottom: 6px;
+}
+.hrc-hotel-name {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0c2a49;
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+.hrc-hotel-addr { font-size: 13px; color: #6b7789; margin: 0; }
+
+.hrc-close {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e7e0d0;
+  border-radius: 50%;
+  background: #fff;
+  color: #6b7789;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+.hrc-close:hover { background: #f7f2e7; color: #0c2a49; }
+
+/* Tabs */
+.hrc-tabs {
+  display: flex;
+  gap: 0;
+  padding: 16px 24px 0;
+  border-bottom: 1px solid #e7e0d0;
+  flex-shrink: 0;
+}
+.hrc-tab {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7789;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.hrc-tab.active { color: #0c2a49; border-bottom-color: #0c2a49; }
+.hrc-tab:hover:not(.active) { color: #0c2a49; }
+
+/* Scrollable body */
+.hrc-body {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+/* OVERVIEW */
+.hrc-overview {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Gallery */
+.hrc-gallery { display: flex; flex-direction: column; gap: 8px; }
+
+.hrc-main-img-wrap {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0ede7;
+}
+.hrc-main-img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  display: block;
+}
+.hrc-gal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.42);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.hrc-gal-arrow:hover { background: rgba(0, 0, 0, 0.65); }
+.hrc-gal-prev { left: 10px; }
+.hrc-gal-next { right: 10px; }
+.hrc-gal-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.50);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+.hrc-thumbs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.hrc-thumb {
+  width: 64px;
+  height: 48px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 0;
+  background: #f0ede7;
+  cursor: pointer;
+  transition: border-color 0.12s;
+}
+.hrc-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hrc-thumb.active { border-color: #1a66ad; }
+
+/* Sections */
+.hrc-section { display: flex; flex-direction: column; gap: 10px; }
+.hrc-section-title {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0c2a49;
+  margin: 0;
+}
+.hrc-description {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.65;
+  margin: 0;
+}
+.hrc-amenities { display: flex; flex-wrap: wrap; gap: 7px; }
+.hrc-amenity-chip {
+  font-size: 12px;
+  background: #f7f2e7;
+  color: #0c2a49;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Stay info bar */
+.hrc-stay-info {
+  display: flex;
+  gap: 0;
+  border: 1px solid #e7e0d0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.hrc-stay-info > div {
+  flex: 1;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-right: 1px solid #e7e0d0;
+}
+.hrc-stay-info > div:last-child { border-right: none; }
+.hrc-stay-info span { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #8a95a2; }
+.hrc-stay-info strong { font-size: 13px; font-weight: 700; color: #0c2a49; }
+
+.hrc-view-rooms-btn {
+  align-self: flex-start;
+  padding: 11px 22px;
+  background: #0c2a49;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.hrc-view-rooms-btn:hover { background: #173c61; }
+
+/* ROOMS TAB */
+.hrc-rooms-tab { padding: 20px 24px 24px; }
+
+.hrc-loading-state,
+.hrc-error-state,
+.hrc-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 20px;
+  text-align: center;
+  color: #6b7789;
+  font-size: 14px;
+}
+.hrc-error-state p { color: #b3261e; }
+
+/* Spinner */
+.hrc-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e7e0d0;
+  border-top-color: #1a66ad;
+  border-radius: 50%;
+  animation: hrc-spin 0.8s linear infinite;
+}
+@keyframes hrc-spin { to { transform: rotate(360deg); } }
+
+/* Room cards */
+.hrc-room-list { display: flex; flex-direction: column; gap: 12px; }
+.hrc-room-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fafafa;
+  border: 1px solid #e7e0d0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  transition: box-shadow 0.15s;
+}
+.hrc-room-card:hover { box-shadow: 0 4px 16px rgba(12, 42, 73, 0.08); }
+@media (max-width: 560px) { .hrc-room-card { flex-direction: column; align-items: flex-start; } }
+
+.hrc-room-card-body { flex: 1; min-width: 0; }
+.hrc-room-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0c2a49;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.hrc-room-tags { display: flex; flex-direction: column; gap: 5px; }
+.hrc-room-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  width: fit-content;
+}
+.hrc-room-tag.meal { background: #fef9ea; color: #b45309; }
+.hrc-room-tag.cancel { background: #f0faf4; color: #1e7a46; }
+
+.hrc-room-card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+  min-width: 130px;
+}
+@media (max-width: 560px) { .hrc-room-card-price { align-items: flex-start; } }
+.hrc-room-price {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0c2a49;
+}
+.hrc-room-price-note { font-size: 11px; color: #8a95a2; }
+.hrc-room-price-on-req { font-size: 13px; color: #6b7789; font-style: italic; }
+
+.hrc-book-room-btn {
+  padding: 9px 20px;
+  background: #1A9E7A;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.hrc-book-room-btn:hover { background: #158567; }
+
+@media (max-width: 600px) {
+  .hrc-modal { max-height: 95vh; border-radius: 14px; }
+  .hrc-header { padding: 18px 18px 0; }
+  .hrc-tabs { padding: 12px 18px 0; }
+  .hrc-overview, .hrc-rooms-tab { padding: 16px 18px 20px; }
+  .hrc-stay-info { flex-wrap: wrap; }
+  .hrc-stay-info > div { flex: 1 1 45%; border-right: none; border-bottom: 1px solid #e7e0d0; }
+}
+
+/* ===== ROOM CATEGORIES FILTER BAR & TABLE ===== */
+.hrc-room-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+  background: #f7f9fb;
+  border: 1px solid #e7e0d0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.hrc-room-filter-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7789;
+  margin-bottom: 5px;
+}
+.hrc-room-filter-group {
+  display: flex;
+  flex-direction: column;
+}
+.hrc-room-filter-group > .hrc-room-filter-label { margin-bottom: 7px; }
+.hrc-room-filter-group > select:first-of-type { margin-bottom: 6px; }
+.hrc-room-filter-select {
+  padding: 7px 28px 7px 10px;
+  border: 1px solid #d7e0e9;
+  border-radius: 7px;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23526c88'/%3E%3C/svg%3E") no-repeat right 10px center;
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #0c2a49;
+  cursor: pointer;
+  min-width: 160px;
+}
+.hrc-room-filter-select:focus { outline: none; border-color: #1a66ad; }
+
+.hrc-room-search-wrap { display: flex; flex-direction: column; }
+.hrc-room-search-inner { position: relative; }
+.hrc-room-search {
+  padding: 7px 36px 7px 10px;
+  border: 1px solid #d7e0e9;
+  border-radius: 7px;
+  font-size: 12.5px;
+  color: #0c2a49;
+  width: 200px;
+  background: #fff;
+}
+.hrc-room-search:focus { outline: none; border-color: #1a66ad; }
+.hrc-room-search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7789;
+  pointer-events: none;
+  display: flex;
+}
+
+.hrc-room-price-filter { display: flex; flex-direction: column; min-width: 160px; }
+.hrc-room-price-slider { width: 100%; accent-color: #1a66ad; margin: 6px 0 2px; }
+.hrc-room-price-labels { display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; color: #0c2a49; }
+
+.hrc-room-clear-btn {
+  padding: 7px 16px;
+  border: 1px solid #e7e0d0;
+  border-radius: 7px;
+  background: #fff;
+  color: #1a66ad;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.hrc-room-clear-btn:hover { background: #f1f5f9; }
+.hrc-inline-reset {
+  background: none;
+  border: none;
+  color: #1a66ad;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
