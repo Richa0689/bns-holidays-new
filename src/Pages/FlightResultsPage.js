@@ -48,6 +48,8 @@ export default function FlightResultsPage() {
         if (Array.isArray(data)) flightList = data;
         else if (data.flights) flightList = data.flights;
         else if (data.results) flightList = data.results;
+        else if (tripType === "multicity" && data.searchResult?.tripInfos?.COMBO) flightList = data.searchResult.tripInfos.COMBO;
+        else if (tripType === "multicity" && data.data?.searchResult?.tripInfos?.COMBO) flightList = data.data.searchResult.tripInfos.COMBO;
         else if (data.searchResult?.tripInfos?.ONWARD) flightList = data.searchResult.tripInfos.ONWARD;
         else if (data.data?.searchResult?.tripInfos?.ONWARD) flightList = data.data.searchResult.tripInfos.ONWARD;
         
@@ -55,7 +57,7 @@ export default function FlightResultsPage() {
       })
       .catch((err) => setError(err.message || "Something went wrong."))
       .finally(() => setLoading(false));
-  }, [from, to, date, routes, routesParam, adults, children, infants, cabinClass]);
+  }, [from, to, date, routes, routesParam, adults, children, infants, cabinClass, tripType]);
 
   return (
     <>
