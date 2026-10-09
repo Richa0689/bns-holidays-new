@@ -1017,28 +1017,41 @@
 /* Flight card (upgraded) */
 .tui-flight-result-card {
   background: #fff;
-  border: 1px solid #e7e0d0;
-  border-radius: 14px;
+  border: 1px solid #d9e2eb;
+  border-top: 3px solid #1596dc;
+  border-radius: 12px;
   padding: 0;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   transition: box-shadow 0.2s;
 }
-.tui-flight-result-card:hover { box-shadow: 0 6px 24px rgba(12,42,73,0.09); }
-.tui-flight-result-card > * { padding: 18px 20px; }
+.tui-flight-result-card:hover { box-shadow: 0 7px 24px rgba(12,42,73,0.1); }
+.tui-flight-card-main {
+  display: grid;
+  grid-template-columns: minmax(88px, 102px) minmax(0, 1fr) minmax(120px, 138px);
+  align-items: center;
+  min-height: 116px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+.tui-flight-card-main > * { min-width: 0; box-sizing: border-box; }
 .tui-flight-airline {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-bottom: 0 !important;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0 13px 0 0 !important;
+  border-right: 1px solid #dce3e9;
 }
-.tui-flight-airline strong { font-size: 13px; font-weight: 700; color: #0c2a49; }
+.tui-flight-airline strong { color: #0c2a49; font-size: 12px; font-weight: 700; }
 .tui-flight-airline span { font-size: 11px; color: #8a95a2; }
 .tui-flight-logo {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 8px;
-  background: #f7f2e7;
+  border: 1px solid #dce3e9;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1052,9 +1065,11 @@
   display: flex;
   align-items: center;
   gap: 0;
+  min-width: 0;
+  padding: 0 10px !important;
 }
-.tui-flight-timepoint { text-align: center; min-width: 72px; }
-.tui-flight-timepoint strong { display: block; font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; color: #0c2a49; }
+.tui-flight-timepoint { text-align: center; min-width: 64px; }
+.tui-flight-timepoint strong { display: block; color: #0c2a49; font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; }
 .tui-flight-timepoint span { font-size: 11.5px; color: #6b7789; }
 .tui-flight-timeline {
   flex: 1;
@@ -1073,10 +1088,10 @@
 .tui-flight-timeline i {
   flex: 1;
   height: 1px;
-  background: #e7e0d0;
+  background: #aab8c6;
   display: block;
 }
-.tui-flight-timeline b { font-size: 14px; padding: 0 6px; color: #D6930A; }
+.tui-flight-timeline b { font-size: 14px; padding: 0 6px; color: #0877bd; }
 .tui-flight-timeline em {
   margin-top: 4px;
   font-size: 11px;
@@ -1089,54 +1104,120 @@
 .tui-flight-timeline em.stops { color: #b45309; background: #fef3c7; }
 .tui-flight-fare-summary {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 14px;
-  border-top: 1px solid #f0ede7;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  padding: 0 0 0 15px !important;
+  border-top: 0;
+  border-left: 1px solid #dce3e9;
 }
-.tui-flight-fare-summary span { font-size: 11px; color: #6b7789; }
-.tui-flight-fare-summary strong { font-family: 'Fraunces', serif; font-size: 20px; color: #0c2a49; }
+.tui-flight-fare-summary > span { color: #71849a; font-size: 9px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+.tui-flight-fare-summary strong { color: #075ca0; font-family: 'Fraunces', serif; font-size: 21px; }
 .tui-flight-fare-summary button {
-  padding: 9px 16px;
-  background: #1a66ad;
+  margin-top: 4px;
+  padding: 7px 13px;
+  background: #0566a9;
   color: #fff;
   border: none;
-  border-radius: 8px;
-  font-size: 12px;
+  border-radius: 999px;
+  font-size: 11px;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
 }
 .tui-flight-fare-summary button span { font-size: 11px; color: rgba(255,255,255,0.7); }
+.tui-flight-fare-details {
+  padding: 13px 16px 16px;
+  border-top: 1px solid #dce3e9;
+  background: linear-gradient(180deg, #fbfcfd 0%, #f5f8fb 100%);
+}
+.tui-flight-fare-details h4 {
+  margin: 0 0 12px;
+  color: #637991;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
 .tui-flight-fare-options {
-  background: #f8f9fa;
-  border-top: 1px solid #e7e0d0;
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 282px));
+  gap: 12px;
+  align-items: stretch;
 }
 .tui-flight-fare-option {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 14px 20px;
+  min-width: 0;
+  min-height: 360px;
+  flex-direction: column;
+  padding: 0;
+  border: 1px solid #c8d0d8;
+  border-radius: 12px;
   background: #fff;
+  overflow: hidden;
 }
-.tui-flight-fare-option div { display: flex; flex-direction: column; gap: 3px; }
-.tui-flight-fare-option strong { font-size: 13px; font-weight: 700; color: #0c2a49; }
-.tui-flight-fare-option span { font-size: 11.5px; color: #6b7789; }
-.tui-flight-fare-option > strong { font-family: 'Fraunces', serif; font-size: 17px; color: #0c2a49; }
-.tui-flight-fare-option button {
-  padding: 8px 16px;
-  background: #1A9E7A;
+.tui-flight-fare-option > div { display: flex; flex-direction: column; gap: 4px; }
+.tui-flight-fare-option .tui-flight-fare-price {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+  padding: 16px 15px 2px;
+}
+.tui-flight-fare-price strong { color: #122d49; font-family: 'Fraunces', serif; font-size: 21px; font-weight: 800; }
+.tui-flight-fare-price span { color: #718095; font-size: 11px; }
+.tui-flight-fare-option .tui-flight-fare-name { padding: 0 15px 12px; }
+.tui-flight-fare-name strong { color: #25384b; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.tui-flight-fare-name small { color: #7890a8; font-size: 10px; }
+.tui-flight-fare-option .tui-flight-fare-perks {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 15px;
+  border-top: 1px solid #d5dbe1;
+}
+.tui-flight-fare-perks strong { margin-top: 1px; color: #172c40; font-size: 12px; }
+.tui-flight-fare-perks span { display: flex; align-items: flex-start; gap: 8px; color: #63768c; font-size: 11px; line-height: 1.35; }
+.tui-flight-fare-perks span i {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e5f4f2;
+  color: #199980;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+}
+.tui-flight-fare-perks span.restricted i { background: #fff0d8; color: #d58a25; }
+.tui-flight-fare-perks span.unavailable i { background: #edf1f4; color: #8797a6; }
+.tui-flight-fare-option .tui-flight-fare-select {
+  margin: 0 14px 14px;
+  padding: 9px 14px;
+  background: linear-gradient(90deg, #087dc5, #0564a5);
   color: #fff;
   border: none;
-  border-radius: 7px;
-  font-size: 12px;
+  border-radius: 999px;
+  box-shadow: 0 3px 8px rgba(5, 102, 169, .22);
+  font-size: 11px;
   font-weight: 700;
   cursor: pointer;
-  white-space: nowrap;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .tui-flight-card-main { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; padding: 13px; }
+  .tui-flight-airline { grid-column: 1 / -1; flex-direction: row; align-items: center; padding: 0 !important; border: 0; }
+  .tui-flight-itinerary { grid-column: 1 / -1; padding: 0 !important; }
+  .tui-flight-fare-summary { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr auto; align-items: center; padding: 10px 0 0 !important; border-left: 0; border-top: 1px solid #dce3e9; }
+  .tui-flight-fare-summary > span { grid-column: 1; }
+  .tui-flight-fare-summary strong { grid-column: 1; }
+  .tui-flight-fare-summary button { grid-column: 2; grid-row: 1 / span 2; }
+  .tui-flight-fare-options { grid-template-columns: minmax(0, 1fr); }
+  .tui-flight-fare-option { min-height: 0; }
 }
 
 /* ===== HOTEL ROOM CATEGORIES / VIEW DETAILS MODAL ===== */

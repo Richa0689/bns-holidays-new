@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import SearchProgress from "./SearchProgress";
 
 const TIME_BUCKETS = [["00–06", 0, 6], ["06–12", 6, 12], ["12–18", 12, 18], ["18–24", 18, 24]];
@@ -33,6 +33,41 @@ function farePrice(fare) {
   return Number(firstValue(fare, ["price", "totalFare", "fare.totalFare", "fd.ADULT.fC.TF", "fd.ADULT.fC.NF", "fd.ADULT.fC.BF"], 0)) || 0;
 }
 
+function fareDetails(fare) {
+  const adultFare = fare.fd?.ADULT || {};
+  const fareCalculation = adultFare.fC || {};
+  const baggage = adultFare.bI || {};
+  const total = farePrice(fare);
+  const baseFare = Number(fareCalculation.BF) || 0;
+  const tax = Number(fareCalculation.TAF) || Math.max(0, total - baseFare);
+  const refundable = adultFare.rT === 1 || adultFare.rT === "1";
+  const cabin = adultFare.cc || fare.cabinClass || "Cabin details unavailable";
+  const bookingClass = adultFare.cB;
+
+  return {
+    total,
+    baseFare,
+    tax,
+    hasFareBreakdown: fareCalculation.BF != null || fareCalculation.TAF != null,
+    cabin,
+    bookingClass,
+    fareBasis: adultFare.fB,
+    seatsRemaining: adultFare.sR,
+    cabinBaggage: baggage.cB,
+    checkedBaggage: baggage.iB,
+    flexibility: adultFare.rT == null ? "Fare rules apply" : refundable ? "Refundable" : "Non-Refundable",
+  };
+}
+
+function formatPrice(value) {
+  return Number(value).toLocaleString("en-IN", { maximumFractionDigits: 2 });
+}
+
+function baggageLabel(value, suffix) {
+  if (!value) return "";
+  return /baggage/i.test(value) ? value : `${value} ${suffix}`;
+}
+
 function normalizeFlight(flight, index) {
   const segments = flight.sI || flight.segments || [];
   const first = segments[0] || {};
@@ -59,6 +94,7 @@ function normalizeFlight(flight, index) {
     departure: timeText(departure), arrival: timeText(arrival), fromCode, toCode,
     fromTerminal: first.da?.terminal || "", toTerminal: last.aa?.terminal || "",
     departureHour, arrivalHour, duration, durationMinutes: minuteValue(duration), stopCount,
+    segments,
     fares: fareList,
     price: prices.length ? Math.min(...prices) : Number(firstValue(flight, ["price", "totalFare", "fare.totalFare"], 0)) || 0,
   };
@@ -77,6 +113,11 @@ export default function FlightResults({ flights, loading, error, onBookClick, fr
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const normalized = useMemo(() => flights.map(normalizeFlight), [flights]);
+  useEffect(() => {
+    setOpenFare((current) => current && normalized.some((flight) => flight.id === current)
+      ? current
+      : normalized[0]?.id ?? null);
+  }, [normalized]);
   const prices = normalized.map((flight) => flight.price).filter((price) => price > 0);
   const minPrice = prices.length ? Math.floor(Math.min(...prices)) : 0;
   const maxAvailablePrice = prices.length ? Math.ceil(Math.max(...prices)) : 100000;
@@ -142,18 +183,46 @@ export default function FlightResults({ flights, loading, error, onBookClick, fr
         <div className="tui-flight-results-toolbar"><strong>Found {visibleFlights.length} Flights from {from} to {to}</strong><div className="tui-flight-sort" aria-label="Sort flights">{[["price", "Price"], ["duration", "Duration"], ["departure", "Departure"], ["arrival", "Arrival"]].map(([value, label]) => <button type="button" key={value} className={sortBy === value ? "selected" : ""} onClick={() => setSortBy(value)}>Sort: {label}</button>)}</div></div>
         <div className="tui-flight-list">
           {visibleFlights.map((flight) => <article className="tui-flight-result-card" key={flight.id}>
-            <div className="tui-flight-airline"><div className={`tui-flight-logo airline-${flight.code.toLowerCase()}`}><img src={flight.logoUrl} alt={`${flight.airline} logo`} loading="lazy" onError={(event) => { event.currentTarget.style.display = "none"; }} /><span>{flight.code.slice(0, 2)}</span></div><strong>{flight.airline}</strong><span>{flight.flightNo}</span></div>
-            <div className="tui-flight-itinerary">
-              <div className="tui-flight-timepoint"><strong>{flight.departure}</strong><span>{flight.fromCode}{flight.fromTerminal ? ` · Terminal ${flight.fromTerminal}` : ""}</span></div>
-              <div className="tui-flight-timeline"><span>{typeof flight.duration === "number" ? `${Math.floor(flight.duration / 60)}h ${flight.duration % 60}m` : flight.duration || "Duration unavailable"}</span><div><i /><b>✈</b><i /></div><em className={flight.stopCount ? "stops" : "nonstop"}>{stopLabel(flight.stopCount)}</em></div>
-              <div className="tui-flight-timepoint"><strong>{flight.arrival}</strong><span>{flight.toCode}{flight.toTerminal ? ` · Terminal ${flight.toTerminal}` : ""}</span></div>
+            <div className="tui-flight-card-main">
+              <div className="tui-flight-airline">
+                <div className={`tui-flight-logo airline-${flight.code.toLowerCase()}`}><img src={flight.logoUrl} alt={`${flight.airline} logo`} loading="lazy" onError={(event) => { event.currentTarget.style.display = "none"; }} /><span>{flight.code.slice(0, 2)}</span></div>
+                <strong>{flight.airline}</strong><span>{flight.flightNo}</span>
+              </div>
+              <div className="tui-flight-itinerary">
+                <div className="tui-flight-timepoint"><strong>{flight.departure}</strong><span>{flight.fromCode}{flight.fromTerminal ? ` · ${flight.fromTerminal}` : ""}</span></div>
+                <div className="tui-flight-timeline"><span>{typeof flight.duration === "number" ? `${Math.floor(flight.duration / 60)}h ${flight.duration % 60}m` : flight.duration || "Duration unavailable"}</span><div><i /><b>✈</b><i /></div><em className={flight.stopCount ? "stops" : "nonstop"}>{stopLabel(flight.stopCount)}</em></div>
+                <div className="tui-flight-timepoint"><strong>{flight.arrival}</strong><span>{flight.toCode}{flight.toTerminal ? ` · ${flight.toTerminal}` : ""}</span></div>
+              </div>
+              <div className="tui-flight-fare-summary">
+                <span>Starting from</span>
+                <strong>₹{formatPrice(flight.price)}</strong>
+                <button type="button" aria-expanded={openFare === flight.id} onClick={() => setOpenFare((id) => id === flight.id ? null : flight.id)}>{openFare === flight.id ? "Hide" : "View"} Fares <span>{openFare === flight.id ? "⌃" : "⌄"}</span></button>
+              </div>
             </div>
-            <div className="tui-flight-fare-summary"><span>Starting from</span><strong>₹{Math.round(flight.price).toLocaleString("en-IN")}</strong><button type="button" aria-expanded={openFare === flight.id} onClick={() => setOpenFare((id) => id === flight.id ? null : flight.id)}>View {flight.fares.length || 1} {flight.fares.length === 1 ? "Fare" : "Fares"} <span>{openFare === flight.id ? "⌃" : "⌄"}</span></button></div>
-            {openFare === flight.id && <div className="tui-flight-fare-options">{(flight.fares.length ? flight.fares : [{ price: flight.price }]).map((fare, index) => {
-              const price = farePrice(fare) || flight.price;
-              const label = fare.fareIdentifier || fare.fareType || fare.fareName || `Fare ${index + 1}`;
-              return <div className="tui-flight-fare-option" key={`${label}-${index}`}><div><strong>{label}</strong><span>{fare.cabinClass || cabinLabel} · {fare.refundable ? "Refundable" : "Fare rules apply"}</span></div><strong>₹{Math.round(price).toLocaleString("en-IN")}</strong><button type="button" onClick={() => onBookClick({ ...flight.raw, selectedFare: fare })}>Select fare</button></div>;
-            })}</div>}
+            {openFare === flight.id && <div className="tui-flight-fare-details">
+              <h4>Select a fare</h4>
+              <div className="tui-flight-fare-options">{(flight.fares.length ? flight.fares : [{ price: flight.price }]).map((fare, index) => {
+                const details = fareDetails(fare);
+                const label = String(fare.fareIdentifier || fare.fareType || fare.fareName || `Fare ${index + 1}`).replaceAll("_", " ");
+                return <section className="tui-flight-fare-option" key={`${fare.id || label}-${index}`}>
+                  <div className="tui-flight-fare-price"><strong>₹{formatPrice(details.total || flight.price)}</strong><span>per adult</span></div>
+                  <div className="tui-flight-fare-name"><strong>{label}</strong>{details.hasFareBreakdown && <small>Base ₹{formatPrice(details.baseFare)} + Tax ₹{formatPrice(details.tax)}</small>}</div>
+                  <div className="tui-flight-fare-perks">
+                    <strong>Baggage</strong>
+                    {details.cabinBaggage && <span className="included"><i>✓</i>{baggageLabel(details.cabinBaggage, "Cabin Baggage")}</span>}
+                    {details.checkedBaggage && <span className="included"><i>✓</i>{baggageLabel(details.checkedBaggage, "Check-in Baggage")}</span>}
+                    {!details.cabinBaggage && !details.checkedBaggage && <span className="unavailable"><i>·</i>Baggage details unavailable</span>}
+                    <strong>Flexibility</strong>
+                    <span className={details.flexibility === "Refundable" ? "included" : "restricted"}><i>{details.flexibility === "Refundable" ? "✓" : "−"}</i>{details.flexibility}</span>
+                    <strong>Seats &amp; more</strong>
+                    <span className="unavailable"><i>·</i>{details.cabin}{details.bookingClass ? ` (${details.bookingClass})` : ""}</span>
+                    {details.seatsRemaining != null && <span className="unavailable"><i>·</i>{details.seatsRemaining} seats left</span>}
+                    {details.fareBasis && <span className="unavailable"><i>·</i>Fare basis: {details.fareBasis}</span>}
+                  </div>
+                  <button className="tui-flight-fare-select" type="button" onClick={() => onBookClick({ ...flight.raw, from: flight.fromCode, to: flight.toCode, selectedFare: fare })}>Select</button>
+                </section>;
+              })}</div>
+            </div>}
           </article>)}
         </div>
       </section>
