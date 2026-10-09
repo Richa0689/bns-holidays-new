@@ -7,7 +7,15 @@
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- SEO handled by React Helmet in App.jsx -->
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var redirectedPath = params.get("spa");
+        if (redirectedPath && redirectedPath.charAt(0) === "/") {
+          window.history.replaceState(null, "", redirectedPath);
+        }
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

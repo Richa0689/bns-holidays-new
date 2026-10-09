@@ -495,7 +495,7 @@ const Europe = () => {
           name="keywords"
           content="Europe tour packages from India, Europe holiday packages, Austria tour, Belgium tour, Croatia tour, Eastern Europe tour, Luxury Europe tour, Europe trip 2026"
         />
-        <link rel="canonical" href="https://www.bnsholidays.com/europe-tours" />
+        <link rel="canonical" href="https://bnsholidays.co.in/Pages/europe" />
         <meta property="og:title" content="Europe Tour Packages from India 2026 | BNS Holidays" />
         <meta property="og:description" content="Explore top Europe tour packages from India starting at ₹1,95,000. Flights, hotels, visa & sightseeing included. Easy EMI options available." />
         <meta property="og:type" content="website" />

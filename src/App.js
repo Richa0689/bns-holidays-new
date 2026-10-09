@@ -1,5 +1,6 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { HelmetProvider } from "react-helmet-async"; 
 import SEO from "./components/SEO";
 
@@ -332,11 +333,24 @@ import Iceland1 from './Pages/Iceland-1';
 import Iceland2 from './Pages/Iceland-2';
 
 
+function LegacyHashRedirect() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.hash.startsWith("#/")) {
+      navigate(`${location.hash.slice(1)}${location.search}`, { replace: true });
+    }
+  }, [location.hash, location.search, navigate]);
+
+  return null;
+}
 
 function App() {
   return (
     <HelmetProvider> 
     <Router>
+      <LegacyHashRedirect />
       <SEO />
       {/* HEADER */}
       <Header />

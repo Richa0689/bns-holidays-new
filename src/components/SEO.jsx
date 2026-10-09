@@ -4,7 +4,10 @@ import { useLocation } from "react-router-dom";
 
 const seoData = {
   "/": { title: "BNS Holidays - Best Tour Packages", description: "Explore best tour packages across India and the world. Book now with BNS Holidays." },
-  "/villa": { title: "Villa Stays | BNS Holidays", description: "Luxury villa stays with BNS Holidays." },
+  "/packages": { title: "Holiday Tour Packages in India & Worldwide | BNS Holidays", description: "Explore guided holiday packages, destination tours and custom trips across India and worldwide with BNS Holidays." },
+  "/hotels": { title: "Find Hotels for Your Holiday | BNS Holidays", description: "Search hotels for your next trip with BNS Holidays and find a stay that suits your destination and travel dates." },
+  "/flights": { title: "Search Flights for Your Trip | BNS Holidays", description: "Compare flight options for one-way, round-trip and multi-city travel with BNS Holidays." },
+  "/villa": { title: "Villa Stays | BNS Holidays", description: "Discover villa stays for your next holiday with BNS Holidays." },
   "/visa": { title: "Visa Services | BNS Holidays", description: "Visa assistance services with BNS Holidays." },
   "/Pages/europe": { title: "Europe Tour Packages | BNS Holidays", description: "Best Europe tour packages. France, Italy, Switzerland and more." },
   "/Pages/australia": { title: "Australia Tour Packages | BNS Holidays", description: "Best Australia tour packages. Sydney, Melbourne, Gold Coast and more." },
@@ -205,12 +208,14 @@ function SEO() {
     title: "BNS Holidays - Best Tour Packages",
     description: "Explore best tour packages across India and the world with BNS Holidays.",
   };
+  const isSearchResults = pathname.endsWith("/results");
 
   return (
     <Helmet>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={isSearchResults ? "noindex, nofollow" : "index, follow"} />
+      <link rel="canonical" href={`https://bnsholidays.co.in${pathname}`} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
       <meta property="og:type" content="website" />
