@@ -15,7 +15,7 @@ const ChennaiLanding = () => {
         <div className="hero-content">
           <h1>Chennai Tour</h1>
           <p>Beaches. Temples. Culture.</p>
-          <Link to="/tamilnadu-tours">
+          <Link to="/destinations/tamilnadu-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

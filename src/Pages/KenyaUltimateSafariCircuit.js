@@ -266,7 +266,7 @@ const KenyaUltimateSafariCircuit = () => {
         <div className="hero-content">
           <h1>Kenya's Ultimate Safari Circuit</h1>
           <p>Wildlife. Nature. African Adventure.</p>
-          <Link to="/kenya">
+          <Link to="/destinations/kenya">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

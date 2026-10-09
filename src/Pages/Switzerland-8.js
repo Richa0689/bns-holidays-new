@@ -219,7 +219,7 @@ const RhineFallLanding = () => {
             Lucerne • Rhine Falls • Interlaken • Glacier 3000 • Montreux
           </p>
 
-          <Link to="/Rhine-fall">
+          <Link to="/destinations/rhine-fall">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const RhineFallLanding = () => {
 
         <br />
 
-        <Link to="/Rhine-fall">
+        <Link to="/destinations/rhine-fall">
           <button className="book-now-btn">
             Book Now
           </button>

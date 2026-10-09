@@ -341,7 +341,7 @@ Private transfer from Hamburg Hotel to Hamburg Airport.
         <div className="hero-content">
           <h1>Denmark + Sweden + Germany</h1>
           <p>Scandinavian Elegance. Nordic Culture. Hanseatic Grandeur.</p>
-          <Link to="/germany-landing10">
+          <Link to="/destinations/denmark-sweden-germany-8-day-tour">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -386,7 +386,7 @@ Private transfer from Hamburg Hotel to Hamburg Airport.
         <h2>Explore the Best of Denmark, Sweden & Germany</h2>
         <p>Book your Scandinavian adventure today — 07 Nights / 08 Days from ₹4,70,000</p>
         <br />
-        <Link to="/germany-landing10">
+        <Link to="/destinations/denmark-sweden-germany-8-day-tour">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

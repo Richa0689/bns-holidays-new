@@ -335,7 +335,7 @@ After breakfast, proceed to Nice Airport with a private transfer for your onward
         <div className="hero-content">
           <h1>Spanish–French Riviera Delight</h1>
           <p>Barcelona's Gaudí Magic. Nice's Azure Coastline. Monaco's Glamour.</p>
-          <Link to="/france-landing6">
+          <Link to="/destinations/spanish-french-riviera-7-day">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -380,7 +380,7 @@ After breakfast, proceed to Nice Airport with a private transfer for your onward
         <h2>Experience Barcelona & the French Riviera</h2>
         <p>Book your Mediterranean escape today — 06 Nights / 07 Days from ₹3,40,000</p>
         <br />
-        <Link to="/france-landing6">
+        <Link to="/destinations/spanish-french-riviera-7-day">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

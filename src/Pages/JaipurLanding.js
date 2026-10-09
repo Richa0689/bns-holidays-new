@@ -17,7 +17,7 @@ const JaipurLanding = () => {
           <h1>Best of Jaipur</h1>
           <p>Heritage • Culture • Royal Experience</p>
 
-          <Link to="/Pages/jaipur">
+          <Link to="/destinations/jaipur">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const JaipurLanding = () => {
         <h2>Explore Pink City</h2>
         <p>4 Days of royal charm</p><br />
 
-        <Link to="/Pages/jaipur">
+        <Link to="/jaipur">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

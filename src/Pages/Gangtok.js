@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Gangtok",
-    path: "/gangtok-landing",
+    path: "/destinations/gangtok-tours",
     days: "5 Days",
     countries: "India",
     cities: "Gangtok, Tsomgo Lake",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Gangtok & Nathula Pass",
-    path: "/gangtok-nathula",
+    path: "/destinations/gangtok-nathula",
     days: "6 Days",
     countries: "India",
     cities: "Gangtok, Nathula Pass",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Gangtok Trip",
-    path: "/gangtok-adventure",
+    path: "/destinations/gangtok-adventure",
     days: "4 Days",
     countries: "India",
     cities: "Gangtok",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Gangtok Tour",
-    path: "/luxury-gangtok",
+    path: "/destinations/luxury-gangtok",
     days: "7 Days",
     countries: "India",
     cities: "Gangtok, Lachung",

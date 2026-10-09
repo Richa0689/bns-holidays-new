@@ -20,7 +20,7 @@ const PortugalLanding = () => {
             Spain & Portugal Tour • 05 Nights / 06 Days
           </p>
 
-          <Link to="/portugal">
+          <Link to="/destinations/portugal">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -91,7 +91,7 @@ const PortugalLanding = () => {
 
         <br />
 
-        <Link to="/portugal">
+        <Link to="/destinations/portugal">
           <button className="book-now-btn">
             Book Now
           </button>

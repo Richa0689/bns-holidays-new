@@ -219,7 +219,7 @@ const RivieraDelightLanding = () => {
             Barcelona • Nice
           </p>
 
-          <Link to="/Riviera-Delight">
+          <Link to="/destinations/riviera-delight">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const RivieraDelightLanding = () => {
 
         <br />
 
-        <Link to="/Riviera-Delight">
+        <Link to="/destinations/riviera-delight">
           <button className="book-now-btn">
             Book Now
           </button>

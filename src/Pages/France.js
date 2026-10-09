@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of France",
-    path: "/france-landing",
+    path: "/destinations/france-tours",
     days: "6 Days",
     countries: "1 Country",
     cities: "2 Cities",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Paris & Nice",
-    path: "/paris-nice",
+    path: "/destinations/paris-nice",
     days: "5 Days",
     countries: "1 Country",
     cities: "2 Cities",
@@ -28,7 +28,7 @@ const tours = [
  
   {
     title: "French Riviera Escape",
-    path: "/french-riviera",
+    path: "/destinations/french-riviera",
     days: "5 Days",
     countries: "1 Country",
     cities: "2 Cities",
@@ -39,7 +39,7 @@ const tours = [
   },
   {
     title: "Luxury France Tour",
-    path: "/luxury-france",
+    path: "/destinations/luxury-france",
     days: "8 Days",
     countries: "1 Country",
     cities: "3 Cities",

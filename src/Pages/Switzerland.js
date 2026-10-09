@@ -12,7 +12,7 @@ const tours = [
     // price: "₹2,10,000",
     emi: "₹9,500/mo",
     image: "https://media1.thrillophilia.com/filestore/lkfeq29j545x49q7b31uz28cp35s_shutterstock_1926669674.jpg?w=580&dpr=2",
-    link: "/Swiss-France"
+    link: "/destinations/swiss-france"
   },
   {
     title: "Best of Vienna/Munich/Zurich",
@@ -22,7 +22,7 @@ const tours = [
     price: "₹1,80,000",
     emi: "₹8,200/mo",
     image: "https://www.iberia.com/content/dam/iberia-cheap-flights-landings/images/destinations/cities/eu/de/muc/MUC-info.jpg",
-    link: "/Munich-Zurich"
+    link: "/destinations/munich-zurich"
   },
   {
     title: "Best of Vienna/Munich/Zurich",
@@ -32,7 +32,7 @@ const tours = [
     price: "₹1,95,000",
     emi: "₹8,800/mo",
     image: "https://wallpaperaccess.com/full/156797.jpg",
-    link: "/Best-Vienna"
+    link: "/destinations/best-vienna"
   },
   {
     title: "GOLDEN WEST COAST 2026 | 6 Nights / 7 Days",
@@ -42,7 +42,7 @@ const tours = [
     price: "₹1,60,000",
     emi: "₹7,500/mo",
     image: "https://tse3.mm.bing.net/th/id/OIP.FFOaBbccF8rrCWzLTdiBxAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/vegas-grand-canyon"
+    link: "/destinations/vegas-grand-canyon"
   },
   {
     title: "Zurich + Bern + Geneva",
@@ -53,7 +53,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://cdn.wallpapersafari.com/50/75/3FnJQI.jpg",
-    link: "/Zurich-Bern"
+    link: "/destinations/zurich-bern"
   },
   {
     title: "Explore Geneva + Montreux + Zermatt",
@@ -75,7 +75,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpaperaccess.com/full/1455073.jpg",
-    link: "/Glimpses-Switzerland "
+    link: "/destinations/glimpses-switzerland "
   },
   {
     title: "From Rhine fall to Glacier 3000   ",
@@ -86,7 +86,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/11/29111159/lauterbrunnen.jpeg",
-    link: "/Rhine-fall"
+    link: "/destinations/rhine-fall"
   },
   {
     title: "Scenic Switzerland Discovery ",
@@ -97,7 +97,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpapers.com/images/hd/switzerland-1920-x-1080-background-pj9eqf8k6li4z88u.jpg",
-    link: "/Scenic-Switzerland Discovery"
+    link: "/destinations/scenic-switzerland-discovery"
   },
   {
     title: " Swiss Panorama Experience: Montreux, Lausanne & Geneva",
@@ -108,7 +108,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpaperaccess.com/full/844198.jpg",
-    link: "/Swiss-Panorama"
+    link: "/destinations/swiss-panorama"
   },
   {
     title: "Best of Engelberg + Grindelwald + Zurich",
@@ -119,7 +119,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpapercave.com/wp/wp13056227.jpg",
-    link: "/Best-Engelberg" 
+    link: "/destinations/best-engelberg"
   },
   {
     title: "From Zurich’s Charm to Mont Blanc Views",
@@ -130,7 +130,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpaperaccess.com/full/8466037.jpg",
-    link: "/Zurich’s-Charm "
+    link: "/destinations/zurich-s-charm "
   },
   
 ];

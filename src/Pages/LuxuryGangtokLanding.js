@@ -17,7 +17,7 @@ const LuxuryGangtokLanding = () => {
           <h1>Luxury Gangtok Tour</h1>
           <p>Luxury • Mountains • Premium Experience</p>
 
-          <Link to="/Pages/gangtok">
+          <Link to="/destinations/gangtok">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const LuxuryGangtokLanding = () => {
         <h2>Experience Luxury in the Himalayas</h2>
         <p>7 Days of comfort & elegance</p><br />
 
-        <Link to="/Pages/gangtok">
+        <Link to="/gangtok">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

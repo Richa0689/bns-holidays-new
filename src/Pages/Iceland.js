@@ -12,7 +12,7 @@ const tours = [
     price: "₹2,10,000",
     emi: "₹9,500/mo",
     image: "https://tse2.mm.bing.net/th/id/OIP.K7SszUlSFJXx8pAeEWC7hQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/Best-ICELAND"
+    link: "/destinations/best-iceland"
   },
   {
     title: "Best of Iceland",
@@ -22,7 +22,7 @@ const tours = [
     price: "₹1,80,000",
     emi: "₹8,200/mo",
     image: "https://tse2.mm.bing.net/th/id/OIP.Cpqnm4JmMQeGu1w-J_U_BAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/Iceland-Akureyri"
+    link: "/destinations/iceland-akureyri"
   },
   
 //   {
@@ -34,7 +34,7 @@ const tours = [
 //     price: "₹2,80,000",
 //     emi: "₹12,500/mo",
 //     image: "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/11/29111159/lauterbrunnen.jpeg",
-//     link: "/Barcelona-Andalusian"
+//     link: "/destinations/barcelona-andalusian"
 //   },
 //   {
 //     title: "Best of Seville + Lisbon + Porto",
@@ -45,7 +45,7 @@ const tours = [
 //     price: "₹2,80,000",
 //     emi: "₹12,500/mo",
 //     image: "https://wallpapers.com/images/hd/switzerland-1920-x-1080-background-pj9eqf8k6li4z88u.jpg",
-//     link: "/Lisbon-Porto"
+//     link: "/destinations/lisbon-porto"
 //   },
 //   {
 //     title: " From Greece’s Royal Cities to Portugal’s",
@@ -56,7 +56,7 @@ const tours = [
 //     price: "₹2,80,000",
 //     emi: "₹12,500/mo",
 //     image: "https://wallpaperaccess.com/full/844198.jpg",
-//     link: "/Cities-Portugal’s"
+//     link: "/destinations/cities-portugal-s"
 //   },
 //   {
 //     title: "Spanish–French Riviera Delight",
@@ -67,7 +67,7 @@ const tours = [
 //     price: "₹2,80,000",
 //     emi: "₹12,500/mo",
 //     image: "https://wallpapercave.com/wp/wp13056227.jpg",
-//     link: "/Riviera-Delight" 
+//     link: "/destinations/riviera-delight"
 //   },
 //   {
 //     title: "From Zurich’s Charm to Mont Blanc Views",
@@ -78,7 +78,7 @@ const tours = [
 //     price: "₹2,80,000",
 //     emi: "₹12,500/mo",
 //     image: "https://wallpaperaccess.com/full/8466037.jpg",
-//     link: "/Zurich’s-Charm "
+//     link: "/destinations/zurich-s-charm "
 //   },
   
 ];

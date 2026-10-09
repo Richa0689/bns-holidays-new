@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 import "./Adventures.css";
 
 const adventures = [
-  { name: "River Rafting",  img: "https://plus.unsplash.com/premium_photo-1661889971049-6f0a39a3476f?w=400&q=60",  path: "/Pages/river-rafting" },
-  { name: "Paragliding",    img: "https://images.unsplash.com/photo-1592208128295-5aaa34f1d72b?w=400&q=60",        path: "/Pages/paragliding" },
-  { name: "Scuba Diving",   img: "https://plus.unsplash.com/premium_photo-1661265851801-e523847e3932?w=400&q=60",  path: "/Pages/scuba-diving" },
-  { name: "Trekking",       img: "https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?w=400&q=60",  path: "/Pages/trekking" },
-  { name: "Desert Safari",  img: "https://plus.unsplash.com/premium_photo-1661962428918-6a57ab674e23?w=400&q=60",  path: "/Pages/desert-safari" },
-  { name: "Sky Diving",     img: "https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?w=400&q=60",        path: "/Pages/sky-diving" },
-  { name: "Bungee Jumping", img: "https://images.unsplash.com/photo-1549221360-456a9c197d5b?w=400&q=60",          path: "/Pages/bungee-jumping" },
-  { name: "Camping",        img: "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=400&q=60",        path: "/Pages/camping" },
-  { name: "Snow Skiing",    img: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&q=60",          path: "/Pages/snow-skiing" },
+  { name: "River Rafting",  img: "https://plus.unsplash.com/premium_photo-1661889971049-6f0a39a3476f?w=400&q=60",  path: "/river-rafting" },
+  { name: "Paragliding",    img: "https://images.unsplash.com/photo-1592208128295-5aaa34f1d72b?w=400&q=60",        path: "/paragliding" },
+  { name: "Scuba Diving",   img: "https://plus.unsplash.com/premium_photo-1661265851801-e523847e3932?w=400&q=60",  path: "/scuba-diving" },
+  { name: "Trekking",       img: "https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?w=400&q=60",  path: "/trekking" },
+  { name: "Desert Safari",  img: "https://plus.unsplash.com/premium_photo-1661962428918-6a57ab674e23?w=400&q=60",  path: "/destinations/desert-safari" },
+  { name: "Sky Diving",     img: "https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?w=400&q=60",        path: "/sky-diving" },
+  { name: "Bungee Jumping", img: "https://images.unsplash.com/photo-1549221360-456a9c197d5b?w=400&q=60",          path: "/bungee-jumping" },
+  { name: "Camping",        img: "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=400&q=60",        path: "/camping" },
+  { name: "Snow Skiing",    img: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&q=60",          path: "/snow-skiing" },
 ];
 
 const Adventures = () => {

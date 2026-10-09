@@ -12,7 +12,7 @@ const tours = [
     // price: "₹2,10,000",
     emi: "₹9,500/mo",
     image: "https://media1.thrillophilia.com/filestore/lkfeq29j545x49q7b31uz28cp35s_shutterstock_1926669674.jpg?w=580&dpr=2",
-    link: "/Madrid-Ibiza"
+    link: "/destinations/madrid-ibiza"
   },
   {
     title: "Best of Barcelona, Madrid  & Ibiza",
@@ -22,7 +22,7 @@ const tours = [
     price: "₹1,80,000",
     emi: "₹8,200/mo",
     image: "https://www.iberia.com/content/dam/iberia-cheap-flights-landings/images/destinations/cities/eu/de/muc/MUC-info.jpg",
-    link: "/Best-Barcelona"
+    link: "/destinations/barcelona-madrid-ibiza-7-day"
   },
   {
     title: "Best of Barcelona + Valencia + Seville + Madrid",
@@ -32,7 +32,7 @@ const tours = [
     price: "₹1,95,000",
     emi: "₹8,800/mo",
     image: "https://wallpaperaccess.com/full/156797.jpg",
-    link: "/Seville-Madrid"
+    link: "/destinations/seville-madrid"
   },
   {
     title: "Best of Barcelona + Ibiza + Madrid",
@@ -42,7 +42,7 @@ const tours = [
     price: "₹1,60,000",
     emi: "₹7,500/mo",
     image: "https://tse3.mm.bing.net/th/id/OIP.FFOaBbccF8rrCWzLTdiBxAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/Ibiza-Madrid"
+    link: "/destinations/ibiza-madrid"
   },
   {
     title: "Best of Barcelona + Madrid",
@@ -53,7 +53,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://cdn.wallpapersafari.com/50/75/3FnJQI.jpg",
-    link: "/Barcelona-Madrid"
+    link: "/destinations/barcelona-madrid"
   },
   {
     title: "Best of Barcelona + Valencia + Malaga + Seville",
@@ -64,7 +64,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpaperaccess.com/full/7946470.jpg",
-    link: "/Malaga-Seville"
+    link: "/destinations/malaga-seville"
   },
   {
     title: "Best of Barcelona + Valencia + Seville + Madrid",
@@ -75,7 +75,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpaperaccess.com/full/1455073.jpg",
-    link: "/Seville-Madrid"
+    link: "/destinations/seville-madrid"
   },
   {
     title: "From Gaudí’s Barcelona to Andalusian",
@@ -86,7 +86,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/11/29111159/lauterbrunnen.jpeg",
-    link: "/Barcelona-Andalusian"
+    link: "/destinations/barcelona-andalusian"
   },
   {
     title: "Best of Seville + Lisbon + Porto",
@@ -97,7 +97,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpapers.com/images/hd/switzerland-1920-x-1080-background-pj9eqf8k6li4z88u.jpg",
-    link: "/Lisbon-Porto"
+    link: "/destinations/lisbon-porto"
   },
   {
     title: " From Spain’s Royal Cities to Portugal’s",
@@ -108,7 +108,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpaperaccess.com/full/844198.jpg",
-    link: "/Cities-Portugal’s"
+    link: "/destinations/cities-portugal-s"
   },
   {
     title: "Spanish–French Riviera Delight",
@@ -119,7 +119,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://wallpapercave.com/wp/wp13056227.jpg",
-    link: "/Riviera-Delight" 
+    link: "/destinations/riviera-delight"
   },
 //   {
 //     title: "From Zurich’s Charm to Mont Blanc Views",
@@ -130,7 +130,7 @@ const tours = [
 //     price: "₹2,80,000",
 //     emi: "₹12,500/mo",
 //     image: "https://wallpaperaccess.com/full/8466037.jpg",
-//     link: "/Zurich’s-Charm "
+//     link: "/destinations/zurich-s-charm "
 //   },
   
 ];

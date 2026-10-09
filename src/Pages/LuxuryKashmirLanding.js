@@ -15,7 +15,7 @@ const LuxuryKashmirLanding = () => {
         <div className="hero-content">
           <h1>Luxury Kashmir Tour</h1>
           <p>Snow Peaks. Lakes. Premium Experience.</p>
-          <Link to="/srinagar">
+          <Link to="/destinations/srinagar">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

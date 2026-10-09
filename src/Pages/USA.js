@@ -12,7 +12,7 @@ const tours = [
     price: "₹2,10,000",
     emi: "₹9,500/mo",
     image: "https://k1047.com/uploads/2022/04/statue-of-liberty-992552_1920.jpg?format=webp&optimize=high&precrop=16%3A9%2Csmart",
-    link: "/usa-panorama"
+    link: "/destinations/usa-panorama"
   },
   {
     title: "	USA Panorama East and West Luxury Coach Tour Itinerary",
@@ -22,7 +22,7 @@ const tours = [
     price: "₹1,80,000",
     emi: "₹8,200/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJzlPYkFjzky1uQxRGpM_KcMZ1rqe7z6Otcw&s",
-    link: "/golden-west-coast"
+    link: "/destinations/golden-west-coast"
   },
   {
     title: "USA GALA East Coast Luxury Coach Tour Itinerary",
@@ -32,7 +32,7 @@ const tours = [
     price: "₹1,95,000",
     emi: "₹8,800/mo",
     image: "https://cdn.shortpixel.ai/spai/q_+w_973+to_webp+ret_img/www.california-tour.com/wp-content/uploads/thumbnails/california.jpg",
-    link: "/california"
+    link: "/destinations/usa-gala-east-coast"
   },
   {
     title: "Las Vegas & Grand Canyon",
@@ -43,7 +43,7 @@ const tours = [
     price: "₹1,60,000",
     emi: "₹7,500/mo",
     image: "https://localadventurer.com/wp-content/uploads/2020/09/grand-canyon-glass-bridge.jpg",
-    link: "/vegas-grand-canyon"
+    link: "/destinations/vegas-grand-canyon"
   },
   {
     title: "Luxury USA Tour",
@@ -54,7 +54,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://b2bzend.s3.ap-south-1.amazonaws.com/img/162492/package/images/usa-panorama-east-west-luxury-coach-tour_1762948249",
-    link: "/luxury-usa"
+    link: "/destinations/luxury-usa"
   }
 ];
 

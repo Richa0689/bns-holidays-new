@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Abu Dhabi",
-    path: "/abu-landing",
+    path: "/destinations/abu",
     days: "5 Days",
     countries: "1 Country",
     cities: "1 City",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Abu Dhabi City Tour",
-    path: "/abu-city",
+    path: "/destinations/abu-city",
     days: "4 Days",
     countries: "1 Country",
     cities: "1 City",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Abu Dhabi Cultural Tour",
-    path: "/abu-culture",
+    path: "/destinations/abu-culture",
     days: "5 Days",
     countries: "1 Country",
     cities: "1 City",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Abu Dhabi & Ferrari World",
-    path: "/abu-ferrari",
+    path: "/destinations/abu-ferrari",
     days: "4 Days",
     countries: "1 Country",
     cities: "1 City",
@@ -49,7 +49,7 @@ const tours = [
   },
   {
     title: "Luxury Abu Dhabi Tour",
-    path: "/abu-luxury",
+    path: "/destinations/abu-luxury",
     days: "6 Days",
     countries: "1 Country",
     cities: "1 City",

@@ -66,19 +66,19 @@ const Gulmarg = () => {
 
             <h2>
               {tour.title === "Best of Gulmarg" ? (
-                <Link to="/gulmarg" className="title-link">
+                <Link to="/destinations/gulmarg" className="title-link">
                   {tour.title}
                 </Link>
               ) : tour.title === "Gulmarg Snow Adventure" ? (
-                <Link to="/gulmarg-snow-adventure" className="title-link">
+                <Link to="/destinations/gulmarg-snow-adventure" className="title-link">
                   {tour.title}
                 </Link>
               ) : tour.title === "Gulmarg Ski Experience" ? (
-                <Link to="/gulmarg-ski-experience" className="title-link">
+                <Link to="/destinations/gulmarg-ski-experience" className="title-link">
                   {tour.title}
                 </Link>
               ) : tour.title === "Luxury Gulmarg Tour" ? (
-                <Link to="/luxury-gulmarg" className="title-link">
+                <Link to="/destinations/luxury-gulmarg" className="title-link">
                   {tour.title}
                 </Link>
               ) : (

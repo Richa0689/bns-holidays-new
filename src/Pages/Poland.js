@@ -76,7 +76,7 @@ const Poland = () => {
 
             <h2>
               {tour.title === "Best of Poland" ? (
-                <Link to="/poland-landing" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/poland-tours" className="title-link">{tour.title}</Link>
               ) : tour.title === "Warsaw & Krakow Tour" ? (
                 <Link to="/warsaw-krakow" className="title-link">{tour.title}</Link>
               ) : tour.title === "Krakow Heritage Tour" ? (

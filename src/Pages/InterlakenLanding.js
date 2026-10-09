@@ -15,7 +15,7 @@ const InterlakenLanding = () => {
         <div className="hero-content">
           <h1>Interlaken Adventure</h1>
           <p>Thrill. Nature. Swiss Alps.</p>
-          <Link to="/Pages/switzerland">
+          <Link to="/destinations/switzerland">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const InterlakenLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Interlaken Trip</h2>
         <p>Book now for an unforgettable adventure</p><br />
-        <Link to="/Pages/switzerland">
+        <Link to="/switzerland">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

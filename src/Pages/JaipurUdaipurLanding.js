@@ -17,7 +17,7 @@ const JaipurUdaipurLanding = () => {
           <h1>Jaipur & Udaipur</h1>
           <p>Royal Palaces • Lakes • Heritage</p>
 
-          <Link to="/Pages/jaipur">
+          <Link to="/destinations/jaipur">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const JaipurUdaipurLanding = () => {
         <h2>Experience Royal Rajasthan</h2>
         <p>6 Days of heritage & luxury</p><br />
 
-        <Link to="/Pages/jaipur">
+        <Link to="/jaipur">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

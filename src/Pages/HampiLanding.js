@@ -15,7 +15,7 @@ const HampiLanding = () => {
         <div className="hero-content">
           <h1>Hampi Tour</h1>
           <p>Ancient Ruins. Heritage. Timeless Beauty.</p>
-          <Link to="/karnataka-tours">
+          <Link to="/destinations/karnataka-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

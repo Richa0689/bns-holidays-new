@@ -211,7 +211,7 @@ const SingaporeLanding = () => {
         <div className="hero-content">
           <h1>Best of Singapore</h1>
           <p>Modern City. Skyline. Attractions.</p>
-          <Link to="/singapore">
+          <Link to="/destinations/singapore">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -255,7 +255,7 @@ const SingaporeLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Singapore Trip</h2>
         <p>Starting at ₹95,000 | EMI ₹4,500/month</p>
-        <Link to="/singapore">
+        <Link to="/destinations/singapore">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

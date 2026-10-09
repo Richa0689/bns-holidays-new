@@ -16,7 +16,7 @@ const LuxuryHungaryLanding = () => {
           <h1>Luxury Hungary Tour</h1>
           <p>8 Days • Budapest, Eger & Lake Balaton • Premium Experience</p>
 
-          <Link to="/Pages/hungary">
+          <Link to="/destinations/hungary">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const LuxuryHungaryLanding = () => {
         <p>Travel in comfort with exclusive experiences</p>
         <br />
 
-        <Link to="/Pages/hungary">
+        <Link to="/hungary">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -214,7 +214,7 @@ const KLGenting = () => {
         <div className="hero-content">
           <h1>Kuala Lumpur</h1>
           <p>City Lights & Hilltop Fun</p>
-          <Link to="/malaysia">
+          <Link to="/destinations/malaysia">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -263,7 +263,7 @@ const KLGenting = () => {
       <div className="cta-section">
         <h2>Plan Your Malaysia Trip</h2>
         <p>Book now and get best deals</p><br />
-        <Link to="/malaysia">
+        <Link to="/destinations/malaysia">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

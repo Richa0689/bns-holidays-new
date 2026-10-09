@@ -219,7 +219,7 @@ const GrandBritainLanding = () => {
             London • Edinburgh • Glasgow
           </p>
 
-          <Link to="/Grand-Britain">
+          <Link to="/destinations/grand-britain-scottish-highlands">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const GrandBritainLanding = () => {
 
         <br />
 
-        <Link to="/Grand-Britain">
+        <Link to="/destinations/grand-britain-scottish-highlands">
           <button className="book-now-btn">
             Book Now
           </button>

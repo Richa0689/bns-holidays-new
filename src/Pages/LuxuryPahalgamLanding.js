@@ -17,7 +17,7 @@ const LuxuryPahalgamLanding = () => {
           <h1>Luxury Pahalgam Tour</h1>
           <p>Pahalgam • Srinagar • Premium Experience</p>
 
-          <Link to="/pahalgam">
+          <Link to="/destinations/pahalgam">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

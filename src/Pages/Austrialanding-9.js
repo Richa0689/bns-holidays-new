@@ -17,7 +17,7 @@ const MunichInnsbruckSalzburgLanding = () => {
           <h1>Munich’s Majesty to Innsbruck’s Alps</h1>
           <p>European Charm. Alpine Landscapes. Historic Cities.</p>
 
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

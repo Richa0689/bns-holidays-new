@@ -15,7 +15,7 @@ const CoorgLanding = () => {
         <div className="hero-content">
           <h1>Coorg Tour</h1>
           <p>Scotland of India. Coffee Estates. Nature.</p>
-          <Link to="/karnataka-tours">
+          <Link to="/destinations/karnataka-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

@@ -75,15 +75,15 @@ const Canada = () => {
           <div className="tour-info">
             <h2>
   {tour.title === "Best of Canada" ? (
-    <Link to="/canada-landing" className="title-link">{tour.title}</Link>
+    <Link to="/destinations/canada-tours" className="title-link">{tour.title}</Link>
   ) : tour.title === "Toronto & Niagara Falls" ? (
-    <Link to="/toronto-niagara" className="title-link">{tour.title}</Link>
+    <Link to="/destinations/toronto-niagara" className="title-link">{tour.title}</Link>
   ) : tour.title === "Vancouver & Victoria" ? (
-    <Link to="/vancouver-victoria" className="title-link">{tour.title}</Link>
+    <Link to="/destinations/vancouver-victoria" className="title-link">{tour.title}</Link>
   ) : tour.title === "Rocky Mountains Tour" ? (
-    <Link to="/rocky-tour" className="title-link">{tour.title}</Link>
+    <Link to="/destinations/rocky-tour" className="title-link">{tour.title}</Link>
   ) : tour.title === "Luxury Canada Tour" ? (
-    <Link to="/luxury-canada" className="title-link">{tour.title}</Link>
+    <Link to="/destinations/luxury-canada" className="title-link">{tour.title}</Link>
   ) : (
     tour.title
   )}

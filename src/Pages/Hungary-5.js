@@ -22,7 +22,7 @@ const HungaryLanding6 = () => {
             castles, culture, and historic beauty.
           </p>
 
-          <Link to="/hungary-landing1">
+          <Link to="/destinations/hungary-itineraries">
             <button className="explore-btn">
               View Tours
             </button>
@@ -93,7 +93,7 @@ const HungaryLanding6 = () => {
 
         <br />
 
-        <Link to="/hungary-landing1">
+        <Link to="/destinations/hungary-itineraries">
           <button className="book-now-btn">
             Book Now
           </button>

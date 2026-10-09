@@ -17,7 +17,7 @@ const UdaipurMountAbuLanding = () => {
           <h1>Udaipur & Mount Abu</h1>
           <p>Lakes • Hills • Heritage</p>
 
-          <Link to="/Pages/udaipur">
+          <Link to="/destinations/udaipur">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const UdaipurMountAbuLanding = () => {
         <h2>Explore Lakes & Hills Together</h2>
         <p>6 Days of beauty & relaxation</p><br />
 
-        <Link to="/Pages/udaipur">
+        <Link to="/udaipur">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

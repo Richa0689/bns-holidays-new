@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Finland & Sweden",
-    path: "/Finland-Sweden",
+    path: "//destinations/finland-sweden",
     days: "5 Days",
     countries: "FINLAND + SWEDEN",
     cities: "2N Helsinki + 2N Stockholm",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Scandinavian Capitals Express",
-    path: "/Capitals-Express",
+    path: "/destinations/capitals-express",
     days: "7 Days",
     countries: "FINLAND + SWEDEN + NORWAY",
     cities: "02 Helsinki + 02 Stockholm +02 Oslo",
@@ -28,7 +28,7 @@ const tours = [
  
   {
     title: "Finland Getaway Plus",
-    path: "/Getaway-Plus",
+    path: "/destinations/getaway-plus",
     days: "9 Days",
     countries: "FINLAND",
     cities: "3N Helsinki + 3N Rovaniemi + 2N Saarisellka",
@@ -39,7 +39,7 @@ const tours = [
   },
   {
     title: "Mesmerizing Finland and Sweden",
-    path: "/Mesmerizing-Finland",
+    path: "/destinations/mesmerizing-finland",
     days: "9 Days",
     countries: "FINLAND + SWEDEN",
     cities: "3N Helsinki + 3N Rovaniemi + 2N Stockholm",

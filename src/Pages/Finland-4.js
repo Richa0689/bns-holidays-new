@@ -219,7 +219,7 @@ const MesmerizingFinlandLanding = () => {
             Helsinki • Rovaniemi • Stockholm
           </p>
 
-          <Link to="/Mesmerizing-Finland">
+          <Link to="/destinations/mesmerizing-finland">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const MesmerizingFinlandLanding = () => {
 
         <br />
 
-        <Link to="/Mesmerizing-Finland">
+        <Link to="/destinations/mesmerizing-finland">
           <button className="book-now-btn">
             Book Now
           </button>

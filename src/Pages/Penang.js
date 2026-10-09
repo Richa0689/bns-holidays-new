@@ -15,7 +15,7 @@ const PenangLanding = () => {
         <div className="hero-content">
           <h1>Penang Heritage Tour</h1>
           <p>Culture. Food. History.</p>
-          <Link to="/malaysia">
+          <Link to="/destinations/malaysia">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

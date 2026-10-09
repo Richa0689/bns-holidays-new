@@ -21,7 +21,7 @@ const HungaryLanding4 = () => {
             journey through Budapest, Vienna, and Prague across 9 magical days.
           </p>
 
-          <Link to="/hungary-landing1">
+          <Link to="/destinations/hungary-itineraries">
             <button className="explore-btn">
               View Tours
             </button>
@@ -92,7 +92,7 @@ const HungaryLanding4 = () => {
 
         <br />
 
-        <Link to="/hungary-landing1">
+        <Link to="/destinations/hungary-itineraries">
           <button className="book-now-btn">
             Book Now
           </button>

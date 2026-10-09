@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Kerala Tour Munnar",
-    path: "/munnar-landing",
+    path: "/destinations/munnar",
     days: "6 Days",
     countries: "India",
     cities: "Munnar,Thekkady,Kumarakom,Cochin",

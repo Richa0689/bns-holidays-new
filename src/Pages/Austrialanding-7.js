@@ -216,7 +216,7 @@ const ZurichInnsbruckSalzburgLanding = () => {
           <h1>Zurich + Innsbruck + Salzburg</h1>
           <p>Swiss Alps. Austrian Beauty. European Adventure.</p>
 
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

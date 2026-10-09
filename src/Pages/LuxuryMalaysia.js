@@ -15,7 +15,7 @@ const LuxuryMalaysiaLanding = () => {
         <div className="hero-content">
           <h1>Luxury Malaysia Tour</h1>
           <p>Experience Comfort & Elegance</p>
-          <Link to="/malaysia">
+          <Link to="/destinations/malaysia">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

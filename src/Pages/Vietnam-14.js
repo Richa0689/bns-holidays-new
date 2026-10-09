@@ -219,7 +219,7 @@ const HighlightsVietnam = () => {
             Hanoi • Halong Bay • Ho Chi Minh City • Cu Chi Tunnels
           </p>
 
-          <Link to="/Highlights-Vietnam">
+          <Link to="/destinations/highlights-vietnam">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const HighlightsVietnam = () => {
 
         <br />
 
-        <Link to="/Highlights-Vietnam">
+        <Link to="/destinations/highlights-vietnam">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -18,7 +18,7 @@ const CochinLanding = () => {
           <h1>Kerala Cochin Tour</h1>
           <p>Backwaters. Beaches. Culture & Nature.</p>
 
-          <Link to="/kerala-tours">
+          <Link to="/destinations/kerala-tours">
             <button className="explore-btn">
               View Tours
             </button>
@@ -93,7 +93,7 @@ const CochinLanding = () => {
 
         <br />
 
-        <Link to="/kerala-tours">
+        <Link to="/destinations/kerala-tours">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -15,7 +15,7 @@ const ChandratalLanding = () => {
         <div className="hero-content">
           <h1>Chandratal Lake Tour</h1>
           <p>Moon Lake. Serenity. Himalayan Beauty.</p>
-          <Link to="/spiti">
+          <Link to="/destinations/spiti">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

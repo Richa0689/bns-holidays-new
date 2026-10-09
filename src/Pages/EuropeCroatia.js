@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const croatiaTours = [
   {
     title: "Central Europe Escape: Budapest, Zagreb & Ljubljana",
-    path: "/croatia-landing-1",
+    path: "/destinations/central-europe-budapest-zagreb-ljubljana",
     days: "8 Days",
     countries: "HUNGARY + CROATIA + SLOVENIA",
     cities: "budapest, zagreb & ljubljana",
@@ -17,7 +17,7 @@ const croatiaTours = [
   },
   {
     title: "Coast & Islands",
-    path: "/croatia-landing-2",
+    path: "/destinations/croatia-coast-and-islands",
     days: "7 Days",
     countries: "CROATIA",
     cities: "Dubrovnik, Split, Zagreb & Zadar",
@@ -29,7 +29,7 @@ const croatiaTours = [
   },
   {
     title: "Two Cities, One Coast 04 Nights/05 Days",
-    path: "/croatia-landing-3",
+    path: "/destinations/two-cities-one-coast-croatia",
     days: "5 Days",
     countries: "CROATIA",
     cities: "Dubrovnik & Split",
@@ -41,7 +41,7 @@ const croatiaTours = [
   },
   {
     title: "Two Capitals, One Journey 04 Nights/05 Days",
-    path: "/croatia-landing-4",
+    path: "/destinations/two-capitals-one-journey-croatia-slovenia",
     days: "5 Days",
     countries: "CROATIA + SLOVENIA",
     cities: " Zagreb & Ljubljana",
@@ -53,7 +53,7 @@ const croatiaTours = [
   },
   {
     title: "Croatia in a Week Zagreb 06 Nights/07 Days",
-    path: "/croatia-landing-5",
+    path: "/destinations/croatia-in-a-week-zagreb",
     days: "7 Days",
     countries: "CROATIA + SLOVENIA",
     cities: " Zagreb, Plitvice Lakes, Zadar, Split, Hvar & Dubrovnik",

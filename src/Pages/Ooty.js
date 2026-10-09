@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Ooty",
-    path: "/ooty-landing",
+    path: "/destinations/ooty-tours",
     days: "4 Days",
     countries: "India",
     cities: "Ooty, Botanical Garden",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Ooty & Coonoor",
-    path: "/ooty-coonoor",
+    path: "/destinations/ooty-coonoor",
     days: "5 Days",
     countries: "India",
     cities: "Ooty, Coonoor",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Ooty Trip",
-    path: "/ooty-adventure",
+    path: "/destinations/ooty-adventure",
     days: "3 Days",
     countries: "India",
     cities: "Ooty Hills",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Ooty Tour",
-    path: "/luxury-ooty",
+    path: "/destinations/luxury-ooty",
     days: "6 Days",
     countries: "India",
     cities: "Ooty, Coonoor",

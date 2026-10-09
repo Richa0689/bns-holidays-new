@@ -216,7 +216,7 @@ const EuropeSwissLanding = () => {
           <h1>Best of Vienna / Munich / Zurich</h1>
           <p>European Elegance. Alpine Beauty. Historic Cities.</p>
 
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

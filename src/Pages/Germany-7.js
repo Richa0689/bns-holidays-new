@@ -341,7 +341,7 @@ After breakfast and proceed to Frankfurt airport with private transfer.
         <div className="hero-content">
           <h1>Amsterdam + Cologne + Frankfurt</h1>
           <p>Canal Cities. Gothic Grandeur. Modern European Heartland.</p>
-          <Link to="/germany-landing8">
+          <Link to="/destinations/amsterdam-cologne-frankfurt-7-day">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -386,7 +386,7 @@ After breakfast and proceed to Frankfurt airport with private transfer.
         <h2>Explore the Netherlands & Germany's Best</h2>
         <p>Book your Western Europe adventure today — 06 Nights / 07 Days from ₹4,70,000</p>
         <br />
-        <Link to="/germany-landing8">
+        <Link to="/destinations/amsterdam-cologne-frankfurt-7-day">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

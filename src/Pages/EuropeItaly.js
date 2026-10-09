@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const italyTours = [
   {
     title: "Explore Florence + Pisa + Rome || 07 Nights / 08 Days",
-    path: "/italy-landing2",
+    path: "/destinations/florence-pisa-rome-8-day",
     days: "8 Days",
     countries: "ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",
@@ -17,7 +17,7 @@ const italyTours = [
   },
    {
     title: "Experience the Essence of Italy 09 Nights 10 Days",
-    path: "/italy-landing3",
+    path: "/destinations/essence-of-italy-10-day",
     days: "10 Days",
     countries: "ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",
@@ -29,7 +29,7 @@ const italyTours = [
   },
   {
     title: "From the French Riviera to Milan’s Elegance || 6N/7D",
-    path: "/italy-landing4",
+    path: "/destinations/french-riviera-to-milan-elegance",
     days: "7 Days",
     countries: "FRANCE + ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",
@@ -41,7 +41,7 @@ const italyTours = [
   },
   {
     title: "Explore Florence + Pisa + Rome || 06 Nights / 07 Days",
-    path: "/italy-landing5",
+    path: "/destinations/florence-pisa-rome-7-day",
     days: "7 Days",
     countries: "ITALY",
     cities: "Rome, Florence, Venice, Milan, Pisa & Amalfi Coast",

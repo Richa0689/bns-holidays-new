@@ -66,19 +66,19 @@ const Hungary = () => {
 
             <h2>
               {tour.title === "Best of Hungary" ? (
-                <Link to="/hungary-landing" className="title-link">
+                <Link to="/destinations/hungary-tours" className="title-link">
                   {tour.title}
                 </Link>
                 ) : tour.title === "Budapest City Explorer" ? (
-                  <Link to="/budapest-landing" className="title-link">
+                  <Link to="/destinations/budapest" className="title-link">
                     {tour.title}
                   </Link>
                 ) : tour.title === "Danube River Cruise" ? (
-                    <Link to="/danube-cruise" className="title-link">
+                    <Link to="/destinations/danube-cruise" className="title-link">
                       {tour.title}
                     </Link>
                     ) : tour.title === "Luxury Hungary Tour" ? (
-                    <Link to="/luxury-hungary" className="title-link">
+                    <Link to="/destinations/luxury-hungary" className="title-link">
                       {tour.title}
                     </Link>
                   ) : tour.title}

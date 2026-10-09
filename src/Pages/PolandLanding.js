@@ -16,7 +16,7 @@ const PolandLanding = () => {
           <h1>Best of Poland</h1>
           <p>8 Days • Warsaw, Krakow & Gdansk • Cultural Europe Tour</p>
 
-          <Link to="/poland">
+          <Link to="/destinations/poland">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

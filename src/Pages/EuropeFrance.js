@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const franceTours = [
   {
     title: "From Windmills to the Eiffel 06 Nights/07 Days",
-    path: "/france-landing2",
+    path: "/destinations/windmills-to-eiffel-netherlands-france-7-day",
     days: "7 Days",
     countries: "NETHERLANDS + FRANCE",
     cities: " Amsterdam, Paris",
@@ -17,7 +17,7 @@ const franceTours = [
   },
   {
     title: "Best of Swiss & France || 07 Nights/08 Days",
-    path: "/france-landing3",
+    path: "/destinations/best-swiss-france-8-day",
     days: "8 Days",
     countries: "FRANCE + SWITZERLAND",
     cities: "Paris,Geneva,Zurich",
@@ -29,7 +29,7 @@ const franceTours = [
   },
   {
     title: "From Windmills to the Eiffel 06 Nights/07 Days",
-    path: "/france-landing4",
+    path: "/destinations/windmills-to-eiffel-benelux-7-day",
     days: "7 Days",
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam , Brussels ,Paris ",
@@ -41,7 +41,7 @@ const franceTours = [
   },
   {
     title: "Amsterdam to Paris Escape|| 08 Nights / 09 Days",
-    path: "/france-landing5",
+    path: "/destinations/amsterdam-paris-escape-9-day-france",
     days: "9 Days",
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam , Brussels ,Paris",
@@ -53,7 +53,7 @@ const franceTours = [
   },
    {
     title: "Spanish–French Riviera Delight|| 06 Nights / 07 Days",
-    path: "/france-landing6",
+    path: "/destinations/spanish-french-riviera-7-day",
     days: "6 Days",
     countries: "SPAIN + FRANCE",
     cities: "Barcelona, Nice",

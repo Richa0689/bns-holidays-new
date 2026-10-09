@@ -16,7 +16,7 @@ const DanubeCruiseLanding = () => {
           <h1>Danube River Cruise</h1>
           <p>7 Days • Hungary & Austria • Luxury River Experience</p>
 
-          <Link to="/Pages/hungary">
+          <Link to="/destinations/hungary">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const DanubeCruiseLanding = () => {
         <p>Relax and explore Europe in luxury</p>
         <br />
 
-        <Link to="/Pages/hungary">
+        <Link to="/hungary">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

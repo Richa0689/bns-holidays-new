@@ -15,7 +15,7 @@ const NewZealandLanding = () => {
         <div className="hero-content">
           <h1>Explore New Zealand</h1>
           <p>Adventure. Nature. Beauty.</p>
-          <Link to="/Pages/NewZealand">
+          <Link to="/destinations/new-zealand">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const NewZealandLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Dream New Zealand Trip</h2>
         <p>Book now and explore natural paradise</p><br />
-        <Link to="/Pages/NewZealand">
+        <Link to="/new-zealand">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

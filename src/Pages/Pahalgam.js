@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Pahalgam",
-    path: "/pahalgam-landing",
+    path: "/destinations/pahalgam-tours",
     days: "5 Days",
     countries: "India",
     cities: "Pahalgam, Aru Valley",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Pahalgam Valley Explorer",
-    path: "/pahalgam-valley",
+    path: "/destinations/pahalgam-valley",
     days: "6 Days",
     countries: "India",
     cities: "Pahalgam, Betaab Valley",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Pahalgam Trip",
-    path: "/pahalgam-adventure",
+    path: "/destinations/pahalgam-adventure",
     days: "4 Days",
     countries: "India",
     cities: "Aru Valley, Lidder River",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Pahalgam Tour",
-    path: "/luxury-pahalgam",
+    path: "/destinations/luxury-pahalgam",
     days: "7 Days",
     countries: "India",
     cities: "Pahalgam, Srinagar",

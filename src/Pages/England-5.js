@@ -219,7 +219,7 @@ const ClassicUKExplorer = () => {
             London • Manchester
           </p>
 
-          <Link to="/Classic-UK">
+          <Link to="/destinations/classic-uk-london-manchester">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const ClassicUKExplorer = () => {
 
         <br />
 
-        <Link to="/Classic-UK">
+        <Link to="/destinations/classic-uk-london-manchester">
           <button className="book-now-btn">
             Book Now
           </button>

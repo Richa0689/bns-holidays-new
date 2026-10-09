@@ -219,7 +219,7 @@ const GlimpsesOfGreeceLanding = () => {
             Athens • Santorini
           </p>
 
-          <Link to="/Glimpses-Greece">
+          <Link to="//destinations/glimpses-greece">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const GlimpsesOfGreeceLanding = () => {
 
         <br />
 
-        <Link to="/Glimpses-Greece">
+        <Link to="//destinations/glimpses-greece">
           <button className="book-now-btn">
             Book Now
           </button>

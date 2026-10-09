@@ -219,7 +219,7 @@ const BestEngelberg = () => {
             Engelberg • Grindelwald • Zurich
           </p>
 
-          <Link to="/best-engelberg">
+          <Link to="/destinations/best-engelberg">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const BestEngelberg = () => {
 
         <br />
 
-        <Link to="/best-engelberg">
+        <Link to="/destinations/best-engelberg">
           <button className="book-now-btn">
             Book Now
           </button>

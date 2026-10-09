@@ -219,7 +219,7 @@ const ViennaBudapestPragueLanding = () => {
             Vienna • Budapest • Prague
           </p>
 
-          <Link to="/luxury-dubai">
+          <Link to="/destinations/luxury-dubai">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const ViennaBudapestPragueLanding = () => {
 
         <br />
 
-        <Link to="/luxury-dubai">
+        <Link to="/destinations/luxury-dubai">
           <button className="book-now-btn">
             Book Now
           </button>

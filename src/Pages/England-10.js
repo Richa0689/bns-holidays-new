@@ -219,7 +219,7 @@ const GrandDiscoveryLanding = () => {
             London • Dublin • Belfast
           </p>
 
-          <Link to="/Grand-Discovery">
+          <Link to="/destinations/grand-discovery">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const GrandDiscoveryLanding = () => {
 
         <br />
 
-        <Link to="/Grand-Discovery">
+        <Link to="/destinations/grand-discovery">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -10,7 +10,7 @@ const departures = [
   },
   {
     name: "Europe",
-    path: "/Pages/europe",
+    path: "/destinations/europe",
     img: "https://blog.dookinternational.com/images/post-media/Z4G0Z1682335149.jpg",
   },
   {
@@ -20,7 +20,7 @@ const departures = [
   },
   {
     name: "America",
-    path: "/destinations/america",
+    path: "/destinations/usa",
     img: "https://static.vecteezy.com/system/resources/thumbnails/001/312/781/small/statue-of-liberty-usa-free-photo.jpeg",
   },
   {

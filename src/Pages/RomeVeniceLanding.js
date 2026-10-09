@@ -15,7 +15,7 @@ const RomeVeniceLanding = () => {
         <div className="hero-content">
           <h1>Rome & Venice</h1>
           <p>Romance. History. Beauty.</p>
-          <Link to="/italy">
+          <Link to="/destinations/italy">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

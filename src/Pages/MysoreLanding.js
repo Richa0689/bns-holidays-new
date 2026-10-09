@@ -15,7 +15,7 @@ const MysoreLanding = () => {
         <div className="hero-content">
           <h1>Mysore Tour</h1>
           <p>Royal Heritage. Palaces. Culture.</p>
-          <Link to="/karnataka-tours">
+          <Link to="/destinations/karnataka-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

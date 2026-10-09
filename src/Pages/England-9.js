@@ -219,7 +219,7 @@ const LondonIrelandLanding = () => {
             London • Dublin
           </p>
 
-          <Link to="/London-Ireland">
+          <Link to="/destinations/london-ireland">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const LondonIrelandLanding = () => {
 
         <br />
 
-        <Link to="/London-Ireland">
+        <Link to="/destinations/london-ireland">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -15,7 +15,7 @@ const ParisNiceLanding = () => {
         <div className="hero-content">
           <h1>Paris & Nice</h1>
           <p>Romance in Paris, Relaxation in Nice</p>
-          <Link to="/Pages/france">
+          <Link to="/destinations/france">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const ParisNiceLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Dream Trip</h2>
         <p>Book now and explore Paris & Nice</p><br />
-        <Link to="/Pages/france">
+        <Link to="/france">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

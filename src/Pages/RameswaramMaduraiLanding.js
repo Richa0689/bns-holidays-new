@@ -15,7 +15,7 @@ const RameswaramMaduraiLanding = () => {
         <div className="hero-content">
           <h1>Rameswaram & Madurai Tour</h1>
           <p>Spiritual Journey. Temples. Heritage.</p>
-          <Link to="/tamilnadu-tours">
+          <Link to="/destinations/tamilnadu-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

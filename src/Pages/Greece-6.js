@@ -219,7 +219,7 @@ const BarcelonaValenciaMalagaSevilleLanding = () => {
             Barcelona • Valencia • Malaga • Seville
           </p>
 
-          <Link to="/Valencia-Malaga">
+          <Link to="/destinations/valencia-malaga">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const BarcelonaValenciaMalagaSevilleLanding = () => {
 
         <br />
 
-        <Link to="/Valencia-Malaga">
+        <Link to="/destinations/valencia-malaga">
           <button className="book-now-btn">
             Book Now
           </button>

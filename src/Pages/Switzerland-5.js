@@ -219,7 +219,7 @@ const ZurichBernGeneva = () => {
             Zurich • Lucerne • Interlaken • Bern • Geneva — Switzerland in 8 Days
           </p>
 
-          <Link to="/Zurich-Bern">
+          <Link to="/destinations/zurich-bern">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const ZurichBernGeneva = () => {
 
         <br />
 
-        <Link to="/Zurich-Bern">
+        <Link to="/destinations/zurich-bern">
           <button className="book-now-btn">
             Book Now
           </button>

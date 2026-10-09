@@ -219,7 +219,7 @@ const FinlandSwedenLanding = () => {
             Helsinki • Stockholm
           </p>
 
-          <Link to="/Finland-Sweden">
+          <Link to="//destinations/finland-sweden">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const FinlandSwedenLanding = () => {
 
         <br />
 
-        <Link to="/Finland-Sweden">
+        <Link to="//destinations/finland-sweden">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -15,7 +15,7 @@ const HouseboatSrinagarLanding = () => {
         <div className="hero-content">
           <h1>Houseboat Experience</h1>
           <p>Dal Lake. Luxury Stay. Peaceful Vibes.</p>
-          <Link to="/srinagar">
+          <Link to="/destinations/srinagar">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

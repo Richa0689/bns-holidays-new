@@ -219,7 +219,7 @@ const EdinburghGlasgowLanding = () => {
             Edinburgh • Glasgow • Scottish Highlands
           </p>
 
-          <Link to="/Edinburgh-Glasgow">
+          <Link to="/destinations/edinburgh-glasgow-highlights">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const EdinburghGlasgowLanding = () => {
 
         <br />
 
-        <Link to="/Edinburgh-Glasgow">
+        <Link to="/destinations/edinburgh-glasgow-highlights">
           <button className="book-now-btn">
             Book Now
           </button>

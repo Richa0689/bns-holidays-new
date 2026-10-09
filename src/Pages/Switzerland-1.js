@@ -219,7 +219,7 @@ const SwissFranceLanding = () => {
             Paris • Geneva • Lucerne • Zurich
           </p>
 
-          <Link to="/swiss-france">
+          <Link to="/destinations/swiss-france">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const SwissFranceLanding = () => {
 
         <br />
 
-        <Link to="/swiss-france">
+        <Link to="/destinations/swiss-france">
           <button className="book-now-btn">
             Book Now
           </button>

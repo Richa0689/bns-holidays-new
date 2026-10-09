@@ -16,7 +16,7 @@ const ManaliLanding = () => {
           <h1>Best of Manali</h1>
           <p>5 Days • Manali & Solang Valley </p>
 
-          <Link to="/manali">
+          <Link to="/destinations/manali">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

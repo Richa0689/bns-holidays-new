@@ -219,7 +219,7 @@ const ScandinavianCapitalsExpressLanding = () => {
             Helsinki • Stockholm • Oslo
           </p>
 
-          <Link to="/Capitals-Express">
+          <Link to="/destinations/capitals-express">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const ScandinavianCapitalsExpressLanding = () => {
 
         <br />
 
-        <Link to="/Capitals-Express">
+        <Link to="/destinations/capitals-express">
           <button className="book-now-btn">
             Book Now
           </button>

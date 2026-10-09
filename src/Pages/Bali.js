@@ -73,15 +73,15 @@ const Bali = () => {
           <div className="tour-info">
             <h2>
               {tour.title === "Best of Bali" ? (
-                <Link to="/bali-landing" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/bali-tours" className="title-link">{tour.title}</Link>
               ) : tour.title === "Ubud & Kuta Escape" ? (
-                <Link to="/ubud-kuta" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/ubud-kuta" className="title-link">{tour.title}</Link>
               ) : tour.title === "Bali Beach Retreat" ? (
-                <Link to="/bali-beach" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/bali-beach" className="title-link">{tour.title}</Link>
               ) : tour.title === "Bali Adventure Tour" ? (
-                <Link to="/bali-adventure" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/bali-adventure" className="title-link">{tour.title}</Link>
               ) : tour.title === "Luxury Bali Tour" ? (
-                <Link to="/luxury-bali" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/luxury-bali" className="title-link">{tour.title}</Link>
               ) : (
                 tour.title
               )}

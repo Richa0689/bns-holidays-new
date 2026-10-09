@@ -21,7 +21,7 @@ const PolandLanding3 = () => {
             castles, culture, and stunning European architecture.
           </p>
 
-          <Link to="/poland">
+          <Link to="/destinations/poland">
             <button className="explore-btn">
               View Tours
             </button>

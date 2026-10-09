@@ -15,7 +15,7 @@ const ShimlaKufriLanding = () => {
         <div className="hero-content">
           <h1>Shimla & Kufri Tour</h1>
           <p>Snow Adventures. Scenic Views.</p>
-          <Link to="/shimla">
+          <Link to="/destinations/shimla">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

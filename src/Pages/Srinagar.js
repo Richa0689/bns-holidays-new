@@ -65,13 +65,13 @@ const Srinagar = () => {
           <div className="tour-info">
             <h2>
               {tour.title === "Best of Srinagar" ? (
-                <Link to="/srinagar-landing" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/srinagar-tours" className="title-link">{tour.title}</Link>
               ) : tour.title === "Srinagar & Gulmarg" ? (
-                <Link to="/gulmarg" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/gulmarg" className="title-link">{tour.title}</Link>
               ) : tour.title === "Srinagar Houseboat Experience" ? (
-                <Link to="/houseboat" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/houseboat" className="title-link">{tour.title}</Link>
               ) : tour.title === "Luxury Kashmir Tour" ? (
-                <Link to="/luxury-kashmir" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/luxury-kashmir" className="title-link">{tour.title}</Link>
               ) : (
                 tour.title
               )}

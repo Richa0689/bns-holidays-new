@@ -331,7 +331,7 @@ After breakfast and proceed to Munich airport with private transfer.
         <div className="hero-content">
           <h1>Frankfurt + Heidelberg + Munich</h1>
           <p>Financial Capital. Romantic Ruins. Bavarian Soul.</p>
-          <Link to="/germany-landing11">
+          <Link to="/destinations/frankfurt-heidelberg-munich-7-day">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -376,7 +376,7 @@ After breakfast and proceed to Munich airport with private transfer.
         <h2>Explore the Very Best of Germany</h2>
         <p>Book your German adventure today — 06 Nights / 07 Days from ₹4,70,000</p>
         <br />
-        <Link to="/germany-landing11">
+        <Link to="/destinations/frankfurt-heidelberg-munich-7-day">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

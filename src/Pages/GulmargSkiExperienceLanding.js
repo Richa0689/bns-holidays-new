@@ -16,7 +16,7 @@ const GulmargSkiExperienceLanding = () => {
           <h1>Gulmarg Ski Experience</h1>
           <p>Snow Sports. Skiing. Himalayan Thrill.</p>
 
-          <Link to="/gulmarg">
+          <Link to="/destinations/gulmarg">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -81,7 +81,7 @@ const GulmargSkiExperienceLanding = () => {
         <p>6 Days of pure snow experience</p>
         <br />
 
-        <Link to="/gulmarg">
+        <Link to="/destinations/gulmarg">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

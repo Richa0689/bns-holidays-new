@@ -15,7 +15,7 @@ const SwitzerlandLanding = () => {
         <div className="hero-content">
           <h1>Explore Switzerland</h1>
           <p>Mountains. Lakes. Scenic Beauty.</p>
-          <Link to="/Pages/switzerland">
+          <Link to="/destinations/switzerland">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const SwitzerlandLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Dream Switzerland Trip</h2>
         <p>Book now and enjoy breathtaking views</p><br />
-        <Link to="/Pages/switzerland">
+        <Link to="/switzerland">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

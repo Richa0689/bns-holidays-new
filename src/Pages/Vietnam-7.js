@@ -219,7 +219,7 @@ const VietnamCambodiaLanding = () => {
             Ho Chi Minh City • Mekong Delta • Siem Reap • Angkor Wat • Phnom Penh • Hanoi
           </p>
 
-          <Link to="/Vietnam-Cambodia">
+          <Link to="/destinations/vietnam-cambodia">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const VietnamCambodiaLanding = () => {
 
         <br />
 
-        <Link to="/Vietnam-Cambodia">
+        <Link to="/destinations/vietnam-cambodia">
           <button className="book-now-btn">
             Book Now
           </button>

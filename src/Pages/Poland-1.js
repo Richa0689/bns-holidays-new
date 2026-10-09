@@ -20,7 +20,7 @@ const PolandLanding2 = () => {
             Discover Warsaw & Kraków Highlights
           </p>
 
-          <Link to="/poland-landing1">
+          <Link to="/destinations/poland-itineraries">
             <button className="explore-btn">
               View Tours
             </button>
@@ -95,7 +95,7 @@ const PolandLanding2 = () => {
 
         <br />
 
-        <Link to="/poland-landing1">
+        <Link to="/destinations/poland-itineraries">
           <button className="book-now-btn">
             Book Now
           </button>

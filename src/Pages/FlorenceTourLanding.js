@@ -15,7 +15,7 @@ const FlorenceTourLanding = () => {
         <div className="hero-content">
           <h1>Florence Art Tour</h1>
           <p>Art. Culture. Renaissance.</p>
-          <Link to="/italy">
+          <Link to="/destinations/italy">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

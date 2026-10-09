@@ -20,7 +20,7 @@ const ItalyLanding4 = () => {
             Luxury Coastlines. Fashion Capitals. European Charm.
           </p>
 
-          <Link to="/italy">
+          <Link to="/destinations/italy">
             <button className="explore-btn">
               View Tours
             </button>

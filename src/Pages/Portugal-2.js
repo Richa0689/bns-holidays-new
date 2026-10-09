@@ -20,7 +20,7 @@ const PortugalLanding2 = () => {
             Royal Cities • Coastal Wonders • Historic Architecture
           </p>
 
-          <Link to="/portugal">
+          <Link to="/destinations/portugal">
             <button className="explore-btn">
               View Tours
             </button>

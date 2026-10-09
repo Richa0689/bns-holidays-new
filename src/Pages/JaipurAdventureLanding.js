@@ -17,7 +17,7 @@ const JaipurAdventureLanding = () => {
           <h1>Adventure Jaipur Trip</h1>
           <p>Adventure • Desert • Royal Thrill</p>
 
-          <Link to="/Pages/jaipur">
+          <Link to="/destinations/jaipur">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const JaipurAdventureLanding = () => {
         <h2>Feel the Adventure of Jaipur</h2>
         <p>4 Days of thrill & exploration</p><br />
 
-        <Link to="/Pages/jaipur">
+        <Link to="/jaipur">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

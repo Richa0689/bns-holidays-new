@@ -17,7 +17,7 @@ const SouthGoaEscapeLanding = () => {
           <h1>South Goa Beach Escape</h1>
           <p>Peace • Beaches • Nature</p>
 
-          <Link to="/Pages/southgoa">
+          <Link to="/destinations/southgoa">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const SouthGoaEscapeLanding = () => {
         <h2>Escape to South Goa</h2>
         <p>5 Days of peace & relaxation</p><br />
 
-        <Link to="/Pages/southgoa">
+        <Link to="/southgoa">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

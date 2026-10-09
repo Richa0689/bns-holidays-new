@@ -219,7 +219,7 @@ const FinlandGetawayPlusLanding = () => {
             Helsinki • Rovaniemi • Saariselkä
           </p>
 
-          <Link to="/Getaway-Plus">
+          <Link to="/destinations/getaway-plus">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const FinlandGetawayPlusLanding = () => {
 
         <br />
 
-        <Link to="/Getaway-Plus">
+        <Link to="/destinations/getaway-plus">
           <button className="book-now-btn">
             Book Now
           </button>

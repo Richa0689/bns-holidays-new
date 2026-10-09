@@ -214,7 +214,7 @@ const LangkawiLanding = () => {
         <div className="hero-content">
           <h1>Langkawi</h1>
           <p>Relax. Explore. Enjoy Beaches.</p>
-          <Link to="/malaysia">
+          <Link to="/destinations/malaysia">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

@@ -15,7 +15,7 @@ const AbuFerrariLanding = () => {
         <div className="hero-content">
           <h1>Abu Dhabi & Ferrari World</h1>
           <p>Speed. Luxury. Adventure.</p>
-          <Link to="/abu-dhabi">
+          <Link to="/destinations/abu-dhabi">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

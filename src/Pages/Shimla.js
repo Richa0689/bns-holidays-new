@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Shimla",
-    path: "/shimla-landing",
+    path: "/destinations/shimla-tours",
     days: "4 Days",
     countries: "India",
     cities: "Shimla, Kufri",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Shimla & Kufri Tour",
-    path: "/shimla-kufri",
+    path: "/destinations/shimla-kufri",
     days: "5 Days",
     countries: "India",
     cities: "Shimla, Kufri",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Shimla Trip",
-    path: "/shimla-adventure",
+    path: "/destinations/shimla-adventure",
     days: "3 Days",
     countries: "India",
     cities: "Shimla",
@@ -39,7 +39,7 @@ const tours = [
   
   {
     title: "Luxury Shimla Tour",
-    path: "/luxury-shimla",
+    path: "/destinations/luxury-shimla",
     days: "6 Days",
     countries: "India",
     cities: "Shimla, Chail",

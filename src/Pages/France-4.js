@@ -373,7 +373,7 @@ journey to India.
         <div className="hero-content">
           <h1>Amsterdam to Paris Escape</h1>
           <p>Dutch Canals. Belgian Grandeur. Parisian Romance.</p>
-          <Link to="/france-landing5">
+          <Link to="/destinations/amsterdam-paris-escape-9-day-france">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -418,7 +418,7 @@ journey to India.
         <h2>Experience Amsterdam, Brussels & Paris</h2>
         <p>Book your European escape today — 08 Nights / 09 Days from ₹3,70,000</p>
         <br />
-        <Link to="/france-landing5">
+        <Link to="/destinations/amsterdam-paris-escape-9-day-france">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -15,7 +15,7 @@ const AbuLanding = () => {
         <div className="hero-content">
           <h1>Explore Abu Dhabi</h1>
           <p>Luxury. Culture. Adventure.</p>
-          <Link to="/Pages/abu-dhabi">
+          <Link to="/destinations/abu-dhabi">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const AbuLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Abu Dhabi Trip</h2>
         <p>Book now and enjoy premium travel experience</p><br />
-        <Link to="/Pages/abu-dhabi">
+        <Link to="/abu-dhabi">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

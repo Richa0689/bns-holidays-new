@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of South Goa",
-    path: "/southgoa-landing",
+    path: "/destinations/southgoa-tours",
     days: "4 Days",
     countries: "India",
     cities: "Colva, Palolem, Benaulim",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "South Goa Beach Escape",
-    path: "/southgoa-escape",
+    path: "/destinations/southgoa-escape",
     days: "5 Days",
     countries: "India",
     cities: "Palolem, Agonda",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure South Goa Trip",
-    path: "/southgoa-adventure",
+    path: "/destinations/southgoa-adventure",
     days: "4 Days",
     countries: "India",
     cities: "South Goa",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury South Goa Tour",
-    path: "/luxury-southgoa",
+    path: "/destinations/luxury-southgoa",
     days: "6 Days",
     countries: "India",
     cities: "Palolem, Colva",

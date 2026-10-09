@@ -15,7 +15,7 @@ const NYWashingtonLanding = () => {
         <div className="hero-content">
           <h1>New York & Washington</h1>
           <p>6 Days • 2 Cities • 1 Country</p>
-          <Link to="/usa">
+          <Link to="/destinations/usa">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

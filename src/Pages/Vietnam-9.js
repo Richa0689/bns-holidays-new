@@ -219,7 +219,7 @@ const AmazingVietnam = () => {
             Hanoi • Halong Bay • Da Nang • Hoi An • Ho Chi Minh City • Mekong Delta
           </p>
 
-          <Link to="/Amazing-Vietnam">
+          <Link to="/destinations/amazing-vietnam">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const AmazingVietnam = () => {
 
         <br />
 
-        <Link to="/Amazing-Vietnam">
+        <Link to="/destinations/amazing-vietnam">
           <button className="book-now-btn">
             Book Now
           </button>

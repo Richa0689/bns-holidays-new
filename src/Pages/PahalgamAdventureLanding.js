@@ -17,7 +17,7 @@ const PahalgamAdventureLanding = () => {
           <h1>Adventure Pahalgam Trip</h1>
           <p>Aru Valley • Lidder River • Thrilling Experiences</p>
 
-          <Link to="/pahalgam">
+          <Link to="/destinations/pahalgam">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

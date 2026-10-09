@@ -325,7 +325,7 @@ Private transfer from Salzburg Hotel to Salzburg Airport for your onward flight.
         <div className="hero-content">
           <h1>Zurich + Innsbruck + Salzburg</h1>
           <p>Alpine Splendour. Imperial Heritage. Central European Magic.</p>
-          <Link to="/germany-landing7">
+          <Link to="/destinations/zurich-innsbruck-salzburg-7-day-germany">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -370,7 +370,7 @@ Private transfer from Salzburg Hotel to Salzburg Airport for your onward flight.
         <h2>Explore Switzerland & Austria's Best</h2>
         <p>Book your Alpine adventure today — 06 Nights / 07 Days from ₹4,70,000</p>
         <br />
-        <Link to="/germany-landing7">
+        <Link to="/destinations/zurich-innsbruck-salzburg-7-day-germany">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

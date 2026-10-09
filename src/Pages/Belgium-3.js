@@ -17,7 +17,7 @@ const BelgiumLanding3 = () => {
           <h1>Explore Brussels + Antwerp + Rotterdam</h1>
           <p>Historic Cities. Modern Architecture. European Beauty.</p>
 
-          <Link to="/belgium">
+          <Link to="/destinations/belgium">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

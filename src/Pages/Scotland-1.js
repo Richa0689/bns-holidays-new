@@ -219,7 +219,7 @@ const UKEscapeLanding = () => {
             London • Newport • Edinburgh
           </p>
 
-          <Link to="/UK-Escape">
+          <Link to="/destinations/london-cardiff-liverpool">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const UKEscapeLanding = () => {
 
         <br />
 
-        <Link to="/UK-Escape">
+        <Link to="/destinations/london-cardiff-liverpool">
           <button className="book-now-btn">
             Book Now
           </button>

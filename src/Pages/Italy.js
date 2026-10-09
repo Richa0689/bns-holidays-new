@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Italy",
-    path: "/italy-landing",
+    path: "/destinations/italy-tours",
     days: "7 Days",
     countries: "1 Country",
     cities: "3 Cities",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Rome & Venice",
-    path: "/rome-venice",
+    path: "/destinations/rome-venice",
     days: "6 Days",
     countries: "1 Country",
     cities: "2 Cities",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Florence Art Tour",
-    path: "/florence-tour",
+    path: "/destinations/florence-tour",
     days: "5 Days",
     countries: "1 Country",
     cities: "1 City",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Amalfi Coast Escape",
-    path: "/amalfi-coast",
+    path: "/destinations/amalfi-coast",
     days: "5 Days",
     countries: "1 Country",
     cities: "2 Cities",
@@ -49,7 +49,7 @@ const tours = [
   },
   {
     title: "Luxury Italy Tour",
-    path: "/luxury-italy",
+    path: "/destinations/luxury-italy",
     days: "9 Days",
     countries: "1 Country",
     cities: "4 Cities",

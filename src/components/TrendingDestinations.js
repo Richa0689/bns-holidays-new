@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 import "./TrendingDestinations.css";
 
 const destinations = [
-  { name: "Europe",      img: "https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?w=400&q=60",  path: "/Pages/europe" },
-  { name: "Maldives",    img: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&q=60",  path: "/Pages/maldives" },
-  { name: "Japan",       img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&q=60",  path: "/Pages/japan" },
-  { name: "Goa",         img: "https://images.unsplash.com/photo-1587922546307-776227941871?w=400&q=60",  path: "/Pages/goa" },
-  { name: "Kerala",      img: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&q=60",  path: "/kerala-tours" },
-  { name: "Dubai",       img: "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?w=400&q=60", path: "/Pages/dubai" },
-  { name: "Thailand",    img: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=400&q=60",  path: "/Pages/thailand" },
-  { name: "Switzerland", img: "https://images.unsplash.com/photo-1570161766218-f8488ebb8078?w=400&q=60",  path: "/Pages/switzerland" },
-  { name: "Paris",       img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=60",  path: "/Pages/paris" },
+  { name: "Europe",      img: "https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?w=400&q=60",  path: "/destinations/europe" },
+  { name: "Maldives",    img: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&q=60",  path: "/maldives" },
+  { name: "Japan",       img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&q=60",  path: "/japan" },
+  { name: "Goa",         img: "https://images.unsplash.com/photo-1587922546307-776227941871?w=400&q=60",  path: "/goa" },
+  { name: "Kerala",      img: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&q=60",  path: "/destinations/kerala-tours" },
+  { name: "Dubai",       img: "https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?w=400&q=60", path: "/destinations/dubai" },
+  { name: "Thailand",    img: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=400&q=60",  path: "/destinations/thailand" },
+  { name: "Switzerland", img: "https://images.unsplash.com/photo-1570161766218-f8488ebb8078?w=400&q=60",  path: "/destinations/switzerland" },
+  { name: "Paris",       img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=60",  path: "/paris" },
 ];
 
 const TrendingDestinations = () => {

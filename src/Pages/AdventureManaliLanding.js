@@ -16,7 +16,7 @@ const AdventureManaliLanding = () => {
           <h1>Adventure Manali Tour</h1>
           <p>4 Days • Thrill & Adventure </p>
 
-          <Link to="/manali">
+          <Link to="/destinations/manali">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

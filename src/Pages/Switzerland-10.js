@@ -219,7 +219,7 @@ const SwissPanorama = () => {
             Geneva • Lausanne • Montreux
           </p>
 
-          <Link to="/swiss-panorama">
+          <Link to="/destinations/swiss-panorama">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const SwissPanorama = () => {
 
         <br />
 
-        <Link to="/swiss-panorama">
+        <Link to="/destinations/swiss-panorama">
           <button className="book-now-btn">
             Book Now
           </button>

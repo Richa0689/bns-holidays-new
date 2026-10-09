@@ -15,7 +15,7 @@ const MunnarLanding = () => {
         <div className="hero-content">
           <h1>Kerala Munnar Tour</h1>
           <p>Tea Gardens. Backwaters. Nature Escape.</p>
-          <Link to="/kerala-tours">
+          <Link to="/destinations/kerala-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -79,7 +79,7 @@ const MunnarLanding = () => {
         <h2>Experience God's Own Country</h2>
         <p>Book your Kerala tour today</p><br />
 
-        <Link to="/kerala-tours">
+        <Link to="/destinations/kerala-tours">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -17,7 +17,7 @@ const LuxuryGuwahatiLanding = () => {
           <h1>Luxury Guwahati Tour</h1>
           <p>Luxury • Wildlife • Premium Experience</p>
 
-          <Link to="/Pages/guwahati">
+          <Link to="/destinations/guwahati">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const LuxuryGuwahatiLanding = () => {
         <h2>Experience Luxury in Northeast</h2>
         <p>7 Days of comfort & elegance</p><br />
 
-        <Link to="/Pages/guwahati">
+        <Link to="/guwahati">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

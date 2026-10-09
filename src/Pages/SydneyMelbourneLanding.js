@@ -15,7 +15,7 @@ const SydneyMelbourneLanding = () => {
         <div className="hero-content">
           <h1>Sydney & Melbourne</h1>
           <p>6 Days • 2 Cities • 1 Country</p>
-          <Link to="/australia">
+          <Link to="/destinations/australia">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

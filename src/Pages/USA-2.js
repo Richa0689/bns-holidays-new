@@ -219,7 +219,7 @@ const USALanding = () => {
             New York • Washington D.C. • Niagara Falls • Orlando • Las Vegas • Los Angeles • San Francisco
           </p>
 
-          <Link to="/usa">
+          <Link to="/destinations/usa">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const USALanding = () => {
 
         <br />
 
-        <Link to="/usa">
+        <Link to="/destinations/usa">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -16,7 +16,7 @@ const tours = [
   {
     id: "austria",
     title: "Austria Tour Package",
-    slug: "/europe-landing",
+    slug: "/europe-tours",
     // days: "8 Days",
     countries: "Austria",
     // cities: "11 Cities",
@@ -33,7 +33,7 @@ const tours = [
   {
     id: "belgium",
     title: "Belgium Tour Package",
-    slug: "/belgium-landing",
+    slug: "/belgium",
     // days: "6 Days",
     countries: "Belgium",
     // cities: "3 Cities",
@@ -49,7 +49,7 @@ const tours = [
   {
     id: "croatia",
     title: "Croatia Tour Package",
-    slug: "/croatia-landing",
+    slug: "/croatia",
     // days: "7 Days",
     countries: "Croatia",
     // cities: "4 Cities",
@@ -65,7 +65,7 @@ const tours = [
   {
     id: "portugal",
     title: "Portugal Tour Package",
-    slug: "/portugal-landing",
+    slug: "/portugal",
     // days: "8 Days",
     countries: "Portugal",
     // cities: "4 Cities",
@@ -81,7 +81,7 @@ const tours = [
   {
     id: "italy",
     title: "Italy Tour Package",
-    slug: "/italy-landing1",
+    slug: "/destinations/italy-itineraries",
     // days: "10 Days",
     countries: "Italy",
     // cities: "6 Cities",
@@ -97,7 +97,7 @@ const tours = [
   {
     id: "poland",
     title: "Poland Tour Package",
-    slug: "/poland-landing1",
+    slug: "/destinations/poland-itineraries",
     // days: "7 Days",
     countries: "Poland",
     // cities: "4 Cities",
@@ -113,7 +113,7 @@ const tours = [
   {
     id: "hungary",
     title: "Hungary Tour Package",
-    slug: "/hungary-landing1",
+    slug: "/destinations/hungary-itineraries",
     // days: "7 Days",
     countries: "Hungary",
     // cities: "4 Cities",
@@ -129,7 +129,7 @@ const tours = [
   {
     id: "denmark",
     title: "Denmark Tour Package",
-    slug: "/denmark-landing1",
+    slug: "/destinations/denmark-itineraries",
     // days: "7 Days",
     countries: "Denmark",
     // cities: "4 Cities",
@@ -145,7 +145,7 @@ const tours = [
   {
     id: "germany",
     title: "Germany Tour Package",
-    slug: "/germany-landing1",
+    slug: "/destinations/germany-itineraries",
     // days: "7 Days",
     countries: "Germany",
     // cities: "4 Cities",
@@ -161,7 +161,7 @@ const tours = [
   {
     id: "france",
     title: "France Tour Package",
-    slug: "/france-landing1",
+    slug: "/destinations/france-itineraries",
     // days: "7 Days",
     countries: "France",
     // cities: "4 Cities",
@@ -177,7 +177,7 @@ const tours = [
   {
     id: "England",
     title: "England Tour Package",
-    slug: "/England-landing1",
+    slug: "/destinations/england-itineraries",
     // days: "7 Days",
     countries: "England",
     // cities: "4 Cities",
@@ -193,7 +193,7 @@ tags: ["London", "Windsor", "Bath", "Cotswolds", "Manchester", "Cultural Tour"],
    {
     id: "Switzerland",
     title: "Switzerland Tour Package",
-    slug: "/Switzerland-landing1",
+    slug: "/destinations/switzerland-itineraries",
     // days: "7 Days",
     countries: "Switzerland",
     // cities: "4 Cities",
@@ -209,7 +209,7 @@ tags: ["London", "Windsor", "Bath", "Cotswolds", "Manchester", "Cultural Tour"],
    {
     id: "Spain",
     title: "Spain Tour Package",
-    slug: "/Spain-landing1",
+    slug: "/destinations/spain-itineraries",
     // days: "7 Days",
     countries: "Spain",
     // cities: "4 Cities",
@@ -225,7 +225,7 @@ tags: ["Madrid", "Barcelona", "Seville", "Valencia", "Granada", "Cultural Tour"]
   {
     id: "Scotland",
     title: "Scotland Tour Package",
-    slug: "/Scotland-landing1",
+    slug: "/destinations/scotland-itineraries",
     // days: "7 Days",
     countries: "Scotland",
     // cities: "4 Cities",
@@ -263,7 +263,7 @@ tags: [
   {
     id: "Finland",
     title: "Finland Tour Package",
-    slug: "/Finland-landing1",
+    slug: "/destinations/finland-itineraries",
     // days: "7 Days",
     countries: "Finland",
     // cities: "4 Cities",
@@ -285,7 +285,7 @@ tags: [
   {
     id: "Greece",
     title: "Greece Tour Package",
-    slug: "/Greece-landing1",
+    slug: "/destinations/greece-itineraries",
     // days: "7 Days",
     countries: "Greece",
     // cities: "4 Cities",
@@ -301,7 +301,7 @@ tags: ["Athens", "Santorini", "Mykonos", "Delphi", "Meteora", "Crete"],
    {
     id: "Iceland",
     title: "Iceland Tour Package",
-    slug: "/Iceland-landing1",
+    slug: "/destinations/iceland-itineraries",
     // days: "7 Days",
     countries: "Iceland",
     // cities: "4 Cities",
@@ -495,11 +495,10 @@ const Europe = () => {
           name="keywords"
           content="Europe tour packages from India, Europe holiday packages, Austria tour, Belgium tour, Croatia tour, Eastern Europe tour, Luxury Europe tour, Europe trip 2026"
         />
-        <link rel="canonical" href="https://bnsholidays.co.in/Pages/europe" />
         <meta property="og:title" content="Europe Tour Packages from India 2026 | BNS Holidays" />
         <meta property="og:description" content="Explore top Europe tour packages from India starting at ₹1,95,000. Flights, hotels, visa & sightseeing included. Easy EMI options available." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.bnsholidays.com/europe-tours" />
+        <meta property="og:url" content="https://bnsholidays.co.in/destinations/europe" />
         <meta property="og:image" content="https://blog.dookinternational.com/images/post-media/Z4G0Z1682335149.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({

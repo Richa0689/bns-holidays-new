@@ -15,7 +15,7 @@ const BaliAdventureLanding = () => {
         <div className="hero-content">
           <h1>Bali Adventure Tour</h1>
           <p>Thrill. Explore. Experience.</p>
-          <Link to="/bali">
+          <Link to="/destinations/bali">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

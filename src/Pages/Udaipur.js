@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Udaipur",
-    path: "/udaipur-landing",
+    path: "/destinations/udaipur-tours",
     days: "4 Days",
     countries: "India",
     cities: "Udaipur, Lake Pichola",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Udaipur & Mount Abu",
-    path: "/udaipur-mountabu",
+    path: "/destinations/udaipur-mountabu",
     days: "6 Days",
     countries: "India",
     cities: "Udaipur, Mount Abu",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Udaipur Trip",
-    path: "/udaipur-adventure",
+    path: "/destinations/udaipur-adventure",
     days: "4 Days",
     countries: "India",
     cities: "Udaipur",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Udaipur Tour",
-    path: "/luxury-udaipur",
+    path: "/destinations/luxury-udaipur",
     days: "7 Days",
     countries: "India",
     cities: "Udaipur, Kumbhalgarh",

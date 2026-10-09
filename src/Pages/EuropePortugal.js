@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const portugalTours = [
   {
     title: "Best of Seville + Lisbon + Porto || 05 Nights/06 Days",
-    path: "/portugal-landing-1",
+    path: "/destinations/seville-lisbon-porto-6-day",
     days: "8 Days",
     countries: "SPAIN + PORTUGAL",
     cities: "Lisbon, Porto, Sintra & Algarve",
@@ -17,7 +17,7 @@ const portugalTours = [
   },
   {
     title: "From Spain’s Royal Cities to Portugal’s Coastal Wonders|| 8N/9D",
-    path: "/portugal-landing-2",
+    path: "/destinations/spain-portugal-royal-cities-coastal-wonders",
     days: "8 Days",
     countries: "SPAIN + PORTUGAL",
     cities: "Lisbon, Porto, Sintra & Algarve",

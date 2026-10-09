@@ -15,7 +15,7 @@ const ZurichLucerneLanding = () => {
         <div className="hero-content">
           <h1>Zurich & Lucerne</h1>
           <p>Swiss Beauty & Scenic Lakes</p>
-          <Link to="/Pages/switzerland">
+          <Link to="/destinations/switzerland">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const ZurichLucerneLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Zurich & Lucerne Trip</h2>
         <p>Book now and explore Switzerland</p><br />
-        <Link to="/Pages/switzerland">
+        <Link to="/switzerland">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

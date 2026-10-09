@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Jaipur",
-    path: "/jaipur-landing",
+    path: "/destinations/jaipur-tours",
     days: "4 Days",
     countries: "India",
     cities: "Jaipur, Amber Fort",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Jaipur & Udaipur",
-    path: "/jaipur-udaipur",
+    path: "/destinations/jaipur-udaipur",
     days: "6 Days",
     countries: "India",
     cities: "Jaipur, Udaipur",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Jaipur Trip",
-    path: "/jaipur-adventure",
+    path: "/destinations/jaipur-adventure",
     days: "4 Days",
     countries: "India",
     cities: "Jaipur",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Jaipur Tour",
-    path: "/luxury-jaipur",
+    path: "/destinations/luxury-jaipur",
     days: "7 Days",
     countries: "India",
     cities: "Jaipur, Jodhpur",

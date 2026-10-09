@@ -219,7 +219,7 @@ const SpainLanding = () => {
             Barcelona • Valencia • Malaga • Seville
           </p>
 
-          <Link to="/Malaga-Seville">
+          <Link to="/destinations/malaga-seville">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const SpainLanding = () => {
 
         <br />
 
-        <Link to="/Malaga-Seville">
+        <Link to="/destinations/malaga-seville">
           <button className="book-now-btn">
             Book Now
           </button>

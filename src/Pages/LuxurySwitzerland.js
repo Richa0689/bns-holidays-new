@@ -16,7 +16,7 @@ const LuxurySwitzerland = () => {
           <h1>Luxury Switzerland Tour</h1>
           <p>Alps. Lakes. Luxury Experience.</p>
 
-          <Link to="/Pages/switzerland">
+          <Link to="/destinations/switzerland">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const LuxurySwitzerland = () => {
         <p>Experience Switzerland like never before</p>
         <br />
 
-        <Link to="/Pages/switzerland">
+        <Link to="/switzerland">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

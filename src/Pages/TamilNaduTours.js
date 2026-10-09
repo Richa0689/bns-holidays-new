@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   // {
   //   title: "Ooty",
-  //   path: "/ooty-landing",
+  //   path: "/destinations/ooty-tours",
   //   days: "4 Days",
   //   countries: "India",
   //   cities: "Ooty, Nilgiri Hills",
@@ -16,7 +16,7 @@ const tours = [
   // },
   {
     title: "Chennai",
-    path: "/chennai-landing",
+    path: "/destinations/chennai",
     days: "5 Days",
     countries: "India",
     cities: "Chennai, Pondicherry,Mahabalipuram ",
@@ -28,7 +28,7 @@ const tours = [
   
   {
     title: "Rameswaram & Madurai",
-    path: "/rameswaram-madurai",
+    path: "/destinations/rameswaram-madurai",
     days: "4 Days",
     countries: "India",
     cities: "Rameswaram, Madurai, Temple",
@@ -39,7 +39,7 @@ const tours = [
   },
   {
     title: "Temple Tour",
-    path: "/temple-landing",
+    path: "/destinations/temple",
     days: "11 Days",
     countries: "India",
     cities: "Chennai  Tirupati , Vellore , Kanchipuram , Mahabalipuram , Kumbakonam , Tanjore , Rameswaram , Madurai",

@@ -18,7 +18,7 @@ const CroatiaLanding1 = () => {
           <h1>Central Europe Escape</h1>
           <p>Budapest • Zagreb • Ljubljana</p>
 
-          <Link to="/croatia">
+          <Link to="/destinations/croatia">
             <button className="explore-btn">
               View Tours
             </button>
@@ -89,7 +89,7 @@ const CroatiaLanding1 = () => {
 
         <br />
 
-        <Link to="/croatia">
+        <Link to="/destinations/croatia">
           <button className="book-now-btn">
             Book Now
           </button>

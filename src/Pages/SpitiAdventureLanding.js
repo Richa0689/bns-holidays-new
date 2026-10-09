@@ -15,7 +15,7 @@ const SpitiAdventureLanding = () => {
         <div className="hero-content">
           <h1>Spiti Adventure Trip</h1>
           <p>Thrill. Mountains. Off-road Experience.</p>
-          <Link to="/spiti">
+          <Link to="/destinations/spiti">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

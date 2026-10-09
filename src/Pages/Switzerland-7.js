@@ -219,7 +219,7 @@ const GlimpsesSwitzerland = () => {
             Lucerne • Interlaken • Geneva — Switzerland in 7 Days
           </p>
 
-          <Link to="/Glimpses-Switzerland">
+          <Link to="/destinations/glimpses-switzerland">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const GlimpsesSwitzerland = () => {
 
         <br />
 
-        <Link to="/Glimpses-Switzerland">
+        <Link to="/destinations/glimpses-switzerland">
           <button className="book-now-btn">
             Book Now
           </button>

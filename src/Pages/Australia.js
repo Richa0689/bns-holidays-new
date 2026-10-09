@@ -75,23 +75,23 @@ const Australia = () => {
           <div className="tour-info">
             <h2>
   {tour.title === "Best of Australia" ? (
-    <Link to="/aus-landing" className="title-link">
+    <Link to="/destinations/australia-tours" className="title-link">
       {tour.title}
     </Link>
   ) : tour.title === "Sydney & Melbourne" ? (
-    <Link to="/sydney-melbourne" className="title-link">
+    <Link to="/destinations/sydney-melbourne" className="title-link">
       {tour.title}
     </Link>
   ) : tour.title === "Gold Coast Fun Tour" ? (
-    <Link to="/gold-coast" className="title-link">
+    <Link to="/destinations/gold-coast" className="title-link">
       {tour.title}
     </Link>
   ) : tour.title === "Great Ocean Road Trip" ? (
-    <Link to="/great-ocean" className="title-link">
+    <Link to="/destinations/great-ocean" className="title-link">
       {tour.title}
     </Link>
   ) : tour.title === "Luxury Australia Tour" ? (
-    <Link to="/luxury-aus" className="title-link">
+    <Link to="/destinations/luxury-aus" className="title-link">
       {tour.title}
     </Link>
   ) : (

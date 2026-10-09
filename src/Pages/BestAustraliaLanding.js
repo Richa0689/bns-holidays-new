@@ -15,7 +15,7 @@ const BestAustraliaLanding = () => {
         <div className="hero-content">
           <h1>Best of Australia</h1>
           <p>8 Days • 3 Cities • 1 Country</p>
-          <Link to="/australia">
+          <Link to="/destinations/australia">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

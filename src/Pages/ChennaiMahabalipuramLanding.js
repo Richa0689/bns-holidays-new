@@ -17,7 +17,7 @@ const ChennaiMahabalipuramLanding = () => {
           <h1>Chennai & Mahabalipuram</h1>
           <p>Heritage • Beaches • Temples</p>
 
-          <Link to="/Pages/chennai">
+          <Link to="/destinations/chennai">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const ChennaiMahabalipuramLanding = () => {
         <h2>Discover Ancient Wonders</h2>
         <p>5 Days of history & seaside beauty</p><br />
 
-        <Link to="/Pages/chennai">
+        <Link to="/chennai">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

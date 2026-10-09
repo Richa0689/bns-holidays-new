@@ -21,7 +21,7 @@ const DenmarkLanding5 = () => {
             an unforgettable journey through Copenhagen, Oslo, and Aarhus.
           </p>
 
-          <Link to="/denmark-landing1">
+          <Link to="/destinations/denmark-itineraries">
             <button className="explore-btn">
               View Tours
             </button>
@@ -92,7 +92,7 @@ const DenmarkLanding5 = () => {
 
         <br />
 
-        <Link to="/denmark-landing1">
+        <Link to="/destinations/denmark-itineraries">
           <button className="book-now-btn">
             Book Now
           </button>

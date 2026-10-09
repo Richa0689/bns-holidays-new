@@ -332,7 +332,7 @@ After breakfast, proceed to Paris Airport with a private transfer for your onwar
         <div className="hero-content">
           <h1>From Windmills to the Eiffel</h1>
           <p>Amsterdam's Canals. Brussels's Grand Place. Paris's Timeless Magic.</p>
-          <Link to="/france-landing4">
+          <Link to="/destinations/windmills-to-eiffel-benelux-7-day">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -377,7 +377,7 @@ After breakfast, proceed to Paris Airport with a private transfer for your onwar
         <h2>Experience Amsterdam, Brussels & Paris</h2>
         <p>Book your European adventure today — 06 Nights / 07 Days from ₹3,50,000</p>
         <br />
-        <Link to="/france-landing4">
+        <Link to="/destinations/windmills-to-eiffel-benelux-7-day">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

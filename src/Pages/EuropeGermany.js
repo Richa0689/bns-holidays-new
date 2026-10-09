@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const germanyTours = [
   {
     title: "Scenic Europe Escape: Ljubljana, Salzburg & Munich",
-    path: "/germany-landing2",
+    path: "/destinations/scenic-europe-ljubljana-salzburg-munich",
     days: "7 Days",
     countries: "SLOVENIA + AUSTRIA + GERMANY",
     cities: "Ljubljana, Salzburg & Munich",
@@ -17,7 +17,7 @@ const germanyTours = [
   },
   {
     title: "Munich + Innsbruck + Salzburg + Vienna||08 Nights/09 Days",
-    path: "/germany-landing3",
+    path: "/destinations/munich-innsbruck-salzburg-vienna-9-day-germany",
     days: "9 Days",
     countries: "GERMANY + AUSTRIA",
     cities: "Munich , Innsbruck , Salzburg , Vienna",
@@ -29,7 +29,7 @@ const germanyTours = [
   },
   {
     title: "Munich + Stuttgart + Frankfurt || 06 Nights/07 Days",
-    path: "/germany-landing4",
+    path: "/destinations/munich-stuttgart-frankfurt-7-day",
     days: "7 Days",
     countries: "GERMANY",
     cities: "Munich , Stuttgart , Frankfurt",
@@ -41,7 +41,7 @@ const germanyTours = [
   },
   {
     title: "Best of Vienna/Munich/Zurich || 06 Nights/07 Days",
-    path: "/germany-landing5",
+    path: "/destinations/vienna-munich-zurich-7-day-germany",
     days: "7 Days",
     countries: "GERMANY + SWITZERLAND + AUSTRIA",
     cities: "Vienna,Munich,Zurich",
@@ -53,7 +53,7 @@ const germanyTours = [
   },
   {
     title: "Best of Vienna/Munich/Zurich || 07 Nights/08 Days",
-    path: "/germany-landing6",
+    path: "/destinations/vienna-munich-zurich-8-day-germany",
     days: "8 Days",
     countries: "GERMANY + SWITZERLAND + AUSTRIA",
     cities: "Vienna,Munich,Zurich",
@@ -65,7 +65,7 @@ const germanyTours = [
   },
   {
     title: "Zurich + Innsbruck + Salzburg || 06 Nights/07 Days",
-    path: "/germany-landing7",
+    path: "/destinations/zurich-innsbruck-salzburg-7-day-germany",
     days: "7 Days",
     countries: "SWITZERLAND + AUSTRIA + GERMANY",
     cities: "Zurich , Innsbruck , Salzburg",
@@ -77,7 +77,7 @@ const germanyTours = [
   },
   {
     title: "Amsterdam + Cologne + Frankfurt || 06 Nights / 07 Days",
-    path: "/germany-landing8",
+    path: "/destinations/amsterdam-cologne-frankfurt-7-day",
     days: "7 Days",
     countries: "NETHERLANDS + GERMANY",
     cities: "Amsterdam , Cologne , Frankfurt",
@@ -89,7 +89,7 @@ const germanyTours = [
   },
   {
     title: "Best of Denmark and Germany 07 Nights/08 Days",
-    path: "/germany-landing9",
+    path: "/destinations/denmark-germany-8-day-tour",
     days: "8 Days",
     countries: "DENMARK + GERMANY",
     cities: "Frankfurt, Heidelberg & Munich",
@@ -101,7 +101,7 @@ const germanyTours = [
   },
   {
     title: "Glimpses of Denmark, Sweden & Germany 07 Nights/08 Days",
-    path: "/germany-landing10",
+    path: "/destinations/denmark-sweden-germany-8-day-tour",
     days: "8 Days",
     countries: "DENMARK + SWEDEN + GERMANY",
     cities: "Denmark, Sweden & Germany",
@@ -113,7 +113,7 @@ const germanyTours = [
   },
   {
     title: "Explore Frankfurt, Heidelberg & Munich || 06 Nights / 07 Days",
-    path: "/germany-landing11",
+    path: "/destinations/frankfurt-heidelberg-munich-7-day",
     days: "7 Days",
     countries: "GERMANY",
     cities: " Frankfurt, Heidelberg & Munich",

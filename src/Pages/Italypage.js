@@ -15,7 +15,7 @@ const Italypage = () => {
         <div className="hero-content">
           <h1>Explore Italy</h1>
           <p>History. Romance. Culture.</p>
-          <Link to="/Pages/italy">
+          <Link to="/destinations/italy">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const Italypage = () => {
       <div className="cta-section">
         <h2>Plan Your Dream Italy Trip</h2>
         <p>Book now and explore the beauty of Italy</p><br />
-        <Link to="/Pages/italy">
+        <Link to="/italy">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

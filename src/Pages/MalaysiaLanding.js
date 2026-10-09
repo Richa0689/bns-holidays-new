@@ -15,7 +15,7 @@ const MalaysiaLanding = () => {
         <div className="hero-content">
           <h1>Explore Malaysia</h1>
           <p>Truly Asia Experience</p>
-          <Link to="/malaysia">
+          <Link to="/destinations/malaysia">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const MalaysiaLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Dream Malaysia Trip</h2>
         <p>Book now and get best deals</p><br />
-        <Link to="/malaysia">
+        <Link to="/destinations/malaysia">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

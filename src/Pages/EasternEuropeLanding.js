@@ -15,7 +15,7 @@ const EasternEuropeLanding = () => {
         <div className="hero-content">
           <h1>Eastern Europe Explorer</h1>
           <p>9 Days • 3 Countries • 5 Cities</p>
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const polandTours = [
   {
     title: "Classic Poland Escape: Warsaw & Kraków Highlights ",
-    path: "/poland-landing2",
+    path: "/destinations/classic-poland-warsaw-krakow",
     days: "7 Days",
     countries: "POLAND",
     cities: "Warsaw, Krakow",
@@ -17,7 +17,7 @@ const polandTours = [
   },
    {
     title: "Classic Europe Escape: Warsaw & Prague Highlights",
-    path: "/poland-landing3",
+    path: "/destinations/classic-europe-warsaw-prague",
     days: "6 Days",
     countries: "POLAND + CZECH REPUBLIC",
     cities: "Warsaw, Prague",

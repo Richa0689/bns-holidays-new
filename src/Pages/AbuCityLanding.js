@@ -15,7 +15,7 @@ const AbuCityLanding = () => {
         <div className="hero-content">
           <h1>Abu Dhabi City Tour</h1>
           <p>Explore Culture & Modern Wonders</p>
-          <Link to="/abu-dhabi">
+          <Link to="/destinations/abu-dhabi">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

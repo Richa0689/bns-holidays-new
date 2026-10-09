@@ -219,7 +219,7 @@ const VietnamLanding = () => {
             Hanoi • Halong Bay • Hoi An • Ho Chi Minh City • Mekong Delta
           </p>
 
-          <Link to="/vietnam">
+          <Link to="/destinations/vietnam">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const VietnamLanding = () => {
 
         <br />
 
-        <Link to="/vietnam">
+        <Link to="/destinations/vietnam">
           <button className="book-now-btn">
             Book Now
           </button>

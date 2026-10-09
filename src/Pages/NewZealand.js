@@ -75,7 +75,7 @@ const NewZealand = () => {
           <div className="tour-info">
             <h2>
               {tour.title === "Best of New Zealand" ? (
-                <Link to="/nz-landing" className="title-link">
+                <Link to="/destinations/new-zealand-tours" className="title-link">
                   {tour.title}
                 </Link>
               ) : tour.title === "Auckland & Queenstown" ? (

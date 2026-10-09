@@ -15,7 +15,7 @@ const UbudKutaLanding = () => {
         <div className="hero-content">
           <h1>Ubud & Kuta Escape</h1>
           <p>Beaches. Culture. Nature.</p>
-          <Link to="/bali">
+          <Link to="/destinations/bali">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

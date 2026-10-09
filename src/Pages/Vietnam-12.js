@@ -219,7 +219,7 @@ const VietnamCentralLanding = () => {
             Da Nang • Ba Na Hills • Hoi An • Hue
           </p>
 
-          <Link to="/Vietnam-Central">
+          <Link to="/destinations/vietnam-central">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -289,7 +289,7 @@ const VietnamCentralLanding = () => {
 
         <br />
 
-        <Link to="/Vietnam-Central">
+        <Link to="/destinations/vietnam-central">
           <button className="book-now-btn">
             Book Now
           </button>

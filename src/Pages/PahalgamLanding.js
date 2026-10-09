@@ -17,7 +17,7 @@ const PahalgamLanding = () => {
           <h1>Best of Pahalgam</h1>
           <p>Valleys, Rivers & Himalayan Beauty</p>
 
-          <Link to="/pahalgam">
+          <Link to="/destinations/pahalgam">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -82,7 +82,7 @@ const PahalgamLanding = () => {
         <p>5 Days of Himalayan beauty</p>
         <br />
 
-        <Link to="/pahalgam">
+        <Link to="/destinations/pahalgam">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

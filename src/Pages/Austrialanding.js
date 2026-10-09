@@ -214,7 +214,7 @@ const AustriaLanding = () => {
         <div className="hero-content">
           <h1>Scenic Europe Escape</h1>
           <p>Ljubljana. Salzburg. Munich.</p>
-          <Link to="/europe-landing">
+          <Link to="/destinations/europe-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -263,7 +263,7 @@ const AustriaLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Europe Trip</h2>
         <p>Book now and explore Ljubljana, Salzburg & Munich in 7 magical days</p><br />
-        <Link to="/europe-landing">
+        <Link to="/destinations/europe-tours">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

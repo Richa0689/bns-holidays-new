@@ -19,7 +19,7 @@ const CroatiaLanding2 = () => {
           <h1>Coast & Islands Croatia Tour</h1>
           <p>Dubrovnik • Split • Zagreb • Zadar</p>
 
-          <Link to="/croatia">
+          <Link to="/destinations/croatia">
             <button className="explore-btn">
               View Tours
             </button>
@@ -90,7 +90,7 @@ const CroatiaLanding2 = () => {
 
         <br />
 
-        <Link to="/croatia">
+        <Link to="/destinations/croatia">
           <button className="book-now-btn">
             Book Now
           </button>

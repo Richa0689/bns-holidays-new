@@ -219,7 +219,7 @@ const GlasgowInvernessLanding = () => {
             Edinburgh • Glasgow • Inverness
           </p>
 
-          <Link to="/Glasgow-Inverness">
+          <Link to="/destinations/glasgow-inverness">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const GlasgowInvernessLanding = () => {
 
         <br />
 
-        <Link to="/Glasgow-Inverness">
+        <Link to="/destinations/glasgow-inverness">
           <button className="book-now-btn">
             Book Now
           </button>

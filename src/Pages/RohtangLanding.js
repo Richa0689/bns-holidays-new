@@ -16,7 +16,7 @@ const RohtangLanding = () => {
           <h1>Manali & Rohtang Pass</h1>
           <p>6 Days • Snow Adventure • Scenic Himalayas</p>
 
-          <Link to="/manali">
+          <Link to="/destinations/manali">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

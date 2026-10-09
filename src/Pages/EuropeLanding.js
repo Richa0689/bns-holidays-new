@@ -12,16 +12,16 @@ const initialForm = {
 
 /* ── Slug map ───────────────────────────────────────────────────── */
 const slugMap = {
-  "Scenic Europe Escape: Ljubljana, Salzburg & Munich": "/austria-landing",
-  "Budapest + Vienna + Prague || 06 Nights/07 Days": "/austria-landing-2",
-  "Budapest + Vienna + Prague 08 Nights/09 Days": "/austria-landing-3",
-  "Munich + Innsbruck + Salzburg + Vienna||08 Nights/09 Days": "/austria-landing-5",
-  "Best of Vienna/Munich/Zurich || 06 Nights/07 Days": "/austria-landing-4",
-  "Best of Vienna/Munich/Zurich || 07 Nights/08 Days": "/austria-landing-6",
-  "Zurich + Innsbruck + Salzburg || 06 Nights/07 Days": "/austria-landing-7",
-  "Vienna + Budapest + Prague || 06 Nights/07 Days": "/austria-landing-8",
-  "From Munich's Majesty to Innsbruck's Alps|| 6N/7D": "/austria-landing-9",
-  "From Medieval Streets to Imperial Palaces|| 9N/10D": "/austria-landing-10",
+  "Scenic Europe Escape: Ljubljana, Salzburg & Munich": "/austria",
+  "Budapest + Vienna + Prague || 06 Nights/07 Days": "/budapest-vienna-prague-7-day",
+  "Budapest + Vienna + Prague 08 Nights/09 Days": "/budapest-vienna-prague-9-day",
+  "Munich + Innsbruck + Salzburg + Vienna||08 Nights/09 Days": "/munich-innsbruck-salzburg-vienna-9-day",
+  "Best of Vienna/Munich/Zurich || 06 Nights/07 Days": "/vienna-munich-zurich-7-day",
+  "Best of Vienna/Munich/Zurich || 07 Nights/08 Days": "/vienna-munich-zurich-8-day",
+  "Zurich + Innsbruck + Salzburg || 06 Nights/07 Days": "/zurich-innsbruck-salzburg-7-day",
+  "Vienna + Budapest + Prague || 06 Nights/07 Days": "/vienna-budapest-prague-7-day",
+  "From Munich's Majesty to Innsbruck's Alps|| 6N/7D": "/munich-innsbruck-alps-7-day",
+  "From Medieval Streets to Imperial Palaces|| 9N/10D": "/medieval-streets-imperial-palaces-10-day",
 };
 
 /* ── Tour Data ──────────────────────────────────────────────────── */

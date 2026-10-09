@@ -81,17 +81,17 @@ const Singapore = () => {
             <div className="tour-info">
               <h2>
                 {tour.title === "Best of Singapore" ? (
-                  <Link to="/best-of-singapore" className="title-link">
+                  <Link to="/destinations/best-of-singapore" className="title-link">
                     {tour.title}
                   </Link>
                 ) : tour.title === "Singapore & Sentosa" ? (
-                  <Link to="/singapore-sentosa" className="title-link">{tour.title}</Link>
+                  <Link to="/destinations/singapore-sentosa" className="title-link">{tour.title}</Link>
                 ) : tour.title === "Universal Studios Tour" ? (
-                  <Link to="/universal-singapore" className="title-link">
+                  <Link to="/destinations/universal-singapore" className="title-link">
                     {tour.title}
                   </Link>
                 ) : tour.title === "Luxury Singapore Tour" ? (
-                  <Link to="/luxury-singapore" className="title-link">{tour.title}</Link>
+                  <Link to="/destinations/luxury-singapore" className="title-link">{tour.title}</Link>
                 ) : (
                   tour.title
                 )}

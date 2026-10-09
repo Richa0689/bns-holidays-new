@@ -219,7 +219,7 @@ const AthensMykonosSantoriniHeraklionLanding = () => {
             Athens • Mykonos • Santorini • Heraklion
           </p>
 
-          <Link to="/Athens-Mykonos">
+          <Link to="/destinations/athens-mykonos">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const AthensMykonosSantoriniHeraklionLanding = () => {
 
         <br />
 
-        <Link to="/Athens-Mykonos">
+        <Link to="/destinations/athens-mykonos">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -15,7 +15,7 @@ const LuxuryAbuDhabiLanding = () => {
         <div className="hero-content">
           <h1>Luxury Abu Dhabi Tour</h1>
           <p>Experience Royal Luxury & Arabian Elegance</p>
-          <Link to="/Pages/abu-dhabi">
+          <Link to="/destinations/abu-dhabi">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const LuxuryAbuDhabiLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Luxury Trip</h2>
         <p>Book now for premium Abu Dhabi experience</p><br />
-        <Link to="/Pages/abu-dhabi">
+        <Link to="/abu-dhabi">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -17,7 +17,7 @@ const NorthGoaAdventureLanding = () => {
           <h1>Adventure North Goa Trip</h1>
           <p>Beaches • Water Sports • Thrill</p>
 
-          <Link to="/Pages/northgoa">
+          <Link to="/destinations/northgoa">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const NorthGoaAdventureLanding = () => {
         <h2>Feel the Adventure of Goa</h2>
         <p>4 Days of thrill & fun</p><br />
 
-        <Link to="/Pages/northgoa">
+        <Link to="/northgoa">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -15,7 +15,7 @@ const SpitiLanding = () => {
         <div className="hero-content">
           <h1>Best of Spiti Valley</h1>
           <p>Cold Desert. Monasteries. Adventure.</p>
-          <Link to="/spiti">
+          <Link to="/destinations/spiti">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

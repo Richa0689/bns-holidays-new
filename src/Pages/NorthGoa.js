@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of North Goa",
-    path: "/northgoa-landing",
+    path: "/destinations/northgoa-tours",
     days: "4 Days",
     countries: "India",
     cities: "Baga, Calangute, Anjuna",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "North Goa Beach Party",
-    path: "/northgoa-party",
+    path: "/destinations/northgoa-party",
     days: "5 Days",
     countries: "India",
     cities: "Baga, Anjuna",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure North Goa Trip",
-    path: "/northgoa-adventure",
+    path: "/destinations/northgoa-adventure",
     days: "4 Days",
     countries: "India",
     cities: "North Goa",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury North Goa Tour",
-    path: "/luxury-northgoa",
+    path: "/destinations/luxury-northgoa",
     days: "6 Days",
     countries: "India",
     cities: "North Goa, Candolim",

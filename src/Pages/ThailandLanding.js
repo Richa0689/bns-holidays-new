@@ -15,7 +15,7 @@ const ThailandLanding = () => {
         <div className="hero-content">
           <h1>Explore Thailand</h1>
           <p>Beaches. Culture. Adventure.</p>
-          <Link to="/thailand">
+          <Link to="/destinations/thailand">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const ThailandLanding = () => {
       <div className="cta-section">
         <h2>Plan Your Dream Thailand Trip</h2>
         <p>Book now and get best deals on Thailand tours</p><br />
-        <Link to="/thailand">
+        <Link to="/destinations/thailand">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

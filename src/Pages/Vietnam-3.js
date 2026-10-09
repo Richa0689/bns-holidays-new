@@ -219,7 +219,7 @@ const NorthernVietnamLanding = () => {
             Hanoi • Ha Long Bay • Ninh Binh
           </p>
 
-          <Link to="/northen-vietnam">
+          <Link to="/destinations/northern-vietnam-5-day">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const NorthernVietnamLanding = () => {
 
         <br />
 
-        <Link to="/northen-vietnam">
+        <Link to="/destinations/northern-vietnam-5-day">
           <button className="book-now-btn">
             Book Now
           </button>

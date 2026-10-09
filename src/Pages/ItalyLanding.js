@@ -15,7 +15,7 @@ const ItalyLanding = () => {
         <div className="hero-content">
           <h1>Italy Highlights Tour</h1>
           <p>8 Days • 1 Country • 4 Cities</p>
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

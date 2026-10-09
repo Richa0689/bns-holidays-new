@@ -20,7 +20,7 @@ const ItalyLanding5 = () => {
             Ancient Wonders. Renaissance Beauty. Italian Adventures.
           </p>
 
-          <Link to="/italy">
+          <Link to="/destinations/italy">
             <button className="explore-btn">
               View Tours
             </button>

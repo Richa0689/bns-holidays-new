@@ -219,7 +219,7 @@ const SouthernVietnamLanding = () => {
             Ho Chi Minh City • Cu Chi Tunnels • Mekong Delta
           </p>
 
-          <Link to="/southern-vietnam">
+          <Link to="/destinations/southern-vietnam-4-day">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const SouthernVietnamLanding = () => {
 
         <br />
 
-        <Link to="/southern-vietnam">
+        <Link to="/destinations/southern-vietnam-4-day">
           <button className="book-now-btn">
             Book Now
           </button>

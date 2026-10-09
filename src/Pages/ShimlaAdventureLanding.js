@@ -15,7 +15,7 @@ const ShimlaAdventureLanding = () => {
         <div className="hero-content">
           <h1>Adventure Shimla Trip</h1>
           <p>Thrill. Nature. Adventure.</p>
-          <Link to="/shimla">
+          <Link to="/destinations/shimla">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

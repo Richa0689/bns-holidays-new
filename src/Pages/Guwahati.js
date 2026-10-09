@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Guwahati",
-    path: "/guwahati-landing",
+    path: "/destinations/guwahati-tours",
     days: "4 Days",
     countries: "India",
     cities: "Guwahati, Kamakhya Temple",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Guwahati & Shillong",
-    path: "/guwahati-shillong",
+    path: "/destinations/guwahati-shillong",
     days: "6 Days",
     countries: "India",
     cities: "Guwahati, Shillong",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Guwahati Trip",
-    path: "/guwahati-adventure",
+    path: "/destinations/guwahati-adventure",
     days: "4 Days",
     countries: "India",
     cities: "Guwahati",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Guwahati Tour",
-    path: "/luxury-guwahati",
+    path: "/destinations/luxury-guwahati",
     days: "7 Days",
     countries: "India",
     cities: "Guwahati, Kaziranga",

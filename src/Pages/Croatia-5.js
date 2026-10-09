@@ -19,7 +19,7 @@ const CroatiaLanding5 = () => {
             Zagreb • Plitvice Lakes • Zadar • Split • Hvar • Dubrovnik
           </p>
 
-          <Link to="/croatia">
+          <Link to="/destinations/croatia">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -91,7 +91,7 @@ const CroatiaLanding5 = () => {
 
         <br />
 
-        <Link to="/croatia">
+        <Link to="/destinations/croatia">
           <button className="book-now-btn">
             Book Now
           </button>

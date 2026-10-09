@@ -16,7 +16,7 @@ const BelgiumLanding = () => {
           <h1>From Windmills to the Eiffel</h1>
           <p>Amsterdam. Brussels. Paris. European Charm.</p>
 
-          <Link to="/belgium">
+          <Link to="/destinations/belgium">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

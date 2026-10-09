@@ -15,7 +15,7 @@ const AmalfiCoastLanding = () => {
         <div className="hero-content">
           <h1>Amalfi Coast Escape</h1>
           <p>Sea. Cliffs. Luxury.</p>
-          <Link to="/italy">
+          <Link to="/destinations/italy">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

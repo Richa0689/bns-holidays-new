@@ -21,7 +21,7 @@ const DenmarkLanding6 = () => {
             and breathtaking waterfront cities.
           </p>
 
-          <Link to="/denmark-landing1">
+          <Link to="/destinations/denmark-itineraries">
             <button className="explore-btn">
               View Tours
             </button>
@@ -92,7 +92,7 @@ const DenmarkLanding6 = () => {
 
         <br />
 
-        <Link to="/denmark-landing1">
+        <Link to="/destinations/denmark-itineraries">
           <button className="book-now-btn">
             Book Now
           </button>

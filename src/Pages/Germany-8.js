@@ -351,7 +351,7 @@ Private transfer from Berlin Hotel to Berlin Airport.
         <div className="hero-content">
           <h1>Best of Denmark & Germany</h1>
           <p>Scandinavian Charm. Romantic Castles. Bavarian Grandeur.</p>
-          <Link to="/germany-landing9">
+          <Link to="/destinations/denmark-germany-8-day-tour">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -396,7 +396,7 @@ Private transfer from Berlin Hotel to Berlin Airport.
         <h2>Explore the Best of Denmark & Germany</h2>
         <p>Book your Nordic & Bavarian adventure today — 07 Nights / 08 Days from ₹4,70,000</p>
         <br />
-        <Link to="/germany-landing9">
+        <Link to="/destinations/denmark-germany-8-day-tour">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -16,7 +16,7 @@ const BudapestLanding = () => {
           <h1>Budapest City Explorer</h1>
           <p>5 Days • 1 Country • 8 Dates • Europe’s Gem</p>
 
-          <Link to="/Pages/hungary">
+          <Link to="/destinations/hungary">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const BudapestLanding = () => {
         <p>Discover the heart of Hungary</p>
         <br />
 
-        <Link to="/Pages/hungary">
+        <Link to="/hungary">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

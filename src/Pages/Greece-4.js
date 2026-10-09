@@ -219,7 +219,7 @@ const BarcelonaIbizaMadridLanding = () => {
             Barcelona • Ibiza • Madrid • Toledo
           </p>
 
-          <Link to="/Best-Barcelona">
+          <Link to="/destinations/barcelona-ibiza-madrid-8-day">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const BarcelonaIbizaMadridLanding = () => {
 
         <br />
 
-        <Link to="/Best-Barcelona">
+        <Link to="/destinations/barcelona-ibiza-madrid-8-day">
           <button className="book-now-btn">
             Book Now
           </button>

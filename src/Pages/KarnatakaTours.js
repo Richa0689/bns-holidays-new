@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Bangalore",
-    path: "/bangalore-landing",
+    path: "/destinations/bangalore",
     days: "4 Days",
     countries: "India",
     cities: "Bangalore, Lalbagh",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Mysore ",
-    path: "/mysore-landing",
+    path: "/destinations/mysore",
     days: "4 Days",
     countries: "India",
     cities: "Mysore, Palace",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Coorg ",
-    path: "/coorg-landing",
+    path: "/destinations/coorg",
     days: "4 Days",
     countries: "India",
     cities: "Coorg, Coffee Estates",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Hampi ",
-    path: "/hampi-landing",
+    path: "/destinations/hampi",
     days: "4 Days",
     countries: "India",
     cities: "Hampi, Ruins",

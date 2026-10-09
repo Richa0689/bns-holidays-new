@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const belgiumTours = [
   {
     title: "From Windmills to the Eiffel 06 Nights/07 Days",
-    path: "/belgium-landing-1",
+    path: "/destinations/windmills-to-eiffel",
     days: "7 Days",
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam, Brussels & Paris",
@@ -16,7 +16,7 @@ const belgiumTours = [
   },
   {
     title: "Amsterdam to Paris Escape|| 08 Nights / 09 Days",
-    path: "/belgium-landing-2",
+    path: "/destinations/amsterdam-paris-escape",
     days: "9 Days",
     countries: "NETHERLANDS + BELGIUM + FRANCE",
     cities: "Amsterdam, Brussels, Ghent & Bruges",
@@ -27,7 +27,7 @@ const belgiumTours = [
   },
   {
     title: "Explore Brussels + Antwerp + Rotterdam||06 Nights / 07 Days",
-    path: "/belgium-landing-3",
+    path: "/destinations/brussels-antwerp-rotterdam",
     days: "7 Days",
     countries: "BELGIUM + NETHERLANDS",
     cities: "Brussels, Antwerp & Rotterdam",

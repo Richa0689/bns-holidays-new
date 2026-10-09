@@ -17,7 +17,7 @@ const NorthGoaPartyLanding = () => {
           <h1>North Goa Beach Party</h1>
           <p>Music • Beaches • Nightlife</p>
 
-          <Link to="/Pages/northgoa">
+          <Link to="/destinations/northgoa">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const NorthGoaPartyLanding = () => {
         <h2>Feel the Goa Nightlife</h2>
         <p>5 Days of music & fun</p><br />
 
-        <Link to="/Pages/northgoa">
+        <Link to="/northgoa">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

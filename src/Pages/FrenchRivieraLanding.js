@@ -15,7 +15,7 @@ const FrenchRivieraLanding = () => {
         <div className="hero-content">
           <h1>French Riviera Escape</h1>
           <p>Luxury. Beaches. Elegance.</p>
-          <Link to="/france">
+          <Link to="/destinations/france">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

@@ -15,7 +15,7 @@ const ThailandLuxuryLanding = () => {
         <div className="hero-content">
           <h1>Thailand Luxury Tour</h1>
           <p>Premium Stay. Private Tours. Elite Experience.</p>
-          <Link to="/thailand">
+          <Link to="/destinations/thailand">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const ThailandLuxuryLanding = () => {
       <div className="cta-section">
         <h2>Experience Luxury Thailand</h2>
         <p>Starting at ₹1,20,000 | EMI ₹5,500/month</p><br />
-        <Link to="/thailand">
+        <Link to="/destinations/thailand">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const hungaryTours = [
   {
     title: "Central Europe Escape: Budapest, Zagreb & Ljubljana",
-    path: "/hungary-landing2",
+    path: "/destinations/central-europe-budapest-zagreb-ljubljana-hungary",
     days: "8 Days",
     countries: "HUNGARY + CROATIA + SLOVENIA",
     cities: "Budapest, Zagreb, Ljubljana & Lake Balaton",
@@ -17,7 +17,7 @@ const hungaryTours = [
   },
   {
     title: "Budapest + Vienna + Prague || 06 Nights/07 Days",
-    path: "/hungary-landing3",
+    path: "/destinations/budapest-vienna-prague-7-day-hungary",
     days: "7 Days",
     countries: "HUNGARY + AUSTRIA + CZECH REPUBLIC",
     cities: "Budapest, Prague, Vienna & Lake Balaton",
@@ -29,7 +29,7 @@ const hungaryTours = [
   },
   {
     title: "Budapest + Vienna + Prague 08 Nights/09 Days",
-    path: "/hungary-landing4",
+    path: "/destinations/budapest-vienna-prague-9-day-hungary",
     days: "9 Days",
     countries: "HUNGARY + AUSTRIA + CZECH REPUBLIC",
     cities: " Budapest, Prague, Vienna",
@@ -41,7 +41,7 @@ const hungaryTours = [
   },
   {
     title: "Vienna + Budapest + Prague || 06 Nights/07 Days",
-    path: "/hungary-landing5",
+    path: "/destinations/vienna-budapest-prague-7-day-hungary",
     days: "7 Days",
     countries: "AUSTRIA + HUNGARY + CZECH REPUBLIC",
     cities: "Budapest, Prague, Vienna",
@@ -53,7 +53,7 @@ const hungaryTours = [
   },
   {
     title: "From Medieval Streets to Imperial Palaces || 9N/10D",
-    path: "/hungary-landing6",
+    path: "/destinations/medieval-streets-imperial-palaces-10-day-hungary",
     days: "10 Days",
     countries: "CZECH REPUBLIC + AUSTRIA + HUNGARY",
     cities: "Budapest, Prague, Vienna & Lake Balaton",

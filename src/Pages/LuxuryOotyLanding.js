@@ -17,7 +17,7 @@ const LuxuryOotyLanding = () => {
           <h1>Luxury Ooty Tour</h1>
           <p>Luxury • Hills • Premium Experience</p>
 
-          <Link to="/Pages/ooty">
+          <Link to="/destinations/ooty">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -69,7 +69,7 @@ const LuxuryOotyLanding = () => {
         <h2>Experience Luxury in Ooty</h2>
         <p>6 Days of comfort & elegance</p><br />
 
-        <Link to="/Pages/ooty">
+        <Link to="/ooty">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Manali",
-    path: "/manali-landing",
+    path: "/destinations/manali-tours",
     days: "5 Days",
     countries: "India",
     cities: "Manali, Solang Valley",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Manali & Rohtang Pass",
-    path: "/rohtang-landing",
+    path: "/destinations/rohtang",
     days: "6 Days",
     countries: "India",
     cities: "Manali, Rohtang Pass",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Adventure Manali Tour",
-    path: "/manali-adventure",
+    path: "/destinations/manali-adventure",
     days: "4 Days",
     countries: "India",
     cities: "Manali",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Manali Tour",
-    path: "/luxury-manali",
+    path: "/destinations/luxury-manali",
     days: "7 Days",
     countries: "India",
     cities: "Manali, Kasol",

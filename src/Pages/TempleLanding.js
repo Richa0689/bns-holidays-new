@@ -15,7 +15,7 @@ const TempleLanding = () => {
         <div className="hero-content">
           <h1>South India Temple Tour</h1>
           <p>Spiritual Journey. Divine Temples. Cultural Heritage.</p>
-          <Link to="/tamilnadu-tours">
+          <Link to="/destinations/tamilnadu-tours">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

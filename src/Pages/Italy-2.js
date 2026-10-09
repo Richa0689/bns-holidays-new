@@ -20,7 +20,7 @@ const ItalyLanding3 = () => {
             Roman History • Venetian Canals • Tuscan Beauty
           </p>
 
-          <Link to="/italy-landing">
+          <Link to="/destinations/italy-tours">
             <button className="explore-btn">
               View Tours
             </button>
@@ -101,7 +101,7 @@ const ItalyLanding3 = () => {
 
         <br />
 
-        <Link to="/italy-landing">
+        <Link to="/italy-tours">
           <button className="book-now-btn">
             Book Now
           </button>

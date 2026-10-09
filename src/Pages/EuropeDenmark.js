@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const denmarkTours = [
   {
     title: "Best of Copenhagen and Gothenburg|| 04 Nights/05 Days",
-    path: "/denmark-landing2",
+    path: "/destinations/copenhagen-gothenburg-5-day",
     days: "5 Days",
     countries: "DENMARK + SWEDEN",
     cities: "Copenhagen, Aarhus, Aalborg & Odense",
@@ -17,7 +17,7 @@ const denmarkTours = [
   },
   {
     title: "Best of Sweden || 04 Nights/05 Days",
-    path: "/denmark-landing3",
+    path: "/destinations/best-of-sweden-5-day",
     days: "5 Days",
     countries: "DENMARK + SWEDEN",
     cities: "Copenhagen, Malmö, Gothenburg & Aarhus",
@@ -29,7 +29,7 @@ const denmarkTours = [
   },
   {
     title: "Best of Denmark and Germany 07 Nights/08 Days",
-    path: "/denmark-landing4",
+    path: "/destinations/denmark-germany-8-day",
     days: "8 Days",
     countries: "DENMARK + GERMANY",
     cities: "Copenhagen, Oslo & Aarhus",
@@ -41,7 +41,7 @@ const denmarkTours = [
   },
   {
     title: "Glimpses of Denmark, Sweden & Germany 07 Nights/08 Days",
-    path: "/denmark-landing5",
+    path: "/destinations/denmark-sweden-germany-8-day",
     days: "8 Days",
     countries: "DENMARK + SWEDEN + GERMANY",
     cities: "Copenhagen, Oslo & Aarhus",
@@ -53,7 +53,7 @@ const denmarkTours = [
   },
    {
     title: "Explore Denmark, Sweden and Norway 07 Nights/08 Days",
-    path: "/denmark-landing6",
+    path: "/destinations/denmark-sweden-norway-8-day",
     days: "8 Days",
     countries: "DENMARK + SWEDEN + NORWAY",
     cities: "Copenhagen, Oslo & Aarhus",

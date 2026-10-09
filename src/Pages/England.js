@@ -12,7 +12,7 @@ const tours = [
     price: "₹2,10,000",
     emi: "₹9,500/mo",
     image: "https://escapetobritain.com/wp-content/uploads/2022/10/visit-liverpool_1925176130.jpeg",
-    link: "/UK-Escape"
+    link: "/destinations/london-newport-edinburgh"
   },
   {
     title: "Classic UK Escape: London, Cardiff & Manchester Highlights ",
@@ -22,7 +22,7 @@ const tours = [
     price: "₹1,80,000",
     emi: "₹8,200/mo",
     image: "https://tse4.mm.bing.net/th/id/OIP.Saquj4T9bb6TOlZpTxdbSQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/Cardiff-Manchester"
+    link: "/destinations/cardiff-manchester"
   },
   {
     title: "Classic UK Escape: London, Newport & Edinburgh Highlights  ",
@@ -32,7 +32,7 @@ const tours = [
     price: "₹1,95,000",
     emi: "₹8,800/mo",
     image: "https://tse3.mm.bing.net/th/id/OIP.vWjtn34PXpvp7bX3kKn6uAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/London-Newport"
+    link: "/destinations/london-newport"
   },
   {
     title: "Grand Britain Experience: England & Scotland Highlights",
@@ -43,7 +43,7 @@ const tours = [
     price: "₹1,60,000",
     emi: "₹7,500/mo",
     image: "https://www.marcieinmommyland.com/wp-content/uploads/2023/03/Carlton-Hill-in-Edinburgh.jpg",
-    link: "/Grand-Britain "
+    link: "/destinations/grand-britain-london-edinburgh"
   },
   {
     title: "Classic UK Explorer|",
@@ -54,7 +54,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://cdn.prod.website-files.com/6717e51a568b34f160a4e990/693139fb0dce5428e3809f73_60Classic_white_yacht_sailing_blue_ocean_vibrant_sunset_sky_1920x1080.webp",
-    link: "/Classic-UK"
+    link: "/destinations/classic-uk-london-manchester"
   },
   {
     title: "Classic Europe Escape: London & Amsterdam Highlights",
@@ -65,7 +65,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://www.flyingandtravel.com/wp-content/uploads/2018/06/things-to-do-in-amsterdam-travel-tips.jpg",
-    link: "/Classic-Europe"
+    link: "/destinations/classic-europe"
   },
   {
     title: " Classic UK Explorer",
@@ -76,7 +76,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://tse4.mm.bing.net/th/id/OIP.sMEeRpY6ddjho1ygjfQJCwHaDt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/classic-uK"
+    link: "/destinations/classic-uk-birmingham-manchester"
   },
   {
     title: "Grand Britain Experience: England & Scotland Highlights",
@@ -87,7 +87,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://media.vintrica.com/tr:f-auto/gb-bg.jpg",
-    link: "/Grand-Britain "
+    link: "/destinations/grand-britain-london-edinburgh-glasgow"
   },
   {
     title: "Explore London + Ireland Combination",
@@ -98,7 +98,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://tse1.mm.bing.net/th/id/OIP.NBdvC2RUFFwxPpxiF0W_ZQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    link: "/London-Ireland"
+    link: "/destinations/london-ireland"
   },
   {
     title: "British Isles Grand Discovery: London, Dublin & Belfast",
@@ -109,7 +109,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://intersightholidays.com/storage/package/1750242021685292e552766.webp",
-    link: "/Grand-Discovery"
+    link: "/destinations/grand-discovery"
   }
 ];
 

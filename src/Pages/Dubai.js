@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     title: "Best of Dubai",
-    path: "/dubai-landing",
+    path: "/destinations/dubai-tours",
     days: "6 Days",
     countries: "1 Country",
     cities: "2 Cities",
@@ -16,7 +16,7 @@ const tours = [
   },
   {
     title: "Dubai & Abu Dhabi",
-    path: "/dubai-abu",
+    path: "/destinations/dubai-abu",
     days: "5 Days",
     countries: "1 Country",
     cities: "2 Cities",
@@ -27,7 +27,7 @@ const tours = [
   },
   {
     title: "Desert Safari Special",
-    path: "/desert-safari",
+    path: "/destinations/desert-safari",
     days: "4 Days",
     countries: "1 Country",
     cities: "1 City",
@@ -38,7 +38,7 @@ const tours = [
   },
   {
     title: "Luxury Dubai Tour",
-    path: "/luxury-dubai",
+    path: "/destinations/luxury-dubai",
     days: "8 Days",
     countries: "1 Country",
     cities: "3 Cities",

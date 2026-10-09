@@ -216,7 +216,7 @@ const ViennaBudapestPragueLanding = () => {
           <h1>Vienna + Budapest + Prague</h1>
           <p>Historic Europe. Beautiful Architecture. Cultural Journey.</p>
 
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

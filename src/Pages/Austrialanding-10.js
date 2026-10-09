@@ -17,7 +17,7 @@ const PragueViennaBudapestLanding = () => {
           <h1>From Medieval Streets to Imperial Palaces</h1>
           <p>Prague • Vienna • Budapest | 9 Nights / 10 Days</p>
 
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

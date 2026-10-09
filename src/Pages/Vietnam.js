@@ -12,7 +12,7 @@ const tours = [
     price: "₹2,10,000",
     emi: "₹9,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtzsn6kFlgw9fkYpf6Uw5WFB-NaKbick5O8DBrCWnTV5rsVbAlHCNZxDsM&s=10",
-    link: "/vietnam-Tour"
+    link: "/destinations/vietnam-tour"
   },
   {
     title: "Northen Vietnam",
@@ -22,7 +22,7 @@ const tours = [
     price: "₹1,80,000",
     emi: "₹8,200/mo",
     image: "https://www.pelago.com/img/products/VN-Vietnam/highlights-of-northern-vietnam-in-6-days/fea5b27a-74a7-4049-b753-d7fa8f68dc6d_highlights-of-northern-vietnam-in-6-days.jpg",
-    link: "/Northen-vietnam"
+    link: "/destinations/northern-vietnam-4-day"
   },
   {
     title: "Northern Vietnam",
@@ -32,7 +32,7 @@ const tours = [
     price: "₹1,95,000",
     emi: "₹8,800/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRgBb26rtXfMO_NAuGnJft-4dbdl2lsvC_-NDuivdBTmoUH1kLi4YxFok&s=10",
-    link: "/northen-vietnam"
+    link: "/destinations/northern-vietnam-5-day"
   },
   {
     title: "Southern Vietnam",
@@ -42,7 +42,7 @@ const tours = [
     price: "₹1,60,000",
     emi: "₹7,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKKEN_SmAZ0C7lD_2IvS8hx1lvTYzSTYhKHmAZprJLUYqmC4_w2fYT7hpf&s=10",
-    link: "/Southern-Vietnam"
+    link: "/destinations/southern-vietnam-5-day"
   },
   {
     title: "Southern Vietnam",
@@ -53,7 +53,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_fB5u5Cs7Gos8VS1gPvaihtHTjTYQ4AFTSLEdsOsltNYhsL-pVAksxY&s=10",
-    link: "/southern-vietnam"
+    link: "/destinations/southern-vietnam-4-day"
   },
   {
     title: "Taste of Vietnam",
@@ -64,7 +64,7 @@ const tours = [
     price: "₹2,80,000",
     emi: "₹12,500/mo",
     image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/80/97/86/taste-of-saigon.jpg?w=1200&h=1200&s=1",
-    link: "/Taste of-vietnam"
+    link: "/destinations/taste-of-vietnam"
   },
   {
     title: "Vietnam & Cambodia",
@@ -75,7 +75,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS25st3vCqmNJ5PykvXijF-MOFimjSjMMOy1IzNcgOUC__W0B7c82nkPBT&s=10",
-    link: "/Vietnam-Cambodia"
+    link: "/destinations/vietnam-cambodia"
   },
   {
     title: "Vietnam At A Glance",
@@ -86,7 +86,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://static.wixstatic.com/media/773844_47a30137b7d54540ab3d7adf4e1bc365~mv2.jpg/v1/fill/w_568,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/773844_47a30137b7d54540ab3d7adf4e1bc365~mv2.jpg",
-    link: "/Vietnam-Glances"
+    link: "/destinations/vietnam-glances"
   },
   {
     title: "Amazing Vietnam",
@@ -97,7 +97,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwhaaQgUr4oJB1mvR1BOQwy66YfTwTyCSjle0jK-igeOp42c02tXFSpdk&s=10",
-    link: "/Amazing-Vietnam"
+    link: "/destinations/amazing-vietnam"
   },
   {
     title: "Cambodia- Explore Siam Reap",
@@ -108,7 +108,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Sac0Dlv7Uj1sIcqnbanR8e-agWQKoPDhrNYxGi0yNNgcdvK5cJkXIrs&s=10",
-    link: "/Cambodia- Explore Siam Reap"
+    link: "/destinations/cambodia-explore-siam-reap"
   },
   {
     title: "Central Vietnam",
@@ -119,7 +119,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3iXXZZeqzZCzzqqwQW7tuzrOGLuFHSTwixcId23vpKdRMfAYpIvhImpE&s=10",
-    link: "/Central Vietnam"
+    link: "/destinations/central-vietnam"
   },
   {
     title: "Central Vietnam",
@@ -130,7 +130,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/3f/8d.jpg",
-    link: "/Vietnam-Central"
+    link: "/destinations/vietnam-central"
   },
   {
     title: "Essence of Vietnam",
@@ -141,7 +141,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5bFjvnmNxytJXu3TeWEtWO3i2R8dzmXJS6r_QmcNTNY14yc7LSsqicrm&s=10",
-    link: "/Essence-Vietnam"
+    link: "/destinations/essence-vietnam"
   },
   {
     title: "Highlights of Vietnam",
@@ -152,7 +152,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfheMwzI4eCBxIPtH4QANitzqlBHRRyjG7mL-kGcEG--VDMjcw_XGOSg&s=10",
-    link: "/Highlights-Vietnam"
+    link: "/destinations/highlights-vietnam"
   },
   {
     title: "Laos Short Escape",
@@ -163,7 +163,7 @@ const tours = [
     price: "₹2,80,000 ",
     emi: "₹12,500/mo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXF3C4uDm26B_-7XMQLFaxYCXDyWHjb4Q0r72BaoVTjW7AIXGWzmrSRX-&s=10",
-    link: "/Laos-Escape"
+    link: "/destinations/laos-escape"
   }
 ];
 

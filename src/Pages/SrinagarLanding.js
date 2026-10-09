@@ -15,7 +15,7 @@ const SrinagarLanding = () => {
         <div className="hero-content">
           <h1>Best of Srinagar</h1>
           <p>Paradise on Earth. Lakes. Mountains.</p>
-          <Link to="/srinagar">
+          <Link to="/destinations/srinagar">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

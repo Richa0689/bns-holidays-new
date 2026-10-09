@@ -65,13 +65,13 @@ const Spiti = () => {
           <div className="tour-info">
             <h2>
               {tour.title === "Best of Spiti Valley" ? (
-                <Link to="/spiti-landing" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/spiti-tours" className="title-link">{tour.title}</Link>
               ) : tour.title === "Spiti Adventure Trip" ? (
-                <Link to="/spiti-adventure" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/spiti-adventure" className="title-link">{tour.title}</Link>
               ) : tour.title === "Chandratal Lake Tour" ? (
-                <Link to="/chandratal" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/chandratal" className="title-link">{tour.title}</Link>
               ) : tour.title === "Luxury Spiti Tour" ? (
-                <Link to="/luxury-spiti" className="title-link">{tour.title}</Link>
+                <Link to="/destinations/luxury-spiti" className="title-link">{tour.title}</Link>
               ) : (
                 tour.title
               )}

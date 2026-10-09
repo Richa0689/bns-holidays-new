@@ -219,7 +219,7 @@ const LaosEscape = () => {
             Vientiane • Luang Prabang • Kuang Si Falls • Mekong River
           </p>
 
-          <Link to="/Laos-Escape">
+          <Link to="/destinations/laos-escape">
             <button className="explore-btn">
               Explore Tour
             </button>
@@ -290,7 +290,7 @@ const LaosEscape = () => {
 
         <br />
 
-        <Link to="/Laos-Escape">
+        <Link to="/destinations/laos-escape">
           <button className="book-now-btn">
             Book Now
           </button>

@@ -310,7 +310,7 @@ const KenyaWildEscapade = () => {
         <h2>Explore Kenya's Wild Beauty</h2>
         <p>Book your safari adventure today</p>
         <br />
-        <Link to="/kenya">
+        <Link to="/destinations/kenya">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

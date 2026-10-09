@@ -18,7 +18,7 @@ const SwissAlpsLanding = () => {
           <h1>Swiss Alps Tour</h1>
           <p>Snow. Mountains. Adventure.</p>
         
-        <Link to="/Pages/swiss-alps">
+        <Link to="/destinations/swiss-alps">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>

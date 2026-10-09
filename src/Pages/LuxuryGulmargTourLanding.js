@@ -16,7 +16,7 @@ const LuxuryGulmargTourLanding = () => {
           <h1>Luxury Gulmarg Tour</h1>
           <p>Premium Kashmir Experience with Snow & Valleys</p>
 
-          <Link to="/gulmarg">
+          <Link to="/destinations/gulmarg">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -81,7 +81,7 @@ const LuxuryGulmargTourLanding = () => {
         <p>7 Days of premium travel experience</p>
         <br />
 
-        <Link to="/gulmarg">
+        <Link to="/destinations/gulmarg">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

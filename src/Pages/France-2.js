@@ -347,7 +347,7 @@ Your memorable France & Switzerland journey comes to an end with beautiful Alpin
         <div className="hero-content">
           <h1>Best of Swiss & France</h1>
           <p>Parisian Grandeur. Swiss Alpine Elegance. Timeless Beauty.</p>
-          <Link to="/france-landing3">
+          <Link to="/destinations/best-swiss-france-8-day">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -392,7 +392,7 @@ Your memorable France & Switzerland journey comes to an end with beautiful Alpin
         <h2>Experience the Best of France & Switzerland</h2>
         <p>Book your European adventure today — 07 Nights / 08 Days from ₹3,20,000</p>
         <br />
-        <Link to="/france-landing3">
+        <Link to="/destinations/best-swiss-france-8-day">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

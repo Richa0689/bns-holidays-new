@@ -15,7 +15,7 @@ const LuxuryEuropeLanding = () => {
         <div className="hero-content">
           <h1>Luxury Europe Tour</h1>
           <p>12 Days • 6 Countries • 10 Cities</p>
-          <Link to="/europe">
+          <Link to="/destinations/europe">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
@@ -64,7 +64,7 @@ const LuxuryEuropeLanding = () => {
       <div className="cta-section">
         <h2>Experience Luxury Europe</h2>
         <p>Starting from ₹3,20,000</p><br />
-        <Link to="/europe">
+        <Link to="/destinations/europe">
           <button className="book-now-btn">Book Now</button>
         </Link>
       </div>

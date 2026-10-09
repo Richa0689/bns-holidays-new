@@ -22,7 +22,7 @@ const DenmarkLanding2 = () => {
             canals, historic streets, Nordic culture, and modern design.
           </p>
 
-          <Link to="/denmark-landing1">
+          <Link to="/destinations/denmark-itineraries">
             <button className="explore-btn">
               View Tours
             </button>
@@ -93,7 +93,7 @@ const DenmarkLanding2 = () => {
 
         <br />
 
-        <Link to="/denmark-landing1">
+        <Link to="/destinations/denmark-itineraries">
           <button className="book-now-btn">
             Book Now
           </button>

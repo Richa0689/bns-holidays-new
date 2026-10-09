@@ -16,7 +16,7 @@ const LuxuryManaliLanding = () => {
           <h1>Luxury Manali Tour</h1>
           <p>7 Days • Manali & Kasol • Premium Himalayan Experience</p>
 
-          <Link to="/manali">
+          <Link to="/destinations/manali">
             <button className="explore-btn">View Tours</button>
           </Link>
         </div>
