@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-09T11:10:00+05:30",
+  "generatedOnPlatform": "win32",
+  "projectType": "webapp",
+  "devServer": {
+    "command": "npm",
+    "args": ["start"],
+    "env": {
+      "CI": "true",
+      "PORT": "4189"
+    },
+    "url": "http://localhost:4189/",
+    "readyTimeoutSeconds": 120
+  },
+  "setup": [
+    {
+      "command": "npm",
+      "args": ["ci"],
+      "timeoutSeconds": 600
+    }
+  ],
+  "assertions": [
+    {
+      "name": "production-build",
+      "kind": "process",
+      "command": "npm",
+      "args": ["run", "build"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 300
+    },
+    {
+      "name": "tests-pass",
+      "kind": "process",
+      "command": "npm",
+      "args": ["test", "--", "--watchAll=false", "--runInBand"],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 300
+    },
+    {
+      "name": "flight-trip-types",
+      "kind": "playwright-route",
+      "scriptPath": ".tsupgrader/runtime-validation/playwright-scripts/flight-trip-types.spec.ts",
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 180
+    }
+  ]
+}

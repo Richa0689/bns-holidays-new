@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import FlightResults from "../components/FlightResults";
 import BookingRequestModal from "../components/BookingRequestModal";
@@ -17,16 +17,31 @@ export default function FlightResultsPage() {
   const from = searchParams.get("from") || "";
   const to = searchParams.get("to") || "";
   const date = searchParams.get("date") || "";
+  const tripType = searchParams.get("tripType") || "oneway";
+  const returnDate = searchParams.get("returnDate") || "";
+  const routesParam = searchParams.get("routes") || "";
+  const routes = useMemo(() => {
+    try {
+      const parsedRoutes = JSON.parse(routesParam);
+      if (Array.isArray(parsedRoutes)) {
+        const validRoutes = parsedRoutes.filter((route) => route?.from && route?.to && route?.date);
+        if (validRoutes.length) return validRoutes;
+      }
+    } catch (parseError) {
+      if (routesParam) console.error("Invalid flight route details in search URL.", parseError);
+    }
+    return from && to && date ? [{ from, to, date }] : [];
+  }, [routesParam, from, to, date]);
   const adults = searchParams.get("adults") || "1";
   const children = searchParams.get("children") || "0";
   const infants = searchParams.get("infants") || "0";
   const cabinClass = searchParams.get("cabinClass") || "ECONOMY";
 
   useEffect(() => {
-    if (!from || !to || !date) return;
+    if (!routes.length) return;
     setLoading(true);
     setError(null);
-    searchFlights({ from, to, date, adults: Number(adults), children: Number(children), infants: Number(infants), cabinClass })
+    searchFlights({ from, to, date, routes, adults: Number(adults), children: Number(children), infants: Number(infants), cabinClass })
       .then((data) => {
         console.log("Flight API Response:", data);
         let flightList = [];
@@ -40,7 +55,7 @@ export default function FlightResultsPage() {
       })
       .catch((err) => setError(err.message || "Something went wrong."))
       .finally(() => setLoading(false));
-  }, [from, to, date, adults, children, infants, cabinClass]);
+  }, [from, to, date, routes, routesParam, adults, children, infants, cabinClass]);
 
   return (
     <>
@@ -55,6 +70,9 @@ export default function FlightResultsPage() {
         children={children}
         infants={infants}
         cabinClass={cabinClass}
+        tripType={tripType}
+        returnDate={returnDate}
+        routes={routes}
         onBookClick={(flight) => setSelected(flight)}
         onNewSearch={() => navigate("/flights")}
       />

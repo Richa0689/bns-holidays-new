@@ -212,7 +212,15 @@ export default function FlightSearchForm({ onSearch }) {
   const [from, setFrom] = useState(AIRPORTS.find((airport) => airport[2] === "BOM"));
   const [to, setTo] = useState(AIRPORTS.find((airport) => airport[2] === "DEL"));
   const [date, setDate] = useState("");
-  const [calendarOpen, setCalendarOpen] = useState(false);
+  const [returnDate, setReturnDate] = useState("");
+  const [tripType, setTripType] = useState("oneway");
+  const [calendarOpen, setCalendarOpen] = useState(null);
+  const [multiRoutes, setMultiRoutes] = useState([
+    { id: 1, from: AIRPORTS.find((airport) => airport[2] === "BOM"), to: AIRPORTS.find((airport) => airport[2] === "DEL"), date: "" },
+    { id: 2, from: AIRPORTS.find((airport) => airport[2] === "DEL"), to: AIRPORTS.find((airport) => airport[2] === "DXB"), date: "" },
+  ]);
+  const nextRouteId = useRef(3);
+  const [formError, setFormError] = useState("");
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
   const [infants, setInfants] = useState(0);
@@ -221,24 +229,92 @@ export default function FlightSearchForm({ onSearch }) {
   const updateCount = (key, value) => ({ adults: setAdults, children: setChildren, infants: setInfants }[key](value));
 
   const swap = () => { setFrom(to); setTo(from); };
+  const updateMultiRoute = (id, changes) => {
+    setMultiRoutes((routes) => routes.map((route) => route.id === id ? { ...route, ...changes } : route));
+  };
+  const addMultiRoute = () => {
+    setMultiRoutes((routes) => {
+      if (routes.length >= 5) return routes;
+      const previous = routes[routes.length - 1];
+      const destination = AIRPORTS.find((airport) => airport[2] !== previous.to[2]);
+      return [...routes, { id: nextRouteId.current++, from: previous.to, to: destination, date: "" }];
+    });
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSearch({ from: from[2], to: to[2], date, adults, children, infants, cabinClass });
+    const routes = tripType === "multicity"
+      ? multiRoutes
+      : [
+        { from, to, date },
+        ...(tripType === "roundtrip" ? [{ from: to, to: from, date: returnDate }] : []),
+      ];
+    if (routes.some((route) => !route.date)) {
+      setFormError("Choose a date for each flight leg.");
+      return;
+    }
+    if (routes.some((route) => route.from[2] === route.to[2])) {
+      setFormError("Each flight leg must have different origin and destination airports.");
+      return;
+    }
+    if (tripType === "roundtrip" && returnDate < date) {
+      setFormError("Return date must be on or after the departure date.");
+      return;
+    }
+    if (tripType === "multicity" && routes.some((route, index) => index > 0 && route.date < routes[index - 1].date)) {
+      setFormError("Multi-city flight dates must be in travel order.");
+      return;
+    }
+    setFormError("");
+    onSearch({
+      tripType,
+      routes: routes.map((route) => ({ from: route.from[2], to: route.to[2], date: route.date })),
+      from: routes[0].from[2],
+      to: routes[0].to[2],
+      date: routes[0].date,
+      returnDate: tripType === "roundtrip" ? returnDate : "",
+      adults,
+      children,
+      infants,
+      cabinClass,
+    });
   };
 
   return (
     <section className="flight-search-card" aria-label="Flight search">
       <div className="flight-search-card-head"><span className="flight-search-tab">FLIGHTS</span></div>
-      <form onSubmit={handleSubmit} className="flight-search-form">
-        <div className="flight-route-fields">
-          <AirportField id="f-from" label="Where from?" airport={from} onSelect={setFrom} />
-          <button type="button" className="flight-swap-button" aria-label="Swap origin and destination" title="Swap airports" onClick={swap}><span aria-hidden="true">&#8644;</span></button>
-          <AirportField id="f-to" label="Where to?" airport={to} onSelect={setTo} />
-        </div>
-        <HotelDatePicker id="f-date" label="Departure" value={date} minDate={today} open={calendarOpen} portal className="flight-control" onToggle={() => setCalendarOpen((current) => !current)} onClose={() => setCalendarOpen(false)} onSelect={(value) => { setDate(value); setCalendarOpen(false); }} onClear={() => { setDate(""); setCalendarOpen(false); }} />
+      <div className="flight-trip-types" role="group" aria-label="Trip type">
+        {[
+          ["oneway", "One way"],
+          ["roundtrip", "Round trip"],
+          ["multicity", "Multicity"],
+        ].map(([value, label]) => <button key={value} type="button" aria-pressed={tripType === value} className={tripType === value ? "selected" : ""} onClick={() => { setTripType(value); setFormError(""); setCalendarOpen(null); }}>{label}</button>)}
+      </div>
+      <form onSubmit={handleSubmit} className={`flight-search-form${tripType === "multicity" ? " is-multicity" : ""}${tripType === "roundtrip" ? " is-roundtrip" : ""}`}>
+        {tripType === "multicity" ? <>
+          <div className="flight-multi-routes">
+            {multiRoutes.map((route, index) => <div className="flight-multi-route" key={route.id}>
+              <AirportField id={`f-multi-from-${route.id}`} label={`Flight ${index + 1} from`} airport={route.from} onSelect={(airport) => updateMultiRoute(route.id, { from: airport })} />
+              <AirportField id={`f-multi-to-${route.id}`} label="Where to?" airport={route.to} onSelect={(airport) => updateMultiRoute(route.id, { to: airport })} />
+              <HotelDatePicker id={`f-multi-date-${route.id}`} label="Departure" value={route.date} minDate={index ? multiRoutes[index - 1].date || today : today} open={calendarOpen === `route-${route.id}`} portal className="flight-control" onToggle={() => setCalendarOpen((current) => current === `route-${route.id}` ? null : `route-${route.id}`)} onClose={() => setCalendarOpen(null)} onSelect={(value) => { updateMultiRoute(route.id, { date: value }); setCalendarOpen(null); }} onClear={() => { updateMultiRoute(route.id, { date: "" }); setCalendarOpen(null); }} />
+              {multiRoutes.length > 2 && <button type="button" className="flight-remove-leg" aria-label={`Remove flight ${index + 1}`} onClick={() => setMultiRoutes((routes) => routes.filter((item) => item.id !== route.id))}>Remove</button>}
+            </div>)}
+            <button type="button" className="flight-add-leg" disabled={multiRoutes.length >= 5} onClick={addMultiRoute}>+ Add another flight</button>
+          </div>
+        </> : <>
+          <div className="flight-route-fields">
+            <AirportField id="f-from" label="Where from?" airport={from} onSelect={setFrom} />
+            <button type="button" className="flight-swap-button" aria-label="Swap origin and destination" title="Swap airports" onClick={swap}><span aria-hidden="true">&#8644;</span></button>
+            <AirportField id="f-to" label="Where to?" airport={to} onSelect={setTo} />
+          </div>
+          <div className={`flight-date-fields${tripType === "roundtrip" ? " is-roundtrip" : ""}`}>
+            <HotelDatePicker id="f-date" label="Departure" value={date} minDate={today} open={calendarOpen === "departure"} portal className="flight-control" onToggle={() => setCalendarOpen((current) => current === "departure" ? null : "departure")} onClose={() => setCalendarOpen(null)} onSelect={(value) => { setDate(value); if (returnDate && returnDate < value) setReturnDate(""); setCalendarOpen(null); }} onClear={() => { setDate(""); setCalendarOpen(null); }} />
+            {tripType === "roundtrip" && <HotelDatePicker id="f-return-date" label="Return" value={returnDate} minDate={date || today} open={calendarOpen === "return"} portal className="flight-control" onToggle={() => setCalendarOpen((current) => current === "return" ? null : "return")} onClose={() => setCalendarOpen(null)} onSelect={(value) => { setReturnDate(value); setCalendarOpen(null); }} onClear={() => { setReturnDate(""); setCalendarOpen(null); }} />}
+          </div>
+        </>}
         <PassengerPicker adults={adults} children={children} infants={infants} cabinClass={cabinClass} onCountChange={updateCount} onCabinChange={setCabinClass} />
         <button type="submit" className="flight-search-submit">Search flights</button>
       </form>
+      {formError && <p className="flight-search-error" role="alert">{formError}</p>}
     </section>
   );
 }

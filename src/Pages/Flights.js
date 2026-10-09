@@ -7,7 +7,11 @@ export default function Flights() {
   const navigate = useNavigate();
 
   const handleSearch = (params) => {
-    const query = new URLSearchParams(params).toString();
+    const { routes, ...searchParams } = params;
+    const query = new URLSearchParams({
+      ...searchParams,
+      routes: JSON.stringify(routes),
+    }).toString();
     navigate(`/flights/results?${query}`);
   };
 

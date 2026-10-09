@@ -1,0 +1,113 @@
+{
+  "planHash": "a130988f25f596791791d7093047c8f5c65f8cf5952b3c19ea3372ce17cf8b47",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-10-09T06:17:35.3762450Z",
+  "retryCount": 1,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 44052,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E bns_holidays@0.1.0 build\r\n\u003E react-scripts build\r\n\r\n(node:10248) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead\r\n(Use \u0060node --trace-deprecation ...\u0060 to show where the warning was created)\r\nCreating an optimized production build...\r\nBrowserslist: browsers data (caniuse-lite) is 7 months old. Please run:\r\n  npx update-browserslist-db@latest\r\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\r\nBrowserslist: browsers data (caniuse-lite) is 7 months old. Please run:\r\n  npx update-browserslist-db@latest\r\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\r\nCompiled with warnings.\r\n\r\n[eslint] \r\nsrc\\App.js\r\n  Line 311:8:  \u0027CzechRepublic\u0027 is defined but never used   no-unused-vars\r\n  Line 312:8:  \u0027CzechRepublic1\u0027 is defined but never used  no-unused-vars\r\n  Line 313:8:  \u0027CzechRepublic2\u0027 is defined but never used  no-unused-vars\r\n  Line 314:8:  \u0027CzechRepublic3\u0027 is defined but never used  no-unused-vars\r\n  Line 315:8:  \u0027CzechRepublic4\u0027 is defined but never used  no-unused-vars\r\n  Line 316:8:  \u0027CzechRepublic5\u0027 is defined but never used  no-unused-vars\r\n\r\nsrc\\Pages\\BangkokPattayaLanding.js\r\n  Line 30:13:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 35:13:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 40:13:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 45:13:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 79:13:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 89:13:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 98:13:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 108:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 119:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 127:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 136:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n\r\nsrc\\Pages\\BestofSingapore.js\r\n  Line 210:9:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 225:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 229:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 233:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 237:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 270:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 279:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 288:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 297:13:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text\r\n  Line 306:13:  img element\n\u2026[truncated]",
+        "durationMs": 68987
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 1,
+        "outputSample": "\r\n\u003E bns_holidays@0.1.0 test\r\n\u003E react-scripts test --watchAll=false --runInBand\r\n\r\nFAIL src/App.test.js\r\n  \u25CF Test suite failed to run\r\n\r\n    Cannot find module \u0027react-router-dom\u0027 from \u0027src/App.js\u0027\r\n\r\n    Require stack:\r\n      src/App.js\r\n      src/App.test.js\r\n\r\n    \u001B[0m \u001B[90m 1 |\u001B[39m \u001B[36mimport\u001B[39m \u001B[32m\u0027./App.css\u0027\u001B[39m\u001B[33m;\u001B[39m\r\n    \u001B[31m\u001B[1m\u003E\u001B[22m\u001B[39m\u001B[90m 2 |\u001B[39m \u001B[36mimport\u001B[39m { \u001B[33mHashRouter\u001B[39m \u001B[36mas\u001B[39m \u001B[33mRouter\u001B[39m\u001B[33m,\u001B[39m \u001B[33mRoutes\u001B[39m\u001B[33m,\u001B[39m \u001B[33mRoute\u001B[39m } \u001B[36mfrom\u001B[39m \u001B[32m\u0022react-router-dom\u0022\u001B[39m\u001B[33m;\u001B[39m\r\n     \u001B[90m   |\u001B[39m \u001B[31m\u001B[1m^\u001B[22m\u001B[39m\r\n     \u001B[90m 3 |\u001B[39m \u001B[36mimport\u001B[39m { \u001B[33mHelmetProvider\u001B[39m } \u001B[36mfrom\u001B[39m \u001B[32m\u0022react-helmet-async\u0022\u001B[39m\u001B[33m;\u001B[39m \r\n     \u001B[90m 4 |\u001B[39m \u001B[36mimport\u001B[39m \u001B[33mSEO\u001B[39m \u001B[36mfrom\u001B[39m \u001B[32m\u0022./components/SEO\u0022\u001B[39m\u001B[33m;\u001B[39m\r\n     \u001B[90m 5 |\u001B[39m\u001B[0m\r\n\r\n      at Resolver.resolveModule (node_modules/jest-resolve/build/resolver.js:324:11)\r\n      at Object.\u003Canonymous\u003E (src/App.js:2:1)\r\n      at Object.\u003Canonymous\u003E (src/App.test.js:2:1)\r\n      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)\r\n      at runJest (node_modules/@jest/core/build/runJest.js:404:19)\r\n      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)\r\n      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)\r\n\r\nTest Suites: 1 failed, 1 total\r\nTests:       0 total\r\nSnapshots:   0 total\r\nTime:        18.632 s\r\nRan all test suites.\r\n",
+        "durationMs": 25333,
+        "testResults": {
+          "testFramework": "jest",
+          "runnerDetectedFrom": "output_banner",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": false
+        }
+      },
+      {
+        "name": "flight-trip-types",
+        "kind": "playwright-route",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\nRunning 1 test using 1 worker\r\n\r\n[1/1] playwright-scripts\\flight-trip-types.spec.ts:5:5 \u203A flight-trip-types\r\n  1 passed (12.0s)\r\n",
+        "durationMs": 12891
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "ci"
+        ],
+        "cwd": "D:\\bns-holidays-new-2",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "devServer",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "start"
+        ],
+        "cwd": "D:\\bns-holidays-new-2",
+        "env": {
+          "CI": "true",
+          "PORT": "4189"
+        },
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "D:\\bns-holidays-new-2",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "test",
+          "--",
+          "--watchAll=false",
+          "--runInBand"
+        ],
+        "cwd": "D:\\bns-holidays-new-2",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}

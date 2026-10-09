@@ -132,7 +132,52 @@
   letter-spacing: .06em;
 }
 
+.flight-hero .flight-trip-types {
+  display: flex;
+  gap: 5px;
+  margin: 0 0 10px 2px;
+}
+
+.flight-hero .flight-trip-types button {
+  min-height: 30px;
+  padding: 0 13px;
+  border: 1px solid rgba(7, 84, 154, .2);
+  border-radius: 999px;
+  color: #315675;
+  background: #edf3f8;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.flight-hero .flight-trip-types button.selected {
+  border-color: #07549a;
+  color: #fff;
+  background: #07549a;
+}
+
 .flight-hero .flight-search-form { gap: 9px; }
+.flight-hero .flight-search-form.is-roundtrip { grid-template-columns: minmax(290px, 2fr) minmax(280px, 1.8fr) minmax(160px, 1fr) auto; }
+.flight-hero .flight-date-fields { display: grid; min-width: 0; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+.flight-hero .flight-date-fields.is-roundtrip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.flight-hero .flight-multi-routes { display: grid; grid-column: 1 / -1; gap: 8px; }
+.flight-hero .flight-multi-route { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(150px, .7fr) auto; gap: 8px; align-items: center; }
+.flight-hero .flight-multi-route .flight-control { height: 62px; }
+.flight-hero .flight-remove-leg,
+.flight-hero .flight-add-leg {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid #cbd9e6;
+  border-radius: 7px;
+  color: #07549a;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.flight-hero .flight-add-leg { justify-self: start; }
+.flight-hero .flight-add-leg:disabled { opacity: .55; cursor: default; }
+.flight-hero .flight-search-error { margin: 8px 2px 0; color: #a92323; font-size: 12px; font-weight: 700; }
 
 .flight-hero .flight-control {
   height: 62px;
@@ -189,7 +234,11 @@
   .flight-hero { min-height: 470px; padding: 46px 20px; }
   .flight-hero-copy { max-width: 530px; }
   .flight-hero .flight-search-form { grid-template-columns: minmax(0, 1fr) minmax(150px, .8fr); }
+  .flight-hero .flight-search-form.is-roundtrip { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .flight-hero .flight-route-fields { grid-column: 1 / -1; }
+  .flight-hero .flight-date-fields { grid-column: auto; grid-template-columns: minmax(0, 1fr); }
+  .flight-hero .flight-date-fields.is-roundtrip { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flight-hero .flight-multi-route { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .flight-hero .flight-search-submit { min-height: 62px; }
 }
 
@@ -201,7 +250,11 @@
   .flight-hero-route { top: 27px; right: 19px; width: 80px; opacity: .6; }
   .flight-hero .flight-search-card { padding: 11px; border-radius: 12px; }
   .flight-hero .flight-search-form { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .flight-hero .flight-search-form.is-roundtrip { grid-template-columns: minmax(0, 1fr); }
   .flight-hero .flight-route-fields { grid-column: auto; grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr); }
+  .flight-hero .flight-date-fields,
+  .flight-hero .flight-date-fields.is-roundtrip { grid-column: auto; grid-template-columns: minmax(0, 1fr); }
+  .flight-hero .flight-multi-route { grid-template-columns: minmax(0, 1fr); }
   .flight-hero .flight-route-fields .flight-control { height: 58px; padding: 8px; border: 1px solid #dce6f0; border-radius: 8px; }
   .flight-hero .flight-control { height: 58px; }
   .flight-hero .flight-search-submit { min-height: 49px; }

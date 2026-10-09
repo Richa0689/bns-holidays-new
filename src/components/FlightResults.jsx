@@ -66,7 +66,7 @@ function normalizeFlight(flight, index) {
 
 function stopLabel(count) { return count === 0 ? "Non-stop" : count === 1 ? "1 Stop" : count === 2 ? "2 Stops" : "3+"; }
 
-export default function FlightResults({ flights, loading, error, onBookClick, from, to, date, adults, children, infants, cabinClass, tripType, onNewSearch }) {
+export default function FlightResults({ flights, loading, error, onBookClick, from, to, date, adults, children, infants, cabinClass, tripType, returnDate, routes, onNewSearch }) {
   const [maxPrice, setMaxPrice] = useState(null);
   const [selectedStops, setSelectedStops] = useState([]);
   const [departBuckets, setDepartBuckets] = useState([]);
@@ -108,14 +108,19 @@ export default function FlightResults({ flights, loading, error, onBookClick, fr
   const cabinLabel = cabinClass === "PREMIUM_ECONOMY" ? "PREMIUM ECONOMY" : (cabinClass || "ECONOMY").replaceAll("_", " ");
   const paxLabel = `${adults || 1} Adult${Number(adults) === 1 ? "" : "s"}${Number(children) ? `, ${children} Child${Number(children) === 1 ? "" : "ren"}` : ""}${Number(infants) ? `, ${infants} Infant${Number(infants) === 1 ? "" : "s"}` : ""}`;
   const readableDate = date ? new Intl.DateTimeFormat("en", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`)) : "";
+  const routeSummary = routes?.length ? routes.map((route) => `${route.from} → ${route.to}`).join(" · ") : `${from} → ${to}`;
+  const dateSummary = routes?.length
+    ? routes.map((route) => new Intl.DateTimeFormat("en", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${route.date}T12:00:00Z`))).join(" · ")
+    : readableDate;
+  const tripLabel = tripType === "roundtrip" ? "Round trip" : tripType === "multicity" ? "Multicity" : "One way";
 
   if (loading) return <SearchProgress type="flight" />;
   if (error) return <p className="tui-error">{error}</p>;
 
   return <div className="tui-flight-results-page">
     <header className="tui-flight-search-summary">
-      <div><span>Route</span><strong>{from} → {to}</strong></div>
-      <div><span>Departure date</span><strong>{readableDate}</strong></div>
+      <div><span>{tripLabel}</span><strong>{routeSummary}</strong></div>
+      <div><span>{tripType === "oneway" ? "Departure date" : "Travel dates"}</span><strong>{dateSummary}{tripType === "roundtrip" && returnDate && (routes?.length || 0) < 2 ? ` · ${new Intl.DateTimeFormat("en", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${returnDate}T12:00:00Z`))}` : ""}</strong></div>
       <div><span>Passengers &amp; class</span><strong>{paxLabel} | {cabinLabel}</strong></div>
       <button type="button" onClick={onNewSearch}>New search</button>
     </header>
