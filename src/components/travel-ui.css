@@ -334,6 +334,7 @@
   background: var(--green); color: #fff; font-weight: 700; font-size: 14.5px;
   padding: 12px; border-radius: var(--radius-sm); border: none; cursor: pointer; margin-top: 6px;
 }
+.tui-modal-submit-link { display: block; text-align: center; text-decoration: none; }
 .tui-modal-submit:disabled { opacity: 0.6; cursor: not-allowed; }
 .tui-modal-close {
   background: transparent; color: var(--mist); font-size: 13.5px; border: none;

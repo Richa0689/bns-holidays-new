@@ -70,7 +70,30 @@ export default function HotelResultsPage() {
         onViewDetails={(hotel) => { setRoomsHotel(hotel); setHotelDetailTab("overview"); }}
       />
 
-      {roomsHotel && <HotelRoomCategories hotel={roomsHotel} checkIn={checkIn} checkOut={checkOut} adults={Number(adults)} children={Number(children)} roomCount={Number(rooms)} initialTab={hotelDetailTab} onClose={() => setRoomsHotel(null)} onBookRoom={(room) => { setRoomsHotel(null); setSelected(room); }} />}
+      {roomsHotel && (
+        <HotelRoomCategories
+          hotel={roomsHotel}
+          checkIn={checkIn}
+          checkOut={checkOut}
+          adults={Number(adults)}
+          children={Number(children)}
+          roomCount={Number(rooms)}
+          initialTab={hotelDetailTab}
+          onClose={() => setRoomsHotel(null)}
+          onBookRoom={(room) => {
+            const hotelCopy = roomsHotel;
+            setRoomsHotel(null);
+            setSelected({
+              ...room,
+              name: hotelCopy.name,
+              address: hotelCopy.address,
+              checkIn,
+              checkOut,
+              guests: `${rooms} Room(s), ${adults} Adult(s)${Number(children) > 0 ? `, ${children} Child(ren)` : ""}`,
+            });
+          }}
+        />
+      )}
 
       {selected && (
         <BookingRequestModal item={selected} type="hotel" onClose={() => setSelected(null)} />

@@ -17,50 +17,6 @@ const CHAR_LIMIT = 110;
 // Fixed card height — all cards uniform
 const CARD_HEIGHT = 300;
 
-// ── Schema Injection ──────────────────────────────────────────────────────────
-function InjectReviewSchema() {
-  useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      name: "BNS Holidays",
-      description: "Best travel agency in Pune offering flight tickets, international tour packages, and customized holiday trips.",
-      url: "https://bnsholidays.co.in",
-      telephone: "+91-XXXXXXXXXX",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Pune",
-        addressRegion: "Maharashtra",
-        addressCountry: "IN",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5.0",
-        reviewCount: "248",
-        bestRating: "5",
-        worstRating: "1",
-      },
-      review: reviews.map((r) => ({
-        "@type": "Review",
-        author: { "@type": "Person", name: r.name },
-        reviewRating: { "@type": "Rating", ratingValue: String(r.rating), bestRating: "5" },
-        datePublished: r.date,
-        reviewBody: r.text,
-      })),
-    };
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = "bns-review-schema";
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    return () => {
-      const el = document.getElementById("bns-review-schema");
-      if (el) document.head.removeChild(el);
-    };
-  }, []);
-  return null;
-}
-
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 function Lightbox({ src, onClose }) {
   useEffect(() => {
@@ -163,8 +119,6 @@ function ReviewCard({ review, isMobile, onImageClick }) {
 
   return (
     <article
-      itemScope
-      itemType="https://schema.org/Review"
       style={{
         background: "#f7bc09",
         borderRadius: 12,
@@ -196,15 +150,15 @@ function ReviewCard({ review, isMobile, onImageClick }) {
           {review.initials}
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div itemProp="author" itemScope itemType="https://schema.org/Person">
-            <span itemProp="name" style={{
+          <div>
+            <span style={{
               fontWeight: 600, fontSize: 13.5, color: "#ffffff", fontWeight: "bold",
               display: "block", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
             }}>
               {review.name}
             </span>
           </div>
-          <time itemProp="datePublished" dateTime={review.date}
+          <time dateTime={review.date}
             style={{ fontSize: 11.5, color: "rgba(255,255,255,0.65)", display: "block", marginTop: 1 }}>
             {review.dateLabel}
           </time>
@@ -212,16 +166,14 @@ function ReviewCard({ review, isMobile, onImageClick }) {
       </div>
 
       {/* Stars */}
-      <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating"
+      <div
         style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 10, flexShrink: 0 , fontWeight:"blod"}}>
-        <meta itemProp="ratingValue" content={String(review.rating)} />
-        <meta itemProp="bestRating" content="5" />
         <StarRating rating={review.rating} />
       </div>
 
       {/* Review text — scrollable if overflow */}
       <div style={{ flex: 1, overflow: "hidden" }}>
-        <p itemProp="reviewBody" style={{
+        <p style={{
           fontSize: 15.5, color: "#0000ff", lineHeight: 1.6, margin: 0, fontFamily: "Poppins, regular ",
         }}>
           {displayText}
@@ -420,7 +372,6 @@ export default function GoogleReviews() {
       style={{ fontFamily: "'Segoe UI', Helvetica, Arial, sans-serif", padding: "2rem 0 1.5rem" }}
     >
       <style>{styles}</style>
-      <InjectReviewSchema />
 
       {/* Fullscreen lightbox */}
       {lightboxSrc && (
