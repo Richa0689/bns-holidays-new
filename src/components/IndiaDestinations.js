@@ -44,7 +44,7 @@ const IndiaDestinations = () => {
   }, []);
 
   return (
-    <div className="india-section">
+    <div className="india-section" id="india-destinations">
       <h2>India Destinations</h2>
 
       <div className="slider-wrapper">

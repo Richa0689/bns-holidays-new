@@ -65,7 +65,12 @@ export default function HotelResultsPage() {
         hotels={hotels}
         loading={loading}
         error={error}
-        onBookClick={(hotel) => setSelected(hotel)}
+        onBookClick={(hotel) => setSelected({
+          ...hotel,
+          checkIn,
+          checkOut,
+          guests: `${rooms} Room(s), ${adults} Adult(s)${Number(children) > 0 ? `, ${children} Child(ren)` : ""}`,
+        })}
         onViewRooms={(hotel) => { setRoomsHotel(hotel); setHotelDetailTab("rooms"); }}
         onViewDetails={(hotel) => { setRoomsHotel(hotel); setHotelDetailTab("overview"); }}
       />
@@ -85,6 +90,7 @@ export default function HotelResultsPage() {
             setRoomsHotel(null);
             setSelected({
               ...room,
+              hotelName: hotelCopy.name,
               name: hotelCopy.name,
               address: hotelCopy.address,
               checkIn,

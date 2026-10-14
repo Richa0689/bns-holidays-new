@@ -315,32 +315,107 @@
 
 /* ---- Booking request modal ---- */
 .tui-modal-overlay {
-  position: fixed; inset: 0; background: rgba(12,42,73,0.45);
-  display: flex; align-items: center; justify-content: center; z-index: 100; padding: 20px;
+  position: fixed; inset: 0; background: rgba(12,42,73,0.55);
+  display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 20px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: tuiFadeIn 0.2s ease-out;
+}
+@keyframes tuiFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 .tui-modal {
-  background: #fff; border-radius: var(--radius-lg); padding: 28px;
-  max-width: 420px; width: 100%; box-shadow: 0 30px 60px -20px rgba(12,42,73,0.4);
+  position: relative;
+  background: #fff; border-radius: var(--radius-lg); padding: 28px 24px;
+  max-width: 480px; width: 100%; box-shadow: 0 30px 60px -20px rgba(12,42,73,0.45);
+  max-height: 90vh; overflow-y: auto;
+  animation: tuiSlideUp 0.25s ease-out;
 }
-.tui-modal h3 { font-family: 'Fraunces', serif; font-size: 20px; color: var(--ink); margin-bottom: 6px; }
-.tui-modal p.tui-modal-sub { color: var(--mist); font-size: 13.5px; margin-bottom: 18px; }
+@keyframes tuiSlideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.tui-modal-x-close {
+  position: absolute; top: 16px; right: 16px; width: 32px; height: 32px;
+  border-radius: 50%; border: 1px solid #e7e0d0; background: #fff;
+  color: var(--mist); display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 16px; transition: all 0.15s; line-height: 1;
+}
+.tui-modal-x-close:hover {
+  background: #f1f5f9; color: var(--ink); border-color: #cbd5e1;
+}
+.tui-modal h3 { font-family: 'Fraunces', serif; font-size: 22px; color: var(--ink); margin-bottom: 4px; padding-right: 36px; }
+.tui-modal p.tui-modal-sub { color: var(--mist); font-size: 13px; margin-bottom: 16px; line-height: 1.4; }
+
+/* Item summary card */
+.tui-modal-summary-card {
+  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 12px 14px; margin-bottom: 16px; display: flex; flex-direction: column; gap: 4px;
+}
+.tui-modal-summary-title { font-size: 14.5px; font-weight: 700; color: var(--ink); line-height: 1.3; }
+.tui-modal-summary-sub { font-size: 12.5px; color: var(--mist); }
+.tui-modal-summary-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.tui-modal-summary-tag {
+  font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 6px;
+  background: #eef2f6; color: #334155;
+}
+.tui-modal-summary-price {
+  font-family: 'Fraunces', serif; font-size: 17px; font-weight: 700; color: var(--ink);
+  margin-top: 6px; display: flex; align-items: baseline; gap: 5px;
+}
+.tui-modal-summary-price span { font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 500; color: var(--mist); }
+
 .tui-modal form { display: flex; flex-direction: column; gap: 12px; }
-.tui-modal input {
-  border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 11px 12px;
-  font-size: 14.5px; font-family: inherit; outline: none;
+.tui-modal-field { display: flex; flex-direction: column; gap: 4px; }
+.tui-modal-label { font-size: 12px; font-weight: 600; color: #475569; }
+.tui-modal-label span { color: #dc2626; margin-left: 2px; }
+.tui-modal input, .tui-modal textarea {
+  border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 10px 12px;
+  font-size: 14px; font-family: inherit; outline: none; transition: border-color 0.15s;
+  background: #fff; color: var(--ink);
 }
-.tui-modal input:focus { border-color: var(--amber-dark); box-shadow: 0 0 0 3px rgba(243,170,14,0.22); }
+.tui-modal textarea { resize: vertical; min-height: 64px; }
+.tui-modal input:focus, .tui-modal textarea:focus { border-color: #1a66ad; box-shadow: 0 0 0 3px rgba(26,102,173,0.15); }
 .tui-modal-submit {
   background: var(--green); color: #fff; font-weight: 700; font-size: 14.5px;
   padding: 12px; border-radius: var(--radius-sm); border: none; cursor: pointer; margin-top: 6px;
+  transition: background 0.15s; display: flex; align-items: center; justify-content: center; gap: 8px;
 }
+.tui-modal-submit:hover:not(:disabled) { background: var(--green-dark); }
 .tui-modal-submit-link { display: block; text-align: center; text-decoration: none; }
-.tui-modal-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.tui-modal-submit:disabled { opacity: 0.65; cursor: not-allowed; }
+.tui-modal-note { font-size: 11.5px; color: #8a95a2; text-align: center; line-height: 1.4; margin-top: 4px; }
 .tui-modal-close {
   background: transparent; color: var(--mist); font-size: 13.5px; border: none;
-  cursor: pointer; margin-top: 10px; text-align: center; width: 100%;
+  cursor: pointer; margin-top: 10px; text-align: center; width: 100%; padding: 6px;
 }
-.tui-modal-success { color: #1E7A46; font-size: 14.5px; text-align: center; padding: 10px 0; }
+.tui-modal-close:hover { color: var(--ink); }
+
+/* Success state */
+.tui-modal-success-box {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 10px 0 6px;
+}
+.tui-modal-success-icon {
+  width: 52px; height: 52px; border-radius: 50%; background: #eaf8f0;
+  color: #1e7a46; display: flex; align-items: center; justify-content: center;
+  font-size: 26px; margin-bottom: 12px;
+}
+.tui-modal-success-title { font-family: 'Fraunces', serif; font-size: 20px; color: var(--ink); margin-bottom: 6px; }
+.tui-modal-success-sub { font-size: 13.5px; color: #475569; line-height: 1.5; margin-bottom: 16px; }
+.tui-modal-wa-btn {
+  background: #25D366; color: #fff; font-weight: 700; font-size: 14px;
+  padding: 11px 16px; border-radius: var(--radius-sm); border: none; cursor: pointer;
+  text-decoration: none; display: inline-flex; align-items: center; justify-content: center;
+  gap: 8px; width: 100%; transition: background 0.15s; box-sizing: border-box;
+}
+.tui-modal-wa-btn:hover { background: #1EBE5D; color: #fff; }
+
+.tui-modal-error-box {
+  background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px;
+  padding: 10px 12px; margin-top: 8px; font-size: 13px; color: #991b1b;
+}
 
 /* ---- Site nav bar ---- */
 .tui-navbar {

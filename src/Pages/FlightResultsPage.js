@@ -75,7 +75,12 @@ export default function FlightResultsPage() {
         tripType={tripType}
         returnDate={returnDate}
         routes={routes}
-        onBookClick={(flight) => setSelected(flight)}
+        onBookClick={(flight) => setSelected({
+          ...flight,
+          date,
+          passengers: `${adults} Adult(s)${Number(children) > 0 ? `, ${children} Child(ren)` : ""}${Number(infants) > 0 ? `, ${infants} Infant(s)` : ""}`,
+          cabinClass,
+        })}
         onNewSearch={() => navigate("/flights")}
       />
       {selected && (

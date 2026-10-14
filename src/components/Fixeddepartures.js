@@ -63,7 +63,7 @@ const FixedDepartures = () => {
   }, []);
 
   return (
-    <div className="fd-section">
+    <div className="fd-section" id="fixed-departures">
       <h2>Fixed Departures</h2>
 
       <div className="slider-wrapper">

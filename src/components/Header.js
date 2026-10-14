@@ -1,9 +1,54 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Header.css";
 import logo from "./images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars, faXmark, faChevronDown, faPhone } from "@fortawesome/free-solid-svg-icons";
+
+const primarySitelinks = [
+  {
+    name: "Flight Booking Services",
+    desc: "Compare and book domestic and international flight tickets with BNS Holidays at competitive fares.",
+    path: "/flights",
+    badge: true,
+    keywords: ["flight", "flights", "airline", "air ticket", "tickets", "air tickets", "plane"],
+  },
+  {
+    name: "Hotel Booking Worldwide",
+    desc: "Search top-rated hotels, luxury stays and holiday resorts across destinations worldwide.",
+    path: "/hotels",
+    badge: true,
+    keywords: ["hotel", "hotels", "stay", "resort", "rooms", "room", "accommodation"],
+  },
+  {
+    name: "International Tour Packages",
+    desc: "Explore curated holiday packages across Europe, Asia, USA, Australia, Bali, Thailand, Dubai...",
+    path: "/packages",
+    badge: true,
+    keywords: ["international", "world", "world tour", "europe", "usa", "australia", "asia", "thailand", "dubai", "bali", "singapore"],
+  },
+  {
+    name: "Domestic Tour Packages (India)",
+    desc: "BNS Holidays offers a wide variety of India tour packages: Kashmir, Himachal, Kerala, Rajasthan...",
+    path: "/#india-destinations",
+    badge: true,
+    keywords: ["domestic", "india", "india tour", "kashmir", "himachal", "kerala", "rajasthan", "goa", "manali", "shimla"],
+  },
+  {
+    name: "Fixed Departure Tours",
+    desc: "Confirmed fixed departure group departures with dedicated tour manager & inclusions...",
+    path: "/#fixed-departures",
+    badge: true,
+    keywords: ["fixed", "departure", "fixed departure", "departures", "group tour", "group"],
+  },
+  {
+    name: "Visa Assistance Services",
+    desc: "Hassle-free tourist and visitor visa consultation and documentation services...",
+    path: "/visa",
+    badge: true,
+    keywords: ["visa", "visas", "tourist visa", "visitor visa", "passport", "consultation"],
+  },
+];
 
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -11,7 +56,8 @@ const Header = () => {
   const [activeInternational, setActiveInternational] = useState("europe");
   const [hoveredCountry, setHoveredCountry] = useState(null); // ← NEW
   const [search, setSearch] = useState("");
-  const [results, setResults] = useState([]);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const searchBoxRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -286,23 +332,69 @@ const Header = () => {
     return internationalRegionMaps[activeInternational];
   };
 
-  const handleSearch = (e) => {
-    const value = e.target.value;
-    setSearch(value);
-    if (value.trim() === "") {
-      setResults([]);
-      return;
+  // ── Click outside listener to close search dropdown ──
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (searchBoxRef.current && !searchBoxRef.current.contains(e.target)) {
+        setSearchOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const getSearchResults = () => {
+    const q = search.trim().toLowerCase();
+    if (!q) {
+      return primarySitelinks;
     }
-    const filtered = destinations.filter((item) =>
-      item.name.toLowerCase().includes(value.toLowerCase())
+
+    const matchedSitelinks = primarySitelinks.filter((item) =>
+      item.name.toLowerCase().includes(q) ||
+      item.desc.toLowerCase().includes(q) ||
+      item.keywords.some((kw) => kw.includes(q))
     );
-    setResults(filtered);
+
+    const matchedDestinations = destinations
+      .filter((dest) => dest.name.toLowerCase().includes(q))
+      .map((dest) => ({
+        name: `${dest.name} Tour Packages`,
+        desc: `Explore top attractions, sightseeing itineraries and tour packages for ${dest.name} with BNS Holidays...`,
+        path: dest.path,
+        badge: true,
+      }));
+
+    const combined = [...matchedSitelinks];
+    matchedDestinations.forEach((dest) => {
+      if (!combined.some((item) => item.path === dest.path)) {
+        combined.push(dest);
+      }
+    });
+
+    return combined;
   };
 
   const handleSelect = (path) => {
-    navigate(path);
     setSearch("");
-    setResults([]);
+    setSearchOpen(false);
+    if (path.startsWith("/#")) {
+      const targetId = path.replace("/#", "");
+      if (window.location.pathname === "/") {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+          return;
+        }
+      } else {
+        navigate("/");
+        setTimeout(() => {
+          const el = document.getElementById(targetId);
+          if (el) el.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+        return;
+      }
+    }
+    navigate(path);
   };
 
   const closeDropdown = () => {
@@ -330,28 +422,72 @@ const Header = () => {
         </div>
 
         {/* SEARCH BOX */}
-        <div className="search-box" style={{ position: "relative" }}>
+        <div className="search-box" ref={searchBoxRef} style={{ position: "relative" }}>
           <input
             type="text"
-            placeholder="Search destinations..."
+            placeholder="Search flights, hotels, packages, visa..."
             value={search}
-            onChange={handleSearch}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setSearchOpen(true);
+            }}
+            onFocus={() => setSearchOpen(true)}
+            onKeyDown={(e) => {
+              if (e.key === "Escape") setSearchOpen(false);
+            }}
           />
-          <button className="search-btn">
+          <button 
+            type="button" 
+            className="search-btn"
+            onClick={() => setSearchOpen((prev) => !prev)}
+            aria-label="Search"
+          >
             <FontAwesomeIcon icon={faSearch} />
           </button>
-          {results.length > 0 && (
-            <ul className="search-results">
-              {results.map((item, index) => (
-                <li
-                  key={index}
-                  className="search-result-item"
-                  onClick={() => handleSelect(item.path)}
-                >
-                  {item.name}
-                </li>
-              ))}
-            </ul>
+
+          {searchOpen && (
+            <div className="google-sitelinks-dropdown">
+              <div className="google-sitelinks-list">
+                {getSearchResults().length > 0 ? (
+                  getSearchResults().map((item, index) => (
+                    <div
+                      key={index}
+                      className="google-sitelink-item"
+                      onClick={() => handleSelect(item.path)}
+                    >
+                      <div className="google-sitelink-content">
+                        <div className="google-sitelink-header">
+                          <span className="google-sitelink-title">{item.name}</span>
+                          {item.badge && (
+                            <span className="google-verified-badge" aria-label="Verified">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                              </svg>
+                            </span>
+                          )}
+                        </div>
+                        <p className="google-sitelink-snippet">{item.desc}</p>
+                      </div>
+                      <div className="google-sitelink-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="google-sitelink-empty">
+                    <p>No results found for "{search}"</p>
+                  </div>
+                )}
+              </div>
+              <div 
+                className="google-sitelinks-footer"
+                onClick={() => handleSelect("/packages")}
+              >
+                <span>More results from bnsholidays.co.in »</span>
+              </div>
+            </div>
           )}
         </div>
 
