@@ -401,10 +401,13 @@ function App() {
         <Route path="/villa" element={<Villa />} />
         <Route path="/visa" element={<Visa />} />
         <Route path="/packages" element={<Packages />} />
+        <Route path="/international-tours" element={<Navigate to="/packages" replace />} />
+        <Route path="/india-tours" element={<><IndiaDestinations /><QueryBox /><FloatingButtons /><Footer /></>} />
+        <Route path="/fixed-departures" element={<><Fixeddepartures /><QueryBox /><FloatingButtons /><Footer /></>} />
         <Route path="/hotels" element={<Hotels />} />
-<Route path="/hotels/results" element={<HotelResultsPage />} />
-<Route path="/flights" element={<Flights />} />
-<Route path="/flights/results" element={<FlightResultsPage />} />
+        <Route path="/hotels/results" element={<HotelResultsPage />} />
+        <Route path="/flights" element={<Flights />} />
+        <Route path="/flights/results" element={<FlightResultsPage />} />
         
   <Route path="/destinations/europe" element={<Europe />} />
 <Route path="/destinations/australia" element={<Australia />} />

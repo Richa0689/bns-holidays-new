@@ -41,15 +41,15 @@ const searchServices = [
     keywords: ["international", "world", "world tour", "europe", "usa", "australia", "asia", "thailand", "dubai", "bali", "singapore"],
   },
   {
-    name: "Domestic Tour Packages (India)",
-    path: "/#india-destinations",
+    name: "India Tour Packages",
+    path: "/india-tours",
     icon: faLocationDot,
     category: "India Tours",
     keywords: ["domestic", "india", "india tour", "kashmir", "himachal", "kerala", "rajasthan", "goa", "manali", "shimla"],
   },
   {
     name: "Fixed Departure Tours",
-    path: "/#fixed-departures",
+    path: "/fixed-departures",
     icon: faCompass,
     category: "Group Tours",
     keywords: ["fixed", "departure", "fixed departure", "departures", "group tour", "group"],

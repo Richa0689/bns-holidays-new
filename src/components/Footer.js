@@ -46,12 +46,14 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Explore</h4>
             <ul>
-              <li>Home</li>
-              <li>India Tour</li>
-              <li>International Tour</li>
-              <li>Fixed Departure</li>
-              <li><Link to="/villa">Villa</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/flights">Flights</Link></li>
+              <li><Link to="/hotels">Hotels</Link></li>
               <li><Link to="/visa">Visa</Link></li>
+              <li><Link to="/india-tours">India Tour</Link></li>
+              <li><Link to="/packages">International Tours</Link></li>
+              <li><Link to="/fixed-departures">Fixed Departure</Link></li>
+              <li><Link to="/villa">Villa</Link></li>
             </ul>
           </div>
 
