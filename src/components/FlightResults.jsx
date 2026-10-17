@@ -180,7 +180,7 @@ export default function FlightResults({ flights, loading, error, onBookClick, fr
       </aside>
 
       <section className="tui-flight-results-main">
-        <div className="tui-flight-results-toolbar"><strong>Found {visibleFlights.length} Flights from {from} to {to}</strong><div className="tui-flight-sort" aria-label="Sort flights">{[["price", "Price"], ["duration", "Duration"], ["departure", "Departure"], ["arrival", "Arrival"]].map(([value, label]) => <button type="button" key={value} className={sortBy === value ? "selected" : ""} onClick={() => setSortBy(value)}>Sort: {label}</button>)}</div></div>
+        <div className="tui-flight-results-toolbar"><strong>Found {visibleFlights.length} Flight{visibleFlights.length === 1 ? "" : "s"} for {tripType === "multicity" ? routeSummary : `${from} to ${to}`}</strong><div className="tui-flight-sort" aria-label="Sort flights">{[["price", "Price"], ["duration", "Duration"], ["departure", "Departure"], ["arrival", "Arrival"]].map(([value, label]) => <button type="button" key={value} className={sortBy === value ? "selected" : ""} onClick={() => setSortBy(value)}>Sort: {label}</button>)}</div></div>
         <div className="tui-flight-list">
           {visibleFlights.map((flight) => <article className="tui-flight-result-card" key={flight.id}>
             <div className="tui-flight-card-main">

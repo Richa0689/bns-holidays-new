@@ -3,49 +3,62 @@ import "./Header.css";
 import logo from "./images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faBars, faXmark, faChevronDown, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faBars,
+  faXmark,
+  faChevronDown,
+  faPhone,
+  faPlane,
+  faHotel,
+  faSuitcase,
+  faLocationDot,
+  faCompass,
+  faPassport,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 
-const primarySitelinks = [
+const searchServices = [
   {
     name: "Flight Booking Services",
-    desc: "Compare and book domestic and international flight tickets with BNS Holidays at competitive fares.",
     path: "/flights",
-    badge: true,
+    icon: faPlane,
+    category: "Flights",
     keywords: ["flight", "flights", "airline", "air ticket", "tickets", "air tickets", "plane"],
   },
   {
     name: "Hotel Booking Worldwide",
-    desc: "Search top-rated hotels, luxury stays and holiday resorts across destinations worldwide.",
     path: "/hotels",
-    badge: true,
+    icon: faHotel,
+    category: "Hotels",
     keywords: ["hotel", "hotels", "stay", "resort", "rooms", "room", "accommodation"],
   },
   {
     name: "International Tour Packages",
-    desc: "Explore curated holiday packages across Europe, Asia, USA, Australia, Bali, Thailand, Dubai...",
     path: "/packages",
-    badge: true,
+    icon: faSuitcase,
+    category: "Packages",
     keywords: ["international", "world", "world tour", "europe", "usa", "australia", "asia", "thailand", "dubai", "bali", "singapore"],
   },
   {
     name: "Domestic Tour Packages (India)",
-    desc: "BNS Holidays offers a wide variety of India tour packages: Kashmir, Himachal, Kerala, Rajasthan...",
     path: "/#india-destinations",
-    badge: true,
+    icon: faLocationDot,
+    category: "India Tours",
     keywords: ["domestic", "india", "india tour", "kashmir", "himachal", "kerala", "rajasthan", "goa", "manali", "shimla"],
   },
   {
     name: "Fixed Departure Tours",
-    desc: "Confirmed fixed departure group departures with dedicated tour manager & inclusions...",
     path: "/#fixed-departures",
-    badge: true,
+    icon: faCompass,
+    category: "Group Tours",
     keywords: ["fixed", "departure", "fixed departure", "departures", "group tour", "group"],
   },
   {
     name: "Visa Assistance Services",
-    desc: "Hassle-free tourist and visitor visa consultation and documentation services...",
     path: "/visa",
-    badge: true,
+    icon: faPassport,
+    category: "Visa",
     keywords: ["visa", "visas", "tourist visa", "visitor visa", "passport", "consultation"],
   },
 ];
@@ -346,12 +359,11 @@ const Header = () => {
   const getSearchResults = () => {
     const q = search.trim().toLowerCase();
     if (!q) {
-      return primarySitelinks;
+      return [];
     }
 
-    const matchedSitelinks = primarySitelinks.filter((item) =>
+    const matchedServices = searchServices.filter((item) =>
       item.name.toLowerCase().includes(q) ||
-      item.desc.toLowerCase().includes(q) ||
       item.keywords.some((kw) => kw.includes(q))
     );
 
@@ -359,19 +371,19 @@ const Header = () => {
       .filter((dest) => dest.name.toLowerCase().includes(q))
       .map((dest) => ({
         name: `${dest.name} Tour Packages`,
-        desc: `Explore top attractions, sightseeing itineraries and tour packages for ${dest.name} with BNS Holidays...`,
         path: dest.path,
-        badge: true,
+        icon: faLocationDot,
+        category: "Destination",
       }));
 
-    const combined = [...matchedSitelinks];
+    const combined = [...matchedServices];
     matchedDestinations.forEach((dest) => {
       if (!combined.some((item) => item.path === dest.path)) {
         combined.push(dest);
       }
     });
 
-    return combined;
+    return combined.slice(0, 8);
   };
 
   const handleSelect = (path) => {
@@ -431,61 +443,67 @@ const Header = () => {
               setSearch(e.target.value);
               setSearchOpen(true);
             }}
-            onFocus={() => setSearchOpen(true)}
+            onFocus={() => {
+              if (search.trim()) setSearchOpen(true);
+            }}
             onKeyDown={(e) => {
               if (e.key === "Escape") setSearchOpen(false);
+              if (e.key === "Enter" && search.trim()) {
+                const results = getSearchResults();
+                if (results.length > 0) {
+                  handleSelect(results[0].path);
+                }
+              }
             }}
           />
           <button 
             type="button" 
             className="search-btn"
-            onClick={() => setSearchOpen((prev) => !prev)}
+            onClick={() => {
+              if (search.trim()) {
+                const results = getSearchResults();
+                if (results.length > 0) {
+                  handleSelect(results[0].path);
+                }
+              } else {
+                setSearchOpen((prev) => !prev);
+              }
+            }}
             aria-label="Search"
           >
             <FontAwesomeIcon icon={faSearch} />
           </button>
 
-          {searchOpen && (
-            <div className="google-sitelinks-dropdown">
-              <div className="google-sitelinks-list">
+          {searchOpen && search.trim().length > 0 && (
+            <div className="header-search-dropdown">
+              <div className="header-search-list">
                 {getSearchResults().length > 0 ? (
                   getSearchResults().map((item, index) => (
                     <div
                       key={index}
-                      className="google-sitelink-item"
+                      className="header-search-item"
                       onClick={() => handleSelect(item.path)}
                     >
-                      <div className="google-sitelink-content">
-                        <div className="google-sitelink-header">
-                          <span className="google-sitelink-title">{item.name}</span>
-                          {item.badge && (
-                            <span className="google-verified-badge" aria-label="Verified">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                <polyline points="20 6 9 17 4 12" />
-                              </svg>
-                            </span>
-                          )}
-                        </div>
-                        <p className="google-sitelink-snippet">{item.desc}</p>
+                      <div className="header-search-icon">
+                        <FontAwesomeIcon icon={item.icon || faLocationDot} />
                       </div>
-                      <div className="google-sitelink-arrow">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="9 18 15 12 9 6" />
-                        </svg>
+                      <div className="header-search-info">
+                        <span className="header-search-title">{item.name}</span>
+                        {item.category && (
+                          <span className="header-search-category">{item.category}</span>
+                        )}
                       </div>
+                      <span className="header-search-arrow">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </span>
                     </div>
                   ))
                 ) : (
-                  <div className="google-sitelink-empty">
+                  <div className="header-search-empty">
                     <p>No results found for "{search}"</p>
+                    <small>Try searching for "Dubai", "Flight", "Hotel", "Kerala", "Visa", etc.</small>
                   </div>
                 )}
-              </div>
-              <div 
-                className="google-sitelinks-footer"
-                onClick={() => handleSelect("/packages")}
-              >
-                <span>More results from bnsholidays.co.in »</span>
               </div>
             </div>
           )}
