@@ -7,6 +7,9 @@ const DESTINATIONS = [
   ["New Delhi", "India"], ["Goa", "India"], ["Bengaluru", "India"], ["Jaipur", "India"],
   ["Chennai", "India"], ["Dubai", "United Arab Emirates"], ["Singapore", "Singapore"],
   ["Bangkok", "Thailand"], ["London", "United Kingdom"], ["Paris", "France"],
+  ["Hanoi", "Vietnam"], ["Ho Chi Minh City", "Vietnam"], ["Da Nang", "Vietnam"],
+  ["Hoi An", "Vietnam"], ["Nha Trang", "Vietnam"], ["Phu Quoc", "Vietnam"],
+  ["Hue", "Vietnam"], ["Ha Long", "Vietnam"],
 ];
 const COUNTRY_CODES = {
   Afghanistan: "af", Albania: "al", Algeria: "dz", Argentina: "ar", Australia: "au",

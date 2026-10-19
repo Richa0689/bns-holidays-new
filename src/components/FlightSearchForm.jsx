@@ -16,6 +16,11 @@ const AIRPORTS = [
   ["Kochi, India", "Cochin International Airport", "COK"],
   ["Dubai, United Arab Emirates", "Dubai International Airport", "DXB"],
   ["Singapore, Singapore", "Singapore Changi Airport", "SIN"],
+  ["Hanoi, Vietnam", "Noi Bai International Airport", "HAN"],
+  ["Ho Chi Minh City, Vietnam", "Tan Son Nhat International Airport", "SGN"],
+  ["Da Nang, Vietnam", "Da Nang International Airport", "DAD"],
+  ["Phu Quoc, Vietnam", "Phu Quoc International Airport", "PQC"],
+  ["Nha Trang, Vietnam", "Cam Ranh International Airport", "CXR"],
 ];
 const AIRPORT_DATA_URL = "https://davidmegginson.github.io/ourairports-data/airports.csv";
 const COUNTRY_DATA_URL = "https://davidmegginson.github.io/ourairports-data/countries.csv";
@@ -67,7 +72,7 @@ function loadWorldwideAirports() {
 }
 
 function AirportField({ id, label, airport, onSelect }) {
-  const [query, setQuery] = useState(airport[0]);
+  const [query, setQuery] = useState(airport[2] ? `${airport[0]} (${airport[2]})` : airport[0]);
   const [open, setOpen] = useState(false);
   const [position, setPosition] = useState(null);
   const [worldwideAirports, setWorldwideAirports] = useState([]);
@@ -77,10 +82,11 @@ function AirportField({ id, label, airport, onSelect }) {
   const inputRef = useRef(null);
   const panelRef = useRef(null);
   const sourceAirports = worldwideAirports.length ? worldwideAirports : AIRPORTS;
-  const matches = sourceAirports.filter((item) => item.join(" ").toLowerCase().includes(query.trim().toLowerCase())).slice(0, 30);
+  const searchQuery = query.trim().replace(/\s*\([A-Z]{3}\)\s*$/, "").trim();
+  const matches = sourceAirports.filter((item) => item.join(" ").toLowerCase().includes(searchQuery.toLowerCase())).slice(0, 30);
 
   useEffect(() => {
-    if (!open || query.trim().length < 2 || worldwideAirports.length) return undefined;
+    if (!open || searchQuery.length < 2 || worldwideAirports.length) return undefined;
     let active = true;
     setAirportsLoading(true);
     loadWorldwideAirports().then((airports) => {
@@ -91,7 +97,7 @@ function AirportField({ id, label, airport, onSelect }) {
   }, [open, query, worldwideAirports.length]);
 
   useEffect(() => {
-    setQuery(airport[0]);
+    setQuery(airport[2] ? `${airport[0]} (${airport[2]})` : airport[0]);
   }, [airport]);
 
   useEffect(() => {
@@ -136,7 +142,7 @@ function AirportField({ id, label, airport, onSelect }) {
       onFocus={() => setOpen(true)} onChange={(event) => { setQuery(event.target.value); setOpen(true); }} autoComplete="off" required />
     {open && createPortal(<div ref={panelRef} className="flight-airport-suggestions" id={`${id}-options`} role="listbox" style={{ position: "fixed", top: position?.top ?? 0, left: position?.left ?? 0, width: position?.width, visibility: position ? "visible" : "hidden" }}>
       <div className="flight-airport-heading">{query.trim() ? "WORLDWIDE AIRPORTS" : "POPULAR AIRPORTS"}</div>
-      {matches.length ? matches.map((item) => <button type="button" role="option" aria-selected={airport[2] === item[2]} key={item[2]} onClick={() => { onSelect(item); setQuery(item[0]); setOpen(false); }}>
+      {matches.length ? matches.map((item) => <button type="button" role="option" aria-selected={airport[2] === item[2]} key={item[2]} onClick={() => { onSelect(item); setQuery(item[2] ? `${item[0]} (${item[2]})` : item[0]); setOpen(false); }}>
         <span><strong>{item[0]}</strong><small>{item[1]}</small></span><b>{item[2]}</b>
       </button>) : airportsLoading ? <p>Loading worldwide airports…</p> : airportLoadFailed ? <p>Worldwide airport search is unavailable. Try again shortly.</p> : <p>No matching airports</p>}
     </div>, document.body)}
