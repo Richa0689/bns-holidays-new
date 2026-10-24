@@ -709,7 +709,7 @@ function App() {
 <Route path="/destinations/athens-mykonos" element={<Greece2 />} />
 <Route path="/destinations/glimpses-greece" element={<Greece3 />} />
 <Route path="/destinations/barcelona-ibiza-madrid-8-day" element={<Greece4 />} />
-<Route path="/destinations/barcelona-madridd" element={<Greece5 />} />
+<Route path="/destinations/barcelona-madridd" element={<LegacyRouteRedirect to="/destinations/barcelona-madrid" />} />
 <Route path="/destinations/valencia-malaga" element={<Greece6 />} />
 <Route path="/destinations/spain-highlights-tour" element={<Greece7 />} />
 <Route path="/destinations/iceland-itineraries" element={<Iceland />} />

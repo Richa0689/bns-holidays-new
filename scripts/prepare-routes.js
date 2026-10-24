@@ -12,13 +12,15 @@ if (!fs.existsSync(indexHtmlPath)) {
 
 const baseHtml = fs.readFileSync(indexHtmlPath, 'utf8');
 
-// Remove noindex from 404.html if present so it doesn't block crawlers
+// Ensure 404.html has noindex so search engines never index error pages
 const fourZeroFourPath = path.join(buildDir, '404.html');
 if (fs.existsSync(fourZeroFourPath)) {
   let fourZeroFour = fs.readFileSync(fourZeroFourPath, 'utf8');
-  fourZeroFour = fourZeroFour.replace('<meta name="robots" content="noindex" />', '');
-  fs.writeFileSync(fourZeroFourPath, fourZeroFour, 'utf8');
-  console.log('Cleaned 404.html (removed noindex directive)');
+  if (!fourZeroFour.includes('name="robots" content="noindex"')) {
+    fourZeroFour = fourZeroFour.replace('<head>', '<head>\n    <meta name="robots" content="noindex" />');
+    fs.writeFileSync(fourZeroFourPath, fourZeroFour, 'utf8');
+    console.log('Ensured 404.html has noindex directive');
+  }
 }
 
 // Key routes + any routes found in sitemap
@@ -89,7 +91,7 @@ routes.forEach((route) => {
     `<meta name="description" content="${meta.description}" />`
   );
 
-  const canonicalUrl = `https://bnsholidays.co.in/${route}`;
+  const canonicalUrl = `https://bnsholidays.co.in/${route}/`;
   if (pageHtml.includes('rel="canonical"')) {
     pageHtml = pageHtml.replace(/<link\s+rel="canonical"\s+href=".*?"\s*\/?>/i, `<link rel="canonical" href="${canonicalUrl}" />`);
   } else {

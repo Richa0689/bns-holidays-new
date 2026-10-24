@@ -278,7 +278,7 @@ function SEO() {
   };
   const keywords = getKeywords(normalizedPath, seo);
   const isSearchResults = normalizedPath.endsWith("/results");
-  const canonicalUrl = `https://bnsholidays.co.in${normalizedPath}`;
+  const canonicalUrl = normalizedPath === "/" ? "https://bnsholidays.co.in/" : `https://bnsholidays.co.in${normalizedPath}/`;
 
   return (
     <Helmet>
