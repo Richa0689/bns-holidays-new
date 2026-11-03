@@ -711,6 +711,9 @@ const Header = () => {
           <li>
             <Link to="/visa">Visa</Link>
           </li>
+          <li>
+            <Link to="/fixed-departures">Fixed Departures</Link>
+          </li>
         </ul>
       </div>
 
@@ -859,6 +862,11 @@ const Header = () => {
             <li>
               <Link to="/visa" onClick={closeMenu}>
                 Visa
+              </Link>
+            </li>
+            <li>
+              <Link to="/fixed-departures" onClick={closeMenu}>
+                Fixed Departures
               </Link>
             </li>
           </ul>
