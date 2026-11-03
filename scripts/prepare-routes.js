@@ -91,12 +91,62 @@ routes.forEach((route) => {
     `<meta name="description" content="${meta.description}" />`
   );
 
-  const canonicalUrl = `https://bnsholidays.co.in/${route}/`;
+    const canonicalUrl = `https://bnsholidays.co.in/${route}/`;
   if (pageHtml.includes('rel="canonical"')) {
     pageHtml = pageHtml.replace(/<link\s+rel="canonical"\s+href=".*?"\s*\/?>/i, `<link rel="canonical" href="${canonicalUrl}" />`);
   } else {
     pageHtml = pageHtml.replace('</head>', `  <link rel="canonical" href="${canonicalUrl}" />\n  </head>`);
   }
+
+  // Inject BreadcrumbList JSON-LD schema
+  const breadcrumbItems = [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://bnsholidays.co.in/"
+    }
+  ];
+
+  if (route.startsWith('destinations/')) {
+    breadcrumbItems.push({
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tour Packages",
+      "item": "https://bnsholidays.co.in/packages/"
+    });
+    const leafTitle = meta.title.replace(/\s*\|.*$/, '').trim();
+    breadcrumbItems.push({
+      "@type": "ListItem",
+      "position": 3,
+      "name": leafTitle,
+      "item": canonicalUrl
+    });
+  } else {
+    const serviceNames = {
+      packages: "Tour Packages",
+      flights: "Flight Booking",
+      hotels: "Hotel Booking",
+      villa: "Villa Stays",
+      visa: "Visa Services",
+      'india-tours': "India Tour Packages",
+      'fixed-departures': "Fixed Departure Tours"
+    };
+    breadcrumbItems.push({
+      "@type": "ListItem",
+      "position": 2,
+      "name": serviceNames[route] || meta.title.replace(/\s*\|.*$/, '').trim(),
+      "item": canonicalUrl
+    });
+  }
+
+  const breadcrumbJson = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems
+  });
+
+  pageHtml = pageHtml.replace('</head>', `  <script type="application/ld+json">${breadcrumbJson}</script>\n  </head>`);
 
   fs.writeFileSync(targetFile, pageHtml, 'utf8');
 });

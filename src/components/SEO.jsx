@@ -277,8 +277,62 @@ function SEO() {
     description: `Explore ${pageName || "holiday"} tour packages and travel experiences with BNS Holidays.`,
   };
   const keywords = getKeywords(normalizedPath, seo);
-  const isSearchResults = normalizedPath.endsWith("/results");
+    const isSearchResults = normalizedPath.endsWith("/results");
   const canonicalUrl = normalizedPath === "/" ? "https://bnsholidays.co.in/" : `https://bnsholidays.co.in${normalizedPath}/`;
+
+  const getBreadcrumbs = () => {
+    if (normalizedPath === "/") return null;
+
+    const items = [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://bnsholidays.co.in/",
+      },
+    ];
+
+    if (normalizedPath.startsWith("/destinations/")) {
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: "Tour Packages",
+        item: "https://bnsholidays.co.in/packages/",
+      });
+      const leafName = seo.title.replace(/\s*\|.*$/, "").replace(/\s*Tour Packages\s*$/i, "").trim() || pageName;
+      items.push({
+        "@type": "ListItem",
+        position: 3,
+        name: leafName,
+        item: canonicalUrl,
+      });
+    } else {
+      const topName = {
+        "/packages": "Tour Packages",
+        "/flights": "Flight Booking",
+        "/hotels": "Hotel Booking",
+        "/villa": "Villa Stays",
+        "/visa": "Visa Services",
+        "/india-tours": "India Tour Packages",
+        "/fixed-departures": "Fixed Departure Tours",
+      }[normalizedPath] || pageName || "Travel Services";
+
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: topName,
+        item: canonicalUrl,
+      });
+    }
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: items,
+    };
+  };
+
+  const breadcrumbs = getBreadcrumbs();
 
   return (
     <Helmet>
@@ -294,6 +348,11 @@ function SEO() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
+    {breadcrumbs && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbs)}
+        </script>
+      )}
     </Helmet>
   );
 }
